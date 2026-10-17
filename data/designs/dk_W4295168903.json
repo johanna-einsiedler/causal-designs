@@ -1,0 +1,47 @@
+{
+ "artid": "dk_W4295168903",
+ "paper": {
+  "title": "Summaries of Articles",
+  "authors": [],
+  "year": 2022,
+  "journal": "National Tax Journal",
+  "code_data_availability": "Absent. No data or code availability statement appears anywhere in the document. …"
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "None. The document has no estimation sample: it is the National Tax Journal's 'Summaries of Articles' front-matter section, comprising four author-written prose summaries of research articles published elsewhere in the same issue.",
+   "unit_of_observation": "not applicable - no units are observed, estimated over, or analysed in this document",
+   "selection_rules": [
+    "Not applicable: the document applies no inclusion or exclusion rule because it estimates nothing.",
+    "The four summarised articles describe their own samples, but those samples belong to those separate articles, not to this document: (1) Jones and Ziliak, US survey data linked to IRS administrative tax records; (2) Fuest, Hugger and Wildgruber, Bureau van Dijk Orbis firm-level data, 'more than 12 million firm-year observations from over 2.5 million companies and covers 33 OECD countries' (p. 446); (3) Genest-Gregoire, Godbout and Guay, a list experiment on a survey of the Canadian population; (4) Eichfelder, Noack and Noth, French stock-market data around the 2012 French financial transaction tax."
+   ],
+   "period": null,
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "No Danish register data is used anywhere in this document, and no Danish register is named. Denmark appears exactly once, and only as a cited external comparison inside the third summary (journal p. 447): the authors contrast their Canadian list-experiment estimate with published Danish taxpayer-audit research. That is a reference to other researchers' literature, not an analysis performed here.",
+   "Document structure verified against the PDF: 5 pages (journal pp. 445-449), text-only. pdfimages reports zero embedded images, and the PDF contains no tables, no figures, no equations, no abstract, no methods section, no regression output and no summary-statistics table.",
+   "PDF metadata corroborates the identification independently of the body text: Title = 'Summaries of Articles', Subject = 'National Tax Journal 2022.75:445-449'.",
+   "The accompanying digest.json, produced by an independent extraction pass, is consistent with this reading: it reports counts of 0 regressions, 0 tables and 0 figures, so the closed set of citable exhibit ids for this paper is empty.",
+   "No DOI is printed in the document text.",
+   "Consequence for extraction: claims[] is empty. This document tests no hypothesis of its own. Every empirical finding stated in it is a finding of a different, separately published article, which the extraction rules exclude ('Extract every claim the paper actually TESTS. Not literature it cites, not its motivation.'). Emitting any claim here would require inventing a treatment, an outcome and an identification strategy that the document does not contain, and would attribute another paper's result to this front-matter section. Note for the maintainer: schema.json sets minItems=1 on claims, so a strict JSON Schema validator will flag this file; validate.py, the checker shipped in this pack, accepts it. The empty array is the substantively correct answer and the record of a corpus-selection false positive (W4295168903 is journal front matter, not a Danish-register research article), not an extraction gap."
+  ]
+ },
+ "claims": [],
+ "extraction_inputs": {
+  "digest_sha256": "77a5b63b990955439c9b5d1ae4912e241aa5c92dd7a01beeb0e33ff358c7b548",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-13T03:07:54.997252+00:00",
+  "tables_sha256": "a24dc257a331eece07a0f90541ef70735c501ea80d1fa39f8f7011a252c5c24b",
+  "figures_sha256": "f16d737774b083c11174ffb6a32454dff05c32f164ef27679e642df4672bbdf3"
+ },
+ "public_export": {
+  "anchor_quotes": 0,
+  "quotes_hashed": 0,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

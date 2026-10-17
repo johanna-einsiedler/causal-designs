@@ -1,0 +1,3124 @@
+{
+ "artid": "dk_W7167491644",
+ "paper": {
+  "title": "Patterns of service contacts for children who have experienced maltreatment and are known to social services: a Linked Routine Administrative Data Study in Wales, England and Denmark",
+  "authors": [
+   "Amrita Bandyopadhyay",
+   "Natasha Kennedy",
+   "Laura Cowley",
+   "Peter Fallesen",
+   "Marcella Broccia",
+   "Troels Graesholt-Knudsen",
+   "Eliazar Luna",
+   "Catherine Quantin",
+   "Sinead Brophy"
+  ],
+  "year": 2026,
+  "journal": "International Journal of Population Data Science",
+  "doi": "10.23889/ijpds.v11i5.3623",
+  "code_data_availability": "No data or code availability statement is printed. The abstract states only that the study is part of the European Commission Horizon Health 2024 SERENA project; no DST project reference is given."
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "child protection (CP) register",
+    "dst_code": null,
+    "years": null,
+    "role": "treatment / sample frame",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "children looked after (CLA) registers",
+    "dst_code": null,
+    "years": null,
+    "role": "treatment / sample frame",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "routine administrative data on health (hospital admissions, emergency care, general practice)",
+    "dst_code": null,
+    "years": null,
+    "role": "outcomes",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "routine administrative data on education",
+    "dst_code": null,
+    "years": null,
+    "role": "outcomes",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "routine administrative data on employment",
+    "dst_code": null,
+    "years": null,
+    "role": "outcomes",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "routine administrative data on justice",
+    "dst_code": null,
+    "years": null,
+    "role": "outcomes",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Growing up in England",
+    "dst_code": null,
+    "years": null,
+    "role": "linkage / data source for England",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "ECHILD",
+    "dst_code": null,
+    "years": null,
+    "role": "linkage / data source for England",
+    "variables_mentioned": [],
+    "year_range": null
+   }
+  ],
+  "linkages": [
+   "Children recorded in child protection (CP) and children looked after (CLA) registers in Wales, England and Denmark are linked to their routine administrative data on health, education, employment and justice.",
+   "Children known to social services are matched to a propensity-matched cohort of children not known to social services."
+  ],
+  "sample": {
+   "universe": "Children recorded in child protection (CP) and children looked after (CLA) registers in Wales, England (Growing up in England and ECHILD) and in Denmark, plus a propensity-matched cohort of children not known to social services. The preliminary findings reported are from Wales only.",
+   "unit_of_observation": "child (individual), followed across the observation window",
+   "selection_rules": [
+    "children recorded in child protection (CP) registers",
+    "children recorded in children looked after (CLA) registers",
+    "comparison cohort: a propensity-matched cohort of children not known to social services",
+    "observation window: from two years before to two-ten years after social service involvement"
+   ],
+   "period": null,
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "The abstract prints no sample size, no study period and no table or figure.",
+   "No Danish register is named individually: the abstract says only 'in Denmark with their routine administrative data on health (hospital admissions, emergency care, general practice), education, employment and justice', so no DST code can be assigned.",
+   "The comparison cohort is formed by propensity matching; the matching variables are not named.",
+   "The observation window runs from two years before to two-ten years after social service involvement.",
+   "Results are to be presented by each country; the only results stated in this abstract are preliminary findings from Wales."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W7167491644_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children in Wales recorded on the child protection (CP) register use emergency departments more than a propensity-matched cohort of children not known to social services.",
+   "treatment": {
+    "label": "being recorded on the child protection (CP) register",
+    "ontology_node": null,
+    "register_source": {
+     "value": "child protection (CP) register",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the child protection (CP) register, i.e. known to social services, contrasted with a propensity-matched cohort not known to social services.",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "use of emergency departments",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on health (emergency care)",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contacts with emergency departments, taken from the linked routine administrative health data (hospital admissions, emergency care, general practice); the abstract does not say whether it is any contact, a count or a rate.",
+     "evidence": [
+      "e3",
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "Over the study observation window, from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children in Wales on the child protection (CP) register",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "Service use observed from two years before to two-ten years after social service involvement",
+    "formal_query": null,
+    "horizon": {
+     "from": -2,
+     "to": 10,
+     "unit": "years",
+     "kind": "unspecified"
+    }
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with a propensity-matched cohort of children not known to social services",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being recorded on the child protection (CP) register"
+       ],
+       "rhs": [
+        "unobserved determinants of use of emergency departments"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "use of emergency departments",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (child protection register vs children looked after)",
+     "finding": "Children on the CP register, but not CLA, use emergency departments more than the matched general population."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being recorded on the child protection (CP) register",
+     "use of emergency departments",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being recorded on the child protection (CP) register",
+      "to": "use of emergency departments",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "use of emergency departments",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "ed15e8a92fe60933",
+      "n_chars": 155
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The abstract calls the comparison group 'the matched general population'; it is taken to be the propensity-matched cohort not known to social services described in the methods.",
+    "Polarity of emergency department use is set relative to the concept of health-service utilisation (higher = more use); read as a health measure it would point the other way."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ed15e8a92fe60933",
+     "n_chars": 155
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "Preliminary findings from Wales indicate that children on the CP register, but not CLA, use emergency departments more than the matched general population.",
+    "sha256_16": "ed15e8a92fe60933",
+    "n_chars": 155
+   }
+  },
+  {
+   "claim_id": "dk_W7167491644_c2",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children looked after (CLA) in Wales do not use emergency departments more than a propensity-matched cohort of children not known to social services.",
+   "treatment": {
+    "label": "being a child looked after (CLA)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "children looked after (CLA) registers",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the children looked after (CLA) registers, i.e. known to social services, contrasted with a propensity-matched cohort of children not known to social services.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "use of emergency departments",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on health (emergency care)",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contacts with emergency departments, taken from the linked routine administrative health data (hospital admissions, emergency care, general practice); the abstract does not say whether it is any contact, a count or a rate.",
+     "evidence": [
+      "e3",
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "Over the study observation window, from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e1",
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children looked after (CLA) in Wales",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "Service use observed from two years before to two-ten years after social service involvement",
+    "formal_query": null,
+    "horizon": {
+     "from": -2,
+     "to": 10,
+     "unit": "years",
+     "kind": "unspecified"
+    }
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with a propensity-matched cohort of children not known to social services",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being a child looked after (CLA)"
+       ],
+       "rhs": [
+        "unobserved determinants of use of emergency departments"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "use of emergency departments",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (child protection register vs children looked after)",
+     "finding": "Children on the CP register, but not CLA, use emergency departments more than the matched general population."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a child looked after (CLA)",
+     "use of emergency departments",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being a child looked after (CLA)",
+      "to": "use of emergency departments",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "use of emergency departments",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "ed15e8a92fe60933",
+      "n_chars": 155
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The null for CLA is stated only as the clause 'but not CLA'; the abstract gives neither an estimate nor a test, so the direction of any residual difference is unknown.",
+    "Polarity of emergency department use is set relative to the concept of health-service utilisation (higher = more use); read as a health measure it would point the other way."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ed15e8a92fe60933",
+     "n_chars": 155
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "Preliminary findings from Wales indicate that children on the CP register, but not CLA, use emergency departments more than the matched general population.",
+    "sha256_16": "ed15e8a92fe60933",
+    "n_chars": 155
+   }
+  },
+  {
+   "claim_id": "dk_W7167491644_c3",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children looked after (CLA) in Wales are more likely to depend on benefits in adulthood than propensity-matched children not known to social services.",
+   "treatment": {
+    "label": "being a child looked after (CLA)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "children looked after (CLA) registers",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the children looked after (CLA) registers, i.e. known to social services, contrasted with propensity-matched children not known to social services.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "dependence on benefits in adulthood",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on employment",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "definition": {
+     "value": "Depending on benefits in adulthood, taken from the linked routine administrative data on employment; the abstract gives no construction, benefit type or threshold.",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "In adulthood, after the childhood social service contact",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children looked after (CLA) in Wales",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "In adulthood",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with a propensity-matched cohort of children not known to social services",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being a child looked after (CLA)"
+       ],
+       "rhs": [
+        "unobserved determinants of dependence on benefits in adulthood"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "dependence on benefits in adulthood",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (children looked after vs child protection register vs matched children)",
+     "finding": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a child looked after (CLA)",
+     "dependence on benefits in adulthood",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being a child looked after (CLA)",
+      "to": "dependence on benefits in adulthood",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "dependence on benefits in adulthood",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "385ec998f062f45e",
+      "n_chars": 141
+     },
+     {
+      "page": 1,
+      "sha256_16": "617ed84ddbf8377b",
+      "n_chars": 41
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The abstract states one comparison sentence against two reference groups ('matched children and those on the CP register'); it is split here into one claim per contrast.",
+    "Polarity of benefit dependence is set relative to the concept of economic self-sufficiency / labour-market attachment (higher benefit dependence = less of it)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "385ec998f062f45e",
+     "n_chars": 141
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register.",
+    "sha256_16": "385ec998f062f45e",
+    "n_chars": 141
+   }
+  },
+  {
+   "claim_id": "dk_W7167491644_c4",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children looked after (CLA) in Wales are more likely to depend on benefits in adulthood than children on the child protection (CP) register.",
+   "treatment": {
+    "label": "being a child looked after (CLA)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "children looked after (CLA) registers",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the children looked after (CLA) registers, i.e. known to social services, contrasted with children on the child protection (CP) register.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "dependence on benefits in adulthood",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on employment",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "definition": {
+     "value": "Depending on benefits in adulthood, taken from the linked routine administrative data on employment; the abstract gives no construction, benefit type or threshold.",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "In adulthood, after the childhood social service contact",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children looked after (CLA) in Wales",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "In adulthood",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with children on the child protection (CP) register",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being a child looked after (CLA)"
+       ],
+       "rhs": [
+        "unobserved determinants of dependence on benefits in adulthood"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "dependence on benefits in adulthood",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (children looked after vs child protection register vs matched children)",
+     "finding": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a child looked after (CLA)",
+     "dependence on benefits in adulthood",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being a child looked after (CLA)",
+      "to": "dependence on benefits in adulthood",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "dependence on benefits in adulthood",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "385ec998f062f45e",
+      "n_chars": 141
+     },
+     {
+      "page": 1,
+      "sha256_16": "617ed84ddbf8377b",
+      "n_chars": 41
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The abstract states one comparison sentence against two reference groups ('matched children and those on the CP register'); it is split here into one claim per contrast.",
+    "The CLA-versus-CP-register contrast is a comparison between two groups both known to social services, so the propensity matching described in the methods does not obviously apply to it.",
+    "Polarity of benefit dependence is set relative to the concept of economic self-sufficiency / labour-market attachment (higher benefit dependence = less of it)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "385ec998f062f45e",
+     "n_chars": 141
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register.",
+    "sha256_16": "385ec998f062f45e",
+    "n_chars": 141
+   }
+  },
+  {
+   "claim_id": "dk_W7167491644_c5",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children looked after (CLA) in Wales are more likely to experience unemployment in adulthood than propensity-matched children not known to social services.",
+   "treatment": {
+    "label": "being a child looked after (CLA)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "children looked after (CLA) registers",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the children looked after (CLA) registers, i.e. known to social services, contrasted with propensity-matched children not known to social services.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "experiencing unemployment in adulthood",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on employment",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "definition": {
+     "value": "Experiencing unemployment in adulthood, taken from the linked routine administrative data on employment; the abstract gives no construction, duration or measurement window.",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "In adulthood, after the childhood social service contact",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children looked after (CLA) in Wales",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "In adulthood",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with a propensity-matched cohort of children not known to social services",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being a child looked after (CLA)"
+       ],
+       "rhs": [
+        "unobserved determinants of experiencing unemployment in adulthood"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "experiencing unemployment in adulthood",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (children looked after vs child protection register vs matched children)",
+     "finding": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a child looked after (CLA)",
+     "experiencing unemployment in adulthood",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being a child looked after (CLA)",
+      "to": "experiencing unemployment in adulthood",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "experiencing unemployment in adulthood",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "385ec998f062f45e",
+      "n_chars": 141
+     },
+     {
+      "page": 1,
+      "sha256_16": "040455e9cb9a1fdb",
+      "n_chars": 84
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The abstract states one comparison sentence against two reference groups ('matched children and those on the CP register'); it is split here into one claim per contrast.",
+    "Polarity of unemployment is set relative to the concept of labour-market attachment (higher unemployment = less attachment)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "385ec998f062f45e",
+     "n_chars": 141
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register.",
+    "sha256_16": "385ec998f062f45e",
+    "n_chars": 141
+   }
+  },
+  {
+   "claim_id": "dk_W7167491644_c6",
+   "headline": true,
+   "headline_extractor": true,
+   "statement": "Children looked after (CLA) in Wales are more likely to experience unemployment in adulthood than children on the child protection (CP) register.",
+   "treatment": {
+    "label": "being a child looked after (CLA)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "children looked after (CLA) registers",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A child recorded in the children looked after (CLA) registers, i.e. known to social services, contrasted with children on the child protection (CP) register.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At identification by social services; service use is observed from two years before to two-ten years after social service involvement",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "experiencing unemployment in adulthood",
+    "ontology_node": null,
+    "register_source": {
+     "value": "routine administrative data on employment",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "definition": {
+     "value": "Experiencing unemployment in adulthood, taken from the linked routine administrative data on employment; the abstract gives no construction, duration or measurement window.",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "In adulthood, after the childhood social service contact",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children looked after (CLA) in Wales",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "In adulthood",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Children in Wales recorded on the child protection (CP) register or as children looked after (CLA), and a propensity-matched cohort of children not known to social services; the preliminary findings reported are from Wales only.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Wales",
+    "subgroups_defined": [
+     "children on the child protection (CP) register",
+     "children looked after (CLA)",
+     "propensity-matched cohort not known to social services"
+    ],
+    "selection": "Exposed children are those identified by and known to social services (recorded on the child protection register or as children looked after); the comparison cohort is selected by propensity matching among children not known to social services.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "matching",
+    "source_of_variation": "No exogenous variation is used: children known to social services (recorded on the child protection register or as children looked after) are compared with children on the child protection (CP) register",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability: once children known to social services are matched on the propensity score to children not known to social services, the two groups are comparable in their determinants of public service use.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "being a child looked after (CLA)"
+       ],
+       "rhs": [
+        "unobserved determinants of experiencing unemployment in adulthood"
+       ],
+       "given": [
+        "variables used for propensity matching (not named)"
+       ],
+       "implies_edges": [
+        {
+         "from": "variables used for propensity matching (not named)",
+         "to": "experiencing unemployment in adulthood",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The exposed sample is conditioned on maltreatment having been identified by and recorded with social services; maltreated children never identified by social services are not in the exposed group.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "identification by social services",
+         "to": "inclusion in the exposed cohort",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Being recorded on the child protection register or as a child looked after validly measures the underlying maltreatment exposure the study is about.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Common support: for children known to social services there exist children not known to social services with comparable propensity scores to match them to.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "support",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "not stated; comparison of children known to social services with a propensity-matched cohort not known to social services",
+     "evidence": [
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure: the finding is stated in the abstract text, page 1",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "variables used for propensity matching (not named in the abstract)",
+      "ontology_node": null,
+      "role": "unclear"
+     }
+    ],
+    "source_table_id": null
+   },
+   "heterogeneity": [
+    {
+     "dimension": "type of social services record (children looked after vs child protection register vs matched children)",
+     "finding": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a child looked after (CLA)",
+     "experiencing unemployment in adulthood",
+     "variables used for propensity matching (not named)",
+     "identification by social services",
+     "inclusion in the exposed cohort"
+    ],
+    "edges": [
+     {
+      "from": "being a child looked after (CLA)",
+      "to": "experiencing unemployment in adulthood",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "variables used for propensity matching (not named)"
+      ]
+     },
+     {
+      "from": "variables used for propensity matching (not named)",
+      "to": "experiencing unemployment in adulthood",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "identification by social services",
+      "to": "inclusion in the exposed cohort",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "385ec998f062f45e",
+      "n_chars": 141
+     },
+     {
+      "page": 1,
+      "sha256_16": "040455e9cb9a1fdb",
+      "n_chars": 84
+     },
+     {
+      "page": 1,
+      "sha256_16": "faa4307c33145e1e",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper is a one-page conference abstract: it prints no table, no figure and no numbers, so every magnitude field is null with an absent record rather than a transcription.",
+    "The reported findings are explicitly preliminary and from Wales only; the Danish (and English) analyses are described as planned, not reported.",
+    "The abstract reports no statistical test, so statistically_significant is left null rather than inferred from the wording.",
+    "The abstract states one comparison sentence against two reference groups ('matched children and those on the CP register'); it is split here into one claim per contrast.",
+    "The CLA-versus-CP-register contrast is a comparison between two groups both known to social services, so the propensity matching described in the methods does not obviously apply to it.",
+    "Polarity of unemployment is set relative to the concept of labour-market attachment (higher unemployment = less attachment)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "385ec998f062f45e",
+     "n_chars": 141
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "faa4307c33145e1e",
+     "n_chars": 156
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d6e2a12c1818ba6",
+     "n_chars": 265
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8884215b0025e360",
+     "n_chars": 132
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c2c37f59e82ad41f",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "Looked at the whole one-page abstract: it contains no table, no figure and no numbers at all -- no point estimate, standard error, confidence interval or p-value is printed for this comparison."
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract names no estimator, regression model, control variables, clustering or weighting scheme; it says only that the comparison cohort is propensity-matched."
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No sample size, cohort count or study period is printed anywhere in the abstract."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "No control-group mean, pre-period mean or outcome standard deviation is printed; there is no summary-statistics table."
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "how": "The abstract reports no statistical test, significance level or stars for the preliminary Wales findings, which it states in words only."
+    }
+   ],
+   "mediators_claimed": [],
+   "functional_form": null,
+   "scope": null,
+   "headline_basis": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "hospital admissions",
+    "general practice contacts",
+    "education",
+    "justice",
+    "findings for England (Growing up in England and ECHILD)",
+    "findings for Denmark",
+    "the pattern of service usage after the initial social service contact, to be presented by each country"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 1,
+    "text": "CLA are more likely to depend on benefits and experience unemployment in adulthood compared to matched children and those on the CP register.",
+    "sha256_16": "385ec998f062f45e",
+    "n_chars": 141
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "9790da93b81e5905586bc6d794699e100aa497d3a4abb9f003f2e1c86bd8c442",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:45.305876+00:00",
+  "tables_sha256": "3d55b3bd42666e07cb2075b4bacfe6e1c3ccd9e02e5641963ae887269744a6b2",
+  "figures_sha256": "5186852318c6847be21bbbbd351de04c14386fa955de518fd0843bf810de4ce5"
+ },
+ "public_export": {
+  "anchor_quotes": 2,
+  "quotes_hashed": 46,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

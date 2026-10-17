@@ -1,0 +1,5059 @@
+{
+ "artid": "dk_W4403134807",
+ "paper": {
+  "title": "Impacts of criminal records on labor market outcomes: Theoretical and empirical evidence from Denmark",
+  "authors": [
+   "Shiyun Zhang"
+  ],
+  "year": 2026,
+  "journal": "Labour Economics",
+  "doi": "10.1016/j.labeco.2026.102891",
+  "code_data_availability": "Data availability (p. 13): 'The data that has been used is confidential.' No DST project reference, replication package or code statement is given."
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "SPELL register",
+    "dst_code": null,
+    "years": "1986-2003",
+    "role": "outcomes and sample frame: start and end dates of each employment spell, from which hourly wages, employment and unemployment durations and job-to-job transitions are constructed",
+    "variables_mentioned": [
+     "start and end dates of each employment spell",
+     "hourly wage in the first observed employment spell",
+     "full-time versus part-time indicator"
+    ],
+    "year_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   {
+    "name_in_paper": "KRIN register (incarceration records)",
+    "dst_code": "KRIN",
+    "years": "1986-2003",
+    "role": "treatment: incarceration spells, used to classify ex-offenders and to measure incarceration duration and returns to prison",
+    "variables_mentioned": [
+     "start and end dates of each incarceration spell",
+     "indicator for an incarceration record during the sample period"
+    ],
+    "year_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   {
+    "name_in_paper": "Danish register data from Statistics Denmark (Danmarks Statistik)",
+    "dst_code": null,
+    "years": "1986-2003",
+    "role": "linkage and controls: education (at least a bachelor's degree), age, year; also the source of the apprehension probability and of the crime and inmate counts used in the calibration",
+    "variables_mentioned": [
+     "highest level of completed education",
+     "age at the beginning of the employment spell",
+     "number of criminal offenses",
+     "number of inmates"
+    ],
+    "year_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   }
+  ],
+  "linkages": [
+   "Employment records from the SPELL register are combined with incarceration records from the KRIN register at the individual level to track employment and imprisonment histories.",
+   "Employment records with gaps of less than a week or overlaps of more than a month are treated as part of the same job; on-the-job search is identified by two employment records with a gap or overlap of less than a month."
+  ],
+  "sample": {
+   "universe": "Male individuals aged 15 to 35 in Danish register data from Statistics Denmark, 1986-2003, with employment records in the SPELL register.",
+   "unit_of_observation": "Individual (one first observed employment spell per individual for the wage regression; individual spell sequences - incarceration duration t_0, unemployment duration t_1, employment duration t_2 - for the maximum likelihood estimation).",
+   "selection_rules": [
+    "Danish register data covering 1986-2003 (start and end dates of employment and incarceration spells).",
+    "Restricted to male individuals aged 15 to 35, 'as crime rates decline significantly after age 35'.",
+    "Workers without criminal records are those with no incarceration records between 1986 and 2003; individuals with an incarceration record during the period are ex-offenders.",
+    "Individuals are included from the first instance they become unemployed after 1 January 1986.",
+    "Only workers with a job worked for at least 7 days according to the SPELL records are included.",
+    "The 10th and 90th percentile of the wage residuals are excluded to avoid extreme cases.",
+    "Unemployed individuals with no employment records are excluded from the data."
+   ],
+   "period": "1986-2003",
+   "n_observations": "1,726,923 (Table A.1 N and Table A.2 full-sample observations)",
+   "n_individuals": "23,522 ex-offenders and 1,703,401 workers without criminal records (Table A.2)"
+  },
+  "construction_notes": [
+   "Hourly wage is measured in the first observed employment spell after 1 January 1986, or in the first employment spell beginning after release from prison for ex-offenders; it enters the Mincerian regression in logs.",
+   "Wage residuals from the Mincerian regression (which strip out age, education and job type) are the empirical object the structural model is calibrated to; Table A.3 reports max 2.1865, min 0.3595, mean 1.2161 and the residual at the productivity cutoff 1.6121 as calibration targets.",
+   "Unemployment duration t_1 is the time from the end date of the first employment record to the start date of the second; employment duration t_2 is tracked from the start of the new job; durations are measured in months.",
+   "Age enters the wage regression as a quadratic to capture experience effects.",
+   "The apprehension probability is calibrated from the ratio of the average number of criminal offenses (138,334.50) to the average number of inmates (3402) over 1986-2003; the overall crime rate is 138,334.50/5,254,250 = 26.3 offenses per 1000 individuals with an average Danish population of 5,254,250.",
+   "Standard deviations of the MLE parameters are bootstrapped with 500 draws (note to Table A.3)."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W4403134807_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S1",
+      "pointed_to": "number",
+      "estimand": "S1/all/first-employment-spell",
+      "pointer_quote": "Using Danish register data from 1986 to 2003, I first document that, conditional on observed characteristics, workers with a record of imprisonment earn on average 1.92% higher wages than comparable workers with no criminal record.",
+      "cell": "dk_W4403134807::TA1::_::C1",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "Conditional on education, age, full-time status and year, men aged 15-35 with an imprisonment record 1986-2003 earn 1.92% higher hourly wages in their first observed employment spell than comparable men with no criminal record.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "log hourly wage in the first observed employment spell, log(w_i)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (start and end dates of each employment spell), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "'For each individual, I construct an hourly wage measure from the first observed employment spell after January 1, 1986, or from the first employment spell that begins after release from prison for ex-offenders.' Entered in logs as the dependent variable of the Mincerian OLS regression.",
+     "confidence": "high",
+     "evidence": [
+      "do1"
+     ]
+    },
+    "timing": {
+     "value": "First observed employment spell after 1 January 1986 (for ex-offenders: the first spell after release from prison), within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.0192,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.0047)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "log points (coefficient on a 0/1 imprisonment-record indicator in a log hourly wage regression)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'the hourly wages of ex-offenders are 1.92% higher than those of workers without criminal records' (p. 3)",
+     "se": {
+      "value": 0.0047,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Men aged 15-35 in Denmark 1986-2003 with an observed employment spell, comparing those with and without an incarceration record.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "selection_on_observables",
+    "source_of_variation": "No exogenous variation is used: a cross-sectional comparison of individuals with and without an incarceration record during 1986-2003, conditional on education, a quadratic in age, full-time status and year fixed effects.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional on the observed covariates (education, age and age squared, full-time status, year), having an imprisonment record is unrelated to the wage determinants left in the error term, so the coefficient β_c recovers the wage gap of interest.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper reports only that the estimate is 'precisely estimated and robust to the inclusion of basic controls'; no balance test, no alternative specification and no sensitivity analysis is shown.",
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "criminal record (imprisonment indicator)"
+       ],
+       "rhs": [
+        "log hourly wage"
+       ],
+       "given": [
+        "education (at least a bachelor's degree)",
+        "age and age squared",
+        "full-time vs part-time",
+        "year"
+       ],
+       "implies_edges": [
+        {
+         "from": "education (at least a bachelor's degree)",
+         "to": "log hourly wage",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "age and age squared",
+         "to": "log hourly wage",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "full-time vs part-time",
+         "to": "log hourly wage",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "year",
+         "to": "log hourly wage",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Individuals with no incarceration record observed between 1986 and 2003 have no criminal record; crimes and incarcerations before 1 January 1986 are unobservable and are assumed away.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in footnote 1 as an assumption following Engelhardt (2010); no evidence is offered that it holds.",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The estimation sample is conditioned on being employed (a wage is observed only in an employment spell of at least 7 days) and on not lying in the tails of the wage-residual distribution; selection into employment is not modelled.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The sample restrictions are stated in footnote 2; the paper does not discuss selection into employment as a threat to the wage comparison.",
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "employment in an observed spell of at least 7 days",
+         "to": "log hourly wage",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Criminal records before 1 January 1986 are not observed, so individuals imprisoned before the data begin may be classified as having no criminal record (footnote 1, p. 3)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "OLS (Mincerian wage regression)",
+     "evidence": [
+      "e1",
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "specification": "log(w_i) = β_c I_i^{imprisonment} + β_X X_i + FE_t + ϵ_it (unnumbered equation, p. 3); single reported column.",
+    "fixed_effects": [
+     "year"
+    ],
+    "controls": [
+     "indicator for having completed at least a bachelor's degree",
+     "age at the beginning of the employment spell",
+     "age squared (age entered as a quadratic to capture experience effects)",
+     "indicator for full-time versus part-time employment"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "1,726,923",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table A.1, 'Results of mincerian regression.', p. 12, row 'Criminal records'",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "indicator for having completed at least a bachelor's degree",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "age at the beginning of the employment spell (and its square)",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "full-time versus part-time employment indicator",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "year fixed effects",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     }
+    ],
+    "source_table_id": "dk_W4403134807::TA1::_::C1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "log hourly wage",
+     "education (at least a bachelor's degree)",
+     "age and age squared",
+     "full-time vs part-time",
+     "year",
+     "employment in an observed spell of at least 7 days"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "log hourly wage",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "education (at least a bachelor's degree)",
+       "age and age squared",
+       "full-time vs part-time",
+       "year"
+      ]
+     },
+     {
+      "from": "education (at least a bachelor's degree)",
+      "to": "log hourly wage",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "age and age squared",
+      "to": "log hourly wage",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "full-time vs part-time",
+      "to": "log hourly wage",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "year",
+      "to": "log hourly wage",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "employment in an observed spell of at least 7 days",
+      "to": "log hourly wage",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "2ec72c74b76b357b",
+      "n_chars": 120
+     },
+     {
+      "page": 3,
+      "sha256_16": "a4dc393ff9fa4d20",
+      "n_chars": 96
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table A.1 prints *** on every coefficient but carries no note defining the significance levels, so no p-value or threshold can be transcribed.",
+    "The paper's title and abstract speak of the 'impact' of criminal records, but the design is an OLS comparison conditional on four observables; Section 2 calls it a documented 'wage gap'.",
+    "Table A.1 also reports coefficients on the controls (Age 0.3335***, Full-time 0.2175***, Education -0.0071***); the paper never interprets them, so they are not extracted as separate claims."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.1",
+     "panel": null,
+     "page": 12,
+     "regression_id": "dk_W4403134807::TA1::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "030409c0a8be32a9",
+     "n_chars": 41
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "2ec72c74b76b357b",
+     "n_chars": 120
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "a4dc393ff9fa4d20",
+     "n_chars": 96
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": "Table A.1",
+     "page": 12,
+     "how": "Table A.1 prints the coefficient and the standard error in parentheses only; no confidence interval and no p-value is printed, and the table has no note defining the stars."
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": "Table A.1 / Table A.2",
+     "page": 12,
+     "how": "No mean or standard deviation of the hourly wage is printed for either group: Table A.1 reports no summary statistics, and Table A.2 ('Duration means') reports no wage row despite its note referring to mean wages."
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "90d2f63857d624a4",
+     "n_chars": 158
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "b5a94015cee62ac5",
+     "n_chars": 183
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "ba00b3a755774478",
+     "n_chars": 117
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "page": 11,
+     "sha256_16": "363b9990f00a3f04",
+     "n_chars": 91
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "9724ae7866e8afab",
+     "n_chars": 85
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "4e1d4b6e93a77cb8",
+     "n_chars": 210
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": null,
+     "as_printed": "log(w_i) = β_c I_i^{imprisonment} + β_X X_i + FE_t + ϵ_it",
+     "lhs": "log(w_i), the log hourly wage of individual i in the first observed employment spell",
+     "terms": [
+      {
+       "expression": "β_c I_i^{imprisonment}",
+       "role": "parameter_of_interest",
+       "parameter": "β_c"
+      },
+      {
+       "expression": "β_X X_i",
+       "role": "control",
+       "parameter": "β_X"
+      },
+      {
+       "expression": "FE_t",
+       "role": "fixed_effect",
+       "parameter": null
+      },
+      {
+       "expression": "ϵ_it",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "β_c",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "individuals"
+      },
+      {
+       "symbol": "t",
+       "over": "years"
+      }
+     ],
+     "normalisation": "Reference group is workers with no incarceration record between 1986 and 2003 (I_i^{imprisonment} = 0); year fixed effects FE_t absorb the year baseline; age enters as a quadratic.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e11"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Mincerian wage equation"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "the mainstream empirical literature on criminal records",
+     "relation": "contradicts",
+     "stated": true,
+     "evidence": [
+      "e10"
+     ],
+     "as_stated": "This finding stands in contrast to the mainstream empirical literature on criminal records."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "workers with a record of imprisonment earn on average 1.92% higher wages than comparable workers with no criminal record",
+    "sha256_16": "2ec72c74b76b357b",
+    "n_chars": 120
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The maximum-likelihood monthly job-finding rate of unemployed ex-offenders (0.1386) is lower than that of unemployed workers without criminal records (0.1951), i.e. 29.04% lower.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Unemployed job finding rate (λ_U^j)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates) and incarceration records, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Poisson arrival rate of accepted job offers for unemployed workers, estimated by maximum likelihood from the observed unemployment spell durations t_1 and their realised transition destinations; 'Transitions from unemployment to other statuses follow a Poisson process.'",
+     "confidence": "high",
+     "evidence": [
+      "e4"
+     ]
+    },
+    "timing": {
+     "value": "Unemployment spell beginning at the first time the individual becomes unemployed after 1 January 1986 (for ex-offenders: after release from prison), within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.1386,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.0018)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "monthly Poisson job-finding rate for unemployed ex-offenders",
+      "evidence": [
+       "e1",
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'the job-finding rate for unemployed ex-offenders is 29.04% lower than for those without criminal records' (p. 2); 'about 30% lower' (p. 10)",
+     "se": {
+      "value": 0.0018,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 0.1951,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "structural_parameter",
+    "target_population": "Unemployed ex-offenders (men aged 15-35 with an incarceration record 1986-2003) in the search-and-matching model, compared with unemployed workers without criminal records.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Observed unemployment spell durations and realised transition destinations of the two record groups, fitted by maximum likelihood to the Poisson transition structure of the search-and-matching model.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Transitions out of unemployment follow a Poisson process, so unemployment durations are exponentially distributed with hazard μ_Uπ(1-Γ(ḡ_u^j)) + λ_U^j.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Asserted in Section 6.2 and imposed in the likelihood; no goodness-of-fit test of the exponential form is reported.",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "P(t1) = [μ_Uπ(1-Γ(ḡ_u^j)) + λ_U^j] exp{-[μ_Uπ(1-Γ(ḡ_u^j)) + λ_U^j]t_1}"
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Workers without criminal records commit no crimes during the sampling period, so their unemployment hazard contains only the job-finding rate.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Section 6.2 as a restriction on the likelihood of the no-record group.",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "potential_outcome_restriction",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "μ_Uπ(1-Γ(ḡ_i^{NC})) = 0"
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Individuals with no incarceration record observed 1986-2003 have no criminal record, so the two estimation groups are correctly assigned.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 1, following Engelhardt (2010).",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Left-censoring: some ex-offenders were already in jail when data collection began, which the likelihood contribution for exiting jail is adjusted for (p. 9).",
+     "The data exclude unemployed individuals who have no employment records (footnote 11, p. 9)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Maximum likelihood estimation of the Poisson transition rates of the search-and-matching model, standard deviations bootstrapped with 500 draws",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Likelihood of unemployment spell durations and destinations, Section 6.2; the parameter is λ_U^j estimated separately for ex-offenders (j = C) and workers without criminal records (j = NC).",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders and 1,703,401 workers without criminal records (Table A.2 observations); Table A.3 prints no N",
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Table A.3, 'Parameter values.', panel 'Estimated by MLE', row 'Unemployed job finding rate', column 'Ex-offenders' (p. 13); comparison value from column 'Workers no records'",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::TA3::_::C1"
+   },
+   "mediators_claimed": [
+    "Only unprejudiced firms make offers to ex-offenders, which lowers their offer arrival rate while unemployed."
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "labour-market state at the time of search (unemployed vs employed on-the-job search)",
+     "finding": "The ex-offender gap in job finding is negative out of unemployment (29.04% lower) but positive for on-the-job search (40.26% higher)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "unemployed job finding rate (λ_U)"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "unemployed job finding rate (λ_U)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 2,
+      "sha256_16": "a789199c8c903cf3",
+      "n_chars": 55
+     },
+     {
+      "page": 9,
+      "sha256_16": "1c46fd673239c25c",
+      "n_chars": 171
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The standard deviation printed for the no-record group, '(231691 × 10−4)', is implausible given an estimate of .1951 and appears to be a typographical error; it is transcribed as printed and not parsed.",
+    "The paper calls the difference 'significantly higher' (p. 9) but reports no test of the difference between the two groups' estimated rates.",
+    "The text reports the gap as 29.04% (p. 2) and 'about 30%' (p. 10); .1386/.1951 - 1 = -0.2896."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Ex-offenders)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Workers no records)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C2"
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "a789199c8c903cf3",
+     "n_chars": 55
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "8fa3e5c9f82b7412",
+     "n_chars": 73
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": "Table A.3",
+     "page": 13,
+     "how": "Table A.3 prints the point estimate and a bootstrap standard deviation in parentheses only; no confidence interval, p-value or outcome standard deviation is printed."
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "9232c64d0eb8edc7",
+     "n_chars": 90
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "b5a94015cee62ac5",
+     "n_chars": 183
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 13,
+     "sha256_16": "f843b34c394616d7",
+     "n_chars": 104
+    },
+    {
+     "id": "e10",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "1c46fd673239c25c",
+     "n_chars": 171
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": null,
+     "as_printed": "P(t1) = [μ_Uπ(1 − Γ(ḡ_u^j)) + λ_U^j] exp{−[μ_Uπ(1 − Γ(ḡ_u^j)) + λ_U^j]t_1}; P(e_{t1}^C) = λ_U^C / (μπ(1 − Γ(ḡ_u^C)) + λ_U^C)",
+     "lhs": null,
+     "terms": [
+      {
+       "expression": "λ_U^j",
+       "role": "parameter_of_interest",
+       "parameter": "λ_U^j"
+      },
+      {
+       "expression": "μ_Uπ(1 − Γ(ḡ_u^j))",
+       "role": "other",
+       "parameter": "η_U^j"
+      }
+     ],
+     "parameter_of_interest": "λ_U^j",
+     "index_sets": [
+      {
+       "symbol": "j",
+       "over": "criminal-record status, j ∈ {C, NC}"
+      }
+     ],
+     "normalisation": null,
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "distributional",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "proportional_hazards",
+       "source": "implied_by_equation",
+       "testable": null,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e4"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 2,
+    "text": "is 29.04% lower than for those without criminal records",
+    "sha256_16": "a789199c8c903cf3",
+    "n_chars": 55
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c3",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The maximum-likelihood monthly on-the-job (employed) job-finding rate of ex-offenders (0.03466) is higher than that of employed workers without criminal records (0.0254).",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Employed job finding rate (λ_E^j)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Poisson arrival rate of accepted job offers for employed workers searching on the job, estimated by maximum likelihood from employment spell durations t_2 and their realised transition destinations; 'On-the-job search is identified by two employment records with a gap or overlap of less than a month.'",
+     "confidence": "high",
+     "evidence": [
+      "do4"
+     ]
+    },
+    "timing": {
+     "value": "First employment spell after entering the data (for ex-offenders: the first job after release), within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.03466,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(3.4423 × 10−4)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "monthly Poisson on-the-job job-finding rate for employed ex-offenders",
+      "evidence": [
+       "e1",
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'ex-offenders' job-finding rate is 40.26% higher than that of other workers' (p. 2); the conclusion instead says 'approximately 29% higher' (p. 11)",
+     "se": {
+      "value": 0.00034423,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 0.0254,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "structural_parameter",
+    "target_population": "Employed ex-offenders (men aged 15-35 with an incarceration record 1986-2003) searching on the job, compared with employed workers without criminal records.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Observed employment spell durations and realised transition destinations (job-to-job, to unemployment, to jail) of the two record groups, fitted by maximum likelihood to the model's Poisson structure.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Exits from employment (to another job, to unemployment, to jail) follow a Poisson process conditional on the current wage w, so employment durations are exponentially distributed.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Imposed in the likelihood of Section 6.2; no test of the exponential form is reported.",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "P^C(t2|w) = [μ_Eπ(1−Γ(ḡ_e^C)) + λ_E^C(1−F^{NP}(w)) + s^C] exp{−[μ_Eπ(1−Γ(ḡ_e^C)) + λ_E^C(1−F^{NP}(w)) + s^C]t_2}"
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Ex-offenders draw offers only from the unprejudiced firms' offer distribution F^{NP}(w) while workers without records draw from the mixture H(w) = φF^{NP}(w) + (1−φ)F^P(w); this mapping of offer distributions to groups enters the on-the-job search hazard.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Sections 3 and 6.2 as a modelling assumption about prejudiced firms; it is not tested.",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Employed workers who remain in the same job until the end of the data period are right-censored observations of the same Poisson process.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The data section notes that some workers remain in the same job until the end of the data period; no censoring test is reported.",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Greater job stability of workers without criminal records (many remain in their jobs throughout the sampling period) is offered as a competing explanation for the reversed job-to-job transition rate (p. 10)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Maximum likelihood estimation of the Poisson transition rates of the search-and-matching model, standard deviations bootstrapped with 500 draws",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Likelihood of employment spell durations and destinations, Section 6.2; the parameter is λ_E^j estimated separately for ex-offenders (j = C) and workers without criminal records (j = NC).",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders and 1,703,401 workers without criminal records (Table A.2 observations); Table A.3 prints no N",
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Table A.3, panel 'Estimated by MLE', row 'Employed job finding rate', column 'Ex-offenders' (p. 13); comparison value from column 'Workers no records'",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::TA3::_::C1"
+   },
+   "mediators_claimed": [
+    "Once employed, the impact of a criminal record on search diminishes because employed ex-offenders already match with unprejudiced, higher-wage firms."
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "labour-market state at the time of search (unemployed vs employed on-the-job search)",
+     "finding": "The ex-offender gap in job finding is positive for on-the-job search (40.26% higher) but negative out of unemployment (29.04% lower)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "employed job finding rate (λ_E)"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "employed job finding rate (λ_E)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 2,
+      "sha256_16": "045a35414b8b722d",
+      "n_chars": 43
+     },
+     {
+      "page": 10,
+      "sha256_16": "74931f024829631e",
+      "n_chars": 116
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The percentage gap is reported as 40.26% (p. 2) but as 'approximately 29% higher' in the conclusion (p. 11); .03466/.0254 - 1 = 0.3646.",
+    "No test of the difference between the two groups' estimated rates is reported, so statistical significance is left null."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Ex-offenders)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Workers no records)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C2"
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "045a35414b8b722d",
+     "n_chars": 43
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "d6f7a25a884f2a21",
+     "n_chars": 112
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": "Table A.3",
+     "page": 13,
+     "how": "Table A.3 prints the point estimate and a bootstrap standard deviation in parentheses only; no confidence interval, p-value or outcome standard deviation is printed."
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "7fff1f036b530a32",
+     "n_chars": 66
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "3d03654bcfeec566",
+     "n_chars": 78
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 13,
+     "sha256_16": "f843b34c394616d7",
+     "n_chars": 104
+    },
+    {
+     "id": "e10",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "21ca780a5b525c8f",
+     "n_chars": 193
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do4",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "994ea950c928b4f2",
+     "n_chars": 101
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": null,
+     "as_printed": "P^C(t2|w) = [μ_Eπ(1 − Γ(ḡ_e^C)) + λ_E^C(1 − F^{NP}(w)) + s^C] exp{−[μ_Eπ(1 − Γ(ḡ_e^C)) + λ_E^C(1 − F^{NP}(w)) + s^C]t_2}; P(e_{t2}^C|w) = λ_E^C(1 − F^{NP}(w)) / (μ_Eπ(1 − Γ(ḡ_e^C)) + λ_E^C(1 − F^{NP}(w)) + s^C)",
+     "lhs": null,
+     "terms": [
+      {
+       "expression": "λ_E^j(1 − F^{NP}(w))",
+       "role": "parameter_of_interest",
+       "parameter": "λ_E^j"
+      },
+      {
+       "expression": "s^j",
+       "role": "other",
+       "parameter": "s^j"
+      },
+      {
+       "expression": "μ_Eπ(1 − Γ(ḡ_e^j))",
+       "role": "other",
+       "parameter": "η_E^j"
+      }
+     ],
+     "parameter_of_interest": "λ_E^j",
+     "index_sets": [
+      {
+       "symbol": "j",
+       "over": "criminal-record status, j ∈ {C, NC}"
+      }
+     ],
+     "normalisation": null,
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "distributional",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "proportional_hazards",
+       "source": "implied_by_equation",
+       "testable": null,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e4"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders",
+    "on-the-job search"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Engelhardt (2010)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e11"
+     ],
+     "as_stated": "This finding is consistent with Engelhardt (2010) and suggests that, once ex-offenders have a job and engage in on-the-job search, the impact of their criminal records diminishes substantially."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 2,
+    "text": "is 40.26% higher than that of other workers",
+    "sha256_16": "045a35414b8b722d",
+    "n_chars": 43
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c4",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The maximum-likelihood monthly job separation rate of ex-offenders (0.0431) is higher than that of workers without criminal records (0.0190).",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Job separation rate (s^j)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Poisson rate at which an employed worker loses the current job and returns to unemployment, estimated by maximum likelihood from employment spell durations t_2 and the share of spells ending in unemployment; 'job separations occur at an exogenous rate s_j'.",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "timing": {
+     "value": "First employment spell after entering the data (for ex-offenders: the first job after release), within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.0431,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(4.2767 × 10−4)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "monthly Poisson job separation rate for employed ex-offenders",
+      "evidence": [
+       "e1",
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": 0.00042767,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 0.019,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "structural_parameter",
+    "target_population": "Employed ex-offenders (men aged 15-35 with an incarceration record 1986-2003), compared with employed workers without criminal records.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Observed employment spell durations and the realised share of spells ending in unemployment for the two record groups, fitted by maximum likelihood.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Job separations occur at an exogenous Poisson rate s_j that does not depend on the wage or on tenure.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Section 3 as a model primitive and imposed in the likelihood; not tested.",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "P(u_{t2}^C|w) = s^C / (μ_Eπ(1−Γ(ḡ_e^C)) + λ_E^C(1−F^{NP}(w)) + s^C)"
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The group assignment is correct: individuals without an incarceration record 1986-2003 are workers without criminal records.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 1, following Engelhardt (2010).",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Workers without criminal records have greater job stability, many remaining in their jobs throughout the sampling period (p. 10)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Maximum likelihood estimation of the Poisson transition rates of the search-and-matching model, standard deviations bootstrapped with 500 draws",
+     "evidence": [
+      "e1",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Likelihood of employment spell durations and destinations, Section 6.2; the parameter is s^j estimated separately by record group.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders and 1,703,401 workers without criminal records (Table A.2 observations); Table A.3 prints no N",
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Table A.3, panel 'Estimated by MLE', row 'Job separation rate', column 'Ex-offenders' (p. 13); comparison value from column 'Workers no records'",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::TA3::_::C1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "job separation rate (s)"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "job separation rate (s)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "fefa849030584d2a",
+      "n_chars": 70
+     },
+     {
+      "page": 10,
+      "sha256_16": "ddfea89f48ff5c03",
+      "n_chars": 104
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper never discusses the estimated job separation rate s^j in the text; the sign of the group difference is read off the two columns of Table A.3 and is consistent with the text's statement that ex-offenders are more likely to leave their first jobs.",
+    "No test of the difference between the two groups' estimated rates is reported."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Ex-offenders)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Workers no records)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C2"
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "fefa849030584d2a",
+     "n_chars": 70
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": "Table A.3",
+     "page": 13,
+     "how": "Table A.3 prints the point estimate and a bootstrap standard deviation only; no confidence interval, p-value or outcome standard deviation."
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "1d2e07b81fb8b507",
+     "n_chars": 42
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "b5a94015cee62ac5",
+     "n_chars": 183
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 13,
+     "sha256_16": "f843b34c394616d7",
+     "n_chars": 104
+    },
+    {
+     "id": "e9",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": null,
+     "as_printed": "P(u_{t2}^C|w) = s^C / (μ_Eπ(1 − Γ(ḡ_e^C)) + λ_E^C(1 − F^{NP}(w)) + s^C)",
+     "lhs": null,
+     "terms": [
+      {
+       "expression": "s^j",
+       "role": "parameter_of_interest",
+       "parameter": "s^j"
+      },
+      {
+       "expression": "λ_E^j(1 − F^{j}(w))",
+       "role": "other",
+       "parameter": "λ_E^j"
+      }
+     ],
+     "parameter_of_interest": "s^j",
+     "index_sets": [
+      {
+       "symbol": "j",
+       "over": "criminal-record status, j ∈ {C, NC}"
+      }
+     ],
+     "normalisation": null,
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "distributional",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "proportional_hazards",
+       "source": "implied_by_equation",
+       "testable": null,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e6"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "indicating that ex-offenders are more likely to leave their first jobs",
+    "sha256_16": "fefa849030584d2a",
+    "n_chars": 70
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c5",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Ex-offenders stay unemployed longer than workers without criminal records: a mean unemployment duration of 6.7056 months against 5.1252 months.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Duration unemployed (t_1), in months",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Mean length of the unemployment spell: 'The duration of unemployment is recorded as the time from the end date of their first employment record to the start date of their second employment record, denoted as t_1.' For ex-offenders the spell begins at release from prison.",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "timing": {
+     "value": "Unemployment spell observed from the individual's first unemployment after 1 January 1986 (for ex-offenders: after release) until the next employment record, within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 6.7056,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "months of unemployment (group mean for ex-offenders)",
+      "evidence": [
+       "e1",
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'Ex-offenders remain unemployed for an average of 6.71 months, compared with 5.13 months for workers without criminal records.' (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 5.1252,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Men aged 15-35 in Denmark 1986-2003 observed in an unemployment spell, with and without an incarceration record.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None: a comparison of group means of observed spell durations between ex-offenders and workers without criminal records.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The two groups are comparable in everything except the incarceration record; no covariates are adjusted for in this comparison.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No balance table, covariate adjustment or test is reported for the duration means.",
+      "evidence": [
+       "e3",
+       "e5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Unemployment spells are measured as the gap between consecutive employment records, so individuals who never return to employment (or who leave the register) are not measured in the same way.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Section 6.1 defines the duration this way and footnote 11 notes that unemployed individuals with no employment records are excluded.",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "having at least one employment record in the SPELL register",
+         "to": "duration unemployed (t_1)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The data exclude unemployed individuals who do not have any employment records (footnote 11, p. 9)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Group means of observed spell durations (no regression)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Mean of t_1 by record group, Table A.2.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders; 1,703,401 workers without criminal records; 1,726,923 full sample",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table A.2, 'Duration means.', row 'Duration unemployed (t1)', columns 'Ex-offenders' and 'Workers no records' (p. 12)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "duration unemployed (t_1)",
+     "having at least one employment record in the SPELL register"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "duration unemployed (t_1)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "having at least one employment record in the SPELL register",
+      "to": "duration unemployed (t_1)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "7d90c947b57727c6",
+      "n_chars": 125
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table A.2 reports group means without standard errors, so no test of the difference is available."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "7d90c947b57727c6",
+     "n_chars": 125
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Table A.2",
+     "page": 12,
+     "how": "Table A.2 prints group means only: no standard errors, confidence intervals, p-values or standard deviations are reported."
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "ddfea89f48ff5c03",
+     "n_chars": 104
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "535c08b44ec4adc1",
+     "n_chars": 155
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "3d5c67b81ce85daf",
+     "n_chars": 80
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "Ex-offenders remain unemployed for an average of 6.71 months, compared with 5.13 months for workers without criminal records.",
+    "sha256_16": "7d90c947b57727c6",
+    "n_chars": 125
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c6",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Ex-offenders' first employment spell is shorter than that of workers without criminal records: a mean employment duration of 12.3747 months against 22.2256 months.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Duration employed (t_2), in months",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Mean length of the employment spell that follows the unemployment spell: 'When a worker secures a job and becomes employed, their employment duration, denoted as t_2, is then tracked.' For ex-offenders this is the first job after release.",
+     "confidence": "high",
+     "evidence": [
+      "do5"
+     ]
+    },
+    "timing": {
+     "value": "Employment spell following the first observed unemployment spell, within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 12.3747,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "months of employment (group mean for ex-offenders)",
+      "evidence": [
+       "e1",
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'The duration of the first job after release is about half as long for ex-offenders as for workers without criminal records' (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 22.2256,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Men aged 15-35 in Denmark 1986-2003 observed in an employment spell following unemployment, with and without an incarceration record.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None: a comparison of group means of observed employment spell durations between ex-offenders and workers without criminal records.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The two groups are comparable in everything except the incarceration record; no covariates are adjusted for in this comparison.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No balance table, covariate adjustment or test accompanies Table A.2.",
+      "evidence": [
+       "e3",
+       "e5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Employment spells that are still ongoing at the end of the data period are treated consistently across groups in the computation of mean durations.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The data section notes that some workers remain in the same job until the end of the data period; Table A.2 reports raw means without a censoring correction.",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Many workers without criminal records remain in their jobs throughout the sampling period, which the paper offers as a reason for their longer measured employment durations (p. 10)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Group means of observed spell durations (no regression)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Mean of t_2 by record group, Table A.2.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders; 1,703,401 workers without criminal records; 1,726,923 full sample",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table A.2, 'Duration means.', row 'Duration employed (t2)', columns 'Ex-offenders' and 'Workers no records' (p. 12)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "Ex-offenders leave their first jobs either by finding another job or by returning to jail."
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "duration employed (t_2)"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "duration employed (t_2)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "e7b34bdfd0908fef",
+      "n_chars": 122
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table A.2 reports group means without standard errors, so no test of the difference is available."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "e7b34bdfd0908fef",
+     "n_chars": 122
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Table A.2",
+     "page": 12,
+     "how": "Table A.2 prints group means only: no standard errors, confidence intervals, p-values or standard deviations are reported."
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "ddfea89f48ff5c03",
+     "n_chars": 104
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "3d03654bcfeec566",
+     "n_chars": 78
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do5",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "30a94c03c57e33de",
+     "n_chars": 75
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "The duration of the first job after release is about half as long for ex-offenders as for workers without criminal records",
+    "sha256_16": "e7b34bdfd0908fef",
+    "n_chars": 122
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c7",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Among ex-offenders, the maximum-likelihood monthly rate of returning to prison is higher out of unemployment (0.0107) than out of employment (0.0085).",
+   "treatment": {
+    "label": "Labour market status while searching: unemployed rather than employed",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "The worker's labour market state, k ∈ {E, U}: 'The subscript k ∈ {E, U } denotes the worker's labor market status, with E for employed and U for unemployed.' Unemployed workers can commit crimes whenever a criminal opportunity arises, while employed workers do not commit crimes while on duty.",
+     "confidence": "high",
+     "evidence": [
+      "dt3"
+     ]
+    },
+    "timing": {
+     "value": "Current spell state during 1986-2003 (unemployment spell t_1 versus employment spell t_2).",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "Incarcerated rate (η_U^j out of unemployment, η_E^j out of employment)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Incarceration records (KRIN register) merged with the SPELL register, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "Poisson rate at which an ex-offender transitions from the current labour market state into incarceration, estimated by maximum likelihood from the share of spells that end in a return to jail; in the model this rate equals μ_kπ(1 − Γ(ḡ_k^j)).",
+     "confidence": "high",
+     "evidence": [
+      "e4"
+     ]
+    },
+    "timing": {
+     "value": "Transition observed during the first unemployment spell t_1 or the following employment spell t_2, within 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do3"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.0107,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(1.8753×10−4)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "monthly Poisson rate of transition into incarceration from unemployment, ex-offenders",
+      "evidence": [
+       "e1",
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'7.16% of unemployed ex-offenders return to prison, compared to only 1.16% of employed ex-offenders' (p. 2); Table A.2 reports the corresponding flow shares as .0716 and .0109.",
+     "se": {
+      "value": 0.00018753,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 0.0085,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "structural_parameter",
+    "target_population": "Ex-offenders (men aged 15-35 with an incarceration record 1986-2003) in unemployment versus in employment.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Observed spell durations and the share of unemployment and employment spells of ex-offenders that end in a return to jail, fitted by maximum likelihood to the Poisson transition structure.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Transitions into incarceration follow a Poisson process whose rate is μ_kπ(1 − Γ(ḡ_k^j)), i.e. the product of the crime-opportunity arrival rate, the apprehension probability and the probability that the crime value exceeds the reservation value.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Imposed in the likelihood of Section 6.2; the paper notes that the crime arrival rate is not separately identified from this transition rate.",
+      "evidence": [
+       "e4",
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "P(Θ_{t1}^C) = μ_Uπ(1−Γ(ḡ_u^C)) / (μ_Uπ(1−Γ(ḡ_u^C)) + λ_U^C)"
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Employed workers do not commit crimes while on duty, whereas unemployed workers can commit crimes whenever a criminal opportunity arises, so the crime-opportunity arrival rate is at least as high in unemployment (μ_U ≥ μ_E).",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Section 3 as 'consistent with empirical evidence from Landersø et al. (2017)'; in the numerical exercise μ_E = μ_U is imposed instead.",
+      "evidence": [
+       "e7",
+       "e8"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "potential_outcome_restriction",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "μ_U ≥ μ_E"
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The estimation of the transition rate from (un)employment to imprisonment does not allow separate identification of the crime arrival rate (p. 10)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "Whether the higher incarceration rate out of unemployment reflects a higher arrival rate of criminal opportunities or a lower reservation crime value cannot be separated, because the crime arrival rate is not separately identified."
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Maximum likelihood estimation of the Poisson transition rates of the search-and-matching model, standard deviations bootstrapped with 500 draws",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Likelihood of Section 6.2; η_U^j and η_E^j are the unemployed and employed incarceration rates reported in the 'Ex-offenders' column of Table A.3.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "23,522 ex-offenders (Table A.2 observations); Table A.3 prints no N",
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Table A.3, panel 'Estimated by MLE', rows 'Unemployed incarcerated rate' and 'Employed incarcerated rate', column 'Ex-offenders' (p. 13)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::TA3::_::C1"
+   },
+   "mediators_claimed": [
+    "Unemployed workers have more unstructured time and therefore a higher arrival rate of criminal opportunities."
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "labour market status (unemployed vs employed)",
+     "rate of transition into incarceration"
+    ],
+    "edges": [
+     {
+      "from": "labour market status (unemployed vs employed)",
+      "to": "rate of transition into incarceration",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 2,
+      "sha256_16": "bd725af078e30ab3",
+      "n_chars": 112
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The point estimate and baseline are the two MLE rates η_U = .0107 and η_E = 0.0085 from the 'Ex-offenders' column of Table A.3; the text's 7.16% versus 1.16% are flow shares, and Table A.2 prints the employment-to-incarceration flow as .0109, not .0116.",
+    "No test of the difference between η_U and η_E is reported."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Estimated by MLE (column: Ex-offenders)",
+     "page": 13,
+     "regression_id": "dk_W4403134807::TA3::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "bd725af078e30ab3",
+     "n_chars": 112
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Table A.3",
+     "page": 13,
+     "how": "Table A.3 prints the point estimate and a bootstrap standard deviation only; no confidence interval, p-value or outcome standard deviation."
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "b3c519ac704bac27",
+     "n_chars": 72
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "e96dc69ec2119495",
+     "n_chars": 32
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "14bad1c705ca6401",
+     "n_chars": 139
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "322602928ef794ae",
+     "n_chars": 151
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "3002848ac773ce94",
+     "n_chars": 244
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 13,
+     "sha256_16": "f843b34c394616d7",
+     "n_chars": 104
+    },
+    {
+     "id": "e10",
+     "kind": "table",
+     "exhibit": "Table A.2",
+     "panel": null,
+     "page": 12,
+     "regression_id": null
+    },
+    {
+     "id": "dt3",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "8e9c4c36387f5aba",
+     "n_chars": 46
+    },
+    {
+     "id": "do3",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "5d8cced660eb66e4",
+     "n_chars": 111
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": null,
+     "as_printed": "P(Θ_{t1}^C) = μ_Uπ(1 − Γ(ḡ_u^C)) / (μ_Uπ(1 − Γ(ḡ_u^C)) + λ_U^C); P(Θ_{t2}^C|w) = μ_Eπ(1 − Γ(ḡ_e^C)) / (μ_Eπ(1 − Γ(ḡ_e^C)) + λ_E^C(1 − F^{NP}(w)) + s^C)",
+     "lhs": null,
+     "terms": [
+      {
+       "expression": "μ_Uπ(1 − Γ(ḡ_u^C))",
+       "role": "parameter_of_interest",
+       "parameter": "η_U^j"
+      },
+      {
+       "expression": "μ_Eπ(1 − Γ(ḡ_e^C))",
+       "role": "parameter_of_interest",
+       "parameter": "η_E^j"
+      }
+     ],
+     "parameter_of_interest": "η_U^j and η_E^j (the incarceration transition rates μ_kπ(1 − Γ(ḡ_k^j)))",
+     "index_sets": [
+      {
+       "symbol": "j",
+       "over": "criminal-record status, j ∈ {C, NC}"
+      }
+     ],
+     "normalisation": null,
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "distributional",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "proportional_hazards",
+       "source": "implied_by_equation",
+       "testable": null,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e4"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with endogenous crime decisions",
+    "Becker (1968) economic model of crime"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 2,
+    "text": "Furthermore, 7.16% of unemployed ex-offenders return to prison, compared to only 1.16% of employed ex-offenders.",
+    "sha256_16": "bd725af078e30ab3",
+    "n_chars": 112
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c8",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "In the data, the distribution of wage residuals of ex-offenders weakly stochastically dominates that of workers without criminal records.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Distribution of wage residuals (empirical CDF of the residual from the Mincerian regression)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates) merged with incarceration records, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "do2"
+     ]
+    },
+    "definition": {
+     "value": "The empirical cumulative distribution function of the residual ϵ_it from the Mincerian OLS regression of Section 2, plotted separately for ex-offenders and workers without criminal records; the residuals 'strip out observable heterogeneity in age, education, and job type'.",
+     "confidence": "high",
+     "evidence": [
+      "e5"
+     ]
+    },
+    "timing": {
+     "value": "Residual of the wage in the first observed employment spell, 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "do1"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'across most of the distribution, ex-offenders earn wages that are at least as high as, and often slightly higher than, those of non-offenders, resulting in a modest average wage premium for ex-offenders' (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "distributional",
+    "target_population": "Men aged 15-35 in Denmark 1986-2003 with an observed employment spell, with and without an incarceration record.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None: a comparison of the empirical CDFs of Mincerian wage residuals between the two record groups (Fig. 3, left panel).",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The Mincerian residuals remove the observable heterogeneity in age, education and job type, so the remaining distributional difference is the conditional wage gap of interest.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Section 2 as the purpose of using the residuals; rests on the same linear specification as Table A.1 and is not otherwise validated.",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The 10th and 90th percentiles of the wage residuals are excluded, so the compared distributions are trimmed.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 2, p. 3.",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "trimming of the 10th and 90th percentile of wage residuals",
+         "to": "distribution of wage residuals",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Empirical cumulative distribution functions of Mincerian wage residuals by record group (no estimation beyond the OLS residuals)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 3, left panel: 'Wage Distribution of Workers with and without Criminal Records from Data'; the right panel shows the model counterpart.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "1,726,923 (the Mincerian estimation sample, trimmed at the 10th and 90th percentile of wage residuals)",
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Figure 3, panel A ('Wage Distribution of Workers with and without Criminal Records from Data'), p. 11",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::F3"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "distribution of wage residuals",
+     "trimming of the 10th and 90th percentile of wage residuals"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "distribution of wage residuals",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "education (at least a bachelor's degree)",
+       "age and age squared",
+       "full-time vs part-time",
+       "year"
+      ]
+     },
+     {
+      "from": "trimming of the 10th and 90th percentile of wage residuals",
+      "to": "distribution of wage residuals",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "df70c4b05fe5f90c",
+      "n_chars": 145
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Fig. 3 prints no numerical annotation, test statistic or axis value for the dominance claim; the only numbers attached to it are the 1.92% Mincerian coefficient and the 2.35% model wage gap reported elsewhere."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 3",
+     "panel": "A: Wage Distribution of Workers with and without Criminal Records from Data",
+     "page": 11,
+     "annotation": "Fig. 3. Wage residual distributions by model and from Mincerian regression. (axis labels: x; F(x); legend: 'workers without records', 'ex-offenders')",
+     "figure_id": "dk_W4403134807::F3"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "df70c4b05fe5f90c",
+     "n_chars": 145
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Figure 3",
+     "page": 11,
+     "how": "The figure is a pair of CDF curves with no printed values, no test statistic and no uncertainty band; the paper reports no estimate of the dominance relation itself."
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": "Figure 3 / Table A.2",
+     "page": 11,
+     "how": "No mean or standard deviation of the wage residual distribution is printed for either group; Table A.3 reports only the overall max (2.1865), min (0.3595) and mean (1.2161) wage residual as calibration targets, not by group."
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "81bae848fd740799",
+     "n_chars": 190
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "b8d62ced249e606c",
+     "n_chars": 100
+    },
+    {
+     "id": "e7",
+     "kind": "table",
+     "exhibit": "Table A.1",
+     "panel": null,
+     "page": 12,
+     "regression_id": "dk_W4403134807::TA1::_::C1"
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    },
+    {
+     "id": "do1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "4e1d4b6e93a77cb8",
+     "n_chars": 210
+    },
+    {
+     "id": "do2",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "c3b644d0e61553c1",
+     "n_chars": 115
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "One striking stylized fact from the data is that the wage distribution of ex-offenders weakly dominates that of workers without criminal records.",
+    "sha256_16": "df70c4b05fe5f90c",
+    "n_chars": 145
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c9",
+   "headline": false,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "In the calibrated search-and-matching model with taste-based discrimination, ex-offenders earn on average 2.35% more than workers without criminal records, against 1.91% in the Danish register data.",
+   "treatment": {
+    "label": "Criminal records (indicator for an imprisonment record)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "KRIN register (incarceration records), Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "dt2"
+     ]
+    },
+    "definition": {
+     "value": "I_i^{imprisonment} = 1 if individual i has an incarceration record during the sample period 1986-2003 and 0 otherwise; 'Workers without criminal records are defined as those who had no incarceration records between 1986 and 2003.'",
+     "confidence": "high",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "timing": {
+     "value": "Incarceration recorded at any time during 1986-2003; for ex-offenders the outcome spell is the first employment spell beginning after release from prison.",
+     "confidence": "medium",
+     "evidence": [
+      "dt1"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Wage gap between ex-offenders and workers without criminal records (equilibrium average wage premium), in percent",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Calibrated model moments; data counterpart from the SPELL register and incarceration records, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "definition": {
+     "value": "The model's steady-state average wage of ex-offenders relative to workers without criminal records, computed from the equilibrium earned-wage distributions and reported in Table A.4 next to its data counterpart.",
+     "confidence": "high",
+     "evidence": [
+      "e1",
+      "e2"
+     ]
+    },
+    "timing": {
+     "value": "Steady-state equilibrium of the calibrated model; the data counterpart is the 1986-2003 Mincerian wage gap.",
+     "confidence": "medium",
+     "evidence": [
+      "e9"
+     ]
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 2.35,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent (model-implied average wage gap, ex-offenders relative to workers without criminal records)",
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'the model suggests that ex-offenders earn on average about 2.35% more than comparable workers without records, reflecting the fact that only unprejudiced firms hire ex-offenders' (p. 11)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 1.91,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "structural_parameter",
+    "target_population": "Employed ex-offenders and employed workers without criminal records in the steady state of the calibrated model, matched to Danish men aged 15-35, 1986-2003.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Equilibrium of the calibrated search-and-matching model: ex-offenders receive offers only from unprejudiced firms, which post higher wages when they are a majority (φ = .69).",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Prejudiced firms experience disutility from hiring ex-offenders and screen them out, so ex-offenders receive offers only from unprejudiced firms.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated as the central modelling assumption in Section 3; it is not tested, and firms' attitudes are never observed in the data.",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "When the share of unprejudiced firms exceeds one half, unprejudiced firms attract a larger labour force and, under profit maximisation, post higher wages than prejudiced firms.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Derived from the first-order conditions of the profit-maximisation problem (Lemma 4 and its proof, p. 12); the calibrated share is φ = .69.",
+      "evidence": [
+       "e5",
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "φ > 0.5"
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The calibrated parameter values (productivities y_h and y_l, share of unprejudiced firms φ, unemployment benefits b_0 and b_1) are the ones that match the moments of the wage residuals, given the MLE transition rates.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table A.3 lists the calibration targets (max, min and mean wage residual, wage residual at ϕ); no over-identification test is reported.",
+      "evidence": [
+       "e7",
+       "e8"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [
+     "The model's equilibrium predictions for the unemployment rate, overall crime rate, incarceration rate and recidivism rates at 6, 12 and 24 months are compared with their Danish register counterparts in Table A.4."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Numerical computation of the steady-state equilibrium of the calibrated search-and-matching model",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equilibrium wage gap in Table A.4 ('Results at equilibrium.'), computed from the parameter values of Table A.3.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table A.4, 'Results at equilibrium.', row 'Wage gap', columns 'Model' and 'Danish register data' (p. 13)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "Only unprejudiced firms hire ex-offenders, and unprejudiced firms post higher wages when they are a majority."
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "criminal record (imprisonment indicator)",
+     "equilibrium average wage gap",
+     "share of unprejudiced firms (φ)",
+     "firm wage posting"
+    ],
+    "edges": [
+     {
+      "from": "criminal record (imprisonment indicator)",
+      "to": "equilibrium average wage gap",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "share of unprejudiced firms (φ)",
+      "to": "firm wage posting",
+      "kind": "causal_assumed",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "firm wage posting",
+      "to": "equilibrium average wage gap",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 11,
+      "sha256_16": "f507a8b4c4de350b",
+      "n_chars": 109
+     },
+     {
+      "page": 1,
+      "sha256_16": "0b1e646c078d41a1",
+      "n_chars": 114
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table A.4 gives the data wage gap as 1.91 while Table A.1 and the text give 1.92%; both are transcribed as printed in their own place.",
+    "The introduction describes the 2.35% figure as the gap in median wages ('The median wage of ex-offenders is approximately 2.35% higher'), while p. 11 and Table A.4 describe it as an average wage gap."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table A.4",
+     "panel": null,
+     "page": 13,
+     "regression_id": null
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 11,
+     "sha256_16": "f507a8b4c4de350b",
+     "n_chars": 109
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Table A.4",
+     "page": 13,
+     "how": "Table A.4 prints the model and data values side by side with no standard error, confidence interval, p-value or distance statistic."
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "d880f2c1580bbc02",
+     "n_chars": 190
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 8,
+     "sha256_16": "4906430d587e05f8",
+     "n_chars": 160
+    },
+    {
+     "id": "e6",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Calibration from the model",
+     "page": 13,
+     "regression_id": null
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "fc4d5ae3658ac898",
+     "n_chars": 112
+    },
+    {
+     "id": "e8",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": null,
+     "page": 13,
+     "regression_id": null
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 11,
+     "sha256_16": "e8a74befd28add05",
+     "n_chars": 88
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": "Table A.4",
+     "page": 13,
+     "how": "Table A.4 reports equilibrium quantities of the calibrated model and their data counterparts; no sample size is attached to the row."
+    },
+    {
+     "id": "dt1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "78656da69ce7006f",
+     "n_chars": 109
+    },
+    {
+     "id": "dt2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "348f7e6735fe5ab1",
+     "n_chars": 140
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders",
+    "taste-based discrimination"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 11,
+    "text": "the model suggests that ex-offenders earn on average about 2.35% more than comparable workers without records",
+    "sha256_16": "f507a8b4c4de350b",
+    "n_chars": 109
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c10",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Allowing firms to differ in productivity makes the model-implied wage distribution fit the empirical distribution of Mincerian wage residuals better than a homogeneous-productivity benchmark does.",
+   "treatment": {
+    "label": "Firm productivity specification in the model (heterogeneous productivity y_h > y_l versus homogeneous productivity)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Not a register variable: a model specification choice",
+     "confidence": "high",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "definition": {
+     "value": "Two versions of the calibrated model: one in which all firms have identical productivity and one in which firms differ in productivity (y_h = 4.2319, y_l = 3.0349, with a share ϕ = .7952 of low-productivity firms).",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "timing": {
+     "value": "Steady-state equilibrium of the calibrated model, compared against the 1986-2003 wage residuals.",
+     "confidence": "medium",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "Fit of the model-implied wage distribution to the empirical CDF of wage residuals",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Model output compared with wage residuals built from the SPELL register, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "e5"
+     ]
+    },
+    "definition": {
+     "value": "Visual comparison in Fig. 1 of the empirical CDF of the Mincerian wage residuals ('data') with the CDFs implied by the homogeneous-productivity and heterogeneous-productivity versions of the model; the stated criterion is reproducing the variance/dispersion observed in the data.",
+     "confidence": "high",
+     "evidence": [
+      "e1",
+      "e5"
+     ]
+    },
+    "timing": {
+     "value": "Steady-state equilibrium versus the 1986-2003 empirical residual distribution.",
+     "confidence": "medium",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'the figure clearly shows that the heterogeneous-productivity specification provides a substantially better fit to the empirical distribution than the homogeneous benchmark' (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "The calibrated model's wage distribution compared with the empirical wage residual distribution of Danish men aged 15-35, 1986-2003.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Comparison of two calibrated versions of the same model (homogeneous versus heterogeneous firm productivity) against the same empirical residual distribution.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The empirical CDF of the Mincerian wage residuals is the right object for the model's equilibrium earned-wage distribution to match.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated in Section 2 and again in Section 6.3; the residuals are the calibration targets listed in Table A.3.",
+      "evidence": [
+       "e5",
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Goodness of fit is judged visually from the plotted CDFs rather than by a formal distance or test statistic.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Fig. 1 and the surrounding text report no distance measure, likelihood comparison or test.",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Visual goodness-of-fit comparison of model-implied and empirical cumulative distribution functions",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 1: empirical CDF of wage residuals ('data') against the 'Homo-productivity' and 'Heter-productivity' model CDFs.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 1, 'Comparison between heterogeneity and homogeneity of productivity.', p. 4",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::F1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "firm productivity heterogeneity in the model",
+     "fit of the model-implied wage distribution to the data"
+    ],
+    "edges": [
+     {
+      "from": "firm productivity heterogeneity in the model",
+      "to": "fit of the model-implied wage distribution to the data",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "8400ee6e6f2f26e9",
+      "n_chars": 161
+     },
+     {
+      "page": 10,
+      "sha256_16": "e0deca07c3c4a992",
+      "n_chars": 126
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The comparison is purely visual: Fig. 1 prints no fit statistic, and the paper reports no formal distance between the model and empirical distributions."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A: Empirical CDF (single-panel figure)",
+     "page": 4,
+     "annotation": "Fig. 1. Comparison between heterogeneity and homogeneity of productivity. (in-figure title 'Empirical CDF'; axes x and F(x); legend: 'data', 'Homo-productivity', 'Heter-productivity')",
+     "figure_id": "dk_W4403134807::F1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "e0deca07c3c4a992",
+     "n_chars": 126
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 4,
+     "how": "The figure plots three CDF curves with no printed values, no fit statistic and no uncertainty band; the text reports no numerical measure of fit."
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 4,
+     "how": "No baseline mean, standard deviation or sample size is printed with the figure."
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "81bae848fd740799",
+     "n_chars": 190
+    },
+    {
+     "id": "e6",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": "Calibration from the model",
+     "page": 13,
+     "regression_id": null
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "4e9500bc20cfcc67",
+     "n_chars": 233
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with on-the-job search and firm productivity heterogeneity"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "introducing productivity heterogeneity across firms yields a wage distribution that closely matches the wage residuals from the Mincerian regression in Section 2",
+    "sha256_16": "8400ee6e6f2f26e9",
+    "n_chars": 161
+   }
+  },
+  {
+   "claim_id": "dk_W4403134807_c11",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-09T21:43:10.486292+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The calibrated model reproduces the empirical wage distributions of both ex-offenders and workers without criminal records.",
+   "treatment": {
+    "label": "Calibrated search-and-matching model with taste-based discrimination (model-implied equilibrium wage distribution)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Not a register variable: model output",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "definition": {
+     "value": "The equilibrium earned-wage distributions implied by the model at the parameter values of Table A.3, plotted against the empirical wage residual distribution separately for each record group.",
+     "confidence": "high",
+     "evidence": [
+      "e6"
+     ]
+    },
+    "timing": {
+     "value": "Steady-state equilibrium of the calibrated model, compared with the 1986-2003 wage residuals.",
+     "confidence": "medium",
+     "evidence": [
+      "e5"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "Empirical wage distribution of each record group (CDF of Mincerian wage residuals)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "SPELL register (employment spell start and end dates) merged with incarceration records, Danish register data from Statistics Denmark",
+     "confidence": "high",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "definition": {
+     "value": "Empirical CDF of the wage residuals for ex-offenders (panel A) and for workers without criminal records (panel B), each plotted against the corresponding model curve.",
+     "confidence": "high",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "timing": {
+     "value": "Wage in the first observed employment spell, 1986-2003.",
+     "confidence": "medium",
+     "evidence": [
+      "e1"
+     ]
+    },
+    "polarity": "not_ordered"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e7"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'The close correspondence between the model's wage distributions and the empirical wage residual distributions indicates that the calibrated model captures the key wage dynamics for each subgroup' (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Ex-offenders and workers without criminal records (Danish men aged 15-35, 1986-2003) and their model counterparts.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Male individuals aged 15 to 35 in Danish register data 1986-2003, observed in the SPELL employment register, split into ex-offenders (an incarceration record 1986-2003) and workers without criminal records.",
+    "birth_cohorts": null,
+    "ages": "15 to 35",
+    "sex": "men",
+    "period": "1986-2003",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "ex-offenders (incarceration record 1986-2003)",
+     "workers without criminal records"
+    ],
+    "selection": "Restricted to males aged 15-35; individuals enter the data from the first time they become unemployed after 1 January 1986; only workers with a job worked for at least 7 days in the SPELL records are included; the 10th and 90th percentile of the wage residuals are excluded; wages are observed only for individuals with an employment spell.",
+    "period_range": {
+     "from": 1986,
+     "to": 2003
+    }
+   },
+   "identification": {
+    "strategy": "structural_model",
+    "source_of_variation": "Comparison of the calibrated model's equilibrium wage distributions with the empirical wage residual distributions, separately by record group (Fig. 2).",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The transition rates estimated by MLE and the calibrated parameters are the right inputs, so any remaining distance between model and data is a failure of the model rather than of the calibration targets.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The calibration is described in Section 6.3 and Table A.3; no over-identification or specification test is reported.",
+      "evidence": [
+       "e5",
+       "e6"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Goodness of fit is judged visually from the plotted CDFs rather than by a formal distance or test statistic.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Fig. 2 and the surrounding text report no distance measure or test.",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [
+     "Table A.4 compares the model's equilibrium unemployment rate, crime rate, incarceration rate and recidivism rates with their Danish register counterparts."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Visual goodness-of-fit comparison of model-implied and empirical cumulative distribution functions, by record group",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 2, panels 'Wage Distribution of Ex-offenders' and 'Wage Distribution of Workers without Criminal Records', each plotting 'data' against 'model'.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 2, 'Wage distribution by groups.', p. 10",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4403134807::F2"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "criminal record status (ex-offenders versus workers without criminal records)",
+     "finding": "The model is said to replicate the wage distribution in both panels of Fig. 2; no separate fit statistic is given for either group."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "calibrated search-and-matching model with taste-based discrimination",
+     "empirical wage distribution by record group"
+    ],
+    "edges": [
+     {
+      "from": "calibrated search-and-matching model with taste-based discrimination",
+      "to": "empirical wage distribution by record group",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "ef7d4595799a7b6b",
+      "n_chars": 73
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The claim is a goodness-of-fit statement with no printed number: Fig. 2 carries no fit statistic, and the paper reports no formal distance between the model and empirical distributions."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 2",
+     "panel": "A: Wage Distribution of Ex-offenders | B: Wage Distribution of Workers without Criminal Records",
+     "page": 10,
+     "annotation": "Fig. 2. Wage distribution by groups. (axes x and F(x); legend in each panel: 'data', 'model')",
+     "figure_id": "dk_W4403134807::F2"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "ef7d4595799a7b6b",
+     "n_chars": 73
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Figure 2",
+     "page": 10,
+     "how": "The figure plots data and model CDF curves with no printed values, no fit statistic and no uncertainty band."
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": "Figure 2",
+     "page": 10,
+     "how": "No baseline mean, standard deviation or sample size is printed with the figure."
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "57b6d745c2e04959",
+     "n_chars": 186
+    },
+    {
+     "id": "e6",
+     "kind": "table",
+     "exhibit": "Table A.3",
+     "panel": null,
+     "page": 13,
+     "regression_id": null
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "a884ae2f393c143d",
+     "n_chars": 194
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "search-and-matching model with taste-based discrimination against ex-offenders"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 10,
+    "text": "The model successfully replicates the wage distributions for both groups.",
+    "sha256_16": "ef7d4595799a7b6b",
+    "n_chars": 73
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "2db336861cbef1af9ee23d9a5e4975ac68414cd31f50b2a0b9c7eae0b7eae5bc",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-09T07:02:37.515433+00:00",
+  "tables_sha256": "47bc751c65a77bfec4e929c731f6d57f5b4d1990ca58a2e846c4fad7a679b461",
+  "figures_sha256": "988cf45b9aed1d2cb4b1c514c609770df8b5c37d252d03db3e3062e0b8e830d0"
+ },
+ "public_export": {
+  "anchor_quotes": 11,
+  "quotes_hashed": 109,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

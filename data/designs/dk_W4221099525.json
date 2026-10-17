@@ -1,0 +1,45 @@
+{
+ "artid": "dk_W4221099525",
+ "paper": {
+  "title": "PriSUD-Nordic: Intervening substance use disorders in the prison population - A public health opportunity",
+  "year": 2021,
+  "journal": "Research Council of Norway (grant application assessment form; not a journal article)",
+  "code_data_availability": "Absent. The document contains no data or code availability statement and no Statistics Denmark / DST project reference. …"
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "None. The document is a referee's assessment of a grant application and analyses no data of its own; it has no study universe, no estimation sample and no unit of observation.",
+   "unit_of_observation": "not applicable -- the document is an assessment form, not an empirical study",
+   "selection_rules": [],
+   "period": null,
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "The document is a Research Council of Norway referee/panel assessment form for grant application number 301535, project title 'PriSUD-Nordic: Intervening substance use disorders in the prison population - A public health opportunity', project manager 'Bukten, Anne' (p. 1). It is six pages of criterion-by-criterion prose assessment plus a summary of marks.",
+   "It is NOT an empirical research paper: it reports no data construction, no variables, no estimating equation, no table and no figure. The accompanying digest.json independently confirms this, with counts.regressions = 0, counts.tables = 0 and counts.figures = 0.",
+   "The only numbers printed in the whole document are the project number (301535), the referee marks on the Research Council's 1-7 scale ('Excellence 5', 'Impact 6', 'Implementation 5', 'Overall assessment of the referee/panel 5', p. 2), page numbers, work-package numbers, and the span '5-7 years' in the phrase 'some of the prison cohorts are not updated, and therefore we do not have data from the past 5-7 years' (p. 5). None of these is an estimate, a standard error, an interval or a p-value.",
+   "Register-type data are mentioned only as a feature of the PROPOSED project being assessed, never as data the document itself analyses: 'The combination of Registry data and qualitative methods is particularly strong. The Registry data, in particular, and the construction of synthetic cohorts is a considerable strength' (p. 3). No specific register is named, no country-specific register system is identified, and no Danish register (BEF, IND, RAS, LPR, ...) or register variable appears anywhere in the text. data.registers is therefore empty rather than populated from these mentions.",
+   "Denmark enters only as one of three Nordic countries in which the proposed project might be carried out, and only as a stated shortcoming of the application: 'it is unclear if all WPs will be conducted in both Norway, Denmark and Sweden' (p. 3); 'uncertainty about WPIII and the work loads in DK and S' (p. 5). There is no Danish-register analysis in this document.",
+   "paper.year = 2021 is DERIVED, not printed: the document itself carries no date. It is taken from the PDF file's /ModDate metadata, 'D:20211025140309+02''00''' (/CreationDate is 'D:20191023074207+02''00''', which is the JasperReports form template's creation date rather than this assessment's). Confidence low.",
+   "paper.authors is omitted deliberately. The assessment is unsigned ('I/We have no conflicts of interest...', p. 1) and the named individuals on the cover page are role-holders of the application under review, not authors of this text: 'Bukten, Anne' (project manager) and 'Torbjorg Oyslebo' (case officer). The cover page's field labels are printed after their values by the form's layout, so even those role assignments cannot be read off the text layer with certainty."
+  ]
+ },
+ "claims": [],
+ "extraction_note": "NO CLAIMS EXTRACTED, deliberately. The PDF under this artid is not an economics paper and not an empirical paper of any kind: it is a six-page referee/panel assessment form submitted to the Research Council of Norway, evaluating grant application 301535 ('PriSUD-Nordic'). It tests nothing. It reports no treatment, no outcome, no identification strategy, no estimator, no coefficient, no standard error and no sample, and it does not analyse Danish register data -- Denmark appears only as a country where part of the PROPOSED project might be run. Its entire empirical content is three criterion marks on the Council's 1-7 scale (Excellence 5, Impact 6, Implementation 5) and an overall mark of 5, which are a referee's judgements of an application, not estimates of any quantity. The independent table/figure pass reached the same conclusion: digest.json lists zero regressions, zero tables and zero figures. Because the instruction is to extract every claim the paper actually TESTS and no other, the correct claim count here is zero, and claims[] is empty. This violates the schema's claims.minItems = 1 -- which validate.py does not enforce -- and that violation is the finding, not an oversight: the artid should be dropped from the corpus as a harvesting error, or the PDF replaced with the paper OpenAlex W4221099525 was meant to point at. Writing a single placeholder claim to satisfy minItems would have manufactured a treatment, an outcome, a sign and a quote that do not exist in this document, so it was not done.",
+ "extraction_inputs": {
+  "digest_sha256": "7e1e6cb4c8cca7b520abe597427c72bd4081dcce6abf16d7932b832ff59916e7",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.663842+00:00",
+  "tables_sha256": "240e6e0f2b49d681ad7900a1d4271ca7330570935904b11b6db77f64b916f661",
+  "figures_sha256": "044fb6d6c29cfe558c9d46458877ea587cbd8533808b56a3bc16a48a970909fa"
+ },
+ "public_export": {
+  "anchor_quotes": 0,
+  "quotes_hashed": 0,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

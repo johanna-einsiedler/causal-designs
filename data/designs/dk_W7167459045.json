@@ -1,0 +1,3039 @@
+{
+ "artid": "dk_W7167459045",
+ "paper": {
+  "title": "Pathways Through Public Services for Maltreated Children in Care: A Scoping Review of Studies Using Linked Administrative Data",
+  "authors": [
+   "Laura Cowley",
+   "Amrita Bandyopadhyay",
+   "Natasha Kennedy",
+   "Peter Fallesen",
+   "Catherine Quantin",
+   "Daisy Brooks",
+   "Can Bektas",
+   "Sinead Brophy"
+  ],
+  "year": 2026,
+  "journal": "International Journal of Population Data Science",
+  "doi": "10.23889/ijpds.v11i5.3622",
+  "code_data_availability": "No data or code availability statement and no Statistics Denmark (DST) project reference appear in the article. …"
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "Published studies from across the globe that used linked administrative data to examine service pathways and outcomes for maltreated children in care - not a register sample of individuals. The abstract names Wales, England and Denmark only as the sites of 'specifically planned linked routine data work' in the future SERENA project.",
+   "unit_of_observation": "study (a published study using linked administrative data)",
+   "selection_rules": [
+    "Searched eight databases, identifying 1086 potentially relevant records",
+    "Of these, 396 were selected for review",
+    "Screened in duplicate",
+    "Included 137 studies across the globe that examined contact with services, including health, social care, education, justice, homelessness, and employment before or after children went into care"
+   ],
+   "period": null,
+   "n_observations": "137 studies",
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "The article is a one-page International Journal of Population Data Science conference abstract describing a scoping review that is still in progress ('Results will be tabulated and narratively synthesized'; the reported education findings are labelled 'Preliminary findings').",
+   "No Danish (or other) administrative register is named, so data.registers is empty: the abstract speaks only of 'linked administrative data' and of planned 'linked routine data work in Wales, England, and Denmark'. Denmark enters as a site of future work and through a co-author's affiliation, not as a data source for the findings reported here.",
+   "There is no estimation dataset, no variable construction, no estimator, no equation, no table and no figure; digest.json accordingly lists 0 regressions and 0 figures, so every exhibit id in this extraction is null.",
+   "No numeric result of any kind is printed except the search counts (1086 records, 396 selected, 137 included) and the count of eight databases; every claim-level magnitude field is therefore null with an `absent` evidence record.",
+   "Only education-sector findings are reported, although the included studies also examined health, social care, justice, homelessness and employment service contact (recorded in outcomes_examined_not_reported on every claim)."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W7167459045_c1",
+   "headline": true,
+   "statement": "Compared with their peers, care-experienced children have poorer educational attainment (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "care-experienced children",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Children who went into care (out-of-home care), as identified in the included studies; the contrast group is 'their peers'. The abstract defines neither the care spell, the age at entry, the placement type, nor the composition of the peer group.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "educational attainment",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Educational attainment as reported in the included education-sector studies; the abstract gives no measure, scale, test, grade or construction, only the word 'poorer'.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"poorer educational attainment\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Care-experienced children in the education-sector studies included in the review, relative to their peers.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "care-experienced children vs. their peers"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the peer group: the children in care are treated as comparable to 'their peers', and the contrast is reported without any stated adjustment, matching or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "placement stability",
+     "finding": "Placement instability emerged as a risk factor for poor educational outcomes."
+    },
+    {
+     "dimension": "placement type (non-kin foster care)",
+     "finding": "Placement with non-kin foster carers emerged as a risk factor for poor educational outcomes."
+    },
+    {
+     "dimension": "care status among maltreated children",
+     "finding": "There were few differences in educational attainment between children in care and maltreated children who were not in care."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "care experience (child in out-of-home care)",
+     "educational attainment"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "948994e1ebea494c",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "948994e1ebea494c",
+     "n_chars": 225
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "compared to their peers, care-experienced children exhibit poorer educational attainment, higher levels of absence, are more likely to drop out of or be excluded from school, and are less likely to enroll in higher education.",
+    "sha256_16": "948994e1ebea494c",
+    "n_chars": 225
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c2",
+   "headline": true,
+   "statement": "Compared with their peers, care-experienced children have higher levels of school absence (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "care-experienced children",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Children who went into care (out-of-home care), as identified in the included studies; the contrast group is 'their peers'. The abstract defines neither the care spell, the age at entry, the placement type, nor the composition of the peer group.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "levels of absence",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "School absence as reported in the included education-sector studies; the abstract gives no definition, threshold or unit, only 'higher levels of absence'. Polarity is set against school attendance/engagement: more absence is less of it.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"higher levels of absence\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Care-experienced children in the education-sector studies included in the review, relative to their peers.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "care-experienced children vs. their peers"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the peer group: the children in care are treated as comparable to 'their peers', and the contrast is reported without any stated adjustment, matching or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "care experience (child in out-of-home care)",
+     "school absence"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "948994e1ebea494c",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "948994e1ebea494c",
+     "n_chars": 225
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "compared to their peers, care-experienced children exhibit poorer educational attainment, higher levels of absence, are more likely to drop out of or be excluded from school, and are less likely to enroll in higher education.",
+    "sha256_16": "948994e1ebea494c",
+    "n_chars": 225
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c3",
+   "headline": true,
+   "statement": "Compared with their peers, care-experienced children are more likely to drop out of school (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "care-experienced children",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Children who went into care (out-of-home care), as identified in the included studies; the contrast group is 'their peers'. The abstract defines neither the care spell, the age at entry, the placement type, nor the composition of the peer group.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "dropping out of school",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Dropping out of school as reported in the included education-sector studies; the abstract gives no definition or age window, only 'more likely to drop out of ... school'. Polarity is set against educational continuation: more drop-out is less of it.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"more likely to drop out of ... school\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Care-experienced children in the education-sector studies included in the review, relative to their peers.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "care-experienced children vs. their peers"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the peer group: the children in care are treated as comparable to 'their peers', and the contrast is reported without any stated adjustment, matching or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "care experience (child in out-of-home care)",
+     "school drop-out"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "948994e1ebea494c",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge.",
+    "The abstract bundles two outcomes in one phrase, 'more likely to drop out of or be excluded from school'; it is split here into one claim per outcome (c3 drop-out, c4 exclusion), and the shared quote covers both."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "948994e1ebea494c",
+     "n_chars": 225
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "compared to their peers, care-experienced children exhibit poorer educational attainment, higher levels of absence, are more likely to drop out of or be excluded from school, and are less likely to enroll in higher education.",
+    "sha256_16": "948994e1ebea494c",
+    "n_chars": 225
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c4",
+   "headline": true,
+   "statement": "Compared with their peers, care-experienced children are more likely to be excluded from school (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "care-experienced children",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Children who went into care (out-of-home care), as identified in the included studies; the contrast group is 'their peers'. The abstract defines neither the care spell, the age at entry, the placement type, nor the composition of the peer group.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "being excluded from school",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "School exclusion as reported in the included education-sector studies; the abstract gives no definition (permanent vs. fixed-term) or window, only 'more likely to ... be excluded from school'. Polarity is set against educational inclusion: more exclusion is less of it.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"more likely to ... be excluded from school\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Care-experienced children in the education-sector studies included in the review, relative to their peers.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "care-experienced children vs. their peers"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the peer group: the children in care are treated as comparable to 'their peers', and the contrast is reported without any stated adjustment, matching or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "care experience (child in out-of-home care)",
+     "school exclusion"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "948994e1ebea494c",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge.",
+    "The abstract bundles two outcomes in one phrase, 'more likely to drop out of or be excluded from school'; it is split here into one claim per outcome (c3 drop-out, c4 exclusion), and the shared quote covers both."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "948994e1ebea494c",
+     "n_chars": 225
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "compared to their peers, care-experienced children exhibit poorer educational attainment, higher levels of absence, are more likely to drop out of or be excluded from school, and are less likely to enroll in higher education.",
+    "sha256_16": "948994e1ebea494c",
+    "n_chars": 225
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c5",
+   "headline": true,
+   "statement": "Compared with their peers, care-experienced children are less likely to enroll in higher education (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "care-experienced children",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Children who went into care (out-of-home care), as identified in the included studies; the contrast group is 'their peers'. The abstract defines neither the care spell, the age at entry, the placement type, nor the composition of the peer group.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "enrolment in higher education",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Enrolment in higher education as reported in the included education-sector studies; the abstract gives no definition of institution type or age at enrolment, only 'less likely to enroll in higher education'.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"less likely to enroll in higher education\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Care-experienced children in the education-sector studies included in the review, relative to their peers.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "care-experienced children vs. their peers"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the peer group: the children in care are treated as comparable to 'their peers', and the contrast is reported without any stated adjustment, matching or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "care experience (child in out-of-home care)",
+     "enrolment in higher education"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "948994e1ebea494c",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "948994e1ebea494c",
+     "n_chars": 225
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "compared to their peers, care-experienced children exhibit poorer educational attainment, higher levels of absence, are more likely to drop out of or be excluded from school, and are less likely to enroll in higher education.",
+    "sha256_16": "948994e1ebea494c",
+    "n_chars": 225
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c6",
+   "headline": true,
+   "statement": "Among children in care, placement instability emerged as a risk factor for poor educational outcomes (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "placement instability",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Instability of care placements, as measured in the included studies; the abstract gives no definition (e.g. number of placement moves) and no cut-off.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "poor educational outcomes",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "poor educational outcomes as reported in the included education-sector studies; the abstract names no specific measure and gives no threshold, only the phrase 'poor educational outcomes'. Polarity is set against educational attainment: more 'poor outcomes' is less attainment.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_q1",
+      "e_q2"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"emerged as risk factors for poor educational outcomes\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children in care in the education-sector studies included in the review.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "placement stability vs. placement instability"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability within the care population: children with unstable placements are treated as comparable to children with stable placements, and the abstract reports the contrast as a 'risk factor' without stating any adjustment or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "placement instability",
+     "poor educational outcomes"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "0892942c0cb5c42e",
+      "n_chars": 117
+     },
+     {
+      "page": 1,
+      "sha256_16": "bbbaffe8302a7c14",
+      "n_chars": 91
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge.",
+    "'Emerged as risk factors' is read as a positive association between placement instability and poor educational outcomes; the abstract states no sign, magnitude or direction of time, hence confidence medium on the sign.",
+    "The finding sentence is hyphenated across a line break in the PDF text layer ('Placement instabil-/ity'); the quote is transcribed de-hyphenated and a clean companion span is given as the second quote."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "0892942c0cb5c42e",
+     "n_chars": 117
+    },
+    {
+     "id": "e_q2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "bbbaffe8302a7c14",
+     "n_chars": 91
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "Placement instability and placement with non-kin foster carers emerged as risk factors for poor educational outcomes.",
+    "sha256_16": "0892942c0cb5c42e",
+    "n_chars": 117
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c7",
+   "headline": true,
+   "statement": "Among children in care, placement with non-kin foster carers emerged as a risk factor for poor educational outcomes (preliminary education-sector synthesis of the included studies).",
+   "treatment": {
+    "label": "placement with non-kin foster carers",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Placement with foster carers who are not kin, as measured in the included studies, implicitly against kin placement; the abstract gives no further definition.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "poor educational outcomes",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "poor educational outcomes as reported in the included education-sector studies; the abstract names no specific measure and gives no threshold, only the phrase 'poor educational outcomes'. Polarity is set against educational attainment: more 'poor outcomes' is less attainment.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_q1"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"emerged as risk factors for poor educational outcomes\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children in care in the education-sector studies included in the review.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "kin vs. non-kin foster placement"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability within the care population: children placed with non-kin foster carers are treated as comparable to children in other placement types, and the abstract reports the contrast as a 'risk factor' without stating any adjustment or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "placement with non-kin foster carers",
+     "poor educational outcomes"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "bbbaffe8302a7c14",
+      "n_chars": 91
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge.",
+    "'Emerged as risk factors' is read as non-kin foster placement being associated with poorer educational outcomes; the abstract states no sign, magnitude or comparison category, hence confidence medium on the sign.",
+    "The treatment is a placement category, so its polarity is not_ordered; the sign is recorded relative to the outcome 'poor educational outcomes'."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "bbbaffe8302a7c14",
+     "n_chars": 91
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "placement with non-kin foster carers emerged as risk factors for poor educational outcomes.",
+    "sha256_16": "bbbaffe8302a7c14",
+    "n_chars": 91
+   }
+  },
+  {
+   "claim_id": "dk_W7167459045_c8",
+   "headline": true,
+   "statement": "Among maltreated children, educational attainment differed little between those in care and those who were not in care (preliminary education-sector synthesis of the included studies) - a reported null.",
+   "treatment": {
+    "label": "being in care (vs. maltreated children who were not in care)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Being a child in care, contrasted here not with the general peer population but with maltreated children who were not in care; the abstract does not define maltreatment or how the not-in-care maltreated group was identified.",
+     "evidence": [
+      "e_q1",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "educational attainment",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_abs_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Educational attainment as reported in the included education-sector studies; the abstract gives no measure, scale or construction, and no magnitude for the difference.",
+     "evidence": [
+      "e_q1",
+      "e_abs_mag"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e_abs_time"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e_q1",
+      "e_q2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"There were few differences in educational attainment\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_mag"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Maltreated children in the education-sector studies included in the review, in care and not in care.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "horizon": null
+   },
+   "population": {
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Global - '137 studies across the globe'; the abstract names Wales, England and Denmark only as sites of planned future linked-data work",
+    "selection": "Studies retrieved from a search of eight databases (1086 records identified, 396 selected for review, screened in duplicate, 137 included); within those studies, children who went into care and the comparison groups the studies themselves used",
+    "period_range": null,
+    "description": "Children in the education-sector studies included in the review: maltreated children who went into care, set against the comparison group each study used. 137 studies from across the globe were included; the abstract does not say how many are education-sector studies.",
+    "subgroups_defined": [
+     "children in care vs. maltreated children who were not in care"
+    ]
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. There is no exogenous variation: the review restates, in direction only, comparisons made inside the 137 included studies. The abstract names no reform, lottery, discontinuity or shock.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Narrative-synthesis comparability: the directions of association reported by the separate included studies are comparable enough to be summarised as one direction for the education sector.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The abstract states only that 'Results will be tabulated and narratively synthesized'; no pooling model, weighting or heterogeneity assessment is described.",
+      "evidence": [
+       "e_synth",
+       "e_abs_id"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Comparability of the two maltreated groups: children in care are treated as comparable to maltreated children who were not in care, and the abstract reports the contrast without stating any adjustment or identifying assumption.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_abs_id"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None reported. The finding is a narrative synthesis of the directions of association reported in the included studies; the abstract names no estimator.",
+     "evidence": [
+      "e_aim",
+      "e_synth",
+      "e_abs_id"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e_abs_n",
+      "e_methods"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "'Findings' section, p. 1, running text. The article contains no table and no figure, and the digest extracted no exhibit for it.",
+     "evidence": [
+      "e_abs_mag"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "choice of comparison group",
+     "finding": "Against the general peer population the review reports poorer educational attainment for care-experienced children, whereas against maltreated children who were not in care it reports few differences."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being in care (among maltreated children)",
+     "educational attainment"
+    ],
+    "edges": []
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "ca130afcd229f1d7",
+      "n_chars": 123
+     },
+     {
+      "page": 1,
+      "sha256_16": "357d29d5d037c75a",
+      "n_chars": 96
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The article is a one-page conference abstract reporting a scoping review, not an empirical register study. The 'Findings' statements are the review's own synthesis across its 137 included studies, so this row is a claim the paper REPORTS rather than a coefficient it estimates; a stricter reading of 'claims the paper tests' would leave this paper with no claims at all.",
+    "The paper labels these results 'Preliminary findings from the education sector', so the direction may change in the completed review.",
+    "No causal edge is written into graph_fragment: the review reports directions of association with no identification strategy, and the schema's edge kinds would overstate it as a tested causal edge.",
+    "'Few differences' is recorded as sign=null: a reported null difference, not a tested null from an estimated coefficient - no estimate or test is printed.",
+    "The finding sentence carries both an ff ligature and a hyphenated line break in the PDF text layer ('few diﬀer-/ences'); the quote is transcribed de-hyphenated and de-ligatured and a clean companion span is given as the second quote."
+   ],
+   "evidence": [
+    {
+     "id": "e_q1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "ca130afcd229f1d7",
+     "n_chars": 123
+    },
+    {
+     "id": "e_q2",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "357d29d5d037c75a",
+     "n_chars": 96
+    },
+    {
+     "id": "e_abs_mag",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract prints no point estimate, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this finding: the whole article is one page of running text with no table and no figure."
+    },
+    {
+     "id": "e_methods",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "4c6c5be0ac9c5ae6",
+     "n_chars": 198
+    },
+    {
+     "id": "e_synth",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "15cebf066dfee332",
+     "n_chars": 54
+    },
+    {
+     "id": "e_aim",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "a1f4085ed83278ce",
+     "n_chars": 141
+    },
+    {
+     "id": "e_abs_reg",
+     "kind": "absent",
+     "page": 1,
+     "how": "No administrative register, register variable or data source is named for this variable; the abstract refers only to 'linked administrative data' and, for planned future work, to 'linked routine data work in Wales, England, and Denmark'."
+    },
+    {
+     "id": "e_abs_id",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract states no identification strategy, estimating equation, estimator, control set, fixed effects or identifying assumption for the synthesized findings."
+    },
+    {
+     "id": "e_abs_time",
+     "kind": "absent",
+     "page": 1,
+     "how": "No measurement timing, age range, grade level or follow-up horizon is stated for the education outcomes."
+    },
+    {
+     "id": "e_abs_n",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract does not state how many of the 137 included studies, or how many children, lie behind the education-sector findings."
+    },
+    {
+     "id": "e_abs_scope",
+     "kind": "absent",
+     "page": 1,
+     "how": "The abstract makes no claim about a domain to which the education findings generalise; the Conclusions speak only about what the review will clarify and inform."
+    }
+   ],
+   "functional_form": {
+    "value": null,
+    "evidence": [
+     "e_abs_id"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": null,
+    "evidence": [
+     "e_abs_scope"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "contact with health services",
+    "contact with social care services",
+    "contact with justice services",
+    "contact with homelessness services",
+    "employment"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "There were few differences in educational attainment between children in care and maltreated children who were not in care.",
+    "sha256_16": "ca130afcd229f1d7",
+    "n_chars": 123
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "a96ead26133ff74e0682aa4b2f6ad00c593f508fc7e081edc8cd1947acafd4d8",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:45.291635+00:00",
+  "tables_sha256": "f8e17b357ba2ba2e00104abc8aa52ba7ec699652fc70131a5ac372907dc16dee",
+  "figures_sha256": "56c47970d8b42cdebeb7bb49fe3ffbfed34e0b13676bd5bd4931ef8e7a5fbf5a"
+ },
+ "public_export": {
+  "anchor_quotes": 4,
+  "quotes_hashed": 44,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

@@ -1,0 +1,4032 @@
+{
+ "artid": "dk_W4285059352",
+ "paper": {
+  "title": "‘Migrant Carer-Wives’ – Between Transnational Marriages, Care Work for Older Husbands and Gendered Precarity",
+  "authors": [
+   "Anika Liversage",
+   "Abir Mohamad Ismail"
+  ],
+  "year": 2022,
+  "journal": "Nordic Journal of Migration Research",
+  "doi": "10.33134/njmr.427",
+  "code_data_availability": "No data or code availability statement is printed and no Statistics Denmark (DST) project reference is given. …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "Danish register data / 'various registers' linked by the unique personal identifier",
+    "dst_code": null,
+    "years": "2003-2018",
+    "role": "sample frame; treatment (sex, age, country of origin, migration year) and outcome (remarriage, spousal age difference) measurement",
+    "variables_mentioned": [
+     "gender",
+     "age",
+     "year of migration",
+     "country of origin",
+     "years of marriage, divorce, widowhood"
+    ],
+    "year_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   }
+  ],
+  "linkages": [
+   "all legal residents in Denmark (both immigrants and natives) are assigned a unique personal identifier which, across various registers, ties together information on gender, age, year of migration, country of origin and years of marriage, divorce and widowhood (p. 161; PDF p. 6)",
+   "spouses are linked within a marriage so that the age difference between husband and wife can be computed (implied by the reported age differences, pp. 161-162 (PDF pp. 6-7))"
+  ],
+  "sample": {
+   "universe": "Legal residents of Denmark in the 55- to 80-year age group, 2003-2018; the focus is previously married (widowed or divorced) immigrants from Turkey, from Pakistan, and – pooled – from the four Arab refugee countries Iraq, Lebanon, Syria and Jordan, with the Danish majority as comparison",
+   "unit_of_observation": "individual (person) aged 55-80, with remarriages and the resulting spousal age differences observed over 2003-2018",
+   "selection_rules": [
+    "individuals in the 55- to 80-year age group",
+    "observed in the years 2003 to 2018",
+    "previously married: now widows/widowers or divorcees",
+    "immigrants from Turkey or Pakistan, or – pooled together – from the four Arab refugee countries of Iraq, Lebanon, Syria and Jordan; results compared with the Danish majority"
+   ],
+   "period": "2003-2018",
+   "n_observations": null,
+   "n_individuals": "almost 11,000 Turkish immigrants in the 55- to 80-year age group (the only group size the paper prints); 143 of them remarried"
+  },
+  "construction_notes": [
+   "The register analysis is reported in the text only: the paper prints no table, no figure, no standard errors and no significance tests for any of the quantitative statements (section 'THE QUANTITATIVE SETTING – A REGISTER DATA ANALYSIS OF REMARRIAGE PATTERNS', pp. 161-162 (PDF pp. 6-7)).",
+   "The register results are presented here as a summary; the paper states that 'These results – which revealed a distinct pattern – are explained in full elsewhere (Liversage 2021)' (p. 161; PDF p. 6).",
+   "Remarriage shares are cumulative over the 16 calendar years 2003-2018 rather than annual rates.",
+   "Age differences are reported as ranges across the three immigrant groups (5-9, 10-15 and 14-20 years by type of new spouse), not as single coefficients.",
+   "Qualitative material: interviews in 30 families with a §94 self-appointed-helper arrangement (more than 100 interviews, in Danish, Arabic, Turkish or Urdu), 52 municipal care managers or other municipal actors, plus interviews with older immigrants and kin in families without a §94 arrangement; only five cases of substantially younger marriage migrant wives of older husbands were relevant for this article (pp. 160-161; PDF pp. 5-6).",
+   "The main qualitative case (Bouchra / Abu Mahmoud) rests on repeated visits over seven months, interviews with the wife, the husband and one adult daughter interviewed twice (p. 162; PDF p. 7)."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W4285059352_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Remarriage is rare among older immigrants in Denmark: of the almost 11,000 Turkish immigrants in the 55- to 80-year age group, only 143 (1.3%) remarried in 2003-2018.",
+   "treatment": {
+    "label": "being in the 55- to 80-year age group (older age), previously married and of Turkish immigrant origin",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8",
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Membership of the group studied: individuals in the 55- to 80-year age group, previously married (now widows/widowers or divorcees), who immigrated from Turkey. Age, country of origin and marital history are taken from the linked registers; the paper names no register and no variable name.",
+     "evidence": [
+      "e3",
+      "e4",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "measured in the years 2003 to 2018, at ages 55-80",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "remarriage",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8",
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Whether a previously married (widowed or divorced) individual remarried during the observation window; reported as the share of the age group who remarried in the years 2003-2018 (143 of almost 11,000 Turkish immigrants = 1.3%). Years of marriage, divorce and widowhood come from the linked registers.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "any remarriage occurring in the years 2003-2018, at ages 55-80",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e2",
+      "e7"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 1.3,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of Turkish immigrants aged 55-80 who remarried during 2003-2018 (143 of almost 11,000 individuals)",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'The first finding of the quantitative analysis is that remarriage for individuals over 55 is rare. Only 1.2–1.7% of older immigrants from the three immigrant groups remarried.' (p. 161; PDF p. 6)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e6",
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "previously married (widowed or divorced) immigrants from Turkey, aged 55-80, living in Denmark 2003-2018",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "remarriages occurring in the years 2003 to 2018",
+    "formal_query": "P(remarriage during 2003-2018 | Turkish immigrant, aged 55-80, previously married)",
+    "horizon": null
+   },
+   "population": {
+    "description": "Previously married (widowed or divorced) immigrants from Turkey in the 55- to 80-year age group living in Denmark, observed 2003-2018",
+    "birth_cohorts": null,
+    "ages": "55-80",
+    "sex": "all",
+    "period": "2003-2018",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "immigrants from Turkey",
+     "immigrants from Pakistan",
+     "pooled immigrants from the four Arab refugee countries Iraq, Lebanon, Syria and Jordan",
+     "the Danish majority"
+    ],
+    "selection": "previously married immigrants who were now widows/widowers or divorcees, aged 55-80, legally resident in Denmark during 2003-2018",
+    "period_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a descriptive register tabulation of how often older immigrants remarry; no reform, lottery, discontinuity or other exogenous variation is used",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Register coverage and linkage are complete and accurate: all legal residents of Denmark have a unique personal identifier that ties together gender, age, year of migration, country of origin and years of marriage, divorce and widowhood across registers, so remarriages are observed without error.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that all legal residents are assigned a unique personal identifier linking the registers; no validation exercise is reported",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The share describes a conditioned population: the sample is restricted to previously married (widowed or divorced) immigrants aged 55-80 resident in Denmark during 2003-2018.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the stated sample definition on p. 161 (PDF p. 6)",
+      "evidence": [
+       "e3",
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018",
+         "to": "remarriage 2003-2018",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "'Rare' is a judgement about the level: because the sample contains only ages 55-80 and no comparison rate for younger ages or for the Danish majority is printed, the characterisation of remarriage as rare at older ages is not supported by a within-paper contrast.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e1",
+       "e6",
+       "e10"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "descriptive register tabulation (counts and shares); no regression model, no standard errors and no significance tests are reported",
+     "evidence": [
+      "e1",
+      "e2",
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "almost 11,000 Turkish immigrants in the 55- to 80-year age group; 143 remarried",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; stated in the text of the section 'THE QUANTITATIVE SETTING – A REGISTER DATA ANALYSIS OF REMARRIAGE PATTERNS', p. 161 (PDF p. 6)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "immigrant origin group (Turkey, Pakistan, pooled Arab refugee countries)",
+     "finding": "'Only 1.2–1.7% of older immigrants from the three immigrant groups remarried' – the paper prints only this range across the three groups, and the group-specific number only for Turkey (1.3%)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "older age (55-80), previously married, Turkish immigrant origin",
+     "remarriage 2003-2018",
+     "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018"
+    ],
+    "edges": [
+     {
+      "from": "older age (55-80), previously married, Turkish immigrant origin",
+      "to": "remarriage 2003-2018",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018",
+      "to": "remarriage 2003-2018",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "9dc6c950b57f6598",
+      "n_chars": 175
+     },
+     {
+      "page": 6,
+      "sha256_16": "83283fa0e5303098",
+      "n_chars": 143
+     },
+     {
+      "page": 1,
+      "sha256_16": "f94b77b0c05b6d93",
+      "n_chars": 150
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper reports a level (1.3%, and the range 1.2–1.7% across the three immigrant groups), not a contrast: the negative sign encodes the paper's own characterisation of this level as 'rare', not a printed comparison with a younger age group or with the Danish majority.",
+    "The sample is restricted to ages 55-80, so no within-paper age contrast is available.",
+    "The share is cumulative over the 16 calendar years 2003-2018, not an annual rate; the paper does not state an annualised figure.",
+    "The register results are summarised here and said to be reported in full in Liversage (2021), so this paper prints no table."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9dc6c950b57f6598",
+     "n_chars": 175
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "83283fa0e5303098",
+     "n_chars": 143
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e24890c16f1b8f20",
+     "n_chars": 158
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d8750a89a05cd13d",
+     "n_chars": 88
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e85bf4729e5c2dc6",
+     "n_chars": 269
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "65823faca3e209c6",
+     "n_chars": 208
+    },
+    {
+     "id": "e7",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "evidence:e1",
+      "evidence:e2"
+     ],
+     "how": "The paper prints only the level (1.3%; 1.2–1.7% across the three groups) and characterises it as 'rare'; the negative sign records that characterisation of older age as going with little remarriage, not a printed contrast.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "aa262c5f7dd6dba1",
+     "n_chars": 184
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f94b77b0c05b6d93",
+     "n_chars": 150
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "01b24487c36f6b22",
+     "n_chars": 48
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3058edced50eab75",
+     "n_chars": 194
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "the remarriage rate of the Danish majority comparison group: the paper states 'We compare the results with the Danish majority' but prints no majority remarriage share",
+    "group-specific remarriage shares for the Pakistani group and for the pooled Arab refugee group (only the 1.2–1.7% range across the three groups is given)"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "The first finding of the quantitative analysis is that remarriage for individuals over 55 is rare. Only 1.2–1.7% of older immigrants from the three immigrant groups remarried.",
+    "sha256_16": "9dc6c950b57f6598",
+    "n_chars": 175
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c2",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Remarriage among older immigrants in Denmark is highly gendered: in the three immigrant groups, men remarry between six and 15 times as often as women.",
+   "treatment": {
+    "label": "sex of the older immigrant (men versus women)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e6",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The gender of the previously married immigrant aged 55-80; gender is one of the items the paper says the personal identifier ties together across registers. Comparison is men versus women within each of the three immigrant groups (Turkey, Pakistan, pooled Arab refugee countries).",
+     "evidence": [
+      "e1",
+      "e2",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "fixed characteristic, measured over the observation window 2003-2018 at ages 55-80",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "frequency of remarriage (how often individuals find a new spouse)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "How often previously married individuals aged 55-80 remarried during 2003-2018, compared between men and women within immigrant group and expressed as a ratio ('men in fact remarry between six and 15 times as often as women').",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "remarriages occurring in the years 2003-2018",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e2",
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "ratio of the male to the female remarriage frequency, within immigrant group",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'In the three immigrant groups, men in fact remarry between six and 15 times as often as women.' (p. 161; PDF p. 6)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "previously married (widowed or divorced) immigrants aged 55-80 from Turkey, from Pakistan and from the pooled Arab refugee countries, living in Denmark 2003-2018",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "remarriages occurring in the years 2003 to 2018",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Previously married (widowed or divorced) immigrants aged 55-80 from Turkey, Pakistan and the pooled Arab refugee countries (Iraq, Lebanon, Syria, Jordan) living in Denmark, observed 2003-2018",
+    "birth_cohorts": null,
+    "ages": "55-80",
+    "sex": "all",
+    "period": "2003-2018",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "men",
+     "women",
+     "immigrants from Turkey",
+     "immigrants from Pakistan",
+     "pooled immigrants from Iraq, Lebanon, Syria and Jordan"
+    ],
+    "selection": "previously married immigrants who were now widows/widowers or divorcees, aged 55-80, legally resident in Denmark during 2003-2018",
+    "period_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – an unadjusted descriptive comparison of male and female remarriage frequencies within three immigrant groups in register data",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Register coverage and linkage are complete and accurate: the unique personal identifier ties gender, age, country of origin and years of marriage, divorce and widowhood together across registers, so remarriages of men and of women are observed without error.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that all legal residents are assigned a unique personal identifier linking the registers; no validation exercise is reported",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The comparison is conditioned on the sample: previously married immigrants aged 55-80 resident in Denmark during 2003-2018.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the stated sample definition on p. 161 (PDF p. 6)",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018",
+         "to": "frequency of remarriage 2003-2018",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The male/female ratio is unadjusted: no composition controls (for example the number of widowed men versus widowed women, their ages or mortality) are reported, so the ratio is a raw descriptive comparison rather than an adjusted effect of sex.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "descriptive register tabulation (ratio of male to female remarriage frequencies); no regression model, no standard errors and no significance tests are reported",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; stated in the text of the section 'THE QUANTITATIVE SETTING – A REGISTER DATA ANALYSIS OF REMARRIAGE PATTERNS', p. 161 (PDF p. 6)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "immigrant origin group (Turkey, Pakistan, pooled Arab refugee countries)",
+     "finding": "the male-to-female remarriage ratio lies between six and 15 across the three groups; the paper does not report which group is at which end of the range"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "sex of the older immigrant (men versus women)",
+     "frequency of remarriage 2003-2018",
+     "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018"
+    ],
+    "edges": [
+     {
+      "from": "sex of the older immigrant (men versus women)",
+      "to": "frequency of remarriage 2003-2018",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: previously married immigrant aged 55-80 resident in Denmark 2003-2018",
+      "to": "frequency of remarriage 2003-2018",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "696d00458de97205",
+      "n_chars": 127
+     },
+     {
+      "page": 6,
+      "sha256_16": "898d7ac8fe2e1398",
+      "n_chars": 94
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper prints only a range across the three immigrant groups ('between six and 15 times as often'), not a single coefficient, so point_estimate is left null and the range is transcribed verbatim in magnitude.interpretation.",
+    "The comparison is descriptive and unadjusted; the graph edge is recorded for the examined pair but the paper makes no identified causal claim."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "696d00458de97205",
+     "n_chars": 127
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "898d7ac8fe2e1398",
+     "n_chars": 94
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e73033403dc426cf",
+     "n_chars": 255
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e50cbb7993dd187b",
+     "n_chars": 198
+    },
+    {
+     "id": "e5",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "evidence:e2"
+     ],
+     "how": "The paper reports the quantity only as a range across the three immigrant groups ('between six and 15 times as often as women'), so no single point estimate exists to transcribe; the range is kept verbatim in magnitude.interpretation.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e24890c16f1b8f20",
+     "n_chars": 158
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d8750a89a05cd13d",
+     "n_chars": 88
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "29795d0c6182b8d9",
+     "n_chars": 182
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a06316038c5626ac",
+     "n_chars": 164
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f94b77b0c05b6d93",
+     "n_chars": 150
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Brown et al. 2019; Schimmele & Wu 2016",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e1"
+     ],
+     "as_stated": "it is predominantly older men who find new wives, a gendered pattern generally seen in old-age remarriages (Brown et al. 2019; Schimmele & Wu 2016)"
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "group-specific male-to-female remarriage ratios (only the range six to 15 across the three immigrant groups is given)",
+    "the corresponding gender pattern for the Danish majority, although the paper states it compares its results with the Danish majority"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "The analysis also shows that remarriages among immigrants are highly gendered: it is predominantly older men who find new wives",
+    "sha256_16": "696d00458de97205",
+    "n_chars": 127
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c3",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "When older immigrant men in Denmark remarry, the spousal age difference is largest (14-20 years) when the wife travels to Denmark from abroad, intermediate (10-15 years) when she is an ethnic minority woman already living in Denmark, and smallest (5-9 years) when she is a majority Dane.",
+   "treatment": {
+    "label": "type of new wife: a wife who travels to Denmark from abroad (marriage migrant) versus an ethnic minority woman already living in Denmark versus a majority Dane",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The choice of spouse in the remarriage, classified by the wife's origin and place of residence before the marriage: wives travelling to Denmark from abroad (transnational marriage), ethnic minority women living in Denmark before the marriage, and women from the Danish majority. Country of origin and year of migration are among the items the personal identifier links across registers.",
+     "evidence": [
+      "e1",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "measured at the time of the remarriage, within the window 2003-2018",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "age difference between the spouses (husband older than wife)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The difference in years between the ages of husband and wife in the remarriage, reported by type of new wife as a range across the three immigrant groups (5-9 years for majority Danes, 10-15 years for ethnic minority women living in Denmark, 14-20 years for wives travelling to Denmark from abroad).",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the time of the remarriage (2003-2018)",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e1",
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "years of age difference between husband and wife",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'When older immigrant men remarry, the age difference is smallest (5–9 years) when the marriage is to a majority Dane and somewhat larger (10–15 years) when spouses are ethnic minorities living in Denmark before the marriage. The age difference is largest (14–20 years) when wives travels to Denmark from abroad.' (p. 161; PDF p. 6)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "older immigrant men aged 55-80 from Turkey, Pakistan or the pooled Arab refugee countries who remarried in Denmark during 2003-2018",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "remarriages occurring in the years 2003 to 2018",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Previously married (widowed or divorced) immigrant men aged 55-80 from Turkey, Pakistan and the pooled Arab refugee countries who remarried while living in Denmark, 2003-2018",
+    "birth_cohorts": null,
+    "ages": "55-80",
+    "sex": "men",
+    "period": "2003-2018",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "new wife from abroad (marriage migrant)",
+     "new wife an ethnic minority woman living in Denmark before the marriage",
+     "new wife from the Danish majority",
+     "immigrants from Turkey",
+     "immigrants from Pakistan",
+     "pooled immigrants from Iraq, Lebanon, Syria and Jordan"
+    ],
+    "selection": "previously married immigrant men, aged 55-80, legally resident in Denmark during 2003-2018, who remarried in the window",
+    "period_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a descriptive register comparison of spousal age differences across types of new wife among older immigrant men who remarried",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Register coverage and linkage are complete and accurate: the unique personal identifier ties together gender, age, year of migration, country of origin and marital events across registers, so both spouses' ages and the wife's origin and migration year are observed without error.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that all legal residents are assigned a unique personal identifier linking the registers; no validation exercise is reported",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The comparison conditions on remarriage having occurred: age differences are computed only among older immigrant men who remarried during 2003-2018, a small and selected group (1.2-1.7% of the age group).",
+      "stated_or_implicit": "implicit",
+      "supported_by": "the paper's own statement that remarriage at these ages is rare",
+      "evidence": [
+       "e1",
+       "e6",
+       "e10"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: remarried in Denmark 2003-2018 at ages 55-80",
+         "to": "age difference between the spouses",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The age gradient is unadjusted: no covariates and no model are reported, so the differences across types of new wife are raw descriptive contrasts.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e1",
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "descriptive register tabulation of spousal age differences by type of new wife (ranges across the three immigrant groups); no regression model, no standard errors and no significance tests are reported",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; stated in the text of the section 'THE QUANTITATIVE SETTING – A REGISTER DATA ANALYSIS OF REMARRIAGE PATTERNS', p. 161 (PDF p. 6)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "immigrant origin group",
+     "finding": "'The largest age differences occur in the Arab refugee group.' (p. 161; PDF p. 6)"
+    },
+    {
+     "dimension": "type of new wife",
+     "finding": "age difference smallest (5–9 years) for a majority Danish wife, somewhat larger (10–15 years) for an ethnic minority wife already living in Denmark, largest (14–20 years) for a wife travelling to Denmark from abroad (p. 161; PDF p. 6)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "type of new wife (from abroad / ethnic minority resident in Denmark / majority Dane)",
+     "age difference between the spouses",
+     "sample inclusion: remarried in Denmark 2003-2018 at ages 55-80"
+    ],
+    "edges": [
+     {
+      "from": "type of new wife (from abroad / ethnic minority resident in Denmark / majority Dane)",
+      "to": "age difference between the spouses",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: remarried in Denmark 2003-2018 at ages 55-80",
+      "to": "age difference between the spouses",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "65472161e0e4874a",
+      "n_chars": 311
+     },
+     {
+      "page": 7,
+      "sha256_16": "603fa15c40a7f60d",
+      "n_chars": 214
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Each category's age difference is printed as a range across the three immigrant groups (5–9, 10–15, 14–20 years), not as a single coefficient, so point_estimate is null and the ranges are transcribed verbatim in magnitude.interpretation.",
+    "The contrast is descriptive and unadjusted; the graph edge records the examined pair, not an identified causal effect."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "65472161e0e4874a",
+     "n_chars": 311
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b816ceea45ec366e",
+     "n_chars": 60
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c8dd380c8fc4b12",
+     "n_chars": 232
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1305c8cc4216db09",
+     "n_chars": 153
+    },
+    {
+     "id": "e5",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "evidence:e1"
+     ],
+     "how": "The paper gives each category's age difference only as a range across the three immigrant groups, so there is no single number to transcribe as a point estimate; the ranges are kept verbatim in magnitude.interpretation.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e24890c16f1b8f20",
+     "n_chars": 158
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "603fa15c40a7f60d",
+     "n_chars": 214
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "29795d0c6182b8d9",
+     "n_chars": 182
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c939758176837d5c",
+     "n_chars": 187
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9dc6c950b57f6598",
+     "n_chars": 175
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9f453dadc60765db",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f94b77b0c05b6d93",
+     "n_chars": 150
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "50fe7adacd8bf988",
+     "n_chars": 179
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [
+    "marriage market theory (Becker 1981)",
+    "'global hypergamy' (Constable 2005)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Balistreri, Joyner & Kao 2017; Levchenko & Solheim 2013",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e13"
+     ],
+     "as_stated": "Instead, research reveals that a gendered exchange between youth and migration may take place in transnational marriages (Balistreri, Joyner & Kao 2017; Levchenko & Solheim 2013)."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "group-specific age differences by type of new wife (only ranges across the three immigrant groups are given)"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "When older immigrant men remarry, the age difference is smallest (5–9 years) when the marriage is to a majority Dane and somewhat larger (10–15 years) when spouses are ethnic minorities living in Denmark before the marriage. …",
+    "sha256_16": "65472161e0e4874a",
+    "n_chars": 311
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c4",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "In transnational remarriages of older Danish-majority men to wives with an immigrant background, the husbands are on average 16 years older than their wives.",
+   "treatment": {
+    "label": "the remarriage is transnational (the wife with an immigrant background comes from abroad) rather than domestic",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Whether an older Danish-majority man's remarriage to a wife with an immigrant background is transnational (the wife arrives from abroad), as against the other spouse types in the same age-graded pattern (ethnic minority wife already resident in Denmark, majority Danish wife).",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "at the time of the remarriage, within the window 2003-2018",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "age difference between husband and wife (husband older)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Mean difference in years between the husband's and the wife's age in remarriages of older Danish-majority men, for transnational marriages: 'Danish husbands on average being 16 years older than wives when marriages are transnational'.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the time of the remarriage (2003-2018)",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 16,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "years of age difference between husband and wife (mean)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'the age-graded pattern in such marriages is similar to the one observed in the three immigrant groups with Danish husbands on average being 16 years older than wives when marriages are transnational' (pp. 161-162; PDF pp. 6-7)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "older Danish-majority men aged 55-80 who remarried wives with an immigrant background in a transnational marriage, 2003-2018",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "remarriages occurring in the years 2003 to 2018",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Previously married (widowed or divorced) Danish-majority men aged 55-80 who remarried a wife with an immigrant background, 2003-2018; the paper notes that a much smaller share of older Danish men do so",
+    "birth_cohorts": null,
+    "ages": "55-80",
+    "sex": "men",
+    "period": "2003-2018",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "transnational marriages (wife arrives from abroad)",
+     "marriages to wives with an immigrant background already living in Denmark"
+    ],
+    "selection": "Danish-majority men aged 55-80, previously married, who remarried a wife with an immigrant background during 2003-2018",
+    "period_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a descriptive register comparison of mean spousal age differences in transnational versus other remarriages of older Danish-majority men",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Register coverage and linkage are complete and accurate: the unique personal identifier links both spouses' ages, countries of origin and migration years across registers.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that all legal residents are assigned a unique personal identifier linking the registers; no validation exercise is reported",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The mean conditions on a doubly selected group: Danish-majority men who remarry at ages 55-80 at all, and who remarry a wife with an immigrant background – which the paper says is a much smaller share than among immigrant men.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that 'a much smaller share of older Danish men remarry wives with an immigrant background'",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: Danish-majority man aged 55-80 remarrying a wife with an immigrant background",
+         "to": "age difference between husband and wife",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The mean age difference is unadjusted: no covariates, model or inference are reported.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "descriptive register tabulation (mean age difference); no regression model, no standard errors and no significance tests are reported",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; stated in the text at the start of p. 162 (PDF p. 7), continuing the sentence begun on p. 161 (PDF p. 6)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "majority versus immigrant husbands",
+     "finding": "'the age-graded pattern in such marriages is similar to the one observed in the three immigrant groups' – i.e. the Danish-majority pattern mirrors the immigrant one, with a mean gap of 16 years in transnational marriages against 14-20 years in the immigrant groups"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "remarriage is transnational (wife with an immigrant background arrives from abroad)",
+     "age difference between husband and wife",
+     "sample inclusion: Danish-majority man aged 55-80 remarrying a wife with an immigrant background"
+    ],
+    "edges": [
+     {
+      "from": "remarriage is transnational (wife with an immigrant background arrives from abroad)",
+      "to": "age difference between husband and wife",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: Danish-majority man aged 55-80 remarrying a wife with an immigrant background",
+      "to": "age difference between husband and wife",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 7,
+      "sha256_16": "f7092f694a7bdc20",
+      "n_chars": 193
+     },
+     {
+      "page": 6,
+      "sha256_16": "8d34b62b85bdd863",
+      "n_chars": 113
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The sentence runs across the page break (p. 161 (PDF p. 6) to p. 162 (PDF p. 7)): the subject 'While a much smaller share of older Danish men remarry wives with an immigrant background, the age-graded pattern' is on p. 161 (PDF p. 6) and the 16-year figure on p. 162 (PDF p. 7), so the two quotes are given separately.",
+    "The 16 years is a mean for transnational marriages of Danish-majority men; the paper gives no corresponding figure for their non-transnational remarriages, so the contrast behind the positive sign rests on the stated similarity to the immigrant age-graded pattern."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f7092f694a7bdc20",
+     "n_chars": 193
+    },
+    {
+     "id": "e2",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d8ea5c3d6c612191",
+     "n_chars": 181
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "37a8ec1e37371484",
+     "n_chars": 157
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e24890c16f1b8f20",
+     "n_chars": 158
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "50215fb651c8fdfc",
+     "n_chars": 133
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "29795d0c6182b8d9",
+     "n_chars": 182
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8d34b62b85bdd863",
+     "n_chars": 113
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f891379643fc10fd",
+     "n_chars": 103
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [
+    "marriage market theory (Becker 1981)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "the share of older Danish-majority men who remarry wives with an immigrant background (described only as 'a much smaller share')",
+    "mean age differences in non-transnational remarriages of older Danish-majority men"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 7,
+    "text": "in such marriages is similar to the one observed in the three immigrant groups with Danish husbands on average being 16 years older than wives when marriages are transnational (Liversage 2021).",
+    "sha256_16": "f7092f694a7bdc20",
+    "n_chars": 193
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c5",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "In the vast majority of remarriages of older immigrants in Denmark, the new spouse is found abroad rather than among ethnic minority women living in Denmark or women of the Danish majority.",
+   "treatment": {
+    "label": "remarriage of an older immigrant (aged 55-80, previously married) in Denmark",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The occurrence of a remarriage during 2003-2018 among previously married (widowed or divorced) immigrants aged 55-80 from Turkey, Pakistan or the pooled Arab refugee countries living in Denmark.",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "remarriages occurring in the years 2003-2018, at ages 55-80",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "the new spouse is found abroad (the marriage is transnational)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Where the new spouse comes from, classified as found abroad versus an ethnic minority woman already living in Denmark versus a woman from the Danish majority; the paper reports the distribution qualitatively ('the vast majority', 'a small number', 'fewer still').",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the time of the remarriage (2003-2018)",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "share of immigrant remarriages in which the spouse is found abroad (reported qualitatively as 'the vast majority', with no number printed)",
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'In the vast majority of immigrant remarriages, spouses are found abroad. A small number marry ethnic minority women already living in Denmark, and fewer still marry women from the Danish majority.' (p. 161; PDF p. 6)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "previously married immigrants aged 55-80 from Turkey, Pakistan or the pooled Arab refugee countries who remarried while living in Denmark, 2003-2018",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "remarriages occurring in the years 2003 to 2018",
+    "formal_query": "P(spouse found abroad | remarriage of an older immigrant in Denmark, 2003-2018)",
+    "horizon": null
+   },
+   "population": {
+    "description": "Previously married (widowed or divorced) immigrants aged 55-80 from Turkey, Pakistan and the pooled Arab refugee countries who remarried while living in Denmark, 2003-2018",
+    "birth_cohorts": null,
+    "ages": "55-80",
+    "sex": "all",
+    "period": "2003-2018",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "spouse found abroad",
+     "ethnic minority women already living in Denmark",
+     "women from the Danish majority"
+    ],
+    "selection": "previously married immigrants aged 55-80 resident in Denmark who remarried during 2003-2018",
+    "period_range": {
+     "from": 2003,
+     "to": 2018
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a descriptive register tabulation of where the new spouses of remarrying older immigrants come from",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Register coverage and linkage are complete and accurate: the unique personal identifier ties country of origin and year of migration to marital events, so a spouse found abroad can be distinguished from one already living in Denmark.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the paper's statement that all legal residents are assigned a unique personal identifier linking the registers; no validation exercise is reported",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The distribution conditions on remarriage having occurred among older immigrants in Denmark, a group the paper reports to be small (1.2-1.7% of the age group).",
+      "stated_or_implicit": "implicit",
+      "supported_by": "the paper's own finding that remarriage at these ages is rare",
+      "evidence": [
+       "e4",
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: remarried older immigrant in Denmark 2003-2018",
+         "to": "the new spouse is found abroad",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "descriptive register tabulation of the distribution of spouse types, reported qualitatively ('the vast majority', 'a small number', 'fewer still'); no model, no numbers and no inference are reported",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; stated in the text of the section 'THE QUANTITATIVE SETTING – A REGISTER DATA ANALYSIS OF REMARRIAGE PATTERNS', p. 161 (PDF p. 6)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "remarriage of an older immigrant in Denmark",
+     "the new spouse is found abroad (transnational marriage)",
+     "sample inclusion: remarried older immigrant in Denmark 2003-2018"
+    ],
+    "edges": [
+     {
+      "from": "remarriage of an older immigrant in Denmark",
+      "to": "the new spouse is found abroad (transnational marriage)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: remarried older immigrant in Denmark 2003-2018",
+      "to": "the new spouse is found abroad (transnational marriage)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "ff653645d6683cb1",
+      "n_chars": 196
+     },
+     {
+      "page": 7,
+      "sha256_16": "603fa15c40a7f60d",
+      "n_chars": 214
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The share of remarriages with a spouse found abroad is reported only qualitatively ('the vast majority'); no percentage or count is printed, so point_estimate is null.",
+    "The quantity is a distribution within remarriages rather than an effect of a treatment; the graph edge records the examined pair only."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ff653645d6683cb1",
+     "n_chars": 196
+    },
+    {
+     "id": "e2",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "098c393bea90efaa",
+     "n_chars": 214
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e24890c16f1b8f20",
+     "n_chars": 158
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d8750a89a05cd13d",
+     "n_chars": 88
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "603fa15c40a7f60d",
+     "n_chars": 214
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "29795d0c6182b8d9",
+     "n_chars": 182
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "50215fb651c8fdfc",
+     "n_chars": 133
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9dc6c950b57f6598",
+     "n_chars": 175
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f94b77b0c05b6d93",
+     "n_chars": 150
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4824d3d6f768bfbd",
+     "n_chars": 175
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Liversage 2021",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e10"
+     ],
+     "as_stated": "Likewise, analysis of Danish register data shows that when older immigrants remarry, the most common type of wife is a substantially younger marriage migrant (Liversage 2021)."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "the numerical shares of remarriages by spouse type (only 'the vast majority', 'a small number' and 'fewer still' are reported)"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "In the vast majority of immigrant remarriages, spouses are found abroad. A small number marry ethnic minority women already living in Denmark, and fewer still marry women from the Danish majority.",
+    "sha256_16": "ff653645d6683cb1",
+    "n_chars": 196
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c6",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Care needs of older immigrant men in Denmark that are met neither by public eldercare (for linguistic and cultural reasons) nor by their adult children lead the men or their children to seek substantially younger wives abroad, who then perform the care work, in part remunerated as municipal §94 self-appointed helpers – a hybrid arrangement the authors call 'migrant carer-wives' and Danish care managers call 'fetched wives'.",
+   "treatment": {
+    "label": "unmet care needs of an older immigrant man (public eldercare unacceptable or inaccessible, adult children unable to provide the care)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "In the main case: an immigrant man in his mid-70s with several chronic conditions who lost the wife who had cared for him; rotating care by his six adult children failed because they were in full-time work or education and he insisted on staying in his own home; municipal home help failed because he could hardly communicate in Danish and refused to let female home helpers see him naked due to a cultural taboo. Established through qualitative interviews, corroborated by 52 municipal care managers.",
+     "evidence": [
+      "e5",
+      "e6",
+      "e13",
+      "e14"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "before and at the time the marriage is arranged; interviews conducted in the AISHA project, 2017-2021",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "marriage to a substantially younger migrant wife who provides in-home care (a 'migrant carer-wife' arrangement, part-remunerated through the §94 self-appointed helper scheme)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A transnational marriage in which a substantially younger woman from the Global South arrives in Denmark, lives with and cares for her much older husband, with the exchange of care for money explicitly agreed (in the main case in an Islamic marriage contract specifying mahr and monthly remittances) and with the wife taken on as her husband's §94 self-appointed helper by the municipality for a small monthly salary.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e5",
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "after the marriage and the wife's arrival in Denmark; the main case covers the first five years in Denmark (arrival 2016), other cases up to 10 years of marriage",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e5",
+      "e6"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'From a marriage market perspective, the demand for such marriages indicates that care needs of the men involved are not presently met' (abstract, p. 156 (PDF p. 1)); the authors expect such arrangements to be rare: 'We expect that only a minority of these men have large care needs, so we believe that carer-wife arrangements such as Bouchra’s are rare.' (p. 166; PDF p. 11)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "ethnic minority families in Denmark with an ageing immigrant man in need of care, in particular families using the §94 self-appointed helper scheme",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "the arrangement from the arrangement of the marriage onward; interviews 2017-2021, cases covering up to about 10 years of marriage",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Ethnic minority families in Denmark interviewed in the AISHA project: 30 families with a §94 self-appointed helper arrangement (more than 100 interviews), 52 municipal care managers or other municipal actors, and older immigrants and kin in families without a §94 arrangement; five cases involved substantially younger marriage migrant wives of older husbands",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "couples",
+    "period": "2017-2021",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "families with a §94 arrangement",
+     "families without a §94 arrangement",
+     "municipal care managers"
+    ],
+    "selection": "families recruited through use of the §94 self-appointed helper scheme, which the authors say meant a focus on families with substantial care needs; only five cases of substantially younger marriage migrant wives of older husbands were relevant",
+    "period_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a directed content analysis of qualitative interviews in families with a §94 self-appointed helper arrangement and with municipal care managers; no exogenous variation and no counterfactual comparison group",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Informants' accounts of how and why the marriage was arranged describe the arrangement accurately; the authors rely on triangulation across the wife, the husband, an adult daughter and municipal care managers rather than on external validation.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "repeated visits over seven months, interviews with the wife, the husband and one adult daughter twice, and corroborating accounts from municipal care managers",
+      "evidence": [
+       "e3",
+       "e4",
+       "e16"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The sample is conditioned on holding a §94 self-appointed helper arrangement, so families with substantial care needs are over-represented and the arrangement's frequency cannot be estimated from these data.",
+      "stated_or_implicit": "stated",
+      "supported_by": "'As most of our interviews were conducted with families who had a §94 arrangement, our focus was on families with substantial care needs.' (p. 167; PDF p. 12)",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: family holds a §94 self-appointed helper arrangement",
+         "to": "marriage to a substantially younger migrant carer-wife",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The existence of a specialised term among Danish care managers ('fetched wives' / 'fetched spouses') indicates the existence of the corresponding social practice.",
+      "stated_or_implicit": "stated",
+      "supported_by": "sociolinguistic warrant cited (Hymes 1977; Saville-Troike 2003 [1982]) plus the care managers' own accounts",
+      "evidence": [
+       "e2",
+       "e17"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "the authors expect only a minority of remarrying older immigrant men to have large care needs and therefore believe carer-wife arrangements such as the main case are rare (p. 166; PDF p. 11)",
+     "most interviews were with families holding a §94 arrangement, so families with substantial care needs are over-represented (p. 167; PDF p. 12)",
+     "transnational marriages involving older men may rest on close emotional ties rather than care needs – the authors present a Turkish couple where the husband had no care needs (p. 167; PDF p. 12)"
+    ],
+    "robustness_checks": [
+     "triangulation of the main case across the wife (several visits over seven months), the husband and one of his adult daughters (interviewed twice)",
+     "corroboration from interviews with 52 municipal care managers, who use the term 'fetched wives' / 'fetched spouses'",
+     "four further cases of marriage migrant wives of much older husbands (Alina, Fatima and others), of five such cases in total",
+     "register analysis showing that older immigrant men who remarry predominantly marry substantially younger marriage migrants"
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "directed content analysis of qualitative interviews (Hsieh & Shannon 2005), coding the establishment, practices and evaluations of the arrangements; no statistical model is estimated",
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "five cases of marriage migrant wives of substantially older husbands, drawn from 30 families with a §94 arrangement (more than 100 interviews) and 52 interviewed municipal care managers",
+     "evidence": [
+      "e3",
+      "e4",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; qualitative analysis reported in the text, pp. 162-168 (PDF pp. 7-13), with the summary statements on pp. 166-167 (PDF pp. 11-12)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "the §94 self-appointed helper scheme: municipal remuneration lets the new wife generate an income as her husband's paid helper, which makes the arrangement financially viable",
+    "linguistic and cultural barriers to public eldercare (poor Danish; a cultural taboo on nakedness between unmarried men and women in a feminised care sector)",
+    "the adult children's inability to provide the care themselves, being in full-time work or education",
+    "transnational matchmaking networks (in the main case an expatriate relative acted as matchmaker)",
+    "the bride's 'unmarriability' in her local marriage market and her family's precarious finances"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "presence of care needs in the husband",
+     "finding": "in families without a §94 arrangement the authors met a Turkish couple whose transnational marriage rested on close emotional ties, where 'the husband had no care needs to attend to' (p. 167; PDF p. 12)"
+    },
+    {
+     "dimension": "who initiates the arrangement",
+     "finding": "in both Bouchra's and Fatima's cases the husband's adult children were involved in contracting the marriage (pp. 162-163 and 167; PDF pp. 7-8 and 12)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "unmet care needs of an older immigrant man",
+     "public eldercare unacceptable or inaccessible (language, feminised care sector, taboo on nakedness)",
+     "adult children unable to provide the care",
+     "§94 self-appointed helper remuneration",
+     "marriage to a substantially younger migrant carer-wife",
+     "sample inclusion: family holds a §94 self-appointed helper arrangement"
+    ],
+    "edges": [
+     {
+      "from": "unmet care needs of an older immigrant man",
+      "to": "marriage to a substantially younger migrant carer-wife",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "public eldercare unacceptable or inaccessible (language, feminised care sector, taboo on nakedness)",
+      "to": "marriage to a substantially younger migrant carer-wife",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "adult children unable to provide the care",
+      "to": "marriage to a substantially younger migrant carer-wife",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "§94 self-appointed helper remuneration",
+      "to": "marriage to a substantially younger migrant carer-wife",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: family holds a §94 self-appointed helper arrangement",
+      "to": "marriage to a substantially younger migrant carer-wife",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "1959b4c45d618d71",
+      "n_chars": 289
+     },
+     {
+      "page": 12,
+      "sha256_16": "9c22681a43046680",
+      "n_chars": 154
+     },
+     {
+      "page": 7,
+      "sha256_16": "ef82952b0e689407",
+      "n_chars": 208
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "This is a qualitative claim: the paper documents the existence and the mechanism of the arrangement in five cases plus care-manager accounts, and prints no estimate, so every magnitude field is null.",
+    "The authors themselves state they believe such arrangements are rare and do not attempt to quantify their frequency.",
+    "The causal direction (unmet care needs leading to the marriage) is the authors' account of the cases and of the marriage-market logic, not an identified effect."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 12,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9c22681a43046680",
+     "n_chars": 154
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 11,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2e281244f8434341",
+     "n_chars": 220
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6bab29c947fbf490",
+     "n_chars": 201
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "da4263a400e1d073",
+     "n_chars": 152
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ef82952b0e689407",
+     "n_chars": 208
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1959b4c45d618d71",
+     "n_chars": 289
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 12,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0da7aa897a713041",
+     "n_chars": 136
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 11,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "aac5838741d49c9b",
+     "n_chars": 252
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4db0d97a043397f7",
+     "n_chars": 217
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e19f2069ba8cf6d0",
+     "n_chars": 97
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 11,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "26cd7483ce81ce72",
+     "n_chars": 284
+    },
+    {
+     "id": "e12",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8eb919b3fc927471",
+     "n_chars": 168
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "58a75bfc5b72d29c",
+     "n_chars": 150
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "69b5bb431d2ed88a",
+     "n_chars": 195
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "68fdaf8c0878f2e6",
+     "n_chars": 229
+    },
+    {
+     "id": "e16",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b18f1837f187ed1f",
+     "n_chars": 160
+    },
+    {
+     "id": "e17",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 11,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "63784ea275dea12e",
+     "n_chars": 193
+    },
+    {
+     "id": "e18",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 12,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "eae1581e8f38e6bc",
+     "n_chars": 199
+    },
+    {
+     "id": "e19",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "91afefc92fccf62f",
+     "n_chars": 255
+    },
+    {
+     "id": "e20",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9957cf18b132da9b",
+     "n_chars": 170
+    },
+    {
+     "id": "e21",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f2fb646db053a17c",
+     "n_chars": 314
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "ethnic minority families in Denmark with ageing immigrant men in need of care, set against countries such as Germany and Italy where a 'twilight zone' of live-in migrant care workers exists",
+     "boundary_conditions": [
+      "Danish national legislation makes live-in migrant care-worker arrangements unfeasible, so the municipalities' §94 scheme provides a related type of 'precarious inclusion' instead",
+      "the authors believe carer-wife arrangements are rare, since only a minority of the (few) remarrying older immigrant men have large care needs"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e19",
+     "e11"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": "ontology",
+   "prediction_risk": "none",
+   "theory_referenced": [
+    "marriage market theory (Becker 1981)",
+    "the 'hostile worlds view' (Zelizer 2000)",
+    "the 'status paradox' of migration (Nieswand 2011)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Lan 2002",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e20"
+     ],
+     "as_stated": "In both cases, money from the authorities is integrated into provisions of culturally appropriate in-home eldercare, provided by co-ethnics rather than by adult children."
+    },
+    {
+     "citation": "Hochschild 2003",
+     "relation": "extends",
+     "stated": true,
+     "evidence": [
+      "e21"
+     ],
+     "as_stated": "this analysis shows yet another way in which the ‘care gold’ of women from the Global South is cheaply extracted elsewhere in the world (Hochschild 2003)"
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "the frequency or prevalence of migrant carer-wife arrangements: the authors state they believe such arrangements are rare but report no count beyond the five relevant cases"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "marriages indicates that care needs of the men involved are not presently met. …",
+    "sha256_16": "1959b4c45d618d71",
+    "n_chars": 289
+   }
+  },
+  {
+   "claim_id": "dk_W4285059352_c7",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Being a migrant carer-wife to a much older husband leads to isolated and strenuous lives with many care duties and to a precarious dependency on the husband's adult children, who do not necessarily regard their father's new wife as kin.",
+   "treatment": {
+    "label": "being a migrant carer-wife: a marriage migrant wife, substantially younger than her husband, living with and providing in-home care for him (in these cases as a §94 self-appointed helper)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A woman who migrated to Denmark through family unification to marry a substantially older immigrant husband with care needs, performing his personal and household care; in the cases presented she is also paid a small monthly salary as his §94 self-appointed helper and has no worker rights such as maximum hours or days off.",
+     "evidence": [
+      "e3",
+      "e5",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "after arrival in Denmark and throughout the marriage; the main case describes her first five years in Denmark, another case 10 years of marriage",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "precarity: isolation, strenuous and unbounded care duties, and dependency on the husband's adult children (including over residence, inheritance and motherhood)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Documented in the interviews as: being tied to the home almost around the clock with no friends or family; no maximum working hours or weekends off; no worker protection guaranteeing minimum pay or time off; limited access to the privileges of wifehood (a 'no inheritance' clause, prevention of motherhood); and fear of what will happen when the much older husband dies, given dependence on his adult children for navigating the Danish authorities.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e5",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "during the marriage, and prospectively at the husband's death",
+     "evidence": [
+      "e1",
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "'While these marriages may provide such women with a livelihood, they also lead to not only isolated and strenuous lives with many care duties but also a precarious dependency on the adult children of husbands, who do not necessarily regard their fathers’ new wives as kin.' (abstract, p. 156 (PDF p. 1))",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "marriage migrant wives of substantially older immigrant husbands with care needs in Denmark (the five cases encountered, of whom Bouchra, Alina and Fatima are described)",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "during the marriage and prospectively after the husband's death",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Marriage migrant wives substantially younger than their immigrant husbands, interviewed in the AISHA project; Bouchra (arrived 2016, married at 37 to a 76-year-old), Alina (arrived at 40 to a 60-year-old divorcee, interviewed 10 years into the marriage) and Fatima (more than 30 years younger than her 92-year-old husband)",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "women",
+    "period": "2017-2021",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "wives encountered as §94 self-appointed helpers for substantially older widowed or divorced immigrant husbands in families recruited through the §94 scheme; five such cases in the data material",
+    "period_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none – a directed content analysis of qualitative interviews with carer-wives, their husbands and husbands' adult children; no comparison group and no exogenous variation",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The wives' accounts of isolation, workload and dependency describe their situation accurately; the authors rely on repeated interviews and on corroborating accounts from husbands, adult children and care managers rather than on external measurement.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "repeated visits to the main case over seven months, interviews with the husband and an adult daughter, and parallel accounts from Alina and Fatima",
+      "evidence": [
+       "e4",
+       "e7"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The cases are conditioned on the wives being §94 self-appointed helpers in families with substantial care needs, so the observed precarity is that of carer-wives in such arrangements and not of marriage migrant wives in general.",
+      "stated_or_implicit": "stated",
+      "supported_by": "'As most of our interviews were conducted with families who had a §94 arrangement, our focus was on families with substantial care needs.' (p. 167; PDF p. 12)",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "sample inclusion: wife is a §94 self-appointed helper in a family with substantial care needs",
+         "to": "precarity of the carer-wife",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The precarity is attributed to the hybrid carer-wife position itself (care work performed as marital duty, without worker protection, in isolation), rather than to the women's prior disadvantage; no counterfactual for these women's lives had they not migrated is observed.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "the authors' argument that the women 'do not have worker protection to guarantee a minimum pay or time off, as they are simply fulfilling their marital duties'",
+      "evidence": [
+       "e3",
+       "e6"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "the authors stress that the women should be seen as agents actively pursuing a better life under considerable structural constraints rather than as victims or gold diggers (p. 169; PDF p. 14)",
+     "the marriages are also said to provide the women with a livelihood and the opportunity to remit money (abstract, p. 156 (PDF p. 1); p. 168 (PDF p. 13))"
+    ],
+    "robustness_checks": [
+     "the same pattern of isolation, burden and fear for the future is reported across three described cases (Bouchra, Alina, Fatima)"
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "directed content analysis of qualitative interviews (Hsieh & Shannon 2005); no statistical model is estimated",
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "five cases of marriage migrant wives of substantially older husbands; three described in detail (Bouchra, Alina, Fatima)",
+     "evidence": [
+      "e13"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No table or figure; qualitative analysis reported in the text, pp. 164-169 (PDF pp. 9-14), with the summary on p. 169 (PDF p. 14)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "the isolation of live-in care, which keeps the women from learning the local language, forming networks and getting to know their country of destination",
+    "absence of worker rights: no maximum working hours, weekends off, minimum pay or time off, because the care is performed as a marital duty",
+    "the adult children's protection of their inheritance, producing a 'no inheritance' clause in one case and a vasectomy preventing motherhood in another",
+    "dependence on the husband's adult children for navigating the Danish authorities"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "case",
+     "finding": "Bouchra was isolated and tied to the home almost around the clock (p. 165; PDF p. 10); 'Alina’s arrival in Denmark had provided him with extensive in-house care, but the arrangement left Alina isolated and burdened' (p. 167; PDF p. 12); Fatima feared being sent home when her husband dies (p. 168; PDF p. 13)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "being a migrant carer-wife to a much older husband",
+     "isolation of live-in care",
+     "absence of worker rights (care as marital duty)",
+     "adult children's protection of inheritance",
+     "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+     "sample inclusion: wife is a §94 self-appointed helper in a family with substantial care needs"
+    ],
+    "edges": [
+     {
+      "from": "being a migrant carer-wife to a much older husband",
+      "to": "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "isolation of live-in care",
+      "to": "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "absence of worker rights (care as marital duty)",
+      "to": "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "adult children's protection of inheritance",
+      "to": "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "sample inclusion: wife is a §94 self-appointed helper in a family with substantial care needs",
+      "to": "precarity of the carer-wife (isolation, strenuous care duties, dependency on the husband's adult children)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "29ddc6bc47586eef",
+      "n_chars": 272
+     },
+     {
+      "page": 10,
+      "sha256_16": "87dc055ff46c3df3",
+      "n_chars": 127
+     },
+     {
+      "page": 14,
+      "sha256_16": "fac0fe86fdf3fe68",
+      "n_chars": 225
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "This is a qualitative claim documented in three described cases (of five encountered); the paper prints no estimate, so all magnitude fields are null.",
+    "The outcome bundles isolation, workload and dependency, which the paper itself presents together as 'precarity'; it reports no separate measure of any component.",
+    "The authors simultaneously stress agency and the livelihood the marriages provide, so the claim is about the costs of the arrangement rather than a net welfare assessment."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "87dc055ff46c3df3",
+     "n_chars": 127
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "29ddc6bc47586eef",
+     "n_chars": 272
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "fac0fe86fdf3fe68",
+     "n_chars": 225
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 12,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0db979e50da4afec",
+     "n_chars": 127
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ce1901f22c4c971c",
+     "n_chars": 158
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "05fb2beebdfe84f4",
+     "n_chars": 188
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b18f1837f187ed1f",
+     "n_chars": 160
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f1eb3e88d5b966fb",
+     "n_chars": 164
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "68fdaf8c0878f2e6",
+     "n_chars": 229
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 11,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "70b5dc7f9ad8e663",
+     "n_chars": 173
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 12,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0da7aa897a713041",
+     "n_chars": 136
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4db0d97a043397f7",
+     "n_chars": 217
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e19f2069ba8cf6d0",
+     "n_chars": 97
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f2fb646db053a17c",
+     "n_chars": 314
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "65f667c3da40368d",
+     "n_chars": 264
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "marriage migrant wives from the Global South who shoulder substantial care burdens – 'yet another way in which the ‘care gold’ of women from the Global South is cheaply extracted elsewhere in the world'",
+     "boundary_conditions": [
+      "the women in these cases lack worker protection because the care is performed as a marital duty",
+      "the §94 municipal scheme supplies a 'precarious inclusion' in the Danish labour market, where live-in migrant care work is otherwise unfeasible"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e14",
+     "e3"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": "ontology",
+   "prediction_risk": "none",
+   "theory_referenced": [
+    "'gendered geographies of power' (Mahler & Pessar 2001)",
+    "precarity / 'precarious inclusion' (Rytter & Sparre 2021)",
+    "global care chains and 'care gold' (Hochschild 2003)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Hochschild 2003",
+     "relation": "extends",
+     "stated": true,
+     "evidence": [
+      "e14"
+     ],
+     "as_stated": "this analysis shows yet another way in which the ‘care gold’ of women from the Global South is cheaply extracted elsewhere in the world (Hochschild 2003)"
+    },
+    {
+     "citation": "Lan 2008",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e15"
+     ],
+     "as_stated": "However, this did not necessarily make for an easier life, as ‘… the workload placed on a wife may even be intensified since the labor of love offered by a family member is supposed to be incommensurable (thus unpaid) and incessant (no days off)’ (Lan 2008: 1805)."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [
+    "what actually happens to the carer-wives after their husbands die: the paper reports only the women's fears and the authors' expectation, since no case had reached that point"
+   ],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 1,
+    "text": "While these marriages may provide such women with a livelihood, they also lead to not only isolated and strenuous lives with many care duties but also a precarious dependency on the adult children of husbands, who do not necessarily regard …",
+    "sha256_16": "29ddc6bc47586eef",
+    "n_chars": 272
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "6b6ee4912e728a90d7060f8d86f620973a8bc29eed5a2e24a934722db10b2492",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.727543+00:00",
+  "tables_sha256": "7880b525c507375f0a6a80fe6f0a95ace6a983906e51cfa477ade02ffb0db659",
+  "figures_sha256": "8c87d70fdfee12e4b25a8d0d2a2f65d32c9e42635fb1e14ee7bad387887291a5"
+ },
+ "public_export": {
+  "anchor_quotes": 7,
+  "quotes_hashed": 102,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

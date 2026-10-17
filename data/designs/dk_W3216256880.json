@@ -1,0 +1,1042 @@
+{
+ "artid": "dk_W3216256880",
+ "paper": {
+  "title": "Overview of European legislation in the field of creating and functioning of population registers",
+  "authors": [
+   "Irina A. Trofimets"
+  ],
+  "year": 2021,
+  "journal": "RUDN Journal of Law",
+  "doi": "10.22363/2313-2337-2021-25-4-935-945",
+  "code_data_availability": "No data or code availability statement, and no data appendix: …"
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "European states whose national legislation on population registration the article reviews. There is no individual-level universe: the article analyses statutory texts, not persons.",
+   "unit_of_observation": "national jurisdiction (a state together with its population-registration legislation)",
+   "selection_rules": [
+    "Stated main selection criterion: information of the UN Statistical and UN Population Commissions on states that provide population and housing(-stock) data exclusively from state information systems (p. 936).",
+    "States given their own description in the body: Austria, Belgium, Hungary, Denmark, Iceland, the Netherlands, Norway, France, Sweden, Finland, and Spain (the last as a state that has no population register and does not plan one, p. 943).",
+    "The Russian Federation is brought in only as a comparison case in the Introduction and Conclusion (Federal Law No. 168-FZ of 08.06.2020)."
+   ],
+   "period": "legislation in force at the time of writing; the statutes cited in the footnotes are dated between 1983 and 2019 and every online source is recorded as accessed in June 2021 (article received 25 June 2021, accepted 15 October 2021)",
+   "n_observations": "no statistical sample. Ten European states are named as operating unified population registers (Austria, Belgium, Denmark, France, Hungary, Iceland, Netherlands, Norway, Sweden, Finland); Spain is described as having none.",
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "This is not an empirical study. The article is labelled an 'Information Article' ('Информационная статья', pp. 935-936) in the RUDN Journal of Law and is a narrative comparative review of national legislation on population registers. It contains no tables, no figures, no equations, no coefficients, no standard errors, no p-values, no sample sizes and no statistical analysis of any kind. The accompanying digest confirms that an independent pass extracted zero regression tables and zero figures.",
+   "No microdata is used. The evidence base is the text of national statutes (footnoted, with access dates in June 2021), information attributed to the UN Statistical and UN Population Commissions, and three ECtHR judgments (Bouchacourt v. France, Gardel v. France and M.B. v. France, 17.12.2009; Leander v. Sweden, 23.03.1987). The article prints no reference list.",
+   "Denmark appears only as one of the reviewed jurisdictions. A single paragraph (journal pp. 938-939) describes the Central Person Register ('Центральный реестр лиц', i.e. Det Centrale Personregister): maintained electronically, filled by municipal civil-registration authorities under the Ministry of the Interior and Social Affairs, administered by a Danish state agency, with a ten-digit national identification number whose first six digits are the date of birth and last four are serial digits encoding sex. It cites 'Bekendtgørelse af lov om Det Centrale Personregister. LBK nr 878 af 14/09/2009.' No Danish register data is analysed or linked.",
+   "The article is written in Russian; an English title, abstract, keywords and author note are printed on journal page 936. Journal pages 935-945 correspond to PDF pages 1-11 (journal page = PDF page + 934). Page fields in this extraction give the printed journal page with the PDF page in parentheses.",
+   "The only images in the PDF are the journal masthead logo and the Creative Commons licence badge on page 1 (verified with pdfimages); no exhibit is embedded as an image."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W3216256880_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Comparing the population-registration statutes of the European states it reviews, the article concludes that there is no uniform approach to the legal regulation of population registration across those national territories, although the systems share a public, integrated and territorially unified character.",
+   "treatment": {
+    "label": "the national jurisdiction whose legislation is reviewed (European state)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Not a treatment in any interventional sense: the article's comparison runs across countries, each described from the text of its own population-registration statute(s), footnoted with the date the source was accessed. The states described are Austria, Belgium, Hungary, Denmark, Iceland, the Netherlands, Norway, France, Sweden, Finland and Spain.",
+     "evidence": [
+      "e2",
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "legislation as in force at the time of writing; the footnoted statutes run from 1983 to 2019 and all online sources are recorded as accessed in June 2021",
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "the legal regulation of population registration (statutory design of the national population register)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Described, not measured: for each state the article reports whether a unified population register exists, what it is called, which authority administers it, who performs primary registration (usually municipalities), what personal data it holds, who may access it and on what terms, and the form of the personal identification number. No index, score or coded variable is constructed.",
+     "evidence": [
+      "e3",
+      "e6"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "the regime as in force at the time of writing (2021); no before/after comparison is made",
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "relationship": {
+    "sign": {
+     "value": "mixed",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "the European states whose population-registration legislation the article reviews; the article does not claim the comparison holds for states it did not review",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "European states and their population-registration legislation, as described from statutory texts",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": null,
+    "period": "legislation in force in 2021",
+    "region": "Europe",
+    "subgroups_defined": [
+     "Austria",
+     "Belgium",
+     "Hungary",
+     "Denmark",
+     "Iceland",
+     "Netherlands",
+     "Norway",
+     "France",
+     "Sweden",
+     "Finland",
+     "Spain (described as having no population register)"
+    ],
+    "selection": "states which, according to information of the UN Statistical and UN Population Commissions, provide population and housing-stock data exclusively from state information systems -- stated as the main selection criterion",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none exploited. The variation described is cross-national difference in statutory regimes; the article compares the texts of national laws and makes no attempt at causal identification.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The statutes cited describe the population-registration regime actually in force in each reviewed state at the time of writing.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "every country description is footnoted to the national instrument itself, with a URL and the date it was accessed (e.g. the Danish entry cites 'Bekendtgørelse af lov om Det Centrale Personregister. LBK nr 878 af 14/09/2009.')",
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The states reviewed are those which, per the UN Statistical and UN Population Commissions, provide population and housing-stock data exclusively from state information systems; the comparison is conditioned on that criterion.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as the main selection criterion in the abstract; the article offers no further justification and does not discuss what the criterion excludes",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "UN-reported reliance on state information systems for population and housing data",
+         "to": "inclusion in the review (selection indicator)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The law as written corresponds to how population registration is actually carried out in each state.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "none -- narrative comparative review of statutory texts; no model, no estimator, no coefficient",
+     "evidence": [
+      "e5",
+      "e6",
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit exists. The conclusion is stated in prose in the abstract (journal p. 936, and in Russian on p. 935) and restated in the 'Заключение' / Conclusion section (journal pp. 944-945).",
+     "evidence": [
+      "e1",
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "existence of a unified population register, by state",
+     "finding": "Austria, Belgium, Denmark, France, Hungary, Iceland, the Netherlands, Norway, Sweden and Finland are said to have established and to operate unified registers containing information about the population, while Spain is described as having no population register and no plan to create one (journal p. 943)."
+    },
+    {
+     "dimension": "which authority administers the register",
+     "finding": "The article reports a tendency to assign the function to the Ministry of Internal Affairs (Austria, Hungary, Iceland, the Netherlands); in some states the operator is a purpose-built body (Denmark -- a Danish state agency; France -- the Institute of Statistics and Economic Studies under the Ministry of Finance); and tax authorities also occur in this role (Norway and Sweden) (journal p. 945)."
+    },
+    {
+     "dimension": "what is registered",
+     "finding": "In some states the register performs the primary registration of legal facts and statuses (Iceland, Sweden, Finland); in others it records information already captured in other information resources (journal p. 945)."
+    },
+    {
+     "dimension": "common features across states",
+     "finding": "Despite differing names, the article reports a shared character: the public nature of register information is emphasised, it is integrated and unified throughout the territory, and the terms 'central' and 'national' are widely used in the names."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "European state (jurisdiction)",
+     "statutory design of the national population register",
+     "UN-reported reliance on state information systems for population and housing data",
+     "inclusion in the review (selection indicator)"
+    ],
+    "edges": [
+     {
+      "from": "UN-reported reliance on state information systems for population and housing data",
+      "to": "inclusion in the review (selection indicator)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": "936 (PDF p. 2)",
+      "sha256_16": "d876b2360d9f0e76",
+      "n_chars": 158
+     },
+     {
+      "page": "936 (PDF p. 2)",
+      "sha256_16": "a665ef2e4dfa5965",
+      "n_chars": 235
+     }
+    ]
+   },
+   "extraction_confidence": "low",
+   "ambiguities": [
+    "The article tests nothing. It is a doctrinal comparative review of legislation ('Information Article') with no data, no exhibit, no equation and no estimate, so strictly it yields zero causal claims. This record exists because the schema requires at least one claim; it encodes the article's own stated conclusion, which is a descriptive comparison of statutory regimes.",
+    "relationship.sign has no natural value here: both variables are unordered and no estimate exists. 'mixed' is used to encode the stated finding that the regulatory approach differs across states; a careful reader could argue that no sign applies at all. Hence confidence low.",
+    "The abstract's closing statement -- that studying world experience contributes to improving national legislation, 'especially relevant in connection with the adoption of Federal Law No. 168-FZ of 08.06.2020' -- is read as a statement of policy relevance to the Russian Federation, not as a claim about a domain in which the finding holds. scope is therefore left null rather than inferred.",
+    "Page numbers are given as the printed journal page with the PDF page in parentheses (journal 935-945 = PDF 1-11).",
+    "This paper looks out of scope for a Danish-register economics corpus: it is a Russian-language law-review overview of European population-register legislation, its Danish content is one descriptive paragraph about the CPR statute, and it uses no register microdata. The empty digest is consistent with this."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d876b2360d9f0e76",
+     "n_chars": 158
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "eecc3a1af4ab1d53",
+     "n_chars": 184
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a665ef2e4dfa5965",
+     "n_chars": 235
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ae991eb976f6d365",
+     "n_chars": 177
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f5437e7fd4e1c5b4",
+     "n_chars": 19
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f829c234ae699981",
+     "n_chars": 386
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c6571d9ded2df8f2",
+     "n_chars": 268
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "301b10670e4f9b9f",
+     "n_chars": 296
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "938 (PDF p. 4)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "56a177de44865739",
+     "n_chars": 79
+    },
+    {
+     "id": "e10",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "evidence:e5",
+      "evidence:e6",
+      "paper:dk_W3216256880"
+     ],
+     "how": "The article is labelled an 'Information Article' and, across all eleven pages, contains no equation, table, figure or numeric estimate; therefore no estimator is used and the design is a narrative comparative review of statutory texts, which is why identification.strategy is 'descriptive' and estimation.estimator is 'none'.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": "936 (PDF p. 2)",
+    "text": "The conducted research allowed us to conclude that there is no uniform approach in the legal regulation of population registration in EU national territories.",
+    "sha256_16": "d876b2360d9f0e76",
+    "n_chars": 158
+   }
+  },
+  {
+   "claim_id": "dk_W3216256880_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Across the European states it reviews, the article finds a common practice rather than a difference: every state assigns each citizen a unique personal identification number, as a rule at the registration of birth and retained for life, though the number is a universal cross-sector identifier only in some states.",
+   "treatment": {
+    "label": "the national jurisdiction whose legislation is reviewed (European state)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Not a treatment in any interventional sense: the comparison runs across the countries described in the article (Austria, Belgium, Hungary, Denmark, Iceland, the Netherlands, Norway, France, Sweden, Finland, Spain), each from the text of its own statutes.",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "legislation as in force at the time of writing (sources accessed June 2021)",
+     "evidence": [
+      "e7"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "not_ordered"
+   },
+   "outcome": {
+    "label": "assignment of a unique personal identification number to the citizen (its existence, moment of assignment and breadth of use)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Described from each state's statute: whether every registered person receives a unique personal number, when it is assigned (as a rule at the registration of birth), whether it is retained for life, and in which spheres it is used (universal identifier versus confined mainly to social insurance). For Denmark the article describes a ten-digit number, the first six digits being the date of birth and the last four 'serial' digits indicating sex, which also serves as the social-insurance number but cannot on its own serve as proof of identity.",
+     "evidence": [
+      "e1",
+      "e2",
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "timing": {
+     "value": "the number as assigned under the regime in force in 2021; the article states the number is assigned at birth registration and kept throughout life",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "not_ordered"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "the European states whose population-registration legislation the article reviews",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "European states and their population-registration legislation, as described from statutory texts",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": null,
+    "period": "legislation in force in 2021",
+    "region": "Europe",
+    "subgroups_defined": [
+     "states where the number is a universal identifier used in all spheres: Belgium, Denmark, Iceland, Netherlands, Norway, Sweden",
+     "states where the number from the register is used only in particular fields, most often social insurance: Austria, Hungary, France"
+    ],
+    "selection": "states which, according to information of the UN Statistical and UN Population Commissions, provide population and housing-stock data exclusively from state information systems -- stated as the main selection criterion",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "none exploited. The article compares the texts of national laws across states; it makes no attempt at causal identification.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The statutes cited describe the population-registration regime actually in force in each reviewed state at the time of writing.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "each country description is footnoted to the national instrument, with a URL and an access date in June 2021 (e.g. the Danish entry cites 'Bekendtgørelse af lov om Det Centrale Personregister. LBK nr 878 af 14/09/2009.')",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The states reviewed are those which, per the UN Statistical and UN Population Commissions, provide population and housing-stock data exclusively from state information systems; the generalisation 'all states' is conditioned on that criterion.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as the main selection criterion in the abstract; the article does not discuss what the criterion excludes, even though its own Spanish case shows a European state outside the pattern",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "UN-reported reliance on state information systems for population and housing data",
+         "to": "inclusion in the review (selection indicator)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The law as written corresponds to how personal identification numbers are actually assigned and used in each state.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "none -- narrative comparative review of statutory texts; no model, no estimator, no coefficient",
+     "evidence": [
+      "e5",
+      "e9"
+     ],
+     "confidence": "medium"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit exists. The finding is stated in prose in the 'Заключение' / Conclusion section (journal p. 944).",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "breadth of use of the identification number, by state",
+     "finding": "The article states that in a number of states the number is universal and used in all spheres as an identifier (Belgium, Denmark, Iceland, the Netherlands, Norway and Sweden), while in certain states the number from the register is used only in particular fields, most often social insurance (Austria, Hungary and France), where citizens hold other identifiers in other fields (journal p. 944)."
+    },
+    {
+     "dimension": "format of the number",
+     "finding": "The formats described differ: ten digits in Denmark (first six the date of birth, last four 'serial' digits indicating sex) and in Sweden, eleven digits in Norway, and in France a thirteen-digit alphanumeric code with two check letters that doubles as the social-insurance number."
+    },
+    {
+     "dimension": "evidentiary weight of the number",
+     "finding": "For Denmark the article notes that the registered number is unique and used to identify people but cannot serve as the sole document proving a person's identity, for which a passport and/or driving licence is used (journal pp. 938-939)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "European state (jurisdiction)",
+     "assignment of a unique personal identification number to the citizen",
+     "UN-reported reliance on state information systems for population and housing data",
+     "inclusion in the review (selection indicator)"
+    ],
+    "edges": [
+     {
+      "from": "UN-reported reliance on state information systems for population and housing data",
+      "to": "inclusion in the review (selection indicator)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": "944 (PDF p. 10)",
+      "sha256_16": "5e3fc9951cb560ee",
+      "n_chars": 160
+     },
+     {
+      "page": "944 (PDF p. 10)",
+      "sha256_16": "99689d755659c373",
+      "n_chars": 145
+     }
+    ]
+   },
+   "extraction_confidence": "low",
+   "ambiguities": [
+    "As with claim c1, nothing here is tested: this is a stated observation from a comparative reading of statutes, with no data, no exhibit and no estimate. The record exists so that the article's second main stated finding is not lost, not because the article performs a test.",
+    "relationship.sign is set to 'null' to encode the stated finding that this feature does NOT differ across the states reviewed -- every state assigns a unique personal number. That is a reading of an unordered descriptive uniformity through a sign enum built for estimated effects; 'mixed' would be defensible if one weighted the stated variation in how broadly the number is used (recorded in heterogeneity) over the uniformity in whether one exists. Confidence low for that reason.",
+    "The sentence that states the universality most directly ('В качестве общего направления развития учетных систем отмечается, что все государства используют практику присвоения каждому гражданину условного уникального номера') is hyphen-broken across a line in the PDF, so the cleaner neighbouring sentence is quoted instead; both are on journal p. 944.",
+    "Page numbers are given as the printed journal page with the PDF page in parentheses (journal 935-945 = PDF 1-11)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "944 (PDF p. 10)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5e3fc9951cb560ee",
+     "n_chars": 160
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "944 (PDF p. 10)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "99689d755659c373",
+     "n_chars": 145
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ae991eb976f6d365",
+     "n_chars": 177
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "938 (PDF p. 4)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "56a177de44865739",
+     "n_chars": 79
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3cc67b608065ce8a",
+     "n_chars": 320
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e33ac21948c7bd3f",
+     "n_chars": 271
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": "936 (PDF p. 2)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "05249c0930811643",
+     "n_chars": 31
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "301b10670e4f9b9f",
+     "n_chars": 296
+    },
+    {
+     "id": "e9",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": "935-945 (PDF pp. 1-11)",
+     "annotation": null,
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "evidence:e5",
+      "paper:dk_W3216256880"
+     ],
+     "how": "The article is labelled an 'Information Article' and, across all eleven pages, contains no equation, table, figure or numeric estimate; therefore no estimator is used and the design is a narrative comparative review of statutory texts, which is why identification.strategy is 'descriptive' and estimation.estimator is 'none'.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": "none",
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": "944 (PDF p. 10)",
+    "text": "Как правило, персональный идентификационный номер присваивается физическому лицу-гражданину при регистрации его рождения и сохраняется на протяжении всей жизни.",
+    "sha256_16": "5e3fc9951cb560ee",
+    "n_chars": 160
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "75e8964680f5dcbb3cbf48de16e3571e24baf359170de4952243fc346ca91860",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.653748+00:00",
+  "tables_sha256": "c8228c62237d1f761bdc5f86a7ddb029947247aeda5ef7da6ab8258a393ec0be",
+  "figures_sha256": "ed872e8bf55724bccd6962ab1ea922104e17483674d6f2476380ff930da89a2f"
+ },
+ "public_export": {
+  "anchor_quotes": 2,
+  "quotes_hashed": 21,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

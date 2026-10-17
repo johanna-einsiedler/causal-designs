@@ -1,0 +1,5075 @@
+{
+ "artid": "dk_W7212086049",
+ "paper": {
+  "title": "SOCIAL LEARNING THEORY AND CRIMINAL OFFENDING: SOURCES, MECHANISMS AND CONTEMPORARY EXPRESSIONS IN SELECTED EUROPEAN UNION MEMBER STATES",
+  "authors": [
+   "Krenar Bardhi",
+   "Linert Lirëza"
+  ],
+  "year": 2026,
+  "journal": "E-Journal VFU (Varna Free University “Chernorizets Hrabar”)",
+  "code_data_availability": "No data or code availability statement, and no DST project reference. …"
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "Peer-reviewed research and official publications on criminal learning available through 23 August 2026 — including reports of Europol, the Swedish National Council for Crime Prevention (Brå), the Bulgarian National Statistical Institute, the European Union Drugs Agency and the Council of Europe — together with five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria) treated as case studies.",
+   "unit_of_observation": "published study or official report; and country case",
+   "selection_rules": [
+    "structured narrative review covering foundational theory, empirical tests, network research, cybercrime studies and intervention evidence (p.3)",
+    "sources restricted to peer-reviewed research and official publications available through 23 August 2026 (p.3)",
+    "five Member States selected because each offers evidence about a different transmission setting, not to rank national crime levels (p.3)",
+    "Sweden: age-graded network recruitment and digital status signalling; Denmark: register-based evidence on prison peer effects; the Netherlands: cyber-dependent offending with intergenerational organised crime; Italy: mafia-related kinship and territorial socialisation; Bulgaria: administrative data on juvenile offending and educational measures (p.3)"
+   ],
+   "period": "sources available through 23 August 2026",
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "NO ORIGINAL DATA. The article is a structured narrative review combined with a functional comparative case study: \"The study uses a structured narrative review and a functional comparative case-study design\" (p.1) and \"The approach is explanatory rather than statistical\" (p.3). It constructs no variables, estimates no model and reports no coefficient, standard error, confidence interval or p-value anywhere.",
+   "NO DANISH REGISTER DATA IS USED BY THE AUTHORS. `registers` is deliberately empty. Danish register evidence appears only as a citation: \"Damm and Gorinas used register data covering the Danish prison population to examine whether exposure to peers affected crime- specific recidivism\" (p.9), footnoted to Damm, A.P. and Gorinas, C., 2020, 'Prison as a criminal school: Peer effects and criminal learning behind bars', Journal of Law and Economics, 63(1), pp. 149-180. The article names no register, no register code and no register variable, and gives no sample size, period or linkage for those data.",
+   "This paper appears to be a false positive for a Danish-register economics corpus: it is a criminology/law review article whose only connection to Danish register data is the one secondary citation above. This is consistent with the empty regression digest supplied with this pack (0 regressions, 0 tables, 0 figures).",
+   "Table 1, \"Functional comparison of criminal learning environments in selected EU Member States\" (pp.8-9), is the article's only table. It is a qualitative four-column matrix (Member State and setting / Evidence examined / Principal learning mechanism / Prevention implication) and contains no estimates.",
+   "The only numbers printed in the article are counts quoted from other sources, not results: Europol's 821 high-risk criminal networks and more than 25,000 members (p.6); 28 interviewees in the Brå network study (p.8); 1,240 Dutch young people in the Bekkers et al. cyber-offending study (p.10); 25 organised-crime offenders and 48 adult children in the van Dijk et al. study (p.10); seven criminal families in the Spapens and Moors study (p.10); and Bulgarian administrative counts for 2025 — 7,892 minors and juveniles in child pedagogical rooms including 2,385 new entrants, 4,741 crimes, and 6,890 educational measures imposed on 4,840 persons (p.12). The article explicitly states of the last of these that \"These figures describe administrative activity and recorded behaviour; they cannot establish differential association, imitation or reinforcement\" (p.12), so they are not recorded as claims.",
+   "PROVENANCE OF BIBLIOGRAPHIC FIELDS: neither the publication year nor the journal name is printed in the article body. `year` = 2026 is inferred from the PDF creation date (2026-09-09), from sources being cited 'available through 23 August 2026', and from references dated 2026; `journal` is taken from the PDF metadata fields /Subject ('Scientific article prepared for E-Journal VFU') and /Comments ('Formatted to the technical requirements of E-Journal VFU'). The printed page range is 542-559. No DOI is printed.",
+   "PAGE NUMBERS in every quote and evidence record refer to PDF page indices (1-18), not the printed journal page numbers (542-559). PDF page n corresponds to printed page 541+n."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W7212086049_c1",
+   "headline": true,
+   "statement": "Differential association — patterned exposure to people, messages and criminal opportunities differing in frequency, duration, priority and intensity — is one of the two components of social learning theory most consistently supported as a source of criminal offending in the reviewed European evidence.",
+   "treatment": {
+    "label": "differential association",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Patterned exposure to people, messages and opportunities, not mere physical proximity to an offender; associations differ in frequency, duration, priority and intensity, and transmit techniques, motives, rationalisations and attitudes while also structuring criminal opportunity. Assessed qualitatively across the reviewed studies and country cases.",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "criminal offending",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Criminal conduct in general — its acquisition, maintenance, escalation and abandonment. The article treats offending as a qualitative outcome assessed across reviewed studies and official reports; it constructs no offending variable of its own.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e15",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the strongest support\" (abstract); \"the most consistently visible components\" together with definitions (section 6). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Not an estimate for a defined population: a qualitative assessment of how strongly the reviewed European evidence supports this component of social learning theory.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders, prisoners and young people as described in the peer-reviewed research and official publications reviewed, for five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "sources available through 23 August 2026",
+    "region": "European Union — Sweden, Denmark, the Netherlands, Italy and Bulgaria",
+    "subgroups_defined": [
+     "Sweden: youth recruitment into criminal networks",
+     "Denmark: prison peer effects",
+     "Netherlands: cybercrime and criminal families",
+     "Italy: mafia-related recruitment and youth groups",
+     "Bulgaria: juvenile prevention and educational measures"
+    ],
+    "selection": "Member States selected purposively for the distinct criminal-learning settings they illuminate, not for representativeness; sources restricted to peer-reviewed research and official publications available through 23 August 2026.",
+    "period_range": {
+     "from": null,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. The article analyses no data of its own: it combines a structured narrative review of published research and official publications with a functional comparative case study of five EU Member States. There is no reform, lottery, discontinuity, instrument or other exogenous variation, and the authors describe the approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "Functional comparability: the five purposively selected country cases each isolate a setting in which the theory makes a distinct prediction, and the comparison asks only whether the observed recruitment, transmission and reinforcement processes correspond to theory-predicted mechanisms rather than ranking national crime levels.",
+      "stated_or_implicit": "stated",
+      "supported_by": "explicit statement of the comparative logic and its limits in section 2 (methodology)",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Convergent validity of heterogeneous secondary sources: findings drawn from self-report studies and from official reports designed for administration or threat assessment rather than for testing criminological theory are treated as convergent evidence and interpreted cautiously.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the authors state the two limitations and say findings are treated as convergent evidence and interpreted cautiously",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Self-selection into peer groups is conceded and not resolved: an unobserved pre-existing criminal propensity drives both whom a person associates with and whether they offend, so observed peer similarity is partly cause and partly consequence.",
+      "stated_or_implicit": "stated",
+      "supported_by": "conceded as the first of four limitations preventing a monocausal conclusion; no design or test is offered against it",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "id": "a3",
+      "formal": {
+       "form": "latent_confounder",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "differential association",
+         "kind": "latent_confounder_assumed"
+        },
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "criminal offending",
+         "kind": "latent_confounder_assumed"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Measurement: much social-learning research relies on self-reported delinquency and on respondents' descriptions of their friends, which can inflate apparent similarity through projection.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as a limitation in both the methodology section and the critical assessment",
+      "evidence": [
+       "e12"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Causation between association and offending is reciprocal rather than one-directional, so the relationship cannot be read as a single directed effect; the article states an inference rather than a causal conclusion where the evidence is descriptive.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated in section 3.1 and reaffirmed in the methodology; no attempt to separate the directions",
+      "evidence": [
+       "e8",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a5",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "selection of peers by pre-existing propensity (peer similarity partly cause, partly consequence)",
+     "projection and measurement error in self-reported peer delinquency",
+     "limited scope: spontaneous, expressive or highly impulsive offending may involve little transmitted technique",
+     "structural omission: the theory explains transmission better than exposure to criminal models",
+     "non-comparability of national administrative categories, age thresholds and reporting practices",
+     "official reports are designed for administration or threat assessment, not for testing criminological theory"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "selection: people with existing propensities choose similar friends and communities, so peer similarity is partly a cause and partly a consequence of offending",
+     "projection and measurement error: respondents may overestimate their friends' delinquency or assume that friends resemble them",
+     "reciprocal causation: offending can reshape the network, so causation is reciprocal rather than one-directional",
+     "structural omission: why disadvantaged and segregated environments expose some populations to more criminal models and fewer lawful rewards"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — structured narrative review combined with a functional comparative case study; no statistical model is estimated and no coefficient is reported.",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Qualitative assessment stated in the abstract (p.1) and section 6, \"Critical assessment: explanatory strength and limits\" (p.13); the only table, Table 1 (pp.8-9), is a qualitative comparison matrix.",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "country case / learning setting",
+     "finding": "Visible in every case: \"Swedish recruits encounter age-proximate models and hierarchical meanings; Dutch criminal families transmit attitudes and opportunity; Italian mafia contexts intensify identity and loyalty; cyber communities connect skill with recognition\" (p.13)."
+    },
+    {
+     "dimension": "network structure vs number of delinquent friends",
+     "finding": "The article reports Haynie's finding that the peer-delinquency relationship depends partly on the structure and composition of friendship networks, not only on the number of delinquent friends (p.4)."
+    },
+    {
+     "dimension": "offence complexity",
+     "finding": "Association matters most where offending requires repeated interaction, specialised knowledge or group reinforcement, and least for isolated or highly impulsive offending (p.13)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "differential association",
+     "criminal offending",
+     "pre-existing criminal propensity (unobserved)"
+    ],
+    "edges": [
+     {
+      "from": "differential association",
+      "to": "criminal offending",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "differential association",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "criminal offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "5a9f8151c5ca7446",
+      "n_chars": 198
+     },
+     {
+      "page": 13,
+      "sha256_16": "1c500a65ce97090d",
+      "n_chars": 134
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The article reports no coefficient, standard error or test statistic for this or any relationship, so the claim records only an asserted direction and the authors' qualitative strength ranking (\"strongest support\").",
+    "The authors concede that selection and reciprocal causation are unresolved, so the asserted direction is not separated from reverse causation or common-cause selection.",
+    "The paper's own evidential basis for this proposition is a review of other authors' studies plus five country cases; it performs no original estimation."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e04ee97258c6be5e",
+     "n_chars": 200
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "39a2f4b989d96dc8",
+     "n_chars": 152
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4071ab23800e57f0",
+     "n_chars": 117
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a6e4aa0f8cb1bfe",
+     "n_chars": 177
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 2,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0d7e35eed79c5a87",
+     "n_chars": 227
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c500a65ce97090d",
+     "n_chars": 134
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dffaf4fc885da2bc",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a8eac09d9cd5ee5",
+     "n_chars": 141
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f03a38bc539c944d",
+     "n_chars": 216
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b934851187cc066a",
+     "n_chars": 276
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a9f8151c5ca7446",
+     "n_chars": 198
+    },
+    {
+     "id": "e16",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e17",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "eT1",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "Table 1, 'Functional comparison of criminal learning environments in selected EU Member States' (pp.8-9): a qualitative four-column matrix (Member State and setting / Evidence examined / Principal learning mechanism / Prevention implication). It contains no coefficients, standard errors or test statistics, which is why it carries no digest regression_id.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Criminal conduct in which social transmission plausibly operates — conduct requiring repeated interaction, specialised knowledge, shared rationalisation or group reinforcement; the authors explicitly deny that social learning is the single or universal source of criminality.",
+     "boundary_conditions": [
+      "most convincing where the conduct requires repeated interaction, specialised knowledge, shared rationalisation or group reinforcement",
+      "less complete where offending is isolated, highly impulsive, or driven by factors not mediated through social meaning",
+      "spontaneous expressive violence, offences committed in acute emotional states and some opportunistic acts may require little transmitted technique",
+      "national administrative categories, age thresholds and reporting practices differ, so the five country cases are not claimed to be representative or to rank national crime levels"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e14",
+     "e1"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Pratt, T.C., Cullen, F.T., Sellers, C.S., Winfree, L.T., Madensen, T.D., Daigle, L.E., Fearn, N.E. and Gau, J.M., 2010. The empirical status of social learning theory: A meta-analysis. Justice Quarterly, 27(6), pp. 765-802.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e9"
+     ],
+     "as_stated": "A major meta- analysis found comparatively strong relationships between offending and both differential association and pro- criminal definitions, but weaker and less stable effects for imitation and differential reinforcement."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; there is no designated parameter of interest to name."
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "The analysis finds the strongest support for differential association and definitions favourable to offending, while evidence for imitation and differential reinforcement is more context- dependent.",
+    "sha256_16": "5a9f8151c5ca7446",
+    "n_chars": 198
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c2",
+   "headline": true,
+   "statement": "Definitions favourable to offending — attitudes and meanings that approve or neutralise criminal conduct — are, with differential association, the component of social learning theory most consistently supported as a source of criminal offending in the reviewed European evidence.",
+   "treatment": {
+    "label": "definitions favourable to offending",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Attitudes and meanings attached to conduct: definitions that positively approve offending (violence as courage, drug distribution as entrepreneurship, fraud as intelligence, silence as loyalty) and definitions that neutralise rather than celebrate it (the victim deserved it, responsibility displaced to the group, the offence necessary for family survival). Assessed qualitatively across the reviewed studies and country cases.",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "criminal offending",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Criminal conduct in general — its acquisition, maintenance, escalation and abandonment. The article treats offending as a qualitative outcome assessed across reviewed studies and official reports; it constructs no offending variable of its own.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e15",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the strongest support\" (abstract); \"the most consistently visible components\" together with association (section 6). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e16"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Not an estimate for a defined population: a qualitative assessment of how strongly the reviewed European evidence supports this component of social learning theory.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders, prisoners and young people as described in the peer-reviewed research and official publications reviewed, for five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "sources available through 23 August 2026",
+    "region": "European Union — Sweden, Denmark, the Netherlands, Italy and Bulgaria",
+    "subgroups_defined": [
+     "Sweden: youth recruitment into criminal networks",
+     "Denmark: prison peer effects",
+     "Netherlands: cybercrime and criminal families",
+     "Italy: mafia-related recruitment and youth groups",
+     "Bulgaria: juvenile prevention and educational measures"
+    ],
+    "selection": "Member States selected purposively for the distinct criminal-learning settings they illuminate, not for representativeness; sources restricted to peer-reviewed research and official publications available through 23 August 2026.",
+    "period_range": {
+     "from": null,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. The article analyses no data of its own: it combines a structured narrative review of published research and official publications with a functional comparative case study of five EU Member States. There is no reform, lottery, discontinuity, instrument or other exogenous variation, and the authors describe the approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "Functional comparability: the five purposively selected country cases each isolate a setting in which the theory makes a distinct prediction, and the comparison asks only whether the observed recruitment, transmission and reinforcement processes correspond to theory-predicted mechanisms rather than ranking national crime levels.",
+      "stated_or_implicit": "stated",
+      "supported_by": "explicit statement of the comparative logic and its limits in section 2 (methodology)",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Convergent validity of heterogeneous secondary sources: findings drawn from self-report studies and from official reports designed for administration or threat assessment rather than for testing criminological theory are treated as convergent evidence and interpreted cautiously.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the authors state the two limitations and say findings are treated as convergent evidence and interpreted cautiously",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Self-selection into peer groups is conceded and not resolved: an unobserved pre-existing criminal propensity drives both whom a person associates with and whether they offend, so observed peer similarity is partly cause and partly consequence.",
+      "stated_or_implicit": "stated",
+      "supported_by": "conceded as the first of four limitations preventing a monocausal conclusion; no design or test is offered against it",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "id": "a3",
+      "formal": {
+       "form": "latent_confounder",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "definitions favourable to offending",
+         "kind": "latent_confounder_assumed"
+        },
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "criminal offending",
+         "kind": "latent_confounder_assumed"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Measurement: much social-learning research relies on self-reported delinquency and on respondents' descriptions of their friends, which can inflate apparent similarity through projection.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as a limitation in both the methodology section and the critical assessment",
+      "evidence": [
+       "e12"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Causation between association and offending is reciprocal rather than one-directional, so the relationship cannot be read as a single directed effect; the article states an inference rather than a causal conclusion where the evidence is descriptive.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated in section 3.1 and reaffirmed in the methodology; no attempt to separate the directions",
+      "evidence": [
+       "e8",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a5",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "selection of peers by pre-existing propensity (peer similarity partly cause, partly consequence)",
+     "projection and measurement error in self-reported peer delinquency",
+     "limited scope: spontaneous, expressive or highly impulsive offending may involve little transmitted technique",
+     "structural omission: the theory explains transmission better than exposure to criminal models",
+     "non-comparability of national administrative categories, age thresholds and reporting practices",
+     "official reports are designed for administration or threat assessment, not for testing criminological theory"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "selection: people with existing propensities choose similar friends and communities, so peer similarity is partly a cause and partly a consequence of offending",
+     "projection and measurement error: respondents may overestimate their friends' delinquency or assume that friends resemble them",
+     "reciprocal causation: offending can reshape the network, so causation is reciprocal rather than one-directional",
+     "structural omission: why disadvantaged and segregated environments expose some populations to more criminal models and fewer lawful rewards"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — structured narrative review combined with a functional comparative case study; no statistical model is estimated and no coefficient is reported.",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Qualitative assessment stated in the abstract (p.1) and section 6 (p.13); the only table, Table 1 (pp.8-9), is a qualitative comparison matrix.",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "country case / learning setting",
+     "finding": "Dutch criminal families transmit attitudes and opportunity and Italian mafia contexts intensify identity and loyalty; in Calabria the article reports socio-cultural transmission of mafia behaviour through family bonds, loyalty, silence and role expectations (pp.11-13)."
+    },
+    {
+     "dimension": "competing informal rules",
+     "finding": "Within a criminal group informal rules may compete with state law and carry more immediate social consequences, so a young recruit may fear ridicule, exclusion or retaliation more than a remote probability of formal punishment (p.5)."
+    },
+    {
+     "dimension": "direction of the definition",
+     "finding": "The article stresses the symmetry: pro-social definitions can be learned, reinforced and stabilised through the same process, so the theory explains conformity and desistance as well as crime (pp.5, 13)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "definitions favourable to offending",
+     "criminal offending",
+     "pre-existing criminal propensity (unobserved)"
+    ],
+    "edges": [
+     {
+      "from": "definitions favourable to offending",
+      "to": "criminal offending",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "definitions favourable to offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "criminal offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "5a9f8151c5ca7446",
+      "n_chars": 198
+     },
+     {
+      "page": 13,
+      "sha256_16": "1c500a65ce97090d",
+      "n_chars": 134
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The article reports no coefficient, standard error or test statistic, so the claim records only an asserted direction and the authors' qualitative strength ranking.",
+    "Definitions and differential association are reported jointly in the abstract (\"the strongest support for differential association and definitions favourable to offending\"); the article does not separate their strength, so the two claims share one supporting sentence.",
+    "The authors concede that selection and reciprocal causation are unresolved."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e04ee97258c6be5e",
+     "n_chars": 200
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "39a2f4b989d96dc8",
+     "n_chars": 152
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4071ab23800e57f0",
+     "n_chars": 117
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a6e4aa0f8cb1bfe",
+     "n_chars": 177
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 2,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0d7e35eed79c5a87",
+     "n_chars": 227
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c500a65ce97090d",
+     "n_chars": 134
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dffaf4fc885da2bc",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a8eac09d9cd5ee5",
+     "n_chars": 141
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f03a38bc539c944d",
+     "n_chars": 216
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b934851187cc066a",
+     "n_chars": 276
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a9f8151c5ca7446",
+     "n_chars": 198
+    },
+    {
+     "id": "e16",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e17",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "eT1",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "Table 1, 'Functional comparison of criminal learning environments in selected EU Member States' (pp.8-9): a qualitative four-column matrix (Member State and setting / Evidence examined / Principal learning mechanism / Prevention implication). It contains no coefficients, standard errors or test statistics, which is why it carries no digest regression_id.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Criminal conduct in which social transmission plausibly operates — conduct requiring repeated interaction, specialised knowledge, shared rationalisation or group reinforcement; the authors explicitly deny that social learning is the single or universal source of criminality.",
+     "boundary_conditions": [
+      "most convincing where the conduct requires repeated interaction, specialised knowledge, shared rationalisation or group reinforcement",
+      "less complete where offending is isolated, highly impulsive, or driven by factors not mediated through social meaning",
+      "spontaneous expressive violence, offences committed in acute emotional states and some opportunistic acts may require little transmitted technique",
+      "national administrative categories, age thresholds and reporting practices differ, so the five country cases are not claimed to be representative or to rank national crime levels"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e14",
+     "e1"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Pratt, T.C., Cullen, F.T., Sellers, C.S., Winfree, L.T., Madensen, T.D., Daigle, L.E., Fearn, N.E. and Gau, J.M., 2010. The empirical status of social learning theory: A meta-analysis. Justice Quarterly, 27(6), pp. 765-802.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e9"
+     ],
+     "as_stated": "A major meta- analysis found comparatively strong relationships between offending and both differential association and pro- criminal definitions, but weaker and less stable effects for imitation and differential reinforcement."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; there is no designated parameter of interest to name."
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "The analysis finds the strongest support for differential association and definitions favourable to offending, while evidence for imitation and differential reinforcement is more context- dependent.",
+    "sha256_16": "5a9f8151c5ca7446",
+    "n_chars": 198
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c3",
+   "headline": true,
+   "statement": "Evidence that imitation of criminal models produces criminal offending is more context-dependent than evidence on association and definitions: imitation alone is rarely sufficient for complex crime, because capability, access and trust determine whether observed conduct becomes executable.",
+   "treatment": {
+    "label": "imitation",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Observational learning from a criminal model: the prospective offender observes a model, retains a script, assesses whether the behaviour appears competent or rewarded, and attempts reproduction. The model need not be physically present — videos, encrypted chats, livestreams and forum tutorials can demonstrate weapons, fraud techniques, hacking tools or ideological violence. Assessed qualitatively across the reviewed studies.",
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "most important at initiation and under uncertainty",
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "criminal offending",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Criminal conduct in general — its acquisition, maintenance, escalation and abandonment. The article treats offending as a qualitative outcome assessed across reviewed studies and official reports; it constructs no offending variable of its own.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "mixed",
+     "evidence": [
+      "e15",
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"more context- dependent\" than association and definitions (abstract); \"imitation alone is rarely sufficient for complex crime\" (section 6). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Not an estimate for a defined population: a qualitative assessment of how strongly the reviewed European evidence supports this component of social learning theory.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders, prisoners and young people as described in the peer-reviewed research and official publications reviewed, for five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "sources available through 23 August 2026",
+    "region": "European Union — Sweden, Denmark, the Netherlands, Italy and Bulgaria",
+    "subgroups_defined": [
+     "Sweden: youth recruitment into criminal networks",
+     "Denmark: prison peer effects",
+     "Netherlands: cybercrime and criminal families",
+     "Italy: mafia-related recruitment and youth groups",
+     "Bulgaria: juvenile prevention and educational measures"
+    ],
+    "selection": "Member States selected purposively for the distinct criminal-learning settings they illuminate, not for representativeness; sources restricted to peer-reviewed research and official publications available through 23 August 2026.",
+    "period_range": {
+     "from": null,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. The article analyses no data of its own: it combines a structured narrative review of published research and official publications with a functional comparative case study of five EU Member States. There is no reform, lottery, discontinuity, instrument or other exogenous variation, and the authors describe the approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "Functional comparability: the five purposively selected country cases each isolate a setting in which the theory makes a distinct prediction, and the comparison asks only whether the observed recruitment, transmission and reinforcement processes correspond to theory-predicted mechanisms rather than ranking national crime levels.",
+      "stated_or_implicit": "stated",
+      "supported_by": "explicit statement of the comparative logic and its limits in section 2 (methodology)",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Convergent validity of heterogeneous secondary sources: findings drawn from self-report studies and from official reports designed for administration or threat assessment rather than for testing criminological theory are treated as convergent evidence and interpreted cautiously.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the authors state the two limitations and say findings are treated as convergent evidence and interpreted cautiously",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Self-selection into peer groups is conceded and not resolved: an unobserved pre-existing criminal propensity drives both whom a person associates with and whether they offend, so observed peer similarity is partly cause and partly consequence.",
+      "stated_or_implicit": "stated",
+      "supported_by": "conceded as the first of four limitations preventing a monocausal conclusion; no design or test is offered against it",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "id": "a3",
+      "formal": {
+       "form": "latent_confounder",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "imitation",
+         "kind": "latent_confounder_assumed"
+        },
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "criminal offending",
+         "kind": "latent_confounder_assumed"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Measurement: much social-learning research relies on self-reported delinquency and on respondents' descriptions of their friends, which can inflate apparent similarity through projection.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as a limitation in both the methodology section and the critical assessment",
+      "evidence": [
+       "e12"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Causation between association and offending is reciprocal rather than one-directional, so the relationship cannot be read as a single directed effect; the article states an inference rather than a causal conclusion where the evidence is descriptive.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated in section 3.1 and reaffirmed in the methodology; no attempt to separate the directions",
+      "evidence": [
+       "e8",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a5",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "selection of peers by pre-existing propensity (peer similarity partly cause, partly consequence)",
+     "projection and measurement error in self-reported peer delinquency",
+     "limited scope: spontaneous, expressive or highly impulsive offending may involve little transmitted technique",
+     "structural omission: the theory explains transmission better than exposure to criminal models",
+     "non-comparability of national administrative categories, age thresholds and reporting practices",
+     "official reports are designed for administration or threat assessment, not for testing criminological theory"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "selection: people with existing propensities choose similar friends and communities, so peer similarity is partly a cause and partly a consequence of offending",
+     "projection and measurement error: respondents may overestimate their friends' delinquency or assume that friends resemble them",
+     "reciprocal causation: offending can reshape the network, so causation is reciprocal rather than one-directional",
+     "structural omission: why disadvantaged and segregated environments expose some populations to more criminal models and fewer lawful rewards"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — structured narrative review combined with a functional comparative case study; no statistical model is estimated and no coefficient is reported.",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Qualitative assessment stated in the abstract (p.1) and as the third proposition of section 6 (p.13).",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "stage of the criminal career",
+     "finding": "\"Imitation is most important at initiation and under uncertainty\" (p.5); complex offending instead requires practice, feedback, access and trust."
+    },
+    {
+     "dimension": "offence complexity",
+     "finding": "\"Third, imitation alone is rarely sufficient for complex crime; capa bility, access and trust determine whether observed conduct becomes executable\" (p.13)."
+    },
+    {
+     "dimension": "online vs offline models",
+     "finding": "Observation through digital media is not enough: online and offline learning often converge rather than substitute for one another, and the digital environment should not be treated as an autonomous cause (pp.5, 7)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "imitation",
+     "criminal offending",
+     "pre-existing criminal propensity (unobserved)"
+    ],
+    "edges": [
+     {
+      "from": "imitation",
+      "to": "criminal offending",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "imitation",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "criminal offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "5a9f8151c5ca7446",
+      "n_chars": 198
+     },
+     {
+      "page": 13,
+      "sha256_16": "9ef38951804a5aed",
+      "n_chars": 147
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The sign is recorded as mixed because the article reports the evidence as \"more context- dependent\" and imitation as \"rarely sufficient\" on its own, rather than as either an established effect or a tested null.",
+    "No coefficient, standard error or test statistic is reported."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e04ee97258c6be5e",
+     "n_chars": 200
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "39a2f4b989d96dc8",
+     "n_chars": 152
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4071ab23800e57f0",
+     "n_chars": 117
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a6e4aa0f8cb1bfe",
+     "n_chars": 177
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 2,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0d7e35eed79c5a87",
+     "n_chars": 227
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c500a65ce97090d",
+     "n_chars": 134
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dffaf4fc885da2bc",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a8eac09d9cd5ee5",
+     "n_chars": 141
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f03a38bc539c944d",
+     "n_chars": 216
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b934851187cc066a",
+     "n_chars": 276
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a9f8151c5ca7446",
+     "n_chars": 198
+    },
+    {
+     "id": "e16",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 5,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3f72b5690cb81671",
+     "n_chars": 64
+    },
+    {
+     "id": "e17",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9ef38951804a5aed",
+     "n_chars": 147
+    },
+    {
+     "id": "e18",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1dd259ebfc62ef06",
+     "n_chars": 69
+    },
+    {
+     "id": "e19",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e20",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Criminal conduct in which social transmission plausibly operates — conduct requiring repeated interaction, specialised knowledge, shared rationalisation or group reinforcement; the authors explicitly deny that social learning is the single or universal source of criminality.",
+     "boundary_conditions": [
+      "most convincing where the conduct requires repeated interaction, specialised knowledge, shared rationalisation or group reinforcement",
+      "less complete where offending is isolated, highly impulsive, or driven by factors not mediated through social meaning",
+      "spontaneous expressive violence, offences committed in acute emotional states and some opportunistic acts may require little transmitted technique",
+      "national administrative categories, age thresholds and reporting practices differ, so the five country cases are not claimed to be representative or to rank national crime levels"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e14",
+     "e1"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Pratt, T.C., Cullen, F.T., Sellers, C.S., Winfree, L.T., Madensen, T.D., Daigle, L.E., Fearn, N.E. and Gau, J.M., 2010. The empirical status of social learning theory: A meta-analysis. Justice Quarterly, 27(6), pp. 765-802.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e9"
+     ],
+     "as_stated": "A major meta- analysis found comparatively strong relationships between offending and both differential association and pro- criminal definitions, but weaker and less stable effects for imitation and differential reinforcement."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; there is no designated parameter of interest to name."
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "The analysis finds the strongest support for differential association and definitions favourable to offending, while evidence for imitation and differential reinforcement is more context- dependent.",
+    "sha256_16": "5a9f8151c5ca7446",
+    "n_chars": 198
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c4",
+   "headline": true,
+   "statement": "Evidence that differential reinforcement — the actor's experienced balance of rewards and costs — produces criminal offending is more context-dependent than evidence on association and definitions, and is strongest where rewards are immediate and socially visible.",
+   "treatment": {
+    "label": "differential reinforcement",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The balance of anticipated and actual rewards and costs of offending: rewards may be material (money, drugs, access to markets) or social (approval, protection, belonging, reputation, rank); costs may include arrest and sentence but also shame, exclusion, injury, debt and internal moral conflict. The decisive balance is the actor's experienced and socially interpreted balance, not the formal penalty printed in legislation. Assessed qualitatively across the reviewed studies.",
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "criminal offending",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Criminal conduct in general — its acquisition, maintenance, escalation and abandonment. The article treats offending as a qualitative outcome assessed across reviewed studies and official reports; it constructs no offending variable of its own.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "mixed",
+     "evidence": [
+      "e15",
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"more context- dependent\" than association and definitions (abstract); \"reinforcement is strongest where rewards are immediate and socially visible\" (section 6). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e17"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Not an estimate for a defined population: a qualitative assessment of how strongly the reviewed European evidence supports this component of social learning theory.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders, prisoners and young people as described in the peer-reviewed research and official publications reviewed, for five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "sources available through 23 August 2026",
+    "region": "European Union — Sweden, Denmark, the Netherlands, Italy and Bulgaria",
+    "subgroups_defined": [
+     "Sweden: youth recruitment into criminal networks",
+     "Denmark: prison peer effects",
+     "Netherlands: cybercrime and criminal families",
+     "Italy: mafia-related recruitment and youth groups",
+     "Bulgaria: juvenile prevention and educational measures"
+    ],
+    "selection": "Member States selected purposively for the distinct criminal-learning settings they illuminate, not for representativeness; sources restricted to peer-reviewed research and official publications available through 23 August 2026.",
+    "period_range": {
+     "from": null,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. The article analyses no data of its own: it combines a structured narrative review of published research and official publications with a functional comparative case study of five EU Member States. There is no reform, lottery, discontinuity, instrument or other exogenous variation, and the authors describe the approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "Functional comparability: the five purposively selected country cases each isolate a setting in which the theory makes a distinct prediction, and the comparison asks only whether the observed recruitment, transmission and reinforcement processes correspond to theory-predicted mechanisms rather than ranking national crime levels.",
+      "stated_or_implicit": "stated",
+      "supported_by": "explicit statement of the comparative logic and its limits in section 2 (methodology)",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Convergent validity of heterogeneous secondary sources: findings drawn from self-report studies and from official reports designed for administration or threat assessment rather than for testing criminological theory are treated as convergent evidence and interpreted cautiously.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the authors state the two limitations and say findings are treated as convergent evidence and interpreted cautiously",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Self-selection into peer groups is conceded and not resolved: an unobserved pre-existing criminal propensity drives both whom a person associates with and whether they offend, so observed peer similarity is partly cause and partly consequence.",
+      "stated_or_implicit": "stated",
+      "supported_by": "conceded as the first of four limitations preventing a monocausal conclusion; no design or test is offered against it",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "id": "a3",
+      "formal": {
+       "form": "latent_confounder",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "differential reinforcement",
+         "kind": "latent_confounder_assumed"
+        },
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "criminal offending",
+         "kind": "latent_confounder_assumed"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Measurement: much social-learning research relies on self-reported delinquency and on respondents' descriptions of their friends, which can inflate apparent similarity through projection.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as a limitation in both the methodology section and the critical assessment",
+      "evidence": [
+       "e12"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Causation between association and offending is reciprocal rather than one-directional, so the relationship cannot be read as a single directed effect; the article states an inference rather than a causal conclusion where the evidence is descriptive.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated in section 3.1 and reaffirmed in the methodology; no attempt to separate the directions",
+      "evidence": [
+       "e8",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a5",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "selection of peers by pre-existing propensity (peer similarity partly cause, partly consequence)",
+     "projection and measurement error in self-reported peer delinquency",
+     "limited scope: spontaneous, expressive or highly impulsive offending may involve little transmitted technique",
+     "structural omission: the theory explains transmission better than exposure to criminal models",
+     "non-comparability of national administrative categories, age thresholds and reporting practices",
+     "official reports are designed for administration or threat assessment, not for testing criminological theory"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "selection: people with existing propensities choose similar friends and communities, so peer similarity is partly a cause and partly a consequence of offending",
+     "projection and measurement error: respondents may overestimate their friends' delinquency or assume that friends resemble them",
+     "reciprocal causation: offending can reshape the network, so causation is reciprocal rather than one-directional",
+     "structural omission: why disadvantaged and segregated environments expose some populations to more criminal models and fewer lawful rewards"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — structured narrative review combined with a functional comparative case study; no statistical model is estimated and no coefficient is reported.",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Qualitative assessment stated in the abstract (p.1) and as the second proposition of section 6 (p.13).",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "immediacy and social visibility of the reward",
+     "finding": "\"Second, reinforcement is strongest where rewards are immediate and socially visible\" (p.13)."
+    },
+    {
+     "dimension": "whether sanction confers status",
+     "finding": "\"If a sanction increases status inside a group, its deterrent effect may be weakened or reversed\" (p.5) — the article allows the sign of formal punishment to reverse."
+    },
+    {
+     "dimension": "detection probability and severity",
+     "finding": "Excessive reliance on severity can fail where detection is unlikely or punishment generates status; rapid, proportionate and procedurally fair responses are held more likely to connect conduct with a credible cost (p.14)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "differential reinforcement",
+     "criminal offending",
+     "pre-existing criminal propensity (unobserved)"
+    ],
+    "edges": [
+     {
+      "from": "differential reinforcement",
+      "to": "criminal offending",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "differential reinforcement",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "criminal offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "5a9f8151c5ca7446",
+      "n_chars": 198
+     },
+     {
+      "page": 13,
+      "sha256_16": "5eae8a6c1688185c",
+      "n_chars": 84
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The sign is recorded as mixed because the article reports the evidence as \"more context- dependent\" and conditions the strength of reinforcement on immediacy and social visibility, allowing the deterrent effect of sanctions to be weakened or reversed.",
+    "No coefficient, standard error or test statistic is reported."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e04ee97258c6be5e",
+     "n_chars": 200
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "39a2f4b989d96dc8",
+     "n_chars": 152
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4071ab23800e57f0",
+     "n_chars": 117
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a6e4aa0f8cb1bfe",
+     "n_chars": 177
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 2,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0d7e35eed79c5a87",
+     "n_chars": 227
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c500a65ce97090d",
+     "n_chars": 134
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dffaf4fc885da2bc",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a8eac09d9cd5ee5",
+     "n_chars": 141
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f03a38bc539c944d",
+     "n_chars": 216
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b934851187cc066a",
+     "n_chars": 276
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a9f8151c5ca7446",
+     "n_chars": 198
+    },
+    {
+     "id": "e16",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5eae8a6c1688185c",
+     "n_chars": 84
+    },
+    {
+     "id": "e17",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e18",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Criminal conduct in which social transmission plausibly operates — conduct requiring repeated interaction, specialised knowledge, shared rationalisation or group reinforcement; the authors explicitly deny that social learning is the single or universal source of criminality.",
+     "boundary_conditions": [
+      "most convincing where the conduct requires repeated interaction, specialised knowledge, shared rationalisation or group reinforcement",
+      "less complete where offending is isolated, highly impulsive, or driven by factors not mediated through social meaning",
+      "spontaneous expressive violence, offences committed in acute emotional states and some opportunistic acts may require little transmitted technique",
+      "national administrative categories, age thresholds and reporting practices differ, so the five country cases are not claimed to be representative or to rank national crime levels"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e14",
+     "e1"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Pratt, T.C., Cullen, F.T., Sellers, C.S., Winfree, L.T., Madensen, T.D., Daigle, L.E., Fearn, N.E. and Gau, J.M., 2010. The empirical status of social learning theory: A meta-analysis. Justice Quarterly, 27(6), pp. 765-802.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e9"
+     ],
+     "as_stated": "A major meta- analysis found comparatively strong relationships between offending and both differential association and pro- criminal definitions, but weaker and less stable effects for imitation and differential reinforcement."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; there is no designated parameter of interest to name."
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "The analysis finds the strongest support for differential association and definitions favourable to offending, while evidence for imitation and differential reinforcement is more context- dependent.",
+    "sha256_16": "5a9f8151c5ca7446",
+    "n_chars": 198
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c5",
+   "headline": true,
+   "statement": "Digital platforms accelerate exposure to criminal models, their visibility and vicarious reward, but they rarely operate independently of offline relationships and opportunities and should not be treated as an autonomous cause of offending.",
+   "treatment": {
+    "label": "digital platforms / online environments",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Digital environments that reduce the cost of finding like-minded peers, preserve instructional material, display successful models and generate visible reinforcement through attention, status metrics and group approval — including videos, encrypted chats, livestreams and forum tutorials. Assessed qualitatively across the reviewed studies and country cases.",
+     "evidence": [
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "exposure, visibility and vicarious reward",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The scale and speed of criminal social learning: the frequency of exposure to criminal models, the apparent consensus and visibility of criminal conduct, and vicarious reward through attention, status metrics and group approval. Treated by the article as the intermediate product of digital association rather than as offending itself.",
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e16",
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"accelerate\" exposure, visibility and vicarious reward (abstract); \"can amplify frequency, apparent consensus and vicarious reward\" (p.7). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e19"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Not an estimate for a defined population: a qualitative assessment of how strongly the reviewed European evidence supports this component of social learning theory.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders, prisoners and young people as described in the peer-reviewed research and official publications reviewed, for five purposively selected EU Member States (Sweden, Denmark, the Netherlands, Italy, Bulgaria).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "sources available through 23 August 2026",
+    "region": "European Union — Sweden, Denmark, the Netherlands, Italy and Bulgaria",
+    "subgroups_defined": [
+     "Sweden: youth recruitment into criminal networks",
+     "Denmark: prison peer effects",
+     "Netherlands: cybercrime and criminal families",
+     "Italy: mafia-related recruitment and youth groups",
+     "Bulgaria: juvenile prevention and educational measures"
+    ],
+    "selection": "Member States selected purposively for the distinct criminal-learning settings they illuminate, not for representativeness; sources restricted to peer-reviewed research and official publications available through 23 August 2026.",
+    "period_range": {
+     "from": null,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None. The article analyses no data of its own: it combines a structured narrative review of published research and official publications with a functional comparative case study of five EU Member States. There is no reform, lottery, discontinuity, instrument or other exogenous variation, and the authors describe the approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "Functional comparability: the five purposively selected country cases each isolate a setting in which the theory makes a distinct prediction, and the comparison asks only whether the observed recruitment, transmission and reinforcement processes correspond to theory-predicted mechanisms rather than ranking national crime levels.",
+      "stated_or_implicit": "stated",
+      "supported_by": "explicit statement of the comparative logic and its limits in section 2 (methodology)",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Convergent validity of heterogeneous secondary sources: findings drawn from self-report studies and from official reports designed for administration or threat assessment rather than for testing criminological theory are treated as convergent evidence and interpreted cautiously.",
+      "stated_or_implicit": "stated",
+      "supported_by": "the authors state the two limitations and say findings are treated as convergent evidence and interpreted cautiously",
+      "evidence": [
+       "e6",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Self-selection into peer groups is conceded and not resolved: an unobserved pre-existing criminal propensity drives both whom a person associates with and whether they offend, so observed peer similarity is partly cause and partly consequence.",
+      "stated_or_implicit": "stated",
+      "supported_by": "conceded as the first of four limitations preventing a monocausal conclusion; no design or test is offered against it",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "id": "a3",
+      "formal": {
+       "form": "latent_confounder",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "digital platforms / online environments",
+         "kind": "latent_confounder_assumed"
+        },
+        {
+         "from": "pre-existing criminal propensity (unobserved)",
+         "to": "criminal offending",
+         "kind": "latent_confounder_assumed"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Measurement: much social-learning research relies on self-reported delinquency and on respondents' descriptions of their friends, which can inflate apparent similarity through projection.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as a limitation in both the methodology section and the critical assessment",
+      "evidence": [
+       "e12"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Causation between association and offending is reciprocal rather than one-directional, so the relationship cannot be read as a single directed effect; the article states an inference rather than a causal conclusion where the evidence is descriptive.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated in section 3.1 and reaffirmed in the methodology; no attempt to separate the directions",
+      "evidence": [
+       "e8",
+       "e7"
+      ],
+      "confidence": "high",
+      "id": "a5",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "selection of peers by pre-existing propensity (peer similarity partly cause, partly consequence)",
+     "projection and measurement error in self-reported peer delinquency",
+     "limited scope: spontaneous, expressive or highly impulsive offending may involve little transmitted technique",
+     "structural omission: the theory explains transmission better than exposure to criminal models",
+     "non-comparability of national administrative categories, age thresholds and reporting practices",
+     "official reports are designed for administration or threat assessment, not for testing criminological theory"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "selection: people with existing propensities choose similar friends and communities, so peer similarity is partly a cause and partly a consequence of offending",
+     "projection and measurement error: respondents may overestimate their friends' delinquency or assume that friends resemble them",
+     "reciprocal causation: offending can reshape the network, so causation is reciprocal rather than one-directional",
+     "structural omission: why disadvantaged and segregated environments expose some populations to more criminal models and fewer lawful rewards"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — structured narrative review combined with a functional comparative case study; no statistical model is estimated and no coefficient is reported.",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Stated in the abstract (p.1) and developed in section 4.2, \"Digital platforms and accelerated visibility\" (pp.6-7); the only table, Table 1 (pp.8-9), is a qualitative comparison matrix.",
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "strength of offline bonds",
+     "finding": "The article states the inference as conditional: online spaces can amplify frequency, apparent consensus and vicarious reward \"especially when weak offline bonds leave digital groups as the primary source of identity\" (p.7)."
+    },
+    {
+     "dimension": "offence complexity / technical sophistication",
+     "finding": "In the Dutch study the article reports that simpler cyber offending was initially associated with low self-control but that this relationship disappeared once social-learning variables were included, while more serious cyber-dependent conduct was embedded in online and offline environments and required capability and patience to learn (p.10)."
+    },
+    {
+     "dimension": "exposure vs offending",
+     "finding": "\"Algorithms may repeatedly expose users to sensational content, but exposure does not automatically produce offending. Motivation, technical capacity, trusted interaction and opportunity still matter\" (p.7)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "digital platforms / online environments",
+     "exposure, visibility and vicarious reward",
+     "offline relationships and criminal opportunities",
+     "criminal offending",
+     "pre-existing criminal propensity (unobserved)"
+    ],
+    "edges": [
+     {
+      "from": "digital platforms / online environments",
+      "to": "exposure, visibility and vicarious reward",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "offline relationships and criminal opportunities",
+      "to": "exposure, visibility and vicarious reward",
+      "kind": "moderator",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "exposure, visibility and vicarious reward",
+      "to": "criminal offending",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "digital platforms / online environments",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "pre-existing criminal propensity (unobserved)",
+      "to": "criminal offending",
+      "kind": "latent_confounder_assumed",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 1,
+      "sha256_16": "8fb0cda209aef6d7",
+      "n_chars": 153
+     },
+     {
+      "page": 7,
+      "sha256_16": "1dd259ebfc62ef06",
+      "n_chars": 69
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The abstract bundles three facets — exposure, visibility and vicarious reward — under a single qualitative assertion with one direction; the article never assesses them separately, so splitting them into three claims would invent findings the paper does not make. Recorded as one claim with the outcome labelled as the paper words it.",
+    "The outcome is an intermediate quantity (exposure and reward), not offending: the article explicitly denies that exposure automatically produces offending.",
+    "No coefficient, standard error or test statistic is reported."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e04ee97258c6be5e",
+     "n_chars": 200
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "39a2f4b989d96dc8",
+     "n_chars": 152
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4071ab23800e57f0",
+     "n_chars": 117
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a6e4aa0f8cb1bfe",
+     "n_chars": 177
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 2,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0d7e35eed79c5a87",
+     "n_chars": 227
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c500a65ce97090d",
+     "n_chars": 134
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dffaf4fc885da2bc",
+     "n_chars": 173
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a8eac09d9cd5ee5",
+     "n_chars": 141
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f03a38bc539c944d",
+     "n_chars": 216
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b934851187cc066a",
+     "n_chars": 276
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a9f8151c5ca7446",
+     "n_chars": 198
+    },
+    {
+     "id": "e16",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8fb0cda209aef6d7",
+     "n_chars": 153
+    },
+    {
+     "id": "e17",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1dd259ebfc62ef06",
+     "n_chars": 69
+    },
+    {
+     "id": "e18",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 6,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6e12d835a4a59b6b",
+     "n_chars": 167
+    },
+    {
+     "id": "e19",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e20",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Online and hybrid criminal learning environments. The authors explicitly refuse to treat the digital environment as an autonomous cause: digital acceleration is claimed only where it operates together with offline relationships, motivation, technical capacity, trusted interaction and opportunity.",
+     "boundary_conditions": [
+      "the digital environment should not be treated as an autonomous cause",
+      "exposure does not automatically produce offending; motivation, technical capacity, trusted interaction and opportunity still matter",
+      "digital platforms rarely operate independently of offline relationships and opportunities",
+      "amplification is strongest when weak offline bonds leave digital groups as the primary source of identity",
+      "most convincing where the conduct requires repeated interaction, specialised knowledge, shared rationalisation or group reinforcement",
+      "less complete where offending is isolated, highly impulsive, or driven by factors not mediated through social meaning",
+      "spontaneous expressive violence, offences committed in acute emotional states and some opportunistic acts may require little transmitted technique",
+      "national administrative categories, age thresholds and reporting practices differ, so the five country cases are not claimed to be representative or to rank national crime levels"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e17",
+     "e16",
+     "e14"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Holt, T.J., Burruss, G.W. and Bossler, A.M., 2010. Social learning and cyber-deviance: Examining the importance of a full social learning model in the virtual world. Journal of Crime and Justice, 33(2), pp. 31-61.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e18"
+     ],
+     "as_stated": "Research on cyber -deviance shows that a full social -learning model can operate in virtual settings, particularly through peer association and favourable definitions."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; there is no designated parameter of interest to name."
+   },
+   "anchor_quote": {
+    "page": 1,
+    "text": "Digital platforms accelerate exposure, visibility and vicarious reward, but they rarely operate independently of offline relationships and opportunities.",
+    "sha256_16": "8fb0cda209aef6d7",
+    "n_chars": 153
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c6",
+   "headline": false,
+   "statement": "Exposure to prison peers did not generally produce an introductory effect by which prisoners acquired entirely new criminal capital or new criminal specialisations.",
+   "treatment": {
+    "label": "exposure to prison peers",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Involuntary association with fellow prisoners created by custody, including exposure to more experienced offenders. The article reports it as the exposure examined in the cited register study of the Danish prison population; it names no register, no register variable and no measure of exposure.",
+     "evidence": [
+      "e8",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "during incarceration, with the outcome measured as recidivism after release",
+     "evidence": [
+      "e8",
+      "e12"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "acquisition of entirely new criminal capital (new criminal specialisations)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Whether a prisoner acquires criminal capital in an offence type that is new to them — an \"introductory\" effect by which custody turns novices into versatile offenders across new crime types. Reported by the article as not generally found; the article gives no measure or construction.",
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "after release from prison; no horizon length is stated",
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e9",
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"no general introductory effect\" — the article reports the absence of an effect and gives no magnitude or test statistic.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Offenders in the Danish prison population covered by the cited register study; the article generalises the reading to prisons and residential placements.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "crime-specific recidivism after release; the article states no horizon length",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders in the Danish prison population, as covered by the register data used in the cited study of prison peer effects (Damm and Gorinas 2020); extended by the article to prisons and residential placements generally.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Denmark",
+    "subgroups_defined": [
+     "offenders exposed to more experienced peers",
+     "offence types requiring specific skills, planning or networks (drug crime, theft, burglary, fencing)",
+     "offences facilitated by group action"
+    ],
+    "selection": "Conditioned on being in the Danish prison population; the article reports no further sample restrictions and does not restate the cited study's sample construction.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None of the article's own. It reports, in prose and in one row of Table 1, the results of a cited register-based study of peer exposure in the Danish prison population (Damm and Gorinas 2020). The article itself analyses no data and describes its approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "The article's inference rests on a single cited register-based study of the Danish prison population (Damm and Gorinas 2020); the article restates that study's results but none of its identification assumptions, estimator, controls or sample construction.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "none — the cited study is reported in prose and in one row of Table 1, with a footnote reference only",
+      "evidence": [
+       "e8",
+       "e3"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Custody creates involuntary association: exposure to prison peers is imposed rather than chosen, which is the article's substantive reason for reading in-prison peer exposure as something other than self-selected association. The article does not state this as an identifying assumption or formalise it.",
+      "stated_or_implicit": "stated",
+      "supported_by": "asserted in section 4.3 as the opening premise of the custody discussion; no test or design is offered",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "The evidence is conditioned on imprisonment: it speaks only to offenders who were in the Danish prison population, so the reinforcement reading does not extend to offenders never imprisoned.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "none — implied by the description of the data as covering the Danish prison population",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "id": "a3",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "imprisonment (sample conditioning)",
+         "to": "acquisition of entirely new criminal capital (new criminal specialisations)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Offence-type specificity: the relevant learning is crime-specific criminal capital (skills, knowledge and contacts transferable to a particular criminal market) rather than a general propensity, so effects are expected only for offences that benefit from planning, specialisation or networks.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as the condition under which learning should be expected (section 4.3) and reported as the pattern found in the cited register study (section 5.2)",
+      "evidence": [
+       "e6",
+       "e10"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "the article warns against the undifferentiated claim that every prison is a \"school of crime\"",
+     "custody may instead support rehabilitation through structured treatment, education and pro-social staff relationships",
+     "classification on a \"good\"/\"bad\" prisoner binary is described as impossible and potentially stigmatising"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "the article restates none of the cited study's identification assumptions, threats or robustness checks, so whatever confounding that study could not rule out is not reported here",
+     "selection into imprisonment itself is not discussed"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — the article estimates nothing; it reports the findings of a cited register-based study of the Danish prison population in prose and in one row of a qualitative comparison table.",
+     "evidence": [
+      "e2",
+      "e3",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Reported in prose in section 5.2, \"Denmark: prison as a setting of reinforcement, not automatic initiation\" (p.9), previewed in section 4.3 (p.7), summarised in the \"Denmark: prison peer effects\" row of Table 1 (pp.8-9), and stated in the abstract (p.1).",
+     "evidence": [
+      "e8",
+      "eT1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "transmission of crime-specific criminal capital (skills, knowledge, contacts)",
+    "network consolidation — relationships formed in prison that are useful after release"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "versus existing specialisation",
+     "finding": "The null applies only to new criminal capital: \"Instead, peer exposure may deepen an existing specialisation where knowledge and contacts are useful after release\" (p.9). The reinforcing effect is recorded separately as claim dk_W7212086049_c7."
+    },
+    {
+     "dimension": "offence type",
+     "finding": "The article qualifies the null as a general one — \"no general introductory effect\" — while reporting positive effects for specific planned, skilled and group-based offence types (p.9)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "exposure to prison peers",
+     "acquisition of entirely new criminal capital (new criminal specialisations)",
+     "peer criminal experience",
+     "offence type (planning, specialisation, network dependence)",
+     "imprisonment (sample conditioning)"
+    ],
+    "edges": [
+     {
+      "from": "exposure to prison peers",
+      "to": "acquisition of entirely new criminal capital (new criminal specialisations)",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "peer criminal experience",
+      "to": "acquisition of entirely new criminal capital (new criminal specialisations)",
+      "kind": "moderator",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "offence type (planning, specialisation, network dependence)",
+      "to": "acquisition of entirely new criminal capital (new criminal specialisations)",
+      "kind": "moderator",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "imprisonment (sample conditioning)",
+      "to": "acquisition of entirely new criminal capital (new criminal specialisations)",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "65f414524eb1fe84",
+      "n_chars": 101
+     },
+     {
+      "page": 7,
+      "sha256_16": "bfb8100288ac8272",
+      "n_chars": 234
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "This is a tested null reported from a cited study, not from the article's own estimation; the article prints no coefficient, standard error or test statistic, so 'no general introductory effect' cannot be distinguished here from an imprecise estimate.",
+    "The finding is Damm and Gorinas (2020)'s, restated by this article; the article contributes the synthesis and the policy reading, not the estimate. It is recorded as a claim because the article asserts it as a conclusion of its own comparative analysis (the Denmark case) and builds its prison-policy argument on it.",
+    "The abstract does not state this null (it states only the reinforcement finding), so headline is false."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a2f8903f1b28c95d",
+     "n_chars": 40
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ac90a6e1a4e76eab",
+     "n_chars": 274
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "bfb8100288ac8272",
+     "n_chars": 234
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "92a6b0fb0284153c",
+     "n_chars": 147
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "65f414524eb1fe84",
+     "n_chars": 101
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2448661cf9e1cd4f",
+     "n_chars": 200
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6131767c0c9474fe",
+     "n_chars": 65
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ca0305f53d3c2e04",
+     "n_chars": 115
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a7c62c311834e4f",
+     "n_chars": 129
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e211d3eb6353e96f",
+     "n_chars": 173
+    },
+    {
+     "id": "e15",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e16",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "eT1",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "Table 1, 'Functional comparison of criminal learning environments in selected EU Member States' (pp.8-9): a qualitative four-column matrix (Member State and setting / Evidence examined / Principal learning mechanism / Prevention implication). It contains no coefficients, standard errors or test statistics, which is why it carries no digest regression_id.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Prisons and residential placements where unstructured contact links less experienced offenders with credible and experienced peers, and where the offence benefits from planning, specialisation or networks.",
+     "boundary_conditions": [
+      "not an undifferentiated claim that every prison is a \"school of crime\"",
+      "learning should be expected where contact is sustained, experienced peers are credible, knowledge is transferable, and the offence benefits from planning, specialisation or networks",
+      "reinforcement of an existing specialisation, not universal initiation into new crime types",
+      "custody can also support rehabilitation through structured treatment, education and pro-social staff relationships"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e6",
+     "e14"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": false,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Damm, A.P. and Gorinas, C., 2020. Prison as a criminal school: Peer effects and criminal learning behind bars. Journal of Law and Economics, 63(1), pp. 149-180.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e7"
+     ],
+     "as_stated": "This distinction is supported by Danish register research discussed below: exposure did not generally create new criminal specialisations, but it reinforced existing criminal capital for several planned and network-dependent offences."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; the cited study's parameter of interest is not named or transcribed."
+   },
+   "anchor_quote": {
+    "page": 9,
+    "text": "They found no general introductory effect by which pri soners acquired entirely new criminal capital.",
+    "sha256_16": "65f414524eb1fe84",
+    "n_chars": 101
+   }
+  },
+  {
+   "claim_id": "dk_W7212086049_c7",
+   "headline": true,
+   "statement": "Exposure to prison peers reinforced existing crime-specific criminal capital, producing higher recidivism in offences requiring specific skills, planning or networks — such as drug crime, theft, burglary and fencing — and in some offences facilitated by group action, with stronger effects after exposure to more experienced offenders.",
+   "treatment": {
+    "label": "exposure to prison peers",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Involuntary association with fellow prisoners created by custody, including exposure to more experienced offenders. The article reports it as the exposure examined in the cited register study of the Danish prison population; it names no register, no register variable and no measure of exposure.",
+     "evidence": [
+      "e8",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "during incarceration, with the outcome measured as recidivism after release",
+     "evidence": [
+      "e8",
+      "e12"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e15"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Recidivism in the same offence domain for offences requiring specific skills, planning or networks — the article names drug crime, theft, burglary and fencing — and for some offences facilitated by group action. The article gives no measure, window or construction.",
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "after release from prison; no horizon length is stated",
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e10",
+      "e14"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"reinforcing peer effects\" for skilled, planned and network-dependent offences, with \"Exposure to more experienced offenders produced stronger effects\" (p.9). No quantitative magnitude is given.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e15"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Offenders in the Danish prison population covered by the cited register study; the article generalises the reading to prisons and residential placements.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "crime-specific recidivism after release; the article states no horizon length",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Offenders in the Danish prison population, as covered by the register data used in the cited study of prison peer effects (Damm and Gorinas 2020); extended by the article to prisons and residential placements generally.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": null,
+    "region": "Denmark",
+    "subgroups_defined": [
+     "offenders exposed to more experienced peers",
+     "offence types requiring specific skills, planning or networks (drug crime, theft, burglary, fencing)",
+     "offences facilitated by group action"
+    ],
+    "selection": "Conditioned on being in the Danish prison population; the article reports no further sample restrictions and does not restate the cited study's sample construction.",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None of the article's own. It reports, in prose and in one row of Table 1, the results of a cited register-based study of peer exposure in the Danish prison population (Damm and Gorinas 2020). The article itself analyses no data and describes its approach as explanatory rather than statistical.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "assumption": "The article's inference rests on a single cited register-based study of the Danish prison population (Damm and Gorinas 2020); the article restates that study's results but none of its identification assumptions, estimator, controls or sample construction.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "none — the cited study is reported in prose and in one row of Table 1, with a footnote reference only",
+      "evidence": [
+       "e8",
+       "e3"
+      ],
+      "confidence": "high",
+      "id": "a1",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Custody creates involuntary association: exposure to prison peers is imposed rather than chosen, which is the article's substantive reason for reading in-prison peer exposure as something other than self-selected association. The article does not state this as an identifying assumption or formalise it.",
+      "stated_or_implicit": "stated",
+      "supported_by": "asserted in section 4.3 as the opening premise of the custody discussion; no test or design is offered",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "id": "a2",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "The evidence is conditioned on imprisonment: it speaks only to offenders who were in the Danish prison population, so the reinforcement reading does not extend to offenders never imprisoned.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "none — implied by the description of the data as covering the Danish prison population",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "id": "a3",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "imprisonment (sample conditioning)",
+         "to": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "assumption": "Offence-type specificity: the relevant learning is crime-specific criminal capital (skills, knowledge and contacts transferable to a particular criminal market) rather than a general propensity, so effects are expected only for offences that benefit from planning, specialisation or networks.",
+      "stated_or_implicit": "stated",
+      "supported_by": "stated as the condition under which learning should be expected (section 4.3) and reported as the pattern found in the cited register study (section 5.2)",
+      "evidence": [
+       "e6",
+       "e10"
+      ],
+      "confidence": "high",
+      "id": "a4",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "the article warns against the undifferentiated claim that every prison is a \"school of crime\"",
+     "custody may instead support rehabilitation through structured treatment, education and pro-social staff relationships",
+     "classification on a \"good\"/\"bad\" prisoner binary is described as impossible and potentially stigmatising"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "the article restates none of the cited study's identification assumptions, threats or robustness checks, so whatever confounding that study could not rule out is not reported here",
+     "selection into imprisonment itself is not discussed"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None — the article estimates nothing; it reports the findings of a cited register-based study of the Danish prison population in prose and in one row of a qualitative comparison table.",
+     "evidence": [
+      "e2",
+      "e3",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e16"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No regression table or figure. Reported in prose in section 5.2, \"Denmark: prison as a setting of reinforcement, not automatic initiation\" (p.9), previewed in section 4.3 (p.7), summarised in the \"Denmark: prison peer effects\" row of Table 1 (pp.8-9), and stated in the abstract (p.1).",
+     "evidence": [
+      "e8",
+      "eT1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "transmission of crime-specific criminal capital (skills, knowledge, contacts)",
+    "network consolidation — relationships formed in prison that are useful after release"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "peer criminal experience",
+     "finding": "\"Exposure to more experienced offenders produced stronger effects\" (p.9)."
+    },
+    {
+     "dimension": "offence type",
+     "finding": "Reinforcing effects were found for offences requiring specific skills, planning or networks — drug crime, theft, burglary and fencing — and for some offences facilitated by group action; no general effect on new criminal capital was found (p.9, recorded as claim dk_W7212086049_c6)."
+    },
+    {
+     "dimension": "structure of contact",
+     "finding": "The abstract conditions the effect on unstructured contact linking less experienced offenders with credible and experienced peers (p.1); section 4.3 adds that learning should be expected where contact is sustained and knowledge is transferable (p.7)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "exposure to prison peers",
+     "crime-specific recidivism in offences requiring specific skills, planning or networks",
+     "peer criminal experience",
+     "offence type (planning, specialisation, network dependence)",
+     "imprisonment (sample conditioning)"
+    ],
+    "edges": [
+     {
+      "from": "exposure to prison peers",
+      "to": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "peer criminal experience",
+      "to": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+      "kind": "moderator",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "offence type (planning, specialisation, network dependence)",
+      "to": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+      "kind": "moderator",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "imprisonment (sample conditioning)",
+      "to": "crime-specific recidivism in offences requiring specific skills, planning or networks",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "2448661cf9e1cd4f",
+      "n_chars": 200
+     },
+     {
+      "page": 1,
+      "sha256_16": "e211d3eb6353e96f",
+      "n_chars": 173
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The finding is Damm and Gorinas (2020)'s estimate, restated by this article; the article performs no estimation and prints no coefficient, standard error or test statistic. It is recorded as a claim because the abstract asserts it as a finding of the article's analysis and the Denmark case is one of the article's five units of comparison — but any downstream use should treat the underlying estimate as belonging to the cited study, not to this paper.",
+    "The article names no register, no register variable and no sample size for the Danish data, so the measurement cannot be traced from this paper alone."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d7592e158c351dad",
+     "n_chars": 300
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1b35eadce4e7891e",
+     "n_chars": 92
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 3,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97a9e5feb1239f63",
+     "n_chars": 52
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 4,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c1524923eb0d2a2d",
+     "n_chars": 95
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a2f8903f1b28c95d",
+     "n_chars": 40
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ac90a6e1a4e76eab",
+     "n_chars": 274
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "bfb8100288ac8272",
+     "n_chars": 234
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "92a6b0fb0284153c",
+     "n_chars": 147
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "65f414524eb1fe84",
+     "n_chars": 101
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2448661cf9e1cd4f",
+     "n_chars": 200
+    },
+    {
+     "id": "e11",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6131767c0c9474fe",
+     "n_chars": 65
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ca0305f53d3c2e04",
+     "n_chars": 115
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7a7c62c311834e4f",
+     "n_chars": 129
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 1,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e211d3eb6353e96f",
+     "n_chars": 173
+    },
+    {
+     "id": "e15",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article prints no coefficient, standard error, confidence interval, p-value, baseline mean or outcome standard deviation for this relationship, and no units: it is a structured narrative review and functional comparative case study that reports no original estimation. Searched the abstract, sections 2-8, Table 1 (the only table, which is qualitative) and the footnotes.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "e16",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "The article states no estimation sample size for this relationship; it analyses no microdata of its own.",
+     "regression_id": null,
+     "figure_id": null
+    },
+    {
+     "id": "eT1",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": "Table 1, 'Functional comparison of criminal learning environments in selected EU Member States' (pp.8-9): a qualitative four-column matrix (Member State and setting / Evidence examined / Principal learning mechanism / Prevention implication). It contains no coefficients, standard errors or test statistics, which is why it carries no digest regression_id.",
+     "regression_id": null,
+     "figure_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Prisons and residential placements where unstructured contact links less experienced offenders with credible and experienced peers, and where the offence benefits from planning, specialisation or networks.",
+     "boundary_conditions": [
+      "not an undifferentiated claim that every prison is a \"school of crime\"",
+      "learning should be expected where contact is sustained, experienced peers are credible, knowledge is transferable, and the offence benefits from planning, specialisation or networks",
+      "reinforcement of an existing specialisation, not universal initiation into new crime types",
+      "custody can also support rehabilitation through structured treatment, education and pro-social staff relationships"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e6",
+     "e14"
+    ],
+    "confidence": "high"
+   },
+   "headline_basis": null,
+   "headline_extractor": true,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "social learning theory (Akers)",
+    "differential association theory (Sutherland)",
+    "differential association-reinforcement theory (Burgess and Akers)",
+    "social learning / observational learning (Bandura)",
+    "techniques of neutralisation (Sykes and Matza)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Damm, A.P. and Gorinas, C., 2020. Prison as a criminal school: Peer effects and criminal learning behind bars. Journal of Law and Economics, 63(1), pp. 149-180.",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e7"
+     ],
+     "as_stated": "This distinction is supported by Danish register research discussed below: exposure did not generally create new criminal specialisations, but it reinforced existing criminal capital for several planned and network-dependent offences."
+    }
+   ],
+   "falsification": {
+    "stated": false,
+    "condition": null
+   },
+   "outcomes_examined_not_reported": [],
+   "target_designation": {
+    "regressors": [],
+    "source": "none",
+    "reasoning": "The article prints no estimating equation and no coefficient; the cited study's parameter of interest is not named or transcribed."
+   },
+   "anchor_quote": {
+    "page": 9,
+    "text": "They did find reinforcing peer effects for offences requiring specific skills, planning or networks —such as drug crime, theft, burglary and fencing —and for some offences facilitated by group action.",
+    "sha256_16": "2448661cf9e1cd4f",
+    "n_chars": 200
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "ba2cd3d24edd5a26ae2cd1d8a431fd083521930d09d188bd4fa009dd55a03550",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:45.507269+00:00",
+  "tables_sha256": "f9a1df53152df528fa73bf7054596df266afe3d07f41914ee1dc0c5504a9132a",
+  "figures_sha256": "4b5434a1ed014446e0b9dddb79d8c13d7c38397e5460c8eada108914bc7a0335"
+ },
+ "public_export": {
+  "anchor_quotes": 4,
+  "quotes_hashed": 124,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

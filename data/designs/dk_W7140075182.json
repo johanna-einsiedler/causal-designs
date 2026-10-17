@@ -1,0 +1,3178 @@
+{
+ "artid": "dk_W7140075182",
+ "paper": {
+  "title": "Når daginstitutionen gøres nødvendig: Politisk diskurs og hjemmepassende forældres fortællinger om små børns behov",
+  "authors": [
+   "Sine Penthin Grumløse",
+   "Anja Marschall"
+  ],
+  "year": 2026,
+  "journal": "Nordisk tidsskrift for pedagogikk og kritikk",
+  "doi": "10.23865/ntpk.v12.7050",
+  "code_data_availability": "Ingen data- eller kodetilgængelighedserklæring og ingen DST-projektreference i artiklen. …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "Danmarks Statistik, DAGTIL4: Modtagere af tilskud vedr. privat pasning og pasning af egne børn efter område, tilskudsart og berørte (Statistikbanken)",
+    "dst_code": null,
+    "years": "2016 og 2023 nævnes i teksten (kilden er dateret 2024)",
+    "role": "baggrundsstatistik citeret i indledningen for at motivere stigningen i hjemmepasning (661 familier med kommunalt tilskud i 2016, 2.348 i 2023); aggregeret statistikbanktabel, ikke registermikrodata, og ikke genstand for analyse i artiklen",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2016,
+     "to": 2023
+    }
+   }
+  ],
+  "linkages": [],
+  "sample": {
+   "universe": "(1) landspolitiske dokumenter om små børns hverdagsliv og daginstitutionens rolle fra perioden 1960 til i dag (politiske debatter, kommissionsrapporter og lovgivning) og (2) forældre i Danmark, der har valgt at hjemmepasse deres børn",
+   "unit_of_observation": "politisk dokument/udsagn (diskursanalyse) og forældreinterview/familie (narrativ analyse)",
+   "selection_rules": [
+    "policy-dokumenter udvalgt med henblik på at identificere centrale udsagn om børns hverdagsliv og daginstitutionens rolle",
+    "diskursen afgrænset indadtil som de udsagn, der kredser om samme tematik (Foucault, 2003, s. 41)",
+    "dokumenterne har til fælles, at de er blevet til i en landspolitisk sammenhæng",
+    "perioden 1960 til i dag",
+    "ti kvalitative interviews med forældre, gennemført i 2023 som led i forskningsprojektet Tid til familien",
+    "fem af de ti familier har valgt daginstitutionen helt fra; de øvrige fem har begge forældre i arbejde og børn i daginstitution",
+    "deltagerne rekrutteret via opslag på sociale medier og sneboldeffekten"
+   ],
+   "period": "politiske dokumenter 1960 til i dag; interviews gennemført i 2023",
+   "n_observations": "ti kvalitative interviews; antallet af politiske dokumenter oplyses ikke",
+   "n_individuals": "ti interviewede forældre/familier, heraf fem hjemmepassende familier"
+  },
+  "construction_notes": [
+   "Artiklen bruger ingen dansk registermikrodata. Det empiriske materiale er (1) politiske dokumenter, analyseret diskursivt, og (2) ti kvalitative interviews, analyseret narrativt.",
+   "Diskursanalysen er inspireret af Foucault (2003) og struktureret som en række gentagende spørgsmål, der adresserer, hvad der siges, hvem der kommer til orde, og hvad der besluttes eller marginaliseres.",
+   "Analysen er både synkron og diakron (Jensen, 2005): diskursen læses over tid og inden for de enkelte perioder.",
+   "Interviewene er struktureret i tre temaer: (1) Familieliv og idealer, (2) Hverdagspraksis og bekymringer, (3) Refleksioner over fortid, nutid og fremtid.",
+   "Den narrative analyse er inspireret af Bruners (1990) begreb om 'mening i handling'; interviewene er kodet med fokus på forældrenes fortællinger om det gode hverdagsliv, deres værdier og intentioner.",
+   "Interviewpersonerne optræder under pseudonymer (Katrine, Julie, Ditte, Tobias).",
+   "Artiklen indeholder hverken tabeller eller figurer og rapporterer ingen koefficienter, standardfejl, konfidensintervaller eller p-værdier; digest.json er tilsvarende tom."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W7140075182_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "I den danske landspolitiske diskurs fra 1960 til i dag, og særligt i de seneste 25 års politik, italesættes daginstitutionen i stigende grad som nødvendig for alle små børns udvikling og trivsel - fra i 1960'erne at være en nødløsning for familier, der ikke kunne passe barnet hjemme.",
+   "treatment": {
+    "label": "historisk tid: den landspolitiske periode fra 1960 til i dag (med særlig vægt på de seneste 25 år)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "perioden 1960 til i dag, afgrænset som den periode, hvor barndommen i Danmark institutionaliseres stødt; operationaliseret som det årstal, et landspolitisk dokument (folketingsdebat, kommissionsrapport, lovgivning) er blevet til",
+     "evidence": [
+      "e_metode_periode",
+      "e_korpus",
+      "e_rq"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "1960 til i dag; artiklen er publiceret 2026",
+     "evidence": [
+      "e_metode_periode"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "italesættelsen af daginstitutionen som nødvendig for barnets udvikling og trivsel",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "diskursivt kodet egenskab ved de landspolitiske udsagn: i hvilken grad daginstitutionen tales frem som en nødvendig del af barnets liv for at sikre dets udvikling og trivsel, modsat som en nødløsning for familier uden mulighed for hjemmepasning. Kodet gennem en Foucault-inspireret diskursanalyse struktureret som gentagende spørgsmål om hvad der siges, hvem der kommer til orde, og hvad der besluttes eller marginaliseres",
+     "evidence": [
+      "e_metode_periode",
+      "e_korpus",
+      "e_1960",
+      "e_noedv",
+      "e_noedloesning"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "målt i det enkelte dokuments samtid, 1960-i dag",
+     "evidence": [
+      "e_metode_periode"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_abstract",
+      "e_hoejere",
+      "e_alle_boern",
+      "e_noedv",
+      "e_1960"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "den danske landspolitiske diskurs om små børn og daginstitution, som den fremgår af politiske debatter, kommissionsrapporter og lovgivning 1960-i dag",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "perioden 1960 til i dag, med særlig vægt på de seneste 25 års politik",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "landspolitiske dokumenter om små børns hverdagsliv og daginstitutionens rolle fra perioden 1960 til i dag: politiske debatter (Folketingstidende), kommissionsrapporter og lovgivning",
+    "birth_cohorts": null,
+    "ages": "førskolealderen; vuggestuebarnet 0-2/3 år omtales særskilt i den tidlige periode",
+    "sex": "all",
+    "period": "1960 til i dag",
+    "region": "Danmark",
+    "subgroups_defined": [
+     "1960'erne til midten af 1980'erne: omsorg for børn som politisk anliggende",
+     "slutningen af 1980'erne og frem: 'pengene skulle følge barnet' og respekt for forældrenes individuelle valg",
+     "2000-tallet: læreplaner og børns læring og skolerelevante kompetencer"
+    ],
+    "selection": "dokumenter udvalgt, fordi de forholder sig til børneliv og daginstitution og er blevet til i en landspolitisk sammenhæng; diskursen afgrænset indadtil som de udsagn, der kredser om samme tematik (Foucault, 2003, s. 41)",
+    "period_range": {
+     "from": 1960,
+     "to": 2026
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "variation over historisk tid i landspolitiske udsagn om små børn og daginstitution; ingen eksogen variation, intet sammenligningsdesign - kombineret synkron og diakron diskursanalyse",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "diskursen kan afgrænses indadtil til de udsagn, der kredser om samme tematik, så de udvalgte policy-dokumenter udgør diskursen om børneliv og daginstitution",
+      "stated_or_implicit": "stated",
+      "supported_by": "metodisk begrundet med Foucault (2003, s. 41); ingen empirisk test",
+      "evidence": [
+       "e_korpus",
+       "e_metode_periode"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "forandringer i den politiske diskurs er sammenhængende med såvel samtidige som tidligere forståelser og rationaler, hvorfor en diakron læsning er nødvendig",
+      "stated_or_implicit": "stated",
+      "supported_by": "teoretisk/metodisk begrundet (Jensen, 2005); ingen empirisk test",
+      "evidence": [
+       "e_diakron"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "korpusset er betinget af udvælgelse: kun udsagn om børneliv og daginstitution, der er blevet til i en landspolitisk sammenhæng, indgår i analysen",
+      "stated_or_implicit": "stated",
+      "supported_by": "udvælgelseskriteriet beskrives i metodeafsnittet; antallet af dokumenter oplyses ikke",
+      "evidence": [
+       "e_korpus"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "udsagn om børneliv og daginstitution i landspolitisk sammenhæng",
+         "to": "inklusion i det analyserede dokumentkorpus",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "de citerede enkeltudsagn (fx Socialdemokratiets ordfører 1963-64, Eva Kjer Hansen 2004) står for periodens dominerende diskurs",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_repr"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "forfatterne understreger selv, at de ikke kan pege på kausale sammenhænge bag stigningen i antallet af hjemmepassede børn"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "hvad der driver stigningen i hjemmepasning: 'Uden at kunne pege på kausale sammenhænge sker stigningen af hjemmepassede børn i en tid, hvor børns opvækstvilkår i Danmark er til debat'"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Foucault-inspireret diskursanalyse af landspolitiske dokumenter, struktureret som gentagende spørgsmål og læst både synkront og diakront; ingen statistisk estimator",
+     "evidence": [
+      "e_metode_periode",
+      "e_diakron"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "politiske debatter, kommissionsrapporter og lovgivning fra perioden 1960-i dag; artiklen oplyser ikke antallet af dokumenter",
+     "evidence": [
+      "e_korpus",
+      "e_absent_ndok"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": null,
+     "evidence": [
+      "e_absent_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "læreplaner i daginstitutioner som svaret på den politiske interesse i, at børnene profiterer af tiden i daginstitution",
+    "rationalet om, at det, nogle børn har brug for, har alle børn glæde af"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "politisk periode",
+     "finding": "i 1960'erne og 1970'erne var omsorg for børn det politiske anliggende, og vuggestuen en nødløsning; fra slutningen af 1980'erne trådte forældrenes individuelle valg frem, og i 2000-tallet børns læring og skolerelevante kompetencer"
+    },
+    {
+     "dimension": "politisk fløj i 1970'erne",
+     "finding": "venstrefløjen argumenterede for gode daginstitutioner til børn i alle aldre og nedsat arbejdstid, højrefløjen for at de yngste skulle passes hjemme og de lidt ældre i halvdagsbørnehave"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "historisk tid: landspolitisk periode 1960-i dag",
+     "italesættelse af daginstitutionen som nødvendig for barnets udvikling og trivsel",
+     "udsagn om børneliv og daginstitution i landspolitisk sammenhæng",
+     "inklusion i det analyserede dokumentkorpus"
+    ],
+    "edges": [
+     {
+      "from": "udsagn om børneliv og daginstitution i landspolitisk sammenhæng",
+      "to": "inklusion i det analyserede dokumentkorpus",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 80,
+      "sha256_16": "80b253b149a67e84",
+      "n_chars": 248
+     },
+     {
+      "page": 87,
+      "sha256_16": "f7450dfe34128722",
+      "n_chars": 68
+     },
+     {
+      "page": 87,
+      "sha256_16": "481f27a2268996da",
+      "n_chars": 80
+     },
+     {
+      "page": 85,
+      "sha256_16": "812f6f107359af3b",
+      "n_chars": 124
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Artiklen er en kvalitativ diskurs- og narrativanalyse i et pædagogisk tidsskrift; den rapporterer ingen regressioner, koefficienter eller registermikrodata, og digest.json indeholder hverken tabeller eller figurer. 'Claim' er her kodet som artiklens egne analytiske fund, med identification.strategy='descriptive' og alle talfelter null.",
+    "Sidetal er de trykte tidsskriftssider (80-94); PDF-side 1 svarer til trykt side 80.",
+    "Der er ikke indsat nogen årsagsrettet kant i graph_fragment: artiklen beskriver en diskursiv udvikling over tid og testede ikke noget årsagsforhold.",
+    "Slutåret for 'i dag' er ikke eksplicit; period_range.to er sat til 2026 (publikationsåret), og de nyeste kilder er LBK nr. 1038 af 11/08/2025 og VIVE & EVA (2025)."
+   ],
+   "evidence": [
+    {
+     "id": "e_abstract",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 80,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "80b253b149a67e84",
+     "n_chars": 248
+    },
+    {
+     "id": "e_rq",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 82,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6079a231cbf6c459",
+     "n_chars": 157
+    },
+    {
+     "id": "e_metode_periode",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 82,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "630a22465311797f",
+     "n_chars": 69
+    },
+    {
+     "id": "e_korpus",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 82,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "33ff2e186dbdbdbf",
+     "n_chars": 104
+    },
+    {
+     "id": "e_diakron",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 82,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3a1e3a0a857dcf71",
+     "n_chars": 142
+    },
+    {
+     "id": "e_1960",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 85,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "812f6f107359af3b",
+     "n_chars": 124
+    },
+    {
+     "id": "e_noedloesning",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 85,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "584c00e9ee156f29",
+     "n_chars": 128
+    },
+    {
+     "id": "e_alle_boern",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 87,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "481f27a2268996da",
+     "n_chars": 80
+    },
+    {
+     "id": "e_noedv",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 87,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e504289af3014636",
+     "n_chars": 114
+    },
+    {
+     "id": "e_hoejere",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 87,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f7450dfe34128722",
+     "n_chars": 68
+    },
+    {
+     "id": "e_kausal",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 81,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6232c74337bd4e29",
+     "n_chars": 138
+    },
+    {
+     "id": "e_absent_num",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "20eae5723d267ada",
+     "n_chars": 276
+    },
+    {
+     "id": "e_absent_reg",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6101eda74bb3ce94",
+     "n_chars": 194
+    },
+    {
+     "id": "e_absent_tab",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f3f0b0b71136f7f8",
+     "n_chars": 143
+    },
+    {
+     "id": "e_absent_ndok",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b72f9e1dac874ac1",
+     "n_chars": 132
+    },
+    {
+     "id": "e_absent_repr",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "27fbf7e5d32dc8e9",
+     "n_chars": 120
+    },
+    {
+     "id": "e_kofod",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 86,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9b1bd11aa9743309",
+     "n_chars": 103
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Michel Foucaults diskursbegreb (Foucault, 2003)",
+    "samtidig udviklingspsykologi/tilknytningsteori (Bowlby, 1994) som ramme for 1960'ernes politik"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Grumløse (2014, 2017)",
+     "relation": "extends",
+     "stated": true,
+     "evidence": [
+      "e_metode_periode"
+     ],
+     "as_stated": "Diskursanalysen er struktureret som en række gentagende spørgsmål, der både adresserer, hvad der siges, hvem der kommer til orde, og hvad der besluttes eller eventuelt marginaliseres i de politiske processer (se i øvrigt Grumløse, 2014)."
+    },
+    {
+     "citation": "Kofod (2019)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e_kofod"
+     ],
+     "as_stated": "Inden for policy-forskningen taler man om, at skolens logikker blev forlænget nedad til også at omfatte"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 80,
+    "text": "I denne artikel undersøger vi, hvordan det politiske fokus på børn og daginstitutioner har bevæget sig op igennem det tyvende århundrede, og hvordan særligt de seneste 25 års politik betoner nødvendigheden af børns daglige gang i en …",
+    "sha256_16": "80b253b149a67e84",
+    "n_chars": 248
+   }
+  },
+  {
+   "claim_id": "dk_W7140075182_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Blandt de interviewede hjemmepassende forældre er den ene af to gennemgående fortællinger, at det 'føltes helt forkert' at aflevere det lille barn i vuggestue eller dagpleje, og forældre, der betoner barnets tilknytning og behov, begrunder dermed valget om hjemmepasning som et egentligt fravalg af daginstitutionen.",
+   "treatment": {
+    "label": "forældrenes fornemmelse af, at det føltes helt forkert/helt galt at aflevere det lille barn i vuggestue eller dagpleje (forståelsen af, at den daglige adskillelse er dårlig for barnet)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "kodet fra interviewene som en af to gennemgående fortællinger, der begrunder valget af hjemmepasning: en håndgribelig og personligt erfaret fornemmelse af, at det er forkert at være adskilt fra sit barn, forbundet med en udviklingspsykologisk forståelse af tilknytning",
+     "evidence": [
+      "e_to_fort",
+      "e_tilknyt",
+      "e_katrine"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "erindret i interviewet i 2023, med reference til tiden omkring afleveringen af barnet i vuggestue/dagpleje",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "valget om at hjemmepasse barnet (fravalg af daginstitutionen)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "at forældrene passer barnet hjemme i stedet for at benytte vuggestue, dagpleje eller børnehave; i fem af de ti interviewede familier er daginstitutionen valgt helt fra, og hjemmepasningen betragtes af disse forældre som et egentligt fravalg af daginstitutionen",
+     "evidence": [
+      "e_interviews",
+      "e_tilknyt"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "forældrenes aktuelle hverdag på interviewtidspunktet (2023)",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_to_fort",
+      "e_tilknyt",
+      "e_katrine",
+      "e_flere",
+      "e_uanset"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "de interviewede hjemmepassende forældre; estimandet er en kvalitativ karakteristik af de narrativer, der begrunder valget, ikke en effektstørrelse",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Forældre i Danmark, der har valgt at hjemmepasse deres børn, som de fremtræder i ti kvalitative interviews gennemført i 2023 i forskningsprojektet Tid til familien; fem af de ti familier har valgt daginstitutionen helt fra",
+    "birth_cohorts": null,
+    "ages": "forældre til små børn (vuggestue- og børnehavealder)",
+    "sex": "all",
+    "period": "interviews gennemført i 2023",
+    "region": "Danmark; familierne bor stort set alle i mindre byer samt på landet",
+    "subgroups_defined": [
+     "fem familier, der har valgt daginstitutionen helt fra (hjemmepassende)",
+     "fem familier, der prioriterer god tid sammen, men hvor begge forældre arbejder og børnene går i daginstitution",
+     "to gennemgående fortællinger blandt de hjemmepassende: (1) det føltes helt forkert at aflevere barnet, (2) hverdagen med små børn og fuldtidsarbejde var præget af tidspres"
+    ],
+    "selection": "selvselektion: deltagerne blev rekrutteret via opslag på sociale medier og sneboldeffekten (allerede rekrutterede deltagere henviste til nye informanter)",
+    "period_range": {
+     "from": 2023,
+     "to": 2023
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "ingen eksogen variation; forældrenes egne fortællinger i ti kvalitative interviews gennemført i 2023, analyseret narrativt",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "forældrenes fortællinger kan læses som meningsskabende narrativer, der er sammenhængende med bredere samfundsmæssige forhold, herunder politiske diskurser",
+      "stated_or_implicit": "stated",
+      "supported_by": "teoretisk begrundet med Bruner (1986, 1990); ingen empirisk test",
+      "evidence": [
+       "e_narr"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "udvalget er betinget af selvselektion: de interviewede er rekrutteret via opslag på sociale medier og sneboldeffekt, og fem af familierne har selv valgt hjemmepasning",
+      "stated_or_implicit": "stated",
+      "supported_by": "rekrutteringen beskrives i metodeafsnittet; ingen bortfalds- eller balanceanalyse",
+      "evidence": [
+       "e_rekrut"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "valget om at hjemmepasse børnene",
+         "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "det, forældrene fortæller retrospektivt i 2023, afspejler de begrundelser og hændelser, der var på spil, da valget om hjemmepasning blev truffet",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_recall"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "artiklen oplyser, at der ikke findes fuldt overblik over, hvor mange forældre der passer deres børn selv, hvorfor udvalget ikke kan holdes op mod en kendt population"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "narrativ analyse af kvalitative interviews, inspireret af Jerome Bruners begreb om 'mening i handling'; ingen statistisk estimator",
+     "evidence": [
+      "e_narr",
+      "e_bruner"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "ti kvalitative interviews med forældre, hvoraf fem familier har valgt daginstitutionen helt fra",
+     "evidence": [
+      "e_interviews",
+      "e_fem"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": null,
+     "evidence": [
+      "e_absent_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "forståelsen af, at den daglige adskillelse er dårlig for barnet (tilknytning)",
+    "værdien af at kunne følge sit lille barns udvikling på tæt hold i hverdagen"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "de to gennemgående fortællinger blandt de hjemmepassende forældre",
+     "finding": "denne fortælling (det føltes helt forkert at aflevere barnet) læses som modstand mod daginstitutionen, mens den anden fortælling - en hverdag præget af tidspres - ikke er modstand mod daginstitutionen, men en reaktion på en hverdag, der gik for hurtigt"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "fornemmelse af, at det føltes helt forkert at aflevere det lille barn (tilknytning)",
+     "valget om at hjemmepasse børnene",
+     "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)"
+    ],
+    "edges": [
+     {
+      "from": "valget om at hjemmepasse børnene",
+      "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 88,
+      "sha256_16": "6be487ae9abd65ae",
+      "n_chars": 182
+     },
+     {
+      "page": 89,
+      "sha256_16": "5366096c443a06f6",
+      "n_chars": 116
+     },
+     {
+      "page": 89,
+      "sha256_16": "ea849f3adb93b7ad",
+      "n_chars": 183
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Kvalitativt fund uden tal: 'sign' er kodet positive, fordi artiklen fremstiller fornemmelsen af, at adskillelsen føltes forkert, som en begrundelse for valget om hjemmepasning. Der er ingen koefficient, ingen test og intet sammenligningsdesign.",
+    "Artiklen skriver 'ti kvalitative interviews med forældre, hvoraf fem familier har valgt daginstitutionen helt fra'; det fremgår ikke entydigt, om de ti interviews svarer til ti familier eller ti forældre.",
+    "Ingen årsagsrettet kant i graph_fragment: artiklen tester ikke forholdet, men fortolker forældrenes narrativer."
+   ],
+   "evidence": [
+    {
+     "id": "e_interviews",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4631a8fa847a5fdd",
+     "n_chars": 68
+    },
+    {
+     "id": "e_2023",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "37f5873ccf21151e",
+     "n_chars": 82
+    },
+    {
+     "id": "e_rekrut",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dd7b7c364b6599d1",
+     "n_chars": 75
+    },
+    {
+     "id": "e_bopael",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "223eecbfd8eff622",
+     "n_chars": 58
+    },
+    {
+     "id": "e_narr",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2b6ae3506a3573b5",
+     "n_chars": 57
+    },
+    {
+     "id": "e_fem",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "016bd7de624f749c",
+     "n_chars": 147
+    },
+    {
+     "id": "e_bruner",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "799d74bcbef43b04",
+     "n_chars": 100
+    },
+    {
+     "id": "e_to_fort",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 88,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6be487ae9abd65ae",
+     "n_chars": 182
+    },
+    {
+     "id": "e_katrine",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 88,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1fcd1c9def61991b",
+     "n_chars": 123
+    },
+    {
+     "id": "e_tilknyt",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ea849f3adb93b7ad",
+     "n_chars": 183
+    },
+    {
+     "id": "e_flere",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5366096c443a06f6",
+     "n_chars": 116
+    },
+    {
+     "id": "e_uanset",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 88,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d1831a79542df5c8",
+     "n_chars": 133
+    },
+    {
+     "id": "e_hjemlo",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 88,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "31d97f308bf63910",
+     "n_chars": 114
+    },
+    {
+     "id": "e_absent_num",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "20eae5723d267ada",
+     "n_chars": 276
+    },
+    {
+     "id": "e_absent_reg",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6101eda74bb3ce94",
+     "n_chars": 194
+    },
+    {
+     "id": "e_absent_tab",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f3f0b0b71136f7f8",
+     "n_chars": 143
+    },
+    {
+     "id": "e_absent_recall",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6aa00813202ee4f3",
+     "n_chars": 152
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Jerome Bruners narrative teori om 'mening i handling' (Bruner, 1986, 1990)",
+    "tilknytningsteori / udviklingspsykologi (Bowlby, 1994)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Hjemmeforældrenes Landsorganisation (2021)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e_hjemlo"
+     ],
+     "as_stated": "Valget om at hjemmepasse er, som også Hjemmeforældrenes Landsorganisation peger på, for mange forældre truffet efter mødet med daginstitutionen"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [
+    "narrativerne fra de fem interviewede familier, hvor begge forældre arbejder og børnene går i daginstitution: de indgår i interviewmaterialet, men artiklens analyseafsnit rapporterer alene de hjemmepassende forældres fortællinger"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 88,
+    "text": "børn, møder vi to gennemgående fortællinger, der begrunder valget. Det er dels en fortælling om, at det ”føltes helt forkert” at aflevere sit lille barn i vuggestuen eller dagplejen.",
+    "sha256_16": "6be487ae9abd65ae",
+    "n_chars": 182
+   }
+  },
+  {
+   "claim_id": "dk_W7140075182_c3",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Den anden gennemgående fortælling blandt de interviewede hjemmepassende forældre er, at en langvarig belastning i hverdagen med små børn og to fuldtidsjob - tidspres, farens sygemelding med stress, det yngste barns mistrivsel i vuggestuen - førte til, at familien omlagde hverdagen og valgte hjemmepasning som den nødvendige løsning.",
+   "treatment": {
+    "label": "langvarig belastning i hverdagen med små børn og fuldtidsarbejde: tidspres, farens sygemelding med stress og det yngste barns mistrivsel i vuggestuen",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "kodet fra interviewene som den anden af to gennemgående fortællinger: en hverdag med små børn og fuldtidsarbejde præget af et sådant tidspres, at den ikke hang sammen, konkretiseret i hændelser som farens sygemelding med stress og det yngste barns mistrivsel i vuggestuen; teoretisk læst som familiær dissonans (Rosa, 2021)",
+     "evidence": [
+      "e_haendelser",
+      "e_dissonans",
+      "e_fuldtid"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "de første år med små børn og to fuldtidsjob, forud for omlægningen af hverdagen; erindret i interviewet i 2023",
+     "evidence": [
+      "e_2023",
+      "e_haendelser"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "valget om at hjemmepasse børnene som led i en omlægning af familiens hverdag",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "at den ene forælder bliver hjemme med børnene, i nogle tilfælde kombineret med jobopsigelse og flytning til en billigere bolig; i forældrenes fortællinger først en nødløsning, dernæst en alternativ hverdag",
+     "evidence": [
+      "e_haendelser",
+      "e_flyt"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "efter de første år med to fuldtidsjob; aktuel hverdag i 2023",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_haendelser",
+      "e_overvej",
+      "e_intet_valg",
+      "e_fuldtid",
+      "e_dissonans",
+      "e_noedloesning_hjem"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "de interviewede hjemmepassende forældre, særligt de to forældrepar (Julie og hendes mand, Ditte og Tobias), hvis fortællinger artiklen udfolder; estimandet er en kvalitativ karakteristik af narrativet, ikke en effektstørrelse",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Forældre i Danmark, der har valgt at hjemmepasse deres børn, som de fremtræder i ti kvalitative interviews gennemført i 2023 i forskningsprojektet Tid til familien; fem af de ti familier har valgt daginstitutionen helt fra",
+    "birth_cohorts": null,
+    "ages": "forældre til små børn (vuggestue- og børnehavealder)",
+    "sex": "all",
+    "period": "interviews gennemført i 2023",
+    "region": "Danmark; familierne bor stort set alle i mindre byer samt på landet",
+    "subgroups_defined": [
+     "fem familier, der har valgt daginstitutionen helt fra (hjemmepassende)",
+     "fem familier, der prioriterer god tid sammen, men hvor begge forældre arbejder og børnene går i daginstitution",
+     "to gennemgående fortællinger blandt de hjemmepassende: (1) det føltes helt forkert at aflevere barnet, (2) hverdagen med små børn og fuldtidsarbejde var præget af tidspres"
+    ],
+    "selection": "selvselektion: deltagerne blev rekrutteret via opslag på sociale medier og sneboldeffekten (allerede rekrutterede deltagere henviste til nye informanter)",
+    "period_range": {
+     "from": 2023,
+     "to": 2023
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "ingen eksogen variation; forældrenes egne fortællinger om konkrete hændelser (stress, barnets mistrivsel) i ti kvalitative interviews fra 2023",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "forældrenes fortællinger kan læses som meningsskabende narrativer, der er sammenhængende med bredere samfundsmæssige forhold, herunder politiske diskurser",
+      "stated_or_implicit": "stated",
+      "supported_by": "teoretisk begrundet med Bruner (1986, 1990); ingen empirisk test",
+      "evidence": [
+       "e_narr"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "udvalget er betinget af selvselektion: de interviewede er rekrutteret via opslag på sociale medier og sneboldeffekt, og fem af familierne har selv valgt hjemmepasning",
+      "stated_or_implicit": "stated",
+      "supported_by": "rekrutteringen beskrives i metodeafsnittet; ingen bortfalds- eller balanceanalyse",
+      "evidence": [
+       "e_rekrut"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "valget om at hjemmepasse børnene",
+         "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "det, forældrene fortæller retrospektivt i 2023, afspejler de begrundelser og hændelser, der var på spil, da valget om hjemmepasning blev truffet",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_recall"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "narrativ analyse af kvalitative interviews, inspireret af Jerome Bruners begreb om 'mening i handling'; ingen statistisk estimator",
+     "evidence": [
+      "e_narr",
+      "e_bruner"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "ti kvalitative interviews med forældre, hvoraf fem familier har valgt daginstitutionen helt fra; to forældrepar udfoldes i dette afsnit",
+     "evidence": [
+      "e_interviews",
+      "e_intet_valg"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": null,
+     "evidence": [
+      "e_absent_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "oplevelsen af familiær dissonans (Rosa, 2021)",
+    "konkrete hændelser: farens sygemelding med stress og det yngste barns mistrivsel i vuggestuen",
+    "økonomisk omlægning: jobopsigelse og flytning til en billigere bolig"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "de to gennemgående fortællinger blandt de hjemmepassende forældre",
+     "finding": "her er der ikke tale om modstand mod daginstitutionen, men om en reaktion på en hverdag, der gik for hurtigt, modsat den anden fortælling, hvor det føltes helt forkert at aflevere barnet"
+    },
+    {
+     "dimension": "begrundelse inden for tidspres-fortællingen",
+     "finding": "Julie og hendes mand peger på sygdom og mistrivsel, mens Ditte og Tobias peger på samvittighedskvaler ved sygedage og på at leve for weekenderne - 'med andre begrundelser end Julie og hendes mand'"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "langvarig belastning i hverdagen: tidspres, stress-sygemelding, barnets mistrivsel i vuggestuen",
+     "valget om at hjemmepasse børnene",
+     "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)"
+    ],
+    "edges": [
+     {
+      "from": "valget om at hjemmepasse børnene",
+      "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 89,
+      "sha256_16": "08a400d1c47e0516",
+      "n_chars": 77
+     },
+     {
+      "page": 89,
+      "sha256_16": "7f78d71b251bea6e",
+      "n_chars": 61
+     },
+     {
+      "page": 90,
+      "sha256_16": "9b435e1062baf638",
+      "n_chars": 121
+     },
+     {
+      "page": 92,
+      "sha256_16": "4c193d003ea291e7",
+      "n_chars": 96
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Kvalitativt fund uden tal: 'sign' er kodet positive, fordi artiklen fremstiller belastningen som det, der førte til omlægningen og valget af hjemmepasning. Ingen koefficient, ingen test.",
+    "Ingen årsagsrettet kant i graph_fragment, selv om formuleringen 'Disse hændelser fik forældrene til at overveje deres hverdag' er årsagssproglig: forholdet er ikke identificeret eller testet."
+   ],
+   "evidence": [
+    {
+     "id": "e_interviews",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4631a8fa847a5fdd",
+     "n_chars": 68
+    },
+    {
+     "id": "e_2023",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "37f5873ccf21151e",
+     "n_chars": 82
+    },
+    {
+     "id": "e_rekrut",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dd7b7c364b6599d1",
+     "n_chars": 75
+    },
+    {
+     "id": "e_bopael",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "223eecbfd8eff622",
+     "n_chars": 58
+    },
+    {
+     "id": "e_narr",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2b6ae3506a3573b5",
+     "n_chars": 57
+    },
+    {
+     "id": "e_bruner",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "799d74bcbef43b04",
+     "n_chars": 100
+    },
+    {
+     "id": "e_haendelser",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "08a400d1c47e0516",
+     "n_chars": 77
+    },
+    {
+     "id": "e_overvej",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7f78d71b251bea6e",
+     "n_chars": 61
+    },
+    {
+     "id": "e_noedloesning_hjem",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1a17de8aef50a79f",
+     "n_chars": 155
+    },
+    {
+     "id": "e_dissonans",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 90,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "431f3bdf5e895f32",
+     "n_chars": 108
+    },
+    {
+     "id": "e_intet_valg",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 90,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9b435e1062baf638",
+     "n_chars": 121
+    },
+    {
+     "id": "e_flyt",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 90,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4ff85b08eb83fb78",
+     "n_chars": 88
+    },
+    {
+     "id": "e_fuldtid",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 92,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4c193d003ea291e7",
+     "n_chars": 96
+    },
+    {
+     "id": "e_katalysator",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 90,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "78913873b3c024ae",
+     "n_chars": 87
+    },
+    {
+     "id": "e_absent_num",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "20eae5723d267ada",
+     "n_chars": 276
+    },
+    {
+     "id": "e_absent_reg",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6101eda74bb3ce94",
+     "n_chars": 194
+    },
+    {
+     "id": "e_absent_tab",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f3f0b0b71136f7f8",
+     "n_chars": 143
+    },
+    {
+     "id": "e_absent_recall",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6aa00813202ee4f3",
+     "n_chars": 152
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Jerome Bruners narrative teori om 'mening i handling' (Bruner, 1986, 1990)",
+    "Hartmut Rosas begreb om familiær dissonans / resonans (Rosa, 2021)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Grumløse & Marschall (2024)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e_katalysator"
+     ],
+     "as_stated": "bliver en katalysator for en større omlægning af hverdagen (Grumløse & Marschall, 2024)"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [
+    "narrativerne fra de fem interviewede familier, hvor begge forældre arbejder og børnene går i daginstitution: de indgår i interviewmaterialet, men artiklens analyseafsnit rapporterer alene de hjemmepassende forældres fortællinger"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 89,
+    "text": "Faren blev sygemeldt med stress, og det yngste barn mistrivedes i vuggestuen.",
+    "sha256_16": "08a400d1c47e0516",
+    "n_chars": 77
+   }
+  },
+  {
+   "claim_id": "dk_W7140075182_c4",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "I de hjemmepassende forældres narrativer er tilvalget af hjemmepasning selve sikringen af børnenes behov, både her og nu og på sigt - uanset hvad der konkret førte til, at børnene passes hjemme.",
+   "treatment": {
+    "label": "tilvalget af hjemmepasning, som det italesættes i forældrenes narrativer",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "at børnene passes hjemme frem for i vuggestue, dagpleje eller børnehave, sådan som valget meningstilskrives i forældrenes fortællinger på tværs af de to begrundelser (adskillelsen føltes forkert / hverdagen var for hektisk)",
+     "evidence": [
+      "e_faelles",
+      "e_uanset2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "forældrenes aktuelle hverdag på interviewtidspunktet (2023)",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "forældrenes fortælling om, at børnenes behov sikres, både her og nu og på sigt",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "narrativt kodet vurdering i forældrenes egne fortællinger: at hjemmepasningen sikrer børnenes behov, herunder tid til samvær og meningsfulde gøremål i hverdagen, så familiens medlemmer kan trives. Det er forældrenes vurdering, ikke en måling af barnets faktiske udvikling eller trivsel",
+     "evidence": [
+      "e_faelles",
+      "e_tid_samvaer"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "'både her og nu og på sigt' (forældrenes egne ord); vurderet i interviewet i 2023",
+     "evidence": [
+      "e_faelles",
+      "e_2023"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_faelles",
+      "e_tid_samvaer",
+      "e_uanset2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "de interviewede hjemmepassende forældre; estimandet er en kvalitativ karakteristik af narrativer om børnenes behov, ikke en effektstørrelse og ikke en måling af børnenes udvikling",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "både her og nu og på sigt (forældrenes egne ord)",
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Forældre i Danmark, der har valgt at hjemmepasse deres børn, som de fremtræder i ti kvalitative interviews gennemført i 2023 i forskningsprojektet Tid til familien; fem af de ti familier har valgt daginstitutionen helt fra",
+    "birth_cohorts": null,
+    "ages": "forældre til små børn (vuggestue- og børnehavealder)",
+    "sex": "all",
+    "period": "interviews gennemført i 2023",
+    "region": "Danmark; familierne bor stort set alle i mindre byer samt på landet",
+    "subgroups_defined": [
+     "fem familier, der har valgt daginstitutionen helt fra (hjemmepassende)",
+     "fem familier, der prioriterer god tid sammen, men hvor begge forældre arbejder og børnene går i daginstitution",
+     "to gennemgående fortællinger blandt de hjemmepassende: (1) det føltes helt forkert at aflevere barnet, (2) hverdagen med små børn og fuldtidsarbejde var præget af tidspres"
+    ],
+    "selection": "selvselektion: deltagerne blev rekrutteret via opslag på sociale medier og sneboldeffekten (allerede rekrutterede deltagere henviste til nye informanter)",
+    "period_range": {
+     "from": 2023,
+     "to": 2023
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "ingen eksogen variation; narrativ analyse på tværs af de hjemmepassende forældres fortællinger i ti kvalitative interviews fra 2023",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "forældrenes fortællinger kan læses som meningsskabende narrativer, der er sammenhængende med bredere samfundsmæssige forhold, herunder politiske diskurser",
+      "stated_or_implicit": "stated",
+      "supported_by": "teoretisk begrundet med Bruner (1986, 1990); ingen empirisk test",
+      "evidence": [
+       "e_narr"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "udvalget er betinget af selvselektion: de interviewede er rekrutteret via opslag på sociale medier og sneboldeffekt, og fem af familierne har selv valgt hjemmepasning",
+      "stated_or_implicit": "stated",
+      "supported_by": "rekrutteringen beskrives i metodeafsnittet; ingen bortfalds- eller balanceanalyse",
+      "evidence": [
+       "e_rekrut"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "valget om at hjemmepasse børnene",
+         "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "det, forældrene fortæller retrospektivt i 2023, afspejler de begrundelser og hændelser, der var på spil, da valget om hjemmepasning blev truffet",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_recall"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "forældrenes narrativer tages som udtryk for deres egen forståelse af børnenes behov, ikke som evidens for børnenes faktiske udvikling og trivsel",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_childoutcome"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "narrativ analyse af kvalitative interviews, inspireret af Jerome Bruners begreb om 'mening i handling'; ingen statistisk estimator",
+     "evidence": [
+      "e_narr",
+      "e_bruner"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "ti kvalitative interviews med forældre, hvoraf fem familier har valgt daginstitutionen helt fra",
+     "evidence": [
+      "e_interviews"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": null,
+     "evidence": [
+      "e_absent_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "hjemmepasningen sikrer tid til samvær og tid til meningsfulde gøremål i hverdagen, så familiens medlemmer kan trives",
+    "nærvær og ro i hverdagen",
+    "indflydelse på hverdagens rytmer og indhold for både børn og forældre"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "begrundelse for hjemmepasning",
+     "finding": "fundet gælder på tværs af begge begrundelser: 'Uanset hvad der har haft betydning for, at børnene passes hjemme' er der en fælles fortælling om, at hjemmepasningen sikrer børnenes behov"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "tilvalget af hjemmepasning",
+     "forældrenes fortælling om, at børnenes behov sikres her og nu og på sigt",
+     "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)"
+    ],
+    "edges": [
+     {
+      "from": "valget om at hjemmepasse børnene",
+      "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 91,
+      "sha256_16": "da92e205a02d3d9b",
+      "n_chars": 213
+     },
+     {
+      "page": 91,
+      "sha256_16": "7e6ed83244336fed",
+      "n_chars": 156
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Udfaldet er forældrenes egen vurdering i deres narrativer, ikke en måling af børnenes udvikling eller trivsel. 'sign' positive betyder, at hjemmepasningen i narrativerne fremstilles som det, der sikrer behovene.",
+    "Ingen koefficient, ingen test, ingen tabeller eller figurer i artiklen."
+   ],
+   "evidence": [
+    {
+     "id": "e_interviews",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4631a8fa847a5fdd",
+     "n_chars": 68
+    },
+    {
+     "id": "e_2023",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "37f5873ccf21151e",
+     "n_chars": 82
+    },
+    {
+     "id": "e_rekrut",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dd7b7c364b6599d1",
+     "n_chars": 75
+    },
+    {
+     "id": "e_bopael",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "223eecbfd8eff622",
+     "n_chars": 58
+    },
+    {
+     "id": "e_narr",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2b6ae3506a3573b5",
+     "n_chars": 57
+    },
+    {
+     "id": "e_bruner",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "799d74bcbef43b04",
+     "n_chars": 100
+    },
+    {
+     "id": "e_faelles",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 91,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "da92e205a02d3d9b",
+     "n_chars": 213
+    },
+    {
+     "id": "e_uanset2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 91,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ab10464bedc6aae0",
+     "n_chars": 83
+    },
+    {
+     "id": "e_tid_samvaer",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 91,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7e6ed83244336fed",
+     "n_chars": 156
+    },
+    {
+     "id": "e_yderste",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 92,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dd49b4f39ff6b655",
+     "n_chars": 166
+    },
+    {
+     "id": "e_groenlund",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 92,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "334b75a11ccb46d6",
+     "n_chars": 113
+    },
+    {
+     "id": "e_absent_num",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "20eae5723d267ada",
+     "n_chars": 276
+    },
+    {
+     "id": "e_absent_reg",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6101eda74bb3ce94",
+     "n_chars": 194
+    },
+    {
+     "id": "e_absent_tab",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f3f0b0b71136f7f8",
+     "n_chars": 143
+    },
+    {
+     "id": "e_absent_recall",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6aa00813202ee4f3",
+     "n_chars": 152
+    },
+    {
+     "id": "e_absent_childoutcome",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7d9723ec4abf7f13",
+     "n_chars": 136
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "forældre i al almindelighed, ikke kun hjemmepassende: valget om at passe børnene selv ses 'på sin vis' som den yderste konsekvens af en mere almindelig forståelse af, at børns hverdagsliv skal have den rette balance - en forståelse artiklen også tilskriver forældre, der benytter daginstitution",
+     "boundary_conditions": [
+      "det er fortsat et fåtal af danske forældre, der vælger hjemmepasning",
+      "generaliseringen er hedget ('på sin vis') og støttet på andre studier (fx Grönlund & Öun, 2020), ikke på artiklens eget materiale"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e_yderste",
+     "e_groenlund"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Jerome Bruners narrative teori om 'mening i handling' (Bruner, 1986, 1990)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Grönlund & Öun (2020)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e_groenlund"
+     ],
+     "as_stated": "Således viser andre studier, hvordan forældre i al almindelighed er optagede af at balancere børnenes hverdagsliv"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [
+    "narrativerne fra de fem interviewede familier, hvor begge forældre arbejder og børnene går i daginstitution: de indgår i interviewmaterialet, men artiklens analyseafsnit rapporterer alene de hjemmepassende forældres fortællinger"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 91,
+    "text": "Uanset hvad der har haft betydning for, at børnene passes hjemme, er der i forældrenes narrativer en fælles fortælling om, at tilvalget af hjemmepasningen er sikringen af børnenes behov, både her og nu og på sigt.",
+    "sha256_16": "da92e205a02d3d9b",
+    "n_chars": 213
+   }
+  },
+  {
+   "claim_id": "dk_W7140075182_c5",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Selv om de seneste årtiers børnepolitik betoner nødvendigheden af børns tilknytning til en daginstitution, er de interviewede hjemmepassende forældre ikke bekymrede for, at deres børn kommer til at mangle noget ved ikke at være i daginstitution.",
+   "treatment": {
+    "label": "at have valgt hjemmepasning i en politisk diskurs, der betoner nødvendigheden af børns tilknytning til en daginstitution",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "at forældrene har valgt daginstitutionen fra og passer børnene hjemme, sat over for den politiske diskurs, hvor daginstitutionen italesættes som nødvendig og som et væsentligt led i barnets senere skoleliv",
+     "evidence": [
+      "e_bekymret",
+      "e_noedv_i_dag"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "interviewtidspunktet 2023; den politiske diskurs 'i dag'",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "forældrenes bekymring for, at deres børn kommer til at mangle noget ved ikke at være i daginstitution",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e_absent_reg"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "narrativt kodet bekymring i forældrenes egne fortællinger for, at barnet mangler noget (udviklingsmæssigt, socialt eller skoleforberedende) ved ikke at gå i daginstitution; artiklen finder ingen sådan bekymring - 'Tværtimod'",
+     "evidence": [
+      "e_bekymret"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "interviewtidspunktet 2023",
+     "evidence": [
+      "e_2023"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e_bekymret",
+      "e_uenige"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": null,
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_absent_num"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "de interviewede hjemmepassende forældre, holdt op mod den politiske diskurs' præmis om daginstitutionens nødvendighed; estimandet er en kvalitativ karakteristik, ikke en effektstørrelse",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Forældre i Danmark, der har valgt at hjemmepasse deres børn, som de fremtræder i ti kvalitative interviews gennemført i 2023 i forskningsprojektet Tid til familien; fem af de ti familier har valgt daginstitutionen helt fra",
+    "birth_cohorts": null,
+    "ages": "forældre til små børn (vuggestue- og børnehavealder)",
+    "sex": "all",
+    "period": "interviews gennemført i 2023",
+    "region": "Danmark; familierne bor stort set alle i mindre byer samt på landet",
+    "subgroups_defined": [
+     "fem familier, der har valgt daginstitutionen helt fra (hjemmepassende)",
+     "fem familier, der prioriterer god tid sammen, men hvor begge forældre arbejder og børnene går i daginstitution",
+     "to gennemgående fortællinger blandt de hjemmepassende: (1) det føltes helt forkert at aflevere barnet, (2) hverdagen med små børn og fuldtidsarbejde var præget af tidspres"
+    ],
+    "selection": "selvselektion: deltagerne blev rekrutteret via opslag på sociale medier og sneboldeffekten (allerede rekrutterede deltagere henviste til nye informanter)",
+    "period_range": {
+     "from": 2023,
+     "to": 2023
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "ingen eksogen variation; narrativ analyse af forældrenes fortællinger, læst mod diskursanalysens resultat",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "forældrenes fortællinger kan læses som meningsskabende narrativer, der er sammenhængende med bredere samfundsmæssige forhold, herunder politiske diskurser",
+      "stated_or_implicit": "stated",
+      "supported_by": "teoretisk begrundet med Bruner (1986, 1990); ingen empirisk test",
+      "evidence": [
+       "e_narr"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "udvalget er betinget af selvselektion: de interviewede er rekrutteret via opslag på sociale medier og sneboldeffekt, og fem af familierne har selv valgt hjemmepasning",
+      "stated_or_implicit": "stated",
+      "supported_by": "rekrutteringen beskrives i metodeafsnittet; ingen bortfalds- eller balanceanalyse",
+      "evidence": [
+       "e_rekrut"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "valget om at hjemmepasse børnene",
+         "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "det, forældrene fortæller retrospektivt i 2023, afspejler de begrundelser og hændelser, der var på spil, da valget om hjemmepasning blev truffet",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_recall"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "fraværet af udtalt bekymring i interviewene kan læses som fravær af bekymring, ikke som noget forældrene undlader at udtrykke over for en interviewer",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_absent_socdes"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "narrativ analyse af kvalitative interviews, inspireret af Jerome Bruners begreb om 'mening i handling'; ingen statistisk estimator",
+     "evidence": [
+      "e_narr",
+      "e_bruner"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "ti kvalitative interviews med forældre, hvoraf fem familier har valgt daginstitutionen helt fra",
+     "evidence": [
+      "e_interviews"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": null,
+     "evidence": [
+      "e_absent_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "at have valgt hjemmepasning (i en diskurs om daginstitutionens nødvendighed)",
+     "bekymring for, at barnet mangler noget ved ikke at være i daginstitution",
+     "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)"
+    ],
+    "edges": [
+     {
+      "from": "valget om at hjemmepasse børnene",
+      "to": "inklusion i interviewudvalget (rekruttering via sociale medier og sneboldeffekt)",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 91,
+      "sha256_16": "5a7776904bede358",
+      "n_chars": 94
+     },
+     {
+      "page": 89,
+      "sha256_16": "6a0d68ee8a6e6b59",
+      "n_chars": 105
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "'sign' er kodet null, fordi artiklen rapporterer fraværet af en bekymring hos de hjemmepassende forældre. Det er et kvalitativt fund uden test; der er ingen sammenligningsgruppe og ingen koefficient, og kanten er derfor ikke sat som causal_tested_null i grafen.",
+    "Udfaldet er en narrativt kodet bekymring, ikke en måling af, om børnene faktisk mangler noget."
+   ],
+   "evidence": [
+    {
+     "id": "e_interviews",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4631a8fa847a5fdd",
+     "n_chars": 68
+    },
+    {
+     "id": "e_2023",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "37f5873ccf21151e",
+     "n_chars": 82
+    },
+    {
+     "id": "e_rekrut",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "dd7b7c364b6599d1",
+     "n_chars": 75
+    },
+    {
+     "id": "e_bopael",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "223eecbfd8eff622",
+     "n_chars": 58
+    },
+    {
+     "id": "e_narr",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "2b6ae3506a3573b5",
+     "n_chars": 57
+    },
+    {
+     "id": "e_bruner",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 83,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "799d74bcbef43b04",
+     "n_chars": 100
+    },
+    {
+     "id": "e_bekymret",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 91,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5a7776904bede358",
+     "n_chars": 94
+    },
+    {
+     "id": "e_uenige",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 89,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6a0d68ee8a6e6b59",
+     "n_chars": 105
+    },
+    {
+     "id": "e_noedv_i_dag",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 92,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a4d276a565d74c67",
+     "n_chars": 116
+    },
+    {
+     "id": "e_absent_num",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "20eae5723d267ada",
+     "n_chars": 276
+    },
+    {
+     "id": "e_absent_reg",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6101eda74bb3ce94",
+     "n_chars": 194
+    },
+    {
+     "id": "e_absent_tab",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f3f0b0b71136f7f8",
+     "n_chars": 143
+    },
+    {
+     "id": "e_absent_recall",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6aa00813202ee4f3",
+     "n_chars": 152
+    },
+    {
+     "id": "e_absent_socdes",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": null,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "5ed8bef65e9f20f2",
+     "n_chars": 154
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Jerome Bruners narrative teori om 'mening i handling' (Bruner, 1986, 1990)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [
+    "narrativerne fra de fem interviewede familier, hvor begge forældre arbejder og børnene går i daginstitution: de indgår i interviewmaterialet, men artiklens analyseafsnit rapporterer alene de hjemmepassende forældres fortællinger"
+   ],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 91,
+    "text": "ikke bekymrede for, at deres børn kommer til at mangle noget ved ikke at være i daginstitution",
+    "sha256_16": "5a7776904bede358",
+    "n_chars": 94
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "6bb5451c30f697e06512e000f0c526abac9d1d77e2409296a26b09158b206d4a",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:45.221997+00:00",
+  "tables_sha256": "698af24b2aa76b051ee830932104dc2e69885b13d5624d2a06523fbabb2aaccc",
+  "figures_sha256": "924788447109fcf34d5c3dd1d0b06afa97e8a346a8454e2a4b086dbf1303c016"
+ },
+ "public_export": {
+  "anchor_quotes": 5,
+  "quotes_hashed": 97,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

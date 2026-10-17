@@ -1,0 +1,5254 @@
+{
+ "artid": "dk_W2548869093",
+ "paper": {
+  "title": "Pension saving responses to anticipated tax changes: Evidence from monthly pension contribution records",
+  "authors": [
+   "Claus Thustrup Kreiner",
+   "Søren Leth-Petersen",
+   "Peer Ebbesen Skov"
+  ],
+  "year": 2017,
+  "journal": "Economics Letters",
+  "doi": "10.1016/j.econlet.2016.11.011",
+  "code_data_availability": "No data or code availability statement and no Statistics Denmark project reference is given. …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "the eIncome register",
+    "dst_code": null,
+    "years": "2008-2011",
+    "role": "sample frame; treatment assignment (2008 monthly wage income); monthly measure of contributions to employer organized pension accounts and of total gross payments",
+    "variables_mentioned": [
+     "wages",
+     "salaries",
+     "contributions to employer organized pension accounts",
+     "the identification number of the employee"
+    ],
+    "year_range": {
+     "from": 2008,
+     "to": 2011
+    }
+   },
+   {
+    "name_in_paper": "the income-tax register",
+    "dst_code": null,
+    "years": "2006-2011",
+    "role": "outcomes: annual savings in privately organized retirement savings accounts and financial wealth / savings in financial assets",
+    "variables_mentioned": [
+     "savings in privately organized retirement savings accounts",
+     "financial assets",
+     "financial wealth"
+    ],
+    "year_range": {
+     "from": 2006,
+     "to": 2011
+    }
+   }
+  ],
+  "linkages": [
+   "The eIncome register contains the identification number of the employee, which is used to link the monthly payroll data to annual records with additional information about financial wealth (the income-tax register)."
+  ],
+  "sample": {
+   "universe": "All employees in Denmark reported to the eIncome register; the estimation sample is restricted to private-sector employees in two 2008 income bands.",
+   "unit_of_observation": "individual-month for Fig. 1; individual-year for the Table 1 regressions",
+   "selection_rules": [
+    "Employed in the private sector.",
+    "48 consecutive monthly observations from January 2008 to December 2011 with positive wage income.",
+    "Contributions to annuity pension schemes of less than DKK 100,000 in 2008 (imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010).",
+    "Allocated to a tax bracket on the basis of income in 2008: treatment group (T-group) = average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile; control group (C-group) = monthly income in the range DKK 30,000-35,000.",
+    "Within the T-group, T-group2 = the 4818 individuals whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008; T-group1 = the rest of the T-group."
+   ],
+   "period": "Monthly data January 2008 - December 2011; annual tax-register data 2006-2011",
+   "n_observations": "1,069,320 individual-year observations in the full-sample regressions (Table 1, columns (1) and (3)); 408,702 in the restricted-treatment-group regressions (columns (2) and (4))",
+   "n_individuals": "116,724 in the T-group (of whom 4818 in T-group2) and 64,287 in the C-group"
+  },
+  "construction_notes": [
+   "Contributions to employer organized and to privately organized pension accounts are measured as a fraction of total annual gross payments to the individual (as a share of total monthly gross payments in Fig. 1).",
+   "Savings in financial assets, S, is financial wealth in year t minus financial wealth in year t-1 (the income tax register records financial wealth at the end of the year), expressed relative to total gross payments.",
+   "P^TotPen is total contributions to tax subsidized retirement savings accounts, i.e. both employer organized and privately organized accounts, as a fraction of total annual gross payments.",
+   "The extraordinary-contributor dummy equals one if the pension contribution rate in December 2009 is 25 percentage points higher than its level in December 2008; footnote 3 reports that results are very similar with other thresholds or with an indicator for extraordinarily high contribution rates in any month after the reform was decided.",
+   "P^Empl and P^TotPen are instrumented with the interaction D_{i,2009} x D_i^Treat.",
+   "The marginal tax rate for a top taxpayer is computed in footnote 1 as MTR = LMC + (1 - LMC) x (RT + BT + MT + TT + CT) = 8 + (100 - 8) x (32.8 + 5.04 + 6 + 15 + 0.7) = 63% before 1 January 2010 and 8 + (100 - 8) x (32.8 + 3.67 + 0 + 15 + 0.7) = 56% after.",
+   "One USD corresponds to around DKK 6.5.",
+   "90% of all DC contributions in Denmark are made to employer organized accounts."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W2548869093_c1",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "An increase in contributions to employer organized pension accounts induced by the anticipated 2010 reduction in the marginal tax rate crowds IN contributions to privately organized pension savings accounts: one more unit of employer organized contributions raises privately organized contributions by 0.156 units.",
+   "treatment": {
+    "label": "P^Empl - contributions to employer organized pension accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (monthly employer reports of wages, salaries and contributions to employer organized pension accounts); aggregated to annual data for Table 1",
+     "evidence": [
+      "e_eincome"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contributions to employer organized (defined contribution) pension accounts in year t, measured as a fraction of total annual gross payments to the individual. Treated as endogenous and instrumented with the interaction D_2009 x D_i^Treat.",
+     "evidence": [
+      "e_defs1",
+      "e_instr",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, years 2006-2011; the identifying variation is the 2009 announcement year (reform passed 28 May 2009, effective 1 January 2010).",
+     "evidence": [
+      "e_taxreg",
+      "e_reform",
+      "e_instr"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "P^Priv - contributions to privately organized pension savings accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "income tax register (annual records on savings in privately organized retirement savings accounts)",
+     "evidence": [
+      "e_taxreg"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contributions to privately organized pension savings accounts in year t, measured as a fraction of total annual gross payments to the individual.",
+     "evidence": [
+      "e_defs1",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, each of the years 2006-2011; contemporaneous with P^Empl in year t.",
+     "evidence": [
+      "e_taxreg"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_tab",
+      "e_c1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.156,
+      "evidence": [
+       "e_tab",
+       "e_c1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "[0.126,0.186]",
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "units of P^Priv (fraction of total annual gross payments) per unit of P^Empl (fraction of total annual gross payments)",
+      "evidence": [
+       "e_tab",
+       "e_c1",
+       "e_defs1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"when contributions to employer organized accounts increase by one unit then contributions to privately organized accounts increase by 0.156 units\"; \"the positive coefficient means that contributions to employer accounts crowd in contributions to private accounts\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_se"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": 0.126,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": 0.186,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.001,
+      "evidence": [
+       "e_stars"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_base"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": 95,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "LATE",
+    "target_population": "Private-sector employees whose employer organized pension contributions responded to the announcement of the 2010 reduction in the marginal tax rate.",
+    "compliers": "Individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008) whose contributions to employer organized accounts moved in 2009 in response to the anticipated reduction in the marginal tax rate, relative to the C-group (DKK 30,000-35,000).",
+    "bound": "point",
+    "time_horizon": "Contemporaneous: the regressor and the outcome are measured in the same year t, and the instrument isolates the change in the announcement year 2009.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "2006-2011 (annual income tax register data); the identifying variation is in 2009",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2006,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others. Because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high.",
+    "instrument": "D_2009 x D_i^Treat: the interaction of a 2009 year dummy with an indicator for belonging to the treatment group (average monthly gross earnings above DKK 35,000 in 2008).",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Exclusion restriction: the interaction D_2009 x D_i^Treat affects P^Priv - contributions to privately organized pension savings accounts only through P^Empl - contributions to employer organized pension accounts, conditional on individual fixed effects and year dummies.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_instr",
+       "e_tab"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^Priv - contributions to privately organized pension savings accounts",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the anticipated reduction in the marginal tax rate shifted P^Empl - contributions to employer organized pension accounts in 2009 for the treatment group - 'This isolates the changes in contributions to employer organized accounts that are related to the anticipated tax change.'",
+      "stated_or_implicit": "stated",
+      "supported_by": "Fig. 1, panel A: a spike in the average monthly contribution rate of the T-group towards the end of 2009, while the C-group series is flat at about 4.5%. No first-stage statistics are reported.",
+      "evidence": [
+       "e_instr",
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^Empl - contributions to employer organized pension accounts",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Common trends: conditional on individual fixed effects and year dummies, the treatment group (monthly gross earnings above DKK 35,000 in 2008) and the control group (DKK 30,000-35,000) would have had the same mean change in 2009 absent the anticipated tax change. The reform is assumed to leave the control group's marginal tax rate practically unchanged.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper states that the reform left the marginal tax rate practically unchanged for people outside the top bracket, and Fig. 1 displays both group series over all 48 months; no formal pre-trend test is reported.",
+      "evidence": [
+       "e_mtr",
+       "e_alloc",
+       "e_fig"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, i.e. before the reform was announced in May 2009, so group assignment cannot respond to the reform.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Allocation rule stated in the design section; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Sample selection: estimates are conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and with contributions to annuity pension schemes below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the estimate.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - the Table 1 regressions are introduced to address this.",
+     "The tax deductibility for contributions to annuity schemes was capped at DKK 100,000 from 2010; the sample is restricted to individuals with annuity contributions below DKK 100,000 in 2008 to avoid interference from this rule change."
+    ],
+    "robustness_checks": [
+     "Columns (2) and (4) repeat the estimation with the treatment group restricted to the 4818 individuals who made extraordinary contributions to employer organized accounts.",
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS (instrumental variables) with individual fixed effects and year dummies",
+     "evidence": [
+      "e_tab",
+      "e_fe",
+      "e_instr"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation (1), estimated by 2SLS with P^Empl instrumented by D_2009 x D_i^Treat.",
+    "fixed_effects": [
+     "individual fixed effects (mu_i in Eq. (1), theta_i in Eq. (2))",
+     "year dummies D_t"
+    ],
+    "controls": [
+     "year dummies D_t"
+    ],
+    "clustering": "standard errors clustered at the individual level",
+    "weights": null,
+    "sample_n": {
+     "value": "1,069,320",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1, column (1)",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "individual fixed effect (mu_i / theta_i)",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     },
+     {
+      "label": "year dummies D_t",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     }
+    ],
+    "source_table_id": "dk_W2548869093::T1::_::C1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "Treatment group restricted to the 4818 individuals who made extraordinarily large contributions to employer organized accounts (T-group2)",
+     "finding": "The estimate falls from 0.156 in column (1) (full sample) to 0.050 in column (2), which the paper reads as showing that the group contributing extraordinarily to employer organized accounts is only partially overlapping with the group that contributes extra to privately organized accounts."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "D_2009 x D_i^Treat (instrument)",
+     "P^Empl - contributions to employer organized pension accounts",
+     "P^Priv - contributions to privately organized pension savings accounts",
+     "mu_i / theta_i (individual fixed effect)",
+     "D_t (year dummies)",
+     "2010 tax reform (passed 28 May 2009)",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^Empl - contributions to employer organized pension accounts",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "P^Empl - contributions to employer organized pension accounts",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "mu_i / theta_i (individual fixed effect)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "D_t (year dummies)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a4",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a5",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 105,
+      "sha256_16": "cbc487aedb68fa23",
+      "n_chars": 168
+     },
+     {
+      "page": 105,
+      "sha256_16": "edf8f5b49e84292a",
+      "n_chars": 114
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table 1 reports 95% confidence intervals, not standard errors, so `se` is left null rather than derived from the interval.",
+    "No first-stage statistics, F-statistic or reduced-form estimate is reported for the instrument D_2009 x D_i^Treat.",
+    "The note to Table 1 says both that 'Estimates in column (1) and (2) are based on the full sample' and that 'Estimates in columns (2) and (4) include only those individuals in the treatment group who made extraordinary contributions'; the main text makes clear that column (1) is the full sample and column (2) the restricted treatment group.",
+    "The p-value is recorded as p < 0.001 from the table note that *** indicates significance at a 0.1% level; no exact p-value is printed."
+   ],
+   "evidence": [
+    {
+     "id": "e_tab",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 106,
+     "regression_id": "dk_W2548869093::T1::_::C1"
+    },
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_se",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "82c8823cd6976669",
+     "n_chars": 153
+    },
+    {
+     "id": "e_abs_base",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "15864dbf7bf51d65",
+     "n_chars": 165
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "bc88609506e56c8b",
+     "n_chars": 96
+    },
+    {
+     "id": "e_cluster",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "07170ef1c1fe76f2",
+     "n_chars": 140
+    },
+    {
+     "id": "e_fe",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "9360d5dcf352f31e",
+     "n_chars": 78
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cbc487aedb68fa23",
+     "n_chars": 168
+    },
+    {
+     "id": "e_c1b",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "edf8f5b49e84292a",
+     "n_chars": 114
+    },
+    {
+     "id": "e_stars",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "1dc4be95fb7aeba8",
+     "n_chars": 62
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    },
+    {
+     "id": "e_offset",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c01b64f6cca06949",
+     "n_chars": 170
+    },
+    {
+     "id": "e_beta2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "e0899491707c573e",
+     "n_chars": 25
+    },
+    {
+     "id": "e_fn3",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "5cd18ec3374c4f93",
+     "n_chars": 230
+    },
+    {
+     "id": "e_eq1",
+     "kind": "derivation",
+     "exhibit": "Equation (1)",
+     "page": 105,
+     "relation": "IsVariantFormOf",
+     "derived_from": [
+      "paper:dk_W2548869093"
+     ],
+     "how": "Transcription of Eq. (1) as printed on page 105, with sub- and superscripts restored from the PDF rendering."
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "(1)",
+     "as_printed": "P_{it}^{Priv} = β_0 + β_1 D_t + β_2 P_{it}^{Empl} + μ_i + u_{it}",
+     "lhs": "P_{it}^{Priv}",
+     "terms": [
+      {
+       "expression": "β_0",
+       "role": "intercept",
+       "parameter": "β_0"
+      },
+      {
+       "expression": "β_1 D_t",
+       "role": "fixed_effect",
+       "parameter": "β_1"
+      },
+      {
+       "expression": "β_2 P_{it}^{Empl}",
+       "role": "parameter_of_interest",
+       "parameter": "β_2"
+      },
+      {
+       "expression": "μ_i",
+       "role": "fixed_effect",
+       "parameter": null
+      },
+      {
+       "expression": "u_{it}",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "β_2",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "individuals"
+      },
+      {
+       "symbol": "t",
+       "over": "years (2006-2011)"
+      }
+     ],
+     "normalisation": "D_t is a vector of year dummies; the paper does not state which year is the omitted base category. Both the regressor and the dependent variable are expressed as fractions of total annual gross payments.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e_eq1",
+     "e_tab"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 105,
+    "text": "The results show that when contributions to employer organized accounts increase by one unit then contributions to privately organized accounts increase by 0.156 units.",
+    "sha256_16": "cbc487aedb68fa23",
+    "n_chars": 168
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "When the treatment group is restricted to the 4818 individuals who made extraordinarily large contributions to employer organized accounts, one more unit of employer organized contributions raises contributions to privately organized pension savings accounts by 0.050 units - a smaller crowd-in than in the full sample.",
+   "treatment": {
+    "label": "P^Empl - contributions to employer organized pension accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (monthly employer reports of wages, salaries and contributions to employer organized pension accounts); aggregated to annual data for Table 1",
+     "evidence": [
+      "e_eincome"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contributions to employer organized (defined contribution) pension accounts in year t, measured as a fraction of total annual gross payments to the individual. Treated as endogenous and instrumented with the interaction D_2009 x D_i^Treat.",
+     "evidence": [
+      "e_defs1",
+      "e_instr",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, years 2006-2011; the identifying variation is the 2009 announcement year (reform passed 28 May 2009, effective 1 January 2010).",
+     "evidence": [
+      "e_taxreg",
+      "e_reform",
+      "e_instr"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "P^Priv - contributions to privately organized pension savings accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "income tax register (annual records on savings in privately organized retirement savings accounts)",
+     "evidence": [
+      "e_taxreg"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Contributions to privately organized pension savings accounts in year t, measured as a fraction of total annual gross payments to the individual.",
+     "evidence": [
+      "e_defs1",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, each of the years 2006-2011; contemporaneous with P^Empl in year t.",
+     "evidence": [
+      "e_taxreg"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_tab",
+      "e_c2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.05,
+      "evidence": [
+       "e_tab",
+       "e_c2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "[0.042,0.057]",
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "units of P^Priv (fraction of total annual gross payments) per unit of P^Empl (fraction of total annual gross payments)",
+      "evidence": [
+       "e_tab",
+       "e_c2",
+       "e_defs1",
+       "e_c1"
+      ],
+      "confidence": "medium"
+     },
+     "interpretation": "\"The parameter estimate from this regression based on the T-group2 and the C-group is smaller, showing that the group contributing extraordinarily to employer organized accounts is only partially overlapping with the group that contributes extra to privately organized accounts.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_se"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": 0.042,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": 0.057,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.001,
+      "evidence": [
+       "e_stars"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_base"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": 95,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "LATE",
+    "target_population": "Private-sector top-bracket employees who made extraordinarily large contributions to employer organized accounts during the announcement period.",
+    "compliers": "The 4818 individuals in the treatment group whose pension contribution rate in December 2009 was at least 25 percentage points higher than in December 2008 (T-group2), relative to the C-group.",
+    "bound": "point",
+    "time_horizon": "Contemporaneous: the regressor and the outcome are measured in the same year t, and the instrument isolates the change in the announcement year 2009.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "2006-2011 (annual income tax register data); the identifying variation is in 2009",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2006,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others. Because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high.",
+    "instrument": "D_2009 x D_i^Treat: the interaction of a 2009 year dummy with an indicator for belonging to the treatment group (average monthly gross earnings above DKK 35,000 in 2008).",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Exclusion restriction: the interaction D_2009 x D_i^Treat affects P^Priv - contributions to privately organized pension savings accounts only through P^Empl - contributions to employer organized pension accounts, conditional on individual fixed effects and year dummies.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_instr",
+       "e_tab"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^Priv - contributions to privately organized pension savings accounts",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the anticipated reduction in the marginal tax rate shifted P^Empl - contributions to employer organized pension accounts in 2009 for the treatment group - 'This isolates the changes in contributions to employer organized accounts that are related to the anticipated tax change.'",
+      "stated_or_implicit": "stated",
+      "supported_by": "Fig. 1, panel A: a spike in the average monthly contribution rate of the T-group towards the end of 2009, while the C-group series is flat at about 4.5%. No first-stage statistics are reported.",
+      "evidence": [
+       "e_instr",
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^Empl - contributions to employer organized pension accounts",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Common trends: conditional on individual fixed effects and year dummies, the treatment group (monthly gross earnings above DKK 35,000 in 2008) and the control group (DKK 30,000-35,000) would have had the same mean change in 2009 absent the anticipated tax change. The reform is assumed to leave the control group's marginal tax rate practically unchanged.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper states that the reform left the marginal tax rate practically unchanged for people outside the top bracket, and Fig. 1 displays both group series over all 48 months; no formal pre-trend test is reported.",
+      "evidence": [
+       "e_mtr",
+       "e_alloc",
+       "e_fig"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, i.e. before the reform was announced in May 2009, so group assignment cannot respond to the reform.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Allocation rule stated in the design section; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Sample selection: estimates are conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and with contributions to annuity pension schemes below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the estimate.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - the Table 1 regressions are introduced to address this.",
+     "The tax deductibility for contributions to annuity schemes was capped at DKK 100,000 from 2010; the sample is restricted to individuals with annuity contributions below DKK 100,000 in 2008 to avoid interference from this rule change."
+    ],
+    "robustness_checks": [
+     "Columns (2) and (4) repeat the estimation with the treatment group restricted to the 4818 individuals who made extraordinary contributions to employer organized accounts.",
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS (instrumental variables) with individual fixed effects and year dummies",
+     "evidence": [
+      "e_tab",
+      "e_fe",
+      "e_instr"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation (1), estimated by 2SLS with P^Empl instrumented by D_2009 x D_i^Treat.",
+    "fixed_effects": [
+     "individual fixed effects (mu_i in Eq. (1), theta_i in Eq. (2))",
+     "year dummies D_t"
+    ],
+    "controls": [
+     "year dummies D_t"
+    ],
+    "clustering": "standard errors clustered at the individual level",
+    "weights": null,
+    "sample_n": {
+     "value": "408,702",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1, column (2)",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "individual fixed effect (mu_i / theta_i)",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     },
+     {
+      "label": "year dummies D_t",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     }
+    ],
+    "source_table_id": "dk_W2548869093::T1::_::C2"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "Full treatment group (column (1)) versus the 4818 extraordinary contributors T-group2 (column (2))",
+     "finding": "0.156 in the full sample against 0.050 in the restricted sample; the paper reports no test of the difference."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "D_2009 x D_i^Treat (instrument)",
+     "P^Empl - contributions to employer organized pension accounts",
+     "P^Priv - contributions to privately organized pension savings accounts",
+     "mu_i / theta_i (individual fixed effect)",
+     "D_t (year dummies)",
+     "2010 tax reform (passed 28 May 2009)",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^Empl - contributions to employer organized pension accounts",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "P^Empl - contributions to employer organized pension accounts",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "mu_i / theta_i (individual fixed effect)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "D_t (year dummies)",
+      "to": "P^Priv - contributions to privately organized pension savings accounts",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a4",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a5",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 105,
+      "sha256_16": "579d19839b9fd3af",
+      "n_chars": 154
+     },
+     {
+      "page": 105,
+      "sha256_16": "fcd2efc0b72c1d63",
+      "n_chars": 183
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table 1 reports 95% confidence intervals, not standard errors, so `se` is left null rather than derived from the interval.",
+    "No first-stage statistics, F-statistic or reduced-form estimate is reported for the instrument D_2009 x D_i^Treat.",
+    "The note to Table 1 says both that 'Estimates in column (1) and (2) are based on the full sample' and that 'Estimates in columns (2) and (4) include only those individuals in the treatment group who made extraordinary contributions'; the main text makes clear that column (1) is the full sample and column (2) the restricted treatment group.",
+    "The p-value is recorded as p < 0.001 from the table note that *** indicates significance at a 0.1% level; no exact p-value is printed.",
+    "T-group2 is defined by the realised change in the contribution rate between December 2008 and December 2009, i.e. by a post-announcement outcome; the paper does not discuss the implications of this for the interpretation of column (2)."
+   ],
+   "evidence": [
+    {
+     "id": "e_tab",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 106,
+     "regression_id": "dk_W2548869093::T1::_::C2"
+    },
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_se",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "82c8823cd6976669",
+     "n_chars": 153
+    },
+    {
+     "id": "e_abs_base",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "15864dbf7bf51d65",
+     "n_chars": 165
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "bc88609506e56c8b",
+     "n_chars": 96
+    },
+    {
+     "id": "e_cluster",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "07170ef1c1fe76f2",
+     "n_chars": 140
+    },
+    {
+     "id": "e_fe",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "9360d5dcf352f31e",
+     "n_chars": 78
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "579d19839b9fd3af",
+     "n_chars": 154
+    },
+    {
+     "id": "e_c2b",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "fcd2efc0b72c1d63",
+     "n_chars": 183
+    },
+    {
+     "id": "e_stars",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "1dc4be95fb7aeba8",
+     "n_chars": 62
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    },
+    {
+     "id": "e_dummy",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72a67c09cd5075f8",
+     "n_chars": 178
+    },
+    {
+     "id": "e_fn3",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "5cd18ec3374c4f93",
+     "n_chars": 230
+    },
+    {
+     "id": "e_c1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cbc487aedb68fa23",
+     "n_chars": 168
+    },
+    {
+     "id": "e_eq1",
+     "kind": "derivation",
+     "exhibit": "Equation (1)",
+     "page": 105,
+     "relation": "IsVariantFormOf",
+     "derived_from": [
+      "paper:dk_W2548869093"
+     ],
+     "how": "Transcription of Eq. (1) as printed on page 105, with sub- and superscripts restored from the PDF rendering."
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "(1)",
+     "as_printed": "P_{it}^{Priv} = β_0 + β_1 D_t + β_2 P_{it}^{Empl} + μ_i + u_{it}",
+     "lhs": "P_{it}^{Priv}",
+     "terms": [
+      {
+       "expression": "β_0",
+       "role": "intercept",
+       "parameter": "β_0"
+      },
+      {
+       "expression": "β_1 D_t",
+       "role": "fixed_effect",
+       "parameter": "β_1"
+      },
+      {
+       "expression": "β_2 P_{it}^{Empl}",
+       "role": "parameter_of_interest",
+       "parameter": "β_2"
+      },
+      {
+       "expression": "μ_i",
+       "role": "fixed_effect",
+       "parameter": null
+      },
+      {
+       "expression": "u_{it}",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "β_2",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "individuals"
+      },
+      {
+       "symbol": "t",
+       "over": "years (2006-2011)"
+      }
+     ],
+     "normalisation": "D_t is a vector of year dummies; the paper does not state which year is the omitted base category. Both the regressor and the dependent variable are expressed as fractions of total annual gross payments.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e_eq1",
+     "e_tab"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 105,
+    "text": "In column (2) we limit the treatment group to include only the 4818 individuals who made extraordinary contributions to their employer organized accounts.",
+    "sha256_16": "579d19839b9fd3af",
+    "n_chars": 154
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c3",
+   "headline": true,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S2",
+      "pointed_to": "reference",
+      "estimand": "S2/all/2009-announcement",
+      "pointer_quote": "Using high frequency panel data, we document a temporary increase in pension contributions in the second half of 2009 in response to the anticipated change in taxation, and that this led to an increase in total savings in this period.",
+      "cell": "dk_W2548869093::T1::_::C3",
+      "row": 2
+     }
+    ]
+   },
+   "statement": "In the full sample, the increase in total contributions to tax subsidized retirement savings accounts induced by the anticipated tax change has no statistically significant effect on savings in financial assets: the estimate is -0.650 with a wide 95% confidence interval spanning zero.",
+   "treatment": {
+    "label": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (employer organized contributions) linked to the income tax register (privately organized contributions)",
+     "evidence": [
+      "e_eincome",
+      "e_taxreg"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Total contributions to tax subsidized retirement savings accounts, i.e. both employer organized and privately organized accounts, measured as a fraction of total annual gross payments; instrumented using the interaction D_2009 x D_i^Treat.",
+     "evidence": [
+      "e_defs_totpen",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, years 2006-2011; identifying variation in the announcement year 2009.",
+     "evidence": [
+      "e_taxreg",
+      "e_reform"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "S - savings in financial assets relative to total gross payments",
+    "ontology_node": null,
+    "register_source": {
+     "value": "income tax register (records financial wealth at the end of the year)",
+     "evidence": [
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Savings in financial assets relative to total gross payments. The income tax register records financial wealth at the end of the year; savings in financial wealth is approximated by the difference between financial wealth in year t and year t-1, then expressed relative to total gross payments.",
+     "evidence": [
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, each of the years 2006-2011; contemporaneous with P^TotPen in year t.",
+     "evidence": [
+      "e_taxreg",
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e_tab",
+      "e_c3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": false,
+    "magnitude": {
+     "point_estimate": {
+      "value": -0.65,
+      "evidence": [
+       "e_tab",
+       "e_c3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "[−1.362,0.063]",
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "units of S (fraction of total annual gross payments) per unit of P^TotPen (fraction of total annual gross payments)",
+      "evidence": [
+       "e_tab",
+       "e_c3",
+       "e_defs_s"
+      ],
+      "confidence": "medium"
+     },
+     "interpretation": "\"In both cases the parameter is insignificant. The estimate in column (3) has a wide confidence interval\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_se"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": -1.362,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": 0.063,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_p"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_base"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": 95,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "LATE",
+    "target_population": "Private-sector employees whose total tax-favoured pension contributions responded to the announcement of the 2010 reduction in the marginal tax rate.",
+    "compliers": "Individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008) whose total contributions to tax subsidized retirement savings accounts moved in 2009 in response to the anticipated reduction in the marginal tax rate.",
+    "bound": "point",
+    "time_horizon": "Contemporaneous: the regressor and the outcome are measured in the same year t, and the instrument isolates the change in the announcement year 2009.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "2006-2011 (annual income tax register data); the identifying variation is in 2009",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2006,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others. Because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high.",
+    "instrument": "D_2009 x D_i^Treat: the interaction of a 2009 year dummy with an indicator for belonging to the treatment group (average monthly gross earnings above DKK 35,000 in 2008).",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Exclusion restriction: the interaction D_2009 x D_i^Treat affects S - savings in financial assets relative to total gross payments only through P^TotPen - total contributions to tax subsidized retirement savings accounts, conditional on individual fixed effects and year dummies.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_instr",
+       "e_tab"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "S - savings in financial assets relative to total gross payments",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the anticipated reduction in the marginal tax rate shifted P^TotPen - total contributions to tax subsidized retirement savings accounts in 2009 for the treatment group - 'This isolates the changes in contributions to employer organized accounts that are related to the anticipated tax change.'",
+      "stated_or_implicit": "stated",
+      "supported_by": "Fig. 1, panel A: a spike in the average monthly contribution rate of the T-group towards the end of 2009, while the C-group series is flat at about 4.5%. No first-stage statistics are reported.",
+      "evidence": [
+       "e_instr",
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Common trends: conditional on individual fixed effects and year dummies, the treatment group (monthly gross earnings above DKK 35,000 in 2008) and the control group (DKK 30,000-35,000) would have had the same mean change in 2009 absent the anticipated tax change. The reform is assumed to leave the control group's marginal tax rate practically unchanged.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper states that the reform left the marginal tax rate practically unchanged for people outside the top bracket, and Fig. 1 displays both group series over all 48 months; no formal pre-trend test is reported.",
+      "evidence": [
+       "e_mtr",
+       "e_alloc",
+       "e_fig"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, i.e. before the reform was announced in May 2009, so group assignment cannot respond to the reform.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Allocation rule stated in the design section; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Sample selection: estimates are conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and with contributions to annuity pension schemes below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the estimate.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - the Table 1 regressions are introduced to address this.",
+     "The tax deductibility for contributions to annuity schemes was capped at DKK 100,000 from 2010; the sample is restricted to individuals with annuity contributions below DKK 100,000 in 2008 to avoid interference from this rule change."
+    ],
+    "robustness_checks": [
+     "Columns (2) and (4) repeat the estimation with the treatment group restricted to the 4818 individuals who made extraordinary contributions to employer organized accounts.",
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS (instrumental variables) with individual fixed effects and year dummies",
+     "evidence": [
+      "e_tab",
+      "e_fe",
+      "e_instr"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation (2), estimated by 2SLS with P^TotPen instrumented by D_2009 x D_i^Treat.",
+    "fixed_effects": [
+     "individual fixed effects (mu_i in Eq. (1), theta_i in Eq. (2))",
+     "year dummies D_t"
+    ],
+    "controls": [
+     "year dummies D_t"
+    ],
+    "clustering": "standard errors clustered at the individual level",
+    "weights": null,
+    "sample_n": {
+     "value": "1,069,320",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1, column (3)",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "individual fixed effect (mu_i / theta_i)",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     },
+     {
+      "label": "year dummies D_t",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     }
+    ],
+    "source_table_id": "dk_W2548869093::T1::_::C3"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "Treatment group restricted to the 4818 extraordinary contributors (column (4))",
+     "finding": "The estimate moves from -0.650 with a wide interval to -0.086 with a narrower interval; both are insignificant, and the paper reads column (4) as ruling out crowd-out in excess of 22% of the increase in contributions."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "D_2009 x D_i^Treat (instrument)",
+     "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+     "S - savings in financial assets relative to total gross payments",
+     "mu_i / theta_i (individual fixed effect)",
+     "D_t (year dummies)",
+     "2010 tax reform (passed 28 May 2009)",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "mu_i / theta_i (individual fixed effect)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "D_t (year dummies)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a4",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a5",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 106,
+      "sha256_16": "817646f793ab4ab6",
+      "n_chars": 103
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table 1 reports 95% confidence intervals, not standard errors, so `se` is left null rather than derived from the interval.",
+    "No first-stage statistics, F-statistic or reduced-form estimate is reported for the instrument D_2009 x D_i^Treat.",
+    "The note to Table 1 says both that 'Estimates in column (1) and (2) are based on the full sample' and that 'Estimates in columns (2) and (4) include only those individuals in the treatment group who made extraordinary contributions'; the main text makes clear that column (1) is the full sample and column (2) the restricted treatment group.",
+    "The point estimate is negative (-0.650) but the paper classifies the parameter as insignificant, so `sign` is recorded as 'null' rather than 'negative'.",
+    "No p-value or significance star is printed for columns (3) and (4); significance is stated only in prose."
+   ],
+   "evidence": [
+    {
+     "id": "e_tab",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 106,
+     "regression_id": "dk_W2548869093::T1::_::C3"
+    },
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_se",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "82c8823cd6976669",
+     "n_chars": 153
+    },
+    {
+     "id": "e_abs_base",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "15864dbf7bf51d65",
+     "n_chars": 165
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "bc88609506e56c8b",
+     "n_chars": 96
+    },
+    {
+     "id": "e_cluster",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "07170ef1c1fe76f2",
+     "n_chars": 140
+    },
+    {
+     "id": "e_fe",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "9360d5dcf352f31e",
+     "n_chars": 78
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c3",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "817646f793ab4ab6",
+     "n_chars": 103
+    },
+    {
+     "id": "e_defs_s",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "3dd00fc9ff8af0af",
+     "n_chars": 268
+    },
+    {
+     "id": "e_defs_totpen",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "ac1f0fedea8cc257",
+     "n_chars": 119
+    },
+    {
+     "id": "e_pass",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "d3307de6a17c72f7",
+     "n_chars": 133
+    },
+    {
+     "id": "e_offset",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c01b64f6cca06949",
+     "n_chars": 170
+    },
+    {
+     "id": "e_conclusion",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "a5a7ece4d044ce93",
+     "n_chars": 266
+    },
+    {
+     "id": "e_c7long",
+     "kind": "quote",
+     "page": 107,
+     "sha256_16": "58167fe8ca6009d6",
+     "n_chars": 230
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    },
+    {
+     "id": "e_c4",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "394a78001ef64fbc",
+     "n_chars": 181
+    },
+    {
+     "id": "e_eq2",
+     "kind": "derivation",
+     "exhibit": "Equation (2)",
+     "page": 106,
+     "relation": "IsVariantFormOf",
+     "derived_from": [
+      "paper:dk_W2548869093"
+     ],
+     "how": "Transcription of Eq. (2) as printed on page 106, with sub- and superscripts restored from the PDF rendering."
+    },
+    {
+     "id": "e_abs_p",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "c701e25546ebe3b1",
+     "n_chars": 136
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "(2)",
+     "as_printed": "S_{it} = α_0 + α_1 D_t + α_2 P_{it}^{TotPen} + θ_i + v_{it}",
+     "lhs": "S_{it}",
+     "terms": [
+      {
+       "expression": "α_0",
+       "role": "intercept",
+       "parameter": "α_0"
+      },
+      {
+       "expression": "α_1 D_t",
+       "role": "fixed_effect",
+       "parameter": "α_1"
+      },
+      {
+       "expression": "α_2 P_{it}^{TotPen}",
+       "role": "parameter_of_interest",
+       "parameter": "α_2"
+      },
+      {
+       "expression": "θ_i",
+       "role": "fixed_effect",
+       "parameter": null
+      },
+      {
+       "expression": "v_{it}",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "α_2",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "individuals"
+      },
+      {
+       "symbol": "t",
+       "over": "years (2006-2011)"
+      }
+     ],
+     "normalisation": "D_t is a vector of year dummies; the paper does not state which year is the omitted base category. Both the regressor and the dependent variable are expressed as fractions of total annual gross payments.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e_eq2",
+     "e_tab"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Total savings during the announcement period of a tax reform that reduces the marginal tax rate, i.e. the period where the policy change is made public but not yet enacted.",
+     "boundary_conditions": [
+      "Our analysis cannot identify the long run effect on pension wealth.",
+      "The result concerns savings during the announcement period only."
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e_pass",
+     "e_conclusion",
+     "e_c7long"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 106,
+    "text": "In both cases the parameter is insignificant. The estimate in column (3) has a wide confidence interval",
+    "sha256_16": "817646f793ab4ab6",
+    "n_chars": 103
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c4",
+   "headline": false,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "When the treatment group is restricted to the 4818 extraordinary contributors, the increase in total contributions to tax subsidized retirement savings accounts has no statistically significant effect on savings in financial assets (-0.086), and the confidence interval rules out crowd-out in excess of 22% of the increase in pension contributions - i.e. a large part of the contributions passes through to total savings.",
+   "treatment": {
+    "label": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (employer organized contributions) linked to the income tax register (privately organized contributions)",
+     "evidence": [
+      "e_eincome",
+      "e_taxreg"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Total contributions to tax subsidized retirement savings accounts, i.e. both employer organized and privately organized accounts, measured as a fraction of total annual gross payments; instrumented using the interaction D_2009 x D_i^Treat.",
+     "evidence": [
+      "e_defs_totpen",
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, years 2006-2011; identifying variation in the announcement year 2009.",
+     "evidence": [
+      "e_taxreg",
+      "e_reform"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "S - savings in financial assets relative to total gross payments",
+    "ontology_node": null,
+    "register_source": {
+     "value": "income tax register (records financial wealth at the end of the year)",
+     "evidence": [
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Savings in financial assets relative to total gross payments. The income tax register records financial wealth at the end of the year; savings in financial wealth is approximated by the difference between financial wealth in year t and year t-1, then expressed relative to total gross payments.",
+     "evidence": [
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, each of the years 2006-2011; contemporaneous with P^TotPen in year t.",
+     "evidence": [
+      "e_taxreg",
+      "e_defs_s"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e_tab",
+      "e_c4"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": false,
+    "magnitude": {
+     "point_estimate": {
+      "value": -0.086,
+      "evidence": [
+       "e_tab",
+       "e_c4"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "[−0.222,0.050]",
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "units of S (fraction of total annual gross payments) per unit of P^TotPen (fraction of total annual gross payments)",
+      "evidence": [
+       "e_tab",
+       "e_c4",
+       "e_defs_s"
+      ],
+      "confidence": "medium"
+     },
+     "interpretation": "\"the estimate in column (4) is more precisely estimated and the confidence interval rules out crowd-out in excess of 22% of the increase in contributions to pension savings accounts. This indicates that a large part of the contributions shown in Fig. 1 passes through to total savings during the announcement period.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_se"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": -0.222,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": 0.05,
+      "evidence": [
+       "e_tab"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_p"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e_abs_base"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": 95,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "LATE",
+    "target_population": "Private-sector top-bracket employees who made extraordinarily large contributions to employer organized accounts during the announcement period.",
+    "compliers": "The 4818 individuals in the treatment group whose pension contribution rate in December 2009 was at least 25 percentage points higher than in December 2008 (T-group2), relative to the C-group.",
+    "bound": "point",
+    "time_horizon": "Contemporaneous: the regressor and the outcome are measured in the same year t, and the instrument isolates the change in the announcement year 2009.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "2006-2011 (annual income tax register data); the identifying variation is in 2009",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2006,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others. Because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high.",
+    "instrument": "D_2009 x D_i^Treat: the interaction of a 2009 year dummy with an indicator for belonging to the treatment group (average monthly gross earnings above DKK 35,000 in 2008).",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Exclusion restriction: the interaction D_2009 x D_i^Treat affects S - savings in financial assets relative to total gross payments only through P^TotPen - total contributions to tax subsidized retirement savings accounts, conditional on individual fixed effects and year dummies.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e_instr",
+       "e_tab"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "S - savings in financial assets relative to total gross payments",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the anticipated reduction in the marginal tax rate shifted P^TotPen - total contributions to tax subsidized retirement savings accounts in 2009 for the treatment group - 'This isolates the changes in contributions to employer organized accounts that are related to the anticipated tax change.'",
+      "stated_or_implicit": "stated",
+      "supported_by": "Fig. 1, panel A: a spike in the average monthly contribution rate of the T-group towards the end of 2009, while the C-group series is flat at about 4.5%. No first-stage statistics are reported.",
+      "evidence": [
+       "e_instr",
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "D_2009 x D_i^Treat (instrument)",
+         "to": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Common trends: conditional on individual fixed effects and year dummies, the treatment group (monthly gross earnings above DKK 35,000 in 2008) and the control group (DKK 30,000-35,000) would have had the same mean change in 2009 absent the anticipated tax change. The reform is assumed to leave the control group's marginal tax rate practically unchanged.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper states that the reform left the marginal tax rate practically unchanged for people outside the top bracket, and Fig. 1 displays both group series over all 48 months; no formal pre-trend test is reported.",
+      "evidence": [
+       "e_mtr",
+       "e_alloc",
+       "e_fig"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, i.e. before the reform was announced in May 2009, so group assignment cannot respond to the reform.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Allocation rule stated in the design section; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Sample selection: estimates are conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and with contributions to annuity pension schemes below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the estimate.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - the Table 1 regressions are introduced to address this.",
+     "The tax deductibility for contributions to annuity schemes was capped at DKK 100,000 from 2010; the sample is restricted to individuals with annuity contributions below DKK 100,000 in 2008 to avoid interference from this rule change."
+    ],
+    "robustness_checks": [
+     "Columns (2) and (4) repeat the estimation with the treatment group restricted to the 4818 individuals who made extraordinary contributions to employer organized accounts.",
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS (instrumental variables) with individual fixed effects and year dummies",
+     "evidence": [
+      "e_tab",
+      "e_fe",
+      "e_instr"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation (2), estimated by 2SLS with P^TotPen instrumented by D_2009 x D_i^Treat.",
+    "fixed_effects": [
+     "individual fixed effects (mu_i in Eq. (1), theta_i in Eq. (2))",
+     "year dummies D_t"
+    ],
+    "controls": [
+     "year dummies D_t"
+    ],
+    "clustering": "standard errors clustered at the individual level",
+    "weights": null,
+    "sample_n": {
+     "value": "408,702",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1, column (4)",
+     "evidence": [
+      "e_tab"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "individual fixed effect (mu_i / theta_i)",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     },
+     {
+      "label": "year dummies D_t",
+      "ontology_node": null,
+      "role": "fixed_effect"
+     }
+    ],
+    "source_table_id": "dk_W2548869093::T1::_::C4"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "Full sample (column (3)) versus the 4818 extraordinary contributors (column (4))",
+     "finding": "-0.650 with a wide interval in the full sample against -0.086 with a narrower interval in the restricted sample; both insignificant."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "D_2009 x D_i^Treat (instrument)",
+     "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+     "S - savings in financial assets relative to total gross payments",
+     "mu_i / theta_i (individual fixed effect)",
+     "D_t (year dummies)",
+     "2010 tax reform (passed 28 May 2009)",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "P^TotPen - total contributions to tax subsidized retirement savings accounts",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "D_2009 x D_i^Treat (instrument)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": [
+       "mu_i / theta_i (individual fixed effect)",
+       "D_t (year dummies)"
+      ]
+     },
+     {
+      "from": "mu_i / theta_i (individual fixed effect)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "D_t (year dummies)",
+      "to": "S - savings in financial assets relative to total gross payments",
+      "kind": "confounder_adjusted",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a4",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a5",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 106,
+      "sha256_16": "394a78001ef64fbc",
+      "n_chars": 181
+     },
+     {
+      "page": 106,
+      "sha256_16": "d3307de6a17c72f7",
+      "n_chars": 133
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table 1 reports 95% confidence intervals, not standard errors, so `se` is left null rather than derived from the interval.",
+    "No first-stage statistics, F-statistic or reduced-form estimate is reported for the instrument D_2009 x D_i^Treat.",
+    "The note to Table 1 says both that 'Estimates in column (1) and (2) are based on the full sample' and that 'Estimates in columns (2) and (4) include only those individuals in the treatment group who made extraordinary contributions'; the main text makes clear that column (1) is the full sample and column (2) the restricted treatment group.",
+    "The point estimate is negative (-0.086) but the paper classifies the parameter as insignificant, so `sign` is recorded as 'null' rather than 'negative'.",
+    "The '22%' crowd-out bound is the paper's reading of the lower end of the confidence interval (-0.222); it is the paper's own words, not a number computed here.",
+    "T-group2 is defined by the realised post-announcement change in the contribution rate."
+   ],
+   "evidence": [
+    {
+     "id": "e_tab",
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 106,
+     "regression_id": "dk_W2548869093::T1::_::C4"
+    },
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_se",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "82c8823cd6976669",
+     "n_chars": 153
+    },
+    {
+     "id": "e_abs_base",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "15864dbf7bf51d65",
+     "n_chars": 165
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "bc88609506e56c8b",
+     "n_chars": 96
+    },
+    {
+     "id": "e_cluster",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "07170ef1c1fe76f2",
+     "n_chars": 140
+    },
+    {
+     "id": "e_fe",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "9360d5dcf352f31e",
+     "n_chars": 78
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c4",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "394a78001ef64fbc",
+     "n_chars": 181
+    },
+    {
+     "id": "e_c3",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "817646f793ab4ab6",
+     "n_chars": 103
+    },
+    {
+     "id": "e_pass",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "d3307de6a17c72f7",
+     "n_chars": 133
+    },
+    {
+     "id": "e_defs_s",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "3dd00fc9ff8af0af",
+     "n_chars": 268
+    },
+    {
+     "id": "e_defs_totpen",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "ac1f0fedea8cc257",
+     "n_chars": 119
+    },
+    {
+     "id": "e_conclusion",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "a5a7ece4d044ce93",
+     "n_chars": 266
+    },
+    {
+     "id": "e_c7long",
+     "kind": "quote",
+     "page": 107,
+     "sha256_16": "58167fe8ca6009d6",
+     "n_chars": 230
+    },
+    {
+     "id": "e_dummy",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72a67c09cd5075f8",
+     "n_chars": 178
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    },
+    {
+     "id": "e_offset",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c01b64f6cca06949",
+     "n_chars": 170
+    },
+    {
+     "id": "e_eq2",
+     "kind": "derivation",
+     "exhibit": "Equation (2)",
+     "page": 106,
+     "relation": "IsVariantFormOf",
+     "derived_from": [
+      "paper:dk_W2548869093"
+     ],
+     "how": "Transcription of Eq. (2) as printed on page 106, with sub- and superscripts restored from the PDF rendering."
+    },
+    {
+     "id": "e_abs_p",
+     "kind": "absent",
+     "exhibit": "Table 1",
+     "page": 106,
+     "sha256_16": "c701e25546ebe3b1",
+     "n_chars": 136
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "(2)",
+     "as_printed": "S_{it} = α_0 + α_1 D_t + α_2 P_{it}^{TotPen} + θ_i + v_{it}",
+     "lhs": "S_{it}",
+     "terms": [
+      {
+       "expression": "α_0",
+       "role": "intercept",
+       "parameter": "α_0"
+      },
+      {
+       "expression": "α_1 D_t",
+       "role": "fixed_effect",
+       "parameter": "α_1"
+      },
+      {
+       "expression": "α_2 P_{it}^{TotPen}",
+       "role": "parameter_of_interest",
+       "parameter": "α_2"
+      },
+      {
+       "expression": "θ_i",
+       "role": "fixed_effect",
+       "parameter": null
+      },
+      {
+       "expression": "v_{it}",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "α_2",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "individuals"
+      },
+      {
+       "symbol": "t",
+       "over": "years (2006-2011)"
+      }
+     ],
+     "normalisation": "D_t is a vector of year dummies; the paper does not state which year is the omitted base category. Both the regressor and the dependent variable are expressed as fractions of total annual gross payments.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e_eq2",
+     "e_tab"
+    ],
+    "confidence": "high"
+   },
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Total savings during the announcement period of a tax reform that reduces the marginal tax rate, i.e. the period where the policy change is made public but not yet enacted.",
+     "boundary_conditions": [
+      "Our analysis cannot identify the long run effect on pension wealth.",
+      "The result concerns savings during the announcement period only."
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e_pass",
+     "e_conclusion",
+     "e_c7long"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 106,
+    "text": "the estimate in column (4) is more precisely estimated and the confidence interval rules out crowd-out in excess of 22% of the increase in contributions to pension savings accounts.",
+    "sha256_16": "394a78001ef64fbc",
+    "n_chars": 181
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c5",
+   "headline": false,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "The announcement in May 2009 of a tax reform lowering the top marginal tax rate from almost 63% to 56% from January 2010 temporarily raised the average monthly rate of contributions to employer organized pension accounts among affected top-bracket employees towards the end of 2009, relative to employees whose marginal tax rate was practically unchanged.",
+   "treatment": {
+    "label": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (2008 monthly wage income is used to allocate individuals to a tax bracket and hence to the T- or C-group)",
+     "evidence": [
+      "e_eincome",
+      "e_alloc"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "A tax reform passed by parliament on 28 May 2009 and taking effect on 1 January 2010 lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving the marginal tax rate practically unchanged for others. The sample is split into a treatment group (average monthly gross earnings above DKK 35,000 in 2008) that experienced a reduction in its MTR and a control group (DKK 30,000-35,000) that did not; allocation to a tax bracket is based on income in 2008.",
+     "evidence": [
+      "e_reform",
+      "e_mtr",
+      "e_alloc",
+      "e_tgroup",
+      "e_cgroup"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform passed 28 May 2009, in force from 1 January 2010; the announcement period is the remainder of 2009, during which deductions were still valued at the old, high marginal tax rate.",
+     "evidence": [
+      "e_reform"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Average monthly contribution rate to employer organized pension accounts",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (monthly employer reports of contributions to employer organized pension accounts and of total gross payments)",
+     "evidence": [
+      "e_eincome"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Average monthly contributions to employer organized pension accounts as a share of total monthly gross payments to the individual, plotted by calendar month for each group.",
+     "evidence": [
+      "e_fig",
+      "e_c5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Monthly, the 48 months from January 2008 to December 2011.",
+     "evidence": [
+      "e_eincome",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_c5",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of total monthly gross payments (average monthly contribution rate)",
+      "evidence": [
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The contribution rate for the C-group is more or less constant at a level of 4.5% throughout the observation period. For the T-group the level is slightly higher. More importantly, there is a spike in the contribution rate towards the end of 2009.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 4.5,
+      "evidence": [
+       "e_c5",
+       "e_fig"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ITT",
+    "target_population": "Private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (the T-group), i.e. taxpayers who experienced a reduction in their marginal tax rate.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "The second half of 2009, i.e. the announcement period between the passage of the reform on 28 May 2009 and its entry into force on 1 January 2010",
+    "formal_query": null,
+    "horizon": {
+     "from": 1,
+     "to": 7,
+     "unit": "months",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "The 48 months from January 2008 to December 2011",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2008,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "difference_in_differences",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others; because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high. Identification compares employees above the DKK 35,000 monthly 2008 earnings cut-off (T-group) with employees earning DKK 30,000-35,000 (C-group) over the 48 months January 2008 - December 2011.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Common trends: absent the anticipated tax change, the average monthly contribution rate of the T-group (monthly gross earnings above DKK 35,000 in 2008) and of the C-group (DKK 30,000-35,000) would have followed the same path around the second half of 2009.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Fig. 1 plots both series over all 48 months January 2008 - December 2011; the C-group series is more or less constant at a level of 4.5% throughout. No formal pre-trend test is reported.",
+      "evidence": [
+       "e_fig",
+       "e_c5",
+       "e_alloc"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The reform left the marginal tax rate of the control group practically unchanged, so the C-group is unaffected by the treatment and can serve as the counterfactual.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The paper's description of the reform and of the tax schedule, and footnote 1's computation of the top-taxpayer marginal tax rate before and after 1 January 2010.",
+      "evidence": [
+       "e_mtr",
+       "e_reform"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "Marginal tax rate of the C-group",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, before the reform was announced in May 2009.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The allocation rule is stated; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc",
+       "e_tgroup",
+       "e_cgroup"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Sample selection: the comparison is conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and annuity-scheme contributions below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the comparison.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The graph does not reveal whether the effect is driven by many individuals who change their contributions a little, or whether it is driven by a few individuals who change their contributions a lot - addressed in panel B.",
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - addressed in Table 1.",
+     "The cap on deductibility of annuity-scheme contributions from 2010 could interfere with the measurement; the sample excludes individuals with annuity contributions of DKK 100,000 or more in 2008."
+    ],
+    "robustness_checks": [
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None - unconditional average monthly group means plotted by calendar month; no regression is estimated for Fig. 1",
+     "evidence": [
+      "e_fig",
+      "e_c5"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 1, panel A: average monthly contributions to employer organized pension accounts as a share of total monthly gross payments, by calendar month, for the T-group and the C-group.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "116,724 individuals in the T-group (of whom 4818 in T-group2) and 64,287 in the C-group, each observed in all 48 months January 2008 - December 2011",
+     "evidence": [
+      "e_finalsample",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 1, panel A",
+     "evidence": [
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W2548869093::F1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "Within the treatment group: the 4818 individuals making extraordinarily large contributions (T-group2) versus the rest (T-group1)",
+     "finding": "Panel B shows that the entire increase in the average monthly rate of pension contribution from panel A is driven by the group who made extraordinary contributions."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+     "Average monthly contribution rate to employer organized pension accounts",
+     "2010 tax reform (passed 28 May 2009)",
+     "Marginal tax rate of the C-group",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+      "to": "Average monthly contribution rate to employer organized pension accounts",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "Marginal tax rate of the C-group",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a4",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 105,
+      "sha256_16": "cec128846b0b388f",
+      "n_chars": 247
+     },
+     {
+      "page": 104,
+      "sha256_16": "ecdeb45e4f29b268",
+      "n_chars": 134
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Fig. 1 plots unconditional group means; no regression, standard error or test is reported for the difference, so no point estimate is recorded.",
+    "The paper does not print the peak value of the T-group series, and no value is read off the figure's axis here.",
+    "The horizon 1-7 months is this extractor's parsing of 'the second half of 2009' relative to the reform's passage on 28 May 2009.",
+    "Identification is labelled difference_in_differences because the paper splits the sample into a treatment and a control group to identify the effect, but Fig. 1 itself is a plot of raw group means rather than an estimated DiD regression."
+   ],
+   "evidence": [
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A",
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_pe",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "8d8a17d9bf5df1f9",
+     "n_chars": 212
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "a0de043ea6c59992",
+     "n_chars": 116
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c6",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f822b332f78fd709",
+     "n_chars": 244
+    },
+    {
+     "id": "e_abs_fig_a",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "ecdeb45e4f29b268",
+     "n_chars": 134
+    },
+    {
+     "id": "e_abs_5pct",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "3bfbc1eff432c029",
+     "n_chars": 71
+    },
+    {
+     "id": "e_c7long",
+     "kind": "quote",
+     "page": 107,
+     "sha256_16": "58167fe8ca6009d6",
+     "n_chars": 230
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_dummy",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72a67c09cd5075f8",
+     "n_chars": 178
+    },
+    {
+     "id": "e_fn3",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "5cd18ec3374c4f93",
+     "n_chars": 230
+    },
+    {
+     "id": "e_conclusion",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "a5a7ece4d044ce93",
+     "n_chars": 266
+    },
+    {
+     "id": "e_natexp",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "a7fc79f9793b51de",
+     "n_chars": 141
+    },
+    {
+     "id": "e_90pct",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "df29afc41f3e22ba",
+     "n_chars": 68
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "The announcement period of a tax reform that reduces the marginal tax rate, i.e. the period where the policy change is made public but not yet enacted.",
+     "boundary_conditions": [
+      "Our analysis cannot identify the long run effect on pension wealth.",
+      "The incentive described is temporary and confined to the announcement period."
+     ],
+     "generalization_language": "explicit"
+    },
+    "evidence": [
+     "e_conclusion",
+     "e_c7long"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 105,
+    "text": "The contribution rate for the C-group is more or less constant at a level of 4.5% throughout the observation period. …",
+    "sha256_16": "cec128846b0b388f",
+    "n_chars": 247
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c6",
+   "headline": false,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "The temporary increase in employer organized pension contributions during the 2009 announcement period is entirely accounted for by the 4818 individuals in the treatment group who made extraordinarily large contributions - less than 5% of those affected by the policy.",
+   "treatment": {
+    "label": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (2008 monthly wage income is used to allocate individuals to a tax bracket and hence to the T- or C-group)",
+     "evidence": [
+      "e_eincome",
+      "e_alloc"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "A tax reform passed by parliament on 28 May 2009 and taking effect on 1 January 2010 lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving the marginal tax rate practically unchanged for others. The sample is split into a treatment group (average monthly gross earnings above DKK 35,000 in 2008) that experienced a reduction in its MTR and a control group (DKK 30,000-35,000) that did not; allocation to a tax bracket is based on income in 2008.",
+     "evidence": [
+      "e_reform",
+      "e_mtr",
+      "e_alloc",
+      "e_tgroup",
+      "e_cgroup"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform passed 28 May 2009, in force from 1 January 2010; the announcement period is the remainder of 2009, during which deductions were still valued at the old, high marginal tax rate.",
+     "evidence": [
+      "e_reform"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Average monthly contribution rate to employer organized pension accounts, T-group2 (the 4818 extraordinary contributors)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (monthly employer reports of contributions to employer organized pension accounts and of total gross payments)",
+     "evidence": [
+      "e_eincome"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Average monthly contributions to employer organized pension accounts as a share of total monthly gross payments, plotted by calendar month separately for T-group2 (individuals whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008), T-group1 (the rest of the T-group) and the C-group.",
+     "evidence": [
+      "e_fig",
+      "e_c6",
+      "e_dummy"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Monthly, the 48 months from January 2008 to December 2011.",
+     "evidence": [
+      "e_eincome",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e_c6",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of total monthly gross payments (average monthly contribution rate)",
+      "evidence": [
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"panel B shows that the entire increase in the average monthly rate of pension contribution from panel A is driven by the group who made extraordinary contributions\"; the abstract puts this as \"The response is driven by less than 5% of those affected by the policy.\" (4818 of 116,724 individuals in the T-group, about 4.1%).",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 4.5,
+      "evidence": [
+       "e_c5",
+       "e_fig"
+      ],
+      "confidence": "medium"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "CATE",
+    "target_population": "The 4818 individuals in the treatment group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008 (T-group2).",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "The second half of 2009, i.e. the announcement period; T-group2 membership is defined by the contribution rate in December 2009 relative to December 2008",
+    "formal_query": null,
+    "horizon": {
+     "from": 1,
+     "to": 7,
+     "unit": "months",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "The 48 months from January 2008 to December 2011",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2008,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "difference_in_differences",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others; because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high. Identification compares employees above the DKK 35,000 monthly 2008 earnings cut-off (T-group) with employees earning DKK 30,000-35,000 (C-group) over the 48 months January 2008 - December 2011.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Common trends: absent the anticipated tax change, the average monthly contribution rate of the T-group (monthly gross earnings above DKK 35,000 in 2008) and of the C-group (DKK 30,000-35,000) would have followed the same path around the second half of 2009.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Fig. 1 plots both series over all 48 months January 2008 - December 2011; the C-group series is more or less constant at a level of 4.5% throughout. No formal pre-trend test is reported.",
+      "evidence": [
+       "e_fig",
+       "e_c5",
+       "e_alloc"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The reform left the marginal tax rate of the control group practically unchanged, so the C-group is unaffected by the treatment and can serve as the counterfactual.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The paper's description of the reform and of the tax schedule, and footnote 1's computation of the top-taxpayer marginal tax rate before and after 1 January 2010.",
+      "evidence": [
+       "e_mtr",
+       "e_reform"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "Marginal tax rate of the C-group",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, before the reform was announced in May 2009.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The allocation rule is stated; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc",
+       "e_tgroup",
+       "e_cgroup"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Sample selection: the comparison is conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and annuity-scheme contributions below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the comparison.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The graph does not reveal whether the effect is driven by many individuals who change their contributions a little, or whether it is driven by a few individuals who change their contributions a lot - addressed in panel B.",
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - addressed in Table 1.",
+     "The cap on deductibility of annuity-scheme contributions from 2010 could interfere with the measurement; the sample excludes individuals with annuity contributions of DKK 100,000 or more in 2008."
+    ],
+    "robustness_checks": [
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None - unconditional average monthly group means plotted by calendar month; no regression is estimated for Fig. 1",
+     "evidence": [
+      "e_fig",
+      "e_c5"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 1, panel B: average monthly contributions to employer organized pension accounts as a share of total monthly gross payments, by calendar month, for T-group1, T-group2 and the C-group.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "116,724 individuals in the T-group (of whom 4818 in T-group2) and 64,287 in the C-group, each observed in all 48 months January 2008 - December 2011",
+     "evidence": [
+      "e_finalsample",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 1, panel B",
+     "evidence": [
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W2548869093::F1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "T-group1: members of the T-group not included in T-group2",
+     "finding": "Because the entire increase in panel A is attributed to T-group2, T-group1 shows no comparable increase in panel B; the paper reports no estimate or test for T-group1 separately."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+     "Average monthly contribution rate to employer organized pension accounts, T-group2 (the 4818 extraordinary contributors)",
+     "2010 tax reform (passed 28 May 2009)",
+     "Marginal tax rate of the C-group",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+      "to": "Average monthly contribution rate to employer organized pension accounts, T-group2 (the 4818 extraordinary contributors)",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "Marginal tax rate of the C-group",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a4",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 105,
+      "sha256_16": "f822b332f78fd709",
+      "n_chars": 244
+     },
+     {
+      "page": 104,
+      "sha256_16": "3bfbc1eff432c029",
+      "n_chars": 71
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "T-group2 is defined by the realised change in the contribution rate between December 2008 and December 2009, so the concentration of the response in this group is to a degree mechanical; the paper does not discuss this.",
+    "Panel B plots unconditional group means; no estimate, standard error or test of the difference between T-group1 and T-group2 is reported.",
+    "The '4.1%' figure is derived here from the two counts the paper prints (4818 and 116,724); the paper itself only says 'less than 5%'.",
+    "Footnote 3 reports that results are very similar using other thresholds or an indicator for extraordinarily high contribution rates in any post-reform month, but those results are not shown."
+   ],
+   "evidence": [
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "B",
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_pe",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "8d8a17d9bf5df1f9",
+     "n_chars": 212
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "a0de043ea6c59992",
+     "n_chars": 116
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c6",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f822b332f78fd709",
+     "n_chars": 244
+    },
+    {
+     "id": "e_abs_fig_a",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "ecdeb45e4f29b268",
+     "n_chars": 134
+    },
+    {
+     "id": "e_abs_5pct",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "3bfbc1eff432c029",
+     "n_chars": 71
+    },
+    {
+     "id": "e_c7long",
+     "kind": "quote",
+     "page": 107,
+     "sha256_16": "58167fe8ca6009d6",
+     "n_chars": 230
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_dummy",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72a67c09cd5075f8",
+     "n_chars": 178
+    },
+    {
+     "id": "e_fn3",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "5cd18ec3374c4f93",
+     "n_chars": 230
+    },
+    {
+     "id": "e_conclusion",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "a5a7ece4d044ce93",
+     "n_chars": 266
+    },
+    {
+     "id": "e_natexp",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "a7fc79f9793b51de",
+     "n_chars": 141
+    },
+    {
+     "id": "e_90pct",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "df29afc41f3e22ba",
+     "n_chars": 68
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    },
+    {
+     "id": "e_der_5pct",
+     "kind": "derivation",
+     "exhibit": "Figure 1",
+     "panel": "B",
+     "page": 105,
+     "relation": "IsCalculatedFrom",
+     "derived_from": [
+      "evidence:e_c6",
+      "evidence:e_finalsample",
+      "evidence:e_abs_5pct"
+     ],
+     "how": "The 4818 persons in T-group2 are 4818/116,724 = 4.1% of the 116,724 individuals in the T-group, which is the abstract's 'less than 5% of those affected by the policy'. The paper prints the two counts and the '<5%' statement but not the ratio."
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "The announcement period of a tax reform that reduces the marginal tax rate, i.e. the period where the policy change is made public but not yet enacted.",
+     "boundary_conditions": [
+      "Our analysis cannot identify the long run effect on pension wealth.",
+      "The incentive described is temporary and confined to the announcement period."
+     ],
+     "generalization_language": "explicit"
+    },
+    "evidence": [
+     "e_conclusion",
+     "e_c7long"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 105,
+    "text": "4818 persons made extraordinary contributions according to this definition, and panel B shows that the entire increase in the average monthly rate of pension contribution from panel A is driven by the group who made extraordinary …",
+    "sha256_16": "f822b332f78fd709",
+    "n_chars": 244
+   }
+  },
+  {
+   "claim_id": "dk_W2548869093_c7",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-16T08:05:51.469050+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [],
+    "candidate_for": [
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::A",
+      "row": 8,
+      "pointed_to": "reference"
+     },
+     {
+      "stated_claim": "S1",
+      "cell": "dk_W2548869093::F1::B",
+      "row": 4,
+      "pointed_to": "reference"
+     }
+    ]
+   },
+   "statement": "Up to 12 months after the tax change took effect on 1 January 2010, there is no counteracting decrease in pension contributions relative to the pre-announcement level among the employees affected by the reform.",
+   "treatment": {
+    "label": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (2008 monthly wage income is used to allocate individuals to a tax bracket and hence to the T- or C-group)",
+     "evidence": [
+      "e_eincome",
+      "e_alloc"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "A tax reform passed by parliament on 28 May 2009 and taking effect on 1 January 2010 lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving the marginal tax rate practically unchanged for others. The sample is split into a treatment group (average monthly gross earnings above DKK 35,000 in 2008) that experienced a reduction in its MTR and a control group (DKK 30,000-35,000) that did not; allocation to a tax bracket is based on income in 2008.",
+     "evidence": [
+      "e_reform",
+      "e_mtr",
+      "e_alloc",
+      "e_tgroup",
+      "e_cgroup"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform passed 28 May 2009, in force from 1 January 2010; the announcement period is the remainder of 2009, during which deductions were still valued at the old, high marginal tax rate.",
+     "evidence": [
+      "e_reform"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Average monthly contribution rate to employer organized pension accounts after the tax change took effect",
+    "ontology_node": null,
+    "register_source": {
+     "value": "eIncome register (monthly employer reports of contributions to employer organized pension accounts and of total gross payments)",
+     "evidence": [
+      "e_eincome"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Average monthly contributions to employer organized pension accounts as a share of total monthly gross payments to the individual, plotted by calendar month for each group.",
+     "evidence": [
+      "e_fig",
+      "e_c5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Monthly, up to 12 months after the tax change took effect on 1 January 2010, compared with the pre-announcement level (the figure itself runs to December 2011).",
+     "evidence": [
+      "e_c7long",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e_c7long",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of total monthly gross payments (average monthly contribution rate)",
+      "evidence": [
+       "e_fig",
+       "e_c5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"we do not observe any counteracting decrease in pension contributions relative to the pre-announcement level up to 12 months after the tax change took effect\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e_abs_pe"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 4.5,
+      "evidence": [
+       "e_c5",
+       "e_fig"
+      ],
+      "confidence": "medium"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e_abs_sd"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ITT",
+    "target_population": "Private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (the T-group), i.e. taxpayers who experienced a reduction in their marginal tax rate.",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "Up to 12 months after the tax change took effect on 1 January 2010",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 12,
+     "unit": "months",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All individuals employed in the private sector in Denmark with 48 consecutive monthly observations with positive wage income from January 2008 to December 2011 and contributions to annuity pension schemes of less than DKK 100,000 in 2008: 116,724 individuals in the treatment group (average monthly gross earnings above DKK 35,000 in 2008, roughly the 75th percentile) and 64,287 in the control group (monthly income DKK 30,000-35,000).",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "The 48 months from January 2008 to December 2011",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "T-group: private-sector employees with average monthly gross earnings above DKK 35,000 in 2008 (116,724)",
+     "C-group: private-sector employees with monthly income DKK 30,000-35,000 in 2008 (64,287)",
+     "T-group2: the 4818 individuals in the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than in December 2008",
+     "T-group1: members of the T-group not included in T-group2"
+    ],
+    "selection": "Private-sector employees observed with positive wage income in all 48 months January 2008 - December 2011, and with contributions to annuity pension schemes below DKK 100,000 in 2008; the latter restriction is imposed because deductibility for annuity schemes was capped at DKK 100,000 from 2010.",
+    "period_range": {
+     "from": 2008,
+     "to": 2011
+    }
+   },
+   "identification": {
+    "strategy": "difference_in_differences",
+    "source_of_variation": "The 2010 Danish tax reform, passed by parliament on 28 May 2009 and taking effect on 1 January 2010, which lowered the marginal tax rate for top-bracket taxpayers from almost 63% to 56% while leaving it practically unchanged for others; because pension contributions are tax deductible, this created a temporary incentive during the announcement period of 2009 to advance contributions while the deduction rate was still high. Identification compares employees above the DKK 35,000 monthly 2008 earnings cut-off (T-group) with employees earning DKK 30,000-35,000 (C-group) over the 48 months January 2008 - December 2011.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Common trends: absent the anticipated tax change, the average monthly contribution rate of the T-group (monthly gross earnings above DKK 35,000 in 2008) and of the C-group (DKK 30,000-35,000) would have followed the same path around the second half of 2009.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Fig. 1 plots both series over all 48 months January 2008 - December 2011; the C-group series is more or less constant at a level of 4.5% throughout. No formal pre-trend test is reported.",
+      "evidence": [
+       "e_fig",
+       "e_c5",
+       "e_alloc"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The reform left the marginal tax rate of the control group practically unchanged, so the C-group is unaffected by the treatment and can serve as the counterfactual.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The paper's description of the reform and of the tax schedule, and footnote 1's computation of the top-taxpayer marginal tax rate before and after 1 January 2010.",
+      "evidence": [
+       "e_mtr",
+       "e_reform"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "Marginal tax rate of the C-group",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "No manipulation of group membership: people are allocated to a tax bracket based on income in 2008, before the reform was announced in May 2009.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The allocation rule is stated; no balance or density test is reported.",
+      "evidence": [
+       "e_alloc",
+       "e_tgroup",
+       "e_cgroup"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "2010 tax reform (passed 28 May 2009)",
+         "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+         "kind": "anticipation_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Sample selection: the comparison is conditional on being a private-sector employee with 48 consecutive monthly observations of positive wage income from January 2008 to December 2011 and annuity-scheme contributions below DKK 100,000 in 2008.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The selection rules are stated; the paper does not discuss whether conditioning on them biases the comparison.",
+      "evidence": [
+       "e_sample",
+       "e_cap",
+       "e_fn2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+         "to": "inclusion in the estimation sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The graph does not reveal whether the effect is driven by many individuals who change their contributions a little, or whether it is driven by a few individuals who change their contributions a lot - addressed in panel B.",
+     "Fig. 1 documents higher contributions to employer organized pension accounts, but it does not reveal whether this increase is offset by reduced savings in other accounts - addressed in Table 1.",
+     "The cap on deductibility of annuity-scheme contributions from 2010 could interfere with the measurement; the sample excludes individuals with annuity contributions of DKK 100,000 or more in 2008."
+    ],
+    "robustness_checks": [
+     "Footnote 3: results are described as very similar using thresholds other than 25 percentage points, or a dummy for extraordinarily high contribution rates in any month after the reform was decided; those results are not shown."
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "None - unconditional average monthly group means plotted by calendar month; no regression is estimated for Fig. 1",
+     "evidence": [
+      "e_fig",
+      "e_c5"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Fig. 1, panel A: average monthly contributions to employer organized pension accounts as a share of total monthly gross payments, by calendar month, for the T-group and the C-group, read over the months after January 2010.",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "116,724 individuals in the T-group (of whom 4818 in T-group2) and 64,287 in the C-group, each observed in all 48 months January 2008 - December 2011",
+     "evidence": [
+      "e_finalsample",
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 1, panel A",
+     "evidence": [
+      "e_fig"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W2548869093::F1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+     "Average monthly contribution rate to employer organized pension accounts after the tax change took effect",
+     "2010 tax reform (passed 28 May 2009)",
+     "Marginal tax rate of the C-group",
+     "D_i^Treat (treatment-group assignment from 2008 income)",
+     "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+     "inclusion in the estimation sample"
+    ],
+    "edges": [
+     {
+      "from": "Anticipated reduction in the marginal tax rate (announcement of the 2010 Danish tax reform), i.e. being in the treatment group in 2009",
+      "to": "Average monthly contribution rate to employer organized pension accounts after the tax change took effect",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "Marginal tax rate of the C-group",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "2010 tax reform (passed 28 May 2009)",
+      "to": "D_i^Treat (treatment-group assignment from 2008 income)",
+      "kind": "anticipation_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "48 consecutive months of positive private-sector wage income, 2008-2011, and annuity contributions below DKK 100,000 in 2008",
+      "to": "inclusion in the estimation sample",
+      "kind": "selection_on",
+      "from_assumption": "a4",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 107,
+      "sha256_16": "58167fe8ca6009d6",
+      "n_chars": 230
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper states that it does not observe a counteracting decrease but reports no estimate, confidence interval or test for the post-enactment period; the statement is a reading of Fig. 1.",
+    "Fig. 1 actually runs 24 months beyond the tax change (January 2010 - December 2011); the authors restrict the statement to the first 12 months.",
+    "A tested null here means the authors report seeing no reversal, not that they report a formally estimated zero."
+   ],
+   "evidence": [
+    {
+     "id": "e_fig",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A",
+     "page": 106,
+     "figure_id": "dk_W2548869093::F1",
+     "annotation": "Fig. 1. Contributions to employer organized retirement savings accounts. Notes: Panel A and B show average monthly contributions to employer organized pension accounts as a share of total gross payments for the T-group and C-group (Panel A) and T-Group1, T-group2 and the C-group (Panel B). The C-group (64,287) includes all private sector employees with average monthly wage income in the range DKK 30,000-35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. The T-group (116,724) includes all private sector employees with average monthly wage income above DKK 35,000 in 2008, contributions to annuity pension schemes of less than DKK 100,000 in 2008, and (48) registered monthly wage payments from January 2008 to December 2011. T-group2 (4818) includes all individuals from the T-group whose contribution rate in December 2009 was at least 25 percentage points higher than their contribution rate in December 2008. The T-group1 includes members of the T-group who are not included in T-group2."
+    },
+    {
+     "id": "e_abs_pe",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "8d8a17d9bf5df1f9",
+     "n_chars": 212
+    },
+    {
+     "id": "e_abs_sd",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "page": 106,
+     "sha256_16": "a0de043ea6c59992",
+     "n_chars": 116
+    },
+    {
+     "id": "e_c5",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "cec128846b0b388f",
+     "n_chars": 247
+    },
+    {
+     "id": "e_c6",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f822b332f78fd709",
+     "n_chars": 244
+    },
+    {
+     "id": "e_abs_fig_a",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "ecdeb45e4f29b268",
+     "n_chars": 134
+    },
+    {
+     "id": "e_abs_5pct",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "3bfbc1eff432c029",
+     "n_chars": 71
+    },
+    {
+     "id": "e_c7long",
+     "kind": "quote",
+     "page": 107,
+     "sha256_16": "58167fe8ca6009d6",
+     "n_chars": 230
+    },
+    {
+     "id": "e_instr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "586498940ab43b95",
+     "n_chars": 121
+    },
+    {
+     "id": "e_sample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "562515f12ce6bf3b",
+     "n_chars": 186
+    },
+    {
+     "id": "e_cap",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "f0dd1c64d45c7746",
+     "n_chars": 122
+    },
+    {
+     "id": "e_mtr",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2b6fb36c529e7f2f",
+     "n_chars": 151
+    },
+    {
+     "id": "e_reform",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c9d6ebd4e64375bf",
+     "n_chars": 173
+    },
+    {
+     "id": "e_alloc",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9bb1d00bb92b7e95",
+     "n_chars": 246
+    },
+    {
+     "id": "e_tgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "9dfa3814a5207afa",
+     "n_chars": 158
+    },
+    {
+     "id": "e_cgroup",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "321140e65960ca3a",
+     "n_chars": 102
+    },
+    {
+     "id": "e_finalsample",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "2760ec44e470ce14",
+     "n_chars": 102
+    },
+    {
+     "id": "e_eincome",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "c4601c572065d7fa",
+     "n_chars": 233
+    },
+    {
+     "id": "e_fn2",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "878ad739a1f51d21",
+     "n_chars": 282
+    },
+    {
+     "id": "e_dummy",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72a67c09cd5075f8",
+     "n_chars": 178
+    },
+    {
+     "id": "e_fn3",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "5cd18ec3374c4f93",
+     "n_chars": 230
+    },
+    {
+     "id": "e_conclusion",
+     "kind": "quote",
+     "page": 106,
+     "sha256_16": "a5a7ece4d044ce93",
+     "n_chars": 266
+    },
+    {
+     "id": "e_natexp",
+     "kind": "quote",
+     "page": 104,
+     "sha256_16": "a7fc79f9793b51de",
+     "n_chars": 141
+    },
+    {
+     "id": "e_90pct",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "df29afc41f3e22ba",
+     "n_chars": 68
+    },
+    {
+     "id": "e_taxreg",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "ded1fb55b288d9d0",
+     "n_chars": 114
+    },
+    {
+     "id": "e_defs1",
+     "kind": "quote",
+     "page": 105,
+     "sha256_16": "72818ac7c0d270fd",
+     "n_chars": 226
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "The first 12 months after the tax change took effect.",
+     "boundary_conditions": [
+      "Our analysis cannot identify the long run effect on pension wealth."
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e_c7long"
+    ],
+    "confidence": "high"
+   },
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": null,
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 107,
+    "text": "Our analysis cannot identify the long run effect on pension wealth, but we do not observe any counteracting decrease in pension contributions relative to the pre-announcement level up to 12 months after the tax change took effect.",
+    "sha256_16": "58167fe8ca6009d6",
+    "n_chars": 230
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "a2c2ac6c69b1f6da051718d1d2fa07483cfe8c15fe7028dbe2a9e99c08ca2c73",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-13T03:07:56.005197+00:00",
+  "tables_sha256": "f96b36af68f8e480295c82efdd212ccdc0e8a02a42ed63ec5e200c79d350bc4f",
+  "figures_sha256": "c3b43af026de858d4a759c2e573d71b81cef50dee50f7be58190adb5e1c0c114"
+ },
+ "public_export": {
+  "anchor_quotes": 7,
+  "quotes_hashed": 194,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

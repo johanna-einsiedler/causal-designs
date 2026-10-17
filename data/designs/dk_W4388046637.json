@@ -1,0 +1,4545 @@
+{
+ "artid": "dk_W4388046637",
+ "paper": {
+  "title": "New system responses to juvenile crime: Experiences from Denmark",
+  "authors": [
+   "Britt Østergaard Larsen",
+   "Ann-Karina Henriksen",
+   "Theresa Dyrvig Henriksen",
+   "Tea Torbenfelt Bengtsson"
+  ],
+  "year": 2023,
+  "journal": "Nordisk Tidsskrift for Kriminalvidenskab, nr. 3/2023, pp. 332-350",
+  "code_data_availability": "No data or code availability statement is printed. The article states that the quantitative analyses use administrative data from the Danish Police, administrative information from the Youth Crime Boards and the Youth Probation Service, …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "administrative data from the Danish Police on registered offences committed by 10-17-year-olds (police records of violent YCB offences)",
+    "dst_code": null,
+    "years": "2017-2021",
+    "role": "outcome counts and the denominator for referral shares (Table 1)",
+    "variables_mentioned": [
+     "violent YCB offences (all types of violent crime, robbery, extortion, sexual offences, aggravated arson)",
+     "age of the juvenile",
+     "year"
+    ],
+    "year_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   {
+    "name_in_paper": "administrative information from YCBs and the YPS on referrals and adjudications (annual reports from the Youth Crime Board)",
+    "dst_code": null,
+    "years": "2019-2021",
+    "role": "treatment-system case counts: referrals to YCBs, adjudications, cases referred to the YPS and the interventions included in improvement programmes (Tables 1, 2 and 3; Figure 3)",
+    "variables_mentioned": [
+     "referrals to YCBs",
+     "adjudications issued by YCBs",
+     "cases referred to the YPS",
+     "type of child welfare intervention",
+     "programme length"
+    ],
+    "year_range": {
+     "from": 2019,
+     "to": 2021
+    }
+   },
+   {
+    "name_in_paper": "Information provided by the Danish Probation Service / the Danish Prison and Probation Service",
+    "dst_code": null,
+    "years": "2018-2019",
+    "role": "pre-reform comparison: juvenile probationers by age at enrolment and by programme length (Table A2, Figure 3)",
+    "variables_mentioned": [
+     "age at enrolment",
+     "length of the program"
+    ],
+    "year_range": {
+     "from": 2018,
+     "to": 2019
+    }
+   },
+   {
+    "name_in_paper": "Information from Statistics Denmark (STRAF40)",
+    "dst_code": null,
+    "years": "2021",
+    "role": "verdicts for juveniles aged 15-17 prosecuted for a violent offence (Table A1), used to explain why 15-17-year-olds are underrepresented among YCB referrals",
+    "variables_mentioned": [
+     "STRAF40",
+     "prison sentence (suspended/unsuspended)",
+     "fine",
+     "withdrawal of the charge",
+     "acquitted",
+     "case dismissed, state of the evidence"
+    ],
+    "year_range": {
+     "from": 2021,
+     "to": 2021
+    }
+   }
+  ],
+  "linkages": [
+   "No individual-level record linkage is described: the quantitative material consists of aggregate counts by age and year taken from separate administrative sources (police records, YCB annual reports, the Danish Probation Service and Statistics Denmark).",
+   "Qualitative interviews with 12 child welfare case managers are analysed alongside, but not linked to, the administrative counts."
+  ],
+  "sample": {
+   "universe": "Juveniles aged 10-17 in Denmark who committed a violent YCB offence registered by the police (2017-2021), cases referred to and adjudicated by Youth Crime Boards and supervised by the Youth Probation Service (2019-2021), and, for the pre-reform comparison, juvenile probationers aged 15-17 in the Danish Probation Service (2018-2019)",
+   "unit_of_observation": "Case (registered offence, referral, adjudication or probation programme), reported as aggregate counts by single year of age and calendar year; plus 12 interviewed child welfare case managers",
+   "selection_rules": [
+    "Offences are restricted to the category 'violent YCB offences': all types of violent crime plus robbery, extortion, sexual offences (sexual assault, rape) and aggravated arson (Table 1 note).",
+    "Cases in the category 'serious and repeated offending' are screened by the police and could not be included in the offence counts (footnote 3, p. 6).",
+    "Offenders are aged 10-17 (10-14 suspected of, 15-17 convicted of, a qualifying offence).",
+    "Pre-reform probation figures cover juveniles aged 15-17 supervised by the Danish Probation Service in 2018 and 2019.",
+    "Qualitative material: 12 case managers in municipal child welfare services."
+   ],
+   "period": "2017-2021 (offences); 2019-2021 (YCB/YPS cases); 2018-2019 (Danish Probation Service)",
+   "n_observations": "Table 1: 3242 (2017), 3279 (2018), 3884 (2019), 4188 (2020) and 3382 (2021) reported violent YCB offences, and 607 (2019), 909 (2020) and 1037 (2021) referrals to YCBs. Table 2: 475 (2019), 559 (2020) and 696 (2021) adjudications referred to the YPS. Table A2: 185 (2018) and 186 (2019) juvenile cases in the Danish Probation Service. Table A1: 986 convictions of 15-17-year-olds in 2021.",
+   "n_individuals": "12 interviewed case managers; the administrative figures are case counts, not person counts"
+  },
+  "construction_notes": [
+   "The category 'violent YCB offences' includes all types of violent crimes as well as robbery, extortion, sexual offences (sexual assault, rape), and aggravated arson (note to Table 1, p. 7).",
+   "Cases in the category 'serious and repeated offending' are subject to police screening and could not be included in the reported offence counts; they make up 3.5 percent of cases with 10-14-year-olds and 10.7 percent of cases with 15-17-year-olds (p. 6).",
+   "Pre-reform probation figures cover 15-17-year-olds in the Danish Probation Service while post-reform figures cover 10-17-year-olds in the Youth Probation Service, so the two populations differ in age coverage by construction.",
+   "Figure 3 compares programme length for the 185 Danish Probation Service cases in 2018 (93 under 12 months, 64 at 12 months, 26 at 24 months) with YPS cases in 2021 (175 under 12 months, 252 at 12 months, 129 at 13-23 months and 131 at 24 months).",
+   "No individual-level Danish register (BEF, IND, RAS, ...) is used: the article works with aggregate administrative counts and one Statistics Denmark statbank table (STRAF40)."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W4388046637_c1",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "After the 2019 reform the number of juveniles aged 10-17 supervised in the probation system each year rose to 696 cases in the Youth Probation Service in 2021, against 185 juvenile cases in the Danish Probation Service in 2018 -- a tripling, in the authors' words.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; the post-reform count is for 2021, the pre-reform count for 2018",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Number of juveniles enrolled in a probation programme per year",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Annual reports on referrals to YCBs and adjudications issued by YCBs (post-reform); information provided by the Danish Probation Service (pre-reform)",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Post-reform: cases with an adjudication issued by a YCB and referred to the Youth Probation Service in a calendar year, ages 10-17 (Table 2). Pre-reform: juvenile probationers aged 15-17 under supervision of the Danish Probation Service in a calendar year (Table A2).",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual case counts, 2018 (pre-reform) and 2021 (post-reform)",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 696,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "number of juvenile probation cases in the year (2021)",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the number of juveniles in the probation system has tripled\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 185,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 10-17 in Denmark under probation-type supervision",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "2021, the third calendar year of the new system, against 2018, the last full year before it",
+    "formal_query": null,
+    "horizon": {
+     "from": 2,
+     "to": 2,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All cases with an adjudication issued by a Youth Crime Board and referred to the Youth Probation Service in 2021, compared with all juvenile probationers in the Danish Probation Service in 2018",
+    "birth_cohorts": null,
+    "ages": "10-17 after the reform; 15-17 before the reform",
+    "sex": "all",
+    "period": "2018 and 2021",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "cases with 10-14-year-olds",
+     "cases with 15-17-year-olds",
+     "single years of age 10 to 17"
+    ],
+    "selection": "Administrative populations: every YCB adjudication referred to the YPS; every juvenile case in the Danish Probation Service",
+    "period_range": {
+     "from": 2018,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The youth crime prevention act (Act no. 1705) in force from 2019, which created the Youth Crime Boards and the Youth Probation Service; counts before and after are compared.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Juvenile cases in the pre-reform Danish Probation Service and cases in the post-reform Youth Probation Service measure the same thing -- juveniles 'in the probation system' -- although the two systems cover different age ranges (15-17 vs 10-17) and different legal grounds",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e3",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Absent the reform, the number of juveniles under probation supervision would have stayed at its pre-reform level",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of administrative case counts; no model estimated",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Comparison of annual case counts before and after the reform",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "696 YPS cases in 2021 (Table 2); 185 Danish Probation Service juvenile cases in 2018 (Table A2)",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, row 'Total', column 2021 (p. 10); baseline from Table A2, column 2018 (p. 17)",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "age group of the probation population",
+     "finding": "In 2021 Table 2 reports 290 YPS cases with 10-14-year-olds and 402 with 15-17-year-olds; before the reform the Danish Probation Service handled only 15-17-year-olds (Table A2)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Number of juveniles under probation supervision per year"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Number of juveniles under probation supervision per year",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "d930d90ff8f4bf4a",
+      "n_chars": 180
+     },
+     {
+      "page": 9,
+      "sha256_16": "9b20ebadc7bd42c4",
+      "n_chars": 239
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper states the post-reform caseload as a range across years ('475-696 ... each year'); the single coefficient recorded here is the 2021 total from Table 2 (696), with the 2018 Danish Probation Service total (185) as the pre-reform baseline. Table 2 also gives 475 (2019) and 559 (2020); Table A2 gives 186 for 2019.",
+    "The pre- and post-reform counts come from different administrative systems with different age coverage, so the comparison is not of a constant population."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "098216fa8461eb18",
+     "n_chars": 174
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "d930d90ff8f4bf4a",
+     "n_chars": 180
+    },
+    {
+     "id": "e3",
+     "kind": "table",
+     "exhibit": "Table 2. Number of cases with adjudications issued by YCBs and referred to the YPS",
+     "panel": null,
+     "page": 10,
+     "regression_id": null
+    },
+    {
+     "id": "e4",
+     "kind": "table",
+     "exhibit": "Table A2. Juvenile probationers in the ordinary Danish Probations Service",
+     "panel": null,
+     "page": 17,
+     "regression_id": null
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "1368fbdb65f47ff5",
+     "n_chars": 161
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 9,
+    "text": "the number of juveniles in the probation system has tripled, and up to 50 percent of the cases involve children aged 10-14, who are under the minimum age of criminal responsibility",
+    "sha256_16": "d930d90ff8f4bf4a",
+    "n_chars": 180
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "After the reform up to 50 percent of the cases supervised by the Youth Probation Service concern children aged 10-14, i.e. below the minimum age of criminal responsibility, whereas the pre-reform probation population was dominated by 17-year-olds.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; YPS composition observed 2019-2021, Danish Probation Service composition 2018-2019",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Share of juvenile probation cases concerning children aged 10-14 (below the minimum age of criminal responsibility)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Annual reports on referrals to YCBs and adjudications issued by YCBs",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Cases with 10-14-year-olds among all cases with an adjudication issued by a YCB and referred to the YPS in a calendar year (Table 2)",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, 2019-2021 (the paper's 'up to 50 percent' is the maximum over these years)",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 50,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of Youth Probation Service cases ('up to 50 percent')",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"Thus, a large group of children below the minimum age of criminal responsibility are referred to YCBs\" (p. 7); \"the shift has resulted in more and younger children now being subjected to surveillance and control by probation services\" (p. 10)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 10-17 supervised by the Youth Probation Service",
+    "compliers": null,
+    "bound": "upper_bound",
+    "time_horizon": "2019-2021, the first three years of the new system",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 2,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All cases with an adjudication issued by a Youth Crime Board and referred to the Youth Probation Service, 2019-2021",
+    "birth_cohorts": null,
+    "ages": "10-17",
+    "sex": "all",
+    "period": "2019-2021",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "cases with 10-14-year-olds",
+     "cases with 15-17-year-olds"
+    ],
+    "selection": "Administrative population of YCB adjudications referred to the YPS",
+    "period_range": {
+     "from": 2019,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The 2019 youth crime prevention act, which for the first time brings children aged 10-14 under probation-type supervision",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The age recorded in the YCB annual reports is the age at referral or adjudication and is comparable with the age at programme enrolment recorded for the pre-reform Danish Probation Service",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of administrative case counts; no model estimated",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Age composition of the annual YPS caseload",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "475 (2019), 559 (2020) and 696 (2021) YPS cases",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Text p. 9 ('up to 50 percent'), with the counts in Table 2, rows 'Cases with 10-14-year-olds' and 'Total' (p. 10)",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "year",
+     "finding": "Table 2 reports 243 of 475 cases with 10-14-year-olds in 2019, 263 of 559 in 2020 and 290 of 696 in 2021."
+    },
+    {
+     "dimension": "single years of age",
+     "finding": "\"Most abundant are cases with 14- and 15-year-olds, and these account for 50 percent of the total population in YPS\" (p. 10)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Share of juvenile probation cases concerning children aged 10-14"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Share of juvenile probation cases concerning children aged 10-14",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "d930d90ff8f4bf4a",
+      "n_chars": 180
+     },
+     {
+      "page": 10,
+      "sha256_16": "74ae18ffeebf291c",
+      "n_chars": 207
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "No pre-reform share of probationers aged 10-14 is printed. Table A2 reports ages 15, 16 and 17 only, which implies a pre-reform share of zero, but the paper never states that number, so baseline_mean is left null.",
+    "'Up to 50 percent' is a maximum across 2019-2021, not a single year's figure; the corresponding Table 2 shares are 51, 47 and 42 percent if computed from the counts."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "d8b4c3b8b1afd9ec",
+     "n_chars": 214
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 9,
+     "sha256_16": "d930d90ff8f4bf4a",
+     "n_chars": 180
+    },
+    {
+     "id": "e3",
+     "kind": "table",
+     "exhibit": "Table 2. Number of cases with adjudications issued by YCBs and referred to the YPS",
+     "panel": null,
+     "page": 10,
+     "regression_id": null
+    },
+    {
+     "id": "e4",
+     "kind": "table",
+     "exhibit": "Table A2. Juvenile probationers in the ordinary Danish Probations Service",
+     "panel": null,
+     "page": 17,
+     "regression_id": null
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "60fd339bc35d8442",
+     "n_chars": 132
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "3452d8c94b76a555",
+     "n_chars": 137
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 9,
+    "text": "the number of juveniles in the probation system has tripled, and up to 50 percent of the cases involve children aged 10-14, who are under the minimum age of criminal responsibility",
+    "sha256_16": "d930d90ff8f4bf4a",
+    "n_chars": 180
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c3",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The share of juvenile probation programmes lasting less than 12 months fell from 50 percent of Danish Probation Service cases with 15-17-year-olds in 2018 to 25 percent of the improvement programmes issued by Youth Crime Boards in 2021.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; programme lengths compared for 2018 (pre-reform) and 2021 (post-reform)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Share of juvenile probation programmes shorter than 12 months",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Information from the Danish Prison and Probation Service and annual reports from YCB",
+     "evidence": [
+      "eF3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Programmes of less than 12 months as a share of all juvenile probation programmes in the year: Danish Probation Service cases with 15-17-year-olds in 2018 (93 of 185, Table A2) and YCB improvement programmes for 10-17-year-olds in 2021 (175 cases, Figure 3)",
+     "evidence": [
+      "e2",
+      "e3",
+      "e4",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Programme length as issued, measured for programmes in force in 2018 and 2021",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e2",
+      "e3",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 25,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of juvenile probation programmes in 2021 lasting less than 12 months",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the durations of the programmes increased significantly\" (p. 15)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 50,
+      "evidence": [
+       "e2",
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles under probation-type supervision in Denmark",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "2021 against 2018",
+    "formal_query": null,
+    "horizon": {
+     "from": 2,
+     "to": 2,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "Improvement programmes issued by Youth Crime Boards to juveniles aged 10-17 in 2021, compared with probation programmes for 15-17-year-olds in the Danish Probation Service in 2018",
+    "birth_cohorts": null,
+    "ages": "10-17 in 2021; 15-17 in 2018",
+    "sex": "all",
+    "period": "2018 and 2021",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Administrative populations of probation programmes in the two systems",
+    "period_range": {
+     "from": 2018,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The 2019 youth crime prevention act, under which YCB improvement programmes have a fixed timeframe that typically lasts one to two years",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Programme length in the pre-reform Danish Probation Service (follow-up period of a court-issued sanction for 15-17-year-olds) and the length of a YCB improvement programme are comparable measures of the duration of probation supervision",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e3",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Absent the reform the distribution of programme lengths would have stayed as it was before 2019",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "The duration of improvement programmes can be prolonged by the YCB when children do not comply or commit new violent crimes, so observed lengths are not fixed at issue (p. 12)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of programme lengths; no model estimated",
+     "evidence": [
+      "e3",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Distribution of programme length before and after the reform",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "185 Danish Probation Service cases in 2018 (Table A2); YPS cases in 2021 shown by programme length in Figure 3",
+     "evidence": [
+      "e4",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Text p. 12; Figure 3 (p. 12) and Table A2 (p. 17)",
+     "evidence": [
+      "e2",
+      "e3",
+      "e4",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Share of juvenile probation programmes shorter than 12 months"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Share of juvenile probation programmes shorter than 12 months",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 12,
+      "sha256_16": "d52c64c74f9cbc33",
+      "n_chars": 202
+     },
+     {
+      "page": 12,
+      "sha256_16": "9462d4072e62b01f",
+      "n_chars": 181
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The 2018 and 2021 populations differ: 15-17-year-olds in the Danish Probation Service versus 10-17-year-olds with YCB improvement programmes."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "d8b4c3b8b1afd9ec",
+     "n_chars": 214
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "d52c64c74f9cbc33",
+     "n_chars": 202
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "9462d4072e62b01f",
+     "n_chars": 181
+    },
+    {
+     "id": "e4",
+     "kind": "table",
+     "exhibit": "Table A2. Juvenile probationers in the ordinary Danish Probations Service",
+     "panel": null,
+     "page": 17,
+     "regression_id": null
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 15,
+     "sha256_16": "2b252cf5ed8adc0b",
+     "n_chars": 120
+    },
+    {
+     "id": "eF3",
+     "kind": "figure",
+     "exhibit": "Figure 3",
+     "page": 12,
+     "figure_id": "dk_W4388046637::F3",
+     "annotation": "Source: Information from the Danish Prison and Probation Service and annual reports from YCB."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "3452d8c94b76a555",
+     "n_chars": 137
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 12,
+    "text": "In 2018, 50 percent of the cases with 15-17-year-old probationers had programmes shorter than 12 months, 35 percent had a 12-month follow-up period and only 15 percent had durations lasting 13-24 months",
+    "sha256_16": "d52c64c74f9cbc33",
+    "n_chars": 202
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c4",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The share of juvenile probation programmes lasting 13-24 months rose from 15 percent of Danish Probation Service cases with 15-17-year-olds in 2018 to 38 percent of cases with juveniles aged 10-17 in 2021.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; programme lengths compared for 2018 (pre-reform) and 2021 (post-reform)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Share of juvenile probation programmes lasting 13-24 months",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Information from the Danish Prison and Probation Service and annual reports from YCB",
+     "evidence": [
+      "eF3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Programmes lasting 13-24 months as a share of all juvenile probation programmes in the year; in Figure 3 the 13-23 month and 24 month categories for YPS cases in 2021 (129 and 131 cases)",
+     "evidence": [
+      "e3",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Programme length as issued, measured for programmes in force in 2018 and 2021",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e2",
+      "e3",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 38,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of cases with juveniles aged 10-17 in 2021 whose programme lasted 13-24 months",
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the durations of the programmes increased significantly\" (p. 15)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 15,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles under probation-type supervision in Denmark",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "2021 against 2018",
+    "formal_query": null,
+    "horizon": {
+     "from": 2,
+     "to": 2,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "Improvement programmes issued by Youth Crime Boards to juveniles aged 10-17 in 2021, compared with probation programmes for 15-17-year-olds in the Danish Probation Service in 2018",
+    "birth_cohorts": null,
+    "ages": "10-17 in 2021; 15-17 in 2018",
+    "sex": "all",
+    "period": "2018 and 2021",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Administrative populations of probation programmes in the two systems",
+    "period_range": {
+     "from": 2018,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The 2019 youth crime prevention act, under which YCB improvement programmes have a fixed timeframe typically lasting one to two years",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Programme length in the pre-reform Danish Probation Service and the length of a YCB improvement programme are comparable measures of the duration of probation supervision",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e3",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Absent the reform the distribution of programme lengths would have stayed as it was before 2019",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Improvement programmes can be prolonged by the YCB on non-compliance or a new violent crime, so the issued length understates realised duration (p. 12)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of programme lengths; no model estimated",
+     "evidence": [
+      "e3",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Distribution of programme length before and after the reform",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "185 Danish Probation Service cases in 2018 (Table A2); YPS cases in 2021 shown by programme length in Figure 3",
+     "evidence": [
+      "e4",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Text p. 12; Figure 3 (p. 12) and Table A2 (p. 17)",
+     "evidence": [
+      "e2",
+      "e3",
+      "e4",
+      "eF3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Share of juvenile probation programmes lasting 13-24 months"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Share of juvenile probation programmes lasting 13-24 months",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 12,
+      "sha256_16": "9462d4072e62b01f",
+      "n_chars": 181
+     },
+     {
+      "page": 12,
+      "sha256_16": "d52c64c74f9cbc33",
+      "n_chars": 202
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "Table A2 shows the 2018 lengths as 93 under 12 months (50 percent), 64 at 12 months (35 percent), 2 at 13-23 months (percentage printed as '-') and 26 at 24 months (15 percent); the text's '15 percent ... lasting 13-24 months' therefore corresponds to the 24-month row alone.",
+    "The 2018 and 2021 populations differ in age coverage (15-17 vs 10-17)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "d8b4c3b8b1afd9ec",
+     "n_chars": 214
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "d52c64c74f9cbc33",
+     "n_chars": 202
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 12,
+     "sha256_16": "9462d4072e62b01f",
+     "n_chars": 181
+    },
+    {
+     "id": "e4",
+     "kind": "table",
+     "exhibit": "Table A2. Juvenile probationers in the ordinary Danish Probations Service",
+     "panel": null,
+     "page": 17,
+     "regression_id": null
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 15,
+     "sha256_16": "2b252cf5ed8adc0b",
+     "n_chars": 120
+    },
+    {
+     "id": "eF3",
+     "kind": "figure",
+     "exhibit": "Figure 3",
+     "page": 12,
+     "figure_id": "dk_W4388046637::F3",
+     "annotation": "Source: Information from the Danish Prison and Probation Service and annual reports from YCB."
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "3452d8c94b76a555",
+     "n_chars": 137
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 12,
+    "text": "In 2021, only 25 percent of the improvement programmes issued by YCBs were less than 12 months, and 38 percent of cases with juveniles aged 10-17 had programmes lasting 13-24 months",
+    "sha256_16": "9462d4072e62b01f",
+    "n_chars": 181
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c5",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The share of police-registered violent YCB offences committed by 10-17-year-olds that is referred to a Youth Crime Board rose over the first three years of the new system, from 16 percent in 2019 to almost 33 percent in 2021.",
+   "treatment": {
+    "label": "Calendar year of operation of the new system (2019, 2020, 2021)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Year in which referrals to Youth Crime Boards are counted, over the first three years after the 2019 reform",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "2019-2021",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Share of reported violent YCB offences committed by juveniles that is referred to Youth Crime Boards",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences and annual reports from YCB on referrals",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Number of new cases referred to YCBs in a year divided by the number of violent YCB offences reported to the police by 10-17-year-olds in that year (Table 1)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual, 2019-2021",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 33,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "medium"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of reported violent YCB offences referred to YCBs in 2021 (the paper writes 'almost 33 percent')",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"in 2019, the number of new cases referred to YCBs corresponds to 16 percent of the reported YCB offences committed by juveniles, in 2020 to 22 percent, and in 2021, almost 33 percent of the offences were referred to YCBs\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 16,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Violent YCB offences committed by 10-17-year-olds in Denmark",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "2021, the third year of the new system, against 2019, its first year",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 2,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All violent YCB offences reported to the police by 10-17-year-olds and all new cases referred to Youth Crime Boards, 2019-2021",
+    "birth_cohorts": null,
+    "ages": "10-17",
+    "sex": "all",
+    "period": "2019-2021",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "single years of age 10 to 17"
+    ],
+    "selection": "Offence counts are restricted to the category 'violent YCB offences'; cases in the category 'serious and repeated offending' are screened by the police and could not be included",
+    "period_range": {
+     "from": 2019,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Implementation of the YCBs over their first three years of operation, 2019-2021",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Referrals counted in a year concern offences registered in the same year, so that the ratio can be read as a referral share",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Police registration practice for violent offences by 10-17-year-olds is stable across 2019-2021",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The denominator covers only violent YCB offences: cases in the category 'serious and repeated offending' are subject to police screening and could not be included in the reporting",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 3 (p. 6) states the exclusion; the text reports that this category makes up 3.5 percent of cases with 10-14-year-olds and 10.7 percent of cases with 15-17-year-olds (Youth Crime Board, 2022)",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+         "to": "Inclusion in the reported offence counts",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Cases with 15-17-year-olds reach the YCB only after a court verdict, which creates a time lag in processing (p. 7).",
+     "Only 50 percent of violent offences committed by 15-17-year-olds are sanctioned with a prison sentence and many cases are dropped for lack of evidence (p. 7, Table A1)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive ratio of administrative counts; no model estimated",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Referrals to YCBs as a percentage of reported violent YCB offences, by year",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "3884 reported offences and 607 referrals in 2019; 3382 reported offences and 1037 referrals in 2021 (Table 1)",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Text p. 6, with the underlying counts in Table 1 (p. 7)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "year",
+     "finding": "16 percent in 2019, 22 percent in 2020 and almost 33 percent in 2021 (p. 6)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Year of operation of the new system (2019-2021)",
+     "Share of reported violent YCB offences referred to Youth Crime Boards",
+     "Offence category (violent YCB offence vs 'serious and repeated offending')",
+     "Inclusion in the reported offence counts"
+    ],
+    "edges": [
+     {
+      "from": "Year of operation of the new system (2019-2021)",
+      "to": "Share of reported violent YCB offences referred to Youth Crime Boards",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+      "to": "Inclusion in the reported offence counts",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "5fa8370960559f8b",
+      "n_chars": 220
+     },
+     {
+      "page": 6,
+      "sha256_16": "6b3121d3bb18bc3e",
+      "n_chars": 56
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper writes 'almost 33 percent' for 2021; 33 is recorded as the point estimate.",
+    "Numerator and denominator come from different sources (YCB annual reports and police records) and need not refer to the same cases in the same year."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "5fa8370960559f8b",
+     "n_chars": 220
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "b4a0b8c715b9d371",
+     "n_chars": 267
+    },
+    {
+     "id": "e3",
+     "kind": "table",
+     "exhibit": "Table 1. Number of violent offences reported to the police 2017-2021 and number of cases referred to YCBs in 2019-2021 by age",
+     "panel": null,
+     "page": 7,
+     "regression_id": null
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "af1e10c1f84944ce",
+     "n_chars": 151
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "bbd6b3270cd2c67a",
+     "n_chars": 120
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "in 2019, the number of new cases referred to YCBs corresponds to 16 percent of the reported YCB offences committed by juveniles, in 2020 to 22 percent, and in 2021, almost 33 percent of the offences were referred to YCBs",
+    "sha256_16": "5fa8370960559f8b",
+    "n_chars": 220
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c6",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Cases with 12-, 13- and 14-year-olds are overrepresented among referrals to Youth Crime Boards relative to their share of the violent offences reported to the police.",
+   "treatment": {
+    "label": "Age of the juvenile: 12, 13 and 14 years",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences and annual reports from YCB on referrals",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Single year of age of the juvenile at the time of the registered offence or the referral, as tabulated by age in Table 1",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At the registered offence / at referral, 2019-2021",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Representation among referrals to Youth Crime Boards relative to the reported number of violent offences",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences and annual reports from YCB on referrals",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Comparison of the age composition of new cases referred to YCBs with the age composition of reported violent YCB offences (Table 1)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "2019-2021",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the traditional age-crime curve evident in the reported number of violent offences is not reflected into the number of cases referred to YCBs\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 12-14 with police-registered violent YCB offences in Denmark",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "The years 2019-2021 covered by Table 1",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 2,
+     "unit": "years",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All violent YCB offences reported to the police and all new cases referred to Youth Crime Boards, by single year of age, 2019-2021",
+    "birth_cohorts": null,
+    "ages": "10-17, with the contrast drawn for ages 12-14",
+    "sex": "all",
+    "period": "2017-2021 for offences; 2019-2021 for referrals",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "single years of age 10 to 17",
+     "ages 10-14",
+     "ages 15-17"
+    ],
+    "selection": "Offence counts restricted to the category 'violent YCB offences'",
+    "period_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Differences by age in how cases are routed under the new system: 10-14-year-olds are referred to the YCB directly by the police, 15-17-year-olds only after trial in the ordinary court system",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The age composition of reported offences is the right benchmark for the age composition of referrals, i.e. referrals in a year concern offences registered in the same year",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The reported offence counts cover only the category 'violent YCB offences': cases in the category 'serious and repeated offending' are subject to police screening and could not be included in the reporting",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 3 (p. 6) states the exclusion",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+         "to": "Inclusion in the reported offence counts",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Cases with 15-17-year-olds must await a court verdict before referral, creating a time lag (p. 7).",
+     "Only about 50 percent of violent offences by 15-17-year-olds end in a prison sentence; many cases are dropped for lack of evidence (p. 7, Table A1).",
+     "For 10-14-year-olds the state of the evidence is not evaluated upon referral and guilt is not part of the YCB meeting (p. 7)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive comparison of age distributions; no model estimated",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Age composition of YCB referrals against age composition of reported violent YCB offences",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "Table 1: 3884 (2019), 4188 (2020) and 3382 (2021) reported offences; 607, 909 and 1037 referrals",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1 (p. 7), compared across the 'Reported violent YCB offences' and 'Referrals to YCBs' blocks",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "age 15-17 (the opposite contrast)",
+     "finding": "\"cases with 15-, 16- and 17-year-olds (in particular) are underrepresented when compared to the reported number of offences\" (p. 7); recorded separately as claim dk_W4388046637_c7."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Age of the juvenile (12-14)",
+     "Referral to a Youth Crime Board relative to reported offences",
+     "Offence category (violent YCB offence vs 'serious and repeated offending')",
+     "Inclusion in the reported offence counts"
+    ],
+    "edges": [
+     {
+      "from": "Age of the juvenile (12-14)",
+      "to": "Referral to a Youth Crime Board relative to reported offences",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+      "to": "Inclusion in the reported offence counts",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 7,
+      "sha256_16": "7fbf304162d1973a",
+      "n_chars": 195
+     },
+     {
+      "page": 7,
+      "sha256_16": "a9f4acbe0ef46dfb",
+      "n_chars": 102
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper prints no referral-to-offence ratio by age; only the counts in Table 1 and the verbal over/under-representation statement. No point estimate is therefore recorded."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 7,
+     "sha256_16": "7fbf304162d1973a",
+     "n_chars": 195
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 7,
+     "sha256_16": "c417055763cb48e5",
+     "n_chars": 217
+    },
+    {
+     "id": "e3",
+     "kind": "table",
+     "exhibit": "Table 1. Number of violent offences reported to the police 2017-2021 and number of cases referred to YCBs in 2019-2021 by age",
+     "panel": null,
+     "page": 7,
+     "regression_id": null
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "af1e10c1f84944ce",
+     "n_chars": 151
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "sha256_16": "eb23cdbc525a7787",
+     "n_chars": 148
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 7,
+    "text": "Cases with 12-, 13- and 14-year-olds are overrepresented in YCBs, while cases with 15-, 16- and 17-year-olds (in particular) are underrepresented when compared to the reported number of offences.",
+    "sha256_16": "7fbf304162d1973a",
+    "n_chars": 195
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c7",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Cases with 15-, 16- and 17-year-olds are underrepresented among referrals to Youth Crime Boards relative to their share of the violent offences reported to the police.",
+   "treatment": {
+    "label": "Age of the juvenile: 15, 16 and 17 years (at or above the minimum age of criminal responsibility)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences and annual reports from YCB on referrals",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Single year of age of the juvenile at the time of the registered offence or the referral, as tabulated by age in Table 1",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At the registered offence / at referral, 2019-2021",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Representation among referrals to Youth Crime Boards relative to the reported number of violent offences",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences and annual reports from YCB on referrals",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Comparison of the age composition of new cases referred to YCBs with the age composition of reported violent YCB offences (Table 1)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "2019-2021",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The low number of cases with 17-year-olds in YCBs is a results of the system design\" (footnote 4, p. 7)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 15-17 with police-registered violent YCB offences in Denmark",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "The years 2019-2021 covered by Table 1",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 2,
+     "unit": "years",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All violent YCB offences reported to the police and all new cases referred to Youth Crime Boards, by single year of age, 2019-2021",
+    "birth_cohorts": null,
+    "ages": "10-17, with the contrast drawn for ages 15-17",
+    "sex": "all",
+    "period": "2017-2021 for offences; 2019-2021 for referrals",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "single years of age 10 to 17",
+     "ages 10-14",
+     "ages 15-17"
+    ],
+    "selection": "Offence counts restricted to the category 'violent YCB offences'",
+    "period_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "System design: 15-17-year-olds are referred to the YCB only after trial in the ordinary court system, which creates a time lag and filters out dropped cases",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Referrals in a year concern offences registered in the same year, so that the age composition of the two blocks of Table 1 is comparable",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper itself notes a significant time lag for 15-17-year-olds, which works against this assumption (p. 7)",
+      "evidence": [
+       "e2",
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The reported offence counts cover only the category 'violent YCB offences': cases in the category 'serious and repeated offending' are subject to police screening and could not be included in the reporting",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 3 (p. 6) states the exclusion",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+         "to": "Inclusion in the reported offence counts",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "The court route for 15-17-year-olds (time lag, dropped cases, ageing out at 18) causes their under-representation in YCB referrals",
+      "stated_or_implicit": "stated",
+      "supported_by": "Explanations offered on p. 7 and in footnote 4; Table A1 shows that 50-57 percent of prosecuted 15-17-year-olds receive a prison sentence and 28 percent of cases are dismissed on the state of the evidence",
+      "evidence": [
+       "e2",
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Time lag between offence and court verdict for 15-17-year-olds (p. 7).",
+     "Cases dropped for lack of evidence (p. 7, Table A1).",
+     "17-year-olds age out of the juvenile system before measures can be enacted (footnote 4, p. 7)."
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive comparison of age distributions; no model estimated",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Age composition of YCB referrals against age composition of reported violent YCB offences",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "Table 1: in 2021, 757 reported offences and 88 referrals for 17-year-olds; 3382 offences and 1037 referrals in total",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1 (p. 7), rows for 15-, 16- and 17-year-olds across the 'Reported violent YCB offences' and 'Referrals to YCBs' blocks",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "Court processing of 15-17-year-olds before YCB referral (time lag, dropped cases, ageing out at 18)"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "age 12-14 (the opposite contrast)",
+     "finding": "\"Cases with 12-, 13- and 14-year-olds are overrepresented in YCBs\" (p. 7); recorded separately as claim dk_W4388046637_c6."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Age of the juvenile (15-17)",
+     "Court processing before YCB referral",
+     "Referral to a Youth Crime Board relative to reported offences",
+     "Offence category (violent YCB offence vs 'serious and repeated offending')",
+     "Inclusion in the reported offence counts"
+    ],
+    "edges": [
+     {
+      "from": "Age of the juvenile (15-17)",
+      "to": "Referral to a Youth Crime Board relative to reported offences",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Court processing before YCB referral",
+      "to": "Referral to a Youth Crime Board relative to reported offences",
+      "kind": "causal_assumed",
+      "from_assumption": "a4",
+      "given": []
+     },
+     {
+      "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+      "to": "Inclusion in the reported offence counts",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 7,
+      "sha256_16": "7fbf304162d1973a",
+      "n_chars": 195
+     },
+     {
+      "page": 7,
+      "sha256_16": "af7e07904f72bd6f",
+      "n_chars": 103
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "No ratio or share is printed for the under-representation; only the counts in Table 1."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 7,
+     "sha256_16": "7fbf304162d1973a",
+     "n_chars": 195
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 7,
+     "sha256_16": "e2ab7459bc718f71",
+     "n_chars": 290
+    },
+    {
+     "id": "e3",
+     "kind": "table",
+     "exhibit": "Table 1. Number of violent offences reported to the police 2017-2021 and number of cases referred to YCBs in 2019-2021 by age",
+     "panel": null,
+     "page": 7,
+     "regression_id": null
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "af1e10c1f84944ce",
+     "n_chars": 151
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "sha256_16": "a378b7c1bef73cc5",
+     "n_chars": 149
+    },
+    {
+     "id": "e6",
+     "kind": "table",
+     "exhibit": "Table A1. Verdicts, juveniles aged 15-17 prosecuted for a violent offence (percent)",
+     "panel": null,
+     "page": 17,
+     "regression_id": null
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 7,
+    "text": "Cases with 12-, 13- and 14-year-olds are overrepresented in YCBs, while cases with 15-, 16- and 17-year-olds (in particular) are underrepresented when compared to the reported number of offences.",
+    "sha256_16": "7fbf304162d1973a",
+    "n_chars": 195
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c8",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Out-of-home placement at an open or locked institution is part of the improvement programme in 33 percent of the cases adjudicated by Youth Crime Boards in 2020.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Improvement programmes adjudicated by YCBs in 2020, the second year of the new system",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Share of improvement programmes that include an out-of-home placement",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Annual reports on referrals to YCBs and adjudications issued by YCBs",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Cases whose improvement programme includes placement in an open, partly locked or locked institution, as a share of all cases with an improvement programme in 2020 (Table 3)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At adjudication, 2020",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 33,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent of cases with an improvement programme in 2020",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"While out-of-home-placement can be seen as the most intrusive intervention in a child’s life\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 10-17 issued an improvement programme by a Youth Crime Board",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "2020",
+    "formal_query": null,
+    "horizon": {
+     "from": 1,
+     "to": 1,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All 559 cases with an improvement programme issued by a Youth Crime Board in 2020 (263 with 10-14-year-olds, 296 with 15-17-year-olds)",
+    "birth_cohorts": null,
+    "ages": "10-17",
+    "sex": "all",
+    "period": "2020",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "Age 10-14",
+     "Age 15-17"
+    ],
+    "selection": "Administrative population of YCB adjudications in 2020",
+    "period_range": {
+     "from": 2020,
+     "to": 2020
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Content of the improvement programmes adjudicated by Youth Crime Boards in 2020",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The interventions listed in the YCB annual reports fully describe the content of the improvement programmes",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of intervention types; no model estimated",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Share of improvement programmes containing each intervention type",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 559,
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 3, row 'Out-of-home placements', column '% of cases' (p. 11)",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "age group",
+     "finding": "Table 3 reports 79 out-of-home placements among the 263 cases with 10-14-year-olds and 108 among the 296 cases with 15-17-year-olds in 2020."
+    },
+    {
+     "dimension": "type of placement",
+     "finding": "Table 3: 155 placed in an open institution (28 percent), 10 in a partly locked institution (2 percent) and 22 in a locked institution (3 percent)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Improvement programme adjudicated by a Youth Crime Board",
+     "Out-of-home placement included in the programme"
+    ],
+    "edges": [
+     {
+      "from": "Improvement programme adjudicated by a Youth Crime Board",
+      "to": "Out-of-home placement included in the programme",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "0ef15f1e47a47837",
+      "n_chars": 275
+     },
+     {
+      "page": 10,
+      "sha256_16": "562cb5efa308832b",
+      "n_chars": 124
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The sentence stating '33 percent' runs across a hyphenated line break in the PDF, so the share is transcribed from Table 3 (row 'Out-of-home placements': 187 cases, 33 percent)."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "0ef15f1e47a47837",
+     "n_chars": 275
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table 3: Improvement programmes with child welfare interventions issued by Youth Crime Board",
+     "panel": null,
+     "page": 11,
+     "regression_id": null
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "cfda83562114449e",
+     "n_chars": 101
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "3452d8c94b76a555",
+     "n_chars": 137
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 10,
+    "text": "The improvement programmes are controlled and supervised by the YPS and include one or more mandatory child welfare intervention(s) such as participation in school, job or leisure activity, home curfew, mentor, family treatment or …",
+    "sha256_16": "0ef15f1e47a47837",
+    "n_chars": 275
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c9",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "Of the 187 children whose improvement programme included an out-of-home placement, 144 were already placed in care before the Youth Crime Board adjudication.",
+   "treatment": {
+    "label": "Out-of-home placement adjudicated as part of a Youth Crime Board improvement programme",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Annual reports on referrals to YCBs and adjudications issued by YCBs (Youth Crime Board, 2021)",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Placement at an open, partly locked or locked institution included in the improvement programme issued by the YCB (187 cases in 2020, Table 3)",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "At the YCB adjudication, 2020",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Child was already placed in out-of-home care prior to the YCB adjudication",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Youth Crime Board annual report (Youth Crime Board, 2021)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Number of the 187 children with an adjudicated out-of-home placement who were already in out-of-home care before the adjudication",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Immediately before the YCB adjudication",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 144,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "children, out of the 187 whose improvement programme included an out-of-home placement",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"the majority of these children were already placed in care prior to the adjudication by the YCBs\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children whose YCB improvement programme includes an out-of-home placement",
+    "compliers": null,
+    "bound": "point",
+    "time_horizon": "At the adjudication (2020 adjudications, reported in the 2020 annual report)",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "years",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "The 187 children whose improvement programme issued in 2020 included placement in an open, partly locked or locked institution",
+    "birth_cohorts": null,
+    "ages": "10-17",
+    "sex": "all",
+    "period": "2020",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on having an out-of-home placement in the improvement programme",
+    "period_range": {
+     "from": 2020,
+     "to": 2020
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Comparison of placement status before and at the YCB adjudication within the group of children given an out-of-home placement",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Placement status before the adjudication is correctly recorded in the YCB annual report",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The analysis is conditioned on children whose improvement programme includes an out-of-home placement",
+      "stated_or_implicit": "stated",
+      "supported_by": "The statement is made about 'these 187 children' from Table 3",
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Out-of-home placement included in the improvement programme",
+         "to": "Inclusion in the group of 187 children",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive count from the Youth Crime Board annual report; no model estimated",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Number of children already in care among those adjudicated an out-of-home placement",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 187,
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Text p. 10, citing Youth Crime Board (2021); the 187 cases are the 'Out-of-home placements' row of Table 3 (p. 11)",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Out-of-home placement included in the improvement programme",
+     "Child already placed in out-of-home care before the adjudication",
+     "Inclusion in the group of 187 children"
+    ],
+    "edges": [
+     {
+      "from": "Out-of-home placement included in the improvement programme",
+      "to": "Child already placed in out-of-home care before the adjudication",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Out-of-home placement included in the improvement programme",
+      "to": "Inclusion in the group of 187 children",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "e3afb6b9ca1ad6fc",
+      "n_chars": 218
+     },
+     {
+      "page": 10,
+      "sha256_16": "46400ebb7208bbba",
+      "n_chars": 228
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The count is attributed in the text to the Youth Crime Board (2021) annual report, not to a table in this article; the denominator 187 is the 'Out-of-home placements' row of Table 3, which reports 2020 adjudications."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "e3afb6b9ca1ad6fc",
+     "n_chars": 218
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table 3: Improvement programmes with child welfare interventions issued by Youth Crime Board",
+     "panel": null,
+     "page": 11,
+     "regression_id": null
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 10,
+     "sha256_16": "46400ebb7208bbba",
+     "n_chars": 228
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "b6ce0511913ace92",
+     "n_chars": 69
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "3452d8c94b76a555",
+     "n_chars": 137
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 10,
+    "text": "While out-of-home-placement can be seen as the most intrusive intervention in a child’s life, the majority of these children were already placed in care prior to the adjudication by the YCBs (144 of these 187 children)",
+    "sha256_16": "e3afb6b9ca1ad6fc",
+    "n_chars": 218
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c10",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Because the new system was added on top of the old one rather than replacing it, the reform significantly increased the complexity of the system handling juvenile crime, which case managers describe as confusing for children and parents and as restricting their own room for manoeuvre.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; case managers interviewed about the system as it worked in 2019-2022",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Complexity of the system handling juvenile crime, as described by the authors and the interviewed child welfare case managers",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Number of authorities deciding, and the new procedures for supervision, control and exchange of information about the child, introduced on top of the existing system (figures 1 and 2, tables A3 and A4); case managers' accounts of children's and parents' difficulty distinguishing between adjudications and systems of control/support",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3",
+      "eF1",
+      "eF2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "After the reform, as experienced at the time of the interviews",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The complexity of the system has increased: more authorities make the decisions and additional new procedures for supervision, control, and exchange of information about the child have been introduced\" (p. 3)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "The Danish system handling juveniles aged 10-17 involved in violent or serious repeated offending, and the child welfare case managers working in it",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Twelve case managers in Danish municipal child welfare services interviewed about their experiences with the new system, together with the authors' description of the legislation and system organisation",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "After the 2019 reform",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Case managers in the child welfare services with experience of cases in the new system; the paper reports no further sampling detail",
+    "period_range": {
+     "from": 2019,
+     "to": null
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The youth crime prevention act of 2019 as an example of incremental legislation, where new legislation is added to existing legislation rather than replacing it",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The accounts of the 12 interviewed case managers describe the system as it works more generally, including for children and parents who were not interviewed",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The case managers' before/after comparisons are not distorted by their own position in the system, by recall, or by the loss of decision authority the reform imposed on their services",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The sample is conditioned on case managers employed in child welfare services, the authority that lost decision power to the YCBs",
+      "stated_or_implicit": "stated",
+      "supported_by": "The paper states that the 12 interviewees are case managers in the child welfare services",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Employment in municipal child welfare services",
+         "to": "Inclusion in the interview sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Qualitative interview analysis combined with a document-based description of the legislation; no quantitative estimator",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Description of the system before and after the reform (figures 1 and 2, tables A3 and A4) read together with the case managers' accounts",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 12,
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit carries this finding; it rests on section 2 (pp. 3-6), figures 1 and 2 and the appendix tables A3 and A4",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "More authorities make the decisions",
+    "New procedures for supervision, control and exchange of information about the child",
+    "Children and parents cannot distinguish between the different adjudications and systems of control/support"
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Complexity of the system handling juvenile crime",
+     "Employment in municipal child welfare services",
+     "Inclusion in the interview sample"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Complexity of the system handling juvenile crime",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Employment in municipal child welfare services",
+      "to": "Inclusion in the interview sample",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 5,
+      "sha256_16": "f75ec25ca7378637",
+      "n_chars": 113
+     },
+     {
+      "page": 3,
+      "sha256_16": "eaa4ecaa5392ff99",
+      "n_chars": 201
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The finding is qualitative and descriptive: no index of complexity is constructed and no number is attached to it.",
+    "The paper gives no detail on how the 12 case managers were sampled or how the interviews were analysed."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 3,
+     "sha256_16": "eaa4ecaa5392ff99",
+     "n_chars": 201
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 5,
+     "sha256_16": "f75ec25ca7378637",
+     "n_chars": 113
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 5,
+     "sha256_16": "944f56f321a3b52b",
+     "n_chars": 225
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "c343550c8958af0e",
+     "n_chars": 146
+    },
+    {
+     "id": "eF1",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "page": 3,
+     "figure_id": "dk_W4388046637::F1",
+     "annotation": "Note: The mandatory lines of command are marked with grey arrows (only out-of-home care). The age range dealt with by the different authorities are shown in parentheses."
+    },
+    {
+     "id": "eF2",
+     "kind": "figure",
+     "exhibit": "Figure 2",
+     "page": 4,
+     "figure_id": "dk_W4388046637::F2",
+     "annotation": "Note: The new lines of command introduced with the new system are marked with red arrows. The age range dealt with by the different authorities are shown in parentheses."
+    },
+    {
+     "id": "es1",
+     "kind": "quote",
+     "page": 14,
+     "sha256_16": "290d9d2c6cbb7b12",
+     "n_chars": 184
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "5c93dea39f1a4092",
+     "n_chars": 90
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "392320c0325acc1d",
+     "n_chars": 63
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Policy makers and practitioners implementing new crime prevention strategies to juveniles, including the Swedish discussion of a system based on the Danish model",
+     "boundary_conditions": [
+      "The implications are drawn from the Danish system of Youth Crime Boards and a Youth Probation Service added on top of an existing child welfare system"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "es1"
+    ],
+    "confidence": "high"
+   },
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 5,
+    "text": "Second, the new system, because it is an add-on to the old system, has significantly increased system complexity.",
+    "sha256_16": "f75ec25ca7378637",
+    "n_chars": 113
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c11",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "Although the Youth Crime Boards were meant to divert children aged 10-14 away from the criminal justice system, case managers describe the board meetings, adjudications and supervision as being experienced as punishment by children and parents.",
+   "treatment": {
+    "label": "Introduction of the new system of Youth Crime Boards and a Youth Probation Service (the 2019 policy reform / youth crime prevention act)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Before/after the youth crime prevention act (Act no. 1705), in force from 2019, which added Youth Crime Boards (YCB) and a Youth Probation Service (YPS) to the existing child welfare and criminal justice system for juveniles aged 10-17 suspected of (10-14) or convicted of (15-17) a violent crime or repeated serious offending",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Reform in force from 2019; case managers interviewed about the system as it worked after the reform",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Children's and parents' experience of the Youth Crime Board proceedings as punitive, as reported by case managers",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Case managers' accounts that children refer to the YCB as 'the court' and talk about 'the judge' and 'their conviction', and that the meetings, adjudications and supervision are perceived as punitive",
+     "evidence": [
+      "e2",
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "After the reform, as experienced at the time of the interviews",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e2",
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"This reflects that the new system builds primarily on logics from the justice system rather than those of the child welfare system\" (p. 14)",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Children aged 10-17 referred to Youth Crime Boards and their parents",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Twelve case managers in Danish municipal child welfare services, interviewed about their experiences with children and parents in the new system",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "After the 2019 reform",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "children aged 10-14 (below the minimum age of criminal responsibility)"
+    ],
+    "selection": "Case managers in the child welfare services; children and parents were not interviewed directly",
+    "period_range": {
+     "from": 2019,
+     "to": null
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Court-like proceedings introduced by the reform: YCB meetings are held in a court building, with a judge on the board, metal detectors at entry and mandatory attendance",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Case managers' reports of how children and parents experience the YCB reflect those children's and parents' own experience",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2",
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The sample is conditioned on case managers employed in municipal child welfare services, the authority that lost decision power to the YCBs",
+      "stated_or_implicit": "stated",
+      "supported_by": "The paper states that the 12 interviewees are case managers in the child welfare services",
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Employment in municipal child welfare services",
+         "to": "Inclusion in the interview sample",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Qualitative interview analysis; no quantitative estimator",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Case managers' accounts of children's and parents' experience of YCB meetings, adjudications and YPS supervision",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 12,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit; interview material reported in section 2.1 (pp. 5-6) and the concluding section (p. 14)",
+     "evidence": [
+      "e2",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [
+    "YCB meetings are held in a court building, with a judge on the board and metal detectors at entry",
+    "Participation in the improvement programme is mandatory and supervised by the Youth Probation Service"
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "Introduction of the YCB/YPS system (2019 reform)",
+     "Experience of the YCB proceedings as punishment",
+     "Employment in municipal child welfare services",
+     "Inclusion in the interview sample"
+    ],
+    "edges": [
+     {
+      "from": "Introduction of the YCB/YPS system (2019 reform)",
+      "to": "Experience of the YCB proceedings as punishment",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "Employment in municipal child welfare services",
+      "to": "Inclusion in the interview sample",
+      "kind": "selection_on",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 14,
+      "sha256_16": "a5494f531f2521bd",
+      "n_chars": 128
+     },
+     {
+      "page": 5,
+      "sha256_16": "26c3ccad565bdce9",
+      "n_chars": 111
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The evidence is case managers' second-hand reports of children's and parents' experiences; no children or parents were interviewed.",
+    "The finding is qualitative: no frequency, share or test is attached to it."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 1,
+     "sha256_16": "9267352b1bc8371e",
+     "n_chars": 114
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 5,
+     "sha256_16": "26c3ccad565bdce9",
+     "n_chars": 111
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 14,
+     "sha256_16": "741f2259a397eb16",
+     "n_chars": 202
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 14,
+     "sha256_16": "a5494f531f2521bd",
+     "n_chars": 128
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 2,
+     "sha256_16": "c343550c8958af0e",
+     "n_chars": 146
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 14,
+     "sha256_16": "4d12c6bcf268ab8b",
+     "n_chars": 207
+    },
+    {
+     "id": "es1",
+     "kind": "quote",
+     "page": 14,
+     "sha256_16": "290d9d2c6cbb7b12",
+     "n_chars": 184
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "sha256_16": "100cc79c47c6bf3f",
+     "n_chars": 73
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "sha256_16": "392320c0325acc1d",
+     "n_chars": 63
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Policy makers and practitioners implementing new crime prevention strategies to juveniles, including the Swedish discussion of a system based on the Danish model",
+     "boundary_conditions": [
+      "The implications are drawn from the Danish system of Youth Crime Boards and a Youth Probation Service added on top of an existing child welfare system"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "es1"
+    ],
+    "confidence": "high"
+   },
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Storgaard, 2020; 2022",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e6"
+     ],
+     "as_stated": "Within the new system, the delineation between criminal and child welfare cases has become indistinct (Storgaard, 2020; 2022)"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 14,
+    "text": "They find that the YCB meetings, held in court buildings, and the adjudications and supervision are often perceived as punitive.",
+    "sha256_16": "a5494f531f2521bd",
+    "n_chars": 128
+   }
+  },
+  {
+   "claim_id": "dk_W4388046637_c12",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The number of violent YCB offences committed by 10-17-year-olds and registered by the police rose from about 3300 a year in 2017-2018 to 3884 in 2019 and 4188 in 2020, and then fell to 3382 in 2021.",
+   "treatment": {
+    "label": "Calendar year, 2017-2021 (the reform took effect in 2019)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Year in which the offence was reported to the police",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "2017-2021",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Number of violent YCB offences committed by 10-17-year-olds reported to the police per year",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Own calculations of police records of violent YCB offences",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Offences in the category 'violent YCB offences', which includes all types of violent crimes as well as robbery, extortion, sexual offences (sexual assault, rape), and aggravated arson, committed by 10-17-year-olds and reported to the police",
+     "evidence": [
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Annual counts, 2017-2021",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "nonmonotonic",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"This number increased to 3900 in 2019 and 4200 in 2020, and then dropped to 3382 in 2021\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 3279,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Juveniles aged 10-17 in Denmark committing violent YCB offences",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "2017-2021",
+    "formal_query": null,
+    "horizon": {
+     "from": -2,
+     "to": 2,
+     "unit": "years",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "All violent YCB offences committed by 10-17-year-olds and reported to the police, 2017-2021",
+    "birth_cohorts": null,
+    "ages": "10-17",
+    "sex": "all",
+    "period": "2017-2021",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "single years of age 10 to 17"
+    ],
+    "selection": "Offence counts restricted to the category 'violent YCB offences'; cases in the category 'serious and repeated offending' are screened by the police and could not be included",
+    "period_range": {
+     "from": 2017,
+     "to": 2021
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "None: a time series of registered offences spanning the 2019 reform, reported as background for the referral figures",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Police registration practice for violent offences by 10-17-year-olds is stable across 2017-2021",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The counts cover only the category 'violent YCB offences': cases in the category 'serious and repeated offending' are subject to police screening and could not be included in the reporting",
+      "stated_or_implicit": "stated",
+      "supported_by": "Footnote 3 (p. 6) states the exclusion",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+         "to": "Inclusion in the reported offence counts",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Descriptive tabulation of police records; no model estimated",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Annual counts of reported violent YCB offences by age, 2017-2021",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "3242 (2017), 3279 (2018), 3884 (2019), 4188 (2020) and 3382 (2021) reported violent YCB offences",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 1, row 'Total', columns 2017-2021 (p. 7); described in the text on p. 6",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "age",
+     "finding": "Table 1 shows the rise concentrated among 12-14-year-olds (e.g. 369 offences by 14-year-olds in 2018 against 619 in 2020), while counts for 17-year-olds fall from 1053 in 2018 to 757 in 2021."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Calendar year 2017-2021",
+     "Number of reported violent YCB offences by 10-17-year-olds",
+     "Offence category (violent YCB offence vs 'serious and repeated offending')",
+     "Inclusion in the reported offence counts"
+    ],
+    "edges": [
+     {
+      "from": "Offence category (violent YCB offence vs 'serious and repeated offending')",
+      "to": "Inclusion in the reported offence counts",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 6,
+      "sha256_16": "84639b6de357cfea",
+      "n_chars": 238
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper reports the series without attributing the movement to the reform or to any other cause, and no single summary statistic is printed; the point estimate is therefore left null and the 2018 total (3279) is recorded as the pre-reform baseline.",
+    "The text rounds the Table 1 totals (3884 and 4188) to 3900 and 4200."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "84639b6de357cfea",
+     "n_chars": 238
+    },
+    {
+     "id": "e2",
+     "kind": "table",
+     "exhibit": "Table 1. Number of violent offences reported to the police 2017-2021 and number of cases referred to YCBs in 2019-2021 by age",
+     "panel": null,
+     "page": 7,
+     "regression_id": null
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "d0bad5c2a1dcbc32",
+     "n_chars": 331
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 6,
+     "sha256_16": "af1e10c1f84944ce",
+     "n_chars": 151
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "sha256_16": "8362a0f78274564f",
+     "n_chars": 119
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 6,
+    "text": "In the two years leading up to the introduction of the reform in 2019, the police registered approximately 3300 YCB offences committed by juveniles. This number increased to 3900 in 2019 and 4200 in 2020, and then dropped to 3382 in 2021.",
+    "sha256_16": "84639b6de357cfea",
+    "n_chars": 238
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "1c9d1c5127a9ccacf6fba68039a2fb78e5c15e151eb45a9f1af9c082d7fb55b0",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.961327+00:00",
+  "tables_sha256": "e11730809a76cf7a66e98fc3ee4825cbc1f514976429f91a6481c1e687c99a0e",
+  "figures_sha256": "1f7643321eebf16ef84a8e818e4ea7f42f3ce7c1c9aec24147d934b5a6feed64"
+ },
+ "public_export": {
+  "anchor_quotes": 10,
+  "quotes_hashed": 79,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

@@ -1,0 +1,2932 @@
+{
+ "artid": "dk_W3093088198",
+ "paper": {
+  "title": "The association between workplace bullying and suicidal behaviour: A register-based prospective study of 98,330 participants in Denmark.",
+  "authors": [
+   "Paul Maurice Conway",
+   "Annette Erlangsen",
+   "Matias Brødsgaard Grynderup",
+   "Thomas Clausen",
+   "Jakob Bue Bjørner",
+   "Hermann Burr",
+   "Laura Francioli",
+   "Anne Helene Garde",
+   "Åse Marie Hansen",
+   "Linda Magnusson Hanson",
+   "Tage Søndergaard Kristensen",
+   "Eva Gemzøe Mikkelsen",
+   "Reiner Rugulies",
+   "Elsebeth Stenager",
+   "Sannie Vester Thorsen",
+   "Ebbe Villadsen",
+   "Annie Høgh"
+  ],
+  "year": 2020,
+  "code_data_availability": "Ethical issues section, p. 12: 'The study was approved by the Danish Data Protection Agency (RHP-2018-002 (I-Suite nr: …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "National Danish Civil Register / the Danish Civil registration system (Pedersen, 2011)",
+    "dst_code": "BEF",
+    "years": null,
+    "role": "controls (sex, age, living status) and linkage",
+    "variables_mentioned": [
+     "sex (dichotomous: men/women)",
+     "age (continuous)",
+     "living status (unmarried; married or cohabiting or registered partnership; divorced or termination of registered partnership; widow(er) or surviving partner of a registered partnership)",
+     "unique personal ID number"
+    ],
+    "year_range": {
+     "from": null,
+     "to": null
+    }
+   },
+   {
+    "name_in_paper": "National Patient Register (Lynge et al., 2011)",
+    "dst_code": "LPR",
+    "years": "follow-up until 31 December 2016",
+    "role": "outcome (suicide attempt: somatic hospital contacts, ICD-10 X60-X84, or reason for contact listed as suicide attempt)",
+    "variables_mentioned": [
+     "main or sub-diagnosis (ICD-10: X60-X84)",
+     "reason for contact",
+     "type of hospital contact (emergency department, inpatient, outpatient)"
+    ],
+    "year_range": {
+     "from": null,
+     "to": 2016
+    }
+   },
+   {
+    "name_in_paper": "Psychiatric Central Research Register (Mors et al., 2011)",
+    "dst_code": "PSYK",
+    "years": "psychiatric morbidity from 1968; outcome follow-up until 31 December 2016",
+    "role": "outcome (suicide attempt: psychiatric hospital contacts) and control (previous history of psychiatric morbidity)",
+    "variables_mentioned": [
+     "any psychiatric diagnosis (ICD-8 codes 290-316 or ICD-10 codes F00-F99)",
+     "main or sub-diagnosis (ICD-10: X60-X84)"
+    ],
+    "year_range": {
+     "from": 1968,
+     "to": 2016
+    }
+   },
+   {
+    "name_in_paper": "Danish Registry of Causes of Death (Helweg-Larsen, 2011)",
+    "dst_code": null,
+    "years": "until 31 December 2016, the latest year data on causes of death are available for the study",
+    "role": "outcome (death by suicide, ICD-10 X60-X84)",
+    "variables_mentioned": [
+     "cause of death (ICD-10 codes X60-X84)",
+     "date of death"
+    ],
+    "year_range": {
+     "from": null,
+     "to": 2016
+    }
+   },
+   {
+    "name_in_paper": "Statistic Denmarks IDA database",
+    "dst_code": "IDA",
+    "years": null,
+    "role": "control (socio-economic status)",
+    "variables_mentioned": [
+     "socio-economic status (leaders or employed in a job requiring skills on the highest level; mid-level; basic level; student/other)"
+    ],
+    "year_range": {
+     "from": null,
+     "to": null
+    }
+   },
+   {
+    "name_in_paper": "register information on psychotropic drug prescriptions (the register is not named; ATC codes N05A, N05B, N05C, N06A, N06B)",
+    "dst_code": null,
+    "years": "the last year prior to participating in the survey",
+    "role": "control in a planned sensitivity analysis",
+    "variables_mentioned": [
+     "antipsychotics [N05A]",
+     "anxiolytics [N05B]",
+     "anxiolytics, hypnotics and sedatives [N05C]",
+     "antidepressants [N06A]",
+     "psychostimulants, agents used for ADHD and nootropics [N06B]"
+    ],
+    "year_range": {
+     "from": null,
+     "to": null
+    }
+   },
+   {
+    "name_in_paper": "Pooled dataset of nine Danish questionnaire-based occupational health and safety surveys, 2004-2014, 15 waves (DWECS05, DWECS10, COPSOQ II, PRISME07, SATH, WBH06, WBH08, SOSU I, SOSU II, SOSU III, SOSU-U, DANES, WEHD12, WEHD14), pooled at the National Research Centre for the Working Environment",
+    "dst_code": null,
+    "years": "2004-2014",
+    "role": "sample frame and treatment (self-reported workplace bullying)",
+    "variables_mentioned": [
+     "self-reported exposure to workplace bullying (harmonised dichotomous item)"
+    ],
+    "year_range": {
+     "from": 2004,
+     "to": 2014
+    }
+   }
+  ],
+  "linkages": [
+   "The pooled survey dataset is linked to national register data at the individual level using the unique personal ID numbers assigned upon birth or migration into the country (Erlangsen and Fedyszyn, 2015).",
+   "Participants who took part in several of the nine surveys are matched across surveys and included only at the first survey in which they provided information about self-reported bullying."
+  ],
+  "sample": {
+   "universe": "Persons employed in different occupational groups in the private and public sectors in Denmark who responded to one of nine Danish questionnaire-based occupational health and safety surveys fielded 2004-2014 (15 waves).",
+   "unit_of_observation": "Individual participant (one observation per person, taken from the first survey in which they reported on workplace bullying), followed in the registers until the first suicidal event, or 31 December 2016.",
+   "selection_rules": [
+    "Original pooled dataset: 139,575 observations from 105,455 unique participants",
+    "Exclude participants with missing values on exposure to workplace bullying (5,945): 130,914 observations / 99,510 participants",
+    "Exclude participants with missing values on sex, age, living status, and socio-economic status (247): 130,616 observations / 99,263 participants",
+    "Exclude migrated participants, i.e. those who had already migrated out of the country when the completed questionnaire was received (3): 130,555 observations / 99,260 participants",
+    "Exclude participants who already participated in an earlier survey (keep only the first survey with bullying information): 99,260 observations / 99,260 participants",
+    "Exclude participants with previous suicide attempts (930): 98,330 observations / 98,330 participants"
+   ],
+   "period": "Surveys 2004-2014 (15 waves); register follow-up until 31 December 2016; average follow-up 7.3 years, range 1 day to 12.1 years",
+   "n_observations": "98,330 (one observation per participant; the original pooled dataset holds 139,575 observations)",
+   "n_individuals": "98,330 (64% women, n=62,582)"
+  },
+  "construction_notes": [
+   "The paper is a STUDY PROTOCOL, published before the analyses were performed: 'Participant inclusion criteria, actual participants, exposure and outcome measures, statistical models, and power analyses are described in the present study protocol, which we publish here before the analyses are performed.' (p. 4). It reports no estimate of any association; Table 3 on p. 10 is an empty ghost table and the abstract states the results will be reported in a later manuscript.",
+   "Workplace bullying items were harmonised across the nine surveys into one dichotomous variable: 1=0 'Not exposed to workplace bullying' (reference); response options 2 to 5 ('now and then', 'monthly', 'weekly', 'daily') = 1 'Exposed to workplace bullying'. The retrospective exposure period is 12 months in all surveys except WBH06 and WBH08 (6 months); SATH II, DWECS05 and DWECS10 used a dichotomous bullied/not item (Table 3, p. 7).",
+   "Time of exposure is the date the survey questionnaire was filled in; where that is unknown, exposed participants are considered exposed from the date the questionnaire was sent out.",
+   "Follow-up for each participant starts the day after workplace bullying was assessed and runs until 31 December 2016; only the first episode of either suicide attempt or death by suicide counts, after which the participant is censored and not considered at risk of repeat events.",
+   "Previous history of psychiatric morbidity is any psychiatric diagnosis registered from 1968 to 365 days prior to filling in the baseline questionnaire (ICD-8 290-316 or ICD-10 F00-F99), dichotomous. Diagnoses in the 12 months before baseline are deliberately excluded to avoid over-adjustment, because mental health problems may lie on the causal pathway from workplace bullying to suicide.",
+   "Observed quantities used for the power calculation (p. 11): 167 suicide attempts and 41 deaths by suicide during follow-up, 10,260 participants (10%) reporting workplace bullying, average follow-up 7.3 years. The power was computed with the log-rank test; the protocol states 98,336 participants here, against 98,330 everywhere else.",
+   "Analyses are to be run in STATA 16.1 with robust variance clusters based on the survey waves.",
+   "The protocol numbers two different tables 'Table 3': the survey-item overview on p. 7 and the ghost table for the main results on p. 10."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W3093088198_c1",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The protocol states, and plans to test with a Cox proportional hazards model, the hypothesis that employees exposed to workplace bullying at baseline have a higher hazard of any suicidal behaviour (suicide attempt or death by suicide) than employees not exposed; no estimate is reported, because the analyses had not been performed when the protocol was published.",
+   "treatment": {
+    "label": "Exposure to workplace bullying at baseline (self-reported, dichotomous: exposed vs. not exposed)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e10",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Self-reported exposure to workplace bullying, measured retrospectively in the baseline questionnaire. In most surveys the item was \"Have you been subjected to bullying at work within the past 12 months?\" with five response options (1 = never, 2 = now and then, 3 = monthly, 4 = weekly, 5 = daily); WBH06 and WBH08 used a 6-month instead of a 12-month recall period, and SATH II, DWECS05 and DWECS10 used a dichotomous bullied/not item. The items were harmonised across surveys into one dichotomous variable: 1=0 'Not exposed to workplace bullying' (reference); 2 to 5=1 'Exposed to workplace bullying'. 10,260 participants (10%) reported workplace bullying. Not a register variable.",
+     "evidence": [
+      "e10",
+      "e9",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured at baseline, i.e. in the first survey in which the participant provided information on self-reported bullying; participants who took part in multiple surveys are included only at that first survey. Time of exposure is the date the questionnaire was filled in, or, where that is unknown, the date the questionnaire was sent out. Surveys were fielded 2004-2014 (15 waves).",
+     "evidence": [
+      "e10",
+      "e24",
+      "e20"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "National Patient Register and Psychiatric Central Research Register (suicide attempt: ICD-10 X60-X84, or reason for contact listed as suicide attempt); Danish Registry of Causes of Death (death by suicide: ICD-10 X60-X84). No register variable names are given.",
+     "evidence": [
+      "e11",
+      "e12",
+      "e13",
+      "e18"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "First event of either a hospital contact (emergency department, inpatient or outpatient, somatic or psychiatric) recorded with suicide attempt as main or sub-diagnosis (ICD-10 X60-X84) or with the reason for contact listed as suicide attempt, or a death registered with ICD-10 X60-X84 as cause. Any person recorded with either event counts as having had a suicidal behaviour; only the first episode is counted and the participant is then censored, so repeat events are excluded from the main analysis.",
+     "evidence": [
+      "e13",
+      "e11",
+      "e12",
+      "e23",
+      "e22"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured in the registers from the day after workplace bullying was assessed at baseline until 31 December 2016; participants were followed for an average of 7.3 years, with a range of 1 day to 12.1 years.",
+     "evidence": [
+      "e14",
+      "e8"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e35",
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e35",
+       "e3",
+       "e32",
+       "e19",
+       "e34"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e35",
+       "e32"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "hazard ratio (exposed to workplace bullying vs. not exposed, reference 1.00), with a 95% confidence interval",
+      "evidence": [
+       "e25",
+       "e26",
+       "e32"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "No effect size is reported. The only magnitude the protocol prints for this pair is a minimum detectable effect from a log-rank power calculation: an 80% chance of detecting a hazard ratio of 1.67 for this outcome (pp. 2 and 11), with the power curve plotted in Figure 1 (p. 11). That is a design quantity, not an estimate of the association.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e36",
+       "e4",
+       "e32"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e37"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "hazard_ratio",
+    "target_population": "Employees in Denmark who responded to one of the nine pooled occupational health and safety surveys 2004-2014, answered the workplace bullying item, had complete information on sex, age, living status and socio-economic status, had not emigrated before completing the questionnaire and had no previous suicide attempt.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "From the day after the baseline bullying measurement until 31 December 2016; average follow-up 7.3 years, range 1 day to 12.1 years.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 12.1,
+     "unit": "years",
+     "kind": "cumulative"
+    }
+   },
+   "population": {
+    "description": "98,330 participants (64% women, n=62,582) from a pooled dataset of nine Danish questionnaire-based occupational health and safety surveys fielded 2004-2014 (15 waves), covering persons employed in different occupational groups in both the private and public sectors, linked to national registers.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "Surveys 2004-2014; register follow-up until 31 December 2016",
+    "period_range": {
+     "from": 2004,
+     "to": 2016
+    },
+    "region": "Denmark",
+    "subgroups_defined": [
+     "sex (women; men)",
+     "age (30 or younger; 31 or older)",
+     "socioeconomic status (middle/high; low)"
+    ],
+    "selection": "Survey respondents (employed persons) in nine occupational health and safety surveys; from an original pooled dataset of 105,455 unique participants / 139,575 observations the protocol excludes 5,945 with missing bullying exposure, 247 with missing sex, age, living status or socio-economic status, three who had already emigrated, repeat participations (only the first survey with bullying information is kept) and 930 with previous suicide attempts, leaving 98,330 participants."
+   },
+   "identification": {
+    "strategy": "selection_on_observables",
+    "source_of_variation": "No exogenous variation is used: this is an observational prospective cohort. The contrast is between-person differences in self-reported exposure to workplace bullying at baseline, with register-based adjustment for sex, age, living status, socio-economic status and previous history of psychiatric morbidity, and with robust variance clustered on survey wave.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability / no unmeasured confounding: the association between self-reported workplace bullying at baseline and later suicidal behaviour is unconfounded once sex, age, living status, socio-economic status and previous history of psychiatric morbidity are adjusted for. The protocol never states this as an assumption, but it motivates the adjustment for previous psychiatric morbidity exactly as a common cause of both exposure and outcome.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No balance table, no negative control and no sensitivity analysis for unmeasured confounding is proposed; the only support offered is the choice of register-based covariates (citing Hawton and van Heeringen, 2009) and the explicit argument for adjusting for previous psychiatric morbidity.",
+      "evidence": [
+       "e15",
+       "e16",
+       "e28",
+       "e38"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "workplace bullying exposure (baseline, self-reported)"
+       ],
+       "rhs": [
+        "Any suicidal behaviour (suicide attempt and death by suicide combined)"
+       ],
+       "given": [
+        "sex",
+        "age",
+        "living status",
+        "socio-economic status",
+        "previous history of psychiatric morbidity"
+       ],
+       "implies_edges": [
+        {
+         "from": "sex",
+         "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "age",
+         "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "living status",
+         "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "socio-economic status",
+         "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "previous history of psychiatric morbidity",
+         "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Proportional hazards: the hazard ratio for exposure to workplace bullying is constant over follow-up, as required by the Cox model. The protocol states that this will be checked before the analyses and that the models will be adjusted if it is violated.",
+      "stated_or_implicit": "stated",
+      "supported_by": "A pre-analysis check of the proportional hazards assumption is promised (p. 11); no test or result is reported in the protocol.",
+      "evidence": [
+       "e5",
+       "e25"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The analysis sample is conditioned on survey participation, on answering the workplace bullying item, on complete information on sex, age, living status and socio-economic status, on not having emigrated before completing the questionnaire, and on having no previous suicide attempt (930 participants excluded); participants in several surveys enter only once.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 (p. 6) reports the number of participants remaining after each exclusion step, in total and by survey; the protocol does not discuss whether the conditioning induces selection bias.",
+      "evidence": [
+       "e17",
+       "e27",
+       "e7",
+       "e30",
+       "e24"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "previous suicide attempt before baseline",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        },
+        {
+         "from": "survey participation and complete covariate information",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Measurement comparability: the harmonised dichotomous item measures the same exposure across the nine surveys, although the underlying items differ (five-point frequency scale vs. a dichotomous bullied/not item) and the retrospective exposure period is 12 months in most surveys but 6 months in WBH06 and WBH08.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Table 3 (p. 7) documents the retrospective exposure period and response options of each survey; no measurement-invariance test or sensitivity analysis by survey is proposed.",
+      "evidence": [
+       "e9",
+       "e10",
+       "e31"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Temporality: exposure precedes outcome. Follow-up for each participant starts the day after workplace bullying was assessed and participants with a previous suicide attempt are excluded, so that events counted cannot predate the exposure measurement.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The design: follow-up starts the day after the bullying measurement (p. 8) and previous suicide attempters are excluded (p. 5). Exposure is nevertheless reported retrospectively for the 6 or 12 months before baseline, which the protocol does not discuss.",
+      "evidence": [
+       "e14",
+       "e17"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a6",
+      "assumption": "Non-informative censoring over the follow-up window: participants are followed in the registers until the first event or 31 December 2016, and censoring (including emigration or death from other causes) is assumed unrelated to the risk of the event given the covariates. The protocol does not discuss competing risks or censoring mechanisms.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e8",
+       "e23",
+       "e39"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Confounding by previous psychiatric morbidity: individuals with previous psychiatric disorders may have a higher risk both of being exposed to bullying and of engaging in suicidal behaviour (p. 9)",
+     "Over-adjustment: psychiatric diagnoses in the 12 months before baseline are deliberately NOT included, because mental health problems may be part of the causal pathway from workplace bullying to suicide (p. 9)",
+     "Violation of the Cox proportional hazards assumption, to be checked before the analyses (p. 11)",
+     "Unequal weighting of participants who took part in several survey waves, who had a higher probability of reporting exposure to workplace bullying (p. 4-5)",
+     "Low statistical power for the rarer outcomes: an 80% chance of detection requires a hazard ratio of 1.74 for suicide attempt and 2.54 for death by suicide (p. 11)"
+    ],
+    "robustness_checks": [
+     "Sensitivity analysis 1 (planned): suicide attempt and death by suicide considered separately in the three models (p. 10)",
+     "Sensitivity analysis 2 (planned): association with any suicidal behaviour stratified by age (<=30; >=31), sex and socioeconomic status (middle/high vs. low) (p. 10); Table 4 (p. 12) gives the hazard ratio each stratum would need for 80% power",
+     "Sensitivity analysis 3 (planned): association with any suicidal behaviour additionally adjusted for previous history of psychotropic drug prescription in the year before the survey (ATC N05A, N05B, N05C, N06A, N06B) (p. 10)",
+     "Pre-analysis check of the Cox proportional hazards assumption, with the models to be adjusted if it is violated (p. 11)",
+     "Participants in multiple surveys are included only at the first survey in which they reported on bullying, to give equal weight to participants (p. 4)",
+     "No result of any of these checks is reported: the protocol is published before the analyses are performed (p. 4)"
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Cox proportional hazards model (multivariate), estimating hazard ratios with 95% confidence intervals; robust variance with clusters based on survey wave; STATA 16.1",
+     "evidence": [
+      "e25",
+      "e2",
+      "e26"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Three consecutively adjusted Cox models with the one outcome: (1) crude, unadjusted; (2) Model 1, adjusted for sex, age, living status and socio-economic status; (3) Model 2, Model 1 additionally adjusted for previous history of psychiatric morbidity. No estimating equation is printed. The results are to be entered in the ghost Table 3 (p. 10), which is empty in the protocol; this claim points at its 'Model 2 HR (95% CI)' column, the fully adjusted main specification.",
+    "fixed_effects": [],
+    "controls": [
+     "sex (dichotomous: men/women)",
+     "age (continuous)",
+     "living status (categorical: unmarried; married or cohabiting or registered partnership; divorced or termination of registered partnership; widow(er) or surviving partner of a registered partnership)",
+     "socio-economic status (categorical: leaders or employed in a job requiring skills on the highest level; mid-level; basic level; student/other)",
+     "previous history of psychiatric morbidity (dichotomous, any psychiatric diagnosis 1968 to 365 days before baseline; ICD-8 290-316 or ICD-10 F00-F99)"
+    ],
+    "clustering": "Robust clusters based on the survey waves",
+    "weights": null,
+    "sample_n": {
+     "value": "98,330 participants (10,260, i.e. 10%, exposed to workplace bullying)",
+     "evidence": [
+      "e7",
+      "e4",
+      "e29"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 3 (ghost table), p. 10, column 'Model 2 HR (95% CI)', row 'Exposure to bullying at baseline: Yes' -- the cell is empty in the protocol; only the reference row (1.00) is printed.",
+     "evidence": [
+      "e32",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table_id": "dk_W3093088198::T3::_::CModel2",
+    "adjustment_set": [
+     {
+      "label": "sex",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "age",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "living status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "socio-economic status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "previous history of psychiatric morbidity",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ]
+   },
+   "mediators_claimed": [
+    "Mental health problems / onset of mental health problems: the protocol states that exposure to workplace bullying is a risk factor for the onset of mental health problems and that these 'may be a part of the causal pathway from workplace bullying to suicide', which is why psychiatric diagnoses in the 12 months before baseline are deliberately not adjusted for (p. 9). The mediation is asserted, not tested."
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "Sex (women vs. men)",
+     "finding": "Planned sensitivity analysis, not estimated in the protocol. Table 4 (p. 12) reports only the hazard ratio each stratum would need for 80% power: 1.84 for women, 2.17 for men."
+    },
+    {
+     "dimension": "Age (30 or younger vs. 31 or older)",
+     "finding": "Planned sensitivity analysis, not estimated in the protocol. Table 4 (p. 12) reports only the hazard ratio each stratum would need for 80% power: 2.70 for those 30 or younger, 1.74 for those 31 or older."
+    },
+    {
+     "dimension": "Socioeconomic status (middle/high vs. low)",
+     "finding": "Planned sensitivity analysis, not estimated in the protocol. Table 4 (p. 12) reports only the hazard ratio each stratum would need for 80% power: 2.35 for middle/high, 1.93 for low."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "workplace bullying exposure (baseline, self-reported)",
+     "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+     "sex",
+     "age",
+     "living status",
+     "socio-economic status",
+     "previous history of psychiatric morbidity",
+     "previous suicide attempt before baseline",
+     "survey participation and complete covariate information",
+     "sample inclusion",
+     "mental health problems (onset of, after baseline)"
+    ],
+    "edges": [
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": [
+       "sex",
+       "age",
+       "living status",
+       "socio-economic status",
+       "previous history of psychiatric morbidity"
+      ]
+     },
+     {
+      "from": "sex",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "age",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "living status",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "socio-economic status",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous history of psychiatric morbidity",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous suicide attempt before baseline",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "survey participation and complete covariate information",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "mental health problems (onset of, after baseline)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "mental health problems (onset of, after baseline)",
+      "to": "Any suicidal behaviour (suicide attempt and death by suicide combined)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 4,
+      "sha256_16": "b344ab07cf938141",
+      "n_chars": 243
+     },
+     {
+      "page": 10,
+      "sha256_16": "244afde1b47353e3",
+      "n_chars": 52
+     },
+     {
+      "page": 9,
+      "sha256_16": "7a3e2d6d2e7192db",
+      "n_chars": 133
+     },
+     {
+      "page": 4,
+      "sha256_16": "3128d36d43a8727d",
+      "n_chars": 224
+     },
+     {
+      "page": 11,
+      "sha256_16": "aed062a020c15e32",
+      "n_chars": 231
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper is a study protocol: it reports NO estimate of this association. Table 3 (p. 10) is an empty ghost table. point_estimate, se_or_ci, se, ci_low, ci_high, p_value, baseline_mean and outcome_sd are therefore all null with absent records, and statistically_significant is null.",
+    "relationship.sign is recorded as 'positive' because the schema's sign enum has no value for 'hypothesised but not yet estimated'. It transcribes the DIRECTION OF THE PROTOCOL'S STATED HYPOTHESIS (higher risk among the exposed, p. 4), not an estimated sign; confidence is therefore low and the graph edge is causal_assumed, not causal_tested.",
+    "magnitude.interpretation records the minimum detectable effect (hazard ratio of 1.67 for 80% power, pp. 2 and 11). This is a design quantity computed with a log-rank power calculation from the observed event counts; it is NOT an effect estimate and must not be read as one.",
+    "The protocol reports the analysis sample as 98,330 participants (abstract, p. 2 and p. 5) but as '98,336 participants' in the statistical power section (p. 11); the discrepancy is in the paper.",
+    "The document prints no year. paper.year = 2020 is taken from the PDF's creation date (D:20201009), and the most recent references are from 2020.",
+    "The protocol numbers two different tables 'Table 3' (the survey item overview on p. 7 and the ghost table on p. 10).",
+    "The digest lists three columns of the ghost table (Crude, Model 1, Model 2) as separate regressions. They are three adjustment levels of one and the same planned estimate and all three cells are empty, so this claim is recorded once and points at the fully adjusted column, dk_W3093088198::T3::_::CModel2.",
+    "data.registers: the Danish Registry of Causes of Death is left with dst_code null because the canonical code could not be verified from the material in this pack; the other codes (BEF, LPR, PSYK, IDA) follow the registers the paper names.",
+    "The outcome's polarity is recorded as higher_is_less on the reading used in the schema's own example (mortality measures health, higher_is_less). If the concept node resolved later is 'suicidal behaviour' rather than health, the polarity would be higher_is_more."
+   ],
+   "evidence": [
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e1",
+     "sha256_16": "b344ab07cf938141",
+     "n_chars": 243
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e2",
+     "sha256_16": "f27b6b0b25dfddd4",
+     "n_chars": 110
+    },
+    {
+     "kind": "quote",
+     "page": 10,
+     "id": "e3",
+     "sha256_16": "244afde1b47353e3",
+     "n_chars": 52
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e4",
+     "sha256_16": "c45375db2db71446",
+     "n_chars": 214
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e5",
+     "sha256_16": "fbbe3f51a074d6ca",
+     "n_chars": 183
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e6",
+     "sha256_16": "fe42569ee6d2b097",
+     "n_chars": 234
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e7",
+     "sha256_16": "53865c531a70175d",
+     "n_chars": 162
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e8",
+     "sha256_16": "91b94f75dd039462",
+     "n_chars": 157
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e9",
+     "sha256_16": "c32dc5c57aabd270",
+     "n_chars": 203
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e10",
+     "sha256_16": "7a27bce9e78a5f95",
+     "n_chars": 189
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e11",
+     "sha256_16": "d40f1b794409e877",
+     "n_chars": 205
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e12",
+     "sha256_16": "638d97680fbe7863",
+     "n_chars": 155
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e13",
+     "sha256_16": "78dd13a3d2ffb414",
+     "n_chars": 100
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e14",
+     "sha256_16": "a70b98651bee0c9e",
+     "n_chars": 172
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e15",
+     "sha256_16": "aa2214ff06516c9f",
+     "n_chars": 174
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e16",
+     "sha256_16": "6f19aeb9ebad9c91",
+     "n_chars": 300
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e17",
+     "sha256_16": "f8458f950042ab2f",
+     "n_chars": 81
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e18",
+     "sha256_16": "e03c8b00a72685f6",
+     "n_chars": 340
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e19",
+     "sha256_16": "242ef492e92874fc",
+     "n_chars": 120
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e20",
+     "sha256_16": "5338eaddbb65ea77",
+     "n_chars": 186
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e21",
+     "sha256_16": "e6f37dcf7eb2b68a",
+     "n_chars": 153
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e22",
+     "sha256_16": "e22f14335b4dbc43",
+     "n_chars": 194
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e23",
+     "sha256_16": "463b5f8670739dbc",
+     "n_chars": 191
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e24",
+     "sha256_16": "c0ca1a66d5167522",
+     "n_chars": 139
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e25",
+     "sha256_16": "7a3e2d6d2e7192db",
+     "n_chars": 133
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e26",
+     "sha256_16": "c93b710d20fa0f16",
+     "n_chars": 380
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e27",
+     "sha256_16": "0256d69d462a1279",
+     "n_chars": 111
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e28",
+     "sha256_16": "103ba34f08121ab3",
+     "n_chars": 331
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e29",
+     "sha256_16": "ddfeabf8cc70d45d",
+     "n_chars": 228
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 6,
+     "regression_id": null,
+     "id": "e30",
+     "sha256_16": "3bae6093cdc8ee67",
+     "n_chars": 128
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (p. 7; the protocol numbers two different tables 'Table 3')",
+     "panel": null,
+     "page": 7,
+     "regression_id": null,
+     "id": "e31",
+     "sha256_16": "be9c7f681e3790e5",
+     "n_chars": 142
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "panel": null,
+     "page": 10,
+     "regression_id": "dk_W3093088198::T3::_::CModel2",
+     "id": "e32",
+     "sha256_16": "ba00ca20a1b0fe38",
+     "n_chars": 239
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 4",
+     "panel": null,
+     "page": 12,
+     "regression_id": null,
+     "id": "e33",
+     "sha256_16": "5d49f5c426cb51e8",
+     "n_chars": 215
+    },
+    {
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A",
+     "page": 11,
+     "figure_id": "dk_W3093088198::F1",
+     "annotation": "Figure 1. Statistical power for detecting a prospective association between workplace bullying and suicide attempt, death by suicide, and any suicidal behaviour (suicide attempt and death by suicide combined) as a function of the Hazard Ratios. [plot axes, verbatim: y-axis 'POWER', ticks 0 to 1; x-axis 'HAZARD RATIO', ticks 1 to 3,4; legend: 'Death by suicide', 'Suicide attempt', 'Total suicidal events'. No numeric value is printed on any curve.]",
+     "id": "e34"
+    },
+    {
+     "kind": "absent",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "page": 10,
+     "id": "e35",
+     "sha256_16": "519d39fd9a6d68e9",
+     "n_chars": 328
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e36",
+     "sha256_16": "c89fed3d25249692",
+     "n_chars": 288
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e37",
+     "sha256_16": "6525b8b7ce42b34d",
+     "n_chars": 149
+    },
+    {
+     "kind": "absent",
+     "page": 9,
+     "id": "e38",
+     "sha256_16": "27c6c974c1f8a280",
+     "n_chars": 187
+    },
+    {
+     "kind": "absent",
+     "page": 8,
+     "id": "e39",
+     "sha256_16": "f2fd3d066213677f",
+     "n_chars": 154
+    },
+    {
+     "kind": "absent",
+     "page": 2,
+     "id": "e40",
+     "sha256_16": "b5742983c197bc39",
+     "n_chars": 254
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e41",
+     "sha256_16": "eae830290b6be060",
+     "n_chars": 162
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "Interpersonal theory of suicide (IPTS; Van Orden et al., 2010), invoked for the plausibility of a link between workplace bullying and suicidal behaviour (p. 3)"
+   ],
+   "preregistration": {
+    "status": "preregistered",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Leach et al., 2016",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "Despite these indications, there is to date no available empirical evidence linking workplace bullying to actual suicidal behaviour (Leach et al., 2016).",
+     "evidence": [
+      "e21"
+     ]
+    },
+    {
+     "citation": "Nielsen et al., 2015",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "To our knowledge, there is no previous studies linking workplace bullying to actual suicidal behaviour, but a study of the association between workplace bullying and suicidal ideation found an odds ratio of 2.05 (Nielsen et al., 2015)",
+     "evidence": [
+      "e6"
+     ]
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 4,
+    "text": "In the main analysis, we will test the hypothesis that individuals exposed to workplace bullying have a higher risk of suicidal behaviour (suicide attempt and death by suicide combined) than those individuals not exposed to workplace …",
+    "sha256_16": "b344ab07cf938141",
+    "n_chars": 243
+   }
+  },
+  {
+   "claim_id": "dk_W3093088198_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The protocol plans a sensitivity analysis estimating the prospective association between baseline workplace bullying and register-based suicide attempt as a separate outcome, in the same three Cox models; no direction is stated for this outcome and no estimate is reported.",
+   "treatment": {
+    "label": "Exposure to workplace bullying at baseline (self-reported, dichotomous: exposed vs. not exposed)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e11",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Self-reported exposure to workplace bullying, measured retrospectively in the baseline questionnaire. In most surveys the item was \"Have you been subjected to bullying at work within the past 12 months?\" with five response options (1 = never, 2 = now and then, 3 = monthly, 4 = weekly, 5 = daily); WBH06 and WBH08 used a 6-month instead of a 12-month recall period, and SATH II, DWECS05 and DWECS10 used a dichotomous bullied/not item. The items were harmonised across surveys into one dichotomous variable: 1=0 'Not exposed to workplace bullying' (reference); 2 to 5=1 'Exposed to workplace bullying'. 10,260 participants (10%) reported workplace bullying. Not a register variable.",
+     "evidence": [
+      "e11",
+      "e10",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured at baseline, i.e. in the first survey in which the participant provided information on self-reported bullying; participants who took part in multiple surveys are included only at that first survey. Time of exposure is the date the questionnaire was filled in, or, where that is unknown, the date the questionnaire was sent out. Surveys were fielded 2004-2014 (15 waves).",
+     "evidence": [
+      "e11",
+      "e23",
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Suicide attempt",
+    "ontology_node": null,
+    "register_source": {
+     "value": "National Patient Register (somatic hospital contacts) and Psychiatric Central Research Register (psychiatric hospital contacts); ICD-10 X60-X84. No register variable names are given.",
+     "evidence": [
+      "e12",
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A hospital contact (emergency department, inpatient or outpatient) recorded with suicide attempt as main or sub-diagnosis (ICD-10 X60-X84), or where the reason for contact was listed as being suicide attempt. The first such date counts as the event and the participant is then censored, i.e. not considered at risk of repeated suicide attempts. Treated as a separate outcome only in the sensitivity analyses.",
+     "evidence": [
+      "e12",
+      "e22",
+      "e21",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured in the registers from the day after workplace bullying was assessed at baseline until 31 December 2016; participants were followed for an average of 7.3 years, with a range of 1 day to 12.1 years.",
+     "evidence": [
+      "e13",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e33",
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e33",
+       "e3",
+       "e31",
+       "e18",
+       "e32"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e33",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "hazard ratio (exposed to workplace bullying vs. not exposed, reference 1.00), with a 95% confidence interval",
+      "evidence": [
+       "e24",
+       "e25",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "No effect size is reported. The only magnitude the protocol prints for this pair is a minimum detectable effect from a log-rank power calculation: an 80% chance of detecting a hazard ratio of 1.74 for this outcome (pp. 2 and 11), with the power curve plotted in Figure 1 (p. 11). That is a design quantity, not an estimate of the association.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e34",
+       "e5",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "hazard_ratio",
+    "target_population": "Employees in Denmark who responded to one of the nine pooled occupational health and safety surveys 2004-2014, answered the workplace bullying item, had complete information on sex, age, living status and socio-economic status, had not emigrated before completing the questionnaire and had no previous suicide attempt.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "From the day after the baseline bullying measurement until 31 December 2016; average follow-up 7.3 years, range 1 day to 12.1 years.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 12.1,
+     "unit": "years",
+     "kind": "cumulative"
+    }
+   },
+   "population": {
+    "description": "98,330 participants (64% women, n=62,582) from a pooled dataset of nine Danish questionnaire-based occupational health and safety surveys fielded 2004-2014 (15 waves), covering persons employed in different occupational groups in both the private and public sectors, linked to national registers.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "Surveys 2004-2014; register follow-up until 31 December 2016",
+    "period_range": {
+     "from": 2004,
+     "to": 2016
+    },
+    "region": "Denmark",
+    "subgroups_defined": [
+     "sex (women; men)",
+     "age (30 or younger; 31 or older)",
+     "socioeconomic status (middle/high; low)"
+    ],
+    "selection": "Survey respondents (employed persons) in nine occupational health and safety surveys; from an original pooled dataset of 105,455 unique participants / 139,575 observations the protocol excludes 5,945 with missing bullying exposure, 247 with missing sex, age, living status or socio-economic status, three who had already emigrated, repeat participations (only the first survey with bullying information is kept) and 930 with previous suicide attempts, leaving 98,330 participants."
+   },
+   "identification": {
+    "strategy": "selection_on_observables",
+    "source_of_variation": "No exogenous variation is used: this is an observational prospective cohort. The contrast is between-person differences in self-reported exposure to workplace bullying at baseline, with register-based adjustment for sex, age, living status, socio-economic status and previous history of psychiatric morbidity, and with robust variance clustered on survey wave.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability / no unmeasured confounding: the association between self-reported workplace bullying at baseline and later suicidal behaviour is unconfounded once sex, age, living status, socio-economic status and previous history of psychiatric morbidity are adjusted for. The protocol never states this as an assumption, but it motivates the adjustment for previous psychiatric morbidity exactly as a common cause of both exposure and outcome.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No balance table, no negative control and no sensitivity analysis for unmeasured confounding is proposed; the only support offered is the choice of register-based covariates (citing Hawton and van Heeringen, 2009) and the explicit argument for adjusting for previous psychiatric morbidity.",
+      "evidence": [
+       "e14",
+       "e15",
+       "e27",
+       "e36"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "workplace bullying exposure (baseline, self-reported)"
+       ],
+       "rhs": [
+        "Suicide attempt"
+       ],
+       "given": [
+        "sex",
+        "age",
+        "living status",
+        "socio-economic status",
+        "previous history of psychiatric morbidity"
+       ],
+       "implies_edges": [
+        {
+         "from": "sex",
+         "to": "Suicide attempt",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "age",
+         "to": "Suicide attempt",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "living status",
+         "to": "Suicide attempt",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "socio-economic status",
+         "to": "Suicide attempt",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "previous history of psychiatric morbidity",
+         "to": "Suicide attempt",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Proportional hazards: the hazard ratio for exposure to workplace bullying is constant over follow-up, as required by the Cox model. The protocol states that this will be checked before the analyses and that the models will be adjusted if it is violated.",
+      "stated_or_implicit": "stated",
+      "supported_by": "A pre-analysis check of the proportional hazards assumption is promised (p. 11); no test or result is reported in the protocol.",
+      "evidence": [
+       "e6",
+       "e24"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The analysis sample is conditioned on survey participation, on answering the workplace bullying item, on complete information on sex, age, living status and socio-economic status, on not having emigrated before completing the questionnaire, and on having no previous suicide attempt (930 participants excluded); participants in several surveys enter only once.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 (p. 6) reports the number of participants remaining after each exclusion step, in total and by survey; the protocol does not discuss whether the conditioning induces selection bias.",
+      "evidence": [
+       "e16",
+       "e26",
+       "e8",
+       "e29",
+       "e23"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "previous suicide attempt before baseline",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        },
+        {
+         "from": "survey participation and complete covariate information",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Measurement comparability: the harmonised dichotomous item measures the same exposure across the nine surveys, although the underlying items differ (five-point frequency scale vs. a dichotomous bullied/not item) and the retrospective exposure period is 12 months in most surveys but 6 months in WBH06 and WBH08.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Table 3 (p. 7) documents the retrospective exposure period and response options of each survey; no measurement-invariance test or sensitivity analysis by survey is proposed.",
+      "evidence": [
+       "e10",
+       "e11",
+       "e30"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Temporality: exposure precedes outcome. Follow-up for each participant starts the day after workplace bullying was assessed and participants with a previous suicide attempt are excluded, so that events counted cannot predate the exposure measurement.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The design: follow-up starts the day after the bullying measurement (p. 8) and previous suicide attempters are excluded (p. 5). Exposure is nevertheless reported retrospectively for the 6 or 12 months before baseline, which the protocol does not discuss.",
+      "evidence": [
+       "e13",
+       "e16"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a6",
+      "assumption": "Non-informative censoring over the follow-up window: participants are followed in the registers until the first event or 31 December 2016, and censoring (including emigration or death from other causes) is assumed unrelated to the risk of the event given the covariates. The protocol does not discuss competing risks or censoring mechanisms.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e9",
+       "e22",
+       "e37"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Confounding by previous psychiatric morbidity: individuals with previous psychiatric disorders may have a higher risk both of being exposed to bullying and of engaging in suicidal behaviour (p. 9)",
+     "Over-adjustment: psychiatric diagnoses in the 12 months before baseline are deliberately NOT included, because mental health problems may be part of the causal pathway from workplace bullying to suicide (p. 9)",
+     "Violation of the Cox proportional hazards assumption, to be checked before the analyses (p. 11)",
+     "Unequal weighting of participants who took part in several survey waves, who had a higher probability of reporting exposure to workplace bullying (p. 4-5)",
+     "Low statistical power for the rarer outcomes: an 80% chance of detection requires a hazard ratio of 1.74 for suicide attempt and 2.54 for death by suicide (p. 11)"
+    ],
+    "robustness_checks": [
+     "Sensitivity analysis 1 (planned): suicide attempt and death by suicide considered separately in the three models (p. 10)",
+     "Sensitivity analysis 2 (planned): association with any suicidal behaviour stratified by age (<=30; >=31), sex and socioeconomic status (middle/high vs. low) (p. 10); Table 4 (p. 12) gives the hazard ratio each stratum would need for 80% power",
+     "Sensitivity analysis 3 (planned): association with any suicidal behaviour additionally adjusted for previous history of psychotropic drug prescription in the year before the survey (ATC N05A, N05B, N05C, N06A, N06B) (p. 10)",
+     "Pre-analysis check of the Cox proportional hazards assumption, with the models to be adjusted if it is violated (p. 11)",
+     "Participants in multiple surveys are included only at the first survey in which they reported on bullying, to give equal weight to participants (p. 4)",
+     "No result of any of these checks is reported: the protocol is published before the analyses are performed (p. 4)"
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Cox proportional hazards model (multivariate), estimating hazard ratios with 95% confidence intervals; robust variance with clusters based on survey wave; STATA 16.1",
+     "evidence": [
+      "e24",
+      "e2",
+      "e25"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Planned sensitivity analysis 1 (p. 10): the same three consecutively adjusted Cox models (crude; Model 1 adjusted for sex, age, living status and socio-economic status; Model 2 additionally adjusted for previous history of psychiatric morbidity) run with suicide attempt as a separate outcome. No estimating equation and no ghost table are printed for it.",
+    "fixed_effects": [],
+    "controls": [
+     "sex (dichotomous: men/women)",
+     "age (continuous)",
+     "living status (categorical: unmarried; married or cohabiting or registered partnership; divorced or termination of registered partnership; widow(er) or surviving partner of a registered partnership)",
+     "socio-economic status (categorical: leaders or employed in a job requiring skills on the highest level; mid-level; basic level; student/other)",
+     "previous history of psychiatric morbidity (dichotomous, any psychiatric diagnosis 1968 to 365 days before baseline; ICD-8 290-316 or ICD-10 F00-F99)"
+    ],
+    "clustering": "Robust clusters based on the survey waves",
+    "weights": null,
+    "sample_n": {
+     "value": "98,330 participants (10,260, i.e. 10%, exposed to workplace bullying)",
+     "evidence": [
+      "e8",
+      "e5",
+      "e28"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit: this estimate is a planned sensitivity analysis (p. 10) and the protocol prints no table for it; the ghost table on p. 10 covers only the combined outcome.",
+     "evidence": [
+      "e4",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table_id": null,
+    "adjustment_set": [
+     {
+      "label": "sex",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "age",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "living status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "socio-economic status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "previous history of psychiatric morbidity",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ]
+   },
+   "mediators_claimed": [
+    "Mental health problems / onset of mental health problems: the protocol states that exposure to workplace bullying is a risk factor for the onset of mental health problems and that these 'may be a part of the causal pathway from workplace bullying to suicide', which is why psychiatric diagnoses in the 12 months before baseline are deliberately not adjusted for (p. 9). The mediation is asserted, not tested."
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "workplace bullying exposure (baseline, self-reported)",
+     "Suicide attempt",
+     "sex",
+     "age",
+     "living status",
+     "socio-economic status",
+     "previous history of psychiatric morbidity",
+     "previous suicide attempt before baseline",
+     "survey participation and complete covariate information",
+     "sample inclusion",
+     "mental health problems (onset of, after baseline)"
+    ],
+    "edges": [
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "Suicide attempt",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": [
+       "sex",
+       "age",
+       "living status",
+       "socio-economic status",
+       "previous history of psychiatric morbidity"
+      ]
+     },
+     {
+      "from": "sex",
+      "to": "Suicide attempt",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "age",
+      "to": "Suicide attempt",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "living status",
+      "to": "Suicide attempt",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "socio-economic status",
+      "to": "Suicide attempt",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous history of psychiatric morbidity",
+      "to": "Suicide attempt",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous suicide attempt before baseline",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "survey participation and complete covariate information",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "mental health problems (onset of, after baseline)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "mental health problems (onset of, after baseline)",
+      "to": "Suicide attempt",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "068f43d3e448a2b4",
+      "n_chars": 177
+     },
+     {
+      "page": 10,
+      "sha256_16": "244afde1b47353e3",
+      "n_chars": 52
+     },
+     {
+      "page": 11,
+      "sha256_16": "aed062a020c15e32",
+      "n_chars": 231
+     },
+     {
+      "page": 4,
+      "sha256_16": "3128d36d43a8727d",
+      "n_chars": 224
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "No estimate is reported: the paper is a study protocol and this outcome appears only in the list of planned sensitivity analyses (p. 10). There is no ghost table for it.",
+    "The protocol states no directional hypothesis for suicide attempt separately; the hypothesis on p. 4 is stated for the combined outcome. sign='positive' therefore carries over the direction of the main hypothesis and is recorded with low confidence; the graph edge is causal_assumed.",
+    "magnitude.interpretation records a minimum detectable effect (hazard ratio of 1.74 for 80% power, pp. 2 and 11), not an effect estimate."
+   ],
+   "evidence": [
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e1",
+     "sha256_16": "b344ab07cf938141",
+     "n_chars": 243
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e2",
+     "sha256_16": "f27b6b0b25dfddd4",
+     "n_chars": 110
+    },
+    {
+     "kind": "quote",
+     "page": 10,
+     "id": "e3",
+     "sha256_16": "244afde1b47353e3",
+     "n_chars": 52
+    },
+    {
+     "kind": "quote",
+     "page": 10,
+     "id": "e4",
+     "sha256_16": "068f43d3e448a2b4",
+     "n_chars": 177
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e5",
+     "sha256_16": "c45375db2db71446",
+     "n_chars": 214
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e6",
+     "sha256_16": "fbbe3f51a074d6ca",
+     "n_chars": 183
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e7",
+     "sha256_16": "fe42569ee6d2b097",
+     "n_chars": 234
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e8",
+     "sha256_16": "53865c531a70175d",
+     "n_chars": 162
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e9",
+     "sha256_16": "91b94f75dd039462",
+     "n_chars": 157
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e10",
+     "sha256_16": "c32dc5c57aabd270",
+     "n_chars": 203
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e11",
+     "sha256_16": "7a27bce9e78a5f95",
+     "n_chars": 189
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e12",
+     "sha256_16": "d40f1b794409e877",
+     "n_chars": 205
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e13",
+     "sha256_16": "a70b98651bee0c9e",
+     "n_chars": 172
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e14",
+     "sha256_16": "aa2214ff06516c9f",
+     "n_chars": 174
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e15",
+     "sha256_16": "6f19aeb9ebad9c91",
+     "n_chars": 300
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e16",
+     "sha256_16": "f8458f950042ab2f",
+     "n_chars": 81
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e17",
+     "sha256_16": "e03c8b00a72685f6",
+     "n_chars": 340
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e18",
+     "sha256_16": "242ef492e92874fc",
+     "n_chars": 120
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e19",
+     "sha256_16": "5338eaddbb65ea77",
+     "n_chars": 186
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e20",
+     "sha256_16": "e6f37dcf7eb2b68a",
+     "n_chars": 153
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e21",
+     "sha256_16": "e22f14335b4dbc43",
+     "n_chars": 194
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e22",
+     "sha256_16": "463b5f8670739dbc",
+     "n_chars": 191
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e23",
+     "sha256_16": "c0ca1a66d5167522",
+     "n_chars": 139
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e24",
+     "sha256_16": "7a3e2d6d2e7192db",
+     "n_chars": 133
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e25",
+     "sha256_16": "c93b710d20fa0f16",
+     "n_chars": 380
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e26",
+     "sha256_16": "0256d69d462a1279",
+     "n_chars": 111
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e27",
+     "sha256_16": "103ba34f08121ab3",
+     "n_chars": 331
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e28",
+     "sha256_16": "ddfeabf8cc70d45d",
+     "n_chars": 228
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 6,
+     "regression_id": null,
+     "id": "e29",
+     "sha256_16": "3bae6093cdc8ee67",
+     "n_chars": 128
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (p. 7; the protocol numbers two different tables 'Table 3')",
+     "panel": null,
+     "page": 7,
+     "regression_id": null,
+     "id": "e30",
+     "sha256_16": "be9c7f681e3790e5",
+     "n_chars": 142
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "panel": null,
+     "page": 10,
+     "regression_id": null,
+     "id": "e31",
+     "sha256_16": "ba00ca20a1b0fe38",
+     "n_chars": 239
+    },
+    {
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A",
+     "page": 11,
+     "figure_id": "dk_W3093088198::F1",
+     "annotation": "Figure 1. Statistical power for detecting a prospective association between workplace bullying and suicide attempt, death by suicide, and any suicidal behaviour (suicide attempt and death by suicide combined) as a function of the Hazard Ratios. [plot axes, verbatim: y-axis 'POWER', ticks 0 to 1; x-axis 'HAZARD RATIO', ticks 1 to 3,4; legend: 'Death by suicide', 'Suicide attempt', 'Total suicidal events'. No numeric value is printed on any curve.]",
+     "id": "e32"
+    },
+    {
+     "kind": "absent",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "page": 10,
+     "id": "e33",
+     "sha256_16": "519d39fd9a6d68e9",
+     "n_chars": 328
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e34",
+     "sha256_16": "c89fed3d25249692",
+     "n_chars": 288
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e35",
+     "sha256_16": "6525b8b7ce42b34d",
+     "n_chars": 149
+    },
+    {
+     "kind": "absent",
+     "page": 9,
+     "id": "e36",
+     "sha256_16": "27c6c974c1f8a280",
+     "n_chars": 187
+    },
+    {
+     "kind": "absent",
+     "page": 8,
+     "id": "e37",
+     "sha256_16": "f2fd3d066213677f",
+     "n_chars": 154
+    },
+    {
+     "kind": "absent",
+     "page": 2,
+     "id": "e38",
+     "sha256_16": "b5742983c197bc39",
+     "n_chars": 254
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e39",
+     "sha256_16": "eae830290b6be060",
+     "n_chars": 162
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Interpersonal theory of suicide (IPTS; Van Orden et al., 2010), invoked for the plausibility of a link between workplace bullying and suicidal behaviour (p. 3)"
+   ],
+   "preregistration": {
+    "status": "preregistered",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Leach et al., 2016",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "Despite these indications, there is to date no available empirical evidence linking workplace bullying to actual suicidal behaviour (Leach et al., 2016).",
+     "evidence": [
+      "e20"
+     ]
+    },
+    {
+     "citation": "Nielsen et al., 2015",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "To our knowledge, there is no previous studies linking workplace bullying to actual suicidal behaviour, but a study of the association between workplace bullying and suicidal ideation found an odds ratio of 2.05 (Nielsen et al., 2015)",
+     "evidence": [
+      "e7"
+     ]
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 10,
+    "text": "The prospective association between workplace bullying and suicidal events with suicide attempt and death by suicide will be considered separately in the three different models.",
+    "sha256_16": "068f43d3e448a2b4",
+    "n_chars": 177
+   }
+  },
+  {
+   "claim_id": "dk_W3093088198_c3",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The protocol plans a sensitivity analysis estimating the prospective association between baseline workplace bullying and register-based death by suicide as a separate outcome, in the same three Cox models; no direction is stated for this outcome and no estimate is reported.",
+   "treatment": {
+    "label": "Exposure to workplace bullying at baseline (self-reported, dichotomous: exposed vs. not exposed)",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e11",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "Self-reported exposure to workplace bullying, measured retrospectively in the baseline questionnaire. In most surveys the item was \"Have you been subjected to bullying at work within the past 12 months?\" with five response options (1 = never, 2 = now and then, 3 = monthly, 4 = weekly, 5 = daily); WBH06 and WBH08 used a 6-month instead of a 12-month recall period, and SATH II, DWECS05 and DWECS10 used a dichotomous bullied/not item. The items were harmonised across surveys into one dichotomous variable: 1=0 'Not exposed to workplace bullying' (reference); 2 to 5=1 'Exposed to workplace bullying'. 10,260 participants (10%) reported workplace bullying. Not a register variable.",
+     "evidence": [
+      "e11",
+      "e10",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured at baseline, i.e. in the first survey in which the participant provided information on self-reported bullying; participants who took part in multiple surveys are included only at that first survey. Time of exposure is the date the questionnaire was filled in, or, where that is unknown, the date the questionnaire was sent out. Surveys were fielded 2004-2014 (15 waves).",
+     "evidence": [
+      "e11",
+      "e23",
+      "e19"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Death by suicide",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Danish Registry of Causes of Death (ICD-10 X60-X84). No register variable names are given.",
+     "evidence": [
+      "e12",
+      "e17"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "A death retrieved from the Danish Registry of Causes of Death with ICD-10 codes X60-X84; the date of death is the date of the outcome. Treated as a separate outcome only in the sensitivity analyses.",
+     "evidence": [
+      "e12",
+      "e21",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured in the registers from the day after workplace bullying was assessed at baseline until 31 December 2016; participants were followed for an average of 7.3 years, with a range of 1 day to 12.1 years.",
+     "evidence": [
+      "e13",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e33",
+      "e3"
+     ],
+     "confidence": "low"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e33",
+       "e3",
+       "e31",
+       "e18",
+       "e32"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e33",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "hazard ratio (exposed to workplace bullying vs. not exposed, reference 1.00), with a 95% confidence interval",
+      "evidence": [
+       "e24",
+       "e25",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "No effect size is reported. The only magnitude the protocol prints for this pair is a minimum detectable effect from a log-rank power calculation: an 80% chance of detecting a hazard ratio of 2.54 for this outcome (pp. 2 and 11), with the power curve plotted in Figure 1 (p. 11). That is a design quantity, not an estimate of the association.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e33"
+      ],
+      "confidence": "high"
+     },
+     "p_value_relation": null,
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e34",
+       "e5",
+       "e31"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e35"
+      ],
+      "confidence": "high"
+     }
+    }
+   },
+   "estimand": {
+    "type": "hazard_ratio",
+    "target_population": "Employees in Denmark who responded to one of the nine pooled occupational health and safety surveys 2004-2014, answered the workplace bullying item, had complete information on sex, age, living status and socio-economic status, had not emigrated before completing the questionnaire and had no previous suicide attempt.",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "From the day after the baseline bullying measurement until 31 December 2016; average follow-up 7.3 years, range 1 day to 12.1 years.",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 12.1,
+     "unit": "years",
+     "kind": "cumulative"
+    }
+   },
+   "population": {
+    "description": "98,330 participants (64% women, n=62,582) from a pooled dataset of nine Danish questionnaire-based occupational health and safety surveys fielded 2004-2014 (15 waves), covering persons employed in different occupational groups in both the private and public sectors, linked to national registers.",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "Surveys 2004-2014; register follow-up until 31 December 2016",
+    "period_range": {
+     "from": 2004,
+     "to": 2016
+    },
+    "region": "Denmark",
+    "subgroups_defined": [
+     "sex (women; men)",
+     "age (30 or younger; 31 or older)",
+     "socioeconomic status (middle/high; low)"
+    ],
+    "selection": "Survey respondents (employed persons) in nine occupational health and safety surveys; from an original pooled dataset of 105,455 unique participants / 139,575 observations the protocol excludes 5,945 with missing bullying exposure, 247 with missing sex, age, living status or socio-economic status, three who had already emigrated, repeat participations (only the first survey with bullying information is kept) and 930 with previous suicide attempts, leaving 98,330 participants."
+   },
+   "identification": {
+    "strategy": "selection_on_observables",
+    "source_of_variation": "No exogenous variation is used: this is an observational prospective cohort. The contrast is between-person differences in self-reported exposure to workplace bullying at baseline, with register-based adjustment for sex, age, living status, socio-economic status and previous history of psychiatric morbidity, and with robust variance clustered on survey wave.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Conditional ignorability / no unmeasured confounding: the association between self-reported workplace bullying at baseline and later suicidal behaviour is unconfounded once sex, age, living status, socio-economic status and previous history of psychiatric morbidity are adjusted for. The protocol never states this as an assumption, but it motivates the adjustment for previous psychiatric morbidity exactly as a common cause of both exposure and outcome.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No balance table, no negative control and no sensitivity analysis for unmeasured confounding is proposed; the only support offered is the choice of register-based covariates (citing Hawton and van Heeringen, 2009) and the explicit argument for adjusting for previous psychiatric morbidity.",
+      "evidence": [
+       "e14",
+       "e15",
+       "e27",
+       "e36"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "workplace bullying exposure (baseline, self-reported)"
+       ],
+       "rhs": [
+        "Death by suicide"
+       ],
+       "given": [
+        "sex",
+        "age",
+        "living status",
+        "socio-economic status",
+        "previous history of psychiatric morbidity"
+       ],
+       "implies_edges": [
+        {
+         "from": "sex",
+         "to": "Death by suicide",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "age",
+         "to": "Death by suicide",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "living status",
+         "to": "Death by suicide",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "socio-economic status",
+         "to": "Death by suicide",
+         "kind": "confounder_adjusted"
+        },
+        {
+         "from": "previous history of psychiatric morbidity",
+         "to": "Death by suicide",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Proportional hazards: the hazard ratio for exposure to workplace bullying is constant over follow-up, as required by the Cox model. The protocol states that this will be checked before the analyses and that the models will be adjusted if it is violated.",
+      "stated_or_implicit": "stated",
+      "supported_by": "A pre-analysis check of the proportional hazards assumption is promised (p. 11); no test or result is reported in the protocol.",
+      "evidence": [
+       "e6",
+       "e24"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The analysis sample is conditioned on survey participation, on answering the workplace bullying item, on complete information on sex, age, living status and socio-economic status, on not having emigrated before completing the questionnaire, and on having no previous suicide attempt (930 participants excluded); participants in several surveys enter only once.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 (p. 6) reports the number of participants remaining after each exclusion step, in total and by survey; the protocol does not discuss whether the conditioning induces selection bias.",
+      "evidence": [
+       "e16",
+       "e26",
+       "e8",
+       "e29",
+       "e23"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "selection",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "previous suicide attempt before baseline",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        },
+        {
+         "from": "survey participation and complete covariate information",
+         "to": "sample inclusion",
+         "kind": "selection_on"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Measurement comparability: the harmonised dichotomous item measures the same exposure across the nine surveys, although the underlying items differ (five-point frequency scale vs. a dichotomous bullied/not item) and the retrospective exposure period is 12 months in most surveys but 6 months in WBH06 and WBH08.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Table 3 (p. 7) documents the retrospective exposure period and response options of each survey; no measurement-invariance test or sensitivity analysis by survey is proposed.",
+      "evidence": [
+       "e10",
+       "e11",
+       "e30"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Temporality: exposure precedes outcome. Follow-up for each participant starts the day after workplace bullying was assessed and participants with a previous suicide attempt are excluded, so that events counted cannot predate the exposure measurement.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The design: follow-up starts the day after the bullying measurement (p. 8) and previous suicide attempters are excluded (p. 5). Exposure is nevertheless reported retrospectively for the 6 or 12 months before baseline, which the protocol does not discuss.",
+      "evidence": [
+       "e13",
+       "e16"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a6",
+      "assumption": "Non-informative censoring over the follow-up window: participants are followed in the registers until the first event or 31 December 2016, and censoring (including emigration or death from other causes) is assumed unrelated to the risk of the event given the covariates. The protocol does not discuss competing risks or censoring mechanisms.",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e9",
+       "e22",
+       "e37"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Confounding by previous psychiatric morbidity: individuals with previous psychiatric disorders may have a higher risk both of being exposed to bullying and of engaging in suicidal behaviour (p. 9)",
+     "Over-adjustment: psychiatric diagnoses in the 12 months before baseline are deliberately NOT included, because mental health problems may be part of the causal pathway from workplace bullying to suicide (p. 9)",
+     "Violation of the Cox proportional hazards assumption, to be checked before the analyses (p. 11)",
+     "Unequal weighting of participants who took part in several survey waves, who had a higher probability of reporting exposure to workplace bullying (p. 4-5)",
+     "Low statistical power for the rarer outcomes: an 80% chance of detection requires a hazard ratio of 1.74 for suicide attempt and 2.54 for death by suicide (p. 11)"
+    ],
+    "robustness_checks": [
+     "Sensitivity analysis 1 (planned): suicide attempt and death by suicide considered separately in the three models (p. 10)",
+     "Sensitivity analysis 2 (planned): association with any suicidal behaviour stratified by age (<=30; >=31), sex and socioeconomic status (middle/high vs. low) (p. 10); Table 4 (p. 12) gives the hazard ratio each stratum would need for 80% power",
+     "Sensitivity analysis 3 (planned): association with any suicidal behaviour additionally adjusted for previous history of psychotropic drug prescription in the year before the survey (ATC N05A, N05B, N05C, N06A, N06B) (p. 10)",
+     "Pre-analysis check of the Cox proportional hazards assumption, with the models to be adjusted if it is violated (p. 11)",
+     "Participants in multiple surveys are included only at the first survey in which they reported on bullying, to give equal weight to participants (p. 4)",
+     "No result of any of these checks is reported: the protocol is published before the analyses are performed (p. 4)"
+    ],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Cox proportional hazards model (multivariate), estimating hazard ratios with 95% confidence intervals; robust variance with clusters based on survey wave; STATA 16.1",
+     "evidence": [
+      "e24",
+      "e2",
+      "e25"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Planned sensitivity analysis 1 (p. 10): the same three consecutively adjusted Cox models (crude; Model 1 adjusted for sex, age, living status and socio-economic status; Model 2 additionally adjusted for previous history of psychiatric morbidity) run with death by suicide as a separate outcome. No estimating equation and no ghost table are printed for it.",
+    "fixed_effects": [],
+    "controls": [
+     "sex (dichotomous: men/women)",
+     "age (continuous)",
+     "living status (categorical: unmarried; married or cohabiting or registered partnership; divorced or termination of registered partnership; widow(er) or surviving partner of a registered partnership)",
+     "socio-economic status (categorical: leaders or employed in a job requiring skills on the highest level; mid-level; basic level; student/other)",
+     "previous history of psychiatric morbidity (dichotomous, any psychiatric diagnosis 1968 to 365 days before baseline; ICD-8 290-316 or ICD-10 F00-F99)"
+    ],
+    "clustering": "Robust clusters based on the survey waves",
+    "weights": null,
+    "sample_n": {
+     "value": "98,330 participants (10,260, i.e. 10%, exposed to workplace bullying)",
+     "evidence": [
+      "e8",
+      "e5",
+      "e28"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "No exhibit: this estimate is a planned sensitivity analysis (p. 10) and the protocol prints no table for it; the ghost table on p. 10 covers only the combined outcome.",
+     "evidence": [
+      "e4",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table_id": null,
+    "adjustment_set": [
+     {
+      "label": "sex",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "age",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "living status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "socio-economic status",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "previous history of psychiatric morbidity",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ]
+   },
+   "mediators_claimed": [
+    "Mental health problems / onset of mental health problems: the protocol states that exposure to workplace bullying is a risk factor for the onset of mental health problems and that these 'may be a part of the causal pathway from workplace bullying to suicide', which is why psychiatric diagnoses in the 12 months before baseline are deliberately not adjusted for (p. 9). The mediation is asserted, not tested."
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "workplace bullying exposure (baseline, self-reported)",
+     "Death by suicide",
+     "sex",
+     "age",
+     "living status",
+     "socio-economic status",
+     "previous history of psychiatric morbidity",
+     "previous suicide attempt before baseline",
+     "survey participation and complete covariate information",
+     "sample inclusion",
+     "mental health problems (onset of, after baseline)"
+    ],
+    "edges": [
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "Death by suicide",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": [
+       "sex",
+       "age",
+       "living status",
+       "socio-economic status",
+       "previous history of psychiatric morbidity"
+      ]
+     },
+     {
+      "from": "sex",
+      "to": "Death by suicide",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "age",
+      "to": "Death by suicide",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "living status",
+      "to": "Death by suicide",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "socio-economic status",
+      "to": "Death by suicide",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous history of psychiatric morbidity",
+      "to": "Death by suicide",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "previous suicide attempt before baseline",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "survey participation and complete covariate information",
+      "to": "sample inclusion",
+      "kind": "selection_on",
+      "from_assumption": "a3",
+      "given": []
+     },
+     {
+      "from": "workplace bullying exposure (baseline, self-reported)",
+      "to": "mental health problems (onset of, after baseline)",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "mental health problems (onset of, after baseline)",
+      "to": "Death by suicide",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 10,
+      "sha256_16": "068f43d3e448a2b4",
+      "n_chars": 177
+     },
+     {
+      "page": 10,
+      "sha256_16": "244afde1b47353e3",
+      "n_chars": 52
+     },
+     {
+      "page": 11,
+      "sha256_16": "aed062a020c15e32",
+      "n_chars": 231
+     },
+     {
+      "page": 4,
+      "sha256_16": "3128d36d43a8727d",
+      "n_chars": 224
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "No estimate is reported: the paper is a study protocol and this outcome appears only in the list of planned sensitivity analyses (p. 10). There is no ghost table for it.",
+    "The protocol states no directional hypothesis for death by suicide separately; the hypothesis on p. 4 is stated for the combined outcome. sign='positive' therefore carries over the direction of the main hypothesis and is recorded with low confidence; the graph edge is causal_assumed.",
+    "magnitude.interpretation records a minimum detectable effect (hazard ratio of 2.54 for 80% power, pp. 2 and 11), not an effect estimate. Only 41 deaths by suicide were observed during follow-up (p. 11)."
+   ],
+   "evidence": [
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e1",
+     "sha256_16": "b344ab07cf938141",
+     "n_chars": 243
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e2",
+     "sha256_16": "f27b6b0b25dfddd4",
+     "n_chars": 110
+    },
+    {
+     "kind": "quote",
+     "page": 10,
+     "id": "e3",
+     "sha256_16": "244afde1b47353e3",
+     "n_chars": 52
+    },
+    {
+     "kind": "quote",
+     "page": 10,
+     "id": "e4",
+     "sha256_16": "068f43d3e448a2b4",
+     "n_chars": 177
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e5",
+     "sha256_16": "c45375db2db71446",
+     "n_chars": 214
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e6",
+     "sha256_16": "fbbe3f51a074d6ca",
+     "n_chars": 183
+    },
+    {
+     "kind": "quote",
+     "page": 11,
+     "id": "e7",
+     "sha256_16": "fe42569ee6d2b097",
+     "n_chars": 234
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e8",
+     "sha256_16": "53865c531a70175d",
+     "n_chars": 162
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e9",
+     "sha256_16": "91b94f75dd039462",
+     "n_chars": 157
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e10",
+     "sha256_16": "c32dc5c57aabd270",
+     "n_chars": 203
+    },
+    {
+     "kind": "quote",
+     "page": 7,
+     "id": "e11",
+     "sha256_16": "7a27bce9e78a5f95",
+     "n_chars": 189
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e12",
+     "sha256_16": "638d97680fbe7863",
+     "n_chars": 155
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e13",
+     "sha256_16": "a70b98651bee0c9e",
+     "n_chars": 172
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e14",
+     "sha256_16": "aa2214ff06516c9f",
+     "n_chars": 174
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e15",
+     "sha256_16": "6f19aeb9ebad9c91",
+     "n_chars": 300
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e16",
+     "sha256_16": "f8458f950042ab2f",
+     "n_chars": 81
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e17",
+     "sha256_16": "e03c8b00a72685f6",
+     "n_chars": 340
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e18",
+     "sha256_16": "242ef492e92874fc",
+     "n_chars": 120
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e19",
+     "sha256_16": "5338eaddbb65ea77",
+     "n_chars": 186
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e20",
+     "sha256_16": "e6f37dcf7eb2b68a",
+     "n_chars": 153
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e21",
+     "sha256_16": "e22f14335b4dbc43",
+     "n_chars": 194
+    },
+    {
+     "kind": "quote",
+     "page": 8,
+     "id": "e22",
+     "sha256_16": "463b5f8670739dbc",
+     "n_chars": 191
+    },
+    {
+     "kind": "quote",
+     "page": 4,
+     "id": "e23",
+     "sha256_16": "c0ca1a66d5167522",
+     "n_chars": 139
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e24",
+     "sha256_16": "7a3e2d6d2e7192db",
+     "n_chars": 133
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e25",
+     "sha256_16": "c93b710d20fa0f16",
+     "n_chars": 380
+    },
+    {
+     "kind": "quote",
+     "page": 5,
+     "id": "e26",
+     "sha256_16": "0256d69d462a1279",
+     "n_chars": 111
+    },
+    {
+     "kind": "quote",
+     "page": 9,
+     "id": "e27",
+     "sha256_16": "103ba34f08121ab3",
+     "n_chars": 331
+    },
+    {
+     "kind": "quote",
+     "page": 2,
+     "id": "e28",
+     "sha256_16": "ddfeabf8cc70d45d",
+     "n_chars": 228
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 1",
+     "panel": null,
+     "page": 6,
+     "regression_id": null,
+     "id": "e29",
+     "sha256_16": "3bae6093cdc8ee67",
+     "n_chars": 128
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (p. 7; the protocol numbers two different tables 'Table 3')",
+     "panel": null,
+     "page": 7,
+     "regression_id": null,
+     "id": "e30",
+     "sha256_16": "be9c7f681e3790e5",
+     "n_chars": 142
+    },
+    {
+     "kind": "table",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "panel": null,
+     "page": 10,
+     "regression_id": null,
+     "id": "e31",
+     "sha256_16": "ba00ca20a1b0fe38",
+     "n_chars": 239
+    },
+    {
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": "A",
+     "page": 11,
+     "figure_id": "dk_W3093088198::F1",
+     "annotation": "Figure 1. Statistical power for detecting a prospective association between workplace bullying and suicide attempt, death by suicide, and any suicidal behaviour (suicide attempt and death by suicide combined) as a function of the Hazard Ratios. [plot axes, verbatim: y-axis 'POWER', ticks 0 to 1; x-axis 'HAZARD RATIO', ticks 1 to 3,4; legend: 'Death by suicide', 'Suicide attempt', 'Total suicidal events'. No numeric value is printed on any curve.]",
+     "id": "e32"
+    },
+    {
+     "kind": "absent",
+     "exhibit": "Table 3 (ghost table, p. 10)",
+     "page": 10,
+     "id": "e33",
+     "sha256_16": "519d39fd9a6d68e9",
+     "n_chars": 328
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e34",
+     "sha256_16": "c89fed3d25249692",
+     "n_chars": 288
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e35",
+     "sha256_16": "6525b8b7ce42b34d",
+     "n_chars": 149
+    },
+    {
+     "kind": "absent",
+     "page": 9,
+     "id": "e36",
+     "sha256_16": "27c6c974c1f8a280",
+     "n_chars": 187
+    },
+    {
+     "kind": "absent",
+     "page": 8,
+     "id": "e37",
+     "sha256_16": "f2fd3d066213677f",
+     "n_chars": 154
+    },
+    {
+     "kind": "absent",
+     "page": 2,
+     "id": "e38",
+     "sha256_16": "b5742983c197bc39",
+     "n_chars": 254
+    },
+    {
+     "kind": "absent",
+     "page": 10,
+     "id": "e39",
+     "sha256_16": "eae830290b6be060",
+     "n_chars": 162
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "verification": null,
+   "verification_problems": [],
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [
+    "Interpersonal theory of suicide (IPTS; Van Orden et al., 2010), invoked for the plausibility of a link between workplace bullying and suicidal behaviour (p. 3)"
+   ],
+   "preregistration": {
+    "status": "preregistered",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Leach et al., 2016",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "Despite these indications, there is to date no available empirical evidence linking workplace bullying to actual suicidal behaviour (Leach et al., 2016).",
+     "evidence": [
+      "e20"
+     ]
+    },
+    {
+     "citation": "Nielsen et al., 2015",
+     "relation": "extends",
+     "stated": true,
+     "as_stated": "To our knowledge, there is no previous studies linking workplace bullying to actual suicidal behaviour, but a study of the association between workplace bullying and suicidal ideation found an odds ratio of 2.05 (Nielsen et al., 2015)",
+     "evidence": [
+      "e7"
+     ]
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "anchor_quote": {
+    "page": 10,
+    "text": "The prospective association between workplace bullying and suicidal events with suicide attempt and death by suicide will be considered separately in the three different models.",
+    "sha256_16": "068f43d3e448a2b4",
+    "n_chars": 177
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "2101f6815df44b9c43b44fe71a3a17f3bde0fc7bd749f202a676019c42ee03b7",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.275152+00:00",
+  "tables_sha256": "3e1de627bf870063d6da783f50cfa3eeecf7773d26591050c6d955bddc8bb4e0",
+  "figures_sha256": "05e31c26ce40159b26d67d4601bf3a012f7d985cb7727dba05517e88d5832bac"
+ },
+ "public_export": {
+  "anchor_quotes": 2,
+  "quotes_hashed": 129,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

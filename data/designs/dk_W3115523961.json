@@ -1,0 +1,52 @@
+{
+ "artid": "dk_W3115523961",
+ "paper": {
+  "title": "Book Reviews",
+  "authors": [
+   "Landis MacKellar",
+   "Larry Willmore",
+   "Geoffrey McNicoll",
+   "John Bongaarts",
+   "Dennis Hodgson"
+  ],
+  "year": 2020,
+  "journal": "Population and Development Review",
+  "doi": "10.1111/padr.12376",
+  "code_data_availability": "No data or code availability statement. The item is a book-review section and analyses no data; no Statistics Denmark (DST) project reference appears anywhere in the 20 pages."
+ },
+ "data": {
+  "registers": [],
+  "linkages": [],
+  "sample": {
+   "universe": "Not applicable -- the item is a book-review section and has no estimation sample.",
+   "unit_of_observation": "Not applicable -- no units are observed, analysed or counted; the item reviews five books and reports.",
+   "selection_rules": [],
+   "period": null,
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "OUT OF SCOPE FOR THIS CORPUS. paper.pdf (sha256 018642f4..., 20 pages) is the BOOK REVIEWS section of Population and Development Review 46(4), printed pages 843-862, December 2020. PDF page 1 = printed page 843; PDF page 14 = printed page 856. It is not an empirical economics paper, uses no Danish administrative registers, and estimates nothing.",
+   "Contents, in order: (1) Landis MacKellar, “Covid-19: Where We Are, What Got Us Here, and Where We Are Likely to Be Going—A Review Essay”, on Nicholas A. Christakis, Apollo’s Arrow (printed pp. 843-853); (2) Larry Willmore on Daniel Susskind, A World Without Work (pp. 853-855); (3) a SHORT REVIEWS block credited “by Geoffrey McNicoll, John Bongaarts, Dennis Hodgson, Landis MacKellar” (printed p. 855), covering an International Organization for Migration volume on Mediterranean migration, UN DESA World Family Planning 2020, Condon and Wichowsky The Economic Other, Sachs The Ages of Globalization, and Soh The End of Gender (pp. 855-862). Book titles here are bibliographic names as printed, not quoted claims.",
+   "The paper.title recorded here is the printed section header BOOK REVIEWS, which heads p. 843; the DOI 10.1111/padr.12376 runs in the footer of every page, and the masthead line on p. 843, printed letter-spaced as “P O P U L AT I O N A N D D E V E L O P M E N T R E V I E W 4 6 ( 4 ) : 8 4 3 – 8 6 2 ( D E C E M B E R 2 0 2 0 )”, shows the DOI item spans the whole section. AMBIGUITY: the PDF's own metadata Title field instead names a single short review (it begins “International Organization for Migration, Migration in West and North Africa and across the Mediterranean”) and its metadata Subject field reads “Population & Development Rev 2020.46:855-857”, so an alternative title for this artid is that one short review, or the lead review essay. Not resolvable from the file. Those two strings are PDF metadata, not page text.",
+   "LIKELY CAUSE OF SELECTION: the string “Danish” occurs exactly once in the full text, on printed p. 856, describing the Mixed Migration Centre. The PDF breaks the word “institutionally” across lines there; the contiguous verbatim span is “linked to the Danish Refugee Council”. “Denmark” never occurs. No register name, register variable, regression, coefficient, standard error, p-value, sample size or identification strategy occurs anywhere in the item.",
+   "CLAIMS DELIBERATELY EMPTY. The item tests no hypothesis. Its only quantitative passages are (a) attributions to cited literature -- Goldstein and Lee (2020) on years of life lost, and a USD 500,000 value-of-a-life-year figure the reviewer explicitly declines to stand behind (“it is not clear from the summary in the book how the USD 500,000 estimate was arrived at”, printed p. 851) -- and (b) the reviewer's own arithmetic, which he labels “making more casual back-of the envelope calculations at global level” (printed p. 851, typo in the original), e.g. applying “a Keynesian multiplier of 2” to a published fiscal total. Cited literature and back-of-envelope arithmetic are excluded by the extraction rules, and neither has a treatment, an outcome, an estimand, an identification strategy or an estimation sample. Writing any of them in as a claim would be fabrication, so claims is [].",
+   "CORROBORATION: the independent table/figure extraction pass recorded in digest.json also found nothing -- regressions: 0, tables: 0, figures: 0. Two passes over the same PDF agree there is no estimated quantity in it.",
+   "SCHEMA NOTE: schema.json declares claims minItems: 1. That minimum cannot be met for this PDF without inventing a claim the paper does not make, so this file leaves claims empty and violates that one constraint knowingly. validate.py reports no problems. Recommended disposition: drop dk_W3115523961 from the corpus as a keyword false positive, or re-resolve the OpenAlex id if it was meant to point at a different work."
+  ]
+ },
+ "claims": [],
+ "extraction_inputs": {
+  "digest_sha256": "3afe7c37d595f5cdba80665ce620b3cbf568132efd160142cf5278a3baac0259",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-16T18:59:12.275008+00:00",
+  "tables_sha256": "ae40e0cc60c834cdac44ccacf08dcf7cef397feae63627bc4e6537553a35c759",
+  "figures_sha256": "bfc4f61cfa2ae8dafd04da0addd57b2512fefaf690da6d1ff42a5574fbfe8095"
+ },
+ "public_export": {
+  "anchor_quotes": 0,
+  "quotes_hashed": 0,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

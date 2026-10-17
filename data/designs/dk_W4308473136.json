@@ -1,0 +1,2949 @@
+{
+ "artid": "dk_W4308473136",
+ "paper": {
+  "title": "Danish Flexicurity: Rights and Duties",
+  "authors": [
+   "Claus Thustrup Kreiner",
+   "Michael Svarer"
+  ],
+  "year": 2022,
+  "journal": "Journal of Economic Perspectives",
+  "doi": "10.1257/jep.36.4.81",
+  "code_data_availability": "p. 1: \"For supplementary materials such as appendices, datasets, and author disclosure statements, see the article page at https://doi.org/10.1257/jep.36.4.81.\" Table 1 sources (p. …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "Statistics Denmark (1980-2020); \"administrative records of people who are registered as unemployed\"",
+    "dst_code": null,
+    "years": "1980-2020",
+    "role": "outcome: the national unemployment rate plotted in Figure 1",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 1980,
+     "to": 2020
+    }
+   },
+   {
+    "name_in_paper": "\"monthly payroll records for the Danish population\" / \"population records on wages and employment at the monthly frequency\" (via Kreiner, Reck, and Skov 2020)",
+    "dst_code": null,
+    "years": null,
+    "role": "outcomes: monthly employment rates and observed hourly wage rates by month of age around the 18th birthday (Figure 2)",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "\"weekly unemployment data for the two groups of unemployed\" in the Quickly Back to Work experiment (via Gautier et al. 2018b)",
+    "dst_code": null,
+    "years": "2005-2006",
+    "role": "outcome: share still unemployed by elapsed unemployment duration (Figure 4)",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2005,
+     "to": 2006
+    }
+   },
+   {
+    "name_in_paper": "Ministry of Employment (1993-2019)",
+    "dst_code": null,
+    "years": "1993-2019",
+    "role": "context: share of unemployed participating in activation programs before and after the 1994 reform",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 1993,
+     "to": 2019
+    }
+   },
+   {
+    "name_in_paper": "The Danish Agency for Labor Market and Recruitment of the Ministry of Employment (http://jobindsats.dk)",
+    "dst_code": null,
+    "years": "2021",
+    "role": "context: share of unemployed sanctioned during an unemployment spell",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2021,
+     "to": 2021
+    }
+   },
+   {
+    "name_in_paper": "OECD (2017a, b, 2018a, b, c, d, 2019a-k, 2020a, b) and Miller, Kim, and Roberts (2019)",
+    "dst_code": null,
+    "years": null,
+    "role": "context: cross-country performance and policy indicators for Denmark and the United States in Table 1",
+    "variables_mentioned": [],
+    "year_range": null
+   }
+  ],
+  "linkages": [],
+  "sample": {
+   "universe": "Denmark. Three distinct empirical exhibits: (i) the aggregate national unemployment rate 1980-2020; (ii) young Danish workers observed monthly in payroll records for two years before and after their 18th birthday; (iii) newly unemployed recipients of unemployment insurance in two Danish counties enrolled in the Quickly Back to Work randomized experiment in the winter of 2005-2006.",
+   "unit_of_observation": "varies by exhibit: country-year (Figure 1), person-month of age (Figure 2), person-week of unemployment duration (Figure 4)",
+   "selection_rules": [
+    "Figure 1: people in the labor force registered as unemployed in administrative records, including participants in active labor market programs, 1980-2020; the dashed lines are averages for 1980-1994 and 2006-2020",
+    "Figure 2: young workers aged 16-20, restricted to the 24 months before and the 24 months after the 18th birthday",
+    "Figure 4: \"All individuals in the two counties who became unemployed, and who were entitled to unemployment insurance benefits during this period\"; \"those born on the 1st to the 15th were given the treatment, and those born on the 16th to the 31st were not\""
+   ],
+   "period": "1980-2020",
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "Figure 1 plots \"the share of people in the labor force who are unemployed\", based on administrative records of registered unemployed and including participants in active labor market programs; the two gray dashed lines are period averages for 1980-1994 (printed 10.4%) and 2006-2020 (printed 4.4%).",
+   "Percentage changes at the age-18 discontinuity (the 33 percent employment drop and the 40 percent wage jump) \"are computed using the midpoint method\" (Figure 2 note, p. 10).",
+   "Figure 2 \"replicates Figure 1.B in Kreiner et al. (2020), which describes the data and the estimation of the fitted line and the percentage drop in employment at age 18\"; the estimation itself is not described in this paper.",
+   "Figure 4 \"partly replicates Figure 4 of Gautier et al. (2018a)\" and shows raw survivor functions (fraction still unemployed) by elapsed duration in weeks for the randomly assigned treatment and control groups.",
+   "No estimating equation, standard error, confidence interval or p-value is printed anywhere in the paper; Table 1 is a table of OECD levels and ranks, not a regression table.",
+   "Table 1 indicators are OECD levels and ranks among 36 OECD countries, with (+)/(-) marking the direction in which higher values are ranked better or worse."
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W4308473136_c1",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": null,
+   "statement": "The intensified Danish active labor market policy introduced with the 1994 \"rights and duties\" reform (alongside the changes in the unemployment insurance scheme) lowered the long-run Danish unemployment rate, which fell from an average of 10.4 percent in 1980-1994 to 4.4 percent in 2006-2020.",
+   "treatment": {
+    "label": "the revised flexicurity regime: the intensified Danish active labor market policy with compulsory participation (\"rights and duties\"), introduced by the major labor market reform of 1994",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Ministry of Employment (1993-2019) for program participation shares; no register code or variable named",
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "A regime shift rather than an individual-level treatment: the 1994 reform required recipients of unemployment insurance and of social assistance to apply for jobs, to participate in active labor market policies and to accept job offers fitting their profiles, with benefit sanctions for non-compliance, and sharply raised program intensity - from one in six unemployed participating in a program during the year in 1993-1994 to more than half of the unemployed participating annually in the last decade. Maximum unemployment insurance duration was also cut (to four years around 2000 and then to two years).",
+     "evidence": [
+      "e3",
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "introduced in 1994; the post-reform comparison period used in Figure 1 is 2006-2020, the pre-reform period 1980-1994",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "unemployment rate in Denmark (percent of the labor force)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Statistics Denmark (1980-2020): administrative records of people registered as unemployed, including participants in active labor market programs; no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "\"the share of people in the labor force who are unemployed. It is based on administrative records of people who are registered as unemployed and includes people who participate in active labor market programs\" (Figure 1 note); the quantity compared is the long-run (period) average of this annual rate.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "annual, 1980-2020; averaged over 1980-1994 and over 2006-2020",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": -6.0,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percentage points (difference between the 2006-2020 and the 1980-1994 average unemployment rate)",
+      "evidence": [
+       "e1",
+       "e4"
+      ],
+      "confidence": "medium"
+     },
+     "interpretation": "\"the revised flexicurity regime was followed by a descent of the unemployment rate over the next 15 years to a much lower long-run level\"; the authors call it a \"major improvement in labor market performance\".",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 10.4,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "medium"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Denmark as a whole: the long-run (period-average) national unemployment rate under the old versus the new flexicurity regime",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "long-run averages: 1980-1994 under the old regime versus 2006-2020 under the new regime, i.e. roughly 12 to 26 years after the 1994 reform",
+    "formal_query": null,
+    "horizon": {
+     "from": 12,
+     "to": 26,
+     "unit": "years",
+     "kind": "average_over"
+    }
+   },
+   "population": {
+    "description": "Denmark: all people in the labor force; the national registered unemployment rate 1980-2020",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "1980-2020",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "national aggregate from administrative records of people registered as unemployed, including participants in active labor market programs",
+    "period_range": {
+     "from": 1980,
+     "to": 2020
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "The 1994 Danish labor market reform that introduced the \"rights and duties\" principle and the subsequent intensification of active labor market programs; the evidence is a before/after comparison of long-run average unemployment (1980-1994 versus 2006-2020) in a single aggregate time series, with no control group and no regression.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The fall in the long-run unemployment rate after the early 1990s is attributable mainly to the intensified active labor market policy (together with the unemployment insurance changes) rather than to other developments occurring over the same four decades.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "No formal test. The authors argue against two alternatives: decentralization of wage bargaining (\"The organizational changes seem too small to fully explain the big decline in unemployment\", p. 9-10) and the earned income tax credit (introduced in Denmark only in 2004, footnote 6, p. 8).",
+      "evidence": [
+       "e2",
+       "e6",
+       "e7",
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The 1990s decentralization of Danish wage setting is too small a change to explain the decline in unemployment.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Authors' assessment only; no test is reported.",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "An earned income tax credit cannot explain the drop in unemployment, because it was implemented in Denmark only in 2004, after the drop took place.",
+      "stated_or_implicit": "stated",
+      "supported_by": "Timing argument in footnote 6 (p. 8).",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "decentralization of wage bargaining during the 1990s and the resulting rise in wage dispersion as an alternative explanation",
+     "the earned income tax credit (implemented in Denmark in 2004) as an alternative explanation",
+     "concurrent changes in the unemployment insurance scheme: shorter maximum benefit duration and targeted replacement-rate reductions, e.g. for workers under 25",
+     "the possibility that the collective bargaining system itself (efficient bargaining, wage compression) explains Danish labor market performance"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "changes in the unemployment insurance scheme occurred at the same time; the authors attribute the improvement \"mainly\" - not solely - to the active labor market policy",
+     "business-cycle composition of the 1980-1994 and 2006-2020 averages is not addressed",
+     "no control group, counterfactual or statistical test is reported for the regime comparison"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "comparison of period averages of an aggregate annual time series (dashed long-run averages plotted in Figure 1); no regression, standard error or test is reported",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e11"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 1, p. 7 (printed averages 10.4% for 1980-1994 and 4.4% for 2006-2020); discussed on pp. 7-8",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F1"
+   },
+   "mediators_claimed": [
+    "screening out of applicants who are not involuntarily unemployed (workfare as a screening device against adverse selection)",
+    "threat/motivation effect: more intensive job search and lower reservation wages to avoid program participation",
+    "moderated wage claims of workers and unions through a worsened outside option",
+    "higher worker productivity and reduced information frictions from program participation"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "program characteristics and targeted groups",
+     "finding": "\"the effects do vary considerably across program characteristics and targeted groups\"; experiments targeted at unemployed with weak labor market attachment (long-term social assistance recipients, people on sickness benefits, young unemployed with mental or cognitive challenges) gave less positive results and a subset of programs did not meet cost-effectiveness requirements (p. 16)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "intensified active labor market policy with rights and duties (1994 reform)",
+     "long-run unemployment rate in Denmark"
+    ],
+    "edges": [
+     {
+      "from": "intensified active labor market policy with rights and duties (1994 reform)",
+      "to": "long-run unemployment rate in Denmark",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 8,
+      "sha256_16": "b907e3b83bfa2b7f",
+      "n_chars": 184
+     },
+     {
+      "page": 7,
+      "sha256_16": "60198b8382d9d062",
+      "n_chars": 63
+     },
+     {
+      "page": 10,
+      "sha256_16": "8078c70080d1e65c",
+      "n_chars": 137
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Figure 1 prints 10.4% and 4.4% for the two regime averages; the -6.0 percentage-point gap is our subtraction, not a number the paper prints.",
+    "The paper reports no control group, standard error or test for this comparison, so statistically_significant is left null and identification is recorded as descriptive even though the paper words the claim causally (\"We attribute ...\").",
+    "The treatment bundles the active labor market policy intensification with the contemporaneous unemployment insurance reforms; the authors say \"mainly\" the former."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 7,
+     "annotation": "Figure 1 Unemployment Rate in Denmark | in-plot labels: \"10.4%\" (left dashed line) and \"4.4%\" (right dashed line); y-axis \"Percent\"; x-axis 1980 to 2020 | \"Source: Statistics Denmark (1980–2020).\" | \"Notes: The graph plots the share of people in the labor force who are unemployed. It is based on administrative records of people who are registered as unemployed and includes people who participate in active labor market programs. The gray dashed lines are averages for 1980–1994 and 2006–2020.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "b907e3b83bfa2b7f",
+     "n_chars": 184
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "726090cf3e8bcf57",
+     "n_chars": 124
+    },
+    {
+     "id": "e4",
+     "kind": "derivation",
+     "exhibit": null,
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": "IsCalculatedFrom",
+     "derived_from": [
+      "evidence:e1",
+      "figure:dk_W4308473136::F1"
+     ],
+     "how": "4.4 - 10.4 = -6.0 percentage points, using the two long-run averages printed on Figure 1 (10.4% for 1980-1994 and 4.4% for 2006-2020); the paper itself prints only the two levels, never the difference.",
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F1"
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8d4cb16c4dc88c50",
+     "n_chars": 207
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "8078c70080d1e65c",
+     "n_chars": 137
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9e0ff591f7adabca",
+     "n_chars": 165
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "26b4f83ef62f0c49",
+     "n_chars": 77
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 18,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1c278837a248989f",
+     "n_chars": 212
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 18,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "a3e02fc04370f4fa",
+     "n_chars": 121
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": "Figure 1",
+     "panel": null,
+     "page": 7,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "7283dd7066d41304",
+     "n_chars": 133
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 8,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f510c6789f117d6c",
+     "n_chars": 242
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 18,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "33044acb9db7900e",
+     "n_chars": 148
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "Denmark; the authors explicitly question whether a flexicurity policy of this kind is feasible or desirable for the United States",
+     "boundary_conditions": [
+      "massive public spending on active labor market policy (about 2 percent of GDP in Denmark versus 0.1 percent in the United States), and maybe also on education in general, is \"a necessary condition\"",
+      "a small and very homogeneous population receiving more or less the same basic public education",
+      "a substantial number of caseworkers with a high level of government information about individuals",
+      "prevailing social attitudes: trust in government, civic-mindedness, and perceiving the jobless as unlucky rather than lazy"
+     ],
+     "generalization_language": "hedged"
+    },
+    "evidence": [
+     "e9",
+     "e10"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "workfare as a screening device against adverse selection in unemployment compensation (Hansen and Tranaes 1999; Kreiner and Tranaes 2005)",
+    "equilibrium search model in which workfare mitigates moral hazard in job search and wage formation (Andersen and Svarer 2014)"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 8,
+    "text": "We attribute this major improvement in labor market performance mainly to the intensified Danish active labor market policy, alongside the changes in the unemployment insurance scheme.",
+    "sha256_16": "b907e3b83bfa2b7f",
+    "n_chars": 184
+   }
+  },
+  {
+   "claim_id": "dk_W4308473136_c2",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "At the age-18 discontinuity in the negotiated minimum wage, employment of young Danish workers drops by 15 percentage points (one-third of the employed), showing that Danish firms do not keep low-skilled workers whose wage costs exceed their productivity.",
+   "treatment": {
+    "label": "turning 18 years old, and thereby becoming eligible for the significantly higher negotiated adult minimum wage",
+    "ontology_node": null,
+    "register_source": {
+     "value": "monthly payroll records for the Danish population (via Kreiner et al. 2020); no register code or variable named",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The age discontinuity in the collectively agreed minimum wage: \"the basic minimum hourly wage rate of a young adult who is 18 years or older was around $15 in 2016. It is considerably lower when younger\" (p. 9). The running variable is the month relative to the 18th birthday; the discontinuity is at month 0.",
+     "evidence": [
+      "e2",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the 18th birthday; the window is 24 months before to 24 months after",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "employment rate (percent)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "monthly payroll records for the Danish population (via Kreiner et al. 2020); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "\"employment rates by age, in months, for two years before and after individuals turn 18 years old. It is based on monthly payroll records for the Danish population\" (Figure 2 note); the drop is read off fitted lines on each side of the 18th birthday, and the percentage change is computed using the midpoint method.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the 18th birthday (month 0 of the running variable)",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": -15,
+      "evidence": [
+       "e1",
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percentage points of the employment rate",
+      "evidence": [
+       "e1",
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"This implies that one-third of the employed lose their job when they turn 18 years old\"; equivalently \"employment drops by 15 percentage points, or 33 percent\", the percentage change being computed with the midpoint method.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ATE",
+    "target_population": "young Danish workers at the age-18 minimum wage discontinuity (the effect of the minimum wage hike for those turning 18)",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "at the 18th birthday (month 0 in Figure 2)",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "months",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "Danish population of young workers observed in monthly payroll records, at ages 16-20, in the 24 months before and after their 18th birthday",
+    "birth_cohorts": null,
+    "ages": "16-20 (monthly age; 24 months either side of the 18th birthday)",
+    "sex": "all",
+    "period": null,
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "young workers observed in monthly payroll records for the Danish population; the paper states no further restriction",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "regression_discontinuity",
+    "source_of_variation": "The discontinuous jump in the collectively negotiated minimum wage when a worker turns 18, observed at monthly frequency in population payroll records (Kreiner, Reck, and Skov 2020).",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Turning 18 affects employment only through the jump in the negotiated minimum wage; nothing else that affects employment changes discontinuously at the 18th birthday.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Not tested here. The paper notes that the observed wage jump of 40 percent \"is of a similar size as the jump in the agreed minimum wage levels\", so that \"minimum wages appear to be binding\".",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "turning 18 years old",
+         "to": "employment rate",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Absent the minimum wage increase, employment would have evolved smoothly in age through the 18th birthday (continuity of counterfactual mean employment at the cutoff).",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Figure 2 shows monthly employment profiles on both sides of the cutoff with fitted lines; the estimation of the fitted line is described in Kreiner et al. (2020), not in this paper.",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The negotiated minimum wage is binding for young workers, so the agreed wage floor determines their wage.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The observed wage jump at 18 is of similar size to the jump in the agreed minimum wage levels (p. 9).",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "the alternative hypothesis that workers and firms agree on wage compression, so that less-skilled people are paid above their productivity and employment is not on the labor demand curve - the hypothesis this figure is used to reject"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "graphical regression discontinuity: monthly employment rates by month of age with a fitted line on each side of the 18th birthday; percentage change computed with the midpoint method. The estimation of the fitted line and of the percentage drop is described in Kreiner et al. (2020), not in this paper.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 2, p. 10 (employment rate around workers' 18th birthday); discussed on p. 9",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F2"
+   },
+   "mediators_claimed": [
+    "the jump in the negotiated adult minimum wage, which pushes wage costs above the productivity of some young workers"
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "turning 18 years old",
+     "negotiated minimum wage level",
+     "employment rate"
+    ],
+    "edges": [
+     {
+      "from": "turning 18 years old",
+      "to": "negotiated minimum wage level",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "negotiated minimum wage level",
+      "to": "employment rate",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "turning 18 years old",
+      "to": "employment rate",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "432f14d79c04605d",
+      "n_chars": 192
+     },
+     {
+      "page": 10,
+      "sha256_16": "e8bb92d53707a641",
+      "n_chars": 142
+     },
+     {
+      "page": 9,
+      "sha256_16": "034d94266188fd8c",
+      "n_chars": 70
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The figure is a replication of Figure 1.B in Kreiner et al. (2020) (Kreiner being an author of both); the estimation is described there, not here, so the design details recorded are the ones this paper states.",
+    "The paper names no estimand; we record ATE at the cutoff.",
+    "No pre-period employment level is printed, so baseline_mean is null; the 33 percent figure is a midpoint-method percentage and cannot be inverted to a baseline mean."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 2",
+     "panel": null,
+     "page": 10,
+     "annotation": "Figure 2 Employment Rate around Workers’ 18th Birthday | axes: \"Employment rate (percent)\" (20 to 60) and \"Month relative to 18th birthday\" (-24 to 24) | \"Source: Kreiner et al. (2020).\" | \"Note: The figure depicts employment rates by age, in months, for two years before and after individuals turn 18 years old. It is based on monthly payroll records for the Danish population. The figure replicates Figure 1.B in Kreiner et al. (2020), which describes the data and the estimation of the fitted line and the percentage drop in employment at age 18. The graph shows that employment drops by 15 percentage points, or 33 percent, when people turn 18, where the wage rate jumps up by 40 percent. The percentage changes are computed using the midpoint method.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F2"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9e17b68392d41e8f",
+     "n_chars": 229
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "432f14d79c04605d",
+     "n_chars": 192
+    },
+    {
+     "id": "e4",
+     "kind": "absent",
+     "exhibit": "Figure 2",
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "97f3201ae87cbdc7",
+     "n_chars": 199
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "275345b054fd0efe",
+     "n_chars": 158
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "1453b284ef4e93b1",
+     "n_chars": 104
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "bab810716ae6548f",
+     "n_chars": 129
+    }
+   ],
+   "functional_form": null,
+   "scope": {
+    "value": {
+     "stated": true,
+     "claimed_domain": "firms in Denmark generally: employment is on the labor demand curve and firms do not retain low-skilled workers whose wage costs exceed their productivity",
+     "boundary_conditions": [
+      "the evidence is for young, low-skilled, low-wage workers at the age-18 minimum wage threshold"
+     ],
+     "generalization_language": "explicit"
+    },
+    "evidence": [
+     "e6",
+     "e7"
+    ],
+    "confidence": "medium"
+   },
+   "specification_level": "numerical",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "efficient bargaining model in which wages and employment are both negotiated (McDonald and Solow 1981)",
+    "labor demand / right-to-manage wage bargaining: firms do not keep workers with productivities below the going wage",
+    "wage compression across skill groups within firms"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Kreiner et al. (2020)",
+     "relation": "replicates",
+     "stated": true,
+     "evidence": [
+      "e1"
+     ],
+     "as_stated": "The figure replicates Figure 1.B in Kreiner et al. (2020), which describes the data and the estimation of the fitted line and the percentage drop in employment at age 18."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 9,
+    "text": "At the age discontinuity of the minimum wage, employment of young workers drops by 15 percentage points. This implies that one-third of the employed lose their job when they turn 18 years old.",
+    "sha256_16": "432f14d79c04605d",
+    "n_chars": 192
+   }
+  },
+  {
+   "claim_id": "dk_W4308473136_c3",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The observed hourly wage rate of young Danish workers jumps up by 40 percent at age 18, a jump of similar size to the jump in the agreed adult minimum wage, so negotiated minimum wages appear to be binding.",
+   "treatment": {
+    "label": "turning 18 years old, and thereby becoming eligible for the significantly higher negotiated adult minimum wage",
+    "ontology_node": null,
+    "register_source": {
+     "value": "population records on wages and employment at the monthly frequency / monthly payroll records for the Danish population (via Kreiner, Reck, and Skov 2020); no register code or variable named",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The collectively agreed minimum wage rises discontinuously at 18: \"the basic minimum hourly wage rate of a young adult who is 18 years or older was around $15 in 2016. It is considerably lower when younger\" (p. 9).",
+     "evidence": [
+      "e3",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the 18th birthday",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "observed hourly wage rate of young workers",
+    "ontology_node": null,
+    "register_source": {
+     "value": "population records on wages at the monthly frequency (via Kreiner, Reck, and Skov 2020); no register code or variable named",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The average observed wage rate of young workers in monthly population records; the jump at the 18th birthday is expressed as a percentage computed using the midpoint method.",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the 18th birthday",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 40,
+      "evidence": [
+       "e2",
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent (jump in the observed wage rate at age 18, computed using the midpoint method)",
+      "evidence": [
+       "e2",
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"this jump is of a similar size as the jump in the agreed minimum wage levels. Thus, minimum wages appear to be binding.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "young Danish workers observed in monthly wage records just before and just after their 18th birthday",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "at the 18th birthday",
+    "formal_query": null,
+    "horizon": {
+     "from": 0,
+     "to": 0,
+     "unit": "months",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "Young Danish workers observed in population records on wages and employment at the monthly frequency, around their 18th birthday",
+    "birth_cohorts": null,
+    "ages": "around age 18 (16-20)",
+    "sex": "all",
+    "period": null,
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "young workers appearing in monthly population wage records",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "regression_discontinuity",
+    "source_of_variation": "The discontinuity in the collectively agreed minimum wage at age 18, observed at monthly frequency in population wage records.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Absent the institutional minimum wage change, observed wages would have evolved smoothly in age through the 18th birthday.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Not tested in this paper; the estimation is described in Kreiner et al. (2020).",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The observed wage jump reflects the jump in the agreed minimum wage levels rather than a coincident change in productivity, hours or job composition at 18.",
+      "stated_or_implicit": "stated",
+      "supported_by": "\"this jump is of a similar size as the jump in the agreed minimum wage levels\" (p. 9).",
+      "evidence": [
+       "e2"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "percentage jump in the observed wage rate at the 18th birthday, computed using the midpoint method; no regression output reported in this paper (the estimation is described in Kreiner et al. 2020)",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "text p. 9 and the note to Figure 2, p. 10 (\"where the wage rate jumps up by 40 percent\")",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F2"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "turning 18 years old",
+     "negotiated minimum wage level",
+     "observed hourly wage rate"
+    ],
+    "edges": [
+     {
+      "from": "turning 18 years old",
+      "to": "observed hourly wage rate",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "negotiated minimum wage level",
+      "to": "observed hourly wage rate",
+      "kind": "causal_assumed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "9e17b68392d41e8f",
+      "n_chars": 229
+     },
+     {
+      "page": 10,
+      "sha256_16": "e8bb92d53707a641",
+      "n_chars": 142
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The 40 percent wage jump is attributed in the text to Kreiner, Reck, and Skov (2020); it is reported again in this paper's own Figure 2 note, which is the exhibit cited here.",
+    "The paper prints no pre-18 wage level, so baseline_mean is null; the $15 figure is the post-threshold agreed minimum wage, not a mean of the outcome."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 2",
+     "panel": null,
+     "page": 10,
+     "annotation": "Figure 2 Employment Rate around Workers’ 18th Birthday | \"Source: Kreiner et al. (2020).\" | \"Note: ... The graph shows that employment drops by 15 percentage points, or 33 percent, when people turn 18, where the wage rate jumps up by 40 percent. The percentage changes are computed using the midpoint method.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F2"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9e17b68392d41e8f",
+     "n_chars": 229
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "275345b054fd0efe",
+     "n_chars": 158
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "92c914a654f0be17",
+     "n_chars": 161
+    },
+    {
+     "id": "e5",
+     "kind": "absent",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "e58a6f5f12516d13",
+     "n_chars": 176
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": "numerical",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "binding collectively negotiated minimum wages"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Kreiner, Reck, and Skov (2020) / Kreiner et al. (2020)",
+     "relation": "replicates",
+     "stated": true,
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "as_stated": "The figure replicates Figure 1.B in Kreiner et al. (2020), which describes the data and the estimation of the fitted line and the percentage drop in employment at age 18."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 9,
+    "text": "On average, the observed wage rate jumps up by 40 percent at age 18 (computed using the midpoint method), and this jump is of a similar size as the jump in the agreed minimum wage levels. Thus, minimum wages appear to be binding.",
+    "sha256_16": "9e17b68392d41e8f",
+    "n_chars": 229
+   }
+  },
+  {
+   "claim_id": "dk_W4308473136_c4",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "In the Danish Quickly Back to Work randomized experiment, the share of newly unemployed still unemployed after ten weeks is about 10 percentage points lower in the treatment group (about 50 percent) than in the control group (around 60 percent), a reduction of 15 percent.",
+   "treatment": {
+    "label": "Quickly Back to Work treatment: intensified active labor market measures for newly unemployed UI recipients",
+    "ontology_node": null,
+    "register_source": {
+     "value": "weekly unemployment data for the two groups of unemployed (Gautier et al. 2018b); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "\"intensified labor market measures, involving information, early mandatory participation in job search assistance programs, frequent meetings with case workers, and full-time program participation in an active labor market program for at least three months for those still unemployed after 18 weeks\" (p. 14). The control group \"was subject to the traditional labor market policy\" (Figure 4 note).",
+     "evidence": [
+      "e3",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "from entry into unemployment, winter 2005-2006, in two Danish counties",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "share still unemployed after ten weeks (fraction of individuals still unemployed at an elapsed unemployment duration of 10 weeks)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "weekly unemployment data for the two groups of unemployed (Gautier et al. 2018b); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "\"the fraction of individuals that are still unemployed at different elapsed durations of unemployment\" (Figure 4 note) - the empirical survivor function in unemployment, read at 10 weeks of elapsed duration, in percent.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "ten weeks after entry into unemployment",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e4",
+      "e5",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": -10,
+      "evidence": [
+       "e5",
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percentage points (treatment minus control share still unemployed after ten weeks)",
+      "evidence": [
+       "e5",
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The 10 percentage-points lower unemployment rate in the treatment group corresponds to a reduction of 15 percent.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": 60,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ITT",
+    "target_population": "newly unemployed individuals entitled to unemployment insurance benefits in the two Danish counties covered by the experiment in the winter of 2005-2006",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "after ten weeks of elapsed unemployment duration",
+    "formal_query": null,
+    "horizon": {
+     "from": 10,
+     "to": 10,
+     "unit": "weeks",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals in two Danish counties who became unemployed and were entitled to unemployment insurance benefits during the winter of 2005-2006, allocated to a treatment or a control group",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "winter of 2005-2006",
+    "region": "two counties in Denmark",
+    "subgroups_defined": [
+     "treatment group (born on the 1st to the 15th of a month)",
+     "control group (born on the 16th to the 31st of a month)"
+    ],
+    "selection": "newly unemployed recipients of unemployment insurance in the two experimental counties during the experiment window; assignment by day of birth",
+    "period_range": {
+     "from": 2005,
+     "to": 2006
+    }
+   },
+   "identification": {
+    "strategy": "RCT",
+    "source_of_variation": "Random allocation to treatment and control in the Quickly Back to Work (\"Hurtigt i gang\") experiment organized by the Danish Ministry of Labor: \"those born on the 1st to the 15th were given the treatment, and those born on the 16th to the 31st were not\", among all newly unemployed UI-entitled individuals in two counties in the winter of 2005-2006.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Allocation by day of birth is random, so treatment status is independent of the unobserved determinants of unemployment duration.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The design: all newly unemployed UI-entitled individuals in the two counties were allocated to treatment or control by day of birth (p. 14). No balance table is reported in this paper.",
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "Quickly Back to Work treatment assignment"
+       ],
+       "rhs": [
+        "unobserved determinants of unemployment duration"
+       ],
+       "given": [],
+       "implies_edges": [
+        {
+         "from": "unobserved determinants of unemployment duration",
+         "to": "Quickly Back to Work treatment assignment",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "No interference between units: treating one unemployed person does not change another's unemployment duration (needed for the raw treatment-control difference to measure the effect of the policy).",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper flags the opposite possibility in footnote 8: spillover and congestion effects between treated and untreated unemployed competing for the same jobs, citing Crepon et al. (2013), Ferracci, Jolivet, and van den Berg (2014) and Gautier et al. (2018a).",
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "treatment of other unemployed individuals",
+         "to": "own share still unemployed after ten weeks",
+         "kind": "interference_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "congestion/spillover effects on untreated unemployed individuals competing for the same jobs (footnote 8)",
+     "macroeconomic wage and vacancy effects of activation (footnote 8)"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "possible congestion and spillover effects across unemployed individuals, which the unconditional treatment-control comparison cannot net out"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "unconditional comparison of nonparametric survivor functions (share still unemployed by elapsed duration in weeks) between the randomly assigned treatment and control groups; no regression, standard error or test reported in this paper",
+     "evidence": [
+      "e1",
+      "e9",
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 4, p. 15 (survivor curves for treatment and control), read at 10 weeks; numbers stated in the text on p. 14",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F4"
+   },
+   "mediators_claimed": [
+    "threat effect of activation: unemployed leave unemployment at an increasing rate as the time of activation approaches",
+    "job search assistance and frequent meetings with caseworkers"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "elapsed unemployment duration",
+     "finding": "the treatment-control difference widens from 10 percentage points at ten weeks to a 30 percent lower level of remaining unemployment at around 20 weeks (p. 14)"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Quickly Back to Work treatment assignment",
+     "share still unemployed after ten weeks",
+     "unobserved determinants of unemployment duration",
+     "treatment of other unemployed individuals",
+     "own share still unemployed after ten weeks"
+    ],
+    "edges": [
+     {
+      "from": "Quickly Back to Work treatment assignment",
+      "to": "share still unemployed after ten weeks",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "unobserved determinants of unemployment duration",
+      "to": "Quickly Back to Work treatment assignment",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "treatment of other unemployed individuals",
+      "to": "own share still unemployed after ten weeks",
+      "kind": "interference_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 14,
+      "sha256_16": "92ab1e8f25affcf5",
+      "n_chars": 189
+     },
+     {
+      "page": 14,
+      "sha256_16": "d78b1fa36149edf1",
+      "n_chars": 71
+     },
+     {
+      "page": 14,
+      "sha256_16": "ae7152a2ae137322",
+      "n_chars": 121
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The figure \"partly replicates Figure 4 of Gautier et al. (2018a)\"; the numbers are stated in this paper's text and read off its own Figure 4.",
+    "The control-group level is given as \"around 60 percent\" and the treatment level as \"about half\", so both the baseline mean and the 10 percentage-point difference are rounded figures as the paper prints them.",
+    "No significance test is reported, so statistically_significant is null."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 4",
+     "panel": null,
+     "page": 15,
+     "annotation": "Figure 4 Exit from Unemployment for Treatment and Control Groups in the Danish Quickly Back to Work Experiment | legend \"Treatment\" / \"Control\"; axes \"Percent\" (0-100) and \"Duration in weeks\" (0-50) | \"Source: Gautier et al. (2018b).\" | \"Note: The figure partly replicates Figure 4 of Gautier et al. (2018a). The figure shows the fraction of individuals that are still unemployed at different elapsed durations of unemployment. The figure distinguishes between unemployed individuals that participated in a randomized controlled experiment (Quickly Back to Work) that offered more frequent participation in active labor market programs than the control group, which was subject to the traditional labor market policy. The graphs are based on weekly unemployment data for the two groups of unemployed.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F4"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ae7152a2ae137322",
+     "n_chars": 121
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "cf1571c9bd8bff11",
+     "n_chars": 298
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "92ab1e8f25affcf5",
+     "n_chars": 189
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "d78b1fa36149edf1",
+     "n_chars": 71
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": "Figure 4",
+     "panel": null,
+     "page": 15,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "c5d6c2f2e18aa0c7",
+     "n_chars": 226
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f316a8e190c34294",
+     "n_chars": 197
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "66a9e48d1a9d8368",
+     "n_chars": 280
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3ad4a56bab9ff43d",
+     "n_chars": 146
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0f8e45601142d5a4",
+     "n_chars": 162
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": "numerical",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "threat/motivation effect of mandatory activation in an equilibrium search model (Andersen and Svarer 2014)",
+    "workfare as a screening device against adverse selection (Hansen and Tranaes 1999; Kreiner and Tranaes 2005)",
+    "lock-in effect of program participation"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Gautier et al. (2018a)",
+     "relation": "replicates",
+     "stated": true,
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "as_stated": "The figure partly replicates Figure 4 of Gautier et al. (2018a)."
+    },
+    {
+     "citation": "Graversen and van Ours (2008)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e10"
+     ],
+     "as_stated": "Graversen and van Ours (2008) apply duration models and find that the re-employment rate increases about 30 percent in the early phase of the unemployment period."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 14,
+    "text": "After ten weeks, about half of the people in the treatment group have left unemployment, and half are still unemployed. The share still unemployed in the control group is around 60 percent.",
+    "sha256_16": "92ab1e8f25affcf5",
+    "n_chars": 189
+   }
+  },
+  {
+   "claim_id": "dk_W4308473136_c5",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "In the Quickly Back to Work experiment the treatment-control gap widens with duration: at around 20 weeks of elapsed unemployment, the number of people still unemployed is 30 percent lower in the treatment group than in the control group.",
+   "treatment": {
+    "label": "Quickly Back to Work treatment: intensified active labor market measures for newly unemployed UI recipients",
+    "ontology_node": null,
+    "register_source": {
+     "value": "weekly unemployment data for the two groups of unemployed (Gautier et al. 2018b); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "\"intensified labor market measures, involving information, early mandatory participation in job search assistance programs, frequent meetings with case workers, and full-time program participation in an active labor market program for at least three months for those still unemployed after 18 weeks.\" (p. 14); the control group received the traditional labor market policy.",
+     "evidence": [
+      "e3",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "from entry into unemployment, winter 2005-2006, in two Danish counties; full-time program participation starts after 18 weeks for those still unemployed",
+     "evidence": [
+      "e3",
+      "e7"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "number of people still unemployed at around 20 weeks of elapsed unemployment duration",
+    "ontology_node": null,
+    "register_source": {
+     "value": "weekly unemployment data for the two groups of unemployed (Gautier et al. 2018b); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "\"the fraction of individuals that are still unemployed at different elapsed durations of unemployment\" (Figure 4 note), compared at about 20 weeks and expressed as a percentage difference relative to \"the counterfactual unemployment in the control group\".",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "around 20 weeks of elapsed unemployment duration",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_less"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e4",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": -30,
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percent (relative difference in the number still unemployed, treatment versus control, at about 20 weeks)",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The difference between the two groups widens up to around 20 weeks of elapsed duration. At this point, the number of people who are still unemployed is 30 percent lower in the treatment group compared to the counterfactual unemployment in the control group.\"",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ITT",
+    "target_population": "newly unemployed individuals entitled to unemployment insurance benefits in the two Danish counties covered by the experiment in the winter of 2005-2006",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "at around 20 weeks of elapsed unemployment duration",
+    "formal_query": null,
+    "horizon": {
+     "from": 20,
+     "to": 20,
+     "unit": "weeks",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "All individuals in two Danish counties who became unemployed and were entitled to unemployment insurance benefits during the winter of 2005-2006, allocated to a treatment or a control group",
+    "birth_cohorts": null,
+    "ages": null,
+    "sex": "all",
+    "period": "winter of 2005-2006",
+    "region": "two counties in Denmark",
+    "subgroups_defined": [
+     "treatment group (born on the 1st to the 15th of a month)",
+     "control group (born on the 16th to the 31st of a month)"
+    ],
+    "selection": "newly unemployed recipients of unemployment insurance in the two experimental counties during the experiment window; assignment by day of birth",
+    "period_range": {
+     "from": 2005,
+     "to": 2006
+    }
+   },
+   "identification": {
+    "strategy": "RCT",
+    "source_of_variation": "Random allocation by day of birth in the Quickly Back to Work experiment: \"those born on the 1st to the 15th were given the treatment, and those born on the 16th to the 31st were not\", among all newly unemployed UI-entitled individuals in two Danish counties in the winter of 2005-2006.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Allocation by day of birth is random, so treatment status is independent of the unobserved determinants of unemployment duration.",
+      "stated_or_implicit": "stated",
+      "supported_by": "The design (p. 14); no balance table is reported in this paper.",
+      "evidence": [
+       "e2",
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "Quickly Back to Work treatment assignment"
+       ],
+       "rhs": [
+        "unobserved determinants of unemployment duration"
+       ],
+       "given": [],
+       "implies_edges": [
+        {
+         "from": "unobserved determinants of unemployment duration",
+         "to": "Quickly Back to Work treatment assignment",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "No interference between units: the control group's survivor curve is the counterfactual for the treatment group, i.e. treating some unemployed does not change the job chances of others.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "The paper calls the control curve \"the counterfactual unemployment in the control group\" while flagging possible congestion/spillover effects in footnote 8.",
+      "evidence": [
+       "e4",
+       "e8"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "treatment of other unemployed individuals",
+         "to": "own unemployment status at 20 weeks",
+         "kind": "interference_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "congestion/spillover effects on untreated unemployed individuals competing for the same jobs (footnote 8)",
+     "lock-in effects while participants are in a program"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "possible congestion and spillover effects across unemployed individuals, which the unconditional treatment-control comparison cannot net out"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "unconditional comparison of nonparametric survivor functions between the randomly assigned treatment and control groups, expressed as a relative (percent) difference at about 20 weeks; no regression, standard error or test reported",
+     "evidence": [
+      "e1",
+      "e9",
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 4, p. 15, read at about 20 weeks; number stated in the text on p. 14",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F4"
+   },
+   "mediators_claimed": [
+    "threat effect of approaching mandatory activation (full-time program participation after 18 weeks)",
+    "job search assistance and frequent caseworker meetings"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "elapsed unemployment duration",
+     "finding": "the relative treatment-control difference grows from 15 percent at ten weeks to 30 percent at around 20 weeks, after which the paper states the difference stops widening"
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "Quickly Back to Work treatment assignment",
+     "number still unemployed at 20 weeks",
+     "unobserved determinants of unemployment duration",
+     "treatment of other unemployed individuals",
+     "own unemployment status at 20 weeks"
+    ],
+    "edges": [
+     {
+      "from": "Quickly Back to Work treatment assignment",
+      "to": "number still unemployed at 20 weeks",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "unobserved determinants of unemployment duration",
+      "to": "Quickly Back to Work treatment assignment",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "treatment of other unemployed individuals",
+      "to": "own unemployment status at 20 weeks",
+      "kind": "interference_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 14,
+      "sha256_16": "61dfa774d776972d",
+      "n_chars": 257
+     },
+     {
+      "page": 15,
+      "sha256_16": "166e5a0613c6e6cc",
+      "n_chars": 64
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The 30 percent figure is a relative difference at \"around 20 weeks\"; the paper prints no level for either group at that duration, so baseline_mean is null.",
+    "Whether the 30 percent refers to the same survivor curves read at exactly 20 weeks is as precise as the paper is - it says \"around 20 weeks\"."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 4",
+     "panel": null,
+     "page": 15,
+     "annotation": "Figure 4 Exit from Unemployment for Treatment and Control Groups in the Danish Quickly Back to Work Experiment | legend \"Treatment\" / \"Control\"; axes \"Percent\" (0-100) and \"Duration in weeks\" (0-50) | \"Source: Gautier et al. (2018b).\" | \"Note: The figure partly replicates Figure 4 of Gautier et al. (2018a). The figure shows the fraction of individuals that are still unemployed at different elapsed durations of unemployment. ... The graphs are based on weekly unemployment data for the two groups of unemployed.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F4"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "ae7152a2ae137322",
+     "n_chars": 121
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "cf1571c9bd8bff11",
+     "n_chars": 298
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "61dfa774d776972d",
+     "n_chars": 257
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": "Figure 4",
+     "panel": null,
+     "page": 15,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "0a9b05d00110ee72",
+     "n_chars": 180
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "f316a8e190c34294",
+     "n_chars": 197
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 13,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "66a9e48d1a9d8368",
+     "n_chars": 280
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 14,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "3ad4a56bab9ff43d",
+     "n_chars": 146
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": "numerical",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "threat/motivation effect of mandatory activation in an equilibrium search model (Andersen and Svarer 2014)",
+    "lock-in effect of program participation"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Gautier et al. (2018a)",
+     "relation": "replicates",
+     "stated": true,
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "as_stated": "The figure partly replicates Figure 4 of Gautier et al. (2018a)."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 14,
+    "text": "The difference between the two groups widens up to around 20 weeks of elapsed duration. …",
+    "sha256_16": "61dfa774d776972d",
+    "n_chars": 257
+   }
+  },
+  {
+   "claim_id": "dk_W4308473136_c6",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": null,
+   "statement": "The employment loss at the age-18 minimum wage hike is temporary in level terms: it takes two additional years, until age 20, before the employment rate is back to the level it had before the wage hike, so by 24 months after the 18th birthday no employment shortfall remains.",
+   "treatment": {
+    "label": "turning 18 years old, and thereby becoming eligible for the significantly higher negotiated adult minimum wage",
+    "ontology_node": null,
+    "register_source": {
+     "value": "monthly payroll records for the Danish population (via Kreiner et al. 2020); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The age discontinuity in the collectively agreed minimum wage at 18, which raises the observed wage rate by 40 percent (midpoint method).",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "at the 18th birthday; the figure window extends to 24 months after",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "employment rate (percent) 24 months after the 18th birthday (at age 20), relative to its level before the wage hike",
+    "ontology_node": null,
+    "register_source": {
+     "value": "monthly payroll records for the Danish population (via Kreiner et al. 2020); no register code or variable named",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Monthly employment rate by month of age, read at +24 months in Figure 2 and compared with the pre-18 level: \"it takes two additional years (age 20) before employment is back to the level before the wage hike\".",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "24 months after the 18th birthday (age 20)",
+     "evidence": [
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "null",
+     "evidence": [
+      "e2",
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e2",
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "\"The graph also shows that it takes two additional years (age 20) before employment is back to the level before the wage hike.\" - i.e. the level gap has closed by +24 months, but no estimate of the residual gap is printed.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "ATE",
+    "target_population": "young Danish workers two years after the age-18 minimum wage discontinuity",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": "24 months after the 18th birthday (age 20)",
+    "formal_query": null,
+    "horizon": {
+     "from": 24,
+     "to": 24,
+     "unit": "months",
+     "kind": "point_in_time"
+    }
+   },
+   "population": {
+    "description": "Danish population of young workers observed in monthly payroll records, ages 16-20, in the 24 months after the 18th birthday",
+    "birth_cohorts": null,
+    "ages": "16-20 (monthly age; up to 24 months after the 18th birthday)",
+    "sex": "all",
+    "period": null,
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "young workers observed in monthly payroll records for the Danish population",
+    "period_range": null
+   },
+   "identification": {
+    "strategy": "regression_discontinuity",
+    "source_of_variation": "The age-18 jump in the negotiated minimum wage; the dynamics of the monthly employment rate are followed for 24 months after the discontinuity in Figure 2.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The pre-18 employment level is the right benchmark for the post-18 employment path, i.e. employment would otherwise have been flat in age over this window.",
+      "stated_or_implicit": "implicit",
+      "supported_by": "Nothing beyond the visual comparison of the Figure 2 profile with its pre-18 level; employment generally rises with age in this age range, which the paper does not address.",
+      "evidence": [
+       "e1",
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "counterfactual_mean",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": [
+     "the recovery is a return to the pre-18 level, not an estimate of the counterfactual employment path at age 20; the paper gives no counterfactual for that horizon"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "visual reading of the monthly employment profile in Figure 2: the number of months after the 18th birthday at which employment returns to its pre-18 level; no estimate, standard error or test reported",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": null,
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Figure 2, p. 10, read at +24 months; stated in the text on p. 9",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": "dk_W4308473136::F2"
+   },
+   "mediators_claimed": [
+    "firms' quick employment adjustment to the higher wage cost, followed by re-absorption of the cohort as productivity and experience rise with age"
+   ],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "turning 18 years old",
+     "employment rate 24 months later (age 20)"
+    ],
+    "edges": [
+     {
+      "from": "turning 18 years old",
+      "to": "employment rate 24 months later (age 20)",
+      "kind": "causal_tested_null",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 9,
+      "sha256_16": "4ee7e4288e0e9d0e",
+      "n_chars": 125
+     },
+     {
+      "page": 10,
+      "sha256_16": "72045391eed77dc6",
+      "n_chars": 116
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper prints no estimate, standard error or test for the +24-month horizon; the null is the stated return of employment to its pre-hike level, read off Figure 2.",
+    "A return to the pre-18 LEVEL is not the same as a zero treatment effect at age 20, since employment would normally rise with age; the paper does not make that distinction, and we record the claim as the paper states it."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "figure",
+     "exhibit": "Figure 2",
+     "panel": null,
+     "page": 10,
+     "annotation": "Figure 2 Employment Rate around Workers’ 18th Birthday | axes: \"Employment rate (percent)\" (20 to 60) and \"Month relative to 18th birthday\" (-24 to 24) | \"Source: Kreiner et al. (2020).\" | \"Note: The figure depicts employment rates by age, in months, for two years before and after individuals turn 18 years old. It is based on monthly payroll records for the Danish population. ... The percentage changes are computed using the midpoint method.\"",
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": "dk_W4308473136::F2"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "4ee7e4288e0e9d0e",
+     "n_chars": 125
+    },
+    {
+     "id": "e3",
+     "kind": "absent",
+     "exhibit": "Figure 2",
+     "panel": null,
+     "page": 10,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "6beea77acbe2f310",
+     "n_chars": 216
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "exhibit": null,
+     "panel": null,
+     "page": 9,
+     "annotation": null,
+     "relation": null,
+     "derived_from": [],
+     "how": null,
+     "regression_id": null,
+     "figure_id": null,
+     "sha256_16": "9e17b68392d41e8f",
+     "n_chars": 229
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": null,
+   "theory_referenced": [
+    "labor demand: firms do not keep workers whose wage costs exceed their productivity"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Kreiner et al. (2020)",
+     "relation": "replicates",
+     "stated": true,
+     "evidence": [
+      "e1"
+     ],
+     "as_stated": "The figure replicates Figure 1.B in Kreiner et al. (2020), which describes the data and the estimation of the fitted line and the percentage drop in employment at age 18."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "target_designation": null,
+   "verification": null,
+   "verification_problems": [],
+   "anchor_quote": {
+    "page": 9,
+    "text": "The graph also shows that it takes two additional years (age 20) before employment is back to the level before the wage hike.",
+    "sha256_16": "4ee7e4288e0e9d0e",
+    "n_chars": 125
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "ce59d8b1bef498aba97b0db9d21abed81b14aa24d0c78bd8f8c7cf1bd0137871",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-13T03:07:54.902376+00:00",
+  "tables_sha256": "b421ff45a607ebd1b9d1f4825b8b9a2e93e9b482a001a69a47773665fa1eeea2",
+  "figures_sha256": "461bb3a8cc16605c98d1e5e7f0a175fce9cea7e6457be8d4fa6cd0aa5d0ec4f5"
+ },
+ "public_export": {
+  "anchor_quotes": 6,
+  "quotes_hashed": 55,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

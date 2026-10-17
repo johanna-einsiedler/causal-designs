@@ -1,0 +1,5764 @@
+{
+ "artid": "dk_W2801202920",
+ "paper": {
+  "title": "Intergenerational mobility: New evidence from consumption data",
+  "authors": [
+   "Gustaf Bruze"
+  ],
+  "year": 2018,
+  "journal": "Journal of Applied Econometrics",
+  "doi": "10.1002/jae.2626",
+  "code_data_availability": "The article carries no data or code availability statement and names no Statistics Denmark project number. …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "Danish Expenditure Survey (DES)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "instrument; anchor for the consumption imputation; sample frame for the consumption and imputation samples",
+    "variables_mentioned": [
+     "self-reported private purchases recorded in a 2-week diary",
+     "major purchases and regular expenditures reported in an interview",
+     "imputed value of owner-occupied housing",
+     "total expenditures of the household"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Buildings and Housing Registry (Bygnings- og boligregistret)",
+    "dst_code": "BBR",
+    "years": "1995-2009",
+    "role": "proxies for household consumption (treatment and outcome construction)",
+    "variables_mentioned": [
+     "list of the residents in each housing unit",
+     "size of the unit in square meters",
+     "number of rooms"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Registry of government appraisals of all houses and condominiums in Denmark (Ejendomsvurderingar)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "proxies for household consumption (imputed market value of the home)",
+    "variables_mentioned": [
+     "government appraisals of houses and condominiums"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Registry of prices of all houses and condominiums sold in Denmark (Ejendomme salgsoplysninger)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "proxies for household consumption (imputed market value of the home)",
+    "variables_mentioned": [
+     "sales prices of houses and condominiums"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Central Vehicle Registry (Centralregistret for Motorkøretøjer)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "proxies for household consumption (car ownership)",
+    "variables_mentioned": [
+     "owner",
+     "brand",
+     "model",
+     "type",
+     "vintage of all private cars",
+     "total number of cars owned by the household",
+     "total value of the household's cars"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Sygesikringsregistret (registry of dental treatments provided under the government health insurance plan)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "proxies for household consumption (dental expenditures)",
+    "variables_mentioned": [
+     "total expenditures on dental care",
+     "total number of routine dental treatments",
+     "total number of teeth-cleaning treatments"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Income Tax Registry (Indkomstskatteregistret)",
+    "dst_code": "IND",
+    "years": "1995-2009",
+    "role": "proxies for household consumption (total expenditures approximated as disposable income minus the change in wealth); household wealth and income",
+    "variables_mentioned": [
+     "taxable income and wealth of all Danish residents",
+     "household disposable income, y",
+     "household wealth, w"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Population-wide Danish registries (links between parents and their children)",
+    "dst_code": null,
+    "years": "1980-2009",
+    "role": "linkage and sample frame; source of earnings and income data from 1980",
+    "variables_mentioned": [
+     "links between parents and their children",
+     "social security number",
+     "earnings and income (available from 1980)"
+    ],
+    "year_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   {
+    "name_in_paper": "Detailed division of Denmark into neighborhoods (Piil Damm & Schultz-Nielsen, 2008; Rockwool Foundation Research Unit)",
+    "dst_code": null,
+    "years": "1995-2009",
+    "role": "input to the imputation of home market values",
+    "variables_mentioned": [
+     "neighborhood",
+     "zip code"
+    ],
+    "year_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   }
+  ],
+  "linkages": [
+   "All household members in the Danish Expenditure Survey are linked to official Danish registries through their social security number",
+   "Parents are linked to their children through the parent-child links contained in the population-wide Danish registries",
+   "Self-reported consumption in the survey is linked to registry proxies to estimate the imputation model (Equation 9), which is then applied to all households"
+  ],
+  "sample": {
+   "universe": "Danish residents: pairs of parents and children, and households participating in the Danish Expenditure Survey 1995-2009",
+   "unit_of_observation": "Pair of one parent and one child (mobility regressions); household (imputation sample and Table 4)",
+   "selection_rules": [
+    "Imputation sample: households that participated in the DES between 1995 and 2009 in which the head of the household was between 25 and 74 years old (3,297 single and 5,278 married households)",
+    "Consumption sample: pairs of parents and children in which the parent participated in the DES between 1995 and 2009",
+    "Consumption sample: the parent was at least 40 years old in 1995",
+    "Consumption sample: the parent was no more than 74 years old in 2009",
+    "Consumption sample: the child was at least 25 years old in 1995",
+    "Income sample: the same age requirements, but no requirement that the parent participated in the DES; selected from the entire Danish population"
+   ],
+   "period": "1980-2009 (earnings and income of parents 1980-1989; consumption, earnings and income of children 1995-2009; wealth in 2010 for Table 4)",
+   "n_observations": "1,690 parent-child pairs (consumption sample); 231,011 parent-child pairs (income sample); 8,351 observations for the expenditure-income ratio and 46,546 for the wealth-income ratio in Table 4",
+   "n_individuals": "Consumption sample: 720 fathers and 970 mothers, 735 sons and 955 daughters. Income sample: 105,600 fathers and 125,411 mothers, 107,662 sons and 123,349 daughters"
+  },
+  "construction_notes": [
+   "Household expenditures are approximated as x ≈ y − Δw, disposable income minus the change in household wealth (Equation 1, following Browning & Leth-Petersen, 2003)",
+   "Log permanent consumption is defined as average log consumption over the 15 years 1995-2009 (Equation 3); 'permanent consumption' means time-averaged consumption and does not refer to the probabilistic properties of household consumption",
+   "Consumption is imputed by regressing log self-reported consumption on registry proxies and demographic variables (Equation 9), estimated by 2SLS instrumenting total expenditures and the home value with 2-year lagged total expenditures, mean total expenditures by gender and three-digit occupation, mean home values by gender and three-digit occupation, and mean home values by zip code",
+   "Equation 9 is estimated separately for singles (observations pooled over three consecutive years with year dummies) and for couples (one regression per year)",
+   "An equivalence scale for couples equal to the square root of two is applied, and each spouse is assigned half of the couple's total consumption",
+   "On average, the housing imputation model explains 76% of the total variation in the market prices of houses and condominiums within each year from 1995 to 2009",
+   "Estimated with OLS, the imputation model (Equation 9) explains an average of 35% of the variation in self-reported consumption within each year",
+   "Earnings and income of parents are measured over 1980-1989, because many parents have retired by 1995-2009; 1980 is the first year with earnings and income data in the Danish registries",
+   "Standard errors: robust asymptotic in the income sample; bootstrapped in the consumption sample, with 200 draws replicating the whole estimation process including the imputation of housing values, the imputation of consumption in each year, the construction of permanent consumption and the final estimation",
+   "When testing the equality of two regression coefficients, a nonzero sample correlation between the coefficients is allowed for",
+   "For Table 4, the present value of permanent disposable income is computed with an annual interest rate of 2%"
+  ]
+ },
+ "claims": [
+  {
+   "claim_id": "dk_W2801202920_c1",
+   "headline": true,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S2",
+      "pointed_to": "number",
+      "estimand": "S2/consumption-sample/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C1",
+      "row": 0
+     },
+     {
+      "stated_claim": "S4",
+      "pointed_to": "number",
+      "estimand": "S4/earnings/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C1",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "The intergenerational elasticity of individual after-tax earnings in Denmark, estimated in the consumption sample, is 0.086: a 1% higher log time-averaged parent after-tax earnings is associated with a 0.086% higher log time-averaged child after-tax earnings.",
+   "treatment": {
+    "label": "Log parent time-averaged (permanent) individual after-tax earnings",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the parent's individual after-tax earnings, time-averaged over the 10-year period 1980-1989. The paper measures parent earnings in 1980-1989 rather than 1995-2009 because many parents have retired by the later period; 1980 is the first year with earnings data in the Danish registries.",
+     "evidence": [
+      "e5",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1980-1989, when the parents are 39-48 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log child time-averaged (permanent) individual after-tax earnings",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the child's individual after-tax earnings, time-averaged over the sample period. The dependent variable in all Table 2 regressions is the log child outcome.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Time-averaged over the sample period, when the children are 30-44 years old on average",
+     "evidence": [
+      "e13"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.086,
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.024)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child after-tax earnings per log point of parent after-tax earnings",
+      "evidence": [
+       "e1",
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10",
+     "se": {
+      "value": 0.024,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children satisfying the age requirements, in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "𝛽 in log(Yic) = 𝛼 + 𝛽 log(Yip) + Di 𝛿 + 𝜀i, the elasticity of the child's log time-averaged after-tax earnings with respect to the parent's, instrumented to purge measurement error",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "No policy or natural experiment: the parent's time-averaged after-tax earnings is instrumented with the mean earnings in Denmark by gender and three-digit occupational code, in order to remove attenuation bias from measurement error in parent earnings.",
+    "instrument": "Mean earnings in Denmark by gender and three-digit occupational code",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The error term in the mobility regression has mean zero and is uncorrelated with the independent variables of the model, the parent outcome and the demographic controls Di",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "log parent time-averaged after-tax earnings"
+       ],
+       "rhs": [
+        "𝜀i (unobserved determinants of child after-tax earnings)"
+       ],
+       "given": [
+        "Di demographic controls"
+       ],
+       "implies_edges": [
+        {
+         "from": "Di demographic controls",
+         "to": "log child time-averaged after-tax earnings",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the mean earnings in Denmark by gender and three-digit occupational code predicts the parent's time-averaged after-tax earnings",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+         "to": "log parent time-averaged after-tax earnings",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Exclusion restriction: the gender-by-occupation mean earnings instrument affects the child's earnings only through the parent's time-averaged after-tax earnings (and the controls Di)",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+         "to": "log child time-averaged after-tax earnings",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Life-cycle bias is small: because parent and child earnings are measured at a fairly similar age, the downward bias in the estimated persistence of earnings is likely to be small",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 mean ages (parents 39-48, children 30-44 / 29-43) and the arguments of Grawe (2006) and Haider and Solon (2006)",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Life-cycle bias: households with higher lifetime earnings have steeper age-earnings profiles, so measuring parent and child earnings at different ages biases the estimated persistence downwards (Grawe, 2006; Haider & Solon, 2006)",
+     "Attenuation bias from measurement error in parental earnings, addressed by 2SLS"
+    ],
+    "robustness_checks": [
+     "Estimation in two independent samples: the consumption sample (1,690 pairs) and the income sample (231,011 pairs)"
+    ],
+    "unresolved_confounders": [
+     "A small remaining downward bias in the estimated persistence of earnings from measuring parent and child earnings at different stages of the life cycle"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation 2: regression of the log time-averaged (permanent) child outcome on the log time-averaged (permanent) parent outcome and the demographic controls Di, estimated by 2SLS. Robust asymptotic standard errors in the income sample; bootstrapped standard errors (200 draws replicating the whole estimation process) in the consumption sample.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 1690,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, column 'After-tax earnings, consumption sample' (p. 588)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T2::_::C1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "outcome measure (after-tax earnings vs. family disposable income)",
+     "finding": "These estimates for income are significantly larger than the estimates for earnings."
+    },
+    {
+     "dimension": "outcome measure (after-tax earnings vs. consumption), consumption sample",
+     "finding": "The difference between the persistence of consumption and earnings is significant at the 1% level, and the difference between the persistence of consumption and income is significant at the 5% level (p = 0.011)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "log parent time-averaged after-tax earnings",
+     "log child time-averaged after-tax earnings",
+     "Mean earnings in Denmark by gender and three-digit occupational code",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "log parent time-averaged after-tax earnings",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     },
+     {
+      "from": "Di demographic controls",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+      "to": "log parent time-averaged after-tax earnings",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "13538e6f48f853b0",
+      "n_chars": 131
+     },
+     {
+      "page": 581,
+      "sha256_16": "49db0b5c29b0d648",
+      "n_chars": 107
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not name the Danish register from which after-tax earnings are drawn.",
+    "Equation 2 is written for consumption; the paper states that earnings and income mobility are estimated with the same 2SLS set-up and the same controls Di, so the functional form is recorded as the analogue of Equation 2 for earnings.",
+    "The exclusion restriction and relevance of the gender-by-occupation mean earnings instrument are never discussed in the paper; they are recorded as implicit."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 2",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T2::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "13538e6f48f853b0",
+     "n_chars": 131
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "7ec235d8dda4c6e0",
+     "n_chars": 104
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "1d238a26a0199616",
+     "n_chars": 142
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "a1000b805c4e5f83",
+     "n_chars": 116
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "ef0c34e431204226",
+     "n_chars": 97
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "4cf669c037897da5",
+     "n_chars": 156
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "71e511797d1f7f86",
+     "n_chars": 41
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": "Table 2",
+     "page": 588,
+     "sha256_16": "aa38f643d08a6f24",
+     "n_chars": 116
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 2",
+     "page": 584,
+     "sha256_16": "bbb23d4588597889",
+     "n_chars": 186
+    },
+    {
+     "id": "e12",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 583,
+     "sha256_16": "81ca92fc344d77bf",
+     "n_chars": 192
+    },
+    {
+     "id": "e13",
+     "kind": "derivation",
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "table:dk_W2801202920::T2::_::C1",
+      "evidence:e1"
+     ],
+     "how": "Mean ages of children for this sample are read from Table 1 (p. 584), row 'Mean age earnings/income'."
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "2",
+     "as_printed": "log(Cic ) = 𝛼 + 𝛽 log(Ci𝑝 ) + Di 𝛿 + 𝜀i .",
+     "lhs": "log(Cic ) in Equation 2; for this claim the dependent variable is the log child time-averaged after-tax earnings",
+     "terms": [
+      {
+       "expression": "𝛼",
+       "role": "intercept",
+       "parameter": "𝛼"
+      },
+      {
+       "expression": "𝛽 log(Ci𝑝 )",
+       "role": "parameter_of_interest",
+       "parameter": "𝛽"
+      },
+      {
+       "expression": "Di 𝛿",
+       "role": "control",
+       "parameter": "𝛿"
+      },
+      {
+       "expression": "𝜀i",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "𝛽",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "family (pair of one parent and one child)"
+      }
+     ],
+     "normalisation": "Both sides in logs, so 𝛽 is an elasticity; permanent consumption is defined in Equation 3 as the average of log consumption over the 15 sample years 1995-2009. No omitted category or base period is stated.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e9",
+     "e4"
+    ],
+    "confidence": "medium"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Bratsberg, Røed, Raaum, Naylor, Jäntti, Eriksson, & Österbacka (2007)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e8"
+     ],
+     "as_stated": "These results are similar to those of previous studies which have found a low intergenerational persistence of earnings in Denmark (Bratsberg et al., 2007)."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "For earnings, the estimated intergenerational elasticities are 0.086 and 0.067 in the consumption and income samples (see Table 2).",
+    "sha256_16": "13538e6f48f853b0",
+    "n_chars": 131
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c2",
+   "headline": true,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S2",
+      "pointed_to": "number",
+      "estimand": "S2/income-sample/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C2",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "The intergenerational elasticity of individual after-tax earnings in Denmark, estimated in the income sample, is 0.067: a 1% higher log time-averaged parent after-tax earnings is associated with a 0.067% higher log time-averaged child after-tax earnings.",
+   "treatment": {
+    "label": "Log parent time-averaged (permanent) individual after-tax earnings",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the parent's individual after-tax earnings, time-averaged over the 10-year period 1980-1989. The paper measures parent earnings in 1980-1989 rather than 1995-2009 because many parents have retired by the later period; 1980 is the first year with earnings data in the Danish registries.",
+     "evidence": [
+      "e5",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1980-1989, when the parents are 39-48 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log child time-averaged (permanent) individual after-tax earnings",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the child's individual after-tax earnings, time-averaged over the sample period. The dependent variable in all Table 2 regressions is the log child outcome.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Time-averaged over the sample period, when the children are 29-43 years old on average",
+     "evidence": [
+      "e13"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.067,
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.0012)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child after-tax earnings per log point of parent after-tax earnings",
+      "evidence": [
+       "e1",
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10",
+     "se": {
+      "value": 0.0012,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children satisfying the age requirements, in the income sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "𝛽 in log(Yic) = 𝛼 + 𝛽 log(Yip) + Di 𝛿 + 𝜀i, the elasticity of the child's log time-averaged after-tax earnings with respect to the parent's, instrumented to purge measurement error",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children drawn from the entire Danish population with the same age requirements as the consumption sample but no survey participation requirement (the 'income sample'), 231,011 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age earnings/income: parents 39-48, children 29-43",
+    "sex": "all",
+    "period": "Parent earnings and income measured 1980-1989; child earnings and income over the sample period",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Selected from the entire Danish population subject only to the age requirements; no Danish Expenditure Survey participation required",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "No policy or natural experiment: the parent's time-averaged after-tax earnings is instrumented with the mean earnings in Denmark by gender and three-digit occupational code, in order to remove attenuation bias from measurement error in parent earnings.",
+    "instrument": "Mean earnings in Denmark by gender and three-digit occupational code",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The error term in the mobility regression has mean zero and is uncorrelated with the independent variables of the model, the parent outcome and the demographic controls Di",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "log parent time-averaged after-tax earnings"
+       ],
+       "rhs": [
+        "𝜀i (unobserved determinants of child after-tax earnings)"
+       ],
+       "given": [
+        "Di demographic controls"
+       ],
+       "implies_edges": [
+        {
+         "from": "Di demographic controls",
+         "to": "log child time-averaged after-tax earnings",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the mean earnings in Denmark by gender and three-digit occupational code predicts the parent's time-averaged after-tax earnings",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+         "to": "log parent time-averaged after-tax earnings",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Exclusion restriction: the gender-by-occupation mean earnings instrument affects the child's earnings only through the parent's time-averaged after-tax earnings (and the controls Di)",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+         "to": "log child time-averaged after-tax earnings",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Life-cycle bias is small: because parent and child earnings are measured at a fairly similar age, the downward bias in the estimated persistence of earnings is likely to be small",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 mean ages (parents 39-48, children 30-44 / 29-43) and the arguments of Grawe (2006) and Haider and Solon (2006)",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Life-cycle bias: households with higher lifetime earnings have steeper age-earnings profiles, so measuring parent and child earnings at different ages biases the estimated persistence downwards (Grawe, 2006; Haider & Solon, 2006)",
+     "Attenuation bias from measurement error in parental earnings, addressed by 2SLS"
+    ],
+    "robustness_checks": [
+     "Estimation in two independent samples: the consumption sample (1,690 pairs) and the income sample (231,011 pairs)"
+    ],
+    "unresolved_confounders": [
+     "A small remaining downward bias in the estimated persistence of earnings from measuring parent and child earnings at different stages of the life cycle"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation 2: regression of the log time-averaged (permanent) child outcome on the log time-averaged (permanent) parent outcome and the demographic controls Di, estimated by 2SLS. Robust asymptotic standard errors in the income sample; bootstrapped standard errors (200 draws replicating the whole estimation process) in the consumption sample.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 231011,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, column 'After-tax earnings, income sample' (p. 588)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T2::_::C2"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "outcome measure (after-tax earnings vs. family disposable income)",
+     "finding": "These estimates for income are significantly larger than the estimates for earnings."
+    },
+    {
+     "dimension": "outcome measure (after-tax earnings vs. consumption), consumption sample",
+     "finding": "The difference between the persistence of consumption and earnings is significant at the 1% level, and the difference between the persistence of consumption and income is significant at the 5% level (p = 0.011)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "log parent time-averaged after-tax earnings",
+     "log child time-averaged after-tax earnings",
+     "Mean earnings in Denmark by gender and three-digit occupational code",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "log parent time-averaged after-tax earnings",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     },
+     {
+      "from": "Di demographic controls",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+      "to": "log parent time-averaged after-tax earnings",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "Mean earnings in Denmark by gender and three-digit occupational code",
+      "to": "log child time-averaged after-tax earnings",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "13538e6f48f853b0",
+      "n_chars": 131
+     },
+     {
+      "page": 581,
+      "sha256_16": "49db0b5c29b0d648",
+      "n_chars": 107
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not name the Danish register from which after-tax earnings are drawn.",
+    "Equation 2 is written for consumption; the paper states that earnings and income mobility are estimated with the same 2SLS set-up and the same controls Di, so the functional form is recorded as the analogue of Equation 2 for earnings.",
+    "The exclusion restriction and relevance of the gender-by-occupation mean earnings instrument are never discussed in the paper; they are recorded as implicit."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 2",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T2::_::C2"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "13538e6f48f853b0",
+     "n_chars": 131
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "7ec235d8dda4c6e0",
+     "n_chars": 104
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "1d238a26a0199616",
+     "n_chars": 142
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "a1000b805c4e5f83",
+     "n_chars": 116
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "ef0c34e431204226",
+     "n_chars": 97
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "4cf669c037897da5",
+     "n_chars": 156
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "71e511797d1f7f86",
+     "n_chars": 41
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": "Table 2",
+     "page": 588,
+     "sha256_16": "aa38f643d08a6f24",
+     "n_chars": 116
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 2",
+     "page": 584,
+     "sha256_16": "bbb23d4588597889",
+     "n_chars": 186
+    },
+    {
+     "id": "e12",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 583,
+     "sha256_16": "81ca92fc344d77bf",
+     "n_chars": 192
+    },
+    {
+     "id": "e13",
+     "kind": "derivation",
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "table:dk_W2801202920::T2::_::C2",
+      "evidence:e1"
+     ],
+     "how": "Mean ages of children for this sample are read from Table 1 (p. 584), row 'Mean age earnings/income'."
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "2",
+     "as_printed": "log(Cic ) = 𝛼 + 𝛽 log(Ci𝑝 ) + Di 𝛿 + 𝜀i .",
+     "lhs": "log(Cic ) in Equation 2; for this claim the dependent variable is the log child time-averaged after-tax earnings",
+     "terms": [
+      {
+       "expression": "𝛼",
+       "role": "intercept",
+       "parameter": "𝛼"
+      },
+      {
+       "expression": "𝛽 log(Ci𝑝 )",
+       "role": "parameter_of_interest",
+       "parameter": "𝛽"
+      },
+      {
+       "expression": "Di 𝛿",
+       "role": "control",
+       "parameter": "𝛿"
+      },
+      {
+       "expression": "𝜀i",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "𝛽",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "family (pair of one parent and one child)"
+      }
+     ],
+     "normalisation": "Both sides in logs, so 𝛽 is an elasticity; permanent consumption is defined in Equation 3 as the average of log consumption over the 15 sample years 1995-2009. No omitted category or base period is stated.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e9",
+     "e4"
+    ],
+    "confidence": "medium"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Bratsberg, Røed, Raaum, Naylor, Jäntti, Eriksson, & Österbacka (2007)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e8"
+     ],
+     "as_stated": "These results are similar to those of previous studies which have found a low intergenerational persistence of earnings in Denmark (Bratsberg et al., 2007)."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "For earnings, the estimated intergenerational elasticities are 0.086 and 0.067 in the consumption and income samples (see Table 2).",
+    "sha256_16": "13538e6f48f853b0",
+    "n_chars": 131
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c3",
+   "headline": true,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S3",
+      "pointed_to": "number",
+      "estimand": "S3/consumption-sample/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C3",
+      "row": 0
+     },
+     {
+      "stated_claim": "S5",
+      "pointed_to": "number",
+      "estimand": "S5/family-disposable-income/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C3",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "The intergenerational elasticity of family disposable income in Denmark, estimated in the consumption sample, is 0.208.",
+   "treatment": {
+    "label": "Log parent time-averaged (permanent) family disposable income",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the parent household's disposable income, time-averaged over the 10-year period 1980-1989; family disposable income pools the incomes of the two spouses of a couple.",
+     "evidence": [
+      "e5",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1980-1989, when the parents are 39-48 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log child time-averaged (permanent) family disposable income",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the child household's disposable income, time-averaged over the sample period. The dependent variable in all Table 2 regressions is the log child outcome.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Time-averaged over the sample period, when the children are 30-44 years old on average",
+     "evidence": [
+      "e13"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.208,
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.035)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child family disposable income per log point of parent family disposable income",
+      "evidence": [
+       "e1",
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "For family disposable income, the estimated elasticities are 0.208 and 0.189 in the consumption and income samples.",
+     "se": {
+      "value": 0.035,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children satisfying the age requirements, in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "𝛽 in log(Yic) = 𝛼 + 𝛽 log(Yip) + Di 𝛿 + 𝜀i, the elasticity of the child's log time-averaged family disposable income with respect to the parent's",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "No policy or natural experiment: the parent's time-averaged family disposable income is instrumented with the mean income in Denmark by gender and three-digit occupational code, to remove attenuation bias from measurement error.",
+    "instrument": "Mean income in Denmark by gender and three-digit occupational code",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The error term in the mobility regression has mean zero and is uncorrelated with the independent variables of the model, the parent outcome and the demographic controls Di",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "log parent time-averaged family disposable income"
+       ],
+       "rhs": [
+        "𝜀i (unobserved determinants of child family disposable income)"
+       ],
+       "given": [
+        "Di demographic controls"
+       ],
+       "implies_edges": [
+        {
+         "from": "Di demographic controls",
+         "to": "log child time-averaged family disposable income",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the mean income in Denmark by gender and three-digit occupational code predicts the parent's time-averaged family disposable income",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean income in Denmark by gender and three-digit occupational code",
+         "to": "log parent time-averaged family disposable income",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Exclusion restriction: the gender-by-occupation mean income instrument affects the child's disposable income only through the parent's time-averaged family disposable income (and Di)",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean income in Denmark by gender and three-digit occupational code",
+         "to": "log child time-averaged family disposable income",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Life-cycle bias is small: parent and child income are measured at a fairly similar age, so the downward bias in the estimated persistence of income is likely to be small",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 mean ages and the arguments of Grawe (2006) and Haider and Solon (2006)",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Life-cycle bias from measuring parent and child income at different ages (Grawe, 2006; Haider & Solon, 2006)",
+     "Attenuation bias from measurement error in parental income, addressed by 2SLS"
+    ],
+    "robustness_checks": [
+     "Estimation in two independent samples: the consumption sample (1,690 pairs) and the income sample (231,011 pairs)"
+    ],
+    "unresolved_confounders": [
+     "A small remaining downward bias from measuring parent and child income at different stages of the life cycle"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation 2: regression of the log time-averaged (permanent) child outcome on the log time-averaged (permanent) parent outcome and the demographic controls Di, estimated by 2SLS. Robust asymptotic standard errors in the income sample; bootstrapped standard errors (200 draws replicating the whole estimation process) in the consumption sample.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 1690,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, column 'Family disposable income, consumption sample' (p. 588)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T2::_::C3"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "outcome measure (family disposable income vs. after-tax earnings)",
+     "finding": "These estimates for income are significantly larger than the estimates for earnings."
+    },
+    {
+     "dimension": "outcome measure (family disposable income vs. consumption), consumption sample",
+     "finding": "The difference between the persistence of consumption and income is significant at the 5% level (p = 0.011)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "log parent time-averaged family disposable income",
+     "log child time-averaged family disposable income",
+     "Mean income in Denmark by gender and three-digit occupational code",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "log parent time-averaged family disposable income",
+      "to": "log child time-averaged family disposable income",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     },
+     {
+      "from": "Di demographic controls",
+      "to": "log child time-averaged family disposable income",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "Mean income in Denmark by gender and three-digit occupational code",
+      "to": "log parent time-averaged family disposable income",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "Mean income in Denmark by gender and three-digit occupational code",
+      "to": "log child time-averaged family disposable income",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "43cfbeca798e890b",
+      "n_chars": 115
+     },
+     {
+      "page": 588,
+      "sha256_16": "5f32c07bbdd505e9",
+      "n_chars": 84
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not name the Danish register from which family disposable income is drawn.",
+    "Equation 2 is written for consumption; the same 2SLS set-up and controls are stated to apply to the income regressions."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 2",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T2::_::C3"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "43cfbeca798e890b",
+     "n_chars": 115
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "7ec235d8dda4c6e0",
+     "n_chars": 104
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "1d238a26a0199616",
+     "n_chars": 142
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "a1000b805c4e5f83",
+     "n_chars": 116
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "ef0c34e431204226",
+     "n_chars": 97
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "33613157c06d5834",
+     "n_chars": 232
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "71e511797d1f7f86",
+     "n_chars": 41
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": "Table 2",
+     "page": 588,
+     "sha256_16": "aa38f643d08a6f24",
+     "n_chars": 116
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 2",
+     "page": 584,
+     "sha256_16": "bbb23d4588597889",
+     "n_chars": 186
+    },
+    {
+     "id": "e12",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 583,
+     "sha256_16": "7aa9334df20c16c4",
+     "n_chars": 197
+    },
+    {
+     "id": "e13",
+     "kind": "derivation",
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "table:dk_W2801202920::T2::_::C3",
+      "evidence:e1"
+     ],
+     "how": "Mean ages of children for this sample are read from Table 1 (p. 584), row 'Mean age earnings/income'."
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "5f32c07bbdd505e9",
+     "n_chars": 84
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "2",
+     "as_printed": "log(Cic ) = 𝛼 + 𝛽 log(Ci𝑝 ) + Di 𝛿 + 𝜀i .",
+     "lhs": "log(Cic ) in Equation 2; for this claim the dependent variable is the log child time-averaged family disposable income",
+     "terms": [
+      {
+       "expression": "𝛼",
+       "role": "intercept",
+       "parameter": "𝛼"
+      },
+      {
+       "expression": "𝛽 log(Ci𝑝 )",
+       "role": "parameter_of_interest",
+       "parameter": "𝛽"
+      },
+      {
+       "expression": "Di 𝛿",
+       "role": "control",
+       "parameter": "𝛿"
+      },
+      {
+       "expression": "𝜀i",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "𝛽",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "family (pair of one parent and one child)"
+      }
+     ],
+     "normalisation": "Both sides in logs, so 𝛽 is an elasticity; permanent consumption is defined in Equation 3 as the average of log consumption over the 15 sample years 1995-2009. No omitted category or base period is stated.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e9",
+     "e4"
+    ],
+    "confidence": "medium"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Heckman and Landersø (2017)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e8"
+     ],
+     "as_stated": "Heckman and Landersø (2017) report similar results and attribute part of the difference between the persistence of earnings and income in Denmark to wage compression policies that reduce the intergenerational elasticity of earnings."
+    },
+    {
+     "citation": "Solon (1992); Mulligan (1998)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e2"
+     ],
+     "as_stated": "see Solon (1992) and Mulligan (1998) for similar results"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "For family disposable income, the estimated elasticities are 0.208 and 0.189 in the consumption and income samples.",
+    "sha256_16": "43cfbeca798e890b",
+    "n_chars": 115
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c4",
+   "headline": true,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S3",
+      "pointed_to": "number",
+      "estimand": "S3/income-sample/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C4",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "The intergenerational elasticity of family disposable income in Denmark, estimated in the income sample, is 0.189.",
+   "treatment": {
+    "label": "Log parent time-averaged (permanent) family disposable income",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the parent household's disposable income, time-averaged over the 10-year period 1980-1989; family disposable income pools the incomes of the two spouses of a couple.",
+     "evidence": [
+      "e5",
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1980-1989, when the parents are 39-48 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log child time-averaged (permanent) family disposable income",
+    "ontology_node": null,
+    "register_source": {
+     "value": null,
+     "evidence": [
+      "e12"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the child household's disposable income, time-averaged over the sample period. The dependent variable in all Table 2 regressions is the log child outcome.",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Time-averaged over the sample period, when the children are 29-43 years old on average",
+     "evidence": [
+      "e13"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.189,
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.0048)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child family disposable income per log point of parent family disposable income",
+      "evidence": [
+       "e1",
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "For family disposable income, the estimated elasticities are 0.208 and 0.189 in the consumption and income samples.",
+     "se": {
+      "value": 0.0048,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children satisfying the age requirements, in the income sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "𝛽 in log(Yic) = 𝛼 + 𝛽 log(Yip) + Di 𝛿 + 𝜀i, the elasticity of the child's log time-averaged family disposable income with respect to the parent's",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children drawn from the entire Danish population with the same age requirements as the consumption sample but no survey participation requirement (the 'income sample'), 231,011 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age earnings/income: parents 39-48, children 29-43",
+    "sex": "all",
+    "period": "Parent earnings and income measured 1980-1989; child earnings and income over the sample period",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Selected from the entire Danish population subject only to the age requirements; no Danish Expenditure Survey participation required",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "No policy or natural experiment: the parent's time-averaged family disposable income is instrumented with the mean income in Denmark by gender and three-digit occupational code, to remove attenuation bias from measurement error.",
+    "instrument": "Mean income in Denmark by gender and three-digit occupational code",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The error term in the mobility regression has mean zero and is uncorrelated with the independent variables of the model, the parent outcome and the demographic controls Di",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "log parent time-averaged family disposable income"
+       ],
+       "rhs": [
+        "𝜀i (unobserved determinants of child family disposable income)"
+       ],
+       "given": [
+        "Di demographic controls"
+       ],
+       "implies_edges": [
+        {
+         "from": "Di demographic controls",
+         "to": "log child time-averaged family disposable income",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Instrument relevance: the mean income in Denmark by gender and three-digit occupational code predicts the parent's time-averaged family disposable income",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean income in Denmark by gender and three-digit occupational code",
+         "to": "log parent time-averaged family disposable income",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Exclusion restriction: the gender-by-occupation mean income instrument affects the child's disposable income only through the parent's time-averaged family disposable income (and Di)",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "low",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "Mean income in Denmark by gender and three-digit occupational code",
+         "to": "log child time-averaged family disposable income",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "Life-cycle bias is small: parent and child income are measured at a fairly similar age, so the downward bias in the estimated persistence of income is likely to be small",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 1 mean ages and the arguments of Grawe (2006) and Haider and Solon (2006)",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Life-cycle bias from measuring parent and child income at different ages (Grawe, 2006; Haider & Solon, 2006)",
+     "Attenuation bias from measurement error in parental income, addressed by 2SLS"
+    ],
+    "robustness_checks": [
+     "Estimation in two independent samples: the consumption sample (1,690 pairs) and the income sample (231,011 pairs)"
+    ],
+    "unresolved_confounders": [
+     "A small remaining downward bias from measuring parent and child income at different stages of the life cycle"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation 2: regression of the log time-averaged (permanent) child outcome on the log time-averaged (permanent) parent outcome and the demographic controls Di, estimated by 2SLS. Robust asymptotic standard errors in the income sample; bootstrapped standard errors (200 draws replicating the whole estimation process) in the consumption sample.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 231011,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, column 'Family disposable income, income sample' (p. 588)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T2::_::C4"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [
+    {
+     "dimension": "outcome measure (family disposable income vs. after-tax earnings)",
+     "finding": "These estimates for income are significantly larger than the estimates for earnings."
+    },
+    {
+     "dimension": "outcome measure (family disposable income vs. consumption), consumption sample",
+     "finding": "The difference between the persistence of consumption and income is significant at the 5% level (p = 0.011)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "log parent time-averaged family disposable income",
+     "log child time-averaged family disposable income",
+     "Mean income in Denmark by gender and three-digit occupational code",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "log parent time-averaged family disposable income",
+      "to": "log child time-averaged family disposable income",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     },
+     {
+      "from": "Di demographic controls",
+      "to": "log child time-averaged family disposable income",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "Mean income in Denmark by gender and three-digit occupational code",
+      "to": "log parent time-averaged family disposable income",
+      "kind": "instrument",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "Mean income in Denmark by gender and three-digit occupational code",
+      "to": "log child time-averaged family disposable income",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "43cfbeca798e890b",
+      "n_chars": 115
+     },
+     {
+      "page": 588,
+      "sha256_16": "5f32c07bbdd505e9",
+      "n_chars": 84
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not name the Danish register from which family disposable income is drawn.",
+    "Equation 2 is written for consumption; the same 2SLS set-up and controls are stated to apply to the income regressions."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 2",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T2::_::C4"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "43cfbeca798e890b",
+     "n_chars": 115
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "7ec235d8dda4c6e0",
+     "n_chars": 104
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "1d238a26a0199616",
+     "n_chars": 142
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "a1000b805c4e5f83",
+     "n_chars": 116
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 583,
+     "sha256_16": "ef0c34e431204226",
+     "n_chars": 97
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "33613157c06d5834",
+     "n_chars": 232
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "71e511797d1f7f86",
+     "n_chars": 41
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": "Table 2",
+     "page": 588,
+     "sha256_16": "aa38f643d08a6f24",
+     "n_chars": 116
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 2",
+     "page": 584,
+     "sha256_16": "bbb23d4588597889",
+     "n_chars": 186
+    },
+    {
+     "id": "e12",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 583,
+     "sha256_16": "7aa9334df20c16c4",
+     "n_chars": 197
+    },
+    {
+     "id": "e13",
+     "kind": "derivation",
+     "relation": "IsDerivedFrom",
+     "derived_from": [
+      "table:dk_W2801202920::T2::_::C4",
+      "evidence:e1"
+     ],
+     "how": "Mean ages of children for this sample are read from Table 1 (p. 584), row 'Mean age earnings/income'."
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "5f32c07bbdd505e9",
+     "n_chars": 84
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "2",
+     "as_printed": "log(Cic ) = 𝛼 + 𝛽 log(Ci𝑝 ) + Di 𝛿 + 𝜀i .",
+     "lhs": "log(Cic ) in Equation 2; for this claim the dependent variable is the log child time-averaged family disposable income",
+     "terms": [
+      {
+       "expression": "𝛼",
+       "role": "intercept",
+       "parameter": "𝛼"
+      },
+      {
+       "expression": "𝛽 log(Ci𝑝 )",
+       "role": "parameter_of_interest",
+       "parameter": "𝛽"
+      },
+      {
+       "expression": "Di 𝛿",
+       "role": "control",
+       "parameter": "𝛿"
+      },
+      {
+       "expression": "𝜀i",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "𝛽",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "family (pair of one parent and one child)"
+      }
+     ],
+     "normalisation": "Both sides in logs, so 𝛽 is an elasticity; permanent consumption is defined in Equation 3 as the average of log consumption over the 15 sample years 1995-2009. No omitted category or base period is stated.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e9",
+     "e4"
+    ],
+    "confidence": "medium"
+   },
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Heckman and Landersø (2017)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e8"
+     ],
+     "as_stated": "Heckman and Landersø (2017) report similar results and attribute part of the difference between the persistence of earnings and income in Denmark to wage compression policies that reduce the intergenerational elasticity of earnings."
+    },
+    {
+     "citation": "Solon (1992); Mulligan (1998)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e2"
+     ],
+     "as_stated": "see Solon (1992) and Mulligan (1998) for similar results"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "For family disposable income, the estimated elasticities are 0.208 and 0.189 in the consumption and income samples.",
+    "sha256_16": "43cfbeca798e890b",
+    "n_chars": 115
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c5",
+   "headline": true,
+   "headline_extractor": true,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": [
+     {
+      "stated_claim": "S1",
+      "pointed_to": "number",
+      "estimand": "S1/all/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C5",
+      "row": 0
+     },
+     {
+      "stated_claim": "S4",
+      "pointed_to": "number",
+      "estimand": "S4/consumption/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C5",
+      "row": 0
+     },
+     {
+      "stated_claim": "S5",
+      "pointed_to": "number",
+      "estimand": "S5/consumption/all",
+      "pointer_quote": "According to the main mobility estimates in this paper, the intergenerational elasticity of individual time-averaged earnings in Denmark is approximately 0.05–0.10, the elasticity of time-averaged family disposable income is approximately 0.20, and the elasticity of time-averaged (or permanent) consumption is approximately 0.35–0.40.",
+      "cell": "dk_W2801202920::T2::_::C5",
+      "row": 0
+     }
+    ]
+   },
+   "statement": "The intergenerational elasticity of permanent (time-averaged) consumption in Denmark is 0.418, higher than the estimated intergenerational elasticities of individual after-tax earnings and family disposable income.",
+   "treatment": {
+    "label": "Log permanent (time-averaged) consumption of the parent",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Imputed log consumption of the parent in each year 1995-2009, obtained by projecting self-reported consumption in the Danish Expenditure Survey on registry proxies (housing conditions and imputed home value, car ownership and car value, dental expenditures, and total expenditures approximated as disposable income minus the change in wealth) and demographic variables (Equation 9, estimated by 2SLS), then averaged over the 15 sample years (Equation 3). Couples are put on an equivalence scale equal to the square root of two and each spouse is assigned half of the couple's consumption. In the mobility regression it is instrumented with the parent's self-reported consumption from the survey.",
+     "evidence": [
+      "e6",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1995-2009, when the parents are 54-68 years old on average",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log permanent (time-averaged) consumption of the child",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Imputed log consumption of the child in each year 1995-2009, constructed with the same imputation model and registry proxies as for the parent, then averaged over the 15 sample years (Equation 3).",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1995-2009, when the children are 30-44 years old on average",
+     "evidence": [
+      "e6"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.418,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.076)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child permanent consumption per log point of parent permanent consumption",
+      "evidence": [
+       "e1",
+       "e5"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "A conservative range is that the elasticity of consumption is in the order of 0.35–0.40.",
+     "se": {
+      "value": 0.076,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e20"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e20"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e21"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e21"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "𝛽 = ∂E[log(Cic) | log(Ci𝑝), Di] / ∂log(Ci𝑝), the intergenerational elasticity of permanent consumption in Equation 2",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "No policy or natural experiment: the imputed permanent consumption of the parent is instrumented with the same parent's self-reported consumption from the Danish Expenditure Survey, an independently measured proxy for the same latent consumption, so as to remove the attenuation bias that imputation and measurement error would otherwise induce.",
+    "instrument": "Log self-reported consumption (expenditures) of the parent from the Danish Expenditure Survey",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The error term in the main regression model (Equation 2) has mean zero and is uncorrelated with log parent permanent consumption and the demographic controls Di",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "d_separation",
+       "lhs": [
+        "log parent permanent consumption"
+       ],
+       "rhs": [
+        "𝜀i (unobserved determinants of child permanent consumption)"
+       ],
+       "given": [
+        "Di demographic controls"
+       ],
+       "implies_edges": [
+        {
+         "from": "Di demographic controls",
+         "to": "log child permanent consumption",
+         "kind": "confounder_adjusted"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Classical measurement error in self-reported consumption: the survey measurement error e has mean zero and is uncorrelated with the error term of the main regression and with log true consumption (Equation 5) -- this is the exclusion restriction for the instrument",
+      "stated_or_implicit": "stated",
+      "supported_by": "Two robustness checks: the intergenerational rank correlation of consumption (0.390), which is unbiased if the survey does not systematically distort the ranking, is similar in magnitude to the elasticity; and the estimated persistence remains high after excluding the top and bottom 15% of families by parental wealth (Appendix B)",
+      "evidence": [
+       "e8",
+       "e18"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_absent",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "e (measurement error in self-reported parent consumption)",
+         "to": "log child permanent consumption",
+         "kind": "exclusion_assumed_absent"
+        }
+       ],
+       "as_written": "cov (eit , 𝜺i ) = cov (eit , log(Cit )) = 0."
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "The self-reported consumption of parents is uncorrelated with the mean measurement error in the proxy variables of parents and children (Equation 14), as T goes to infinity",
+      "stated_or_implicit": "stated",
+      "supported_by": "The argument that the survey measurement error (a 2-week diary and respondent mistakes) and the registry measurement errors (imputed home values, unrealized capital gains in the expenditure approximation) come from two different data sources",
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "lim T→∞ cov ( log (Sit𝑝 ) , (1/T) · Σ(t=1..T) vait 𝜃t ) = 0, a = 𝑝, c."
+      }
+     },
+     {
+      "id": "a4",
+      "assumption": "The self-reported consumption of parents is uncorrelated with the mean imputation error of parents and children (Equation 15), as T goes to infinity",
+      "stated_or_implicit": "stated",
+      "supported_by": "A sufficient condition is limited positive serial correlation in the imputation error, so that its 15-year mean converges quickly to zero; the alternative IV estimator of Section 4.2 is consistent even under positive serial correlation and yields a similar estimate (0.455)",
+      "evidence": [
+       "e10"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "lim T→∞ cov ( log (Sit𝑝 ) , (1/T) · Σ(t=1..T) uait ) = 0, a = 𝑝, c."
+      }
+     },
+     {
+      "id": "a5",
+      "assumption": "Instrument relevance: the parent's self-reported consumption predicts the parent's imputed permanent consumption",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 3: first-stage coefficient 0.179 (0.019), significant at the 1% level, with an F-statistic for the excluded instrument of 91.4",
+      "evidence": [
+       "e11"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "log self-reported parent consumption (DES)",
+         "to": "log parent permanent consumption",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a6",
+      "assumption": "The instruments used in the imputation step are uncorrelated with the imputation error, the measurement error in true consumption (Equation 10) and the measurement errors in the proxy variables (Equation 11)",
+      "stated_or_implicit": "stated",
+      "supported_by": "Stated to be similar to the assumptions made implicitly by studies adopting the imputation method of Skinner (1987) and Blundell et al. (2008)",
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "cov (Z𝑗t , ut ) = cov (Z𝑗t , et ) = 0 and cov (Z𝑗t , vt ) = 0 for 𝑗 = 1, 2, … , r and t = 1, 2, … , T"
+      }
+     },
+     {
+      "id": "a7",
+      "assumption": "Measuring parent consumption considerably later in the life cycle than child consumption biases the estimated persistence of lifetime consumption downwards rather than upwards",
+      "stated_or_implicit": "stated",
+      "supported_by": "Evidence that households with greater lifetime consumption have steeper age-consumption profiles (Carroll, 1997; Robb, Magee & Burbidge, 1992), together with the mean ages in Table 1",
+      "evidence": [
+       "e14"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Attenuation bias from imputation error and measurement error in the registry proxies if Equation 2 is estimated by OLS with imputed consumption",
+     "Non-classical measurement error in the Danish Expenditure Survey (e.g. if the survey overestimates the consumption of the poor and underestimates that of the rich)",
+     "Positive serial correlation in the imputation error, which can introduce an upward bias in the estimate of consumption mobility",
+     "A correlation across generations in the imputation error if parents and children have similar preferences for housing, cars and dental care",
+     "Life-cycle bias: parent consumption is measured considerably later than child consumption, biasing the estimate downwards"
+    ],
+    "robustness_checks": [
+     "Intergenerational rank correlation of consumption (0.390, standard error 0.072), Section 4.1",
+     "Alternative IV estimator that reverses the roles of instrument and proxies, consistent under positive serial correlation in the imputation error (0.455, standard error 0.074), Section 4.2",
+     "Estimate of the persistence of consumption excluding the top and bottom 15% of families in terms of parental wealth (Appendix B)",
+     "Several further robustness checks in Table A2 of the Supporting Information Appendix, centered around 0.40",
+     "Complementary descriptive evidence on expenditures, income and wealth (Table 4)"
+    ],
+    "unresolved_confounders": [
+     "A downward bias from measuring parent consumption later in the life cycle than child consumption, which the author expects to be bigger for consumption than for earnings and income",
+     "The author states that, owing to the construction of consumption measures, the small consumption sample and the large standard errors, the results on consumption mobility are suggestive rather than conclusive",
+     "Which behavioral mechanisms generate the high persistence of consumption is left for future research"
+    ]
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Equation 2 estimated by 2SLS: log child permanent consumption on log parent permanent consumption (both imputed from registry proxies and averaged over 1995-2009) plus the demographic controls Di, instrumenting parent permanent consumption with the parent's self-reported consumption from the Danish Expenditure Survey. Bootstrapped standard errors from 200 draws replicating the whole estimation process, including the imputation steps.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 1690,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 2, column 'Consumption' (consumption sample), p. 588",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T2::_::C5"
+   },
+   "mediators_claimed": [
+    "Inter vivos transfers and bequests from parents to children (realized and anticipated), i.e. intergenerational consumption smoothing by altruistic parents"
+   ],
+   "heterogeneity": [
+    {
+     "dimension": "outcome measure (consumption vs. after-tax earnings vs. family disposable income), consumption sample",
+     "finding": "The difference between the persistence of consumption and earnings is significant at the 1% level, and the difference between the persistence of consumption and income is significant at the 5% level (p = 0.011)."
+    }
+   ],
+   "graph_fragment": {
+    "nodes": [
+     "log parent permanent consumption",
+     "log child permanent consumption",
+     "log self-reported parent consumption (DES)",
+     "e (measurement error in self-reported parent consumption)",
+     "Di demographic controls",
+     "inter vivos transfers and bequests from parents to children"
+    ],
+    "edges": [
+     {
+      "from": "log parent permanent consumption",
+      "to": "log child permanent consumption",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     },
+     {
+      "from": "Di demographic controls",
+      "to": "log child permanent consumption",
+      "kind": "confounder_adjusted",
+      "from_assumption": "a1",
+      "given": []
+     },
+     {
+      "from": "e (measurement error in self-reported parent consumption)",
+      "to": "log child permanent consumption",
+      "kind": "exclusion_assumed_absent",
+      "from_assumption": "a2",
+      "given": []
+     },
+     {
+      "from": "log self-reported parent consumption (DES)",
+      "to": "log parent permanent consumption",
+      "kind": "instrument",
+      "from_assumption": "a5",
+      "given": []
+     },
+     {
+      "from": "log parent permanent consumption",
+      "to": "inter vivos transfers and bequests from parents to children",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "inter vivos transfers and bequests from parents to children",
+      "to": "log child permanent consumption",
+      "kind": "mediator_claimed",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "493a60af5eb10069",
+      "n_chars": 120
+     },
+     {
+      "page": 580,
+      "sha256_16": "0dde44ee29b27873",
+      "n_chars": 104
+     },
+     {
+      "page": 589,
+      "sha256_16": "577cd9e4c1c31a7a",
+      "n_chars": 88
+     },
+     {
+      "page": 591,
+      "sha256_16": "955b347b4f01c3ca",
+      "n_chars": 87
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The point estimate 0.418 and its bootstrapped standard error (0.076) are transcribed from Table 2; the running text states the estimate as 0.418 in a sentence broken by a line-break hyphen, so the quotes cite the surrounding sentences instead.",
+    "The paper reports no mean or standard deviation of log permanent consumption, so the estimate cannot be rescaled to the outcome's own units."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 2",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T2::_::C5"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "493a60af5eb10069",
+     "n_chars": 120
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "577cd9e4c1c31a7a",
+     "n_chars": 88
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "047bd5f7ed65ff55",
+     "n_chars": 168
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "71e511797d1f7f86",
+     "n_chars": 41
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "69544a1df8432499",
+     "n_chars": 136
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "a1000b805c4e5f83",
+     "n_chars": 116
+    },
+    {
+     "id": "e8",
+     "kind": "quote",
+     "page": 585,
+     "sha256_16": "861d034f52b178c3",
+     "n_chars": 134
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 586,
+     "sha256_16": "d03bb4306416f71f",
+     "n_chars": 165
+    },
+    {
+     "id": "e10",
+     "kind": "quote",
+     "page": 586,
+     "sha256_16": "5034e3a2834e2814",
+     "n_chars": 142
+    },
+    {
+     "id": "e11",
+     "kind": "table",
+     "exhibit": "Table 3",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T3::_::C1"
+    },
+    {
+     "id": "e12",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "18a2b83091f08d9f",
+     "n_chars": 211
+    },
+    {
+     "id": "e13",
+     "kind": "quote",
+     "page": 580,
+     "sha256_16": "0dde44ee29b27873",
+     "n_chars": 104
+    },
+    {
+     "id": "e14",
+     "kind": "quote",
+     "page": 584,
+     "sha256_16": "fb3e7ca748334fa0",
+     "n_chars": 109
+    },
+    {
+     "id": "e15",
+     "kind": "quote",
+     "page": 580,
+     "sha256_16": "22eda2e8f1a01df5",
+     "n_chars": 129
+    },
+    {
+     "id": "e16",
+     "kind": "quote",
+     "page": 591,
+     "sha256_16": "955b347b4f01c3ca",
+     "n_chars": 87
+    },
+    {
+     "id": "e17",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "ffb03a11f81ef8be",
+     "n_chars": 104
+    },
+    {
+     "id": "e18",
+     "kind": "quote",
+     "page": 585,
+     "sha256_16": "7a6b9272b11d29fe",
+     "n_chars": 116
+    },
+    {
+     "id": "e19",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e20",
+     "kind": "absent",
+     "exhibit": "Table 2",
+     "page": 588,
+     "sha256_16": "18eb3757ebcee663",
+     "n_chars": 122
+    },
+    {
+     "id": "e21",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 2",
+     "page": 584,
+     "sha256_16": "40d1d4dff50a8650",
+     "n_chars": 196
+    },
+    {
+     "id": "e22",
+     "kind": "quote",
+     "page": 591,
+     "sha256_16": "c45848b51c9bbdc2",
+     "n_chars": 230
+    },
+    {
+     "id": "e23",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "577cd9e4c1c31a7a",
+     "n_chars": 88
+    }
+   ],
+   "functional_form": {
+    "value": {
+     "stated": true,
+     "equation_number": "2",
+     "as_printed": "log(Cic ) = 𝛼 + 𝛽 log(Ci𝑝 ) + Di 𝛿 + 𝜀i .",
+     "lhs": "log(Cic ) -- log permanent consumption of the child in family i",
+     "terms": [
+      {
+       "expression": "𝛼",
+       "role": "intercept",
+       "parameter": "𝛼"
+      },
+      {
+       "expression": "𝛽 log(Ci𝑝 )",
+       "role": "parameter_of_interest",
+       "parameter": "𝛽"
+      },
+      {
+       "expression": "Di 𝛿",
+       "role": "control",
+       "parameter": "𝛿"
+      },
+      {
+       "expression": "𝜀i",
+       "role": "error",
+       "parameter": null
+      }
+     ],
+     "parameter_of_interest": "𝛽",
+     "index_sets": [
+      {
+       "symbol": "i",
+       "over": "family (pair of one parent and one child)"
+      }
+     ],
+     "normalisation": "Both sides in logs, so 𝛽 is an elasticity; permanent consumption is defined in Equation 3 as the average of log consumption over the 15 sample years 1995-2009. No omitted category or base period is stated.",
+     "link_function": null,
+     "restrictions": [
+      {
+       "restriction": "linearity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "additivity",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "no_interaction",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      },
+      {
+       "restriction": "constant_effects",
+       "source": "implied_by_equation",
+       "testable": true,
+       "tested_in_paper": false
+      }
+     ]
+    },
+    "evidence": [
+     "e5",
+     "e19"
+    ],
+    "confidence": "high"
+   },
+   "scope": null,
+   "specification_level": "causal_direction",
+   "prediction_risk": "direction",
+   "theory_referenced": [
+    "Becker and Tomes model of altruistic parents (1979, 1986) and its prediction of intergenerational consumption smoothing",
+    "Permanent income model of life-cycle consumption smoothing"
+   ],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": {
+    "stated": true,
+    "condition": "If consumption and income were shown to be equally persistent across generations, that would be a strong rejection of the Becker and Tomes model and its prediction of intergenerational consumption smoothing."
+   },
+   "outcomes_examined_not_reported": [
+    "OLS estimates of the mobility rates: the paper states in footnote 8 that it also estimates mobility rates with OLS and obtains a higher persistence for consumption than for income, but the OLS coefficients themselves are not reported."
+   ],
+   "headline_basis_previous": {
+    "headline": true,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "This elasticity is higher than the elasticities of earnings and disposable income estimated from the consumption sample.",
+    "sha256_16": "493a60af5eb10069",
+    "n_chars": 120
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c6",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "In the first stage of the 2SLS procedure, the parent's log self-reported expenditures from the Danish Expenditure Survey predict the parent's imputed log permanent consumption with a coefficient of 0.179 and an F-statistic for the excluded instrument of 91.4.",
+   "treatment": {
+    "label": "Log self-reported expenditures of the parent (Danish Expenditure Survey)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Danish Expenditure Survey (DES), 1995-2009, linked to the registries through the social security number",
+     "evidence": [
+      "e9",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The log of the household's self-reported total expenditures in the Danish Expenditure Survey in the year of participation: purchases recorded in a 2-week diary, major purchases and regular expenditures reported in an interview, and an imputed value of owner-occupied housing. Used as the excluded instrument in the 2SLS procedure.",
+     "evidence": [
+      "e4",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured in the single year 1995-2009 in which the parent household participated in the survey",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Log permanent parent consumption (imputed log permanent consumption of the parent)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Imputed log consumption of the parent in each year 1995-2009, from the registry proxies and demographic variables (Equation 9), averaged over the 15 sample years (Equation 3).",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1995-2009, when the parents are 54-68 years old on average",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": true,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.179,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(0.019)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "log points of imputed permanent parent consumption per log point of self-reported parent expenditures",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "The coefficient on self-reported consumption is significant at the 1% level and the value of the F-statistic for the excluded instrument is 91.4.",
+     "se": {
+      "value": 0.019,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": 0.01,
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": "less_than"
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Parent households in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "The first-stage (projection) coefficient of imputed log permanent parent consumption on log self-reported parent expenditures, conditional on Di",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The two measures of the same parent's consumption come from different sources -- a self-reported expenditure survey and an imputation from administrative registry proxies -- and the first stage documents how strongly they co-move.",
+    "instrument": "Log self-reported expenditures of the parent (the excluded instrument whose first-stage strength is reported here)",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "Instrument relevance: self-reported survey expenditures and registry-imputed permanent consumption measure the same underlying parental consumption, so the first-stage coefficient is non-zero",
+      "stated_or_implicit": "stated",
+      "supported_by": "Table 3: coefficient 0.179 (0.019), significant at the 1% level, R2 = 0.745, F-statistic for the excluded instrument 91.4",
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "log self-reported parent expenditures (DES)",
+         "to": "log permanent parent consumption (imputed)",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The first stage is a linear projection used to document instrument strength; the coefficient of 0.179 is not interpreted as a causal effect of self-reported expenditures on permanent consumption",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Weak instruments can induce a finite-sample bias in two-stage least squares estimation (Bound, Jaeger & Baker, 1995), which is why the F-statistic for the excluded instrument is reported"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "First-stage regression of the 2SLS procedure",
+     "evidence": [
+      "e1",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Regression of log permanent (imputed) parent consumption on log self-reported parent expenditures and the demographic controls Di; bootstrapped standard errors. R2 = 0.745; F-statistic for the excluded instrument = 91.4.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": 1690,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 3, column (1), p. 588",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": "dk_W2801202920::T3::_::C1"
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "log self-reported parent expenditures (DES)",
+     "log permanent parent consumption (imputed)",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "log self-reported parent expenditures (DES)",
+      "to": "log permanent parent consumption (imputed)",
+      "kind": "instrument",
+      "from_assumption": "a1",
+      "given": [
+       "Di demographic controls"
+      ]
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 588,
+      "sha256_16": "beb8f5af36aa3519",
+      "n_chars": 145
+     },
+     {
+      "page": 588,
+      "sha256_16": "7987c83d4c98ae48",
+      "n_chars": 83
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not say which estimator is used for the first stage beyond calling it the first-stage regression of the 2SLS procedure.",
+    "Table 3 says the unit of observation is the parent household, while Table 2 says the unit is the pair of parent and child; both report 1,690 observations."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 3",
+     "panel": null,
+     "page": 588,
+     "regression_id": "dk_W2801202920::T3::_::C1"
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "beb8f5af36aa3519",
+     "n_chars": 145
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "7987c83d4c98ae48",
+     "n_chars": 83
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "047bd5f7ed65ff55",
+     "n_chars": 168
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 588,
+     "sha256_16": "35cb0b08e963f38d",
+     "n_chars": 52
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 587,
+     "sha256_16": "26c71006026e823d",
+     "n_chars": 71
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": "Table 3",
+     "page": 588,
+     "sha256_16": "b877a5e1b0a12aa7",
+     "n_chars": 198
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": "Table 1; Table 3",
+     "page": 584,
+     "sha256_16": "64ede3b8c7513df0",
+     "n_chars": 169
+    },
+    {
+     "id": "e9",
+     "kind": "quote",
+     "page": 582,
+     "sha256_16": "6d37fead162792b4",
+     "n_chars": 114
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 588,
+     "sha256_16": "8a9e6e703ca443bd",
+     "n_chars": 168
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 588,
+    "text": "The coefficient on self-reported consumption is significant at the 1% level and the value of the F-statistic for the excluded instrument is 91.4.",
+    "sha256_16": "beb8f5af36aa3519",
+    "n_chars": 145
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c7",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The intergenerational rank correlation of permanent consumption in Denmark is 0.390: a 10 percentile point increase in the rank of parent consumption is associated with a four percentile point increase in the rank of child consumption.",
+   "treatment": {
+    "label": "Percentile rank of parent permanent consumption",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The percentile rank of the parent in the distribution of the residuals from a regression of log permanent parent consumption on the demographic control variables Di.",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Based on consumption averaged over 1995-2009, when the parents are 54-68 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Percentile rank of child permanent consumption",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The percentile rank of the child in the distribution of the residuals from a regression of log permanent child consumption on the demographic control variables Di.",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Based on consumption averaged over 1995-2009, when the children are 30-44 years old on average",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.39,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "(with standard error 0.072)",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "percentile rank points of child consumption per percentile rank point of parent consumption (a rank correlation)",
+      "evidence": [
+       "e1",
+       "e2"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "The estimated rank correlation implies that a 10 percentile point increase in the rank of parent consumption in Denmark is associated with a four percentile point increase in child consumption on average.",
+     "se": {
+      "value": 0.072,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "other",
+    "target_population": "Pairs of Danish parents and children in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "The coefficient from a regression of the percentile rank of child consumption on the percentile rank of parent consumption, which equals the rank correlation when both ranks have the same standard deviation",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Cross-sectional variation in the ranks of parent and child permanent consumption, after residualising on the demographic controls Di; no instrument is used in the rank specification.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The rank correlation is unbiased if the Danish Expenditure Survey does not induce a systematic error in the ranking of parent and child consumption",
+      "stated_or_implicit": "stated",
+      "supported_by": "Presented as one of two robustness checks on the classical measurement-error assumption; the rank correlation (0.390) is similar in magnitude to the elasticity (0.418)",
+      "evidence": [
+       "e4",
+       "e3"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The standard deviations of the parent and child consumption ranks are the same, so that the rank regression coefficient equals the rank correlation",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Non-classical measurement error in the expenditure survey, which would distort the ranking of parent and child consumption",
+     "Sensitivity of the elasticity to outliers, which rank correlations reduce"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "OLS regression of the child consumption rank on the parent consumption rank, after residualising both on the demographic controls Di",
+     "evidence": [
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Three steps: (i) regress log permanent consumption of parents and children on the demographic controls Di; (ii) rank parents and children on the residuals; (iii) regress the rank of child consumption on the rank of parent consumption.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": "the whole consumption sample (1,690 parent-child pairs)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Section 4.1 'Rank of consumption', running text, p. 589 (not reported in a numbered table)",
+     "evidence": [
+      "e1",
+      "e9"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "percentile rank of parent permanent consumption",
+     "percentile rank of child permanent consumption",
+     "Di demographic controls"
+    ],
+    "edges": [
+     {
+      "from": "percentile rank of parent permanent consumption",
+      "to": "percentile rank of child permanent consumption",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": [
+       "Di demographic controls"
+      ]
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 589,
+      "sha256_16": "60fec00cbb23bf21",
+      "n_chars": 122
+     },
+     {
+      "page": 589,
+      "sha256_16": "7d913fc8e7ffadfa",
+      "n_chars": 204
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "The paper reports no significance statement for the rank correlation, so statistically_significant is left null rather than inferred from the ratio of the estimate to its standard error.",
+    "The paper does not state the number of observations used in the rank regression; 'the whole sample' is taken to be the 1,690-pair consumption sample."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "60fec00cbb23bf21",
+     "n_chars": 122
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "7d913fc8e7ffadfa",
+     "n_chars": 204
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "5d1d74a4a53bd3ab",
+     "n_chars": 136
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 585,
+     "sha256_16": "7a6b9272b11d29fe",
+     "n_chars": 116
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "bfe1d397cf060b91",
+     "n_chars": 253
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 589,
+     "sha256_16": "5a14880ebc482417",
+     "n_chars": 167
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 589,
+     "sha256_16": "e7427ffe5a6e6069",
+     "n_chars": 159
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 589,
+     "sha256_16": "e126cf40eaedd2ae",
+     "n_chars": 103
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 589,
+     "sha256_16": "b913e6acbeef0d31",
+     "n_chars": 144
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Chetty, Hendren, Kline, and Saez (2014)",
+     "relation": "extends",
+     "stated": true,
+     "evidence": [
+      "e3"
+     ],
+     "as_stated": "Recently, Chetty et al. (2014) used the rank correlation for parent and child income to analyze geographic variation in economic mobility in the USA."
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 589,
+    "text": "In the whole sample, the estimated rank correlation for parent and child consumption is 0.390 (with standard error 0.072).",
+    "sha256_16": "60fec00cbb23bf21",
+    "n_chars": 122
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c8",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Under the alternative IV estimator, which regresses imputed child consumption on the self-reported consumption of parents and instruments it with the registry proxies for parent consumption, the intergenerational elasticity of consumption is 0.455.",
+   "treatment": {
+    "label": "Log self-reported consumption of the parent (used as the regressor in the alternative IV estimator)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Danish Expenditure Survey (DES), 1995-2009",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The parent household's self-reported log consumption from the Danish Expenditure Survey in the single year of survey participation; in the alternative estimator it replaces imputed permanent parent consumption as the right-hand-side variable and is instrumented with the mean value of the parents' home and cars over the 15-year sample period.",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Measured in the single year of DES participation (1995-2009); the instruments are averaged over the 15-year sample period",
+     "evidence": [
+      "e3",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Imputed log permanent consumption of the child",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Imputed from Danish registries: the Buildings and Housing Registry (Bygnings- og boligregistret), the government appraisal registry (Ejendomsvurderingar), the housing sales-price registry (Ejendomme salgsoplysninger), the Central Vehicle Registry (Centralregistret for Motorkøretøjer), the health-insurance dental registry (Sygesikringsregistret) and the Income Tax Registry (Indkomstskatteregistret); the imputation is anchored on self-reported consumption in the Danish Expenditure Survey",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Imputed log consumption of the child in each year 1995-2009, averaged over the 15 sample years.",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Averaged over 1995-2009, when the children are 30-44 years old on average",
+     "evidence": [
+      "e3"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": 0.455,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": "with a corresponding standard error of 0.074",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "elasticity: log points of child permanent consumption per log point of parent consumption",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "This estimate strengthens the main result of this paper, namely that the intergenerational elasticity of consumption is higher than the elasticities of earnings and disposable income.",
+     "se": {
+      "value": 0.074,
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e9"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "elasticity",
+    "target_population": "Pairs of Danish parents and children in the consumption sample",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": "The projection of child consumption on parent (temporary) consumption, instrumented with the mean value of the parents' home and cars",
+    "horizon": null
+   },
+   "population": {
+    "description": "Pairs of parents and children in which the parent participated in the Danish Expenditure Survey between 1995 and 2009 (the 'consumption sample'), 1,690 parent-child pairs",
+    "birth_cohorts": null,
+    "ages": "Parent at least 40 years old in 1995 and no more than 74 in 2009; child at least 25 in 1995. Mean age over the sample period: parents 54-68 (consumption) and 39-48 (earnings/income), children 30-44",
+    "sex": "all",
+    "period": "Consumption measured 1995-2009; parent earnings and income measured 1980-1989",
+    "region": "Denmark",
+    "subgroups_defined": [],
+    "selection": "Conditioned on the parent having participated in the Danish Expenditure Survey, a voluntary annual cross-sectional household survey, in some year 1995-2009, plus the age requirements on parent and child",
+    "period_range": {
+     "from": 1980,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "instrumental_variables",
+    "source_of_variation": "The roles of instrument and proxy are reversed relative to the main estimator: the self-reported survey consumption of parents becomes the regressor and the registry proxies (mean home value and mean car value over 15 years) become the instruments, which makes the estimator consistent even under positive serial correlation in the imputation error.",
+    "instrument": "The mean value of the home and the mean value of the cars of the parents over the 15-year sample period (the dental-care and total-expenditure proxies are excluded as weaker instruments)",
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The mean measurement error in the proxy variables for parent consumption is uncorrelated with the mean imputation error for child consumption (Equation 16)",
+      "stated_or_implicit": "stated",
+      "supported_by": "Derived in Section A of the Supporting Information Appendix",
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "lim T→∞ cov ( (1/T) · Σ(t=1..T) vit𝑝 , (1/T) · Σ(t=1..T) ucit ) = 0."
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "The mean measurement errors in the proxy variables for parent and for child consumption are uncorrelated (Equation 17)",
+      "stated_or_implicit": "stated",
+      "supported_by": "Derived in Section A of the Supporting Information Appendix",
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": "lim T→∞ cov ( (1/T) · Σ(t=1..T) vit𝑝 , (1/T) · Σ(t=1..T) vitc 𝜃t ) = 0."
+      }
+     },
+     {
+      "id": "a3",
+      "assumption": "Instrument relevance: the mean home value and the mean car value of the parents predict their self-reported consumption; the weaker dental-care and total-expenditure proxies are excluded to avoid finite-sample bias",
+      "stated_or_implicit": "stated",
+      "supported_by": "Argument that weak instruments induce finite-sample bias in 2SLS (Bound, Jaeger & Baker, 1995); no first-stage statistic is reported for this estimator",
+      "evidence": [
+       "e4"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "edge_present",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [
+        {
+         "from": "mean value of the parents' home and cars over the 15-year sample period",
+         "to": "log self-reported parent consumption",
+         "kind": "instrument"
+        }
+       ],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [
+     "Positive serial correlation in the imputation error, induced by persistent household heterogeneity in preferences for housing, cars and dental care, which can bias the main IV estimate upwards",
+     "Correlated preferences of parents and children for the proxy goods",
+     "The regressor is now measured in a single year rather than averaged over several years",
+     "Weak-instrument finite-sample bias (Bound, Jaeger & Baker, 1995)"
+    ],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "2SLS (alternative IV estimator)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Regression of imputed log child permanent consumption on the log self-reported consumption of the parent, instrumented with the mean value of the parents' home and cars over the 15-year sample period.",
+    "fixed_effects": [],
+    "controls": [
+     "mean age of the parent",
+     "mean age of the child",
+     "proportion of years the parent lived in a couple",
+     "proportion of years the child lived in a couple",
+     "mean number of children in the parent household",
+     "mean number of children in the child household",
+     "gender of the parent",
+     "gender of the child"
+    ],
+    "clustering": null,
+    "weights": null,
+    "sample_n": {
+     "value": null,
+     "evidence": [
+      "e10"
+     ],
+     "confidence": "medium"
+    },
+    "source_table": {
+     "value": "Section 4.2 'Alternative IV estimator', running text, p. 590 (not reported in a numbered table)",
+     "evidence": [
+      "e1",
+      "e10"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [
+     {
+      "label": "mean age of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "mean age of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "proportion of years the parent lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "proportion of years the child lived in a couple",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the parent household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "mean number of children in the child household",
+      "ontology_node": null,
+      "role": "unclear"
+     },
+     {
+      "label": "gender of the parent",
+      "ontology_node": null,
+      "role": "confounder"
+     },
+     {
+      "label": "gender of the child",
+      "ontology_node": null,
+      "role": "confounder"
+     }
+    ],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "log self-reported parent consumption",
+     "imputed log permanent child consumption",
+     "mean value of the parents' home and cars over the 15-year sample period"
+    ],
+    "edges": [
+     {
+      "from": "log self-reported parent consumption",
+      "to": "imputed log permanent child consumption",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     },
+     {
+      "from": "mean value of the parents' home and cars over the 15-year sample period",
+      "to": "log self-reported parent consumption",
+      "kind": "instrument",
+      "from_assumption": "a3",
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 590,
+      "sha256_16": "a6c6d522d6dc2e88",
+      "n_chars": 170
+     },
+     {
+      "page": 590,
+      "sha256_16": "427c3add396c5fd1",
+      "n_chars": 183
+     }
+    ]
+   },
+   "extraction_confidence": "high",
+   "ambiguities": [
+    "The paper does not state the number of observations for the alternative IV estimator; the consumption sample has 1,690 pairs but this is not restated in Section 4.2.",
+    "No significance statement is given for the 0.455 estimate, so statistically_significant is left null.",
+    "It is not stated whether the demographic controls Di are included in the alternative IV specification; they are recorded here because the paper says all mobility regressions use the same controls."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "a6c6d522d6dc2e88",
+     "n_chars": 170
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "427c3add396c5fd1",
+     "n_chars": 183
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "1fc318d91290c06f",
+     "n_chars": 94
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "57627b32174a3137",
+     "n_chars": 155
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 589,
+     "sha256_16": "c21356d4fca424ac",
+     "n_chars": 164
+    },
+    {
+     "id": "e6",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "84b88267593d5def",
+     "n_chars": 172
+    },
+    {
+     "id": "e7",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "c52f3987f20a096d",
+     "n_chars": 130
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "45c066663abc0a3b",
+     "n_chars": 142
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "b0405be22855971c",
+     "n_chars": 99
+    },
+    {
+     "id": "e10",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "2d6643a99cbedf44",
+     "n_chars": 160
+    },
+    {
+     "id": "e11",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "3bf8cd8710e45c2e",
+     "n_chars": 206
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 590,
+    "text": "When I implement the alternative IV estimator through 2SLS, I obtain an intergenerational elasticity of consumption of 0.455 with a corresponding standard error of 0.074.",
+    "sha256_16": "a6c6d522d6dc2e88",
+    "n_chars": 170
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c9",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "The ratio of self-reported expenditures to permanent disposable income falls across the Danish income distribution, from 1.11 at the 10th percentile to 0.90 at the 95th percentile, so the savings rate increases with household permanent income.",
+   "treatment": {
+    "label": "Household permanent disposable income (percentile of the income distribution)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Danish registries; permanent disposable income measured over the 5 years prior to the Danish Expenditure Survey",
+     "evidence": [
+      "e4",
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "Household permanent disposable income as measured in the registries over the 5 years prior to participation in the Danish Expenditure Survey; the table reports the ratio at the 10th, 25th, 50th, 75th, 90th and 95th percentiles of this income distribution.",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "The 5 years prior to the household's participation in the Danish Expenditure Survey (1995-2009)",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Ratio of self-reported expenditures to permanent disposable income (C/Y5)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Self-reported expenditures from the Danish Expenditure Survey over registry-based permanent disposable income",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "definition": {
+     "value": "The ratio between self-reported expenditures in the imputation sample and permanent disposable income, obtained from a kernel-weighted local polynomial regression of expenditures on disposable income; reported at six percentiles of the income distribution (1.11, 1.05, 1.00, 0.96, 0.91, 0.90).",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Expenditures in the survey year; income over the 5 years prior to the survey",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "negative",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "ratio of expenditures to permanent disposable income, by income percentile",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "Stated differently, Danish households exhibited an increasing savings rate with household permanent income.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Households in the imputation sample (participants in the Danish Expenditure Survey 1995-2009)",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Households in the imputation sample: households that participated in the Danish Expenditure Survey between 1995 and 2009 in which the head of the household was between 25 and 74 years old; 8,351 observations in Table 4",
+    "birth_cohorts": null,
+    "ages": "Household head 25-74 years old",
+    "sex": "all",
+    "period": "1995-2009",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "income percentiles 10, 25, 50, 75, 90, 95"
+    ],
+    "selection": "Conditioned on participation in the Danish Expenditure Survey and on the household head being 25-74 years old",
+    "period_range": {
+     "from": 1995,
+     "to": 2009
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Cross-sectional variation in household permanent disposable income among survey participants; no identifying variation is claimed.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The ratios describe an association obtained from a kernel-weighted local polynomial regression of expenditures on disposable income; no causal interpretation is attached",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4",
+       "e5"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Kernel-weighted local polynomial regression of expenditures on disposable income",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Ratio of fitted self-reported expenditures to permanent disposable income, evaluated at six percentiles of the income distribution (Table 4, column C/Y5; Figure A1 in the Supporting Information Appendix).",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": "kernel weights in the local polynomial regression",
+    "sample_n": {
+     "value": 8351,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 4, column C/Y5, p. 590",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "household permanent disposable income",
+     "ratio of self-reported expenditures to permanent disposable income"
+    ],
+    "edges": [
+     {
+      "from": "household permanent disposable income",
+      "to": "ratio of self-reported expenditures to permanent disposable income",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 590,
+      "sha256_16": "86e9405fddb83775",
+      "n_chars": 196
+     },
+     {
+      "page": 590,
+      "sha256_16": "6513cabf1097a142",
+      "n_chars": 107
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Table 4 reports a profile of ratios rather than a slope coefficient, so point_estimate is left null and only the sign of the relationship is recorded.",
+    "The paper presents this as complementary descriptive evidence consistent with the high estimated persistence of consumption, not as a tested causal relationship."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 4",
+     "panel": null,
+     "page": 590,
+     "regression_id": null
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "86e9405fddb83775",
+     "n_chars": 196
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "6513cabf1097a142",
+     "n_chars": 107
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "672db6f862ae1d6d",
+     "n_chars": 126
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "5d8e4775982d1200",
+     "n_chars": 75
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "a8390169d7741c22",
+     "n_chars": 114
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "660b69ac4d0fa5a8",
+     "n_chars": 205
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "63c222f25c03df18",
+     "n_chars": 76
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "3ff741628aa30bbc",
+     "n_chars": 96
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Dynan, Skinner, and Zeldes (2004)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e5"
+     ],
+     "as_stated": "The evidence in Table 4 is also consistent with the findings of earlier studies showing that high-income parents have a higher savings rate (Dynan, Skinner, & Zeldes, 2004)"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 590,
+    "text": "The ratio between self-reported expenditures and permanent disposable income was 1.11 at the 10th percentile of the income distribution and fell to 0.90 at the 95th percentile of the distribution.",
+    "sha256_16": "86e9405fddb83775",
+    "n_chars": 196
+   }
+  },
+  {
+   "claim_id": "dk_W2801202920_c10",
+   "headline": false,
+   "headline_extractor": false,
+   "headline_basis": {
+    "method": "claim_map",
+    "status": "judged",
+    "applied_at": "2026-10-15T15:31:27.631476+00:00",
+    "map_protocol": "claim_map_v1+estimand+pointer+derivation",
+    "map_sha256": "8f4165fd337a7d5ba5ca231ebffa64cfcfcaafcda7d9c1a2df395e8a50cc67f8",
+    "links": []
+   },
+   "statement": "Among Danish residents born in 1941, the ratio of household wealth to the present value of permanent disposable income rises across the income distribution, from 3.28 at the 10th percentile to 5.76 at the 95th percentile.",
+   "treatment": {
+    "label": "Household permanent disposable income (percentile of the income distribution)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Danish registries; present value of permanent disposable income over the 15 years prior to the Danish Expenditure Survey, computed with an annual interest rate of 2%",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The present value of household permanent disposable income over the 15 years prior to the survey, computed with an annual interest rate of 2%; the table reports the wealth-income ratio at the 10th, 25th, 50th, 75th, 90th and 95th percentiles of this income distribution.",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "The 15 years prior to the Danish Expenditure Survey",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "polarity": "higher_is_more"
+   },
+   "outcome": {
+    "label": "Ratio of household wealth to permanent disposable income (W/Y15)",
+    "ontology_node": null,
+    "register_source": {
+     "value": "Income Tax Registry (Indkomstskatteregistret), which contains the taxable income and wealth of all Danish residents",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "medium"
+    },
+    "definition": {
+     "value": "The ratio in 2010 between wealth and income for Danish residents aged 69 (born in 1941), obtained from a kernel-weighted local polynomial regression of wealth on disposable income; reported at six percentiles of the income distribution (3.28, 2.84, 3.28, 3.70, 4.10, 5.76).",
+     "evidence": [
+      "e1",
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "timing": {
+     "value": "Wealth measured in 2010, at age 69",
+     "evidence": [
+      "e1",
+      "e5"
+     ],
+     "confidence": "high"
+    },
+    "polarity": "higher_is_more"
+   },
+   "relationship": {
+    "sign": {
+     "value": "positive",
+     "evidence": [
+      "e1",
+      "e2",
+      "e3"
+     ],
+     "confidence": "high"
+    },
+    "statistically_significant": null,
+    "magnitude": {
+     "point_estimate": {
+      "value": null,
+      "evidence": [
+       "e7"
+      ],
+      "confidence": "high"
+     },
+     "se_or_ci": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "units": {
+      "value": "ratio of household wealth to permanent disposable income, by income percentile",
+      "evidence": [
+       "e1"
+      ],
+      "confidence": "high"
+     },
+     "interpretation": "Figure A2 in the Supporting Information Appendix shows that the ratio of wealth to income grew with household permanent income.",
+     "se": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_low": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "ci_high": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "p_value": {
+      "value": null,
+      "evidence": [
+       "e6"
+      ],
+      "confidence": "high"
+     },
+     "baseline_mean": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "outcome_sd": {
+      "value": null,
+      "evidence": [
+       "e8"
+      ],
+      "confidence": "high"
+     },
+     "ci_level": null,
+     "p_value_relation": null
+    }
+   },
+   "estimand": {
+    "type": "descriptive_gap",
+    "target_population": "Danish residents born in 1941 (aged 69 in 2010)",
+    "compliers": null,
+    "bound": null,
+    "time_horizon": null,
+    "formal_query": null,
+    "horizon": null
+   },
+   "population": {
+    "description": "Danish residents born in 1941, whose age of 69 years in 2010 coincides with the mean age of the parents in the consumption sample; 46,546 observations in Table 4",
+    "birth_cohorts": "1941",
+    "ages": "69 years old in 2010",
+    "sex": "all",
+    "period": "2010 (wealth); the 15 years prior to the Danish Expenditure Survey (income)",
+    "region": "Denmark",
+    "subgroups_defined": [
+     "income percentiles 10, 25, 50, 75, 90, 95"
+    ],
+    "selection": "All Danish residents of the 1941 birth cohort observed in the registries",
+    "period_range": {
+     "from": 1995,
+     "to": 2010
+    }
+   },
+   "identification": {
+    "strategy": "descriptive",
+    "source_of_variation": "Cross-sectional variation in permanent disposable income within a single birth cohort; no identifying variation is claimed.",
+    "instrument": null,
+    "key_assumptions": [
+     {
+      "id": "a1",
+      "assumption": "The ratios describe an association obtained from a kernel-weighted local polynomial regression of wealth on disposable income; no causal interpretation is attached",
+      "stated_or_implicit": "implicit",
+      "supported_by": null,
+      "evidence": [
+       "e4",
+       "e3"
+      ],
+      "confidence": "medium",
+      "formal": {
+       "form": "not_formalizable",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     },
+     {
+      "id": "a2",
+      "assumption": "Household wealth is a function of the history of household income, and the present value of income is computed with an annual interest rate of 2%",
+      "stated_or_implicit": "stated",
+      "supported_by": null,
+      "evidence": [
+       "e5"
+      ],
+      "confidence": "high",
+      "formal": {
+       "form": "functional",
+       "lhs": null,
+       "rhs": null,
+       "given": null,
+       "implies_edges": [],
+       "as_written": null
+      }
+     }
+    ],
+    "threats_discussed": [],
+    "robustness_checks": [],
+    "unresolved_confounders": []
+   },
+   "estimation": {
+    "estimator": {
+     "value": "Kernel-weighted local polynomial regression of wealth on disposable income",
+     "evidence": [
+      "e4"
+     ],
+     "confidence": "high"
+    },
+    "specification": "Ratio of fitted household wealth in 2010 to the present value of permanent disposable income over the preceding 15 years, evaluated at six percentiles of the income distribution (Table 4, column W/Y15; Figure A2 in the Supporting Information Appendix).",
+    "fixed_effects": [],
+    "controls": [],
+    "clustering": null,
+    "weights": "kernel weights in the local polynomial regression",
+    "sample_n": {
+     "value": 46546,
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "source_table": {
+     "value": "Table 4, column W/Y15, p. 590",
+     "evidence": [
+      "e1"
+     ],
+     "confidence": "high"
+    },
+    "adjustment_set": [],
+    "source_table_id": null
+   },
+   "mediators_claimed": [],
+   "heterogeneity": [],
+   "graph_fragment": {
+    "nodes": [
+     "household permanent disposable income",
+     "ratio of household wealth to permanent disposable income"
+    ],
+    "edges": [
+     {
+      "from": "household permanent disposable income",
+      "to": "ratio of household wealth to permanent disposable income",
+      "kind": "causal_tested",
+      "from_assumption": null,
+      "given": []
+     }
+    ]
+   },
+   "provenance": {
+    "quotes": [
+     {
+      "page": 591,
+      "sha256_16": "99b9dbe46eb07157",
+      "n_chars": 175
+     },
+     {
+      "page": 591,
+      "sha256_16": "e71eba35d8056172",
+      "n_chars": 127
+     }
+    ]
+   },
+   "extraction_confidence": "medium",
+   "ambiguities": [
+    "Table 4 reports a profile of ratios rather than a slope coefficient, so point_estimate is left null and only the sign of the relationship is recorded.",
+    "The wealth-income ratio is not monotone across the printed percentiles (3.28, 2.84, 3.28, 3.70, 4.10, 5.76); the paper nevertheless describes it as growing with permanent income."
+   ],
+   "evidence": [
+    {
+     "id": "e1",
+     "kind": "table",
+     "exhibit": "Table 4",
+     "panel": null,
+     "page": 590,
+     "regression_id": null
+    },
+    {
+     "id": "e2",
+     "kind": "quote",
+     "page": 591,
+     "sha256_16": "99b9dbe46eb07157",
+     "n_chars": 175
+    },
+    {
+     "id": "e3",
+     "kind": "quote",
+     "page": 591,
+     "sha256_16": "e71eba35d8056172",
+     "n_chars": 127
+    },
+    {
+     "id": "e4",
+     "kind": "quote",
+     "page": 590,
+     "sha256_16": "672db6f862ae1d6d",
+     "n_chars": 126
+    },
+    {
+     "id": "e5",
+     "kind": "quote",
+     "page": 591,
+     "sha256_16": "9deabeceb098a451",
+     "n_chars": 190
+    },
+    {
+     "id": "e6",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "a8390169d7741c22",
+     "n_chars": 114
+    },
+    {
+     "id": "e7",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "58c195b94c9e3677",
+     "n_chars": 148
+    },
+    {
+     "id": "e8",
+     "kind": "absent",
+     "exhibit": "Table 4",
+     "page": 590,
+     "sha256_16": "7412e0cb07c32b42",
+     "n_chars": 71
+    },
+    {
+     "id": "e9",
+     "kind": "absent",
+     "exhibit": null,
+     "page": 590,
+     "sha256_16": "3ff741628aa30bbc",
+     "n_chars": 96
+    }
+   ],
+   "functional_form": null,
+   "scope": null,
+   "specification_level": null,
+   "prediction_risk": null,
+   "theory_referenced": [],
+   "preregistration": {
+    "status": "not_stated",
+    "id": null
+   },
+   "prior_findings_compared": [
+    {
+     "citation": "Altonji, Hayashi, and Kotlikoff (1997); McGarry (1999); Menchik and David (1983)",
+     "relation": "consistent",
+     "stated": true,
+     "evidence": [
+      "e3"
+     ],
+     "as_stated": "also consistent with the findings of earlier studies showing that high-income parents have a higher savings rate (Dynan, Skinner, & Zeldes, 2004), make larger inter vivos transfers (Altonji, Hayashi, & Kotlikoff, 1997; McGarry, 1999), and leave proportionally larger bequests"
+    }
+   ],
+   "falsification": null,
+   "outcomes_examined_not_reported": [],
+   "headline_basis_previous": {
+    "headline": false,
+    "basis": null
+   },
+   "anchor_quote": {
+    "page": 591,
+    "text": "At the 10th percentile of the distribution, the ratio of wealth to income was 3.28. At the 95th percentile, the ratio was as high as 5.76 (wealth was more skewed than income).",
+    "sha256_16": "99b9dbe46eb07157",
+    "n_chars": 175
+   }
+  }
+ ],
+ "extraction_inputs": {
+  "digest_sha256": "3a8225fecf5fbeac0f5efcf672d36335d360b848cf1b7f57d407821cc10aae6f",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-13T03:07:55.655754+00:00",
+  "tables_sha256": "1f3f8e085f998132fc79e44a30ece927440362b3599f2f988f545eb285b4733e",
+  "figures_sha256": "a3038cad1178bf2f97163a02313270e9d905556348e6db613deca42393688f62"
+ },
+ "public_export": {
+  "anchor_quotes": 8,
+  "quotes_hashed": 134,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

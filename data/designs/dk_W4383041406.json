@@ -1,0 +1,245 @@
+{
+ "artid": "dk_W4383041406",
+ "paper": {
+  "title": "Fostering Excellent Research by the Austrian Micro Data Center (AMDC)",
+  "authors": [
+   "Regina Fuchs",
+   "Tobias Göllner",
+   "Simon Hartmann",
+   "Tobias Thomas"
+  ],
+  "year": 2024,
+  "journal": "Journal of Economics and Statistics (Jahrbücher für Nationalökonomie und Statistik) 244(4): 433-445, Data Observer section",
+  "doi": "10.1515/jbnst-2023-0043",
+  "code_data_availability": "No data or code availability statement appears in the paper, and none is expected: …"
+ },
+ "data": {
+  "registers": [
+   {
+    "name_in_paper": "Central Population Register (German: Zentrales Melderegister, ZMR)",
+    "dst_code": null,
+    "years": null,
+    "role": "Named as an example of the administrative registers accessible through the AMDC. Not used for any estimation in this paper — the paper analyses no microdata.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "complete corporate, income and value added tax data",
+    "dst_code": null,
+    "years": null,
+    "role": "Named as accessible through the AMDC. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Income tax statistics",
+    "dst_code": null,
+    "years": "2000-2019",
+    "role": "Row of the Table 1 catalogue of Statistics Austria microdata sets in the AMDC (data collection method: Secondary); also named in the prose of Section 3. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2000,
+     "to": 2019
+    }
+   },
+   {
+    "name_in_paper": "Companies register (article 25) - legal unit",
+    "dst_code": null,
+    "years": "2013-2022",
+    "role": "Row of the Table 1 catalogue (data collection method: Register). Named in Section 4 as one of the business statistics offering research opportunities. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2013,
+     "to": 2022
+    }
+   },
+   {
+    "name_in_paper": "The Austrian Census, consisting of the Population Census, the Housing Census and the Census of Local Units of Employment",
+    "dst_code": null,
+    "years": "available since 2011",
+    "role": "Named as the basis of person and household characteristics available in the AMDC, with the majority of variables produced annually since 2011 given its register-based nature. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2011,
+     "to": null
+    }
+   },
+   {
+    "name_in_paper": "Co-ordinated employment statistics",
+    "dst_code": null,
+    "years": null,
+    "role": "Named as the data set that allows firm-level data to be linked to individual-level data; also a row of the Table 1 catalogue (Register). Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Cancer statistics/Cancer register",
+    "dst_code": null,
+    "years": null,
+    "role": "Row of the Table 1 catalogue (data collection method: Register). Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "data on COVID-19 vaccinations and data from COVID-19 infections",
+    "dst_code": null,
+    "years": null,
+    "role": "Announced as forthcoming in the AMDC, to create research opportunities on pandemic public health measures and long-term effects of infection. Not available at the time of writing and not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Austrian Vital Statistics Registry",
+    "dst_code": null,
+    "years": "implemented 2015",
+    "role": "Named as an example of a new public digital register that increases the number of linkable data sets. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2015,
+     "to": null
+    }
+   },
+   {
+    "name_in_paper": "Microdata of the Federal State (second access track, under the Research Organization Act, Forschungsorganisationsgesetz FOG § 38b)",
+    "dst_code": null,
+    "years": null,
+    "role": "One of the three sources of microdata the AMDC provides access to. Access requires FOG regulations by the responsible ministries; the AMDC forwards and liaises. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Microdata of the Research Entity",
+    "dst_code": null,
+    "years": null,
+    "role": "Third source: microdata brought in by researchers themselves, which can be linked to the other two sources after removal of direct identifiers and pseudonymization. Not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": null
+   },
+   {
+    "name_in_paper": "Austrian Socio-Economic Panel (ASEP)",
+    "dst_code": null,
+    "years": "full operations starting 2024",
+    "role": "Announced future longitudinal household panel - an annual household survey complemented with register-based data. Not available at the time of writing and not used for any estimation in this paper.",
+    "variables_mentioned": [],
+    "year_range": {
+     "from": 2024,
+     "to": null
+    }
+   }
+  ],
+  "linkages": [
+   "Person-level microdata are linked deterministically via a specific encrypted identifier (German: verschlüsseltes bereichsspezifisches Personenkennzeichen Amtliche Statistik, vbPK-AS) provided by the Austrian Identifier Registry Authority (Stammzahlenregisterbehörde). Pseudonymization with the vbPK-AS is the precondition for both protected data use and deterministic linking; only data pseudonymized with vbPK-AS can be processed (p. 6).",
+   "Firm-level data are linked via an encrypted enterprise identifier (German: verschlüsselte Unternehmenskennzahl) created by Statistics Austria; where researchers supply a usable identifier such as the Firmenbuchnummer, it is replaced with the encrypted enterprise identifier (p. 6).",
+   "Microdata brought in by research entities themselves can be linked to the other data once all direct identifiers are removed and the data are pseudonymized with vbPK-AS or any available firm identifier compatible with AMDC data (p. 8).",
+   "The co-ordinated employment statistics allow firm-level data to be linked to individual-level data, enabling analysis at firm and employer levels while simultaneously including individual, family and household levels (p. 11).",
+   "The legal foundation for safely linking data by the encrypted identifier (vbPK) was only established in 2004 (E-Government Gesetz, 27 February 2004), which is why the catalogue's time series start in the early 2000s and implementation across all areas of data gathering was, as of 2023, still ongoing (pp. 8, 12)."
+  ],
+  "sample": {
+   "universe": "No estimation sample exists. This is a Data Observer article describing the institutional design, application process and data catalogue of the Austrian Micro Data Center (AMDC) at Statistics Austria. It analyses no microdata, estimates no model and reports no empirical result.",
+   "unit_of_observation": "None - no statistical units are analysed. The units described as available for future research in the AMDC are individuals, households and firms.",
+   "selection_rules": [],
+   "period": null,
+   "n_observations": null,
+   "n_individuals": null
+  },
+  "construction_notes": [
+   "The paper constructs no analysis dataset and performs no estimation. It describes a research data infrastructure: 'This paper describes the application process and project work with the AMDC (Section 2), provides an overview of the microdata accessible in the AMDC (Section 3), and gives an outlook on possible further developments (Section 4).' (p. 3).",
+   "Table 1 (pp. 9-10), titled 'Microdata sets of Statistics Austria in the AMDC', is a catalogue, not a results table. Its three columns are Name, Data collection method (Survey / Register / Secondary) and Years of coverage. It contains no coefficients, standard errors, p-values or test statistics.",
+   "Figure 1 (p. 8), 'Structure of the AMDC', is an institutional schematic showing Statistics Austria's Microdata and the Federal State's Microdata flowing to the AMDC as pseudonymized microdata (vbPK-AS), remote access and output control to the Research Entity, and pseudonymized microdata of research entities flowing back. It plots no data and carries no numeric annotation.",
+   "Catalogue coverage: 'The AMDC microdata catalogue holds time series starting from the early 2000s.' (p. 8). Requests for longer observation periods cannot be met in the foreseeable future.",
+   "Access mode: data are provided via a secure Remote Research Environment (RRE) on Statistics Austria servers; in no instance is microdata ever sent to researchers. Statistical software available as of 2023 is SPSS, Stata, R (RStudio Desktop) and Python (Spyder), plus LibreOffice, Jupyter Notebook and a text editor. All exported tables and graphs pass an 'output control' so that no individual or firm is (indirectly) identifiable (pp. 6-7).",
+   "Legal and institutional facts the paper reports about itself rather than estimates: the AMDC opened 1 July 2022 following an amendment to the Federal Statistics Act (Bundesstatistikgesetz, BStatG); accreditation is typically valid for five years; data access can be provided for a maximum duration of 5 years; more than 40 national and international research organizations applied successfully for accreditation within the first 12 months; the technical infrastructure is financed by the BMBWF with a budget of 505,000 Euro p.a. (2022), with variable costs borne by the research entity; researchers must work from a separate and lockable room at the accredited research entity, so home office use is not possible; data, scripts and logs are archived for five years after the research phase. These are institutional descriptions, not tested relationships, and are therefore not recorded as claims."
+  ]
+ },
+ "claims": [],
+ "extraction_note": {
+  "claims_extracted": 0,
+  "summary": "This paper tests no empirical claim. It is a 'Data Observer' article describing the institutional design, application process, data catalogue and planned development of the Austrian Micro Data Center (AMDC) at Statistics Austria. It contains no regression, no coefficient, no standard error, no hypothesis test and no estimated relationship between any treatment and any outcome, so there is no claim to record. An empty claims list is the finding, not a gap in the extraction.",
+  "basis": [
+   "Full text of all 13 PDF pages was read. The article's sections are: Abstract (p. 1), 1 Introduction (pp. 2-3), 2 Application Process and Project Work with subsections 2.1 Accreditation of a Research Entity, 2.2 Application for a Research Project and 2.3 Research Project Work (pp. 3-7), 3 Accessible Microdata (pp. 7-10), 4 Status and Outlook as of 2023 (pp. 11-12), References (pp. 12-13). No results section and no empirical analysis appear anywhere.",
+   "The paper contains exactly two exhibits, and neither reports an estimate. Figure 1 (p. 8) is an institutional schematic of the AMDC's data flows. Table 1 (pp. 9-10) is a catalogue of Statistics Austria microdata sets, with columns Name, Data collection method and Years.",
+   "The independent table/figure extraction in digest.json agrees: it found zero regressions across zero tables, and classified the single figure dk_W4383041406::F1 as kind 'other', is_results_figure false, with sample 'Not applicable - no data sample.'",
+   "The paper states its own purpose as description, not testing: see the quote on p. 3 below.",
+   "The abstract states no finding. It describes what the AMDC is and what it enables, so the downstream headline pass has no abstract-stated result to match any claim against.",
+   "Quantitative statements that do appear in the text - more than 40 accredited research organizations in the first 12 months (p. 4), a 505,000 Euro p.a. infrastructure budget (p. 5, footnote 13), more than 1500 scientific projects and publications from Dutch CBS microdata 2006-2022 (pp. 2-3) - are institutional facts and, in the CBS case, a figure cited from an external source as motivation. None is a relationship estimated by this paper. Per the task rules ('Not literature it cites, not its motivation'), none is recorded as a claim; fabricating a treatment-outcome pair for them would create a phantom estimate."
+  ],
+  "evidence": [
+   {
+    "id": "n1",
+    "kind": "quote",
+    "page": 3,
+    "sha256_16": "d4cdae71e0484285",
+    "n_chars": 229
+   },
+   {
+    "id": "n2",
+    "kind": "quote",
+    "page": 1,
+    "sha256_16": "c43dba7ed42c94ab",
+    "n_chars": 146
+   },
+   {
+    "id": "n3",
+    "kind": "quote",
+    "page": 3,
+    "sha256_16": "6729ba4db6e72ea0",
+    "n_chars": 226
+   },
+   {
+    "id": "n4",
+    "kind": "quote",
+    "page": 11,
+    "sha256_16": "8c2d0791dfdf0dc1",
+    "n_chars": 194
+   },
+   {
+    "id": "n5",
+    "kind": "quote",
+    "page": 8,
+    "sha256_16": "c12db85ac5b38a40",
+    "n_chars": 77
+   },
+   {
+    "id": "n6",
+    "kind": "figure",
+    "figure_id": "dk_W4383041406::F1",
+    "exhibit": "Figure 1",
+    "panel": "A",
+    "page": 8,
+    "annotation": "Figure 1: Structure of the AMDC.",
+    "sha256_16": "cebce294709f80a1",
+    "n_chars": 549
+   },
+   {
+    "id": "n7",
+    "kind": "table",
+    "exhibit": "Table 1",
+    "panel": null,
+    "page": "9-10",
+    "regression_id": null,
+    "sha256_16": "77551871b6857c29",
+    "n_chars": 386
+   },
+   {
+    "id": "n8",
+    "kind": "absent",
+    "page": null,
+    "sha256_16": "955ace7316a98257",
+    "n_chars": 332
+   }
+  ]
+ },
+ "extraction_inputs": {
+  "digest_sha256": "7690880c5f52a830bf59ccf2e1d9eb9ee4845a1c8683d9bd6eb876c3ee23e842",
+  "digest_version": 1,
+  "digest_built_at": "2026-10-11T05:09:44.861936+00:00",
+  "tables_sha256": "af3295576e5c53fe43cb0d0a584e8ba70f7945e447052bc0ba1c24cf5ab66288",
+  "figures_sha256": "04489b34e753b0a9671b6317f6e06492093cbaadfa5a5efa5cc9bf33843c08b1"
+ },
+ "public_export": {
+  "anchor_quotes": 0,
+  "quotes_hashed": 0,
+  "max_quote_chars": 240,
+  "max_quotes_per_paper": 15
+ }
+}

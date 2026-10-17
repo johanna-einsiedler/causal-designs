@@ -1,0 +1,3192 @@
+{
+ "corpus": "danish-register-econ",
+ "papers": [
+  {
+   "artid": "dk_W1503225338",
+   "title": "Taxation and International Migration of Superstars: Evidence from the European Football Market",
+   "year": 2013,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.103.5.1892",
+   "n_records": 76,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "fixed_effects_within",
+    "selection_on_observables",
+    "synthetic_control"
+   ]
+  },
+  {
+   "artid": "dk_W1827874139",
+   "title": "The gift of time? School starting age and mental health",
+   "year": 2018,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.3638",
+   "n_records": 203,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "regression_discontinuity",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W1935170479",
+   "title": "Ability or Finances as Constraints on Entrepreneurship? Evidence from Survival Rates in a Natural Experiment",
+   "year": 2012,
+   "journal": "The Review of Financial Studies",
+   "doi": "10.1093/rfs/hhs107",
+   "n_records": 80,
+   "n_headline": 10,
+   "strategies": [
+    "difference_in_differences",
+    "matching",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W1940883135",
+   "title": "International family migration and the dual-earner model",
+   "year": 2022,
+   "journal": "Journal of Economic Geography",
+   "doi": "10.1093/jeg/lbab050",
+   "n_records": 55,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W1992237160",
+   "title": "Estimating Taxable Income Responses Using Danish Tax Reforms",
+   "year": 2014,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.6.4.271",
+   "n_records": 25,
+   "n_headline": 4,
+   "strategies": [
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2010342843",
+   "title": "Offshoring, Transition, and Training: Evidence from Danish Matched Worker-Firm Data",
+   "year": 2012,
+   "journal": "American Economic Review: Papers & Proceedings 102(3): 424–428",
+   "doi": "10.1257/aer.102.3.424",
+   "n_records": 18,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W2029320109",
+   "title": "The Wage Effects of Offshoring: Evidence from Danish Matched Worker-Firm Data",
+   "year": 2014,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.104.6.1597",
+   "n_records": 168,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "fixed_effects_within",
+    "instrumental_variables",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W2046545334",
+   "title": "Early interventions and infant health: Evidence from the Danish home visiting program",
+   "year": 2012,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2012.05.012",
+   "n_records": 57,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W2066263116",
+   "title": "Adverse workplace conditions, high-involvement work practices and labor turnover: Evidence from Danish linked employer-employee data",
+   "year": 2011,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2011.07.003",
+   "n_records": 28,
+   "n_headline": 9,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2074441423",
+   "title": "The effect of integration policies on the time until regular employment of newly arrived immigrants: Evidence from Denmark",
+   "year": 2009,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2008.12.006",
+   "n_records": 124,
+   "n_headline": 8,
+   "strategies": [
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2088663850",
+   "title": "Unwilling or Unable to Cheat? Evidence From a Tax Audit Experiment in Denmark",
+   "year": 2011,
+   "journal": "Econometrica",
+   "doi": "10.3982/ECTA9113",
+   "n_records": 31,
+   "n_headline": 16,
+   "strategies": [
+    "RCT",
+    "bunching",
+    "descriptive",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2097453996",
+   "title": "The impact of health on individual retirement plans: self-reported versus diagnostic measures",
+   "year": 2010,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.1523",
+   "n_records": 76,
+   "n_headline": 8,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2114357420",
+   "title": "Tax Reforms and Intertemporal Shifting of Wage Income: Evidence from Danish Monthly Payroll Records",
+   "year": 2016,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.20140233",
+   "n_records": 74,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W2121144087",
+   "title": "An Empirical Model of Wage Dispersion with Sorting",
+   "year": 2019,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdy022",
+   "n_records": 52,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W2139380543",
+   "title": "Immigrants' Effect on Native Workers: New Analysis on Longitudinal Data",
+   "year": 2016,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20150114",
+   "n_records": 152,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "fixed_effects_within",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2153510573",
+   "title": "Adjustment Costs, Firm Responses, and Micro vs. Macro Labor Supply Elasticities: Evidence from Danish Tax Records",
+   "year": 2011,
+   "journal": "The Quarterly Journal of Economics",
+   "doi": "10.1093/qje/qjr013",
+   "n_records": 39,
+   "n_headline": 3,
+   "strategies": [
+    "bunching",
+    "descriptive",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2156139463",
+   "title": "Tax bunching, income shifting and self-employment",
+   "year": 2013,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2013.08.002",
+   "n_records": 83,
+   "n_headline": 18,
+   "strategies": [
+    "bunching",
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W2169246780",
+   "title": "Taxation and the long run allocation of labor: Theory and Danish evidence",
+   "year": 2015,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2014.03.012",
+   "n_records": 82,
+   "n_headline": 2,
+   "strategies": [
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W217365405",
+   "title": "Career Effects of Mental Health",
+   "year": 2021,
+   "journal": "NBER Working Paper Series, Working Paper 29031",
+   "doi": null,
+   "n_records": 216,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W2182087249",
+   "title": "Consumption Network Effects",
+   "year": 2020,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdz026",
+   "n_records": 45,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2187366138",
+   "title": "Liquidity Constraint Tightness and Consumer Responses to Fiscal Stimulus Policy",
+   "year": 2019,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.20140313",
+   "n_records": 57,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W2213841331",
+   "title": "International trade and job polarization: Evidence at the worker level",
+   "year": 2023,
+   "journal": "Journal of International Economics",
+   "doi": "10.1016/j.jinteco.2023.103810",
+   "n_records": 93,
+   "n_headline": 12,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W2236924981",
+   "title": "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts: Evidence from Denmark",
+   "year": 2014,
+   "journal": "The Quarterly Journal of Economics",
+   "doi": "10.1093/qje/qju013",
+   "n_records": 95,
+   "n_headline": 17,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "instrumental_variables",
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W2247861621",
+   "title": "Disruptive school peers and student outcomes",
+   "year": 2015,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2015.01.004",
+   "n_records": 82,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W2265295982",
+   "title": "Migration and Wage Effects of Taxing Top Earners: Evidence from the Foreigners' Tax Scheme in Denmark",
+   "year": 2014,
+   "journal": "The Quarterly Journal of Economics",
+   "doi": "10.1093/qje/qjt033",
+   "n_records": 44,
+   "n_headline": 4,
+   "strategies": [
+    "bunching",
+    "difference_in_differences",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W2361450736",
+   "title": "Parental responses to child support obligations: Evidence from administrative data",
+   "year": 2018,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2018.06.003",
+   "n_records": 33,
+   "n_headline": 5,
+   "strategies": [
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2463599556",
+   "title": "Long-term consequences of workplace bullying on sickness absence",
+   "year": 2016,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2016.06.008",
+   "n_records": 71,
+   "n_headline": 11,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2548529099",
+   "title": "Gender gaps in the effects of childhood family environment: Do they persist into adulthood?",
+   "year": 2018,
+   "journal": "European Economic Review",
+   "doi": "10.1016/j.euroecorev.2017.04.004",
+   "n_records": 146,
+   "n_headline": 46,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W2548869093",
+   "title": "Pension saving responses to anticipated tax changes: Evidence from monthly pension contribution records",
+   "year": 2017,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2016.11.011",
+   "n_records": 7,
+   "n_headline": 1,
+   "strategies": [
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2566343964",
+   "title": "Can Women Have Children and a Career? IV Evidence from IVF Treatments",
+   "year": 2017,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20141467",
+   "n_records": 36,
+   "n_headline": 15,
+   "strategies": [
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2592024171",
+   "title": "The Decentralization of Wage Bargaining and Income Losses after Worker Displacement",
+   "year": 2018,
+   "journal": "Journal of the European Economic Association",
+   "doi": "10.1093/jeea/jvx004",
+   "n_records": 65,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W2594576665",
+   "title": "The Returns to Nursing: Evidence from a Parental-Leave Program",
+   "year": 2021,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdaa082",
+   "n_records": 30,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2620793188",
+   "title": "The labor market gender gap in Denmark: Sorting out the past 30 years",
+   "year": 2019,
+   "journal": "Labour Economics 56 (2019) 58-67 (running head on every page); received 22 May 2017, accepted 26 November 2018, available online 6 December 2018. The PDF's own metadata gives the issue year as 2018.",
+   "doi": "10.1016/j.labeco.2018.11.003",
+   "n_records": 112,
+   "n_headline": 18,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2739075932",
+   "title": "Do People Respond to the Mortgage Interest Deduction? Quasi-Experimental Evidence from Denmark",
+   "year": 2021,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.20170366",
+   "n_records": 58,
+   "n_headline": 9,
+   "strategies": [
+    "difference_in_differences",
+    "synthetic_control"
+   ]
+  },
+  {
+   "artid": "dk_W2770250470",
+   "title": "Family Health Behaviors",
+   "year": 2019,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20171993",
+   "n_records": 37,
+   "n_headline": 13,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W2781798209",
+   "title": "The use of third-party information reporting for tax deductions: evidence and implications from charitable deductions in Denmark",
+   "year": 2018,
+   "journal": "Oxford Economic Papers",
+   "doi": "10.1093/oep/gpx055",
+   "n_records": 33,
+   "n_headline": 1,
+   "strategies": [
+    "RCT",
+    "bunching",
+    "descriptive",
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2783930051",
+   "title": "Admission to higher education programmes and student educational outcomes and earnings-Evidence from Denmark",
+   "year": 2018,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2018.01.002",
+   "n_records": 54,
+   "n_headline": 8,
+   "strategies": [
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W2784402791",
+   "title": "Children and Gender Inequality: Evidence from Denmark",
+   "year": 2019,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20180010",
+   "n_records": 23,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2792687878",
+   "title": "The heterogeneous effects of education on crime: Evidence from Danish administrative twin data",
+   "year": 2018,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2018.02.002",
+   "n_records": 98,
+   "n_headline": 8,
+   "strategies": [
+    "selection_on_observables",
+    "twin_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W2794375442",
+   "title": "Employment, job skills and occupational mobility of cancer survivors",
+   "year": 2018,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2018.01.006",
+   "n_records": 500,
+   "n_headline": 18,
+   "strategies": [
+    "difference_in_differences",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2801202920",
+   "title": "Intergenerational mobility: New evidence from consumption data",
+   "year": 2018,
+   "journal": "Journal of Applied Econometrics",
+   "doi": "10.1002/jae.2626",
+   "n_records": 10,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2801804463",
+   "title": "Exposure to More Female Peers Widens the Gender Gap in STEM Participation",
+   "year": 2020,
+   "journal": "Journal of Labor Economics",
+   "doi": null,
+   "n_records": 106,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W2802346683",
+   "title": "Do tax incentives for saving in pension accounts cause debt accumulation? Evidence from Danish register data",
+   "year": 2018,
+   "journal": "European Economic Review",
+   "doi": "10.1016/j.euroecorev.2018.04.007",
+   "n_records": 47,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W2900238486",
+   "title": "Attitude-behavior consistency in tax compliance: A cross-national comparison",
+   "year": 2018,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2018.10.013",
+   "n_records": 73,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2915742260",
+   "title": "Spillover effects of stricter immigration policies",
+   "year": 2020,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2020.104239",
+   "n_records": 30,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W2921836311",
+   "title": "Job Displacement, Unemployment, and Crime: Evidence from Danish Microdata and Reforms",
+   "year": 2020,
+   "journal": "Journal of the European Economic Association",
+   "doi": "10.1093/jeea/jvz054",
+   "n_records": 63,
+   "n_headline": 15,
+   "strategies": [
+    "event_study",
+    "fixed_effects_within",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W2939678267",
+   "title": "Earmarked paternity leave and the relative income within couples",
+   "year": 2019,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2019.04.018",
+   "n_records": 28,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W2944982188",
+   "title": "Intergenerational Health Mobility: Evidence from Danish Registers",
+   "year": 2021,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.4433",
+   "n_records": 38,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W2951412023",
+   "title": "What is the Added Value of Preschool for Poor Children? Long-Term and Intergenerational Impacts and Interactions with an Infant Health Intervention",
+   "year": 2020,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20180698",
+   "n_records": 55,
+   "n_headline": 10,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W2967245124",
+   "title": "The internal spatial organization of firms: Evidence from Denmark",
+   "year": 2021,
+   "journal": "Journal of Urban Economics",
+   "doi": "10.1016/j.jue.2021.103366",
+   "n_records": 96,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W2990010517",
+   "title": "Occupations and Import Competition: Evidence from Denmark",
+   "year": 2019,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20161925",
+   "n_records": 50,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W2999882579",
+   "title": "The Intergenerational Effects of Intermarriage",
+   "year": 2021,
+   "journal": "Journal of International Migration and Integration",
+   "doi": "10.1007/s12134-019-00745-1",
+   "n_records": 65,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W3000443959",
+   "title": "Consumption Heterogeneity: Micro Drivers and Macro Implications",
+   "year": 2020,
+   "journal": "Finance and Economics Discussion Series 2020-005, Board of Governors of the Federal Reserve System",
+   "doi": "10.17016/FEDS.2020.005",
+   "n_records": 31,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3001397820",
+   "title": "Implementation of altered provider incentives for a more individual-risk-based assignment of dental recall intervals: evidence from a health systems reform in Denmark",
+   "year": 2020,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.3997",
+   "n_records": 80,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3005691992",
+   "title": "Local labour demand and immigrant employment",
+   "year": 2020,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2020.101808",
+   "n_records": 143,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3011188861",
+   "title": "Inequality of Opportunity for Income in Denmark and the United States: A Comparison Based on Administrative Data",
+   "year": 2020,
+   "journal": "NBER Working Paper Series, Working Paper 27835",
+   "doi": null,
+   "n_records": 75,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3014661183",
+   "title": "Time Discounting and Wealth Inequality",
+   "year": 2020,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20181096",
+   "n_records": 43,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3016202740",
+   "title": "De utryghedsmæssige konsekvenser af udsathed for kriminalitet i Danmark",
+   "year": 2020,
+   "journal": "Nordisk Tidsskrift for Kriminalvidenskab 1/2020",
+   "doi": null,
+   "n_records": 47,
+   "n_headline": 3,
+   "strategies": [
+    "difference_in_differences",
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3016333778",
+   "title": "Prison as a Criminal School: Peer Effects and Criminal Learning behind Bars",
+   "year": 2020,
+   "journal": "The Journal of Law and Economics",
+   "doi": null,
+   "n_records": 198,
+   "n_headline": 18,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W3017597103",
+   "title": "Cognitive consequences of iodine deficiency in adolescence: evidence from salt iodization in Denmark",
+   "year": 2022,
+   "journal": "The Scandinavian Journal of Economics",
+   "doi": "10.1111/sjoe.12473",
+   "n_records": 23,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W3022890915",
+   "title": "Do Employer Pension Contributions Reflect Employee Preferences? Evidence from a Retirement Savings Reform in Denmark",
+   "year": 2016,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20150015",
+   "n_records": 24,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W3023179841",
+   "title": "Wealth Taxation and Wealth Accumulation: Theory and Evidence from Denmark",
+   "year": 2020,
+   "journal": "The Quarterly Journal of Economics",
+   "doi": "10.1093/qje/qjz032",
+   "n_records": 72,
+   "n_headline": 2,
+   "strategies": [
+    "difference_in_differences",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3023883332",
+   "title": "Associations of age, occupation and nationality of seafarers with risk of evacuations at sea: a register-based study on Danish-flagged merchant ships",
+   "year": 2021,
+   "journal": "Marine Policy",
+   "doi": "10.1016/j.marpol.2020.103989",
+   "n_records": 38,
+   "n_headline": 16,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3027650922",
+   "title": "The impact of childhood health shocks on parental labor supply",
+   "year": 2021,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102486",
+   "n_records": 109,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W3032946770",
+   "title": "Does early childbearing matter? New approach using Danish register data",
+   "year": 2020,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2020.101852",
+   "n_records": 60,
+   "n_headline": 1,
+   "strategies": [
+    "other",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W3036557640",
+   "title": "Work organization and job polarization",
+   "year": 2020,
+   "journal": "Research Policy",
+   "doi": "10.1016/j.respol.2020.104015",
+   "n_records": 115,
+   "n_headline": 56,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W3037455063",
+   "title": "Home Prices, Fertility, and Early-Life Health Outcomes",
+   "year": 2021,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2021.104366",
+   "n_records": 125,
+   "n_headline": 17,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3086531009",
+   "title": "Vacancies, employment outcomes and firm growth: Evidence from Denmark",
+   "year": 2022,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2021.102103",
+   "n_records": 102,
+   "n_headline": 18,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3093088198",
+   "title": "The association between workplace bullying and suicidal behaviour: A register-based prospective study of 98,330 participants in Denmark.",
+   "year": 2020,
+   "journal": null,
+   "doi": null,
+   "n_records": 3,
+   "n_headline": 0,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3096682998",
+   "title": "The Temporality of Being NEET: A Longitudinal Study of NEET Occurrences among Young Adults in Denmark",
+   "year": 2021,
+   "journal": "YOUNG",
+   "doi": "10.1177/1103308820945098",
+   "n_records": 33,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3097223093",
+   "title": "Family, Community and Long-Term Socio-Economic Inequality: Evidence from Siblings and Youth Peers",
+   "year": 2021,
+   "journal": "The Economic Journal",
+   "doi": "10.1093/ej/ueaa121",
+   "n_records": 128,
+   "n_headline": 19,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3115523961",
+   "title": "Book Reviews",
+   "year": 2020,
+   "journal": "Population and Development Review",
+   "doi": "10.1111/padr.12376",
+   "n_records": 0,
+   "n_headline": 0,
+   "strategies": []
+  },
+  {
+   "artid": "dk_W3119269050",
+   "title": "Brothers increase women’s gender conformity",
+   "year": 2022,
+   "journal": "Journal of Population Economics",
+   "doi": "10.1007/s00148-021-00830-9",
+   "n_records": 65,
+   "n_headline": 7,
+   "strategies": [
+    "event_study",
+    "lottery"
+   ]
+  },
+  {
+   "artid": "dk_W3119424800",
+   "title": "The effects of unemployment on fertility",
+   "year": 2021,
+   "journal": "Advances in Life Course Research",
+   "doi": "10.1016/j.alcr.2020.100401",
+   "n_records": 80,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W3122075783",
+   "title": "Relative age for grade and adolescent risky health behavior",
+   "year": 2021,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102438",
+   "n_records": 42,
+   "n_headline": 13,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W3122408342",
+   "title": "Measurement Error in Income and Schooling and the Bias of Linear Estimators",
+   "year": 2017,
+   "journal": "Journal of Labor Economics",
+   "doi": null,
+   "n_records": 103,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3122484461",
+   "title": "Consumption Heterogeneity: Micro Drivers and Macro Implications",
+   "year": 2023,
+   "journal": "American Economic Journal: Macroeconomics",
+   "doi": "10.1257/mac.20200352",
+   "n_records": 28,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3122551933",
+   "title": "The Role of Bequests in Shaping Wealth Inequality: Evidence from Danish Wealth Records",
+   "year": 2016,
+   "journal": "American Economic Review: Papers & Proceedings",
+   "doi": "10.1257/aer.p20161036",
+   "n_records": 15,
+   "n_headline": 12,
+   "strategies": [
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W3122686460",
+   "title": "Financial Trouble Across Generations: Evidence from the Universe of Personal Loans in Denmark",
+   "year": 2020,
+   "journal": "The Economic Journal",
+   "doi": "10.1093/ej/uez046",
+   "n_records": 43,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "fixed_effects_within",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3122820076",
+   "title": "Reference Dependence in the Housing Market",
+   "year": 2022,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20191766",
+   "n_records": 117,
+   "n_headline": 2,
+   "strategies": [
+    "bunching",
+    "descriptive",
+    "instrumental_variables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3122935555",
+   "title": "Taxation and the long run allocation of labor: Theory and Danish evidence",
+   "year": 2015,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2014.03.012",
+   "n_records": 83,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3122965561",
+   "title": "Education, Birth Order and Family Size",
+   "year": 2021,
+   "journal": "The Economic Journal",
+   "doi": "10.1093/ej/ueaa089",
+   "n_records": 188,
+   "n_headline": 6,
+   "strategies": [
+    "instrumental_variables",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W3123148862",
+   "title": "When the Floodgates Open: “Northern” Firms’ Response to Removal of Trade Quotas on Chinese Goods",
+   "year": 2014,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.6.4.226",
+   "n_records": 120,
+   "n_headline": 13,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W3123555343",
+   "title": "Labour market signalling and unemployment duration: An empirical analysis using employer–employee data",
+   "year": 2013,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2012.09.032",
+   "n_records": 17,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3123871901",
+   "title": "Spillover Effects of Early-Life Medical Interventions",
+   "year": 2022,
+   "journal": "The Review of Economics and Statistics",
+   "doi": "10.1162/rest_a_00982",
+   "n_records": 57,
+   "n_headline": 7,
+   "strategies": [
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W3123970227",
+   "title": "Long-term effects of school size on students' outcomes",
+   "year": 2015,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2015.01.003",
+   "n_records": 65,
+   "n_headline": 6,
+   "strategies": [
+    "fixed_effects_within",
+    "instrumental_variables",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W3124469853",
+   "title": "International trade and retail market performance and structure: Theory and empirical evidence",
+   "year": 2018,
+   "journal": "Journal of International Economics",
+   "doi": "10.1016/j.jinteco.2018.08.010",
+   "n_records": 67,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W3124920828",
+   "title": "Motherhood and the Gender Productivity Gap",
+   "year": 2024,
+   "journal": "Journal of the European Economic Association",
+   "doi": "10.1093/jeea/jvad064",
+   "n_records": 81,
+   "n_headline": 30,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "fixed_effects_within",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3125335889",
+   "title": "Globalization, Gender, and the Family",
+   "year": 2022,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdac012",
+   "n_records": 90,
+   "n_headline": 15,
+   "strategies": [
+    "difference_in_differences",
+    "event_study",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W3126420006",
+   "title": "The Danish EQ-5D-5L Value Set: A Hybrid Model Using cTTO and DCE Data",
+   "year": 2021,
+   "journal": "Applied Health Economics and Health Policy",
+   "doi": "10.1007/s40258-021-00639-3",
+   "n_records": 65,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3126668274",
+   "title": "Linking retirement age to life expectancy does not lessen the demographic implications of unequal lifespans",
+   "year": 2021,
+   "journal": "Insurance: Mathematics and Economics",
+   "doi": "10.1016/j.insmatheco.2021.04.010",
+   "n_records": 32,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3127640695",
+   "title": "Inattention or reluctance? Parental responses to vaccination reminder letters",
+   "year": 2021,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102439",
+   "n_records": 27,
+   "n_headline": 2,
+   "strategies": [
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W3131143603",
+   "title": "Home Prices, Fertility, and Early-Life Health Outcomes",
+   "year": 2020,
+   "journal": "NBER Working Paper No. 27469",
+   "doi": null,
+   "n_records": 125,
+   "n_headline": 17,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3135595892",
+   "title": "Family Visitation Patterns during Incarceration in Denmark",
+   "year": 2021,
+   "journal": "Journal of Family Issues",
+   "doi": "10.1177/0192513X21991187",
+   "n_records": 55,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3138953291",
+   "title": "Innovative competences, the financial crisis and firm-level productivity in Denmark and Finland",
+   "year": 2023,
+   "journal": "Economics of Innovation and New Technology",
+   "doi": "10.1080/10438599.2021.1895496",
+   "n_records": 52,
+   "n_headline": 6,
+   "strategies": [
+    "fixed_effects_within",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3144434094",
+   "title": "The Importance of Peer Quality for Completion of Higher Education",
+   "year": 2021,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2021.102120",
+   "n_records": 87,
+   "n_headline": 19,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3146661424",
+   "title": "Is Parental Leave Costly for Firms and Coworkers?",
+   "year": 2024,
+   "journal": "Journal of Labor Economics",
+   "doi": "10.1086/725554",
+   "n_records": 75,
+   "n_headline": 17,
+   "strategies": [
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W3147600083",
+   "title": "How Different Parental Leave Schemes Create Different Take-Up Patterns: Denmark in Nordic Comparison",
+   "year": 2021,
+   "journal": "Social Inclusion",
+   "doi": "10.17645/si.v9i2.3870",
+   "n_records": 41,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3150066078",
+   "title": "Worker reallocation, firm innovation, and Chinese import competition",
+   "year": 2024,
+   "journal": "Journal of International Economics",
+   "doi": "10.1016/j.jinteco.2024.103951",
+   "n_records": 21,
+   "n_headline": 9,
+   "strategies": [
+    "fixed_effects_within",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W3152244542",
+   "title": "Work-related violence and depressive disorder among 955,573 employees followed for 6.99 million person-years. The Danish Work Life Course Cohort study",
+   "year": 2021,
+   "journal": "Journal of Affective Disorders",
+   "doi": "10.1016/j.jad.2021.03.065",
+   "n_records": 37,
+   "n_headline": 1,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3153123968",
+   "title": "Constraints on Hours within the Firm",
+   "year": 2022,
+   "journal": "Journal of Labor Economics",
+   "doi": "10.1086/714827",
+   "n_records": 51,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3155712319",
+   "title": "Economics of mental well-being: a prospective study estimating associated health care costs and sickness benefit transfers in Denmark",
+   "year": 2021,
+   "journal": "The European Journal of Health Economics",
+   "doi": "10.1007/s10198-021-01305-0",
+   "n_records": 10,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3162839958",
+   "title": "Public Pensions and Private Savings",
+   "year": 2024,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.20220019",
+   "n_records": 99,
+   "n_headline": 28,
+   "strategies": [
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W3163153651",
+   "title": "And Yet It Moves: Intergenerational Mobility in Italy",
+   "year": 2022,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20210151",
+   "n_records": 129,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "sibling_family_comparison",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3167298212",
+   "title": "The social class gap in bachelor's and master's completion: university dropout in times of educational expansion",
+   "year": 2021,
+   "journal": "Higher Education",
+   "doi": "10.1007/s10734-021-00726-3",
+   "n_records": 24,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3170891285",
+   "title": "Time to retire? A register-based study of GPs’ practice style prior to retirement",
+   "year": 2021,
+   "journal": "Social Science & Medicine",
+   "doi": "10.1016/j.socscimed.2021.114099",
+   "n_records": 80,
+   "n_headline": 32,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3171692527",
+   "title": "Efficient targeting in childhood interventions",
+   "year": 2023,
+   "journal": "Journal of Human Resources",
+   "doi": "10.3368/jhr.0320-10756R4",
+   "n_records": 34,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3173049983",
+   "title": "Parental Assortative Mating and the Intergenerational Transmission of Human Capital",
+   "year": 2021,
+   "journal": "Università Cattolica del Sacro Cuore, Dipartimento di Economia e Finanza, Working Paper Series n. 101 (ISSN 2704-7407)",
+   "doi": null,
+   "n_records": 43,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3174613487",
+   "title": "Family Labor Supply Responses to Severe Health Shocks: Evidence from Danish Administrative Records",
+   "year": 2021,
+   "journal": "American Economic Journal: Applied Economics",
+   "doi": "10.1257/app.20170604",
+   "n_records": 26,
+   "n_headline": 8,
+   "strategies": [
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W3193365035",
+   "title": "The importance of workplace accommodation for cancer survivors – The role of flexible work schedules and psychological help in returning to work",
+   "year": 2021,
+   "journal": "Economics and Human Biology",
+   "doi": "10.1016/j.ehb.2021.101057",
+   "n_records": 60,
+   "n_headline": 8,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3194211137",
+   "title": "Ethnic segregation and native out-migration in Copenhagen",
+   "year": 2022,
+   "journal": "European Urban and Regional Studies",
+   "doi": "10.1177/09697764211039183",
+   "n_records": 15,
+   "n_headline": 0,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3194349625",
+   "title": "Competition, Ownership, and the Impact of Government Outsourcing on Employees",
+   "year": 2022,
+   "journal": "Journal of Public Administration Research and Theory",
+   "doi": "10.1093/jopart/muab032",
+   "n_records": 16,
+   "n_headline": 0,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W3195462145",
+   "title": "Family Disadvantage, Gender and the Returns to Genetic Human Capital",
+   "year": 2020,
+   "journal": "IZA Discussion Paper Series, IZA DP No. 13441 (IZA Institute of Labor Economics)",
+   "doi": null,
+   "n_records": 157,
+   "n_headline": 16,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W3196650205",
+   "title": "A Commuting Model",
+   "year": 1999,
+   "journal": null,
+   "doi": null,
+   "n_records": 9,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W3211050401",
+   "title": "Discontinuity in care: Practice closures among primary care providers and patient health care utilization",
+   "year": 2021,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102551",
+   "n_records": 50,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W3212471012",
+   "title": "Maternal education and child health: Causal evidence from Denmark",
+   "year": 2021,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102552",
+   "n_records": 91,
+   "n_headline": 13,
+   "strategies": [
+    "instrumental_variables",
+    "regression_discontinuity",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W3216256880",
+   "title": "Overview of European legislation in the field of creating and functioning of population registers",
+   "year": 2021,
+   "journal": "RUDN Journal of Law",
+   "doi": "10.22363/2313-2337-2021-25-4-935-945",
+   "n_records": 2,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W3216346448",
+   "title": "Germs in the Family: The Short- and Long-Term Consequences of Intrahousehold Disease Spread",
+   "year": 2026,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20231521",
+   "n_records": 66,
+   "n_headline": 16,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4205546533",
+   "title": "Characterizing the Danish energy prosumer: Who buys solar PV systems and why do they buy them?",
+   "year": 2022,
+   "journal": "Ecological Economics",
+   "doi": "10.1016/j.ecolecon.2021.107333",
+   "n_records": 69,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4210271185",
+   "title": "Employer-to-Employer Transitions and Time Aggregation Bias",
+   "year": 2022,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2022.102130",
+   "n_records": 25,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4214667019",
+   "title": "Nurses and infant vaccination coverage",
+   "year": 2022,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2022.01.030",
+   "n_records": 19,
+   "n_headline": 1,
+   "strategies": [
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W4221038210",
+   "title": "Network Connections and Board Seats: Are Female Networks Less Valuable?",
+   "year": 2023,
+   "journal": "Journal of Labor Economics",
+   "doi": "10.1086/719965",
+   "n_records": 244,
+   "n_headline": 14,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4221099525",
+   "title": "PriSUD-Nordic: Intervening substance use disorders in the prison population - A public health opportunity",
+   "year": 2021,
+   "journal": "Research Council of Norway (grant application assessment form; not a journal article)",
+   "doi": null,
+   "n_records": 0,
+   "n_headline": 0,
+   "strategies": []
+  },
+  {
+   "artid": "dk_W4226225862",
+   "title": "Effects of parental health shocks on children's school achievements: A register-based population study",
+   "year": 2022,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2021.102573",
+   "n_records": 39,
+   "n_headline": 8,
+   "strategies": [
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W4229370254",
+   "title": "Vocational versus General Upper Secondary Education and Earnings",
+   "year": 2022,
+   "journal": "Journal of Human Resources",
+   "doi": "10.3368/jhr.0221-11497R2",
+   "n_records": 52,
+   "n_headline": 15,
+   "strategies": [
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4249057364",
+   "title": "Sibling Spillovers",
+   "year": 2017,
+   "journal": "NBER Working Paper Series, Working Paper No. 23062",
+   "doi": null,
+   "n_records": 62,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4253358643",
+   "title": "Sibling Spillovers",
+   "year": 2021,
+   "journal": "The Economic Journal",
+   "doi": "10.1093/ej/ueaa074",
+   "n_records": 68,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4280556790",
+   "title": "Lost Marie Curies: Parental Impact on the Probability of Becoming an Inventor",
+   "year": 2023,
+   "journal": "Management Science",
+   "doi": "10.1287/mnsc.2022.4432",
+   "n_records": 223,
+   "n_headline": 28,
+   "strategies": [
+    "descriptive",
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4283167760",
+   "title": "Identifying behavioral responses to tax reforms: New insights and a new approach",
+   "year": 2022,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2022.104691",
+   "n_records": 19,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W4285059352",
+   "title": "‘Migrant Carer-Wives’ – Between Transnational Marriages, Care Work for Older Husbands and Gendered Precarity",
+   "year": 2022,
+   "journal": "Nordic Journal of Migration Research",
+   "doi": "10.33134/njmr.427",
+   "n_records": 7,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4295168903",
+   "title": "Summaries of Articles",
+   "year": 2022,
+   "journal": "National Tax Journal",
+   "doi": null,
+   "n_records": 0,
+   "n_headline": 0,
+   "strategies": []
+  },
+  {
+   "artid": "dk_W4295270093",
+   "title": "Socioeconomic background affects mortality in Danish children with severe chronic disease",
+   "year": 2022,
+   "journal": "Acta Paediatrica",
+   "doi": "10.1111/apa.16540",
+   "n_records": 76,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4295929599",
+   "title": "Long-term relatedness and income distribution: understanding the deep roots of inequality",
+   "year": 2023,
+   "journal": "Oxford Economic Papers",
+   "doi": "10.1093/oep/gpac038",
+   "n_records": 44,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4296010520",
+   "title": "Studying and Working: Your Student Job Affects Your Future Labor Market Outcomes",
+   "year": 2022,
+   "journal": "Samfundsøkonomen 3/2022 (Temanummer: Universitetsstuderende og deres uddannelser)",
+   "doi": null,
+   "n_records": 39,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4297509759",
+   "title": "Is inequality in subjective well-being meritocratic? Danish evidence from linked survey and administrative data",
+   "year": 2022,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2022.09.004",
+   "n_records": 90,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4298126250",
+   "title": "The retirement (food)-consumption puzzle revisited - A panel data study from Denmark",
+   "year": 2022,
+   "journal": "Food Policy",
+   "doi": "10.1016/j.foodpol.2022.102330",
+   "n_records": 58,
+   "n_headline": 16,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4306789942",
+   "title": "Representativeness of survey participants in relation to mental disorders: a linkage between national registers and a population-representative survey",
+   "year": 2022,
+   "journal": "International Journal of Population Data Science",
+   "doi": "10.23889/ijpds.v4i3.1759",
+   "n_records": 198,
+   "n_headline": 58,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4308473136",
+   "title": "Danish Flexicurity: Rights and Duties",
+   "year": 2022,
+   "journal": "Journal of Economic Perspectives",
+   "doi": "10.1257/jep.36.4.81",
+   "n_records": 6,
+   "n_headline": 1,
+   "strategies": [
+    "RCT",
+    "descriptive",
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W4308752381",
+   "title": "Migration for co‐residence among long‐distance couples: The role of local family ties and gender",
+   "year": 2023,
+   "journal": "Population, Space and Place",
+   "doi": "10.1002/psp.2631",
+   "n_records": 134,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4309042652",
+   "title": "Playing alone? Interest representation in the videogame industry in Denmark, Italy and the Netherlands",
+   "year": 2023,
+   "journal": "Economic and Industrial Democracy",
+   "doi": "10.1177/0143831X221129651",
+   "n_records": 17,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4309550482",
+   "title": "Selective migration and mortality by economic status in Lolland-Falster, Denmark, 1992–2018",
+   "year": 2022,
+   "journal": "Scientific Reports",
+   "doi": "10.1038/s41598-022-24635-2",
+   "n_records": 106,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4310612419",
+   "title": "Accounting for employee flows",
+   "year": 2023,
+   "journal": "Journal of Business Finance & Accounting",
+   "doi": "10.1111/jbfa.12673",
+   "n_records": 96,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4320855144",
+   "title": "Social Positions and Fairness Views on Inequality",
+   "year": 2023,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdad019",
+   "n_records": 100,
+   "n_headline": 17,
+   "strategies": [
+    "RCT",
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4321767420",
+   "title": "Boys left behind: The effects of summer camp and follow-up strategies on academic, personal, and social competencies",
+   "year": 2023,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2023.102370",
+   "n_records": 28,
+   "n_headline": 5,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4327859500",
+   "title": "Transaction Costs in Voluntary Social Organisations",
+   "year": 2023,
+   "journal": "International Journal of Economics and Finance",
+   "doi": "10.5539/ijef.v15n4p35",
+   "n_records": 18,
+   "n_headline": 7,
+   "strategies": [
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4367674959",
+   "title": "Educational consequences of a sibling's disability: Evidence from type 1 diabetes",
+   "year": 2023,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2023.102407",
+   "n_records": 194,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W4378472128",
+   "title": "Gender gaps from labor market shocks",
+   "year": 2023,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2023.102394",
+   "n_records": 57,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4380153651",
+   "title": "Interethnic Union Formation Among 1.5- and Second-Generation Immigrants: The Role of Cultural Proximity",
+   "year": 2025,
+   "journal": "International Migration Review",
+   "doi": "10.1177/01979183231177969",
+   "n_records": 72,
+   "n_headline": 41,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4381839750",
+   "title": "The link between physician motivation and care",
+   "year": 2024,
+   "journal": "The European Journal of Health Economics",
+   "doi": "10.1007/s10198-023-01605-7",
+   "n_records": 72,
+   "n_headline": 14,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4381950776",
+   "title": "School performance and retrospective voting: Evidence from local elections in Denmark",
+   "year": 2024,
+   "journal": "European Journal of Political Economy",
+   "doi": "10.1016/j.ejpoleco.2023.102426",
+   "n_records": 50,
+   "n_headline": 4,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4383041406",
+   "title": "Fostering Excellent Research by the Austrian Micro Data Center (AMDC)",
+   "year": 2024,
+   "journal": "Journal of Economics and Statistics (Jahrbücher für Nationalökonomie und Statistik) 244(4): 433-445, Data Observer section",
+   "doi": "10.1515/jbnst-2023-0043",
+   "n_records": 0,
+   "n_headline": 0,
+   "strategies": []
+  },
+  {
+   "artid": "dk_W4384520838",
+   "title": "Estimating labor supply responses to Danish tax reforms",
+   "year": 2023,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2023.104943",
+   "n_records": 45,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W4385771522",
+   "title": "When It Hurts the Most: Timing of Parental Job Loss and a Child's Education",
+   "year": 2026,
+   "journal": "Journal of the European Economic Association",
+   "doi": "10.1093/jeea/jvag048",
+   "n_records": 112,
+   "n_headline": 7,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4386325880",
+   "title": "The Unequal Consequences of Job Loss across Countries",
+   "year": 2023,
+   "journal": "American Economic Review: Insights",
+   "doi": "10.1257/aeri.20220006",
+   "n_records": 89,
+   "n_headline": 23,
+   "strategies": [
+    "descriptive",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W4386456085",
+   "title": "Undeclared Danish Labor: Using the labor input method with linked individual-level tax data to estimate undeclared work in Denmark",
+   "year": 2023,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2023.08.017",
+   "n_records": 74,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4386887755",
+   "title": "Joint Utility or Sub-optimal Outcomes? Household Income Development of Same-Sex and Different-Sex Couples Transitioning to Parenthood in Denmark, Finland, Norway, and Sweden",
+   "year": 2024,
+   "journal": "Journal of Family Issues",
+   "doi": "10.1177/0192513X231194305",
+   "n_records": 30,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W4387776349",
+   "title": "A guide to estimating the canonical income process in quasidifferences",
+   "year": 2024,
+   "journal": "Macroeconomic Dynamics",
+   "doi": "10.1017/S1365100523000457",
+   "n_records": 60,
+   "n_headline": 18,
+   "strategies": [
+    "descriptive",
+    "other",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4388046637",
+   "title": "New system responses to juvenile crime: Experiences from Denmark",
+   "year": 2023,
+   "journal": "Nordisk Tidsskrift for Kriminalvidenskab, nr. 3/2023, pp. 332-350",
+   "doi": null,
+   "n_records": 12,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4388665909",
+   "title": "Reminder design and childhood vaccination coverage",
+   "year": 2024,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2023.102832",
+   "n_records": 28,
+   "n_headline": 8,
+   "strategies": [
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W4389985039",
+   "title": "Income effects and labour supply: Evidence from a child benefits reform",
+   "year": 2024,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2023.105049",
+   "n_records": 97,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W4390278155",
+   "title": "Sibling spillovers and the choice to get vaccinated: Evidence from a regression discontinuity design",
+   "year": 2024,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2023.102843",
+   "n_records": 26,
+   "n_headline": 6,
+   "strategies": [
+    "event_study",
+    "instrumental_variables",
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W4390673696",
+   "title": "Duration and timing of depression and risk of family dissolution: A register-based cohort study of newly-formed Danish families",
+   "year": 2024,
+   "journal": "Journal of Affective Disorders",
+   "doi": "10.1016/j.jad.2024.01.022",
+   "n_records": 19,
+   "n_headline": 0,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4391218902",
+   "title": "Live longer, work longer? An investigation of the health capacity to work at older ages in Denmark using combined register and survey data",
+   "year": 2024,
+   "journal": "Journal for Labour Market Research",
+   "doi": "10.1186/s12651-024-00360-3",
+   "n_records": 49,
+   "n_headline": 0,
+   "strategies": [
+    "other",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4391781466",
+   "title": "The coverage of influenza vaccination and predictors of influenza non-vaccination in Danish cancer patients: A nationwide register-based cohort study",
+   "year": 2024,
+   "journal": "Vaccine",
+   "doi": "10.1016/j.vaccine.2024.02.009",
+   "n_records": 121,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4392790267",
+   "title": "Subjective well-being and chronic illnesses: A combined survey and register study",
+   "year": 2024,
+   "journal": "International Journal of Wellbeing",
+   "doi": "10.5502/ijw.v14i1.2443",
+   "n_records": 48,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4396555011",
+   "title": "The Gender Application Gap: Do Men and Women Apply for the Same Jobs?",
+   "year": 2024,
+   "journal": "American Economic Journal: Economic Policy",
+   "doi": "10.1257/pol.20210607",
+   "n_records": 78,
+   "n_headline": 10,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4396609384",
+   "title": "Pension reform and wealth inequality: Theory and evidence",
+   "year": 2024,
+   "journal": "European Economic Review",
+   "doi": "10.1016/j.euroecorev.2024.104746",
+   "n_records": 40,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4396748305",
+   "title": "Is there a link between health care utilisation and subjective well-being? An exploratory study among older Danes",
+   "year": 2025,
+   "journal": "The European Journal of Health Economics",
+   "doi": "10.1007/s10198-024-01691-1",
+   "n_records": 20,
+   "n_headline": 2,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4398232136",
+   "title": "When inequality means equity: horizontal wage dispersion and the propensity to leave current employment across different organizational settings",
+   "year": 2025,
+   "journal": "Industrial and Corporate Change",
+   "doi": "10.1093/icc/dtae023",
+   "n_records": 69,
+   "n_headline": 4,
+   "strategies": [
+    "difference_in_differences",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4398782147",
+   "title": "Forecasting Inequalities in Survival to Retirement Age by Socioeconomic Status in Denmark and Sweden",
+   "year": 2024,
+   "journal": "European Journal of Population",
+   "doi": "10.1007/s10680-024-09704-8",
+   "n_records": 133,
+   "n_headline": 54,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4398785085",
+   "title": "Changes in vaccination uptake against pneumococcal disease, influenza, and coronavirus disease 2019 (COVID-19) before and after a Head and Neck cancer diagnosis",
+   "year": 2024,
+   "journal": "Vaccine",
+   "doi": "10.1016/j.vaccine.2024.05.021",
+   "n_records": 29,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4399796155",
+   "title": "The education-health gradient: Revisiting the role of socio-emotional skills",
+   "year": 2024,
+   "journal": "Journal of Health Economics",
+   "doi": "10.1016/j.jhealeco.2024.102911",
+   "n_records": 53,
+   "n_headline": 10,
+   "strategies": [
+    "descriptive",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W4400146932",
+   "title": "Job ladders and labour market assimilation of immigrants",
+   "year": 2024,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2024.102594",
+   "n_records": 47,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4400640392",
+   "title": "Beliefs About the Economy are Excessively Sensitive to Household-Level Shocks: Evidence from Linked Survey and Administrative Data",
+   "year": 2026,
+   "journal": "The Quarterly Journal of Economics",
+   "doi": "10.1093/qje/qjag032",
+   "n_records": 115,
+   "n_headline": 16,
+   "strategies": [
+    "RCT",
+    "descriptive",
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4401758291",
+   "title": "The division of parental leave: Empirical evidence and policy design",
+   "year": 2024,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2024.105202",
+   "n_records": 51,
+   "n_headline": 0,
+   "strategies": [
+    "bunching",
+    "descriptive",
+    "selection_on_observables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4402010035",
+   "title": "Robots and immigration",
+   "year": 2024,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2024.106708",
+   "n_records": 75,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4402324339",
+   "title": "The long-term impact of Danish vulnerable neighbourhoods in adolescence on employment status in emerging adulthood",
+   "year": 2024,
+   "journal": "Population, Space and Place",
+   "doi": "10.1002/psp.2829",
+   "n_records": 102,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4403134807",
+   "title": "Impacts of criminal records on labor market outcomes: Theoretical and empirical evidence from Denmark",
+   "year": 2026,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2026.102891",
+   "n_records": 11,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4403200156",
+   "title": "The effect of influenza vaccination on the rate of dementia amongst older adults",
+   "year": 2024,
+   "journal": "European Journal of Neurology",
+   "doi": "10.1111/ene.16489",
+   "n_records": 38,
+   "n_headline": 11,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4403266133",
+   "title": "Gender and socioeconomic dimensions of relative age effects on ADHD prescriptions: Evidence from Denmark",
+   "year": 2024,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2024.112000",
+   "n_records": 13,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "regression_discontinuity"
+   ]
+  },
+  {
+   "artid": "dk_W4403383968",
+   "title": "Working Hours, Top Management Appointments, and Gender: Evidence from Linked Employer-Employee Data",
+   "year": 2026,
+   "journal": "Journal of Labor Economics",
+   "doi": "10.1086/733490",
+   "n_records": 143,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4404126386",
+   "title": "Untying the Knot: How Child Support and Alimony Affect Couples' Dynamic Decisions and Welfare",
+   "year": 2025,
+   "journal": "Review of Economic Studies",
+   "doi": "10.1093/restud/rdae105",
+   "n_records": 81,
+   "n_headline": 5,
+   "strategies": [
+    "event_study",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4404705858",
+   "title": "The scale and nature of neighborhood effects on children",
+   "year": 2024,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2024.105260",
+   "n_records": 48,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4404708997",
+   "title": "Taxing the Wealth of the Poor: Evidence from the Danish Old-Age Support Asset Test",
+   "year": 2026,
+   "journal": "American Economic Review: Insights",
+   "doi": "10.1257/aeri.20240634",
+   "n_records": 29,
+   "n_headline": 1,
+   "strategies": [
+    "bunching",
+    "descriptive",
+    "event_study",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4405737563",
+   "title": "The life-cycle and opportunities of migrants and natives in the Danish experience",
+   "year": 2025,
+   "journal": "Journal of Economic Behavior and Organization",
+   "doi": "10.1016/j.jebo.2024.106867",
+   "n_records": 87,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4406127739",
+   "title": "Vaccination against measles-mumps-rubella and rates of non-targeted infectious disease hospitalisations: Nationwide register-based cohort studies in Denmark, Finland, Norway, and Sweden",
+   "year": 2025,
+   "journal": "Journal of Infection",
+   "doi": "10.1016/j.jinf.2024.106365",
+   "n_records": 57,
+   "n_headline": 6,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4406432482",
+   "title": "Danish parents’ vaccination readiness is associated with their children’s officially registered vaccination history",
+   "year": 2025,
+   "journal": "Vaccine",
+   "doi": "10.1016/j.vaccine.2024.126693",
+   "n_records": 81,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4406606478",
+   "title": "Survivors' Mental Health and the Protective Role of Income Stability",
+   "year": 2026,
+   "journal": "AER: Insights",
+   "doi": "10.1257/aeri.20250006",
+   "n_records": 51,
+   "n_headline": 16,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W4407606308",
+   "title": "Elite corporate networks and CEO compensation: the causes and consequences of CEO pay premiums",
+   "year": 2025,
+   "journal": "Socio-Economic Review",
+   "doi": "10.1093/ser/mwaf004",
+   "n_records": 34,
+   "n_headline": 3,
+   "strategies": [
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4408147308",
+   "title": "Predictors of domestic infant adoption – what characterizes the family circumstances of parents and children prior to adoption?",
+   "year": 2025,
+   "journal": "Developmental Child Welfare",
+   "doi": "10.1177/25161032251324853",
+   "n_records": 21,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4408558947",
+   "title": "Does volunteering reduce antidepressant use among older adults? Longitudinal register-based evidence from Denmark",
+   "year": 2025,
+   "journal": "Social Science Research",
+   "doi": "10.1016/j.ssresearch.2025.103172",
+   "n_records": 26,
+   "n_headline": 8,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4408908491",
+   "title": "Effect of a proactive childhood vaccination reminder system on vaccination coverage and uptake in Denmark: A register-based cohort study",
+   "year": 2025,
+   "journal": "Vaccine",
+   "doi": "10.1016/j.vaccine.2025.126934",
+   "n_records": 14,
+   "n_headline": 4,
+   "strategies": [
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4409457195",
+   "title": "School Absence Among Children With Juvenile Idiopathic Arthritis: A National Matched Comparison Study",
+   "year": 2025,
+   "journal": "The Journal of Rheumatology",
+   "doi": "10.3899/jrheum.2024-1182",
+   "n_records": 104,
+   "n_headline": 51,
+   "strategies": [
+    "descriptive",
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W4409718402",
+   "title": "Overcoming obstacles to innovation: Can an educated workforce help?",
+   "year": 2025,
+   "journal": "Journal of Innovation & Knowledge",
+   "doi": "10.1016/j.jik.2025.100707",
+   "n_records": 182,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4409963010",
+   "title": "Changing Tracks: Human Capital Investment after Loss of Ability",
+   "year": 2025,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20231067",
+   "n_records": 53,
+   "n_headline": 2,
+   "strategies": [
+    "descriptive",
+    "event_study",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4410514588",
+   "title": "Building stock modelling for circularity: Insights from a Danish component-level model",
+   "year": 2025,
+   "journal": "Resources, Conservation & Recycling",
+   "doi": "10.1016/j.resconrec.2025.108397",
+   "n_records": 49,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4410634439",
+   "title": "Persistent Trends or Pandemic Effects? A Multi-Cohort Longitudinal Study on Student Well-being, Inequality, and Educational Transitions",
+   "year": 2025,
+   "journal": "Social Indicators Research",
+   "doi": "10.1007/s11205-025-03617-7",
+   "n_records": 66,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4411627445",
+   "title": "Spatial wage differentials, geographic frictions and the organization of labor within firms",
+   "year": 2025,
+   "journal": "Regional Science and Urban Economics",
+   "doi": "10.1016/j.regsciurbeco.2025.104128",
+   "n_records": 113,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W4412178202",
+   "title": "Socioeconomic inequalities in survival to retirement age in Denmark: a register-based analysis",
+   "year": 2025,
+   "journal": "Genus",
+   "doi": "10.1186/s41118-025-00258-z",
+   "n_records": 45,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4412528527",
+   "title": "Family reunification and mental health",
+   "year": 2025,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2025.112479",
+   "n_records": 23,
+   "n_headline": 3,
+   "strategies": [
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W4412552984",
+   "title": "On the determinants of residential segregation of immigrants and descendants",
+   "year": 2025,
+   "journal": "Cities",
+   "doi": "10.1016/j.cities.2025.106209",
+   "n_records": 32,
+   "n_headline": 13,
+   "strategies": [
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W4412695652",
+   "title": "Association between intimate partner violence and birth outcomes among pregnant women in the STOP-VIO-PREG cohort: A cohort study utilizing Patient-Reported Outcome and Danish registers data",
+   "year": 2025,
+   "journal": "Acta Obstetricia et Gynecologica Scandinavica",
+   "doi": "10.1111/aogs.15175",
+   "n_records": 22,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4412957842",
+   "title": "Changing Landscapes of Parenthood: Childbearing Among Same-Sex and Different-Sex Couples in the Nordic Countries",
+   "year": 2026,
+   "journal": "Population and Development Review",
+   "doi": "10.1111/padr.70068",
+   "n_records": 56,
+   "n_headline": 33,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4413415251",
+   "title": "Segmentation of Working Time in the Gig Economy—A Panel Data Study",
+   "year": 2025,
+   "journal": "Nordic Journal of Working Life Studies",
+   "doi": null,
+   "n_records": 29,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4413790562",
+   "title": "Micro versus Macro Labor Supply Elasticities: The Role of Dynamic Returns to Effort",
+   "year": 2025,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20240554",
+   "n_records": 105,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study",
+    "instrumental_variables",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W4414139695",
+   "title": "Public Versus Private Providers: How Ownership Impacts Quality in Public Service Markets",
+   "year": 2026,
+   "journal": "Public Administration",
+   "doi": "10.1111/padm.70017",
+   "n_records": 56,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4414214471",
+   "title": "Mandatory pension contributions, household consumption, and savings",
+   "year": 2026,
+   "journal": "Journal of Pension Economics and Finance",
+   "doi": "10.1017/S147474722510005X",
+   "n_records": 49,
+   "n_headline": 5,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W4416525442",
+   "title": "Danish flexicurity and occupational mobility: A comparison with the United States",
+   "year": 2026,
+   "journal": "Economics Letters",
+   "doi": "10.1016/j.econlet.2025.112743",
+   "n_records": 48,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W4417214164",
+   "title": "Price response in residential electricity demand: Evidence from Danish smart meter data",
+   "year": 2026,
+   "journal": "Energy Economics",
+   "doi": "10.1016/j.eneco.2025.109087",
+   "n_records": 59,
+   "n_headline": 7,
+   "strategies": [
+    "descriptive",
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7116973036",
+   "title": "Out-of-Home-Care Rates among Indigenous and Non-Indigenous Children in Countries With Histories of Settler Colonialism",
+   "year": 2026,
+   "journal": "Child Maltreatment",
+   "doi": "10.1177/10775595251411524",
+   "n_records": 38,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7117966348",
+   "title": "New venture team stability and long-run organizational growth",
+   "year": 2026,
+   "journal": "Strategic Entrepreneurship Journal",
+   "doi": "10.1002/sej.70011",
+   "n_records": 48,
+   "n_headline": 8,
+   "strategies": [
+    "instrumental_variables",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7120018105",
+   "title": "Does schooling increase or reduce inequality in achievement and conscientiousness in Denmark?",
+   "year": 2026,
+   "journal": "Research in Social Stratification and Mobility",
+   "doi": "10.1016/j.rssm.2026.101129",
+   "n_records": 36,
+   "n_headline": 11,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W7124554175",
+   "title": "Why are marginal workers unemployed: Low productivity or high opportunity cost of employment?",
+   "year": 2026,
+   "journal": "Labour Economics",
+   "doi": "10.1016/j.labeco.2025.102847",
+   "n_records": 57,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W7127146382",
+   "title": "The Myth of Nordic Mobility: Social Mobility Rates in Modern Denmark and Sweden",
+   "year": 2026,
+   "journal": "Comparative Economic Studies",
+   "doi": "10.1057/s41294-025-00267-z",
+   "n_records": 76,
+   "n_headline": 4,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W7134125062",
+   "title": "Back to the countryside? Remote work and counterurbanisation in Denmark and Sweden",
+   "year": 2026,
+   "journal": "Regional Science Policy & Practice",
+   "doi": "10.1016/j.rspp.2026.100297",
+   "n_records": 42,
+   "n_headline": 14,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7134195116",
+   "title": "Competing Demographic Drivers of Hospital Expenditures: Coexistence of the Red Herring and the Steepening Effects",
+   "year": 2026,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.70092",
+   "n_records": 103,
+   "n_headline": 36,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7134835134",
+   "title": "Old firms and the relationship between age and size",
+   "year": 2026,
+   "journal": "Scandinavian Journal of Economics",
+   "doi": "10.1111/sjoe.70016",
+   "n_records": 26,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive",
+    "fixed_effects_within",
+    "other"
+   ]
+  },
+  {
+   "artid": "dk_W7138836206",
+   "title": "Universal Daycare and Mothers' Working Lifetime",
+   "year": 2026,
+   "journal": "The Economic Journal",
+   "doi": "10.1093/ej/ueag031",
+   "n_records": 148,
+   "n_headline": 8,
+   "strategies": [
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W7138994761",
+   "title": "Digital skill adoption and employment dynamics: Evidence from matched vacancy-employer–employee data",
+   "year": 2026,
+   "journal": "Research Policy",
+   "doi": "10.1016/j.respol.2026.105476",
+   "n_records": 115,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W7139989104",
+   "title": "Preaching to the converted: Cultural intermediaries and cultural consumer behavior",
+   "year": 2026,
+   "journal": "Poetics",
+   "doi": "10.1016/j.poetic.2026.102088",
+   "n_records": 60,
+   "n_headline": 12,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W7140075182",
+   "title": "Når daginstitutionen gøres nødvendig: Politisk diskurs og hjemmepassende forældres fortællinger om små børns behov",
+   "year": 2026,
+   "journal": "Nordisk tidsskrift for pedagogikk og kritikk",
+   "doi": "10.23865/ntpk.v12.7050",
+   "n_records": 5,
+   "n_headline": 1,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7147058446",
+   "title": "Globalization and the gender gap in mental well-being",
+   "year": 2026,
+   "journal": "Journal of International Economics",
+   "doi": "10.1016/j.jinteco.2026.104253",
+   "n_records": 61,
+   "n_headline": 9,
+   "strategies": [
+    "fixed_effects_within"
+   ]
+  },
+  {
+   "artid": "dk_W7155006486",
+   "title": "Foundation ownership and parental leave uptake: Evidence from a Danish reform",
+   "year": 2026,
+   "journal": "Finance Research Letters",
+   "doi": "10.1016/j.frl.2026.110043",
+   "n_records": 16,
+   "n_headline": 5,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W7160055634",
+   "title": "Effects of Parental Death on Labor Market Outcomes",
+   "year": 2026,
+   "journal": "American Economic Review",
+   "doi": "10.1257/aer.20240432",
+   "n_records": 62,
+   "n_headline": 9,
+   "strategies": [
+    "difference_in_differences",
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W7160336764",
+   "title": "Using Beneficial Ownership Data for Systematic Risk Assessment in Public procurement. The Example of 6 European Countries",
+   "year": 2026,
+   "journal": "European Journal on Criminal Policy and Research",
+   "doi": "10.1007/s10610-025-09654-9",
+   "n_records": 36,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7160825662",
+   "title": "The moving parts of life: a meso-level analysis of interregional migration patterns after life course events",
+   "year": 2026,
+   "journal": "The Annals of Regional Science",
+   "doi": "10.1007/s00168-026-01478-7",
+   "n_records": 204,
+   "n_headline": 14,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7160905397",
+   "title": "Location-specific wage effects from offshoring and backshoring",
+   "year": 2026,
+   "journal": "Global Challenges & Regional Science",
+   "doi": "10.1016/j.gcrs.2026.100030",
+   "n_records": 123,
+   "n_headline": 4,
+   "strategies": [
+    "difference_in_differences"
+   ]
+  },
+  {
+   "artid": "dk_W7160990014",
+   "title": "Who drove the marriage rate decline in the wake of the Great Recession?",
+   "year": 2026,
+   "journal": "JFR – Journal of Family Research, Vol. 38, 178-198",
+   "doi": "10.20377/jfr-1378",
+   "n_records": 28,
+   "n_headline": 0,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7164733992",
+   "title": "Influenza Vaccination Among Individuals With Type 1 Diabetes in Denmark: Coverage, Persistence, and Determinants, 2015-2022",
+   "year": 2026,
+   "journal": "Diabetes, Obesity and Metabolism",
+   "doi": "10.1111/dom.70965",
+   "n_records": 48,
+   "n_headline": 14,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7167459045",
+   "title": "Pathways Through Public Services for Maltreated Children in Care: A Scoping Review of Studies Using Linked Administrative Data",
+   "year": 2026,
+   "journal": "International Journal of Population Data Science",
+   "doi": "10.23889/ijpds.v11i5.3622",
+   "n_records": 8,
+   "n_headline": 8,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7167491644",
+   "title": "Patterns of service contacts for children who have experienced maltreatment and are known to social services: a Linked Routine Administrative Data Study in Wales, England and Denmark",
+   "year": 2026,
+   "journal": "International Journal of Population Data Science",
+   "doi": "10.23889/ijpds.v11i5.3623",
+   "n_records": 6,
+   "n_headline": 6,
+   "strategies": [
+    "matching"
+   ]
+  },
+  {
+   "artid": "dk_W7167517776",
+   "title": "Using home-equity release to strengthen retirement incomes: potential and challenges",
+   "year": 2026,
+   "journal": "Fiscal Studies",
+   "doi": "10.1111/1475-5890.70027",
+   "n_records": 54,
+   "n_headline": 3,
+   "strategies": [
+    "descriptive",
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W7167592887",
+   "title": "Wage Expectations and Job Search",
+   "year": 2026,
+   "journal": "CESifo Working Papers 12420 (January 2026)",
+   "doi": null,
+   "n_records": 202,
+   "n_headline": 17,
+   "strategies": [
+    "RCT",
+    "descriptive",
+    "instrumental_variables"
+   ]
+  },
+  {
+   "artid": "dk_W7167798840",
+   "title": "Assortative Mating and Education Gradients within and across Generations",
+   "year": 2026,
+   "journal": "CESifo Working Papers No. 12763 (June 2026)",
+   "doi": null,
+   "n_records": 296,
+   "n_headline": 15,
+   "strategies": [
+    "structural_model"
+   ]
+  },
+  {
+   "artid": "dk_W7172395947",
+   "title": "What Can Providers' Motivations Tell Us About Healthcare Quality?",
+   "year": 2026,
+   "journal": "Health Economics",
+   "doi": "10.1002/hec.70144",
+   "n_records": 28,
+   "n_headline": 10,
+   "strategies": [
+    "fixed_effects_within",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7202194863",
+   "title": "Nyanserad förmögenhetsojämlikhet: hur mätmetoden påverkar Gini-koefficienten i 30 europeiska länder",
+   "year": 2026,
+   "journal": "Working paper (Zenodo), version 1.0, augusti 2026",
+   "doi": "10.5281/zenodo.21885964",
+   "n_records": 38,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7202262283",
+   "title": "CEO aging and investment propensity: Experimental evidence",
+   "year": 2026,
+   "journal": "Journal of Corporate Finance",
+   "doi": "10.1016/j.jcorpfin.2026.103074",
+   "n_records": 27,
+   "n_headline": 13,
+   "strategies": [
+    "RCT",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7202348113",
+   "title": "Measuring higher education: comparing Danish survey and register data in the study of values",
+   "year": 2026,
+   "journal": "Quality & Quantity",
+   "doi": "10.1007/s11135-026-03042-z",
+   "n_records": 66,
+   "n_headline": 9,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7212047720",
+   "title": "The effect of job loss on labor supply, wealth, and spousal labor supply for older workers",
+   "year": 2026,
+   "journal": "Journal of Population Economics",
+   "doi": "10.1007/s00148-026-01205-8",
+   "n_records": 61,
+   "n_headline": 6,
+   "strategies": [
+    "event_study"
+   ]
+  },
+  {
+   "artid": "dk_W7212086049",
+   "title": "SOCIAL LEARNING THEORY AND CRIMINAL OFFENDING: SOURCES, MECHANISMS AND CONTEMPORARY EXPRESSIONS IN SELECTED EUROPEAN UNION MEMBER STATES",
+   "year": 2026,
+   "journal": "E-Journal VFU (Varna Free University “Chernorizets Hrabar”)",
+   "doi": null,
+   "n_records": 7,
+   "n_headline": 6,
+   "strategies": [
+    "descriptive"
+   ]
+  },
+  {
+   "artid": "dk_W7212394491",
+   "title": "Dad went to prison, but school goes on",
+   "year": 2026,
+   "journal": "Journal of Criminal Justice",
+   "doi": "10.1016/j.jcrimjus.2026.102741",
+   "n_records": 24,
+   "n_headline": 12,
+   "strategies": [
+    "descriptive",
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W7214569468",
+   "title": "The Longitudinal Association Between Organized Leisure Sports and School-Related Social Well-Being",
+   "year": 2026,
+   "journal": "Healthcare",
+   "doi": "10.3390/healthcare14193288",
+   "n_records": 7,
+   "n_headline": 1,
+   "strategies": [
+    "selection_on_observables"
+   ]
+  },
+  {
+   "artid": "dk_W757177167",
+   "title": "Systematic differences across evaluation schemes and educational choice",
+   "year": 2015,
+   "journal": "Economics of Education Review",
+   "doi": "10.1016/j.econedurev.2015.05.003",
+   "n_records": 134,
+   "n_headline": 60,
+   "strategies": [
+    "difference_in_differences",
+    "other",
+    "selection_on_observables",
+    "sibling_family_comparison"
+   ]
+  },
+  {
+   "artid": "dk_W82324926",
+   "title": "Labor supply and optimization frictions: Evidence from the Danish student labor market",
+   "year": 2019,
+   "journal": "Journal of Public Economics",
+   "doi": "10.1016/j.jpubeco.2019.03.003",
+   "n_records": 39,
+   "n_headline": 2,
+   "strategies": [
+    "bunching",
+    "descriptive",
+    "selection_on_observables"
+   ]
+  }
+ ]
+}
