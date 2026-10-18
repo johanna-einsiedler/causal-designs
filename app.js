@@ -31,15 +31,18 @@ const FAMCOL = {}, KINDCOL = {};
   D.papers.forEach(p => PAPER[p.artid] = p);
   D.graph.nodes.forEach(n => GNODE[n.id] = n);
   (D.meta.source_kinds || []).forEach((k, i) => KINDCOL[k] = PALETTE[(i + 2) % PALETTE.length]);
-  SEARCH = new MiniSearch({ fields: ['label', 'definition', 'kind', 'text'], storeFields: ['id', 'kind', 'label'],
+  SEARCH = new MiniSearch({ fields: ['label', 'definition', 'kind', 'text'], storeFields: ['path', 'kind', 'label'],
     searchOptions: { prefix: true, fuzzy: 0.2, boost: { label: 3 } } });
-  SEARCH.addAll([].concat(
-    D.families.map(f => ({ id: 'family/' + f.id, kind: 'family', label: f.label, definition: f.definition, text: '' })),
-    D.sub_designs.map(s => ({ id: 'design/' + s.id, kind: 'sub-design', label: s.label, definition: s.definition, text: nice(s.family) })),
-    D.patterns.map(p => ({ id: 'pattern/' + p.id, kind: 'pattern', label: p.label, definition: p.definition, text: '' })),
-    D.sources.map(s => ({ id: 'source/' + s.id, kind: 'source of variation', label: s.label, definition: nice(s.kind), text: '' })),
-    D.papers.map(p => ({ id: 'paper/' + p.artid, kind: 'paper', label: p.title || p.artid, definition: (p.authors || []).join(', ') + ' ' + (p.year || ''), text: (p.journal || '') })),
-    D.units.map(u => ({ id: 'paper/' + u.artid, kind: 'example', label: (u.treatment || '') + ' ' + ARROW + ' ' + (u.outcome || ''), definition: u.summary || '', text: nice(u.family) }))));
+  const doc = (kind, path, label, definition, text) => ({ id: kind + ':' + path + ':' + (label || ''), path: path, kind: kind, label: label || '', definition: definition || '', text: text || '' });
+  const docs = [].concat(
+    D.families.map(f => doc('family', 'family/' + f.id, f.label, f.definition, '')),
+    D.sub_designs.map(s => doc('sub-design', 'design/' + s.id, s.label, s.definition, nice(s.family))),
+    D.patterns.map(p => doc('pattern', 'pattern/' + p.id, p.label, p.definition, '')),
+    D.sources.map(s => doc('source of variation', 'source/' + s.id, s.label, nice(s.kind), '')),
+    D.papers.map(p => doc('paper', 'paper/' + p.artid, p.title || p.artid, (p.authors || []).join(', ') + ' ' + (p.year || ''), p.journal || '')),
+    D.units.map(u => doc('example', 'paper/' + u.artid, (u.treatment || '') + ' ' + ARROW + ' ' + (u.outcome || ''), u.summary || '', nice(u.family) + ' ' + u.id)));
+  const seen = new Set();
+  SEARCH.addAll(docs.filter(x => { if (seen.has(x.id)) return false; seen.add(x.id); return true; }));
   window.addEventListener('hashchange', route);
   route();
 })();
@@ -147,8 +150,8 @@ function viewHome(app, q) {
     hits.innerHTML = '';
     const t = sb.value.trim(); if (!t) return;
     const seen = new Set();
-    SEARCH.search(t).slice(0, 40).forEach(h => { if (seen.has(h.id)) return; seen.add(h.id);
-      const d = el('div', 'hit'); d.innerHTML = A(h.id, esc(h.label)) + '<span class="k">' + esc(h.kind) + '</span>'; hits.appendChild(d); });
+    SEARCH.search(t).slice(0, 60).forEach(h => { const key = h.path + '|' + h.label; if (seen.has(key)) return; seen.add(key);
+      const d = el('div', 'hit'); d.innerHTML = A(h.path, esc(h.label)) + '<span class="k">' + esc(h.kind) + '</span>'; hits.appendChild(d); });
     if (!hits.children.length) hits.appendChild(el('p', 'empty', 'Nothing matches.'));
   };
   sb.oninput = show; w.appendChild(sb); w.appendChild(hits); show();
