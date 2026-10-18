@@ -138,8 +138,8 @@ function examples(host, units, opts) {
 function viewHome(app, q) {
   const w = wrap(app);
   const c = D.meta.counts;
-  w.innerHTML = '<h1>Causal designs</h1><p class="lead">A wiki of the identification strategies behind empirical claims: each family of designs, its sub-designs, the ' +
-    'general patterns they follow, and worked examples from the papers of the <a href="' + D.meta.atlas_url + '">causal atlas</a>, with every example linked back to the claim it identifies.</p>';
+  w.innerHTML = '<h1>Causal designs</h1><p class="lead">A wiki of the identification strategies behind empirical claims published in economics papers. ' +
+    'Identification strategies are grouped into designs and sub-designs and linked to the papers that use them.</p>';
   const kp = el('div', 'kpis');
   [['families', c.families], ['sub-designs', c.sub_designs], ['patterns', c.patterns], ['sources of variation', c.sources], ['papers', c.papers], ['design units', c.units]]
     .forEach(([l, n]) => { const k = el('div', 'kpi'); k.innerHTML = '<b>' + n + '</b><span>' + l + '</span>'; kp.appendChild(k); });
@@ -231,7 +231,7 @@ function viewPattern(app, id) {
 /* ================= sources of variation ================= */
 function viewSources(app) {
   const w = wrap(app);
-  w.innerHTML = '<h1>Sources of variation</h1><p class="lead">What the papers exploit as exogenous: reforms, thresholds, shocks, lotteries, timing. Each source links to the treatments it has been used to identify, the opposite reading of the atlas: not what causes what, but what is taken as given.</p>';
+  w.innerHTML = '<h1>Sources of variation</h1><p class="lead">What the papers exploit as exogenous: reforms, thresholds, shocks, lotteries, timing. Each source links to the treatments it has been used to identify.</p>';
   corpusBar(w);
   const kinds = {};
   D.sources.forEach(s => { const us = unitsOf(s.units); if (!us.length) return; (kinds[s.kind] = kinds[s.kind] || []).push({ s: s, n: nPapers(us) }); });
@@ -293,10 +293,23 @@ function viewPaper(app, artid) {
 /* ================= the exogeneity graph ================= */
 function viewGraph(app) {
   const w = wrap(app);
-  w.innerHTML = '<h1>Exogeneity graph</h1><p class="lead">The atlas maps what causes what; this map shows what the papers take as exogenous. A coloured node is a source of variation (a reform, a threshold, a shock, a lottery); a grey node is the treatment it identifies. An edge means at least one paper uses the source to identify that treatment; its colour is the design family. Click a node to isolate its neighbourhood.</p>';
+  w.innerHTML = '<h1>Exogeneity graph</h1><p class="lead">This map shows what the papers assume as exogenous. A coloured node is a source of variation (e.g. a reform, a shock); a grey node is the treatment it identifies. An edge means at least one paper uses the source to identify that treatment. Click a node to isolate its neighbourhood.</p>';
   corpusBar(w);
   const edges = D.graph.edges.map(e => Object.assign({}, e, { units: e.units.filter(i => UNIT[i] && inCorpus(UNIT[i])) })).filter(e => e.units.length);
-  const nodeIds = new Set(); edges.forEach(e => { nodeIds.add(e.from); nodeIds.add(e.to); });
+  // design filter: the families present on the graph's edges, any number selectable
+  const famsHere = Array.from(new Set(edges.flatMap(e => Object.keys(e.families)))).filter(f => FAM[f]).sort((a, b) => FAM[a].label.localeCompare(FAM[b].label));
+  const sel = new Set();
+  const fbar = el('div', 'filter'); fbar.innerHTML = '<span>Design:</span>';
+  const allChip = el('a', 'chip on', 'all designs'); allChip.href = 'javascript:void(0)';
+  allChip.onclick = () => { sel.clear(); fbar.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === allChip)); draw(); };
+  fbar.appendChild(allChip);
+  famsHere.forEach(f => {
+    const n = edges.filter(e => e.families[f]).length;
+    const c = el('a', 'chip', esc(FAM[f].label) + ' <span class="cnt">' + n + '</span>'); c.href = 'javascript:void(0)';
+    c.onclick = () => { if (sel.has(f)) sel.delete(f); else sel.add(f); c.classList.toggle('on', sel.has(f)); allChip.classList.toggle('on', !sel.size); draw(); };
+    fbar.appendChild(c);
+  });
+  w.appendChild(fbar);
   const minN = el('div', 'toggles');
   minN.innerHTML = '<label><input type="checkbox" id="only2"> sources used by two or more papers only</label>';
   w.appendChild(minN);
@@ -307,7 +320,8 @@ function viewGraph(app) {
   const panel = el('div', 'gpanel'); panel.innerHTML = '<span class="hint">Click a source or a treatment.</span>'; w.appendChild(panel);
   const draw = () => {
     const only2 = $('#only2').checked;
-    const es = only2 ? edges.filter(e => (SRC[e.from] || { n_papers: 0 }).n_papers >= 2) : edges;
+    let es = only2 ? edges.filter(e => (SRC[e.from] || { n_papers: 0 }).n_papers >= 2) : edges;
+    if (sel.size) es = es.filter(e => Object.keys(e.families).some(f => sel.has(f)));
     const ids = new Set(); es.forEach(e => { ids.add(e.from); ids.add(e.to); });
     drawExo(host, [...ids].map(i => GNODE[i]).filter(Boolean), es, panel);
   };
@@ -326,7 +340,7 @@ function drawExo(host, nodes, edges, panel) {
   const rOf = d => d.type === 'source' ? 7 + Math.min(22, (d.n || 1) * 2.2) : 4 + Math.min(10, (deg[d.id] || 1) * 1.2);
   const col = d => d.type === 'source' ? (KINDCOL[d.kind] || '#888') : '#bbb';
   const link = g.append('g').selectAll('line').data(links).join('line')
-    .attr('stroke', d => FAMCOL[d.e.family] || '#999').attr('stroke-opacity', .55).attr('stroke-width', d => 1 + Math.min(5, d.e.n_papers - 1) * .8).attr('stroke-linecap', 'round')
+    .attr('stroke', '#9b998c').attr('stroke-opacity', .5).attr('stroke-width', d => 1 + Math.min(5, d.e.n_papers - 1) * .8).attr('stroke-linecap', 'round')
     .style('cursor', 'pointer').on('click', (ev, d) => { ev.stopPropagation(); showEdgePanel(panel, d.e); });
   link.append('title').text(d => (byId[d.source] || {}).label + ' ' + ARROW + ' ' + (byId[d.target] || {}).label + ': ' + d.e.n_papers + ' paper(s), ' + nice(d.e.family));
   const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
@@ -384,12 +398,9 @@ function showEdgePanel(panel, e) {
 function viewAbout(app) {
   const w = wrap(app, 'about');
   w.innerHTML = '<h1>About</h1>' +
-    '<p>Causal Designs is a wiki of identification strategies, built automatically from the design documents of the <a href="' + D.meta.atlas_url + '">Danish Causal Atlas</a> pipeline. ' +
-    'For every paper the pipeline extracts one record per estimate: the strategy, the source of variation, the instrument, the key assumptions, the population, the estimand. ' +
-    'A taxonomy pass then groups those records into design units and places each unit in this wiki: a <b>family</b> (instrumental variables, difference in differences, …), a <b>sub-design</b> (shift-share instrument, staggered adoption, …), ' +
-    'a <b>general pattern</b> stated with X for the treatment and Y for the outcome, and a normalised <b>source of variation</b>. The dictionaries grow as papers are added; a new sub-design or source enters with a definition the next paper can reuse.</p>' +
-    '<p>The <a href="' + href('graph') + '">exogeneity graph</a> is the atlas read backwards: it connects each source of variation to the treatments it has been used to identify, across papers and families.</p>' +
-    '<p>The corpus filter keeps the wiki open to other collections: the atlas links here with its own corpus preselected, and every family, sub-design and pattern page shows the examples of the chosen corpus only.</p>' +
+    '<p>Causal Designs is a wiki of identification strategies, built automatically based on an agentic extraction pipeline. For every paper the pipeline extracts one record per estimate: the strategy, the source of variation, the instrument, the key assumptions, the population, the estimand. ' +
+    'A taxonomy pass then groups those records into design units and places each unit in this wiki: a family (instrumental variables, difference in differences, …), a sub-design (shift-share instrument, staggered adoption, …), ' +
+    'a general pattern stated with X for the treatment and Y for the outcome, and a normalised source of variation. The dictionaries grow as papers are added; a new sub-design or source enters with a definition the next paper can reuse.</p>' +
     '<h3>What the design documents published here contain</h3>' +
     '<p>Each paper\'s design document is served as JSON with every pointer into the paper (page, exhibit, cell and figure ids) and the extractor\'s own descriptions of strategy, assumptions and population. ' +
     'Verbatim text from the papers is reduced to what quotation allows: one short anchor sentence per record, at most fifteen distinct sentences per paper, each with its page; every other quote is kept as a hash and a length so a reader with the paper can verify it. ' +
