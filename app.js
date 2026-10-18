@@ -31,6 +31,7 @@ const FAMCOL = {}, KINDCOL = {};
   D.papers.forEach(p => PAPER[p.artid] = p);
   D.graph.nodes.forEach(n => GNODE[n.id] = n);
   (D.meta.source_kinds || []).forEach((k, i) => KINDCOL[k] = PALETTE[(i + 2) % PALETTE.length]);
+  KINDCOL.none = '#c9c7bb';
   SEARCH = new MiniSearch({ fields: ['label', 'definition', 'kind', 'text'], storeFields: ['path', 'kind', 'label'],
     searchOptions: { prefix: true, fuzzy: 0.2, boost: { label: 3 } } });
   const doc = (kind, path, label, definition, text) => ({ id: kind + ':' + path + ':' + (label || ''), path: path, kind: kind, label: label || '', definition: definition || '', text: text || '' });
@@ -234,8 +235,9 @@ function viewSources(app) {
   corpusBar(w);
   const kinds = {};
   D.sources.forEach(s => { const us = unitsOf(s.units); if (!us.length) return; (kinds[s.kind] = kinds[s.kind] || []).push({ s: s, n: nPapers(us) }); });
-  Object.entries(kinds).sort((a, b) => b[1].length - a[1].length).forEach(([k, arr]) => {
-    w.appendChild(el('h3', null, '<i class="kind" style="background:' + KINDCOL[k] + '"></i>' + esc(nice(k))));
+  Object.entries(kinds).sort((a, b) => (a[0] === 'none') - (b[0] === 'none') || b[1].length - a[1].length).forEach(([k, arr]) => {
+    w.appendChild(el('h3', null, '<i class="kind" style="background:' + KINDCOL[k] + '"></i>' + (k === 'none' ? 'No exogenous source' : esc(nice(k)))));
+    if (k === 'none') w.appendChild(el('p', 'sub', 'Designs that rest on conditioning alone: selection on observables, matching, within-unit variation without a shock. They have no node in the exogeneity graph.'));
     const list = el('div', 'list2');
     arr.sort((a, b) => b.n - a.n).forEach(x => { const r = el('div', 'row'); r.innerHTML = A('source/' + x.s.id, esc(x.s.label)) + '<span class="c">' + x.n + ' paper' + (x.n === 1 ? '' : 's') + '</span>'; list.appendChild(r); });
     w.appendChild(list);
@@ -245,10 +247,11 @@ function viewSource(app, id) {
   const s = SRC[id]; const w = wrap(app);
   if (!s) { w.innerHTML = '<p class="empty">No such source.</p>'; return; }
   const us = unitsOf(s.units);
-  w.innerHTML = '<div class="crumbs">' + A('sources', 'Sources of variation') + ' › ' + esc(nice(s.kind)) + '</div><h1><i class="kind" style="background:' + KINDCOL[s.kind] + ';width:14px;height:14px"></i>' + esc(s.label) + '</h1>' +
+  const noneNote = s.kind === 'none' ? '<p class="defn">These designs claim no source of exogeneity beyond conditioning: treated and untreated units are compared given observables, or a unit with itself over time, without a shock, rule, lottery or timing that moves the treatment. They are listed here for completeness and have no node in the exogeneity graph.</p>' : '';
+  w.innerHTML = '<div class="crumbs">' + A('sources', 'Sources of variation') + ' › ' + (s.kind === 'none' ? 'none' : esc(nice(s.kind))) + '</div><h1><i class="kind" style="background:' + KINDCOL[s.kind] + ';width:14px;height:14px"></i>' + esc(s.label) + '</h1>' + noneNote +
     '<div class="counts"><b>' + nPapers(us) + '</b> paper(s) use it, for <b>' + new Set(us.map(u => u.treatment_node)).size + '</b> treatment(s)</div>';
   corpusBar(w);
-  w.appendChild(el('h3', null, 'Treatments it identifies'));
+  w.appendChild(el('h3', null, s.kind === 'none' ? 'Treatments studied this way' : 'Treatments it identifies'));
   const list = el('div', 'list2');
   const byT = {};
   us.forEach(u => { (byT[u.treatment_node] = byT[u.treatment_node] || []).push(u); });
