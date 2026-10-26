@@ -1,5 +1,9 @@
 {
  "corpus": "danish-register-econ",
+ "label": "Danish registers",
+ "title": "Causal designs in Danish register-data economics",
+ "citation": "Johanna Einsiedler (2026). Causal designs in Danish register-data economics [Data set]. https://github.com/johanna-einsiedler/causal-designs/tree/main/data/corpora/danish-register-econ",
+ "exported": "2026-10-26",
  "papers": [
   {
    "artid": "dk_W1503225338",

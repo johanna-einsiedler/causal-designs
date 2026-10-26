@@ -11,6 +11,10 @@ const ARROW = '→';
 let D, SEARCH;
 const FAM = {}, SUB = {}, PAT = {}, SRC = {}, UNIT = {}, PAPER = {}, GNODE = {};
 const S = { corpus: '' };
+const CORPUS = {};
+const corpusOf = id => CORPUS[id] || {};
+const atlasUrl = u => corpusOf(u.corpus).atlas_url || D.meta.atlas_url;
+const docUrl = u => 'data/corpora/' + encodeURIComponent(u.corpus) + '/designs/' + encodeURIComponent(u.artid) + '.json';
 const PALETTE = ['#1a4f8a', '#17795e', '#a8621a', '#6b3fa0', '#2a7f9e', '#7a6a1a', '#b5485d', '#555', '#3b6e3b', '#8a4a1a', '#1a6a8a', '#7a3a6a', '#5a5a1a', '#1a4a4a', '#8a1a3a', '#333'];
 const FAMCOL = {}, KINDCOL = {};
 
@@ -30,6 +34,7 @@ const FAMCOL = {}, KINDCOL = {};
   D.units.forEach(u => UNIT[u.id] = u);
   D.papers.forEach(p => PAPER[p.artid] = p);
   D.graph.nodes.forEach(n => GNODE[n.id] = n);
+  (D.meta.corpora || []).forEach(c => CORPUS[c.id] = c);
   (D.meta.source_kinds || []).forEach((k, i) => KINDCOL[k] = PALETTE[(i + 2) % PALETTE.length]);
   KINDCOL.none = '#c9c7bb'; KINDCOL.model = '#b9b7ab';
   SEARCH = new MiniSearch({ fields: ['label', 'definition', 'kind', 'text'], storeFields: ['path', 'kind', 'label'],
@@ -110,8 +115,9 @@ function corpusBar(host) {
 function exampleCard(u, opts) {
   opts = opts || {};
   const p = PAPER[u.artid] || {};
-  const t = u.atlas ? '<a href="' + D.meta.atlas_url + '#/concept/' + encodeURIComponent(u.atlas.from) + '" title="concept in the atlas">' + esc(u.atlas.from_label) + '</a>' : esc(u.treatment || '?');
-  const o = u.atlas ? '<a href="' + D.meta.atlas_url + '#/concept/' + encodeURIComponent(u.atlas.to) + '" title="concept in the atlas">' + esc(u.atlas.to_label) + '</a>' : esc(u.outcome || '?');
+  const AU = atlasUrl(u);
+  const t = u.atlas ? '<a href="' + AU + '#/concept/' + encodeURIComponent(u.atlas.from) + '" title="concept in the atlas">' + esc(u.atlas.from_label) + '</a>' : esc(u.treatment || '?');
+  const o = u.atlas ? '<a href="' + AU + '#/concept/' + encodeURIComponent(u.atlas.to) + '" title="concept in the atlas">' + esc(u.atlas.to_label) + '</a>' : esc(u.outcome || '?');
   const src = u.source && SRC[u.source] ? A('source/' + u.source, '<i class="kind" style="background:' + KINDCOL[u.source_kind] + '"></i>' + esc(SRC[u.source].label), 'src') : '';
   const where = [];
   if (!opts.noFamily) where.push(A('family/' + u.family, esc((FAM[u.family] || {}).label || nice(u.family))));
@@ -124,8 +130,8 @@ function exampleCard(u, opts) {
     '<div class="meta">' + (src ? src : '') + where.map(w => '<span>' + w + '</span>').join('') +
     '<span>' + u.n_records + ' estimate' + (u.n_records === 1 ? '' : 's') + '</span></div></div>' +
     '<div class="side"><div class="cite">' + A('paper/' + u.artid, cite(u.artid)) + (p.journal ? ' <span class="j">' + esc(p.journal) + '</span>' : '') + '</div>' +
-    (u.atlas && u.atlas.accepted ? '<a href="' + D.meta.atlas_url + '#/paper/' + encodeURIComponent(u.artid) + '">claim in the atlas ↗</a>' : '<a href="' + D.meta.atlas_url + '#/paper/' + encodeURIComponent(u.artid) + '">paper in the atlas ↗</a>') +
-    '<a href="data/designs/' + encodeURIComponent(u.artid) + '.json">design document (JSON)</a></div>';
+    (AU ? (u.atlas && u.atlas.accepted ? '<a href="' + AU + '#/paper/' + encodeURIComponent(u.artid) + '">claim in the atlas ↗</a>' : '<a href="' + AU + '#/paper/' + encodeURIComponent(u.artid) + '">paper in the atlas ↗</a>') : '') +
+    '<a href="' + docUrl(u) + '">design document (JSON)</a></div>';
   return card;
 }
 function examples(host, units, opts) {
@@ -258,7 +264,7 @@ function viewSource(app, id) {
   us.forEach(u => { (byT[u.treatment_node] = byT[u.treatment_node] || []).push(u); });
   Object.entries(byT).sort((a, b) => b[1].length - a[1].length).forEach(([t, arr]) => {
     const n = GNODE[t] || { label: t }; const r = el('div', 'row');
-    const lab = n.type === 'concept' ? '<a href="' + D.meta.atlas_url + '#/concept/' + encodeURIComponent(t) + '">' + esc(n.label) + ' ↗</a>' : esc(n.label);
+    const lab = n.type === 'concept' ? '<a href="' + (atlasUrl(arr[0]) || D.meta.atlas_url) + '#/concept/' + encodeURIComponent(t) + '">' + esc(n.label) + ' ↗</a>' : esc(n.label);
     r.innerHTML = lab + '<span class="c">' + nPapers(arr) + ' paper(s), ' + Array.from(new Set(arr.map(u => (FAM[u.family] || {}).label || u.family))).join(', ') + '</span>'; list.appendChild(r); });
   w.appendChild(list);
   w.appendChild(el('h3', null, 'Examples from papers'));
@@ -284,7 +290,8 @@ function viewPaper(app, artid) {
   w.innerHTML = '<div class="crumbs">' + A('papers', 'Papers') + ' › ' + esc(cite(artid)) + '</div><h1>' + esc(p.title || artid) + '</h1>' +
     '<div class="citebox"><div class="authors">' + esc((p.authors || []).join(', ')) + (p.year ? ' · ' + p.year : '') + (p.journal ? ' · ' + esc(p.journal) : '') + '</div>' +
     (p.doi ? '<div class="sub"><a href="https://doi.org/' + encodeURIComponent(p.doi) + '">doi:' + esc(p.doi) + '</a></div>' : '') +
-    '<div class="sub"><a href="' + D.meta.atlas_url + '#/paper/' + encodeURIComponent(artid) + '">this paper in the causal atlas ↗</a> · <a href="data/designs/' + encodeURIComponent(artid) + '.json">design document (JSON, pointers and short quotes only)</a></div></div>' +
+    '<div class="sub">' + (atlasUrl(p) ? '<a href="' + atlasUrl(p) + '#/paper/' + encodeURIComponent(artid) + '">this paper in the causal atlas ↗</a> · ' : '') + '<a href="' + docUrl(p) + '">design document (JSON, pointers and short quotes only)</a>' +
+    ' · dataset: ' + A('about', esc(corpusOf(p.corpus).label || p.corpus)) + '</div></div>' +
     '<div class="counts"><b>' + us.length + '</b> design unit(s) over <b>' + (p.n_records || '?') + '</b> estimate records' + (p.n_descriptive ? ', of which ' + p.n_descriptive + ' descriptive' : '') + '</div>';
   w.appendChild(el('h3', null, 'Designs in this paper'));
   examples(w, us, {});
@@ -401,9 +408,15 @@ function viewAbout(app) {
     '<p>Causal Designs is a wiki of identification strategies, built automatically based on an agentic extraction pipeline. For every paper the pipeline extracts one record per estimate: the strategy, the source of variation, the instrument, the key assumptions, the population, the estimand. ' +
     'A taxonomy pass then groups those records into design units and places each unit in this wiki: a family (instrumental variables, difference in differences, …), a sub-design (shift-share instrument, staggered adoption, …), ' +
     'a general pattern stated with X for the treatment and Y for the outcome, and a normalised source of variation. The dictionaries grow as papers are added; a new sub-design or source enters with a definition the next paper can reuse.</p>' +
+    '<h3>Datasets</h3>' +
+    '<p>Each corpus is its own dataset under <code>data/corpora/&lt;id&gt;/</code> of the repository, with its design documents, an index of its papers and a dataset card; the wiki pages merge them and the corpus filter separates them again.</p>' +
+    (D.meta.corpora || []).map(c => '<div class="ex"><div><div class="what">' + esc(c.title || c.label) + '</div><div class="how">' + esc(c.description || '') + '</div>' +
+      '<div class="meta"><span>' + c.n_papers + ' papers, ' + c.n_units + ' design units</span>' + (c.atlas_url ? '<span><a href="' + esc(c.atlas_url) + '">atlas ↗</a></span>' : '') + '</div>' +
+      (c.citation ? '<blockquote>' + esc(c.citation) + '</blockquote>' : '') + (c.claims_dataset ? '<div class="sub">The claims the designs identify: ' + esc(c.claims_dataset) + '</div>' : '') + '</div>' +
+      '<div class="side"><a href="data/corpora/' + encodeURIComponent(c.id) + '/README.md">dataset card</a><a href="data/corpora/' + encodeURIComponent(c.id) + '/index.json">index of papers (JSON)</a><a href="https://github.com/johanna-einsiedler/causal-designs/tree/main/data/corpora/' + encodeURIComponent(c.id) + '">folder on GitHub ↗</a></div></div>').join('') +
     '<h3>What the design documents published here contain</h3>' +
     '<p>Each paper\'s design document is served as JSON with every pointer into the paper (page, exhibit, cell and figure ids) and the extractor\'s own descriptions of strategy, assumptions and population. ' +
     'Verbatim text from the papers is reduced to what quotation allows: one short anchor sentence per record, at most fifteen distinct sentences per paper, each with its page; every other quote is kept as a hash and a length so a reader with the paper can verify it. ' +
-    'The papers themselves remain with their publishers.</p>' +
+    'The papers themselves remain with their publishers. The site is published under the MIT licence and so are the design documents (data/LICENSE).</p>' +
     '<p class="sub">Built ' + esc((D.meta.built_at || '').replace('T', ' ').slice(0, 16)) + ' UTC · ' + D.meta.counts.papers + ' papers · ' + D.meta.counts.units + ' design units.</p>';
 }

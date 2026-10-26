@@ -1,0 +1,3445 @@
+{
+ "protocol": "design_taxonomy_v1",
+ "created_at": "2026-10-17T22:45:14.797319+00:00",
+ "facets": [
+  "sub_design",
+  "pattern",
+  "source"
+ ],
+ "families": {
+  "instrumental_variables": {
+   "label": "Instrumental variables",
+   "definition": "An instrument that shifts the treatment but affects the outcome only through it identifies the effect for those whose treatment the instrument moves."
+  },
+  "difference_in_differences": {
+   "label": "Difference in differences",
+   "definition": "The change in the outcome of a treated group is compared with the change of an untreated group over the same period; parallel trends do the identifying work."
+  },
+  "event_study": {
+   "label": "Event study",
+   "definition": "Outcomes are traced before and after an event at the individual level, so pre-event trends are visible and the effect is read from the post-event deviation."
+  },
+  "regression_discontinuity": {
+   "label": "Regression discontinuity",
+   "definition": "A rule assigns treatment at a threshold of a running variable; units just above and just below the cutoff are compared."
+  },
+  "fixed_effects_within": {
+   "label": "Fixed effects (within variation)",
+   "definition": "Time-invariant differences between units are removed by comparing each unit with itself over time or across its own members."
+  },
+  "sibling_family_comparison": {
+   "label": "Sibling and family comparison",
+   "definition": "Siblings or other family members are compared with one another, holding everything shared within the family fixed."
+  },
+  "twin_comparison": {
+   "label": "Twin comparison",
+   "definition": "Twins are compared with one another, holding shared genes and upbringing fixed."
+  },
+  "matching": {
+   "label": "Matching",
+   "definition": "Each treated unit is paired with untreated units that look alike on observables, and their outcomes are compared."
+  },
+  "selection_on_observables": {
+   "label": "Selection on observables",
+   "definition": "Treated and untreated units are compared after adjusting for observed characteristics, assuming nothing unobserved drives both treatment and outcome."
+  },
+  "RCT": {
+   "label": "Randomised controlled trial",
+   "definition": "Treatment is assigned at random by the researchers or a programme, so the treated and the untreated are alike in expectation."
+  },
+  "lottery": {
+   "label": "Lottery",
+   "definition": "Treatment is allocated by an actual lottery outside the researchers' control, such as an admission or housing lottery."
+  },
+  "bunching": {
+   "label": "Bunching",
+   "definition": "The mass of units piling up at a kink or notch of an incentive schedule reveals the behavioural response to the incentive."
+  },
+  "synthetic_control": {
+   "label": "Synthetic control",
+   "definition": "A weighted combination of untreated units is built to track the treated unit before treatment; the gap afterwards is the effect."
+  },
+  "structural_model": {
+   "label": "Structural model",
+   "definition": "An economic model is estimated and its parameters, not a reduced-form contrast, carry the causal content."
+  },
+  "other": {
+   "label": "Other designs",
+   "definition": "Designs that fit none of the families above."
+  },
+  "descriptive": {
+   "label": "Descriptive",
+   "definition": "No identification strategy is claimed; the estimate describes an association or a gap."
+  }
+ },
+ "entries": [
+  {
+   "id": "instrumental_variables.shift_share",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Shift-share (Bartik) instrument",
+   "definition": "Exposure of units to aggregate shifts, weighted by their initial shares, instruments the local change in the treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.judge_or_caseworker_leniency",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Judge or caseworker leniency",
+   "definition": "The leniency of the randomly assigned decision-maker instruments the decision taken for the individual.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.lottery_or_random_assignment",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Lottery or random assignment as instrument",
+   "definition": "A lottery or random assignment instruments actual take-up of the treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.distance_or_access",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Distance or access",
+   "definition": "Distance to, or local availability of, a service or institution instruments its use.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.policy_eligibility_rule",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Policy eligibility rule",
+   "definition": "A rule that makes some units eligible for a programme instruments participation.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.timing_of_birth_or_cohort",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Timing of birth or cohort",
+   "definition": "The month or year of birth relative to a rule instruments the treatment, such as school starting age.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.peer_or_network_exposure",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Peer or network exposure",
+   "definition": "Exposure of peers or network members to a shock instruments the individual's treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.weather_or_natural_shock",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Weather or natural shock",
+   "definition": "A natural event such as rainfall, temperature or a disaster instruments the treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.health_or_mortality_shock",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Health or mortality shock",
+   "definition": "An illness or death, treated as unforeseeable, instruments a change in circumstances.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "instrumental_variables.other_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Other instrument",
+   "definition": "An instrument of another kind.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "difference_in_differences.two_period_policy_change",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "Two-period policy change",
+   "definition": "One reform at one date; treated and untreated groups before and after.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "difference_in_differences.staggered_adoption",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "Staggered adoption",
+   "definition": "Units are treated at different dates; later-treated units serve as controls for earlier ones.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "difference_in_differences.triple_difference",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "Triple difference",
+   "definition": "A second untreated dimension removes group-specific shocks from the difference in differences.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "difference_in_differences.continuous_exposure",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "Continuous exposure (dose-response)",
+   "definition": "Units differ in the intensity of exposure to the change rather than in a treated/untreated split.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "event_study.individual_shock",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "Individual shock",
+   "definition": "The event is a shock to the individual: job loss, illness, death of a relative, divorce.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "event_study.policy_change",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "Policy change",
+   "definition": "The event is a reform or rule change at a known date.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "event_study.family_event",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "Family event",
+   "definition": "The event is a birth, a marriage or another change in the family.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "regression_discontinuity.sharp_cutoff",
+   "facet": "sub_design",
+   "family": "regression_discontinuity",
+   "label": "Sharp cutoff",
+   "definition": "Treatment switches deterministically at the threshold.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "regression_discontinuity.fuzzy_cutoff",
+   "facet": "sub_design",
+   "family": "regression_discontinuity",
+   "label": "Fuzzy cutoff",
+   "definition": "The probability of treatment jumps at the threshold; the jump instruments treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "regression_discontinuity.kink",
+   "facet": "sub_design",
+   "family": "regression_discontinuity",
+   "label": "Regression kink",
+   "definition": "The slope, not the level, of the treatment changes at the threshold.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "regression_discontinuity.age_or_date_cutoff",
+   "facet": "sub_design",
+   "family": "regression_discontinuity",
+   "label": "Age or date cutoff",
+   "definition": "The running variable is age or a calendar date.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "regression_discontinuity.geographic_boundary",
+   "facet": "sub_design",
+   "family": "regression_discontinuity",
+   "label": "Geographic boundary",
+   "definition": "The running variable is distance to a border between regimes.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "fixed_effects_within.individual_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "Individual fixed effects",
+   "definition": "Each person is compared with themself over time.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "fixed_effects_within.firm_or_establishment_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "Firm or establishment fixed effects",
+   "definition": "Each firm or workplace is compared with itself over time.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "fixed_effects_within.mover_design",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "Mover design",
+   "definition": "Units that move between places, firms or regimes identify place or firm effects.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "fixed_effects_within.two_way_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "Two-way fixed effects",
+   "definition": "Unit and time fixed effects together.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "sibling_family_comparison.sibling_fixed_effects",
+   "facet": "sub_design",
+   "family": "sibling_family_comparison",
+   "label": "Sibling fixed effects",
+   "definition": "Siblings compared within the family.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "sibling_family_comparison.extended_family",
+   "facet": "sub_design",
+   "family": "sibling_family_comparison",
+   "label": "Extended family comparison",
+   "definition": "Cousins or other relatives compared within the extended family.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "twin_comparison.twin_fixed_effects",
+   "facet": "sub_design",
+   "family": "twin_comparison",
+   "label": "Twin fixed effects",
+   "definition": "Twins compared within the pair.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "matching.propensity_score",
+   "facet": "sub_design",
+   "family": "matching",
+   "label": "Propensity score matching",
+   "definition": "Matching on the estimated probability of treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "matching.exact_or_coarsened",
+   "facet": "sub_design",
+   "family": "matching",
+   "label": "Exact or coarsened matching",
+   "definition": "Matching on the values, or coarsened values, of chosen covariates.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "matching.nearest_neighbour",
+   "facet": "sub_design",
+   "family": "matching",
+   "label": "Nearest-neighbour matching",
+   "definition": "Matching on a distance over covariates.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "selection_on_observables.regression_adjustment",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "Regression adjustment",
+   "definition": "Covariates enter a regression; the treatment coefficient is the estimate.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "selection_on_observables.reweighting",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "Reweighting",
+   "definition": "Untreated units are reweighted to resemble the treated on observables.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "RCT.field_experiment",
+   "facet": "sub_design",
+   "family": "RCT",
+   "label": "Field experiment",
+   "definition": "Randomisation by the researchers in the field.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "RCT.policy_pilot_randomization",
+   "facet": "sub_design",
+   "family": "RCT",
+   "label": "Randomised policy pilot",
+   "definition": "A programme randomised by the implementing agency.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "RCT.survey_or_lab_experiment",
+   "facet": "sub_design",
+   "family": "RCT",
+   "label": "Survey or laboratory experiment",
+   "definition": "Randomisation inside a survey or laboratory setting.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "lottery.admission_lottery",
+   "facet": "sub_design",
+   "family": "lottery",
+   "label": "Admission lottery",
+   "definition": "Oversubscribed school or programme places allocated by lottery.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "lottery.allocation_lottery",
+   "facet": "sub_design",
+   "family": "lottery",
+   "label": "Allocation lottery",
+   "definition": "Housing, land or other goods allocated by lottery.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "bunching.kink",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "Bunching at a kink",
+   "definition": "Excess mass at a kink of the schedule.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "bunching.notch",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "Bunching at a notch",
+   "definition": "Excess mass and a hole around a notch of the schedule.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "synthetic_control.standard",
+   "facet": "sub_design",
+   "family": "synthetic_control",
+   "label": "Synthetic control",
+   "definition": "A donor pool weighted to match the treated unit before treatment.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "structural_model.dynamic_discrete_choice",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "Dynamic discrete choice",
+   "definition": "A dynamic programming model of choices estimated on the data.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "structural_model.search_or_matching_model",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "Search or matching model",
+   "definition": "A labour market search or matching model.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "structural_model.life_cycle_model",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "Life-cycle model",
+   "definition": "A model of consumption, saving, labour supply or schooling over the life cycle.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "structural_model.sufficient_statistics",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "Sufficient statistics",
+   "definition": "A formula from theory combines estimated elasticities into a welfare or policy effect.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "structural_model.other_structural",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "Other structural model",
+   "definition": "A structural model of another kind.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "other.other",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "Other",
+   "definition": "A design of another kind.",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.shift_in_exposure_as_instrument",
+   "facet": "pattern",
+   "family": null,
+   "label": "A shift in exposure to X across units instruments X's effect on Y",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.rule_threshold_discontinuity",
+   "facet": "pattern",
+   "family": null,
+   "label": "A rule assigns X at a threshold of a running variable; Y is compared across the cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.staggered_policy_rollout",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy reaches units at different dates; Y is compared around each unit's date",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.individual_shock_timing",
+   "facet": "pattern",
+   "family": null,
+   "label": "The timing of a shock to the individual (job loss, illness, death) identifies its effect on Y",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.within_family_comparison",
+   "facet": "pattern",
+   "family": null,
+   "label": "Family members differing in X are compared on Y, holding the shared family fixed",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.assigned_decision_maker_leniency",
+   "facet": "pattern",
+   "family": null,
+   "label": "The leniency of a randomly assigned decision-maker instruments the decision X",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.random_allocation",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is allocated at random; Y is compared between the allocated and the rest",
+   "definition": "",
+   "aliases": [],
+   "added_by": "seed"
+  },
+  {
+   "id": "pattern.variation_in_x_within_units_over_time_net_of_unit_and_unit",
+   "facet": "pattern",
+   "family": null,
+   "label": "Variation in X within units over time, net of unit and unit-by-period fixed effects, identifies X's effect on Y",
+   "definition": "Unit and period (or unit-by-period) fixed effects absorb level differences and common shocks so that only within-unit, over-time variation in the treatment identifies the outcome response.",
+   "aliases": [],
+   "added_by": "dk_W1503225338"
+  },
+  {
+   "id": "source.top_earnings_tax_rates",
+   "facet": "source",
+   "family": null,
+   "label": "top earnings tax rates",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1503225338",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.units_experience_differently_sized_changes_in_x_over_time_y",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units experience differently sized changes in X over time; Y is compared across units and periods",
+   "definition": "Identification comes from differential, continuously measured changes in the treatment across units over time, with outcomes compared across units and periods.",
+   "aliases": [],
+   "added_by": "dk_W1503225338"
+  },
+  {
+   "id": "pattern.a_policy_change_raises_x_in_one_unit_y_is_compared_with_a",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change raises X in one unit; Y is compared with a weighted combination of untreated units",
+   "definition": "The treated unit's post-policy outcome is compared with a weighted average of untreated units chosen to match its pre-policy path, attributing the divergence to the policy-induced change in treatment.",
+   "aliases": [],
+   "added_by": "dk_W1503225338"
+  },
+  {
+   "id": "source.preferential_tax_scheme_for_foreigners",
+   "facet": "source",
+   "family": null,
+   "label": "preferential tax scheme for foreigners",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1503225338",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.differences_in_x_across_units_conditional_on_observed",
+   "facet": "pattern",
+   "family": null,
+   "label": "Differences in X across units, conditional on observed covariates, identify X's effect on Y",
+   "definition": "Treatment varies across units in the cross-section and identification rests on controlling for observed characteristics, with no unit fixed effects to absorb unobserved heterogeneity.",
+   "aliases": [],
+   "added_by": "dk_W1503225338"
+  },
+  {
+   "id": "pattern.a_policy_grants_x_only_to_units_above_an_eligibility",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy grants X only to units above an eligibility threshold; Y is compared between just-above and just-below units be",
+   "definition": "Eligibility for a policy is determined by an administrative threshold, and outcomes for units above the threshold are compared with those just below it before and after the policy takes effect.",
+   "aliases": [],
+   "added_by": "dk_W1503225338"
+  },
+  {
+   "id": "source.tax_scheme_eligibility_threshold",
+   "facet": "source",
+   "family": null,
+   "label": "tax scheme eligibility threshold",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1503225338",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "source.school_starting_age_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "school starting age cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1827874139",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "matching.matched_comparison_group",
+   "facet": "sub_design",
+   "family": "matching",
+   "label": "matched comparison group",
+   "definition": "Treated units are paired with untreated units on observed characteristics to form a comparison group, without a specified propensity-score or exact-cell rule.",
+   "aliases": [],
+   "added_by": "dk_W1935170479"
+  },
+  {
+   "id": "source.sudden_parental_death",
+   "facet": "source",
+   "family": null,
+   "label": "sudden parental death",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1935170479",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "instrumental_variables.simulated_mechanical_policy_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "Simulated (mechanical) policy instrument",
+   "definition": "A mechanically simulated change in the treatment variable, computed by applying new policy rules to baseline (pre-period) behavior, instruments the actual change in treatment.",
+   "aliases": [],
+   "added_by": "dk_W1992237160"
+  },
+  {
+   "id": "pattern.a_mechanical_change_in_x_predicted_by_applying_changed",
+   "facet": "pattern",
+   "family": null,
+   "label": "A mechanical change in X predicted by applying changed policy rules to baseline behavior instruments X's effect on Y",
+   "definition": "Policy rules are applied to units' base-period characteristics to compute the change in X they would mechanically experience, and this simulated change instruments the observed change in X in estimating its effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W1992237160"
+  },
+  {
+   "id": "source.tax_reform_rate_changes",
+   "facet": "source",
+   "family": null,
+   "label": "tax reform rate changes",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W1992237160",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.mass_layoff_at_offshoring_firm",
+   "facet": "source",
+   "family": null,
+   "label": "mass layoff at offshoring firm",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2010342843",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.external_world_trade_shocks",
+   "facet": "source",
+   "family": null,
+   "label": "external world trade shocks",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2029320109",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "event_study.firm_level_shock_to_fixed_cohort",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "firm-level shock to fixed cohort",
+   "definition": "Workers are grouped into cohorts by their pre-shock employer and tracked after that employer receives a shock, so cohort composition is fixed before the shock.",
+   "aliases": [],
+   "added_by": "dk_W2029320109"
+  },
+  {
+   "id": "pattern.pattern_exposure_of_pre_shock_cohort_to_predicted_change",
+   "facet": "pattern",
+   "family": null,
+   "label": "Exposure of pre shock cohort to predicted change",
+   "definition": "A cohort fixed before a shock is exposed to an externally predicted change in X, and its subsequent change in Y is compared across differently exposed cohorts.",
+   "aliases": [],
+   "added_by": "dk_W2029320109"
+  },
+  {
+   "id": "fixed_effects_within.job_spell_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "job-spell fixed effects",
+   "definition": "Worker-firm job-spell fixed effects absorb all time-invariant characteristics of the match, so only within-spell changes in the firm's exposure identify the effect.",
+   "aliases": [],
+   "added_by": "dk_W2029320109"
+  },
+  {
+   "id": "other.predicted_effect_accounting",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "predicted-effect accounting",
+   "definition": "Previously estimated elasticities are applied to observed changes in exposure to compute predicted outcome changes across the distribution, without new identification.",
+   "aliases": [],
+   "added_by": "dk_W2029320109"
+  },
+  {
+   "id": "pattern.pattern_estimated_elasticities_applied_to_observed_changes",
+   "facet": "pattern",
+   "family": null,
+   "label": "Estimated elasticities applied to observed changes in x",
+   "definition": "Estimated elasticities of Y with respect to X are applied to observed changes in X to compute predicted changes in Y across units.",
+   "aliases": [],
+   "added_by": "dk_W2029320109"
+  },
+  {
+   "id": "source.staggered_program_roll_out_timing",
+   "facet": "source",
+   "family": null,
+   "label": "staggered program roll-out timing",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2046545334",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "other.timing_of_events_duration_model",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "timing-of-events duration model",
+   "definition": "Identification comes from the timing of treatment entry within an ongoing spell, with the treatment-entry and outcome durations modelled jointly and selection absorbed by correlated time-invariant unobserved heterogeneity.",
+   "aliases": [],
+   "added_by": "dk_W2074441423"
+  },
+  {
+   "id": "source.timing_of_programme_entry",
+   "facet": "source",
+   "family": null,
+   "label": "timing of programme entry",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2074441423",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.randomized_audit_threat_letters",
+   "facet": "source",
+   "family": null,
+   "label": "randomized audit threat letters",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2088663850",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "source.randomized_tax_audit_assignment",
+   "facet": "source",
+   "family": null,
+   "label": "randomized tax audit assignment",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2088663850",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "pattern.pattern_excess_mass_at_a_kink_identifies_elasticity",
+   "facet": "pattern",
+   "family": null,
+   "label": "Excess mass at a kink identifies elasticity",
+   "definition": "A discontinuous change in the marginal incentive X at a kink in a schedule creates excess mass in the distribution of Y around the kink, and the size of that excess mass relative to a smooth counterfactual density identifies Y's elasticity with respect to X.",
+   "aliases": [],
+   "added_by": "dk_W2088663850"
+  },
+  {
+   "id": "source.kink_in_tax_schedule",
+   "facet": "source",
+   "family": null,
+   "label": "kink in tax schedule",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2088663850",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.pattern_random_assignment_instruments_dose_received",
+   "facet": "pattern",
+   "family": null,
+   "label": "Random assignment instruments dose received",
+   "definition": "Random assignment to a programme instruments the dose of X that units actually receive, so the ratio of the reduced-form effect on Y to the first-stage dose identifies X's effect on Y for compliers.",
+   "aliases": [],
+   "added_by": "dk_W2088663850"
+  },
+  {
+   "id": "selection_on_observables.measurement_source_comparison",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "measurement-source comparison",
+   "definition": "Two alternative measures of the same underlying condition for the same individuals are each used to predict the outcome, and the gap between the predictions is interpreted as measurement bias.",
+   "aliases": [],
+   "added_by": "dk_W2097453996"
+  },
+  {
+   "id": "pattern.pattern_policy_date_event_study",
+   "facet": "pattern",
+   "family": null,
+   "label": "Policy date event study",
+   "definition": "A policy takes effect at a known date and Y is traced period by period around that date for units exposed to X relative to unexposed units.",
+   "aliases": [],
+   "added_by": "dk_W2114357420"
+  },
+  {
+   "id": "pattern.pattern_equilibrium_model_matched_to_observed_moments",
+   "facet": "pattern",
+   "family": null,
+   "label": "Equilibrium model matched to observed moments",
+   "definition": "An equilibrium model linking X to Y is estimated by matching auxiliary moments of observed behaviour, and X's effect on Y is recovered from the estimated structural parameters.",
+   "aliases": [],
+   "added_by": "dk_W2121144087"
+  },
+  {
+   "id": "pattern.pattern_two_way_fixed_effects_variance_decomposition",
+   "facet": "pattern",
+   "family": null,
+   "label": "Two way fixed effects variance decomposition",
+   "definition": "Units observed in several groups let Y be decomposed into additive unit and group components X, identified by units that move between groups under exogenous mobility.",
+   "aliases": [],
+   "added_by": "dk_W2121144087"
+  },
+  {
+   "id": "structural_model.structural_model_simulated_parameter_grid",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "structural model.simulated parameter grid experiment",
+   "definition": "Steady-state equilibria of the estimated structural model are simulated over a grid of structural parameters and an econometric estimator is applied to the simulated panels to study its behaviour.",
+   "aliases": [],
+   "added_by": "dk_W2121144087"
+  },
+  {
+   "id": "pattern.pattern_varying_structural_parameters_in_model_simulations",
+   "facet": "pattern",
+   "family": null,
+   "label": "Varying structural parameters in model simulations",
+   "definition": "X is varied over a grid in simulations from an estimated model, and Y is computed from the simulated data to trace X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W2121144087"
+  },
+  {
+   "id": "source.refugee_dispersal_policy",
+   "facet": "source",
+   "family": null,
+   "label": "refugee dispersal policy",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2139380543",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "difference_in_differences.high_versus_low_exposure_groups",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "high versus low exposure groups",
+   "definition": "Units are split into high- and low-exposure groups by predicted treatment intensity and their outcomes are compared before and after a common shock date.",
+   "aliases": [],
+   "added_by": "dk_W2139380543"
+  },
+  {
+   "id": "event_study.pretreatment_trend_test_around_shock_date",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "pretreatment trend test around shock date",
+   "definition": "Interactions of exposure with pre-period dummies test whether differentially exposed units were already trending apart before the shock date.",
+   "aliases": [],
+   "added_by": "dk_W2139380543"
+  },
+  {
+   "id": "bunching.placebo_kink_for_unaffected_group",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "placebo kink for unaffected group",
+   "definition": "Excess mass is measured at a kink for a group whose own marginal rate does not change there, as a falsification of the bunching design.",
+   "aliases": [],
+   "added_by": "dk_W2153510573"
+  },
+  {
+   "id": "pattern.excess_mass_in_y_at_a_threshold_is_measured_for_a_group",
+   "facet": "pattern",
+   "family": null,
+   "label": "Excess mass in Y at a threshold is measured for a group whose X does not change there, as a falsification test",
+   "definition": "Bunching in the outcome distribution is examined at a threshold for units whose own treatment is unchanged at that point, so any excess mass must come from something other than the treatment.",
+   "aliases": [],
+   "added_by": "dk_W2153510573"
+  },
+  {
+   "id": "source.kink_without_own_rate_change",
+   "facet": "source",
+   "family": null,
+   "label": "kink without own rate change",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2153510573",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.the_group_level_average_of_x_instruments_individual_x_s",
+   "facet": "pattern",
+   "family": null,
+   "label": "The group-level average of X instruments individual X's effect on Y",
+   "definition": "Because individual exposure is endogenous, the mean exposure of the individual's demographic cell is used as an instrument for exposure in estimating its effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W2153510573"
+  },
+  {
+   "id": "source.scope_of_tax_kink",
+   "facet": "source",
+   "family": null,
+   "label": "scope of tax kink",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2153510573",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "bunching.clustering_of_group_modes_at_kink",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "clustering of group modes at kink",
+   "definition": "Instead of individual excess mass, the design asks whether group-level modes of the outcome distribution pile up at the threshold.",
+   "aliases": [],
+   "added_by": "dk_W2153510573"
+  },
+  {
+   "id": "pattern.group_level_modes_of_y_cluster_at_a_threshold_in_x_s",
+   "facet": "pattern",
+   "family": null,
+   "label": "Group-level modes of Y cluster at a threshold in X's schedule, revealing responses to X",
+   "definition": "The distribution of group-level modal outcomes around a policy threshold is examined to see whether the threshold shapes outcomes at the group rather than individual level.",
+   "aliases": [],
+   "added_by": "dk_W2153510573"
+  },
+  {
+   "id": "pattern.x_becomes_available_to_one_group_at_a_policy_date_y_is",
+   "facet": "pattern",
+   "family": null,
+   "label": "X becomes available to one group at a policy date; Y is compared between that group and an unaffected group across cohor",
+   "definition": "A single dated policy change makes a treatment available to one group but not another, and the group gap in the outcome is compared across cohorts (or periods) before and after that date.",
+   "aliases": [],
+   "added_by": "dk_W217365405"
+  },
+  {
+   "id": "source.new_treatment_approval_date",
+   "facet": "source",
+   "family": null,
+   "label": "new treatment approval date",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W217365405",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.x_becomes_available_to_one_group_at_a_policy_date_y_is_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "X becomes available to one group at a policy date; Y is compared between that group and an unaffected group across cohor",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W217365405"
+  },
+  {
+   "id": "source.timing_of_first_psychiatric_diagnosis",
+   "facet": "source",
+   "family": null,
+   "label": "timing of first psychiatric diagnosis",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W217365405",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "difference_in_differences.policy_change_with_sibling_controls",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "policy change with sibling controls",
+   "definition": "A dated policy change that affects one family member but not their siblings identifies its effect by comparing within families across cohorts exposed before and after the change.",
+   "aliases": [],
+   "added_by": "dk_W217365405"
+  },
+  {
+   "id": "pattern.x_becomes_available_to_one_group_at_a_policy_date_y_is_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "X becomes available to one group at a policy date; Y is compared between that group and an unaffected group across cohor",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W217365405"
+  },
+  {
+   "id": "source.within_family_health_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family health differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W217365405",
+   "kind": "family_structure"
+  },
+  {
+   "id": "pattern.variation_originating_at_units_two_network_links_away",
+   "facet": "pattern",
+   "family": null,
+   "label": "Variation originating at units two network links away instruments a unit's peers' X and identifies X's effect on Y",
+   "definition": "Characteristics or shocks hitting the peers of a unit's peers, which are excluded from the unit's own determinants of Y, instrument the peers' treatment X.",
+   "aliases": [],
+   "added_by": "dk_W2182087249"
+  },
+  {
+   "id": "source.distant_peers_firm_characteristics",
+   "facet": "source",
+   "family": null,
+   "label": "distant peers' firm characteristics",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2182087249",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.removal_of_import_quotas",
+   "facet": "source",
+   "family": null,
+   "label": "removal of import quotas",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2213841331",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.mandatory_savings_eligibility_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "mandatory savings eligibility cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2236924981",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "difference_in_differences.expiry_of_time_limited_policy",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "expiry of time-limited policy",
+   "definition": "Eligible and ineligible units are compared before and after a time-limited policy lapses at its fixed duration limit.",
+   "aliases": [],
+   "added_by": "dk_W2265295982"
+  },
+  {
+   "id": "pattern.x_is_withdrawn_from_an_eligible_group_once_a_fixed_duration",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is withdrawn from an eligible group once a fixed duration of exposure elapses; Y is compared with an ineligible group ",
+   "definition": "Identification comes from the scheduled end of a time-limited treatment for eligible units, with ineligible units tracing the counterfactual path of the outcome over the same exposure duration.",
+   "aliases": [],
+   "added_by": "dk_W2265295982"
+  },
+  {
+   "id": "source.policy_duration_limit",
+   "facet": "source",
+   "family": null,
+   "label": "policy duration limit",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2265295982",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.x_is_withdrawn_from_an_eligible_group_once_a_fixed_duration_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is withdrawn from an eligible group once a fixed duration of exposure elapses; Y is compared with an ineligible group ",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2265295982"
+  },
+  {
+   "id": "source.pre_reform_cohort_without_eligibility",
+   "facet": "source",
+   "family": null,
+   "label": "pre-reform cohort without eligibility",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2265295982",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "other.selection_correction_exclusion_restriction",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "selection-correction exclusion restriction",
+   "definition": "Identification rests on a variable that shifts the probability of being observed in the sample but is excluded from the outcome equation, used to correct selection.",
+   "aliases": [],
+   "added_by": "dk_W2265295982"
+  },
+  {
+   "id": "source.birth_of_a_child",
+   "facet": "source",
+   "family": null,
+   "label": "birth of a child",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2265295982",
+   "kind": "family_structure"
+  },
+  {
+   "id": "pattern.a_jump_in_x_at_a_threshold_of_y_produces_excess_mass_in_y",
+   "facet": "pattern",
+   "family": null,
+   "label": "A jump in X at a threshold of Y produces excess mass in Y just above the threshold and missing mass just below, identify",
+   "definition": "A discrete change in the schedule of X at a threshold of the outcome variable creates bunching above and a hole below the threshold relative to a smooth counterfactual density, identifying behavioural responses to X.",
+   "aliases": [],
+   "added_by": "dk_W2265295982"
+  },
+  {
+   "id": "source.child_support_obligation_formula",
+   "facet": "source",
+   "family": null,
+   "label": "child support obligation formula",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2361450736",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.variation_in_x_across_groups_periods_and_a_third_dimension",
+   "facet": "pattern",
+   "family": null,
+   "label": "Variation in X across groups, periods and a third dimension, net of all double interactions, identifies X's effect on Y",
+   "definition": "Treatment intensity varying jointly along three dimensions is used after absorbing every main effect and two-way interaction, so only the residual three-way variation in X identifies Y.",
+   "aliases": [],
+   "added_by": "dk_W2361450736"
+  },
+  {
+   "id": "source.randomness_of_child_gender",
+   "facet": "source",
+   "family": null,
+   "label": "randomness of child gender",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2548529099",
+   "kind": "family_structure"
+  },
+  {
+   "id": "difference_in_differences.gender_gap_across_environment_groups",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "gender gap across environment groups",
+   "definition": "The difference in outcomes between boys and girls, which arises from the randomness of child gender, is compared across groups of families defined by parental education or marital status, differencing out level effects of gender and of environment.",
+   "aliases": [],
+   "added_by": "dk_W2548529099"
+  },
+  {
+   "id": "instrumental_variables.quasi_random_fertility_shock",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "quasi-random fertility shock",
+   "definition": "A chance biological fertility outcome (success of a fertility treatment, twin conception) that is as good as random conditional on treatment circumstances serves as the instrument.",
+   "aliases": [],
+   "added_by": "dk_W2566343964"
+  },
+  {
+   "id": "pattern.a_quasi_random_biological_event_that_shifts_x_instruments_x",
+   "facet": "pattern",
+   "family": null,
+   "label": "A quasi-random biological event that shifts X instruments X's effect on Y",
+   "definition": "A chance biological event that moves units into or out of X, independent of their histories, instruments X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W2566343964"
+  },
+  {
+   "id": "source.ivf_treatment_success",
+   "facet": "source",
+   "family": null,
+   "label": "IVF treatment success",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2566343964",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.twin_birth_at_first_birth",
+   "facet": "source",
+   "family": null,
+   "label": "twin birth at first birth",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2566343964",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.wage_bargaining_decentralization_reform",
+   "facet": "source",
+   "family": null,
+   "label": "wage bargaining decentralization reform",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2592024171",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.mass_layoff_job_displacement",
+   "facet": "source",
+   "family": null,
+   "label": "mass layoff job displacement",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2592024171",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.parental_leave_program_introduction",
+   "facet": "source",
+   "family": null,
+   "label": "parental-leave program introduction",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2594576665",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.timing_of_family_health_shock",
+   "facet": "source",
+   "family": null,
+   "label": "timing of family health shock",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2770250470",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "pattern.units_all_exposed_to_the_same_event_differ_in_the_event_s",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units all exposed to the same event differ in the event's type X; Y is compared across types and over time, differencing",
+   "definition": "Within a set of units that all experience an event, variation in the event's type or content identifies the type-specific component of the response, because the common effect of experiencing the event is netted out.",
+   "aliases": [],
+   "added_by": "dk_W2770250470"
+  },
+  {
+   "id": "source.cause_of_family_member_s_death",
+   "facet": "source",
+   "family": null,
+   "label": "cause of family member's death",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2770250470",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.timing_of_family_member_s_death",
+   "facet": "source",
+   "family": null,
+   "label": "timing of family member's death",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2770250470",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "other.before_after_without_control_group",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "before-after without control group",
+   "definition": "Outcomes for a single population are compared immediately before and after a policy date, with no untreated comparison group.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "source.third_party_information_reporting_reform",
+   "facet": "source",
+   "family": null,
+   "label": "third-party information reporting reform",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2781798209",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "other.before_after_versus_reference_group",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "before-after versus reference group",
+   "definition": "The before-after change at a policy date for the affected population is compared with that of a reference group not subject to the mechanism at issue.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "other.interrupted_time_series_trend_break",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "interrupted time series trend break",
+   "definition": "The outcome series is regressed on a linear time trend plus an indicator for the policy period, so the effect is the break from the extrapolated trend.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "other.before_after_in_independent_data_source",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "before-after in independent data source",
+   "definition": "The same policy date is examined in an outcome measured by an independent source that is unaffected by the reporting behaviour under study.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "other.quasi_random_sign_of_small_balance",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "quasi-random sign of small balance",
+   "definition": "Units with a small positive versus a small negative balance around a zero threshold are treated as quasi-randomly assigned, and outcomes are compared across the sign of the balance.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "source.sign_of_preliminary_tax_balance",
+   "facet": "source",
+   "family": null,
+   "label": "sign of preliminary tax balance",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2781798209",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "bunching.mass_in_dominated_region",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "mass in dominated region",
+   "definition": "The share of units choosing an option strictly dominated by the tax or subsidy schedule measures inattention or frictions rather than preferences.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "pattern.a_schedule_makes_a_range_of_choices_strictly_dominated_under",
+   "facet": "pattern",
+   "family": null,
+   "label": "A schedule makes a range of choices strictly dominated under X; the mass of units choosing Y in that range measures fric",
+   "definition": "Where the schedule makes a range of behaviour unambiguously worse than a nearby alternative, any mass observed there cannot reflect optimisation and so quantifies inattention to the incentive.",
+   "aliases": [],
+   "added_by": "dk_W2781798209"
+  },
+  {
+   "id": "source.notch_in_subsidy_schedule",
+   "facet": "source",
+   "family": null,
+   "label": "notch in subsidy schedule",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2781798209",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "source.programme_gpa_admission_threshold",
+   "facet": "source",
+   "family": null,
+   "label": "programme GPA admission threshold",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2783930051",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "source.grandparental_relative_labor_supply",
+   "facet": "source",
+   "family": null,
+   "label": "grandparental relative labor supply",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2784402791",
+   "kind": "family_structure"
+  },
+  {
+   "id": "difference_in_differences.placebo_timed_never_treated_control_group",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "placebo-timed never-treated control group",
+   "definition": "Units experiencing an actual event are compared over event time with never-event units to whom placebo event dates are assigned from the treated units' observed timing distribution.",
+   "aliases": [],
+   "added_by": "dk_W2784402791"
+  },
+  {
+   "id": "source.within_twin_pair_education_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-twin-pair education differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2792687878",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.first_cancer_diagnosis",
+   "facet": "source",
+   "family": null,
+   "label": "first cancer diagnosis",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2794375442",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "difference_in_differences.two_period_health_shock_versus_controls",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "two-period health shock versus controls",
+   "definition": "The change in an outcome between a pre-shock and a post-shock period is compared between individuals hit by a health shock and comparable unaffected individuals.",
+   "aliases": [],
+   "added_by": "dk_W2794375442"
+  },
+  {
+   "id": "instrumental_variables.independent_second_measurement_as_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "independent second measurement as instrument",
+   "definition": "An independently collected second measurement of the same latent, mismeasured regressor is used as its instrument, so that classical measurement error in the regressor is purged from the estimated relationship.",
+   "aliases": [],
+   "added_by": "dk_W2801202920"
+  },
+  {
+   "id": "pattern.an_independent_second_measurement_of_the_same_mismeasured_x",
+   "facet": "pattern",
+   "family": null,
+   "label": "An independent second measurement of the same mismeasured X instruments X's effect on Y",
+   "definition": "A second, independently measured proxy of the same latent treatment variable serves as the instrument for the mismeasured treatment, identifying X's effect on Y net of classical measurement error.",
+   "aliases": [],
+   "added_by": "dk_W2801202920"
+  },
+  {
+   "id": "source.idiosyncratic_cohort_gender_composition",
+   "facet": "source",
+   "family": null,
+   "label": "idiosyncratic cohort gender composition",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2801804463",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "fixed_effects_within.own_gender_interaction_within_cohort_cells",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "own-gender interaction within cohort cells",
+   "definition": "Peer composition is interacted with the student's own gender inside school-by-cohort fixed-effect cells, so identification rests on how the same cohort's composition affects men and women differently.",
+   "aliases": [],
+   "added_by": "dk_W2801804463"
+  },
+  {
+   "id": "source.pension_contribution_deduction_cap",
+   "facet": "source",
+   "family": null,
+   "label": "pension contribution deduction cap",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2802346683",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "other.experimenter_set_parameters_across_rounds",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "experimenter-set parameters across rounds",
+   "definition": "Treatment conditions are set by the experimenter and applied uniformly to all subjects in each round, so within-subject comparisons across rounds identify their effects even without randomised ordering.",
+   "aliases": [],
+   "added_by": "dk_W2900238486"
+  },
+  {
+   "id": "pattern.x_is_set_by_the_experimenter_and_varies_across_periods",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is set by the experimenter and varies across periods uniformly for all units; Y is compared across periods within unit",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2900238486"
+  },
+  {
+   "id": "pattern.a_policy_change_restricts_x_for_one_group_at_a_given_date_y",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change restricts X for one group at a given date; Y is compared between that group and an unaffected group befo",
+   "definition": "Identification comes from a dated policy change that binds only one identifiable group, with the before-after change in the outcome for that group differenced against the contemporaneous change for a group the rules leave untouched.",
+   "aliases": [],
+   "added_by": "dk_W2915742260"
+  },
+  {
+   "id": "source.family_reunification_policy_reform",
+   "facet": "source",
+   "family": null,
+   "label": "family reunification policy reform",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2915742260",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.a_dated_policy_change_interrupts_the_time_series_of_y_for",
+   "facet": "pattern",
+   "family": null,
+   "label": "A dated policy change interrupts the time series of Y for the group subject to X; breaks in the level and slope at that ",
+   "definition": "Identification rests on a single time series of the affected group, where the estimated jump and change in trend at the known policy date, relative to the extrapolated pre-policy trend, measures the policy's effect.",
+   "aliases": [],
+   "added_by": "dk_W2915742260"
+  },
+  {
+   "id": "pattern.a_policy_change_restricts_x_for_one_group_at_a_given_date_y_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change restricts X for one group at a given date; Y is compared between that group and an unaffected group befo",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2915742260"
+  },
+  {
+   "id": "pattern.a_policy_change_restricts_x_for_one_group_at_a_given_date_y_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change restricts X for one group at a given date; Y is compared between that group and an unaffected group befo",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2915742260"
+  },
+  {
+   "id": "pattern.a_policy_change_restricts_x_for_one_group_at_a_given_date_y_4",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change restricts X for one group at a given date; Y is compared between that group and an unaffected group befo",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W2915742260"
+  },
+  {
+   "id": "pattern.a_sudden_individual_level_shock_and_statutory_changes_in",
+   "facet": "pattern",
+   "family": null,
+   "label": "A sudden individual-level shock and statutory changes in benefit levels that shift X instrument X's effect on Y",
+   "definition": "An abrupt shock to the individual, together with legislated changes in the amount of transfers received, moves X exogenously and so instruments X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W2921836311"
+  },
+  {
+   "id": "pattern.a_date_at_which_x_does_not_actually_change_is_treated_as_if",
+   "facet": "pattern",
+   "family": null,
+   "label": "A date at which X does not actually change is treated as if it did; Y is compared across groups and periods as a falsifi",
+   "definition": "A fake policy date, at which the treatment did not in fact change, is run through the baseline design so that any estimated effect on the outcome signals a flaw in that design.",
+   "aliases": [],
+   "added_by": "dk_W2939678267"
+  },
+  {
+   "id": "pattern.contemporaneous_x_is_instrumented_by_predetermined_lagged",
+   "facet": "pattern",
+   "family": null,
+   "label": "Contemporaneous X is instrumented by predetermined lagged variables, exploiting that units can respond to shocks only wi",
+   "definition": "Because decisions react to shocks only with a lag, variables dated before the shock are excludable instruments for the contemporaneous treatment, whose measurement is contaminated by forecast errors.",
+   "aliases": [],
+   "added_by": "dk_W2990010517"
+  },
+  {
+   "id": "structural_model.general_equilibrium_counterfactual_simulation",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "general equilibrium counterfactual simulation",
+   "definition": "An estimated and calibrated equilibrium model is re-solved under a counterfactual path of an exogenous variable, holding idiosyncratic draws fixed, and simulated outcomes are compared with the baseline solution.",
+   "aliases": [],
+   "added_by": "dk_W2990010517"
+  },
+  {
+   "id": "pattern.estimated_structural_parameters_are_used_to_compute_the",
+   "facet": "pattern",
+   "family": null,
+   "label": "Estimated structural parameters are used to compute the model-implied response of Y to a counterfactual change in X",
+   "definition": "Parameters estimated from observed behaviour are fed back into the model, which is solved or evaluated with and without a hypothetical change in the treatment, and the difference in simulated outcomes is the estimated effect.",
+   "aliases": [],
+   "added_by": "dk_W2990010517"
+  },
+  {
+   "id": "structural_model.finite_mixture_of_unobserved_types",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "finite mixture of unobserved types",
+   "definition": "Persistent unexplained differences in outcomes within unit-state cells allocate units to a finite set of unobserved types, whose type-specific productivities are then identified from units observed in several states.",
+   "aliases": [],
+   "added_by": "dk_W2990010517"
+  },
+  {
+   "id": "fixed_effects_within.school_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "school fixed effects",
+   "definition": "Students differing in treatment are compared only within the same school, so that all school-level unobservables are differenced out.",
+   "aliases": [],
+   "added_by": "dk_W2999882579"
+  },
+  {
+   "id": "pattern.units_differing_in_x_within_the_same_institution_are",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in X within the same institution are compared on Y, holding the shared institution fixed",
+   "definition": "Identification comes from comparing units that differ in X but share the same institution, so institution-level unobservables cannot drive the difference in Y.",
+   "aliases": [],
+   "added_by": "dk_W2999882579"
+  },
+  {
+   "id": "structural_model.structural_model_panel_covariance_restrictions",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "structural model.panel covariance restrictions",
+   "definition": "Identification from covariance restrictions on panel moments of income and consumption growth, which separate permanent from transitory components and their pass-through to spending.",
+   "aliases": [],
+   "added_by": "dk_W3000443959"
+  },
+  {
+   "id": "pattern.moments_of_x_and_y_growth_over_varying_horizons_identify",
+   "facet": "pattern",
+   "family": null,
+   "label": "Moments of x and y growth over varying horizons identify responses to permanent and transitory components of x",
+   "definition": "Variances of X growth and its covariance with Y growth over lengthening horizons separate permanent from transitory components of X and identify the response of Y to each.",
+   "aliases": [],
+   "added_by": "dk_W3000443959"
+  },
+  {
+   "id": "source.dental_remuneration_reform_date",
+   "facet": "source",
+   "family": null,
+   "label": "dental remuneration reform date",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3001397820",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "selection_on_observables.conditional_random_policy_placement",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "conditional random policy placement",
+   "definition": "Units are placed into locations by an administrative allocation rule that overrides their own preferences, so the characteristics of the location they receive are as good as randomly assigned conditional on the attributes the administrator observes.",
+   "aliases": [],
+   "added_by": "dk_W3005691992"
+  },
+  {
+   "id": "pattern.units_are_placed_into_locations_by_an_administrative_rule",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units are placed into locations by an administrative rule that ignores their own preferences; variation in the placement",
+   "definition": "Exogenous administrative placement across locations makes the local characteristic X received by a unit independent of its own unobserved traits, so comparing Y across placed units identifies X's effect.",
+   "aliases": [],
+   "added_by": "dk_W3005691992"
+  },
+  {
+   "id": "pattern.units_are_placed_into_locations_by_an_administrative_rule_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units are placed into locations by an administrative rule that ignores their own preferences; variation in the placement",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3005691992"
+  },
+  {
+   "id": "selection_on_observables.selection_on_observables_predetermined_measure",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "selection on observables.predetermined measure long before outcome",
+   "definition": "Treatment is measured long before the outcome is observed, so the cross-sectional association, conditional on covariates, cannot be driven by reverse causality or by shocks moving both at the same time.",
+   "aliases": [],
+   "added_by": "dk_W3014661183"
+  },
+  {
+   "id": "difference_in_differences.two_period_shock_change_versus_unchanged",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "two-period shock change versus unchanged controls",
+   "definition": "Groups defined by how an individual-level exposure changes between two consecutive periods are compared with the group whose exposure stays untreated in both periods, differencing out pre-existing level differences.",
+   "aliases": [],
+   "added_by": "dk_W3016202740"
+  },
+  {
+   "id": "fixed_effects_within.peer_composition_within_institution_cells",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "peer composition within institution cells",
+   "definition": "Units in the same institution-by-characteristic cell are exposed to differently composed sets of peers, and the cells are absorbed by fixed effects so only the quasi-random variation in peer exposure remains.",
+   "aliases": [],
+   "added_by": "dk_W3016333778"
+  },
+  {
+   "id": "source.timing_of_incarceration_spell_overlap",
+   "facet": "source",
+   "family": null,
+   "label": "timing of incarceration spell overlap",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3016333778",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "source.geological_iodine_in_drinking_water",
+   "facet": "source",
+   "family": null,
+   "label": "geological iodine in drinking water",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3017597103",
+   "kind": "geography_or_distance"
+  },
+  {
+   "id": "sibling_family_comparison.sibling_family_comparison_sibling_fixed_effects",
+   "facet": "sub_design",
+   "family": "sibling_family_comparison",
+   "label": "sibling family comparison.sibling fixed effects with miscarriage delayed sister",
+   "definition": "Sisters are compared within the same family where the non-early-childbearing sister's first birth was delayed by a miscarriage, so the family fixed effect absorbs background while the health event supplies the timing variation.",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "pattern.family_members_differing_in_x_because_of_a_quasi_random",
+   "facet": "pattern",
+   "family": null,
+   "label": "Family members differing in x because of a quasi random health event",
+   "definition": "Family members differing in X because a quasi-random health event shifted one member's X are compared on Y, holding the shared family fixed.",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "source.miscarriage_delaying_first_birth",
+   "facet": "source",
+   "family": null,
+   "label": "miscarriage delaying first birth",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3032946770",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "pattern.family_members_differing_in_x_because_of_a_quasi_random_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Family members differing in x because of a quasi random health event",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "other.other_miscarriage_delayed_comparison_group",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "other.miscarriage delayed comparison group",
+   "definition": "Women who were pregnant equally early but whose first birth was delayed by a miscarriage serve as the comparison group for early childbearers, the health event rather than choice producing their later birth.",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "pattern.a_quasi_random_health_event_prevents_x_for_otherwise_similar",
+   "facet": "pattern",
+   "family": null,
+   "label": "A quasi random health event prevents x for otherwise similar units",
+   "definition": "A quasi-random health event prevents or delays X for otherwise similar units; Y is compared between units with and without X.",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "source.within_family_birth_timing_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family birth timing differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3032946770",
+   "kind": "family_structure"
+  },
+  {
+   "id": "pattern.a_quasi_random_health_event_prevents_x_for_otherwise_similar_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "A quasi random health event prevents x for otherwise similar units",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3032946770"
+  },
+  {
+   "id": "source.local_home_price_changes",
+   "facet": "source",
+   "family": null,
+   "label": "local home price changes",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3037455063",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "pattern.covariances_of_y_between_units_that_share_a_background",
+   "facet": "pattern",
+   "family": null,
+   "label": "Covariances of Y between units that share a background factor X and units that do not share it identify the share of var",
+   "definition": "Identification comes from restrictions on the second moments of Y across units that do and do not share the latent factor X, which pin down the variance contribution of X.",
+   "aliases": [],
+   "added_by": "dk_W3097223093"
+  },
+  {
+   "id": "pattern.covariances_of_y_between_units_that_share_a_background_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Covariances of Y between units that share a background factor X and units that do not share it identify the share of var",
+   "definition": "Identification comes from restrictions on the second moments of Y across units that do and do not share the latent factor X, which pin down the variance contribution of X.",
+   "aliases": [],
+   "added_by": "dk_W3097223093"
+  },
+  {
+   "id": "pattern.covariances_of_y_between_units_that_share_a_background_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "Covariances of Y between units that share a background factor X and units that do not share it identify the share of var",
+   "definition": "Identification comes from restrictions on the second moments of Y across units that do and do not share the latent factor X, which pin down the variance contribution of X.",
+   "aliases": [],
+   "added_by": "dk_W3097223093"
+  },
+  {
+   "id": "lottery.random_sibling_sex",
+   "facet": "sub_design",
+   "family": "lottery",
+   "label": "random sibling sex",
+   "definition": "The sex of a later-born sibling, unknown to parents at conception, is treated as a natural lottery that assigns units a brother or a sister.",
+   "aliases": [],
+   "added_by": "dk_W3119269050"
+  },
+  {
+   "id": "instrumental_variables.instrumental_variables_firm_closure_as_exogenous",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "instrumental variables.firm closure as exogenous job loss",
+   "definition": "Unanticipated closure of the employing firm is used as an instrument that imposes unemployment independently of the worker's own choices.",
+   "aliases": [],
+   "added_by": "dk_W3119424800"
+  },
+  {
+   "id": "pattern.a_sudden_shock_that_forces_x_onto_a_subset_of_units",
+   "facet": "pattern",
+   "family": null,
+   "label": "A sudden shock that forces x onto a subset of units",
+   "definition": "A sudden shock that forces X onto a subset of units, independently of their choices, instruments X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W3119424800"
+  },
+  {
+   "id": "pattern.a_birth_date_assignment_rule_predicts_both_a_unit_s_own_x",
+   "facet": "pattern",
+   "family": null,
+   "label": "A birth-date assignment rule predicts both a unit's own X and the average X of its peer group, instrumenting both effect",
+   "definition": "The statutory rule mapping birth date to school entry generates predicted own and peer-group values of the treatment, which jointly instrument the individual and peer treatments.",
+   "aliases": [],
+   "added_by": "dk_W3122075783"
+  },
+  {
+   "id": "structural_model.multiple_reports_with_partial_validation",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "multiple reports with partial validation",
+   "definition": "Covariances among three or more reports of the same mismeasured quantity, only one of which is assumed error-free and only for part of the sample, identify the components of measurement error.",
+   "aliases": [],
+   "added_by": "dk_W3122408342"
+  },
+  {
+   "id": "structural_model.validation_measure_assumed_error_free",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "validation measure assumed error-free",
+   "definition": "A second, administrative measurement of the same quantity is assumed to be the true value, so the survey–validation discrepancy directly identifies the measurement-error parameters.",
+   "aliases": [],
+   "added_by": "dk_W3122408342"
+  },
+  {
+   "id": "pattern.a_second_measurement_of_x_assumed_to_be_error_free",
+   "facet": "pattern",
+   "family": null,
+   "label": "A second measurement of X assumed to be error-free identifies the measurement error in reported X and the bias it causes",
+   "definition": "Identification rests on treating a validation measure of the same quantity as the truth, so observed discrepancies are pure reporting error.",
+   "aliases": [],
+   "added_by": "dk_W3122408342"
+  },
+  {
+   "id": "source.timing_of_unemployment_spell",
+   "facet": "source",
+   "family": null,
+   "label": "timing of unemployment spell",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122686460",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.historical_asset_to_income_ratio",
+   "facet": "source",
+   "family": null,
+   "label": "historical asset-to-income ratio",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122686460",
+   "kind": "other"
+  },
+  {
+   "id": "fixed_effects_within.parent_child_pair_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "parent-child pair fixed effects",
+   "definition": "Variation is taken within a fixed parent–child pair over time, absorbing the pair's persistent common component.",
+   "aliases": [],
+   "added_by": "dk_W3122686460"
+  },
+  {
+   "id": "source.variation_in_potential_nominal_gains",
+   "facet": "source",
+   "family": null,
+   "label": "variation in potential nominal gains",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122820076",
+   "kind": "other"
+  },
+  {
+   "id": "bunching.bunching_at_a_reference_point",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "bunching at a reference point",
+   "definition": "Excess mass in the distribution of an outcome at a salient behavioural reference value, rather than at a policy-created kink or notch, relative to a counterfactual distribution.",
+   "aliases": [],
+   "added_by": "dk_W3122820076"
+  },
+  {
+   "id": "source.zero_nominal_gain_reference_point",
+   "facet": "source",
+   "family": null,
+   "label": "zero nominal gain reference point",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122820076",
+   "kind": "other"
+  },
+  {
+   "id": "pattern.a_predetermined_structural_characteristic_of_a_unit_s_local",
+   "facet": "pattern",
+   "family": null,
+   "label": "A predetermined structural characteristic of a unit's local environment that shifts X instruments X's effect on Y across",
+   "definition": "A fixed, predetermined feature of a unit's environment generates variation in the endogenous regressor while being unrelated to the outcome's other determinants.",
+   "aliases": [],
+   "added_by": "dk_W3122820076"
+  },
+  {
+   "id": "source.homogeneity_of_local_housing_stock",
+   "facet": "source",
+   "family": null,
+   "label": "homogeneity of local housing stock",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122820076",
+   "kind": "other"
+  },
+  {
+   "id": "source.effective_marginal_tax_schedule",
+   "facet": "source",
+   "family": null,
+   "label": "effective marginal tax schedule",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122935555",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "source.twin_birth_at_last_birth",
+   "facet": "source",
+   "family": null,
+   "label": "twin birth at last birth",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122965561",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.within_family_birth_order_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family birth order differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3122965561",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.very_low_birth_weight_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "very low birth weight cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3123871901",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "instrumental_variables.local_population_size_as_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "local population size as instrument",
+   "definition": "The naturally varying, predetermined size of the population living in a unit's surrounding area instruments the unit's own size.",
+   "aliases": [],
+   "added_by": "dk_W3123970227"
+  },
+  {
+   "id": "source.catchment_area_population_size",
+   "facet": "source",
+   "family": null,
+   "label": "catchment area population size",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3123970227",
+   "kind": "geography_or_distance"
+  },
+  {
+   "id": "instrumental_variables.nearby_openings_and_closings_as_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "nearby openings and closings as instrument",
+   "definition": "Administratively decided openings and closings of neighbouring institutions generate sudden, politically driven changes in a unit's size that serve as the instrument.",
+   "aliases": [],
+   "added_by": "dk_W3123970227"
+  },
+  {
+   "id": "pattern.administrative_openings_and_closings_of_neighbouring_units",
+   "facet": "pattern",
+   "family": null,
+   "label": "Administrative openings and closings of neighbouring units shift X and instrument X's effect on Y",
+   "definition": "Openings or closings of nearby units, decided administratively rather than by the affected unit, mechanically change its exposure X and instrument X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W3123970227"
+  },
+  {
+   "id": "source.school_openings_and_closings",
+   "facet": "source",
+   "family": null,
+   "label": "school openings and closings",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3123970227",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.sector_level_import_growth",
+   "facet": "source",
+   "family": null,
+   "label": "sector-level import growth",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3124469853",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "structural_model.production_function_with_labor_aggregation",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "production function with labor aggregation",
+   "definition": "Estimates a production function in which heterogeneous labor groups are aggregated into efficiency units, so that cross-firm variation in workforce composition recovers each group's relative marginal product.",
+   "aliases": [],
+   "added_by": "dk_W3124920828"
+  },
+  {
+   "id": "pattern.a_policy_change_raises_exposure_to_x_for_one_group_at_a",
+   "facet": "pattern",
+   "family": null,
+   "label": "A policy change raises exposure to X for one group at a given date; Y is compared between exposed and unexposed units be",
+   "definition": "A dated policy change increases a treatment or exposure for an identifiable group of units, and outcomes are compared between exposed and unexposed units before versus after the change.",
+   "aliases": [],
+   "added_by": "dk_W3125335889"
+  },
+  {
+   "id": "structural_model.hybrid_additive_utility_model_from_valuation",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "hybrid additive utility model from valuation tasks",
+   "definition": "A parametric additive utility model is estimated jointly on two experimentally assigned valuation task formats to recover attribute-level utility parameters.",
+   "aliases": [],
+   "added_by": "dk_W3126420006"
+  },
+  {
+   "id": "pattern.randomly_assigned_variation_in_the_attributes_x_presented_to",
+   "facet": "pattern",
+   "family": null,
+   "label": "Randomly assigned variation in the attributes X presented to respondents identifies the structural parameters mapping X ",
+   "definition": "Respondents are randomly assigned to blocks of hypothetical profiles differing in attribute levels X, and a parametric model fitted to their valuations recovers each attribute level's contribution to Y.",
+   "aliases": [],
+   "added_by": "dk_W3126420006"
+  },
+  {
+   "id": "source.randomized_assignment_of_valuation_tasks",
+   "facet": "source",
+   "family": null,
+   "label": "randomized assignment of valuation tasks",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3126420006",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "structural_model.additive_extrapolation_to_unvalued_states",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "additive extrapolation to unvalued states",
+   "definition": "Parameters estimated on directly valued profiles are summed additively to predict the value of a profile that was not itself directly valued.",
+   "aliases": [],
+   "added_by": "dk_W3126420006"
+  },
+  {
+   "id": "source.policy_introduction_date_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "policy introduction date cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3127640695",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "structural_model.production_function_with_investment_proxy",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "production function with investment proxy",
+   "definition": "A production function is estimated by inverting the firm's investment policy function to proxy for unobserved productivity, which is assumed to follow a Markov process.",
+   "aliases": [],
+   "added_by": "dk_W3138953291"
+  },
+  {
+   "id": "pattern.unobserved_productivity_is_proxied_by_inverting_the_unit_s",
+   "facet": "pattern",
+   "family": null,
+   "label": "Unobserved productivity is proxied by inverting the unit's observed investment policy, identifying the elasticity of out",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3138953291"
+  },
+  {
+   "id": "difference_in_differences.matched_event_time_treatment_and_control",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "matched event-time treatment and control",
+   "definition": "Units experiencing an event at a given date are compared over event time with observationally matched units that do not experience the event in that or adjacent periods.",
+   "aliases": [],
+   "added_by": "dk_W3146661424"
+  },
+  {
+   "id": "source.pension_reform_birth_date_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "pension reform birth date cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3162839958",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.x_is_imputed_from_characteristics_observed_in_two_separate",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is imputed from characteristics observed in two separate samples, and the imputed X identifies X's effect on Y",
+   "definition": "The regressor is not observed together with the outcome, so it is predicted from a set of characteristics common to both samples and the prediction is used in place of the true regressor.",
+   "aliases": [],
+   "added_by": "dk_W3163153651"
+  },
+  {
+   "id": "structural_model.long_panel_lifetime_earnings_benchmark",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "long panel lifetime earnings benchmark",
+   "definition": "Identification comes from an auxiliary panel long enough to observe the full-horizon measure directly, against which a short-horizon proxy is benchmarked.",
+   "aliases": [],
+   "added_by": "dk_W3163153651"
+  },
+  {
+   "id": "pattern.a_long_panel_in_which_x_is_observed_over_the_full_horizon",
+   "facet": "pattern",
+   "family": null,
+   "label": "A long panel in which X is observed over the full horizon identifies how its short-horizon proxy Y relates to X",
+   "definition": "An auxiliary sample that follows units for their whole observation horizon reveals the mapping between the full-horizon quantity and the short-window measure used elsewhere.",
+   "aliases": [],
+   "added_by": "dk_W3163153651"
+  },
+  {
+   "id": "source.years_until_retirement",
+   "facet": "source",
+   "family": null,
+   "label": "years until retirement",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3170891285",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "structural_model.within_family_correlation_restrictions",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "within-family correlation restrictions",
+   "definition": "Variances of shared human-capital factors are recovered from a system of within-family education correlations (spouse, parent-child, sibling) closed by restrictions on which factors each type of family pair shares.",
+   "aliases": [],
+   "added_by": "dk_W3173049983"
+  },
+  {
+   "id": "source.municipal_caseworker_benefit_generosity",
+   "facet": "source",
+   "family": null,
+   "label": "municipal caseworker benefit generosity",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3174613487",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "source.timing_of_outsourcing_contract_award",
+   "facet": "source",
+   "family": null,
+   "label": "timing of outsourcing contract award",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3194349625",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.within_family_genetic_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family genetic differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3195462145",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "structural_model.static_random_utility_location_choice",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "static random-utility location choice",
+   "definition": "A static discrete-choice (logit) model of choosing among spatial alternatives is imposed on an observed cross-sectional choice matrix, with its parameters recovered from the distribution of chosen alternatives.",
+   "aliases": [],
+   "added_by": "dk_W3196650205"
+  },
+  {
+   "id": "source.timing_of_practice_closure",
+   "facet": "source",
+   "family": null,
+   "label": "timing of practice closure",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3211050401",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.compulsory_schooling_reform_cutoff",
+   "facet": "source",
+   "family": null,
+   "label": "compulsory schooling reform cutoff",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3212471012",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.local_respiratory_disease_prevalence",
+   "facet": "source",
+   "family": null,
+   "label": "local respiratory disease prevalence",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W3216346448",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "event_study.quasi_random_visit_timing_around_recommendation",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "quasi-random visit timing around recommendation",
+   "definition": "Identification rests on quasi-random variation in the exact week of a routine universal service visit relative to a fixed nationally recommended date, with the event study run around that visit week.",
+   "aliases": [],
+   "added_by": "dk_W4214667019"
+  },
+  {
+   "id": "source.randomly_assigned_placebo_visit_timing",
+   "facet": "source",
+   "family": null,
+   "label": "randomly assigned placebo visit timing",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4214667019",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "source.timing_of_nurse_home_visit",
+   "facet": "source",
+   "family": null,
+   "label": "timing of nurse home visit",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4214667019",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "source.distance_to_educational_institutions",
+   "facet": "source",
+   "family": null,
+   "label": "distance to educational institutions",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4229370254",
+   "kind": "geography_or_distance"
+  },
+  {
+   "id": "difference_in_differences.birth_order_exposure_gap_across_families",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "birth-order exposure gap across families",
+   "definition": "The within-family difference between an earlier- and a later-born sibling, who by birth order spend different amounts of early childhood with a younger sibling, is compared across families in which the younger sibling's condition occurred and families in which it did not.",
+   "aliases": [],
+   "added_by": "dk_W4249057364"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_4",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_5",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_6",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "pattern.siblings_within_a_family_differ_in_their_exposure_to_x_by_7",
+   "facet": "pattern",
+   "family": null,
+   "label": "Siblings within a family differ in their exposure to X by birth order; the birth-order gap in Y is compared with the sam",
+   "definition": "Within-family differences in exposure to a treatment by birth order (or birth spacing) are differenced against the same birth-order gap in families without the treatment, identifying the treatment's effect on the outcome.",
+   "aliases": [],
+   "added_by": "dk_W4253358643"
+  },
+  {
+   "id": "other.quasi_random_sibling_gender_comparison",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "quasi-random sibling gender comparison",
+   "definition": "Identification comes from the quasi-random gender of a sibling, which is treated as an as-good-as-random family draw for comparing units or splitting the sample.",
+   "aliases": [],
+   "added_by": "dk_W4280556790"
+  },
+  {
+   "id": "source.ancestral_genetic_distance",
+   "facet": "source",
+   "family": null,
+   "label": "ancestral genetic distance",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4295929599",
+   "kind": "other"
+  },
+  {
+   "id": "other.causal_mediation_via_sequential_ignorability",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "causal mediation via sequential ignorability",
+   "definition": "The effect of a quasi-exogenous variable is decomposed into a path through an intermediate variable that is assumed conditionally random given pre-treatment and intermediate confounders.",
+   "aliases": [],
+   "added_by": "dk_W4295929599"
+  },
+  {
+   "id": "instrumental_variables.historical_value_of_treatment_as_instrument",
+   "facet": "sub_design",
+   "family": "instrumental_variables",
+   "label": "historical value of treatment as instrument",
+   "definition": "A predetermined historical measurement of the treatment variable, fixed long before the outcome, is used as an instrument for its contemporaneous value.",
+   "aliases": [],
+   "added_by": "dk_W4295929599"
+  },
+  {
+   "id": "source.timing_of_retirement_transition",
+   "facet": "source",
+   "family": null,
+   "label": "timing of retirement transition",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4298126250",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.random_assignment_by_birth_date",
+   "facet": "source",
+   "family": null,
+   "label": "random assignment by birth date",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4308473136",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "source.minimum_wage_jump_at_18",
+   "facet": "source",
+   "family": null,
+   "label": "minimum wage jump at 18",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4308473136",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "other.qualitative_thematic_coding_of_interviews",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "qualitative thematic coding of interviews",
+   "definition": "Explanations are inferred from thematically coded interview accounts of actors in the setting, with no exogenous variation and no counterfactual comparison.",
+   "aliases": [],
+   "added_by": "dk_W4309042652"
+  },
+  {
+   "id": "pattern.x_s_effect_on_y_is_inferred_from_thematically_coded_accounts",
+   "facet": "pattern",
+   "family": null,
+   "label": "X's effect on Y is inferred from thematically coded accounts of participants exposed to X, with no exogenous variation o",
+   "definition": "The researcher codes interview or narrative accounts of actors experiencing X and attributes the observed Y to X interpretively, without any identifying variation.",
+   "aliases": [],
+   "added_by": "dk_W4309042652"
+  },
+  {
+   "id": "pattern.x_s_effect_on_y_is_inferred_from_thematically_coded_accounts_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "X's effect on Y is inferred from thematically coded accounts of participants exposed to X, with no exogenous variation o",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4309042652"
+  },
+  {
+   "id": "other.descriptive_mapping_without_counterfactual",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "descriptive mapping without counterfactual",
+   "definition": "A conclusion is drawn from a descriptive mapping of the observed activities and remits of the actors present in a setting, with no comparison group.",
+   "aliases": [],
+   "added_by": "dk_W4309042652"
+  },
+  {
+   "id": "pattern.y_is_inferred_from_a_descriptive_mapping_of_units_observed",
+   "facet": "pattern",
+   "family": null,
+   "label": "Y is inferred from a descriptive mapping of units' observed activities under X, with no comparison group",
+   "definition": "The researcher documents what the dominant actors in a setting actually do and infers the consequence Y of their dominance X, without any counterfactual.",
+   "aliases": [],
+   "added_by": "dk_W4309042652"
+  },
+  {
+   "id": "source.adverse_life_events",
+   "facet": "source",
+   "family": null,
+   "label": "adverse life events",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4320855144",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.randomized_information_provision",
+   "facet": "source",
+   "family": null,
+   "label": "randomized information provision",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4320855144",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "source.programme_design_reform_across_cohorts",
+   "facet": "source",
+   "family": null,
+   "label": "programme design reform across cohorts",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4321767420",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "other.decomposition_of_group_gap_into_components",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "decomposition of group gap into components",
+   "definition": "The observed gap between two groups is split into a part accounted for by differences in measured characteristics and an unexplained residual attributed to differences in returns, without any exogenous variation.",
+   "aliases": [],
+   "added_by": "dk_W4378472128"
+  },
+  {
+   "id": "pattern.units_differing_in_a_predetermined_characteristic_x_all",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in a predetermined characteristic X all experience the same family event; Y is compared between those gr",
+   "definition": "Identification comes from comparing how the outcome evolves around a common, commonly-timed life event for groups that differ in a fixed pre-event characteristic.",
+   "aliases": [],
+   "added_by": "dk_W4386887755"
+  },
+  {
+   "id": "pattern.units_differing_in_a_predetermined_characteristic_x_all_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in a predetermined characteristic X all experience the same family event; Y is compared between those gr",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4386887755"
+  },
+  {
+   "id": "other.designed_monte_carlo_with_known_truth",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "designed Monte Carlo with known truth",
+   "definition": "Data are simulated from a data-generating process whose parameters and sample dimensions are set by the authors, so an estimator's deviation from the known truth is observed directly.",
+   "aliases": [],
+   "added_by": "dk_W4387776349"
+  },
+  {
+   "id": "source.child_benefit_cap",
+   "facet": "source",
+   "family": null,
+   "label": "child benefit cap",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4389985039",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.a_rule_based_eligibility_threshold_instruments_a_unit_s_x",
+   "facet": "pattern",
+   "family": null,
+   "label": "A rule-based eligibility threshold instruments a unit's X and identifies its effect on a family member's Y",
+   "definition": "An administrative eligibility rule that assigns treatment X to a unit by a predetermined threshold instruments the unit's X and identifies the spillover of that X onto another family member's outcome Y.",
+   "aliases": [],
+   "added_by": "dk_W4390278155"
+  },
+  {
+   "id": "selection_on_observables.sequential_confounding_adjustment_over_time",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "sequential confounding adjustment over time",
+   "definition": "Identification comes from adjusting for all observed common causes measured repeatedly at each time-point, so that time-varying treatment is as good as randomly assigned within confounder histories.",
+   "aliases": [],
+   "added_by": "dk_W4390673696"
+  },
+  {
+   "id": "source.wage_transparency_law",
+   "facet": "source",
+   "family": null,
+   "label": "wage transparency law",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4398232136",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "structural_model.coherent_multi_population_mortality_forecast",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "coherent multi-population mortality forecast",
+   "definition": "A multi-population (coherent) mortality forecasting model is fitted to observed death rates by sub-population and then used to evaluate outcomes under alternative statutory policy schedules.",
+   "aliases": [],
+   "added_by": "dk_W4398782147"
+  },
+  {
+   "id": "structural_model.observed_history_versus_model_forecast",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "observed history versus model forecast",
+   "definition": "The historically observed trajectory of an outcome is contrasted with the trajectory implied by a fitted forecasting model under the policy schedule, with no comparison group in the data.",
+   "aliases": [],
+   "added_by": "dk_W4398782147"
+  },
+  {
+   "id": "pattern.adding_x_to_a_within_family_regression_of_y_on_a_correlated",
+   "facet": "pattern",
+   "family": null,
+   "label": "Adding X to a within-family regression of Y on a correlated factor decomposes how much of that factor's association with",
+   "definition": "Identification rests on within-family variation, and the portion of a factor's gradient in Y attributable to X is read off the change in that gradient when X is added to the specification.",
+   "aliases": [],
+   "added_by": "dk_W4399796155"
+  },
+  {
+   "id": "source.within_family_socio_emotional_skill_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family socio-emotional skill differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4399796155",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.within_family_education_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family education differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4399796155",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.years_since_migration",
+   "facet": "source",
+   "family": null,
+   "label": "years since migration",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4400146932",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.randomised_survey_cue_valence",
+   "facet": "source",
+   "family": null,
+   "label": "randomised survey cue valence",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4400640392",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "structural_model.counterfactual_policy_reform_simulation",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "counterfactual policy reform simulation",
+   "definition": "An estimated structural model is re-solved under a hypothetical policy rule to predict behaviour under that reform.",
+   "aliases": [],
+   "added_by": "dk_W4401758291"
+  },
+  {
+   "id": "structural_model.preference_parameters_from_budget_kinks",
+   "facet": "sub_design",
+   "family": "structural_model",
+   "label": "preference parameters from budget kinks",
+   "definition": "Structural utility parameters are recovered from how units respond to sharp kinks in the budget set they face.",
+   "aliases": [],
+   "added_by": "dk_W4401758291"
+  },
+  {
+   "id": "source.kinks_in_household_budget_set",
+   "facet": "source",
+   "family": null,
+   "label": "kinks in household budget set",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4401758291",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "selection_on_observables.sequential_covariate_block_gap_adjustment",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "sequential covariate-block gap adjustment",
+   "definition": "A predetermined group indicator is regressed on the outcome with blocks of covariates entered in sequence, so the shrinking group coefficient shows how much of the raw gap each block accounts for.",
+   "aliases": [],
+   "added_by": "dk_W4403383968"
+  },
+  {
+   "id": "source.timing_of_divorce",
+   "facet": "source",
+   "family": null,
+   "label": "timing of divorce",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404126386",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.social_housing_unit_assignment",
+   "facet": "source",
+   "family": null,
+   "label": "social housing unit assignment",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404705858",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "other.measurement_month_versus_other_months",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "measurement-month versus other months",
+   "definition": "Behaviour is compared between the calendar month in which the rule-relevant variable is measured and the other months of the year, optionally against a group not subject to the rule.",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "pattern.x_is_evaluated_on_a_single_fixed_calendar_date_so_y_in_that",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is evaluated on a single fixed calendar date, so Y in that date's month is compared with Y in the other months of the ",
+   "definition": "Because eligibility depends on a variable measured on one date, the month containing that date is compared with the remaining months for units subject to the rule.",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "source.end_of_year_asset_test_timing",
+   "facet": "source",
+   "family": null,
+   "label": "end-of-year asset test timing",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.the_same_units_are_compared_on_y_before_and_after_they",
+   "facet": "pattern",
+   "family": null,
+   "label": "The same units are compared on Y before and after they become subject to X, with no separate control group",
+   "definition": "A single cohort is followed as it becomes subject to the treatment, and its outcome distribution after exposure is compared with its own distribution before exposure.",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "source.statutory_retirement_age_threshold",
+   "facet": "source",
+   "family": null,
+   "label": "statutory retirement age threshold",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "source.asset_test_wealth_threshold",
+   "facet": "source",
+   "family": null,
+   "label": "asset test wealth threshold",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.x_is_evaluated_on_a_single_fixed_calendar_date_so_y_in_that_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is evaluated on a single fixed calendar date, so Y in that date's month is compared with Y in the other months of the ",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "bunching.bunching_in_non_manipulable_measure",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "bunching in non-manipulable measure",
+   "definition": "Excess mass at the threshold is measured in a third-party-reported version of the running variable that units cannot themselves misreport, isolating real responses from reporting responses.",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "source.asset_test_threshold_increase",
+   "facet": "source",
+   "family": null,
+   "label": "asset test threshold increase",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.x_is_evaluated_on_a_single_fixed_calendar_date_so_y_in_that_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is evaluated on a single fixed calendar date, so Y in that date's month is compared with Y in the other months of the ",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "pattern.x_is_evaluated_on_a_single_fixed_calendar_date_so_y_in_that_4",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is evaluated on a single fixed calendar date, so Y in that date's month is compared with Y in the other months of the ",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4404708997"
+  },
+  {
+   "id": "fixed_effects_within.municipality_fixed_effects",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "municipality fixed effects",
+   "definition": "Units are compared within cells defined by their municipality of residence, so that all between-municipality differences are absorbed.",
+   "aliases": [],
+   "added_by": "dk_W4405737563"
+  },
+  {
+   "id": "source.deceased_spouse_s_earnings_share",
+   "facet": "source",
+   "family": null,
+   "label": "deceased spouse's earnings share",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4406606478",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.chronic_illness_diagnosis",
+   "facet": "source",
+   "family": null,
+   "label": "chronic illness diagnosis",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4409457195",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "pattern.an_institutional_rule_makes_x_available_to_only_some_units",
+   "facet": "pattern",
+   "family": null,
+   "label": "An institutional rule makes X available to only some units; that rule-based eligibility instruments X's effect on Y amon",
+   "definition": "Eligibility for a treatment conferred by an institutional rule, rather than by choice, instruments take-up of the treatment and identifies its effect on outcomes within a population exposed to the same shock.",
+   "aliases": [],
+   "added_by": "dk_W4409963010"
+  },
+  {
+   "id": "source.credential_based_access_to_education",
+   "facet": "source",
+   "family": null,
+   "label": "credential-based access to education",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4409963010",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "pattern.units_differing_in_a_predetermined_characteristic_x_all_3",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in a predetermined characteristic X all experience the same individual shock; Y is compared between thos",
+   "definition": "All units are hit by the same type of individual shock, but they differ beforehand in a predetermined characteristic, and the paths of outcomes around the shock date are compared across those groups.",
+   "aliases": [],
+   "added_by": "dk_W4409963010"
+  },
+  {
+   "id": "source.timing_of_work_accident",
+   "facet": "source",
+   "family": null,
+   "label": "timing of work accident",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4409963010",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.pandemic_school_closures",
+   "facet": "source",
+   "family": null,
+   "label": "pandemic school closures",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4410634439",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "other.cohort_contrast_in_conditional_association",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "cohort contrast in conditional association",
+   "definition": "The conditional association between a predictor and an outcome is compared between an earlier cohort and a later cohort that made the same decision under different circumstances, with no exogenous variation in the predictor itself.",
+   "aliases": [],
+   "added_by": "dk_W4410634439"
+  },
+  {
+   "id": "source.cohort_timing_relative_to_pandemic",
+   "facet": "source",
+   "family": null,
+   "label": "cohort timing relative to pandemic",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4410634439",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.local_immigration_supply_shock",
+   "facet": "source",
+   "family": null,
+   "label": "local immigration supply shock",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4411627445",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "source.establishment_distance_to_headquarters",
+   "facet": "source",
+   "family": null,
+   "label": "establishment distance to headquarters",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4411627445",
+   "kind": "geography_or_distance"
+  },
+  {
+   "id": "source.timing_of_spouse_s_arrival",
+   "facet": "source",
+   "family": null,
+   "label": "timing of spouse's arrival",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4412528527",
+   "kind": "family_structure"
+  },
+  {
+   "id": "source.timing_of_within_firm_promotion",
+   "facet": "source",
+   "family": null,
+   "label": "timing of within-firm promotion",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4413790562",
+   "kind": "other"
+  },
+  {
+   "id": "source.occupational_pension_expansion_agreement",
+   "facet": "source",
+   "family": null,
+   "label": "occupational pension expansion agreement",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4414214471",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "pattern.an_exogenous_weather_driven_supply_shock_shifts_x_over_time",
+   "facet": "pattern",
+   "family": null,
+   "label": "An exogenous weather-driven supply shock shifts X over time and instruments X's effect on Y",
+   "definition": "A shock to supply conditions driven by weather moves X in a way unrelated to demand, providing an instrument for X's effect on Y.",
+   "aliases": [],
+   "added_by": "dk_W4417214164"
+  },
+  {
+   "id": "source.hourly_wind_power_generation",
+   "facet": "source",
+   "family": null,
+   "label": "hourly wind power generation",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W4417214164",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.family_deaths_and_family_ties",
+   "facet": "source",
+   "family": null,
+   "label": "family deaths and family ties",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7117966348",
+   "kind": "natural_or_health_shock"
+  },
+  {
+   "id": "source.quasi_random_test_administration_date",
+   "facet": "source",
+   "family": null,
+   "label": "quasi-random test administration date",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7120018105",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.correlations_across_kinship_positions",
+   "facet": "source",
+   "family": null,
+   "label": "correlations across kinship positions",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7127146382",
+   "kind": "family_structure"
+  },
+  {
+   "id": "other.age_period_cohort_decomposition_with_trend",
+   "facet": "sub_design",
+   "family": "other",
+   "label": "age-period-cohort decomposition with trend restriction",
+   "definition": "Age, period and cohort dummies are estimated jointly with the two collinear linear trends allocated by an explicit identifying restriction, so the non-linear age, period and cohort components of the outcome are read off directly.",
+   "aliases": [],
+   "added_by": "dk_W7134835134"
+  },
+  {
+   "id": "source.entry_cohort_and_calendar_time",
+   "facet": "source",
+   "family": null,
+   "label": "entry cohort and calendar time",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7134835134",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "event_study.continuous_dosage_leads_and_lags",
+   "facet": "sub_design",
+   "family": "event_study",
+   "label": "continuous dosage leads and lags",
+   "definition": "A continuous within-unit measure of treatment intensity is entered at leads and lags around its changes, net of unit and period-by-group fixed effects, to trace the dynamic response of the outcome.",
+   "aliases": [],
+   "added_by": "dk_W7138994761"
+  },
+  {
+   "id": "pattern.units_cross_a_threshold_of_x_at_different_dates_y_around",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units cross a threshold of X at different dates; Y around each unit's crossing date is compared with units that cross th",
+   "definition": "Treated units are aligned in event time at the date they first cross a treatment threshold and compared with otherwise similar units that cross the same threshold much later, which serve as not-yet-treated controls.",
+   "aliases": [],
+   "added_by": "dk_W7138994761"
+  },
+  {
+   "id": "source.timing_of_firm_technology_adoption",
+   "facet": "source",
+   "family": null,
+   "label": "timing of firm technology adoption",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7138994761",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "pattern.units_become_exposed_to_x_at_different_dates_y_is_compared",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units become exposed to X at different dates; Y is compared around each unit's exposure date with units not yet exposed ",
+   "definition": "Treatment arrives at units at staggered dates and the outcome path of newly exposed units is compared with that of units not yet (or never) exposed over the same periods.",
+   "aliases": [],
+   "added_by": "dk_W7139989104"
+  },
+  {
+   "id": "source.timing_of_literary_award_announcement",
+   "facet": "source",
+   "family": null,
+   "label": "timing of literary award announcement",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7139989104",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "pattern.units_become_exposed_to_x_at_different_dates_y_is_compared_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units become exposed to X at different dates; Y is compared around each unit's exposure date with units not yet exposed ",
+   "definition": "Treatment arrives at units at staggered dates and the outcome path of newly exposed units is compared with that of units not yet (or never) exposed over the same periods.",
+   "aliases": [],
+   "added_by": "dk_W7139989104"
+  },
+  {
+   "id": "source.timing_of_newspaper_review_publication",
+   "facet": "source",
+   "family": null,
+   "label": "timing of newspaper review publication",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7139989104",
+   "kind": "timing_or_cohort"
+  },
+  {
+   "id": "source.trade_partner_time_zone_overlap",
+   "facet": "source",
+   "family": null,
+   "label": "trade partner time-zone overlap",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7147058446",
+   "kind": "geography_or_distance"
+  },
+  {
+   "id": "fixed_effects_within.occupation_trait_interaction_within_job_spells",
+   "facet": "sub_design",
+   "family": "fixed_effects_within",
+   "label": "occupation-trait interaction within job spells",
+   "definition": "Within job-spell variation in exposure is interacted with predetermined occupation characteristics, so identification comes from differential responses across occupations with different temporal flexibility rather than from the individual's own choices.",
+   "aliases": [],
+   "added_by": "dk_W7147058446"
+  },
+  {
+   "id": "source.quasi_random_export_promotion_calls",
+   "facet": "source",
+   "family": null,
+   "label": "quasi-random export promotion calls",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7147058446",
+   "kind": "administrative_assignment"
+  },
+  {
+   "id": "source.parental_leave_reform",
+   "facet": "source",
+   "family": null,
+   "label": "parental leave reform",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7155006486",
+   "kind": "policy_reform"
+  },
+  {
+   "id": "source.timing_of_firm_offshoring_decision",
+   "facet": "source",
+   "family": null,
+   "label": "timing of firm offshoring decision",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7160905397",
+   "kind": "economic_shock"
+  },
+  {
+   "id": "pattern.observed_stocks_are_converted_into_x_by_an_accounting",
+   "facet": "pattern",
+   "family": null,
+   "label": "Observed stocks are converted into X by an accounting formula with externally assumed parameters, and Y is recomputed un",
+   "definition": "Identification comes from a deterministic accounting/annuitisation formula applied to observed balances with parameters imposed from outside the data, yielding a model-implied counterfactual outcome rather than an estimated causal effect.",
+   "aliases": [],
+   "added_by": "dk_W7167517776"
+  },
+  {
+   "id": "pattern.x_is_randomly_assigned_and_interacted_with_a_predetermined",
+   "facet": "pattern",
+   "family": null,
+   "label": "X is randomly assigned and interacted with a predetermined unit characteristic; the difference in X's effect on Y betwee",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "source.randomized_vignette_project_attributes",
+   "facet": "source",
+   "family": null,
+   "label": "randomized vignette project attributes",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283",
+   "kind": "randomization_or_lottery"
+  },
+  {
+   "id": "source.residual_from_randomized_vignette_ratings",
+   "facet": "source",
+   "family": null,
+   "label": "residual from randomized vignette ratings",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283",
+   "kind": "other"
+  },
+  {
+   "id": "selection_on_observables.observed_trait_with_randomized_stimulus",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "observed trait with randomized stimulus",
+   "definition": "Units differing in an observed, non-randomized characteristic are compared on their response to a stimulus whose attributes are randomized, so the stimulus is held constant by design rather than by control.",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "pattern.units_differing_in_an_observed_characteristic_x_are_compared",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in an observed characteristic X are compared on Y, where Y is a response to a randomly assigned stimulus",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "pattern.units_differing_in_an_observed_characteristic_x_are_compared_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units differing in an observed characteristic X are compared on Y, where Y is a response to a randomly assigned stimulus",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "selection_on_observables.respondent_versus_non_respondent_comparison",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "respondent versus non-respondent comparison",
+   "definition": "Units that selected into the survey sample are compared with those that did not, using characteristics and outcomes observed for the whole sampling universe, to assess response-based selection.",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "pattern.the_association_between_x_and_y_is_compared_between_units",
+   "facet": "pattern",
+   "family": null,
+   "label": "The association between X and Y is compared between units that selected into the sample and units that did not, using da",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W7202262283"
+  },
+  {
+   "id": "selection_on_observables.soon_to_be_treated_comparison_group",
+   "facet": "sub_design",
+   "family": "selection_on_observables",
+   "label": "soon-to-be-treated comparison group",
+   "definition": "Units that have just experienced an event are compared, conditional on observed covariates, with units that will experience the same event shortly after the outcome is measured.",
+   "aliases": [],
+   "added_by": "dk_W7212394491"
+  },
+  {
+   "id": "pattern.units_exposed_to_x_shortly_before_y_is_measured_are_compared",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units exposed to X shortly before Y is measured are compared, conditional on observed covariates, with units exposed to ",
+   "definition": "Identification comes from contrasting already-exposed units with soon-to-be-exposed units, so that the comparison group is selected on the same event but with later timing relative to outcome measurement.",
+   "aliases": [],
+   "added_by": "dk_W7212394491"
+  },
+  {
+   "id": "pattern.units_exposed_to_x_shortly_before_y_is_measured_are_compared_2",
+   "facet": "pattern",
+   "family": null,
+   "label": "Units exposed to X shortly before Y is measured are compared, conditional on observed covariates, with units exposed to ",
+   "definition": "Identification comes from contrasting already-exposed units with soon-to-be-exposed units, so that the comparison group is selected on the same event but with later timing relative to outcome measurement.",
+   "aliases": [],
+   "added_by": "dk_W7212394491"
+  },
+  {
+   "id": "source.within_family_grading_differences",
+   "facet": "source",
+   "family": null,
+   "label": "within-family grading differences",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W757177167",
+   "kind": "family_structure"
+  },
+  {
+   "id": "difference_in_differences.measurement_scheme_gap_across_groups",
+   "facet": "sub_design",
+   "family": "difference_in_differences",
+   "label": "measurement-scheme gap across groups",
+   "definition": "The same units are scored under two assessment schemes and the gap between groups is differenced across the two schemes.",
+   "aliases": [],
+   "added_by": "dk_W757177167"
+  },
+  {
+   "id": "source.teacher_versus_external_exam_score",
+   "facet": "source",
+   "family": null,
+   "label": "teacher versus external exam score",
+   "definition": "",
+   "aliases": [],
+   "added_by": "dk_W757177167",
+   "kind": "institutional_rule_or_threshold"
+  },
+  {
+   "id": "bunching.reform_shifted_kink_in_schedule",
+   "facet": "sub_design",
+   "family": "bunching",
+   "label": "reform-shifted kink in schedule",
+   "definition": "A reform moves the kink point and changes its rate, so the shift in the earnings distribution between pre- and post-reform cross-sections identifies the behavioural response.",
+   "aliases": [],
+   "added_by": "dk_W82324926"
+  },
+  {
+   "id": "pattern.a_reform_moves_the_kink_in_x_s_schedule_the_shift_in_the",
+   "facet": "pattern",
+   "family": null,
+   "label": "A reform moves the kink in X's schedule; the shift in the distribution of Y between pre- and post-reform periods identif",
+   "definition": "Identification comes from comparing the distribution of the choice variable before and after a reform that relocates the kink and changes the marginal rate at it, with unaffected parts of the distribution as a placebo.",
+   "aliases": [],
+   "added_by": "dk_W82324926"
+  },
+  {
+   "id": "source.none",
+   "label": "no exogenous source",
+   "kind": "none",
+   "facet": "source",
+   "family": null,
+   "definition": "The design has no source of exogeneity beyond conditioning: treated and untreated are compared given observables, or a unit with itself over time, without a shock, rule, lottery or timing that moves the treatment.",
+   "aliases": [
+    "CEO age across firms",
+    "conditioning on observables",
+    "country-of-origin cultural distance",
+    "cross-sectional variation",
+    "cross-type unemployment and consumption moments",
+    "experimentally elicited time preferences",
+    "firm workforce gender composition",
+    "firm workforce group composition",
+    "individual's gender",
+    "job-to-job mobility patterns",
+    "long panel of work histories",
+    "mapped organizational activities",
+    "no exogenous source",
+    "no source",
+    "none",
+    "observed spell durations and transitions",
+    "observed variation",
+    "observed variation in treatment",
+    "occupation-group mean earnings",
+    "occupational job-exposure matrix risk",
+    "panel income growth covariances",
+    "placebo reform date",
+    "polygenic score across individuals",
+    "predicted income from characteristics",
+    "qualitative interview accounts",
+    "selection on observables",
+    "self-report versus register measure",
+    "sibling and peer covariances",
+    "student moves between schools",
+    "survey household balance-sheet positions",
+    "survey response versus non-response",
+    "survey-elicited behavioural traits",
+    "within parent-child pair variation",
+    "within-firm changes over time",
+    "within-municipality changes over time",
+    "within-precinct changes over time",
+    "within-respondent changes over time",
+    "within-school changes across cohorts",
+    "worker moves across occupations",
+    "worker moves between employers",
+    "youth survey preference measure"
+   ],
+   "added_by": "seed"
+  },
+  {
+   "id": "source.model_counterfactual",
+   "label": "model-implied counterfactual",
+   "kind": "model",
+   "facet": "source",
+   "family": null,
+   "definition": "The causal content comes from an estimated or calibrated model rather than from variation in the data: a counterfactual simulated with and without a policy, an elasticity propagated through the model, or a forecast contrast.",
+   "aliases": [
+    "assumed annuitisation parameters",
+    "calibrated model simulation",
+    "estimated structural model parameters",
+    "experimenter-set parameter variation",
+    "model",
+    "model counterfactual",
+    "model simulation",
+    "model simulation parameter grid",
+    "model-based simulation",
+    "model-implied counterfactual",
+    "no data variation",
+    "simulated data with known truth",
+    "structural model parameters"
+   ],
+   "added_by": "seed"
+  }
+ ],
+ "updated_at": "2026-10-18T02:49:14.840083+00:00"
+}

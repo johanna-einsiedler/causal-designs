@@ -1,0 +1,10 @@
+{
+  "danish-register-econ": {
+    "label": "Danish registers",
+    "title": "Causal designs in Danish register-data economics",
+    "description": "Identification designs of economics papers that use Statistics Denmark's administrative registers, extracted from the papers by the danish-register-econ pipeline: one record per estimate, grouped into design units and placed in the shared design taxonomy.",
+    "atlas_url": "https://johanna-einsiedler.github.io/danish-causal-atlas/",
+    "claims_dataset": "Johanna Einsiedler (2026). Claims in Danish register-data economics papers (version 1) [Data set]. Metalens. https://doi.org/10.5281/zenodo.23514504",
+    "citation": "Johanna Einsiedler (2026). Causal designs in Danish register-data economics [Data set]. https://github.com/johanna-einsiedler/causal-designs/tree/main/data/corpora/danish-register-econ"
+  }
+}
