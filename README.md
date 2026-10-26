@@ -21,3 +21,14 @@ Live: https://johanna-einsiedler.github.io/causal-designs/  (the atlas links her
   kept only as a hash and a length, so a reader with the paper can verify it. `data/index.json` lists the papers.
 
 The papers remain with their publishers. Nothing here reproduces a paper's abstract, tables or figures.
+
+## Licence
+
+- The site (`index.html`, `app.js`, `app.css`): MIT, see [`LICENSE`](LICENSE). The vendored libraries keep
+  their own licences (D3: ISC; MiniSearch: MIT).
+- The data (`data/`: the taxonomy, the examples, the papers' design documents and the graph): Creative
+  Commons Attribution 4.0, see [`data/LICENSE`](data/LICENSE). Attribute as "Causal Designs, Johanna
+  Einsiedler, https://github.com/johanna-einsiedler/causal-designs". The papers remain with their publishers,
+  as described above.
+
+To pin a state, use a release tag (`v0.1.0` is the wiki as published on 2026-10-18, with this licence).
